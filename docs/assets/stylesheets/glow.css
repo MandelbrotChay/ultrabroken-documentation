@@ -4,6 +4,9 @@
 :root {
   --teal-glow: #00f0c2;
   --teal-dark: #00796b;
+  /* Marquee controls: pixels per second, and pause at ends (ms) */
+  --ub-marquee-speed: 40;
+  --ub-marquee-pause-ms: 1200;
 }
 
 /* Apply fonts: Texturina for body, New Rocker for headings/navigation/title */
