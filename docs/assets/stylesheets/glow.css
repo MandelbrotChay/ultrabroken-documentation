@@ -46,13 +46,14 @@ html, body {
   display: block !important;
   box-sizing: border-box !important;
   overflow: hidden !important;
-  white-space: nowrap !important;
-  text-overflow: ellipsis !important;
-  padding: 0 0.5rem !important;
-  margin: 0 !important;
-  /* Reserve space on the right for header icons (search, palette, etc.).
-     Increase/decrease if your header icons change width. */
-  max-width: calc(100% - 84px) !important;
+    white-space: nowrap !important;
+    text-overflow: ellipsis !important;
+    padding: 0 0.5rem !important;
+    margin: 0 !important;
+    /* Reserve space on the right for header controls (search, palette, etc.).
+      JS will set `--header-controls-width` at runtime to the exact pixel width
+      of the controls; fallback is 84px if JS is not available. */
+    max-width: calc(100% - var(--header-controls-width, 84px)) !important;
 }
 
 /* Lighten navigation tabs (global header navigation) */

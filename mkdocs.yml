@@ -29,6 +29,7 @@ extra_javascript:
   - assets/scripts/404-detect.js
   - assets/scripts/search-highlights-cleanup.js
   - assets/scripts/search-enter-disable.js
+  - assets/scripts/header-reserve.js
   
 
 nav:
