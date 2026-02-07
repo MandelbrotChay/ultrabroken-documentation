@@ -6,45 +6,55 @@ document.addEventListener('DOMContentLoaded', function () {
   if (!title) return;
 
   function updateReserve() {
-    // compute the leftmost control to the right of the title
     const headerRect = header.getBoundingClientRect();
-    const titleRect = title.getBoundingClientRect();
 
-    // find all header descendants that are not the title and are visible
-    const candidates = Array.from(header.querySelectorAll('*')).filter(el => {
-      if (!el.getBoundingClientRect) return false;
-      if (title.contains(el)) return false;
-      const r = el.getBoundingClientRect();
-      return r.width > 0 && r.height > 0;
-    });
+    // Target common header control selectors so we only measure true controls
+    const selectors = [
+      '.md-header__button',
+      'label.md-header__button',
+      '.md-search',
+      '.md-search__icon',
+      '.md-tabs',
+      '.md-header-nav',
+      '.md-logo',
+      '.md-header__logo'
+    ];
+    const candidates = selectors
+      .map(sel => Array.from(header.querySelectorAll(sel)))
+      .reduce((a, b) => a.concat(b), [])
+      .filter(el => !!el.getBoundingClientRect);
 
-    // find the smallest left value among elements positioned to the right of title's left
-    const rightSideEls = candidates.filter(el => el.getBoundingClientRect().left > titleRect.left + 4);
-    if (rightSideEls.length === 0) {
-      // fallback: reserve 84px
+    const visible = candidates
+      .map(el => el.getBoundingClientRect())
+      .filter(r => r.width > 0 && r.height > 0 && r.right > headerRect.left);
+
+    if (visible.length === 0) {
       document.documentElement.style.setProperty('--header-controls-width', '84px');
       return;
     }
 
-    const minLeft = Math.min(...rightSideEls.map(el => el.getBoundingClientRect().left));
-    // controls occupy from minLeft to headerRect.right
+    const minLeft = Math.min(...visible.map(r => r.left));
     const controlsWidth = Math.max(0, Math.round(headerRect.right - minLeft));
-    // add small buffer for padding
-    const buffer = 8;
+    const buffer = 8; // small breathing room
     document.documentElement.style.setProperty('--header-controls-width', (controlsWidth + buffer) + 'px');
   }
 
-  // initial update and on resize
-  updateReserve();
+  // initial update and on resize/DOM changes
+  requestAnimationFrame(updateReserve);
   if (window.ResizeObserver) {
     const ro = new ResizeObserver(() => requestAnimationFrame(updateReserve));
     ro.observe(header);
-    // also observe body to catch layout changes
     ro.observe(document.body);
   } else {
     window.addEventListener('resize', () => requestAnimationFrame(updateReserve));
   }
 
-  // also update after a short delay to allow images/fonts to settle
-  setTimeout(updateReserve, 500);
+  // Observe DOM changes inside header that may add/remove controls
+  if (window.MutationObserver) {
+    const mo = new MutationObserver(() => requestAnimationFrame(updateReserve));
+    mo.observe(header, { childList: true, subtree: true });
+  }
+
+  // update after fonts/images settle
+  setTimeout(updateReserve, 600);
 });
