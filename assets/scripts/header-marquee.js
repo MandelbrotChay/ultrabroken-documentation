@@ -108,16 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
       window.addEventListener('resize', () => { stop(); requestAnimationFrame(check); });
     }
 
-    /* Reset scroll when the title content changes (e.g. navigation updates) */
-    if (window.MutationObserver) {
-      const mo = new MutationObserver(() => {
-        // stop current animation and reset scroll position, then re-evaluate
-        stop();
-        // slight delay to allow DOM updates to settle before checking
-        setTimeout(() => requestAnimationFrame(check), 50);
-      });
-      mo.observe(el, { childList: true, characterData: true, subtree: true });
-    }
+    
 
     requestAnimationFrame(check);
     setTimeout(check, 600);
