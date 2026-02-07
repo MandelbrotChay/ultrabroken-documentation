@@ -1,7 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
   if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
-  const SPEED_PX_PER_SEC = 40; // unified scroll speed
+  // Allow overriding speed via CSS variable `--ub-marquee-speed` (px/sec).
+  const cssSpeed = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--ub-marquee-speed')) || 0;
+  const SPEED_PX_PER_SEC = cssSpeed > 0 ? cssSpeed : 40; // unified scroll speed (px/sec)
   const GAP = 24; // px gap before reset
 
   const containers = document.querySelectorAll('.md-header__title .md-ellipsis');
