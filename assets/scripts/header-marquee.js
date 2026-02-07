@@ -6,7 +6,15 @@ document.addEventListener('DOMContentLoaded', () => {
   const PAUSE_MS = 1200; // pause at each end (increased)
 
   const containers = document.querySelectorAll('.md-header__title .md-ellipsis');
+  // Clean up any leftover marquee DOM from previous script versions so we
+  // always initialize a single, consistent implementation.
   containers.forEach(container => {
+    const hadOld = container.querySelector('.marquee-track, .marquee-item, .ub-marquee-inner') || container.dataset.ubMarqueeInitialized;
+    if (hadOld) {
+      const text = container.textContent.trim();
+      container.textContent = text; // strip any old markup
+      delete container.dataset.ubMarqueeInitialized;
+    }
     if (container.dataset.ubMarqueeInitialized) return;
     container.dataset.ubMarqueeInitialized = '1';
 
