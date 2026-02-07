@@ -4,6 +4,9 @@ document.addEventListener('DOMContentLoaded', () => {
   // Allow overriding speed via CSS variable `--ub-marquee-speed` (px/sec).
   const cssSpeed = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--ub-marquee-speed')) || 0;
   const SPEED_PX_PER_SEC = cssSpeed > 0 ? cssSpeed : 40; // unified scroll speed (px/sec)
+  // Allow overriding pause via CSS variable `--ub-marquee-pause-ms` (ms).
+  const cssPause = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--ub-marquee-pause-ms')) || 0;
+  const PAUSE_MS = cssPause > 0 ? cssPause : 1200; // pause at each end (ms)
   const GAP = 24; // px gap before reset
 
   const containers = document.querySelectorAll('.md-header__title .md-ellipsis');
@@ -25,28 +28,44 @@ document.addEventListener('DOMContentLoaded', () => {
     let lastTs = 0;
     let offset = 0;
     let running = false;
+    let dir = 1; // 1 = scroll right-to-left (increase offset), -1 = scroll left-to-right (decrease offset)
 
     function tick(ts) {
       if (!running) return;
       if (!lastTs) lastTs = ts;
       const dt = (ts - lastTs) / 1000;
       lastTs = ts;
-      offset += SPEED_PX_PER_SEC * dt;
+      offset += SPEED_PX_PER_SEC * dt * dir;
 
       const itemWidth = inner.scrollWidth;
       const containerWidth = container.clientWidth;
       const maxShift = Math.max(0, itemWidth - containerWidth + GAP);
 
+      // reached right end (max scroll)
       if (offset >= maxShift) {
-        inner.style.transform = `translateX(${-maxShift}px)`;
+        offset = maxShift;
+        inner.style.transform = `translateX(${-offset}px)`;
         running = false;
         setTimeout(() => {
-          offset = 0;
-          inner.style.transform = `translateX(0)`;
-          lastTs = performance.now();
+          dir = -1; // reverse direction
+          lastTs = 0;
           running = true;
           rafId = requestAnimationFrame(tick);
-        }, 600);
+        }, PAUSE_MS);
+        return;
+      }
+
+      // reached left end (no scroll)
+      if (offset <= 0) {
+        offset = 0;
+        inner.style.transform = 'translateX(0)';
+        running = false;
+        setTimeout(() => {
+          dir = 1; // reverse direction
+          lastTs = 0;
+          running = true;
+          rafId = requestAnimationFrame(tick);
+        }, PAUSE_MS);
         return;
       }
 
@@ -68,6 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
       offset = 0;
       inner.style.transform = 'translateX(0)';
       lastTs = 0;
+      dir = 1; // reset direction
     }
 
     function update() {
