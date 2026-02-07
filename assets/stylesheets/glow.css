@@ -50,10 +50,11 @@ html, body {
     text-overflow: ellipsis !important;
     padding: 0 0.5rem !important;
     margin: 0 !important;
-    /* Reserve space on the right for header controls (search, palette, etc.).
-      JS will set `--header-controls-width` at runtime to the exact pixel width
-      of the controls; fallback is 84px if JS is not available. */
-    max-width: calc(100% - var(--header-controls-width, 84px)) !important;
+    /* Compute available width from the viewport right edge so we only clip
+       what's necessary. JS sets `--header-available-width` at runtime using
+       the viewport (window.innerWidth) and the title left position. Fallback
+       continues to use a conservative controls-width reserve. */
+       max-width: var(--header-available-width, calc(100% - var(--header-controls-width, 84px))) !important;
 }
 
 /* Lighten navigation tabs (global header navigation) */
