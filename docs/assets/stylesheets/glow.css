@@ -59,6 +59,7 @@ html, body {
 
 /* Scrolling indicator for clipped header titles (scrollLeft-based marquee) */
 .md-header__title .md-ellipsis.is-marquee {
+  text-overflow: clip !important;
   cursor: default;
 }
 
