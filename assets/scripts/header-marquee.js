@@ -108,21 +108,18 @@ document.addEventListener('DOMContentLoaded', () => {
       window.addEventListener('resize', () => { stop(); requestAnimationFrame(check); });
     }
 
-    /* Track text content and reset marquee only when it actually changes
-       (e.g. when scrolling past section headings and MkDocs updates the
-       header to show the current section name). */
+    /* Poll for text content changes (more robust than MutationObserver when
+       MkDocs Material updates the header on scroll through section headings).
+       Reset marquee when text actually changes so new title starts from left. */
     let lastText = el.textContent.trim();
-    if (window.MutationObserver) {
-      const mo = new MutationObserver(() => {
-        const newText = el.textContent.trim();
-        if (newText !== lastText) {
-          lastText = newText;
-          stop();
-          requestAnimationFrame(check);
-        }
-      });
-      mo.observe(el, { childList: true, characterData: true, subtree: true });
-    }
+    setInterval(() => {
+      const newText = el.textContent.trim();
+      if (newText !== lastText) {
+        lastText = newText;
+        stop();
+        requestAnimationFrame(check);
+      }
+    }, 200);
 
     requestAnimationFrame(check);
     setTimeout(check, 600);
