@@ -57,6 +57,36 @@ html, body {
        max-width: var(--header-available-width, calc(100% - var(--header-controls-width, 84px))) !important;
 }
 
+/* Marquee track for clipped header titles */
+.md-header__title .md-ellipsis.is-marquee {
+  position: relative !important;
+}
+.md-header__title .md-ellipsis .marquee-track {
+  display: inline-block;
+  white-space: nowrap;
+  will-change: transform;
+  animation-name: ub-marquee;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-play-state: paused;
+}
+.md-header__title .md-ellipsis.is-marquee:focus .marquee-track,
+.md-header__title .md-ellipsis.is-marquee:hover .marquee-track {
+  animation-play-state: running !important;
+}
+
+@keyframes ub-marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(calc(var(--marquee-distance, 0px) * -1)); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .md-header__title .md-ellipsis .marquee-track {
+    animation: none !important;
+    transform: none !important;
+  }
+}
+
 /* Lighten navigation tabs (global header navigation) */
 .md-tabs__link {
   color: rgba(0,240,194,0.6) !important;
