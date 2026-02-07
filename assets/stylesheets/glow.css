@@ -54,6 +54,42 @@ html, body {
   margin: -0.5em -1em !important;
 }
 
+/* Marquee for clipped header titles
+   - JS will add `.is-marquee` and set CSS vars when the title overflows.
+   - Animation runs on :hover or :focus to avoid motion by default. Respects
+     `prefers-reduced-motion` by disabling animations for those users. */
+.md-header__title .md-ellipsis.is-marquee {
+  position: relative !important;
+  overflow: hidden !important;
+}
+.md-header__title .md-ellipsis .marquee-inner {
+  display: inline-block;
+  will-change: transform;
+  /* animation defined but paused by default; JS sets --marquee-duration */
+  animation-name: ub-marquee-scroll;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-play-state: paused;
+  padding-right: 1rem; /* small gap when scrolling */
+}
+.md-header__title .md-ellipsis.is-marquee:focus .marquee-inner,
+.md-header__title .md-ellipsis.is-marquee:hover .marquee-inner {
+  animation-play-state: running !important;
+}
+
+@keyframes ub-marquee-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(var(--marquee-distance, 0px) * -1)); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .md-header__title .md-ellipsis .marquee-inner {
+    animation: none !important;
+    transform: none !important;
+  }
+}
+
 /* Lighten navigation tabs (global header navigation) */
 .md-tabs__link {
   color: rgba(0,240,194,0.6) !important;
