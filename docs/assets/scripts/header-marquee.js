@@ -10,6 +10,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const containers = document.querySelectorAll('.md-header__title .md-ellipsis');
   containers.forEach(container => {
+    // Clean up any old marquee DOM from previous initializations
+    const oldInner = container.querySelector('.ub-marquee-inner');
+    if (oldInner) {
+      const text = oldInner.textContent;
+      container.textContent = text;
+      delete container.dataset.ubMarqueeInitialized;
+    }
+    
     if (container.dataset.ubMarqueeInitialized) return;
     container.dataset.ubMarqueeInitialized = '1';
 
@@ -18,6 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
     inner.className = 'ub-marquee-inner';
     inner.style.display = 'inline-block';
     inner.style.whiteSpace = 'nowrap';
+    inner.style.maxWidth = 'none'; // Allow inner to grow beyond container
     inner.innerHTML = contentHtml;
 
     container.innerHTML = '';
