@@ -18,6 +18,9 @@ document.addEventListener('DOMContentLoaded', function () {
     })();
 
     function update() {
+      // Ensure inner uses inline-block for accurate width measurement
+      inner.style.display = 'inline-block';
+      inner.style.whiteSpace = 'nowrap';
       // Use clientWidth and scrollWidth to detect overflow
       const containerWidth = container.clientWidth;
       const contentWidth = inner.scrollWidth;
@@ -42,14 +45,23 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Initial check and on resize
-    update();
+    // Use rAF to ensure layout is settled before measuring
+    requestAnimationFrame(update);
     let resizeObserver = null;
     if (window.ResizeObserver) {
-      resizeObserver = new ResizeObserver(update);
+      resizeObserver = new ResizeObserver(function () { requestAnimationFrame(update); });
       resizeObserver.observe(container);
       resizeObserver.observe(inner);
     } else {
-      window.addEventListener('resize', update);
+      window.addEventListener('resize', function () { requestAnimationFrame(update); });
     }
+
+    // Start/stop on pointer enter/leave for pointer-capable devices
+    container.addEventListener('pointerenter', function () {
+      if (container.classList.contains('is-marquee')) inner.style.animationPlayState = 'running';
+    });
+    container.addEventListener('pointerleave', function () {
+      inner.style.animationPlayState = 'paused';
+    });
   });
 });

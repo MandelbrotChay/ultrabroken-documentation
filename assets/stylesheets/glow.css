@@ -32,6 +32,8 @@ html, body {
   font-weight: 600;
   font-family: 'New Rocker', 'Texturina', Georgia, 'Times New Roman', serif !important;
   overflow: visible !important;
+  display: flex !important;
+  align-items: center !important;
   flex: 1 1 auto !important; /* fill available header space so title can be truncated correctly */
   min-width: 0 !important; /* allow child to shrink for ellipsis */
 }
@@ -50,8 +52,8 @@ html, body {
   overflow: hidden !important;
   white-space: nowrap !important;
   text-overflow: ellipsis !important;
-  padding: 0.5em 1em !important;
-  margin: -0.5em -1em !important;
+  padding: 0 0.5rem !important; /* reduced padding so clipping occurs later */
+  margin: 0 !important;
 }
 
 /* Marquee for clipped header titles
