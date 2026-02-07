@@ -41,15 +41,21 @@ document.addEventListener('DOMContentLoaded', function () {
     document.documentElement.style.setProperty('--header-controls-width', (controlsWidth + buffer) + 'px');
 
     // Compute available width from viewport right edge so only necessary clipping occurs
-    const titleRect = title.getBoundingClientRect();
-    // available = distance from title left to viewport right minus controlsWidth and a small margin
+    // Prefer measuring the actual text container (ellipsis) instead of the title wrapper
+    // — this ensures we compute available width from the text left edge to the
+    // viewport right edge.
+    const ellipsisEl = title.querySelector('.md-ellipsis');
+    const textRect = ellipsisEl ? ellipsisEl.getBoundingClientRect() : title.getBoundingClientRect();
+    // available = distance from text left to viewport right minus controlsWidth and a small margin
     const margin = 6; // breathing room between text and controls
-    // Compute available; clamp to a reasonable minimum to avoid showing just
-    // a single character at extreme zoom levels. Also cap at header width.
-    const rawAvailable = Math.round(window.innerWidth - titleRect.left - (controlsWidth + buffer) - margin);
-    const minAvailable = 140; // px — shows a useful amount of the title
+    const rawAvailable = Math.round(window.innerWidth - textRect.left - (controlsWidth + buffer) - margin);
+    // dynamic minimum: use up to 25% of viewport or 220px whichever is smaller
+    const minAvailable = Math.max(96, Math.round(Math.min(220, window.innerWidth * 0.25)));
     const maxAvailable = Math.max(48, Math.round(headerRect.width - 16));
     const available = Math.max(Math.min(rawAvailable, maxAvailable), minAvailable);
+    if (window.__UB_DEBUG_HEADER) {
+      console.debug('header-reserve:', { rawAvailable, minAvailable, maxAvailable, available, windowInner: window.innerWidth, textLeft: textRect.left, controlsWidth, buffer });
+    }
     document.documentElement.style.setProperty('--header-available-width', available + 'px');
   }
 
