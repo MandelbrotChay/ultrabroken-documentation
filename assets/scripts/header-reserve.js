@@ -49,11 +49,11 @@ document.addEventListener('DOMContentLoaded', function () {
     // available = distance from text left to viewport right minus controlsWidth and a small margin
     const margin = 6; // breathing room between text and controls
     const rawAvailable = Math.round(window.innerWidth - textRect.left - (controlsWidth + buffer) - margin);
-    // boost available width slightly to delay clipping when users zoom
-    const zoomBoost = Math.round(window.innerWidth * 0.06); // 6% of viewport width
+    // boost available width more aggressively so clipping starts much later when zooming
+    const zoomBoost = Math.round(window.innerWidth * 0.18); // 18% of viewport width
     const boosted = rawAvailable + zoomBoost;
-    // dynamic minimum: use up to 25% of viewport or 220px whichever is smaller
-    const minAvailable = Math.max(80, Math.round(Math.min(220, window.innerWidth * 0.25)));
+    // dynamic minimum: use at least 35% of viewport or 220px whichever is larger
+    const minAvailable = Math.max(120, Math.round(Math.max(220, window.innerWidth * 0.35)));
     const maxAvailable = Math.max(48, Math.round(headerRect.width - 16));
     const available = Math.max(Math.min(boosted, maxAvailable), minAvailable);
     if (window.__UB_DEBUG_HEADER) {
