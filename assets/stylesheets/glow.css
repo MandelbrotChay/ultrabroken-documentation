@@ -556,4 +556,30 @@ html, body, .md-content, .md-nav, .md-sidebar {
   background: transparent;
 }
 
+/* Strong override: center header title absolutely and constrain by viewport
+   so clipping reserve affects visible width regardless of theme wrappers. */
+.md-header__title {
+  position: absolute !important;
+  left: 50% !important;
+  top: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  display: block !important;
+  width: auto !important;
+  max-width: calc(100vw - 140px) !important; /* adjust this reserve to control clipping */
+  padding: 0 !important;
+  margin: 0 auto !important;
+  white-space: nowrap !important;
+  overflow: visible !important;
+  text-align: center !important;
+  pointer-events: none !important; /* let header controls remain clickable */
+}
+.md-header__title .md-ellipsis {
+  display: inline-block !important;
+  max-width: 100% !important;
+  overflow: hidden !important;
+  white-space: nowrap !important;
+  text-overflow: ellipsis !important;
+  pointer-events: auto !important; /* make text selectable/clickable if needed */
+}
+
 
