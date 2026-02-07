@@ -38,6 +38,14 @@ html, body {
   max-width: none !important;
   width: auto !important;
 }
+
+/* Aggressive override for header title link */
+.md-header__title--active,
+.md-header__title,
+[class*="md-header__title"] {
+  max-width: 80vw !important;
+}
+
 .md-header__button.md-logo {
   color: var(--teal-glow) !important;
   text-shadow: none !important;
