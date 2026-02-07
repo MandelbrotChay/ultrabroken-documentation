@@ -49,11 +49,11 @@ document.addEventListener('DOMContentLoaded', function () {
     // available = distance from text left to viewport right minus controlsWidth and a small margin
     const margin = 6; // breathing room between text and controls
     const rawAvailable = Math.round(window.innerWidth - textRect.left - (controlsWidth + buffer) - margin);
-    // reduce aggressive boosting so clipping occurs earlier (enables marquee)
-    const zoomBoost = 0; // previously 22% — set to 0 to avoid over-reserving space
+    // slight additional boost so clipping starts a little later
+    const zoomBoost = Math.round(window.innerWidth * 0.22); // 22% of viewport width
     const boosted = rawAvailable + zoomBoost;
-    // dynamic minimum: use a smaller floor so long titles can clip and scroll
-    const minAvailable = Math.max(240, Math.round(window.innerWidth * 0.45));
+    // dynamic minimum: use at least 55% of viewport or 360px whichever is larger
+    const minAvailable = Math.max(360, Math.round(Math.max(360, window.innerWidth * 0.55)));
     const maxAvailable = Math.max(48, Math.round(headerRect.width - 16));
     const available = Math.max(Math.min(boosted, maxAvailable), minAvailable);
     if (window.__UB_DEBUG_HEADER) {
