@@ -21,9 +21,9 @@ html, body {
   box-shadow: 0 6px 24px rgba(0,240,194,0.3);
 }
 
-/* Prevent accidental horizontal scroll from header content */
+/* Prevent accidental scroll from header content */
 .md-header {
-  overflow-x: hidden !important;
+  overflow: hidden !important;
 }
 
 .md-header__title {
@@ -31,11 +31,10 @@ html, body {
   text-shadow: none !important;
   font-weight: 600;
   font-family: 'New Rocker', 'Texturina', Georgia, 'Times New Roman', serif !important;
-  overflow: visible !important;
   display: flex !important;
   align-items: center !important;
-  flex: 1 1 auto !important; /* fill available header space so title can be truncated correctly */
-  min-width: 0 !important; /* allow child to shrink for ellipsis */
+  flex: 1 1 auto !important;
+  min-width: 0 !important;
 }
 .md-header__button.md-logo {
   color: var(--teal-glow) !important;
@@ -49,13 +48,11 @@ html, body {
   display: block !important;
   box-sizing: border-box !important;
   flex: 1 1 auto !important;
-  min-width: 0 !important; /* required so flex child can shrink for ellipsis */
-  width: calc(100% - 16px) !important; /* minimal reserve so title extends far right */
+  min-width: 0 !important;
+  width: calc(100% - 16px) !important;
   overflow: hidden !important;
   white-space: nowrap !important;
   text-overflow: ellipsis !important;
-  padding: 0.5em 0.5em !important; /* horizontal padding kept small */
-  margin: -0.5em 0 !important; /* vertical compensation only */
 }
 
 /* Lighten navigation tabs (global header navigation) */
