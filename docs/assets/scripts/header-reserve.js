@@ -25,6 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
       .filter(el => !!el.getBoundingClientRect);
 
     const visible = candidates
+      .filter(el => !el.classList.contains('md-logo') && !el.closest('.md-header__title'))
       .map(el => el.getBoundingClientRect())
       .filter(r => r.width > 0 && r.height > 0 && r.right > headerRect.left);
 
@@ -43,7 +44,12 @@ document.addEventListener('DOMContentLoaded', function () {
     const titleRect = title.getBoundingClientRect();
     // available = distance from title left to viewport right minus controlsWidth and a small margin
     const margin = 6; // breathing room between text and controls
-    const available = Math.max(0, Math.round(window.innerWidth - titleRect.left - (controlsWidth + buffer) - margin));
+    // Compute available; clamp to a reasonable minimum to avoid showing just
+    // a single character at extreme zoom levels. Also cap at header width.
+    const rawAvailable = Math.round(window.innerWidth - titleRect.left - (controlsWidth + buffer) - margin);
+    const minAvailable = 140; // px — shows a useful amount of the title
+    const maxAvailable = Math.max(48, Math.round(headerRect.width - 16));
+    const available = Math.max(Math.min(rawAvailable, maxAvailable), minAvailable);
     document.documentElement.style.setProperty('--header-available-width', available + 'px');
   }
 
