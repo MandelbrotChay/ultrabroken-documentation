@@ -108,7 +108,16 @@ document.addEventListener('DOMContentLoaded', () => {
       window.addEventListener('resize', () => { stop(); requestAnimationFrame(check); });
     }
 
-    
+    /* Watch for title content changes (e.g. when scrolling past section headings
+       and MkDocs updates the header to show the current section name). Reset
+       marquee scroll position so each new title starts from the beginning. */
+    if (window.MutationObserver) {
+      const mo = new MutationObserver(() => {
+        stop();
+        requestAnimationFrame(check);
+      });
+      mo.observe(el, { childList: true, characterData: true, subtree: true });
+    }
 
     requestAnimationFrame(check);
     setTimeout(check, 600);
