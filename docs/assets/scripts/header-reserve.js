@@ -52,8 +52,8 @@ document.addEventListener('DOMContentLoaded', function () {
     // boost available width more aggressively so clipping starts much later when zooming
     const zoomBoost = Math.round(window.innerWidth * 0.18); // 18% of viewport width
     const boosted = rawAvailable + zoomBoost;
-    // dynamic minimum: use at least 35% of viewport or 220px whichever is larger
-    const minAvailable = Math.max(120, Math.round(Math.max(220, window.innerWidth * 0.35)));
+    // dynamic minimum: use at least 50% of viewport or 320px whichever is larger
+    const minAvailable = Math.max(320, Math.round(Math.max(320, window.innerWidth * 0.5)));
     const maxAvailable = Math.max(48, Math.round(headerRect.width - 16));
     const available = Math.max(Math.min(boosted, maxAvailable), minAvailable);
     if (window.__UB_DEBUG_HEADER) {
