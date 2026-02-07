@@ -3,19 +3,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const SPEED_PX_PER_SEC = 40; // unified scroll speed
   const GAP = 24; // px gap before reset
-  const PAUSE_MS = 1200; // pause at each end (increased)
 
   const containers = document.querySelectorAll('.md-header__title .md-ellipsis');
-  if (window.__UB_DEBUG_HEADER) console.debug('header-marquee: containers found', containers.length);
-  // Clean up any leftover marquee DOM from previous script versions so we
-  // always initialize a single, consistent implementation.
   containers.forEach(container => {
-    const hadOld = container.querySelector('.marquee-track, .marquee-item, .ub-marquee-inner') || container.dataset.ubMarqueeInitialized;
-    if (hadOld) {
-      const text = container.textContent.trim();
-      container.textContent = text; // strip any old markup
-      delete container.dataset.ubMarqueeInitialized;
-    }
     if (container.dataset.ubMarqueeInitialized) return;
     container.dataset.ubMarqueeInitialized = '1';
 
@@ -33,44 +23,28 @@ document.addEventListener('DOMContentLoaded', () => {
     let lastTs = 0;
     let offset = 0;
     let running = false;
-    let dir = 1; // 1 -> move left (increase offset), -1 -> move right (decrease offset)
 
     function tick(ts) {
       if (!running) return;
-      if (window.__UB_DEBUG_HEADER) console.debug('header-marquee: tick', { offset, dir });
       if (!lastTs) lastTs = ts;
       const dt = (ts - lastTs) / 1000;
       lastTs = ts;
-      offset += SPEED_PX_PER_SEC * dt * dir;
+      offset += SPEED_PX_PER_SEC * dt;
 
       const itemWidth = inner.scrollWidth;
       const containerWidth = container.clientWidth;
-      if (window.__UB_DEBUG_HEADER) console.debug('header-marquee: sizes', { itemWidth, containerWidth, maxShift: Math.max(0, itemWidth - containerWidth + GAP) });
       const maxShift = Math.max(0, itemWidth - containerWidth + GAP);
 
       if (offset >= maxShift) {
-        offset = maxShift;
-        inner.style.transform = `translateX(${-offset}px)`;
+        inner.style.transform = `translateX(${-maxShift}px)`;
         running = false;
         setTimeout(() => {
-          dir = -1;
-          lastTs = 0;
+          offset = 0;
+          inner.style.transform = `translateX(0)`;
+          lastTs = performance.now();
           running = true;
           rafId = requestAnimationFrame(tick);
-        }, PAUSE_MS);
-        return;
-      }
-
-      if (offset <= 0) {
-        offset = 0;
-        inner.style.transform = 'translateX(0)';
-        running = false;
-        setTimeout(() => {
-          dir = 1;
-          lastTs = 0;
-          running = true;
-          rafId = requestAnimationFrame(tick);
-        }, PAUSE_MS);
+        }, 600);
         return;
       }
 
@@ -92,16 +66,12 @@ document.addEventListener('DOMContentLoaded', () => {
       offset = 0;
       inner.style.transform = 'translateX(0)';
       lastTs = 0;
-      dir = 1;
     }
 
     function update() {
       const itemWidth = inner.scrollWidth;
       const containerWidth = container.clientWidth;
-      // Log sizes once so user can see why marquee may not start
-      console.log('header-marquee: sizes', { itemWidth, containerWidth });
-      // Start when real overflow exists (more permissive than previous +2px buffer)
-      if (itemWidth - containerWidth > 1) {
+      if (itemWidth > containerWidth + 2) {
         container.classList.add('is-marquee');
         container.setAttribute('tabindex', '0');
         container.setAttribute('aria-label', inner.textContent.trim());
