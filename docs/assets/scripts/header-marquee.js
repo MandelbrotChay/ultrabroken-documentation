@@ -94,6 +94,118 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(updateMarquee, 500);
   });
 });
+// Unified RAF-based marquee only (old CSS-animation implementation removed)
+document.addEventListener('DOMContentLoaded', () => {
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+  const SPEED_PX_PER_SEC = 40; // unified scroll speed for all titles
+  const GAP = 24; // gap before reset
+
+  const containers = document.querySelectorAll('.md-header__title .md-ellipsis');
+  containers.forEach(container => {
+    if (container.dataset.ubMarqueeInitialized) return;
+    container.dataset.ubMarqueeInitialized = '1';
+
+    const contentHtml = container.innerHTML.trim();
+    const inner = document.createElement('span');
+    inner.className = 'ub-marquee-inner';
+    inner.style.display = 'inline-block';
+    inner.style.whiteSpace = 'nowrap';
+    inner.innerHTML = contentHtml;
+
+    container.innerHTML = '';
+    container.appendChild(inner);
+
+    let rafId = null;
+    let lastTs = 0;
+    let offset = 0;
+    let running = false;
+
+    function tick(ts) {
+      if (!running) return;
+      if (!lastTs) lastTs = ts;
+      const dt = (ts - lastTs) / 1000;
+      lastTs = ts;
+      offset += SPEED_PX_PER_SEC * dt;
+
+      const itemWidth = inner.scrollWidth;
+      const containerWidth = container.clientWidth;
+      const maxShift = Math.max(0, itemWidth - containerWidth + GAP);
+
+      if (offset >= maxShift) {
+        // reach end — pause briefly then reset
+        inner.style.transform = `translateX(${-maxShift}px)`;
+        running = false;
+        setTimeout(() => {
+          offset = 0;
+          inner.style.transform = `translateX(0)`;
+          lastTs = performance.now();
+          running = true;
+          rafId = requestAnimationFrame(tick);
+        }, 600);
+        return;
+      }
+
+      inner.style.transform = `translateX(${-offset}px)`;
+      rafId = requestAnimationFrame(tick);
+    }
+
+    function start() {
+      if (running) return;
+      running = true;
+      lastTs = 0;
+      rafId = requestAnimationFrame(tick);
+    }
+
+    function stop() {
+      running = false;
+      if (rafId) cancelAnimationFrame(rafId);
+      rafId = null;
+      offset = 0;
+      inner.style.transform = 'translateX(0)';
+      lastTs = 0;
+    }
+
+    function update() {
+      const itemWidth = inner.scrollWidth;
+      const containerWidth = container.clientWidth;
+      if (itemWidth > containerWidth + 2) {
+        container.classList.add('is-marquee');
+        container.setAttribute('tabindex', '0');
+        container.setAttribute('aria-label', inner.textContent.trim());
+        start(); // autoplay when clipped
+      } else {
+        container.classList.remove('is-marquee');
+        container.removeAttribute('tabindex');
+        container.removeAttribute('aria-label');
+        stop();
+      }
+    }
+
+    // pointer/focus controls
+    container.addEventListener('pointerenter', () => start());
+    container.addEventListener('pointerleave', () => {}); // keep autoplay
+    container.addEventListener('focus', () => start());
+    container.addEventListener('blur', () => {});
+
+    if (window.ResizeObserver) {
+      const ro = new ResizeObserver(() => {
+        stop();
+        requestAnimationFrame(update);
+      });
+      ro.observe(container);
+      ro.observe(inner);
+    } else {
+      window.addEventListener('resize', () => {
+        stop();
+        requestAnimationFrame(update);
+      });
+    }
+
+    requestAnimationFrame(update);
+    setTimeout(update, 500);
+  });
+});
 document.addEventListener('DOMContentLoaded', () => {
   if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
