@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const PAUSE_MS = 1200; // pause at each end (increased)
 
   const containers = document.querySelectorAll('.md-header__title .md-ellipsis');
+  if (window.__UB_DEBUG_HEADER) console.debug('header-marquee: containers found', containers.length);
   // Clean up any leftover marquee DOM from previous script versions so we
   // always initialize a single, consistent implementation.
   containers.forEach(container => {
@@ -36,6 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function tick(ts) {
       if (!running) return;
+      if (window.__UB_DEBUG_HEADER) console.debug('header-marquee: tick', { offset, dir });
       if (!lastTs) lastTs = ts;
       const dt = (ts - lastTs) / 1000;
       lastTs = ts;
@@ -43,6 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const itemWidth = inner.scrollWidth;
       const containerWidth = container.clientWidth;
+      if (window.__UB_DEBUG_HEADER) console.debug('header-marquee: sizes', { itemWidth, containerWidth, maxShift: Math.max(0, itemWidth - containerWidth + GAP) });
       const maxShift = Math.max(0, itemWidth - containerWidth + GAP);
 
       if (offset >= maxShift) {
