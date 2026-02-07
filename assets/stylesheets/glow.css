@@ -38,7 +38,7 @@ html body header.md-header div.md-header__inner.md-grid nav.md-header__title,
   align-items: center !important;
   flex: 1 1 auto !important;
   min-width: 0 !important;
-  max-width: calc(100vw - 120px) !important;
+  max-width: 98vw !important;
   width: auto !important;
 }
 
@@ -47,7 +47,7 @@ html body header.md-header div.md-header__inner.md-grid nav.md-header__title,
 .md-header__title > a,
 .md-header__title a,
 .md-header__title * {
-  max-width: calc(100vw - 120px) !important;
+  max-width: 98vw !important;
   overflow: hidden !important;
   display: block !important;
 }
@@ -65,7 +65,7 @@ html body header.md-header div.md-header__inner.md-grid nav.md-header__title .md
 .md-header__title .md-ellipsis {
   display: block !important;
   box-sizing: border-box !important;
-  max-width: calc(100vw - 120px) !important;
+  max-width: 98vw !important;
   min-width: 0 !important;
   width: auto !important;
   overflow: hidden !important;
