@@ -19,6 +19,7 @@ html, body {
 .md-header {
   background: linear-gradient(180deg, #00796b, #00695c) !important;
   box-shadow: 0 6px 24px rgba(0,240,194,0.3);
+  border-bottom: 3px solid red !important; /* DEBUG: verify CSS loads */
 }
 
 /* Prevent accidental scroll from header content */
@@ -26,6 +27,8 @@ html, body {
   overflow: hidden !important;
 }
 
+html body header.md-header div.md-header__inner.md-grid nav.md-header__title,
+.md-header .md-header__inner .md-header__title,
 .md-header__title {
   color: var(--teal-glow) !important;
   text-shadow: none !important;
@@ -35,14 +38,16 @@ html, body {
   align-items: center !important;
   flex: 1 1 auto !important;
   min-width: 0 !important;
-  max-width: 80vw !important;
+  max-width: 95vw !important;
   width: auto !important;
 }
 
 /* Target the link inside header title */
-.md-header__title > * {
+.md-header__title > *,
+.md-header__title > a {
   max-width: 100% !important;
   overflow: hidden !important;
+  display: block !important;
 }
 
 .md-header__button.md-logo {
@@ -53,10 +58,12 @@ html, body {
   overflow: visible !important;
 }
 
+html body header.md-header div.md-header__inner.md-grid nav.md-header__title .md-ellipsis,
+.md-header .md-header__inner .md-header__title .md-ellipsis,
 .md-header__title .md-ellipsis {
   display: block !important;
   box-sizing: border-box !important;
-  max-width: 80vw !important;
+  max-width: 95vw !important;
   min-width: 0 !important;
   width: auto !important;
   overflow: hidden !important;
