@@ -5,6 +5,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const cssSpeed = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--ub-marquee-speed')) || 0;
   const SPEED_PX_PER_SEC = cssSpeed > 0 ? cssSpeed : 40; // unified scroll speed (px/sec)
   const GAP = 24; // px gap before reset
+  const pauseMsCss = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--ub-marquee-pause-ms')) || 0;
+  const PAUSE_MS = pauseMsCss > 0 ? pauseMsCss : 1200; // pause at each end (ms)
 
   const containers = document.querySelectorAll('.md-header__title .md-ellipsis');
   containers.forEach(container => {
@@ -25,28 +27,42 @@ document.addEventListener('DOMContentLoaded', () => {
     let lastTs = 0;
     let offset = 0;
     let running = false;
+    let dir = 1; // 1 => move left/increase offset, -1 => move right/decrease offset
 
     function tick(ts) {
       if (!running) return;
       if (!lastTs) lastTs = ts;
       const dt = (ts - lastTs) / 1000;
       lastTs = ts;
-      offset += SPEED_PX_PER_SEC * dt;
+      offset += SPEED_PX_PER_SEC * dt * dir;
 
       const itemWidth = inner.scrollWidth;
       const containerWidth = container.clientWidth;
       const maxShift = Math.max(0, itemWidth - containerWidth + GAP);
 
       if (offset >= maxShift) {
-        inner.style.transform = `translateX(${-maxShift}px)`;
+        offset = maxShift;
+        inner.style.transform = `translateX(${-offset}px)`;
         running = false;
         setTimeout(() => {
-          offset = 0;
-          inner.style.transform = `translateX(0)`;
-          lastTs = performance.now();
+          dir = -1;
+          lastTs = 0;
           running = true;
           rafId = requestAnimationFrame(tick);
-        }, 600);
+        }, PAUSE_MS);
+        return;
+      }
+
+      if (offset <= 0) {
+        offset = 0;
+        inner.style.transform = 'translateX(0)';
+        running = false;
+        setTimeout(() => {
+          dir = 1;
+          lastTs = 0;
+          running = true;
+          rafId = requestAnimationFrame(tick);
+        }, PAUSE_MS);
         return;
       }
 
@@ -68,6 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
       offset = 0;
       inner.style.transform = 'translateX(0)';
       lastTs = 0;
+      dir = 1;
     }
 
     function update() {
