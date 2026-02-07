@@ -35,6 +35,8 @@ html, body {
   align-items: center !important;
   flex: 1 1 auto !important;
   min-width: 0 !important;
+  max-width: none !important;
+  width: auto !important;
 }
 .md-header__button.md-logo {
   color: var(--teal-glow) !important;
