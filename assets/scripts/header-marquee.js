@@ -98,7 +98,10 @@ document.addEventListener('DOMContentLoaded', () => {
     function update() {
       const itemWidth = inner.scrollWidth;
       const containerWidth = container.clientWidth;
-      if (itemWidth > containerWidth + 2) {
+      // Log sizes once so user can see why marquee may not start
+      console.log('header-marquee: sizes', { itemWidth, containerWidth });
+      // Start when real overflow exists (more permissive than previous +2px buffer)
+      if (itemWidth - containerWidth > 1) {
         container.classList.add('is-marquee');
         container.setAttribute('tabindex', '0');
         container.setAttribute('aria-label', inner.textContent.trim());
