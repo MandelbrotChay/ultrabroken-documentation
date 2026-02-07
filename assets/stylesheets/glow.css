@@ -35,15 +35,14 @@ html, body {
   align-items: center !important;
   flex: 1 1 auto !important;
   min-width: 0 !important;
-  max-width: none !important;
+  max-width: 80vw !important;
   width: auto !important;
 }
 
-/* Aggressive override for header title link */
-.md-header__title--active,
-.md-header__title,
-[class*="md-header__title"] {
-  max-width: 80vw !important;
+/* Target the link inside header title */
+.md-header__title > * {
+  max-width: 100% !important;
+  overflow: hidden !important;
 }
 
 .md-header__button.md-logo {
