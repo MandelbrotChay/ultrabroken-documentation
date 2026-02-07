@@ -35,8 +35,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const minLeft = Math.min(...visible.map(r => r.left));
     const controlsWidth = Math.max(0, Math.round(headerRect.right - minLeft));
-    const buffer = 8; // small breathing room
+    const buffer = 8; // small breathing room for controls measurement
+    // Set controls width as a fallback (used by calc fallback in CSS)
     document.documentElement.style.setProperty('--header-controls-width', (controlsWidth + buffer) + 'px');
+
+    // Compute available width from viewport right edge so only necessary clipping occurs
+    const titleRect = title.getBoundingClientRect();
+    // available = distance from title left to viewport right minus controlsWidth and a small margin
+    const margin = 6; // breathing room between text and controls
+    const available = Math.max(0, Math.round(window.innerWidth - titleRect.left - (controlsWidth + buffer) - margin));
+    document.documentElement.style.setProperty('--header-available-width', available + 'px');
   }
 
   // initial update and on resize/DOM changes
