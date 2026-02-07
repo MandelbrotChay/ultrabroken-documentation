@@ -44,8 +44,10 @@ html body header.md-header div.md-header__inner.md-grid nav.md-header__title,
 
 /* Target the link inside header title */
 .md-header__title > *,
-.md-header__title > a {
-  max-width: 100% !important;
+.md-header__title > a,
+.md-header__title a,
+.md-header__title * {
+  max-width: 95vw !important;
   overflow: hidden !important;
   display: block !important;
 }
