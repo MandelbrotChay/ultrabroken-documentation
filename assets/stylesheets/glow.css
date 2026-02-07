@@ -49,7 +49,9 @@ html, body {
 .md-header__title .md-ellipsis {
   display: block !important;
   box-sizing: border-box !important;
-  max-width: calc(100vw - 100px) !important;
+  max-width: 80vw !important;
+  min-width: 0 !important;
+  width: auto !important;
   overflow: hidden !important;
   white-space: nowrap !important;
   text-overflow: ellipsis !important;
