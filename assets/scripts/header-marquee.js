@@ -1,135 +1,114 @@
+/**
+ * Ping-pong marquee for clipped header titles.
+ *
+ * Uses the native scrollLeft property on the overflow:hidden container.
+ * Overflow detection is simply  el.scrollWidth > el.clientWidth — no
+ * inner-span wrappers or transform tricks needed.
+ *
+ * Configurable via CSS custom properties:
+ *   --ub-marquee-speed      scroll speed in px/sec  (default 40)
+ *   --ub-marquee-pause-ms   pause at each end in ms (default 1200)
+ */
 document.addEventListener('DOMContentLoaded', () => {
   if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
-  // Allow overriding speed via CSS variable `--ub-marquee-speed` (px/sec).
-  const cssSpeed = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--ub-marquee-speed')) || 0;
-  const SPEED_PX_PER_SEC = cssSpeed > 0 ? cssSpeed : 40; // unified scroll speed (px/sec)
-  const cssPause = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--ub-marquee-pause-ms')) || 0;
-  const PAUSE_MS = cssPause > 0 ? cssPause : 1200; // pause at each end (ms)
-  const GAP = 24; // px gap before reset
+  const root = document.documentElement;
+  const cssSpeed  = parseFloat(getComputedStyle(root).getPropertyValue('--ub-marquee-speed')) || 0;
+  const SPEED     = cssSpeed > 0 ? cssSpeed : 40;
+  const cssPause  = parseInt(getComputedStyle(root).getPropertyValue('--ub-marquee-pause-ms'), 10) || 0;
+  const PAUSE     = cssPause > 0 ? cssPause : 1200;
 
-  const containers = document.querySelectorAll('.md-header__title .md-ellipsis');
-  containers.forEach(container => {
-    // Clean up any old marquee DOM from previous initializations
-    const oldInner = container.querySelector('.ub-marquee-inner');
-    if (oldInner) {
-      const text = oldInner.textContent;
-      container.textContent = text;
-      delete container.dataset.ubMarqueeInitialized;
+  document.querySelectorAll('.md-header__title .md-ellipsis').forEach(el => {
+    if (el.dataset.ubMarquee) return;
+    el.dataset.ubMarquee = '1';
+
+    /* ---- clean up DOM left by earlier marquee versions ---- */
+    const oldInner = el.querySelector('.ub-marquee-inner');
+    if (oldInner) el.textContent = oldInner.textContent;
+    const oldTrack = el.querySelector('.marquee-track');
+    if (oldTrack) {
+      const items = oldTrack.querySelectorAll('.marquee-item');
+      el.textContent = items.length ? items[0].textContent : oldTrack.textContent;
     }
-    
-    if (container.dataset.ubMarqueeInitialized) return;
-    container.dataset.ubMarqueeInitialized = '1';
 
-    const contentHtml = container.innerHTML.trim();
-    const inner = document.createElement('span');
-    inner.className = 'ub-marquee-inner';
-    inner.style.display = 'inline-block';
-    inner.style.whiteSpace = 'nowrap';
-    inner.style.maxWidth = 'none'; // Allow inner to grow beyond container
-    inner.innerHTML = contentHtml;
+    /* ---- animation state ---- */
+    let raf   = null;
+    let prev  = 0;      // previous rAF timestamp
+    let pos   = 0;      // virtual scrollLeft position
+    let dir   = 1;      // 1 = forward (right), -1 = backward (left)
+    let going = false;
 
-    container.innerHTML = '';
-    container.appendChild(inner);
-
-    let rafId = null;
-    let lastTs = 0;
-    let offset = 0;
-    let running = false;
-    let dir = 1; // 1 = scroll right-to-left, -1 = scroll left-to-right
+    function maxScroll() {
+      return Math.max(0, el.scrollWidth - el.clientWidth);
+    }
 
     function tick(ts) {
-      if (!running) return;
-      if (!lastTs) lastTs = ts;
-      const dt = (ts - lastTs) / 1000;
-      lastTs = ts;
-      offset += SPEED_PX_PER_SEC * dt * dir;
+      if (!going) return;
+      if (!prev) { prev = ts; raf = requestAnimationFrame(tick); return; }
+      const dt = (ts - prev) / 1000;
+      prev = ts;
 
-      const itemWidth = inner.scrollWidth;
-      const containerWidth = container.clientWidth;
-      const maxShift = Math.max(0, itemWidth - containerWidth + GAP);
+      pos += SPEED * dt * dir;
+      const mx = maxScroll();
 
-      if (offset >= maxShift) {
-        offset = maxShift;
-        inner.style.transform = `translateX(${-offset}px)`;
-        running = false;
-        setTimeout(() => {
-          dir = -1;
-          lastTs = 0;
-          running = true;
-          rafId = requestAnimationFrame(tick);
-        }, PAUSE_MS);
+      /* hit far end */
+      if (dir === 1 && pos >= mx) {
+        pos = mx;
+        el.scrollLeft = pos;
+        going = false;
+        setTimeout(() => { dir = -1; prev = 0; going = true; raf = requestAnimationFrame(tick); }, PAUSE);
         return;
       }
 
-      if (offset <= 0) {
-        offset = 0;
-        inner.style.transform = 'translateX(0)';
-        running = false;
-        setTimeout(() => {
-          dir = 1;
-          lastTs = 0;
-          running = true;
-          rafId = requestAnimationFrame(tick);
-        }, PAUSE_MS);
+      /* hit home end */
+      if (dir === -1 && pos <= 0) {
+        pos = 0;
+        el.scrollLeft = 0;
+        going = false;
+        setTimeout(() => { dir = 1; prev = 0; going = true; raf = requestAnimationFrame(tick); }, PAUSE);
         return;
       }
 
-      inner.style.transform = `translateX(${-offset}px)`;
-      rafId = requestAnimationFrame(tick);
+      el.scrollLeft = pos;
+      raf = requestAnimationFrame(tick);
     }
 
     function start() {
-      if (running) return;
-      running = true;
-      lastTs = 0;
-      rafId = requestAnimationFrame(tick);
+      if (going) return;
+      if (maxScroll() < 2) return;
+      going = true;
+      prev  = 0;
+      raf   = requestAnimationFrame(tick);
     }
 
     function stop() {
-      running = false;
-      if (rafId) cancelAnimationFrame(rafId);
-      rafId = null;
-      offset = 0;
-      inner.style.transform = 'translateX(0)';
-      lastTs = 0;
-      dir = 1;
+      going = false;
+      if (raf) cancelAnimationFrame(raf);
+      raf  = null;
+      pos  = 0;
+      dir  = 1;
+      prev = 0;
+      el.scrollLeft = 0;
     }
 
-    function update() {
-      const itemWidth = inner.scrollWidth;
-      const containerWidth = container.clientWidth;
-      if (itemWidth > containerWidth + 2) {
-        container.classList.add('is-marquee');
-        container.setAttribute('tabindex', '0');
-        container.setAttribute('aria-label', inner.textContent.trim());
+    function check() {
+      if (maxScroll() > 2) {
+        el.classList.add('is-marquee');
         start();
       } else {
-        container.classList.remove('is-marquee');
-        container.removeAttribute('tabindex');
-        container.removeAttribute('aria-label');
+        el.classList.remove('is-marquee');
         stop();
       }
     }
 
-    container.addEventListener('pointerenter', () => start());
-    container.addEventListener('focus', () => start());
-
+    /* ---- observers ---- */
     if (window.ResizeObserver) {
-      const ro = new ResizeObserver(() => {
-        stop();
-        requestAnimationFrame(update);
-      });
-      ro.observe(container);
-      ro.observe(inner);
+      new ResizeObserver(() => { stop(); requestAnimationFrame(check); }).observe(el);
     } else {
-      window.addEventListener('resize', () => {
-        stop();
-        requestAnimationFrame(update);
-      });
+      window.addEventListener('resize', () => { stop(); requestAnimationFrame(check); });
     }
 
-    requestAnimationFrame(update);
-    setTimeout(update, 500);
+    requestAnimationFrame(check);
+    setTimeout(check, 600);
   });
 });
