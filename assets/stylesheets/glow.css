@@ -54,6 +54,8 @@ html, body {
   text-overflow: ellipsis !important;
   padding: 0 0.5rem !important; /* reduced padding so clipping occurs later */
   margin: 0 !important;
+  /* slight left nudge so title appears shifted left and exposes more right-side text */
+  margin-left: -0.375rem !important; /* ~6px */
 }
 
 /* Marquee for clipped header titles
