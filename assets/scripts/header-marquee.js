@@ -108,13 +108,18 @@ document.addEventListener('DOMContentLoaded', () => {
       window.addEventListener('resize', () => { stop(); requestAnimationFrame(check); });
     }
 
-    /* Watch for title content changes (e.g. when scrolling past section headings
-       and MkDocs updates the header to show the current section name). Reset
-       marquee scroll position so each new title starts from the beginning. */
+    /* Track text content and reset marquee only when it actually changes
+       (e.g. when scrolling past section headings and MkDocs updates the
+       header to show the current section name). */
+    let lastText = el.textContent.trim();
     if (window.MutationObserver) {
       const mo = new MutationObserver(() => {
-        stop();
-        requestAnimationFrame(check);
+        const newText = el.textContent.trim();
+        if (newText !== lastText) {
+          lastText = newText;
+          stop();
+          requestAnimationFrame(check);
+        }
       });
       mo.observe(el, { childList: true, characterData: true, subtree: true });
     }
