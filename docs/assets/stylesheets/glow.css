@@ -18,7 +18,7 @@ html, body {
 /* Header background - solid backdrop for better visibility */
 .md-header {
   background: linear-gradient(180deg, #00796b, #00695c) !important;
-  box-shadow: 0 6px 24px rgba(0,240,194,0.3);
+  /*box-shadow: 0 6px 24px rgba(0,240,194,0.3);*/
   /* Prevent header children from causing horizontal scroll */
   overflow-x: hidden !important;
 }
@@ -57,34 +57,9 @@ html, body {
        max-width: var(--header-available-width, calc(100% - var(--header-controls-width, 84px))) !important;
 }
 
-/* Marquee track for clipped header titles */
+/* Scrolling indicator for clipped header titles (scrollLeft-based marquee) */
 .md-header__title .md-ellipsis.is-marquee {
-  position: relative !important;
-}
-.md-header__title .md-ellipsis .marquee-track {
-  display: inline-block;
-  white-space: nowrap;
-  will-change: transform;
-  animation-name: ub-marquee;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-play-state: paused;
-}
-.md-header__title .md-ellipsis.is-marquee:focus .marquee-track,
-.md-header__title .md-ellipsis.is-marquee:hover .marquee-track {
-  animation-play-state: running !important;
-}
-
-@keyframes ub-marquee {
-  from { transform: translateX(0); }
-  to { transform: translateX(calc(var(--marquee-distance, 0px) * -1)); }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .md-header__title .md-ellipsis .marquee-track {
-    animation: none !important;
-    transform: none !important;
-  }
+  cursor: default;
 }
 
 /* Lighten navigation tabs (global header navigation) */
