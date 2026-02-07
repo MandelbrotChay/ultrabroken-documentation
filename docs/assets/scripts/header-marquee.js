@@ -44,6 +44,8 @@ document.addEventListener('DOMContentLoaded', () => {
         track.style.animationDuration = duration + 's';
 
         container.classList.add('is-marquee');
+        // Autoplay when clipped
+        track.style.animationPlayState = 'running';
         // keyboard accessibility
         container.setAttribute('tabindex', '0');
         container.setAttribute('aria-label', item1.textContent.trim());
@@ -51,6 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
         container.classList.remove('is-marquee');
         track.style.animationDuration = '';
         track.style.removeProperty('--marquee-distance');
+        track.style.animationPlayState = 'paused';
         container.removeAttribute('tabindex');
         container.removeAttribute('aria-label');
       }
