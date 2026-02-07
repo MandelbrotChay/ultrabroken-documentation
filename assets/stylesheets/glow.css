@@ -19,39 +19,22 @@ html, body {
 .md-header {
   background: linear-gradient(180deg, #00796b, #00695c) !important;
   box-shadow: 0 6px 24px rgba(0,240,194,0.3);
-  border-bottom: 3px solid red !important; /* DEBUG: verify CSS loads */
 }
 
-/* Prevent accidental scroll from header content */
+/* Prevent accidental horizontal scroll from header content */
 .md-header {
-  overflow: hidden !important;
+  overflow-x: hidden !important;
 }
 
-html body header.md-header div.md-header__inner.md-grid nav.md-header__title,
-.md-header .md-header__inner .md-header__title,
 .md-header__title {
   color: var(--teal-glow) !important;
   text-shadow: none !important;
   font-weight: 600;
   font-family: 'New Rocker', 'Texturina', Georgia, 'Times New Roman', serif !important;
-  display: flex !important;
-  align-items: center !important;
-  flex: 1 1 auto !important;
-  min-width: 0 !important;
-  max-width: 98vw !important;
-  width: auto !important;
+  overflow: visible !important;
+  flex: 1 1 auto !important; /* fill available header space so title can be truncated correctly */
+  min-width: 0 !important; /* allow child to shrink for ellipsis */
 }
-
-/* Target the link inside header title */
-.md-header__title > *,
-.md-header__title > a,
-.md-header__title a,
-.md-header__title * {
-  max-width: 98vw !important;
-  overflow: hidden !important;
-  display: block !important;
-}
-
 .md-header__button.md-logo {
   color: var(--teal-glow) !important;
   text-shadow: none !important;
@@ -60,17 +43,15 @@ html body header.md-header div.md-header__inner.md-grid nav.md-header__title,
   overflow: visible !important;
 }
 
-html body header.md-header div.md-header__inner.md-grid nav.md-header__title .md-ellipsis,
-.md-header .md-header__inner .md-header__title .md-ellipsis,
 .md-header__title .md-ellipsis {
   display: block !important;
   box-sizing: border-box !important;
-  max-width: 98vw !important;
-  min-width: 0 !important;
-  width: auto !important;
+  max-width: 100% !important; /* parent-relative; will fit remaining header space */
   overflow: hidden !important;
   white-space: nowrap !important;
   text-overflow: ellipsis !important;
+  padding: 0.5em 1em !important;
+  margin: -0.5em -1em !important;
 }
 
 /* Lighten navigation tabs (global header navigation) */
