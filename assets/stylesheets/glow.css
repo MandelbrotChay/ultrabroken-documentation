@@ -21,21 +21,12 @@ html, body {
   box-shadow: 0 6px 24px rgba(0,240,194,0.3);
 }
 
-/* Prevent accidental horizontal scroll from header content */
-.md-header {
-  overflow-x: hidden !important;
-}
-
 .md-header__title {
   color: var(--teal-glow) !important;
   text-shadow: none !important;
   font-weight: 600;
   font-family: 'New Rocker', 'Texturina', Georgia, 'Times New Roman', serif !important;
   overflow: visible !important;
-  display: flex !important;
-  align-items: center !important;
-  flex: 1 1 auto !important; /* fill available header space so title can be truncated correctly */
-  min-width: 0 !important; /* allow child to shrink for ellipsis */
 }
 .md-header__button.md-logo {
   color: var(--teal-glow) !important;
@@ -46,52 +37,8 @@ html, body {
 }
 
 .md-header__title .md-ellipsis {
-  display: block !important;
-  box-sizing: border-box !important;
-  max-width: 100% !important; /* parent-relative; will fit remaining header space */
-  overflow: hidden !important;
-  white-space: nowrap !important;
-  text-overflow: ellipsis !important;
-  padding: 0 0.5rem !important; /* reduced padding so clipping occurs later */
-  margin: 0 !important;
-  /* slight left nudge so title appears shifted left and exposes more right-side text */
-  margin-left: -0.375rem !important; /* ~6px */
-}
-
-/* Marquee for clipped header titles
-   - JS will add `.is-marquee` and set CSS vars when the title overflows.
-   - Animation runs on :hover or :focus to avoid motion by default. Respects
-     `prefers-reduced-motion` by disabling animations for those users. */
-.md-header__title .md-ellipsis.is-marquee {
-  position: relative !important;
-  overflow: hidden !important;
-}
-.md-header__title .md-ellipsis .marquee-inner {
-  display: inline-block;
-  will-change: transform;
-  /* animation defined but paused by default; JS sets --marquee-duration */
-  animation-name: ub-marquee-scroll;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: normal;
-  animation-play-state: paused;
-  padding-right: 1rem; /* small gap when scrolling */
-}
-.md-header__title .md-ellipsis.is-marquee:focus .marquee-inner,
-.md-header__title .md-ellipsis.is-marquee:hover .marquee-inner {
-  animation-play-state: running !important;
-}
-
-@keyframes ub-marquee-scroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(calc(var(--marquee-distance, 0px) * -1)); }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .md-header__title .md-ellipsis .marquee-inner {
-    animation: none !important;
-    transform: none !important;
-  }
+  overflow: visible !important;
+  text-overflow: clip !important;
 }
 
 /* Lighten navigation tabs (global header navigation) */
