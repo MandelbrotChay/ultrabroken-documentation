@@ -7,7 +7,7 @@ title: "Culling Area FSFE"
 ## Overview
 A method for FSFE using AreaCulling
 
-## How To
+## Instructions
 ```
 1. Position the target object at the edge of a culling area with a small margin (like the tarry town culling area)
 2 Activate the fuse rune while outside of the culling area, culling the target.
@@ -27,8 +27,6 @@ Alternatively:
 8. Swap equipment.
 ```
 
-
-## Metadata
 ## Notes
 Chain FSFE (Mulberry)
 https://discord.com/channels/1086729144307564648/1113557914444111873/1217688933807296593

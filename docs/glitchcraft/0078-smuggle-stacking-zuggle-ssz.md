@@ -1,4 +1,4 @@
----
+﻿---
 title: "Smuggle Stacking Zuggle (SSZ)"
 ---
 
@@ -7,7 +7,7 @@ title: "Smuggle Stacking Zuggle (SSZ)"
 ## Overview
 Allows to zuggle bows and shields in version 1.1.2. Weapon zuggle on 1.1.2 is a little bit more complicated. Check the next glitch (FEZ) for that.
 
-## How To
+## Instructions
 ```
 1. Perform an equipment smuggle with either a bow or shield.
 2. Hold L to open the rune menu and upon letting go of L, hold either D-Pad Left (for shields) or D-Pad Right + ZR (for bows), to open the quick menu.
@@ -18,7 +18,6 @@ Allows to zuggle bows and shields in version 1.1.2. Weapon zuggle on 1.1.2 is a 
 ```
 
 
-## Metadata
 ## Notes
 Loading a previous save will transfer a stacked bow/shield to that save. Effectivley allowing you to dupe it and retain it's modifier.
 

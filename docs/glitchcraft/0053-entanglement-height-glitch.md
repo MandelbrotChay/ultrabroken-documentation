@@ -1,4 +1,4 @@
----
+﻿---
 title: "Entanglement Height Glitch"
 ---
 
@@ -7,13 +7,12 @@ title: "Entanglement Height Glitch"
 ## Overview
 Suspends Link a certain distance off the ground while shield surfing.
 
-## How To
+## Instructions
 ```
 Fuse entangle a spring to a shield and start a shield surf within its activation radius. Or alternatively, move far enough away from the spring that it unloads.
 ```
 
 
-## Metadata
 ## Notes
 Only lasts while shield surfing, but is infintely active.
 Only deactivates upon shield unequip.

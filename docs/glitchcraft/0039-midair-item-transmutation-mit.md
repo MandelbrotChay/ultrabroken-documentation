@@ -1,4 +1,4 @@
----
+﻿---
 title: "Midair Item Transmutation (MIT)"
 ---
 
@@ -11,7 +11,7 @@ Slot B: [8x Banana]
 Slot C: [8x Fish]
 then you do the glitch to get more bananas, what's happening is the game is taking 1 item from slot A, and 4 items from slot B, but once you close your inventory, slot A is empty so then slot B becomes slot A, and slot C becomes slot B, so now it removes the items from the new slot B, which is now the fish, but it still drops bananas on the ground, so when you pick those up you then have more bananas
 
-## How To
+## Instructions
 ```
 This glitch has been made redundant by MSD, see that for a better method
 With this glitch you "lose" items! First you need to organize your inventory. You need 1 item in a slot BEFORE (not directly before) the slot of the item you want to transmutate. The items you are transmutating from will be directly after the items you are transmuting to.
@@ -24,7 +24,6 @@ With this glitch you "lose" items! First you need to organize your inventory. Yo
 ```
 
 
-## Metadata
 ## Notes
 You can chain this many times during 1 shield jump by repeating steps 2-5. It does not take any items if the items are in the last slot.
 

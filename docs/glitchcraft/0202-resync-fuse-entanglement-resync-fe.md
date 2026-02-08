@@ -7,7 +7,7 @@ title: "Resync Fuse Entanglement (Resync FE)"
 ## Overview
 "Fe'ing" with a drop swap drop and then pausing to mess with the fuse prevents a full fuse and causes FE
 
-## How To
+## Instructions
 ```
 Method 1:
 1. Face links back against a wall and target the child with fuse
@@ -41,8 +41,6 @@ This method uses recall for a makeshift wall:
 9. Unpause
 ```
 
-
-## Metadata
 ## Notes
 —
 

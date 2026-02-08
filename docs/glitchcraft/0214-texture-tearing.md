@@ -7,7 +7,7 @@ title: "Texture Tearing"
 ## Overview
 During Menu Overload via Moobe, textures can be loaded incorrectly, broken, or even adopted from the enviroment/other equipment. Resulting in interesting visual effects and unique appearences of hair, armor, and equipment.
 
-## How To
+## Instructions
 ```
 CURRENT METHODS ARE INCONSITENT
 The exact cause of texture tearing remains unknown and there are no well defined steps to replicate it.
@@ -16,8 +16,6 @@ The exact cause of texture tearing remains unknown and there are no well defined
 3. Check periodically for strange colors, and odd or incorect textures.
 ```
 
-
-## Metadata
 ## Notes
 —
 

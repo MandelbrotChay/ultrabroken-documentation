@@ -1,4 +1,4 @@
----
+﻿---
 title: "Drop Restriction"
 ---
 
@@ -7,7 +7,7 @@ title: "Drop Restriction"
 ## Overview
 Prevents zonai devices from spawning out of the inventory.
 
-## How To
+## Instructions
 ```
 1. Hold L
 2. Select the map ability
@@ -18,7 +18,6 @@ Prevents zonai devices from spawning out of the inventory.
 ```
 
 
-## Metadata
 ## Notes
 Only way to cancel it is by closing the game
 

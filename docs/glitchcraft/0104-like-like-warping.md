@@ -1,4 +1,4 @@
----
+﻿---
 title: "Like-Like Warping"
 ---
 
@@ -7,7 +7,7 @@ title: "Like-Like Warping"
 ## Overview
 —
 
-## How To
+## Instructions
 ```
 1. Fuse Entangle a (preferably timed) bomb to a shield.
 
@@ -15,7 +15,6 @@ title: "Like-Like Warping"
 ```
 
 
-## Metadata
 ## Notes
 —
 

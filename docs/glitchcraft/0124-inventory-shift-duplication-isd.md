@@ -1,4 +1,4 @@
----
+﻿---
 title: "Inventory Shift Duplication (ISD)"
 ---
 
@@ -7,7 +7,7 @@ title: "Inventory Shift Duplication (ISD)"
 ## Overview
 Exploits inventory shift after creating an empty inventory slot to duplicate items.
 
-## How To
+## Instructions
 ```
 1. Have one of any type of edible or consumable item in the item menu. Aswell as less than 5 of the item you're trying to duplicate.
 2. While in midair (as such that items drop immediatley when unpausing), consume the consumable item to create an empty inventory slot, and hold 5 of the item directly left in the inventory to the item you're trying to dupe.
@@ -16,7 +16,6 @@ Exploits inventory shift after creating an empty inventory slot to duplicate ite
 ```
 
 
-## Metadata
 ## Notes
 The item that gets duplicated will always be to the right of the item you are holding. Exactly which item, can be controlled by how many inventory empty inventory slots were made.
 

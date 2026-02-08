@@ -1,4 +1,4 @@
----
+﻿---
 title: "Midair Throw Duplication (MTD)"
 ---
 
@@ -7,7 +7,7 @@ title: "Midair Throw Duplication (MTD)"
 ## Overview
 Allows you to dupe any item that can be thrown, including Zonai capsules.
 
-## How To
+## Instructions
 ```
 1. Have only 1 of the item you're trying to dupe in inventory, and find a decently high ledge.
 2. Hold R and select the item to hold the item in Links hand.
@@ -16,7 +16,6 @@ Allows you to dupe any item that can be thrown, including Zonai capsules.
 ```
 
 
-## Metadata
 ## Notes
 —
 

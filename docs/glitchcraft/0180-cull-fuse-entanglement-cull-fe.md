@@ -7,7 +7,7 @@ title: "Cull Fuse Entanglement (Cull FE)"
 ## Overview
 Allows you to Fuse Entangle objects by culling Link the same frame the fuse is applied.
 
-## How To
+## Instructions
 ```
 1. Set up a way to cull Link (LikeLike Stick Smuggling or SDC in a culling area)
 2. Drop down the object to be Fuse Entangled
@@ -21,8 +21,6 @@ Allows you to Fuse Entangle objects by culling Link the same frame the fuse is a
 10. Uncull using an object to pick up or warp to a nearby location
 ```
 
-
-## Metadata
 ## Notes
 Save your progress! This can lead to softlocking your game!
 September 21, 2023 (Original)

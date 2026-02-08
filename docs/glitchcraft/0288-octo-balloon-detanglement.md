@@ -7,15 +7,13 @@ title: "Octo-balloon Detanglement"
 ## Overview
 Allows for easy detanglement of any shield using octoballoons
 
-## How To
+## Instructions
 ```
 1. Fuse octoballoon to a shield and equip FE source shield
 2. Pause while holding ZL, drop equipped shield and swap to octoballoon shield
 3. While continuing to hold ZL, unpause and press B in quick succession
 ```
 
-
-## Metadata
 ## Notes
 —
 

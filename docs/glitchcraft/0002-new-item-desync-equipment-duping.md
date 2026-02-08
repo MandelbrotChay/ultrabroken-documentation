@@ -1,4 +1,4 @@
----
+﻿---
 title: "New Item Desync (equipment duping)"
 ---
 
@@ -7,7 +7,7 @@ title: "New Item Desync (equipment duping)"
 ## Overview
 Desyncs equipment after sorting a new item pickup, allowing for single use duplication, durability transfer, and transfering fused items.
 
-## How To
+## Instructions
 ```
 Pick up NEW item (displays ???) then in the text popup press + , sort inventory, equip something else, close inventory. Now Link should be holding the new item in the overworld but has something else selected in your inventory menu.
 
@@ -16,7 +16,6 @@ Requirement: The new item must change positions when you sort your inventory. So
 
 
 
-## Metadata
 ## Notes
 —
 

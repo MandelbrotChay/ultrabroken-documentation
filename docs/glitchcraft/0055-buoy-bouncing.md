@@ -1,4 +1,4 @@
----
+﻿---
 title: "Buoy Bouncing"
 ---
 
@@ -7,13 +7,12 @@ title: "Buoy Bouncing"
 ## Overview
 Get an abnormaly large shield jump boost when coming into contact with water.
 
-## How To
+## Instructions
 ```
 Time a shield surf to be at the moment before Link starts swimming in water.
 ```
 
 
-## Metadata
 ## Notes
 Initial velocity seems to play an effect when buoy bouncing, such as when falling from a significant height. Also cancels fall damage.
 

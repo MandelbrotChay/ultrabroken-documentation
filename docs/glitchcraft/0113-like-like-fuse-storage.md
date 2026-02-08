@@ -1,4 +1,4 @@
----
+﻿---
 title: "Like-Like Fuse Storage"
 ---
 
@@ -7,7 +7,7 @@ title: "Like-Like Fuse Storage"
 ## Overview
 Fusing to an item on the same frame that a like-like eats it causes fuse storage
 
-## How To
+## Instructions
 ```
 1. Equip helper weapon/shield. 
 2. Fuse target object to helper weapon/shield on the same frame a like-like eats it. 
@@ -19,7 +19,6 @@ Fusing to an item on the same frame that a like-like eats it causes fuse storage
 ```
 
 
-## Metadata
 ## Notes
 Only works with equipment and materials. Zonai devices cannot be culled by like likes, and are instead destroyed when eaten
 

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Arrow Unloading"
 ---
 
@@ -7,7 +7,7 @@ title: "Arrow Unloading"
 ## Overview
 Unloads a fired arrow while retaining its fused attachment, leading to strange interactions.
 
-## How To
+## Instructions
 ```
 Method 1:
 1. Zuggle Overload
@@ -21,7 +21,6 @@ Method 2:
 ```
 
 
-## Metadata
 ## Notes
 Can be used to create batteryless Zonai devices, clip objects through walls, as well as other strange quirks
 .

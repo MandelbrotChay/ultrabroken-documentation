@@ -7,7 +7,7 @@ title: "Mass Amnesia"
 ## Overview
 Freezes objects in a state where gravity does not affect them, as long as they are not messed with by any means.
 
-## How To
+## Instructions
 ```
 General setup:
 1. ZLOT an object and recall-lock it
@@ -22,8 +22,6 @@ Time Bomb setup:
 3. Unzuggle the FE-shield, euip it and shield surf
 ```
 
-
-## Metadata
 ## Notes
 Known means to revert object with Mass Amnesia back to normal:
 - Get too close to the objects

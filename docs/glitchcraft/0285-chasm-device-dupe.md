@@ -7,7 +7,7 @@ title: "Chasm Device Dupe"
 ## Overview
 Unloads throwable items in a way that allows them to be duped by picking them up from Link's hand, most notably zonai capsules
 
-## How To
+## Instructions
 ```
 1. Prepare portacull item
 2. Go into any chasm, make sure you are deep enough that portaculling triggers a chasm load
@@ -16,8 +16,6 @@ Unloads throwable items in a way that allows them to be duped by picking them up
 5. When the chasm load ends, immediately re-select the held item with d-pad up and pick it up
 ```
 
-
-## Metadata
 ## Notes
 Can be performed without portacull by positioning Link underneath the chasm boundary (see example clip), or with ocklusion
 

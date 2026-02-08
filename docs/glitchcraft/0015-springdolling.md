@@ -1,4 +1,4 @@
----
+﻿---
 title: "Springdolling"
 ---
 
@@ -7,7 +7,7 @@ title: "Springdolling"
 ## Overview
 allows you to launch a large horizontal distance using springs
 
-## How To
+## Instructions
 ```
 -Set a spring facing in the dirrection you want to launch. From there, stand next to the spring. 
 -Shield surf, and upon landing, press Y. 
@@ -15,7 +15,6 @@ allows you to launch a large horizontal distance using springs
 ```
 
 
-## Metadata
 ## Notes
 Can be used to clip back inbounds from the depths ceiling. (See Also)
 Can chain more springs to make the horizontal launch more powerful

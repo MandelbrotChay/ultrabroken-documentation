@@ -7,7 +7,7 @@ title: "Hestu Scamming"
 ## Overview
 Escaping the cave quest where Link's inventory gets removed allows you to buy inventory slots from Hestu with just 1 korok seed per slot and reach max inventory slots with significantly less korok seeds.
 
-## How To
+## Instructions
 ```
 Prerequisites:
 - Both the "For the Princess" and "The All-Clucking Cucco" side adventures uncompleted and in your quest log
@@ -23,8 +23,6 @@ Prerequisites:
 8. Travel back to the Foothill Monster Den and talk to the NPCs to quit the minigame
 ```
 
-
-## Metadata
 ## Notes
 —
 

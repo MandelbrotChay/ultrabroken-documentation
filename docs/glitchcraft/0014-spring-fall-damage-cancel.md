@@ -1,4 +1,4 @@
----
+﻿---
 title: "Spring Fall Damage Cancel"
 ---
 
@@ -7,7 +7,7 @@ title: "Spring Fall Damage Cancel"
 ## Overview
 currently allows you to fall from certian heights without taking fall damage
 
-## How To
+## Instructions
 ```
 -Jump or shield surf off a ledge. (Note: if you shield surfed you'll need to pause and unequip the shield before entering bullet time). 
 
@@ -17,7 +17,6 @@ currently allows you to fall from certian heights without taking fall damage
 ```
 
 
-## Metadata
 ## Notes
 Glitchless Fall Damage Cancel
 

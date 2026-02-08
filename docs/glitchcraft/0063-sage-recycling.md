@@ -1,4 +1,4 @@
----
+﻿---
 title: "Sage Recycling"
 ---
 
@@ -7,14 +7,13 @@ title: "Sage Recycling"
 ## Overview
 Resets the cooldown of tulin or sidon.
 
-## How To
+## Instructions
 ```
 1. Shield surf 
 2. Use the ability mid surf
 ```
 
 
-## Metadata
 ## Notes
 SRC with tulin might be frame perfect
 

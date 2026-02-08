@@ -1,4 +1,4 @@
----
+﻿---
 title: "AntiGrav Weapons"
 ---
 
@@ -7,7 +7,7 @@ title: "AntiGrav Weapons"
 ## Overview
 Puts weapons in an "Anti Gravity" state.
 
-## How To
+## Instructions
 ```
 1.0.0-1.1.2 Setup:
 1. Throw a weapon at the same time Link drops it.
@@ -22,7 +22,6 @@ Puts weapons in an "Anti Gravity" state.
 ```
 
 
-## Metadata
 ## Notes
 Performing anti-grav with a weapon ARAZ connection (zonai device fused to weapon and FE'd to a different weapon) causes GAS
 It will obtain the property of anti-gravity unless you un-equip it or throw it. It also retains it's current momentum when dropped.

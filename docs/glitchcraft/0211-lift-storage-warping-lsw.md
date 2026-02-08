@@ -8,7 +8,7 @@ title: "Lift Storage Warping (LSW)"
 Culling link while holding a zlot'ed item puts link into a wrong warp state. After loading a file, he will get placed between his position before the file load and the position from the file loaded. Loading the same file again won't change his position though.
 Using detanglement makes this wrong warp state permanent.
 
-## How To
+## Instructions
 ```
 1. Setup sdc culling
 2. zlot an item, like a battery
@@ -17,8 +17,6 @@ Using detanglement makes this wrong warp state permanent.
 5. (optional, makes it permanent) use a rocket shield
 ```
 
-
-## Metadata
 ## Notes
 Test with like like stick culling
 

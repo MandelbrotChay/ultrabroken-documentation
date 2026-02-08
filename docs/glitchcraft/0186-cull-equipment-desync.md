@@ -7,7 +7,7 @@ title: "Cull Equipment Desync"
 ## Overview
 Allows to have a weapon equipped that is not in the inventory.
 
-## How To
+## Instructions
 ```
 1. Cull 
 2. Equip your target item
@@ -17,8 +17,6 @@ Allows to have a weapon equipped that is not in the inventory.
 6. Uncull
 ```
 
-
-## Metadata
 ## Notes
 Arrow Smuggle
 

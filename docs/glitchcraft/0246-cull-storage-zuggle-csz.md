@@ -7,7 +7,7 @@ title: "Cull Storage Zuggle (CSZ)"
 ## Overview
 Uses cull storage to temporarily bypass the equipment swap and drop restrictions on newer versions, allowing for weapons to be zuggled easily on v1.1.2
 
-## How To
+## Instructions
 ```
 1. FE a steering stick to a shield and perform SDC
 
@@ -24,8 +24,6 @@ Uses cull storage to temporarily bypass the equipment swap and drop restrictions
 7. Select the map rune and map zuggle your equipped weapon
 ```
 
-
-## Metadata
 ## Notes
 Results in invizuggle when performed on v1.2.0-1.2.1
 - Can also be performed by fusing a cold fused SDC stick to a shield (do not drop an extra shield on step 6 if performing it this way)

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Vendor Scamming"
 ---
 
@@ -7,7 +7,7 @@ title: "Vendor Scamming"
 ## Overview
 Allows you to infinitely sell items to (steal from) a vendor using Hold Storage/Smuggling.
 
-## How To
+## Instructions
 ```
 1. Activate hold storage onto a horse.
 2. Still atop the horse, aproach a vendor and then prepare to throw an item, and interact with the vendor.
@@ -16,7 +16,6 @@ Allows you to infinitely sell items to (steal from) a vendor using Hold Storage/
 ```
 
 
-## Metadata
 ## Notes
 Easiest method of reaching max rupees.
 

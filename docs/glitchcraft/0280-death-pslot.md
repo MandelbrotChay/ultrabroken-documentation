@@ -7,7 +7,7 @@ title: "Death PSLOT"
 ## Overview
 Death dropping is equivalent to shock dropping. It's therefore possible to use death dropping as a way to send to culled purgatory, effectively resulting in PSLOT
 
-## How To
+## Instructions
 ```
 1. FE your target equipment to something of the opposite type, equip both
 2. Throw something that will kill you (for example a bomb), but activate Recall before it does.
@@ -17,8 +17,6 @@ Death dropping is equivalent to shock dropping. It's therefore possible to use d
 When reloading, you should see your target PSLOTed on the ground.
 ```
 
-
-## Metadata
 ## Notes
 —
 

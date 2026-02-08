@@ -1,4 +1,4 @@
----
+﻿---
 title: "Recall Launch"
 ---
 
@@ -7,7 +7,7 @@ title: "Recall Launch"
 ## Overview
 allows you to launch yourself very far
 
-## How To
+## Instructions
 ```
 1. Get a plank or wing or something like that
 
@@ -19,7 +19,6 @@ allows you to launch yourself very far
 ```
 
 
-## Metadata
 ## Notes
 This works very good with boomerangs. It also works with anything Link can pick up. In this case you can use the momentum from rotating or picking up the object to perform the launch.
 

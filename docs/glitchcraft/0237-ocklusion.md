@@ -7,7 +7,7 @@ title: "Ocklusion"
 ## Overview
 Portaculling at the top of a chasm box unloads the surface
 
-## How To
+## Instructions
 ```
 0. For 1.2.0/1.2.1, prepare portacull equipment. It will make the process far easier compared to other versions.
 1. Go to any chasm. Although, I recommend using either the Akkala Citadel one or the East Gerudo Chasm if planning to use stutter
@@ -22,8 +22,6 @@ For versions 1.0-1.1.2, you will have to get a load loop. Once at the coordinate
 When successful, go back up with a rocket. Step on the edge of a chasm and build a flying machine to explore the buggiest Hyrule!
 ```
 
-
-## Metadata
 ## Notes
 Ocklusion Stutter:
 By going into the room of the secret stone in Lightning Temple, going up and down the stairs of the secret stone pedestal causes a strong load called Ocklusion Stutter. By opening menu a bit before it can lead to some menu weirdness.

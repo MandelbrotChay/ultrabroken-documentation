@@ -7,7 +7,7 @@ title: "Balloon Overload"
 ## Overview
 Equipping and unfusing a shield with Robbie's infinite balloon fused to it does not remove the balloon in the character preview in the inventory. This can be stacked to lag out the inventory, and has the potential to crash the game
 
-## How To
+## Instructions
 ```
 1. Steal Robbie's infinite balloon and fuse it to a shield
 2. Duplicate the shield for as many balloons that you want to have stuck in the menu
@@ -16,8 +16,6 @@ Equipping and unfusing a shield with Robbie's infinite balloon fused to it does 
 5. Repeat the previous step for each shield that you duplicated in step 2
 ```
 
-
-## Metadata
 ## Notes
 —
 

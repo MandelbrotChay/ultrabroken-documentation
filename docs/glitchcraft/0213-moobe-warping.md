@@ -7,7 +7,7 @@ title: "Moobe Warping"
 ## Overview
 Using Moobe and a horse, it's possible to fully warp (opposed to only temporarily) to a preset climbing position.
 
-## How To
+## Instructions
 ```
 1. Set climb coodinates in preperation for Moobe.
 2. Place a horse directly under the set climb coordinates.
@@ -15,8 +15,6 @@ Using Moobe and a horse, it's possible to fully warp (opposed to only temporaril
 4. Unpause, Link should end up on the horse by set coordinates.
 ```
 
-
-## Metadata
 ## Notes
 —
 

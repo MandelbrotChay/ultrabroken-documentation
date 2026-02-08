@@ -1,4 +1,4 @@
----
+﻿---
 title: "Double Unfuse Duplicashen (DUD)"
 ---
 
@@ -7,7 +7,7 @@ title: "Double Unfuse Duplicashen (DUD)"
 ## Overview
 allows you to duplicate any material that can be fused to an arrow
 
-## How To
+## Instructions
 ```
 Required: 2 bows, 1 arrow, material to dupe, melee weapon
 1. Make sure you have a melee weapon equiped.
@@ -20,7 +20,6 @@ Required: 2 bows, 1 arrow, material to dupe, melee weapon
 ```
 
 
-## Metadata
 ## Notes
 Stops working if cooked meals page is full
 

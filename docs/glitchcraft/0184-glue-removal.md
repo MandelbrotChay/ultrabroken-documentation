@@ -7,7 +7,7 @@ title: "Glue Removal"
 ## Overview
 lets you break apart things that have been ultrahanded together
 
-## How To
+## Instructions
 ```
 1. Have 2 attached objects 
 
@@ -16,8 +16,6 @@ lets you break apart things that have been ultrahanded together
 3. Go into bullet time
 ```
 
-
-## Metadata
 ## Notes
 Doesn't work with every object
 

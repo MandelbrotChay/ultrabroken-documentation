@@ -7,7 +7,7 @@ title: "Cutscene Combo Amplifier"
 ## Overview
 Extends and stacks the damage frames of an attack with memory buffering, causing huge damage.
 
-## How To
+## Instructions
 ```
 1. attack something with a weapon or shield
 2. pause the game one frame before the attacks hits, if done correctly, you should not see it hitting the enemy and you should not be able to unequip your weapon/shield
@@ -15,8 +15,6 @@ Extends and stacks the damage frames of an attack with memory buffering, causing
 4. Unpause
 ```
 
-
-## Metadata
 ## Notes
 1. this can be combined with zuggle for even higher damage
 2. performing this with a cucco gives you a (insert odds later) chance of optaining an egg for every memory you watch

@@ -7,13 +7,11 @@ title: "Capsule Cel Shader Removal"
 ## Overview
 Enables the inside of capsules to remove the cel shader and other shaders
 
-## How To
+## Instructions
 ```
 Throw out a Zonai Capsule, put a stake, Ultrahand the capsule to remove collision and attach to the stake, now go in the capsule to remove shaders.
 ```
 
-
-## Metadata
 ## Notes
 There are 3 layers
 One normal cel shader remover that is near the outer layer of the capsule

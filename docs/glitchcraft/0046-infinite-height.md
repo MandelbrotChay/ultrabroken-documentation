@@ -1,4 +1,4 @@
----
+﻿---
 title: "Infinite Height"
 ---
 
@@ -7,7 +7,7 @@ title: "Infinite Height"
 ## Overview
 Allows you chain jump attacks to jump infinitly.
 
-## How To
+## Instructions
 ```
 1. Jump attack
 
@@ -21,7 +21,6 @@ Allows you chain jump attacks to jump infinitly.
 ```
 
 
-## Metadata
 ## Notes
 —
 

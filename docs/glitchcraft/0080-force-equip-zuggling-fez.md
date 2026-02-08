@@ -1,4 +1,4 @@
----
+﻿---
 title: "Force Equip Zuggling (FEZ)"
 ---
 
@@ -7,7 +7,7 @@ title: "Force Equip Zuggling (FEZ)"
 ## Overview
 Allows Link to zuggle weapons using any interaction that forcefully equips a weapon. Best achieved by shrines or quests.
 
-## How To
+## Instructions
 ```
 This is best achieved at, althought isn't specific too, Mayachideg Shrine.
 
@@ -22,7 +22,6 @@ This is best achieved at, althought isn't specific too, Mayachideg Shrine.
 ```
 
 
-## Metadata
 ## Notes
 Can be repeated multiple times to zuggle multiple weapons.
 

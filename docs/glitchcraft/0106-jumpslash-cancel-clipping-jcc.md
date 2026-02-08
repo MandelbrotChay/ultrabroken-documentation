@@ -1,4 +1,4 @@
----
+﻿---
 title: "Jumpslash Cancel Clipping (JCC)"
 ---
 
@@ -7,7 +7,7 @@ title: "Jumpslash Cancel Clipping (JCC)"
 ## Overview
 Allows for clipping through thin ceilings.
 
-## How To
+## Instructions
 ```
 - Perform any jumpslash cancel Infinite Height variant against a ceiling until Links head clips through while in bullet time. 
 
@@ -19,7 +19,6 @@ Note: Arrow Smuggle IH or its alternatives makes this glitch much easier to exec
 ```
 
 
-## Metadata
 ## Notes
 Highly less likely to work with flat ceilings.
 

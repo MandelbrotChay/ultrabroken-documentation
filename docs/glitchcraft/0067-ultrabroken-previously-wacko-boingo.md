@@ -1,4 +1,4 @@
----
+﻿---
 title: "Ultrabroken (previously Wacko Boingo)"
 ---
 
@@ -7,7 +7,7 @@ title: "Ultrabroken (previously Wacko Boingo)"
 ## Overview
 Allows you to pull the object with another glued material while Link stands on top of it, sending it flying forwards from the pull itself.
 
-## How To
+## Instructions
 ```
 1. Take out an object and set it beside Zorona and Kairo near Riverside Stable, and talk to them while standing on top of it.
 2. Once the cutscene ends, the object should be in a state where it cannot be moved around with Ultrahand.
@@ -16,7 +16,6 @@ Allows you to pull the object with another glued material while Link stands on t
 ```
 
 
-## Metadata
 ## Notes
 Presists through ZLOT/SLOT, allowing you to bring this to any prior save, and can allow the user to repeat the Ultrabroken glitch indefinitely.
 During flying with Ultrabroken, it can be very easily for the game to cancel out of Ultrahand if you're turning while the game lags/loads during a laggy area. It's best to keep it as steady as possible when traversing through areas where the FPS drops heavily.

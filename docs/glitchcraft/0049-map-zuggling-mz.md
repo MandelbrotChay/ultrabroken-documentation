@@ -1,4 +1,4 @@
----
+﻿---
 title: "Map Zuggling (MZ)"
 ---
 
@@ -7,7 +7,7 @@ title: "Map Zuggling (MZ)"
 ## Overview
 Allows you to zuggle much faster than older versions
 
-## How To
+## Instructions
 ```
 1). Stand next to a wall facing away from it
 2). Unsheathe equipment to stack the weapon in link's hand (optional for duping)
@@ -21,7 +21,6 @@ Credit to ChargeVolt for writing the setup!
 ```
 
 
-## Metadata
 ## Notes
 It's possible to perform Map Zuggling without a wall by standing away from a high ledge (2 springs count as long as you position Link properly) and performing it that way.
 

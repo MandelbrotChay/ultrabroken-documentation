@@ -1,4 +1,4 @@
----
+﻿---
 title: "Lift Warping"
 ---
 
@@ -7,14 +7,13 @@ title: "Lift Warping"
 ## Overview
 Links position is tied to any object he can lift over his head, should the position of the object change, Link will warp to it's new position. This can be achieved in a number of ways.
 
-## How To
+## Instructions
 ```
 Like-Like Warping
 Cucco Warping
 ```
 
 
-## Metadata
 ## Notes
 Can also be achieved with object culling (steps/examples needed.)
 

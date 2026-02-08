@@ -1,4 +1,4 @@
----
+﻿---
 title: "Extended Throw Sprinting (ETS)"
 ---
 
@@ -7,14 +7,13 @@ title: "Extended Throw Sprinting (ETS)"
 ## Overview
 —
 
-## How To
+## Instructions
 ```
 hold B, tap R, repeat
 ```
 
 
 
-## Metadata
 ## Notes
 —
 

@@ -7,14 +7,12 @@ title: "Mineru Cull Storage"
 ## Overview
 Stores the callback of Mineru while mouted on her, useful for swap resync zuggle setups
 
-## How To
+## Instructions
 ```
 1. While riding Mineru, dismount and immediately take out a battery (or another zonai device of a similar size) and re-mount Mineru
 2. Release the stored cull by dismounting or portaculling on Mineru
 ```
 
-
-## Metadata
 ## Notes
 —
 

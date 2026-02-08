@@ -7,13 +7,11 @@ title: "Durability-"
 ## Overview
 Dropping and picking up a bow with a durability modifier removes the extra durability.
 
-## How To
+## Instructions
 ```
 Drop a bow that has Durability (or D+) in your inventory without Link holding it.
 ```
 
-
-## Metadata
 ## Notes
 For some reason, the game only removes durability if it's considered a cold drop (Link doesn't hold it). If the bow is a warm drop (Link is holding it), no durability is removed at all.
 

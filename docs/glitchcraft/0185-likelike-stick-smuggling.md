@@ -7,7 +7,7 @@ title: "LikeLike Stick Smuggling"
 ## Overview
 Allows you to cull Link via a LikeLike in a culling area. Can be used for Equipment Transmutation, Fuse Entanglement, WST, Drop Smuggle.
 
-## How To
+## Instructions
 ```
 1. Find a LikeLike in a culling area (Hateno well for example)
 2. Place down a Steering Stick in front of the Like
@@ -19,8 +19,6 @@ Allows you to cull Link via a LikeLike in a culling area. Can be used for Equipm
 8. Leads into Cull Fuse Entanglement, Equipment Transmutation
 ```
 
-
-## Metadata
 ## Notes
 —
 

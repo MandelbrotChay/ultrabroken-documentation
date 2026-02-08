@@ -1,4 +1,4 @@
----
+﻿---
 title: "Like-Like Culling"
 ---
 
@@ -7,14 +7,13 @@ title: "Like-Like Culling"
 ## Overview
 A method for object culling
 
-## How To
+## Instructions
 ```
 1. Fuse entangle any object to a shield, and drop the shield next to a Like-Like.
 2. Let the Like-Like eat the shield the object should cull.
 ```
 
 
-## Metadata
 ## Notes
 —
 

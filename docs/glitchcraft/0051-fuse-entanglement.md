@@ -1,4 +1,4 @@
----
+﻿---
 title: "Fuse Entanglement"
 ---
 
@@ -7,7 +7,7 @@ title: "Fuse Entanglement"
 ## Overview
 Allows your shield to have an effect on an object as though it is fused to the shield, despite the object existing in the world and not being tethered to your shield.
 
-## How To
+## Instructions
 ```
 1. Activate the fuse rune.
 2. Whilst looking at your target, hold L until the rune selection menu almost appears, then press ZL, and let go of both buttons.
@@ -15,7 +15,6 @@ Allows your shield to have an effect on an object as though it is fused to the s
 ```
 
 
-## Metadata
 ## Notes
 Springboarding
 Entanglement Height Glitch

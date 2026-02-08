@@ -1,4 +1,4 @@
----
+﻿---
 title: "Infinite Damage"
 ---
 
@@ -7,14 +7,13 @@ title: "Infinite Damage"
 ## Overview
 Damage repeats infinitely during spin attack.
 
-## How To
+## Instructions
 ```
 Mid-charge of a spin with a two-handed weapon, obtain a new item at the exact moment it hits an enemy.
 ```
 
 
 
-## Metadata
 ## Notes
 —
 

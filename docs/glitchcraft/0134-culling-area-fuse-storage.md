@@ -1,4 +1,4 @@
----
+﻿---
 title: "Culling Area Fuse Storage"
 ---
 
@@ -8,7 +8,6 @@ title: "Culling Area Fuse Storage"
 A method of Fuse Storage using AreaCulling
 
 
-## Metadata
 ## Notes
 —
 

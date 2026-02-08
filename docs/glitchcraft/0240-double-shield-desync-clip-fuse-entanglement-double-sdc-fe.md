@@ -7,7 +7,7 @@ title: "Double Shield Desync Clip Fuse Entanglement (Double SDC FE)"
 ## Overview
 Setting up an unlocked sdc stick in a culling area and a locked sdc outside of the culling area allows for short, softlock-free fe compatible culls
 
-## How To
+## Instructions
 ```
 1. perform sdc inside a culling area using regular fe
 2. pickup the base to avoid culling it
@@ -17,8 +17,6 @@ DO NOT UNLOCK THE WHEEL
 5. Fusing on the same frame as it culls causes fe with little to no softlock risk
 ```
 
-
-## Metadata
 ## Notes
 —
 

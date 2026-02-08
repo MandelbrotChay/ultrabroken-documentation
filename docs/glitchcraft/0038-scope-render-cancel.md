@@ -1,4 +1,4 @@
----
+﻿---
 title: "Scope Render Cancel"
 ---
 
@@ -7,7 +7,7 @@ title: "Scope Render Cancel"
 ## Overview
 Removes scope HUD and reveals two borders that show an overlay that renders flames, visual effects, etc. Another version of this glitch can be used to reduce the size of the borders for the camera filter for cinematic shots.
 
-## How To
+## Instructions
 ```
 Wide Border Version:
 1. Open Camera rune and take a picture
@@ -20,7 +20,6 @@ Small Border Version:
 ```
 
 
-## Metadata
 ## Notes
 You can freely move around and attack while having the camera filter with you.
 With the wide border, it will flash black for a frame or two when you enter a new area or culling zone. This can be used to find the entryway to locations or areas.

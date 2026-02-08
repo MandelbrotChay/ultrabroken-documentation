@@ -1,4 +1,4 @@
----
+﻿---
 title: "Damage Amnesia"
 ---
 
@@ -7,13 +7,12 @@ title: "Damage Amnesia"
 ## Overview
 Allows Link to negate sources of damage.
 
-## How To
+## Instructions
 ```
 Pause at the moment before taking damage and view a memory in the menu (for longer duration sources of damage, multiple memories may be required). Then unpause.
 ```
 
 
-## Metadata
 ## Notes
 Can be combined with springbombing.
 

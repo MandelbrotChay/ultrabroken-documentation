@@ -7,7 +7,7 @@ title: "Cold Fuse Stick Desync Clip (Cold Fuse SDC)"
 ## Overview
 An easier way to perform stick desync clip using cold fuse that allows for an almost immediate dismount, making it useful for stick desync without clipping
 
-## How To
+## Instructions
 ```
 1. Cold fuse a steering stick to a weapon or shield
 
@@ -18,8 +18,6 @@ An easier way to perform stick desync clip using cold fuse that allows for an al
 4. Mash B immediately upon unpausing (skip this step if clipping is desired)
 ```
 
-
-## Metadata
 ## Notes
 —
 

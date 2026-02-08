@@ -1,4 +1,4 @@
----
+﻿---
 title: "Pelison Duping"
 ---
 
@@ -7,7 +7,7 @@ title: "Pelison Duping"
 ## Overview
 Duplicate weapons using Pelison to remove them from an entangled shield.
 
-## How To
+## Instructions
 ```
 0. For duping bows and swords, have nothing equipped there.
 1. FE the target item onto a shield.
@@ -18,7 +18,6 @@ Duplicate weapons using Pelison to remove them from an entangled shield.
 ```
 
 
-## Metadata
 ## Notes
 Costs 20 rupees. Also completely removes the modifier on the duped item.
 

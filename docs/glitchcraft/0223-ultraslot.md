@@ -7,15 +7,13 @@ title: "UltraSLOT"
 ## Overview
 Uses purgatory to transfer ultrahanded objects through file loads.
 
-## How To
+## Instructions
 ```
 1. Fuse entangle the target object to a weapon or shield
 2. Drop smuggle another item in such a way that the FE base is sent to purgatory
 3. Grab the target object with ultrahand and load a file
 ```
 
-
-## Metadata
 ## Notes
 UltraSLOT objects can be continuously transferred between files as long as the object is grabbed with ultrahand before loading a file
 

@@ -1,4 +1,4 @@
----
+﻿---
 title: "No Bow Sprinting (NBS)"
 ---
 
@@ -7,14 +7,13 @@ title: "No Bow Sprinting (NBS)"
 ## Overview
 —
 
-## How To
+## Instructions
 ```
 unequip bow, hold ZL, and mash R, ZR, and B
 ```
 
 
 
-## Metadata
 ## Notes
 —
 

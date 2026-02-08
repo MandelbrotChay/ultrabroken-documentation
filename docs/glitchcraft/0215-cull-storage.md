@@ -7,7 +7,7 @@ title: "Cull Storage"
 ## Overview
 Culling and unculling an sdc stick in a specific way allows you to store its cull.
 
-## How To
+## Instructions
 ```
 There exist a couple variations, this variation is the easiest: (Mulberry, Lightos_)
 1. perform sdc and put the sdc stick in a culling area
@@ -25,8 +25,6 @@ If link doesn't uncull, you didn't move the stick outside of the culling area
 If he doesn't cull, you didn't get cull storage
 ```
 
-
-## Metadata
 ## Notes
 Can also be done by recalling the SDC stick while standing outside of the culling margin with the parent equipped, dropping the parent and picking it back up, and then walking back in the culling margin
 

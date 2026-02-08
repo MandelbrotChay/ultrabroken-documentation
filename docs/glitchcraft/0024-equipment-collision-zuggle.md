@@ -1,4 +1,4 @@
----
+﻿---
 title: "Equipment Collision Zuggle"
 ---
 
@@ -7,7 +7,7 @@ title: "Equipment Collision Zuggle"
 ## Overview
 The original zuggle method discovered by Zvleon.
 
-## How To
+## Instructions
 ```
 1) Stand infront of a wall. (about 1 link away from it) (facing away from it)
 
@@ -27,7 +27,6 @@ The original zuggle method discovered by Zvleon.
 ```
 
 
-## Metadata
 ## Notes
 Zuggle has many ways of being executed, this is the oldest one. Map Zuggling is the most reccomended method for pre-1.1.2
 For 1.1.2, see FEZ and smuggle stacking zuggling (and FEWZ)

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Cull Zone Culling"
 ---
 
@@ -9,7 +9,7 @@ A method for object culling
 
 Cull zones as shown on the TOTK Object Map
 
-## How To
+## Instructions
 ```
 1. Fuse entangle any object to a piece of equipment (weapon/shield)
 2. Drop the entangled equipment in a culling zone (SEE RESOURCES)
@@ -17,7 +17,6 @@ Cull zones as shown on the TOTK Object Map
 ```
 
 
-## Metadata
 ## Notes
 Certain sub-areas such as caves can also act as cull zones
 

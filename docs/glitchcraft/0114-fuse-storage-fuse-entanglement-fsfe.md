@@ -1,4 +1,4 @@
----
+﻿---
 title: "Fuse Storage Fuse Entanglement (FSFE)"
 ---
 
@@ -7,14 +7,13 @@ title: "Fuse Storage Fuse Entanglement (FSFE)"
 ## Overview
 Unique methods of achieving Fuse Entanglement through Fuse Storage.
 
-## How To
+## Instructions
 ```
 Like-Like FSFE
 Culling Area FSFE
 ```
 
 
-## Metadata
 ## Notes
 Fuse Entanglement
 

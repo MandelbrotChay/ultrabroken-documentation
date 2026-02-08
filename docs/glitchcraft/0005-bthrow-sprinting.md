@@ -7,7 +7,7 @@ title: "BThrow Sprinting"
 ## Overview
 —
 
-## How To
+## Instructions
 ```
 press B - ZR - R - B (or B - R - ZR - B) and repeat
 ```

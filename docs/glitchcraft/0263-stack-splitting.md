@@ -7,7 +7,7 @@ title: "Stack Splitting"
 ## Overview
 Using an arrow fuse returning, it's possible to get two slots for one item
 
-## How To
+## Instructions
 ```
 Requirements for 1.1+: 
 - Have a sacrifice edible/usable item that sorts before your target item in any of the 4 ways to sort items. Either have 1 of the sacrifice, or drop all extra items to make it 1. It will be more convenient if you have a low amount of the sacrifice.
@@ -27,8 +27,6 @@ Method 2 (1.0.0, s0ft)
 3. Pick up what you put on the ground.
 ```
 
-
-## Metadata
 ## Notes
 Can lead to Split Item Duplication, a material duplication glitch
 

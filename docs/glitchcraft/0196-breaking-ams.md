@@ -7,7 +7,7 @@ title: "Breaking AMS"
 ## Overview
 By using certain setups, it is possible to ignore the no durability use.
 
-## How To
+## Instructions
 ```
 Method 1:
 1. Activate arrow smuggle
@@ -23,8 +23,6 @@ Method 2:
 4. press Y
 ```
 
-
-## Metadata
 ## Notes
 —
 

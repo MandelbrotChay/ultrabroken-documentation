@@ -7,7 +7,7 @@ title: "Fuse Entanglement Drop Smuggling"
 ## Overview
 Allows for Drop Smuggling of Fuse Entangled Equipment. Can be used for GAS and Double-FE on 1.2.0
 
-## How To
+## Instructions
 ```
 1. Go to a Like Like.
 2. Fuse Entangle either a weapon to a shield, or a shield to a weapon via Fuse Storage
@@ -18,8 +18,6 @@ Allows for Drop Smuggling of Fuse Entangled Equipment. Can be used for GAS and D
 If the weapon falls behind Link during Step 4, retrieve the weapon from the Like by interrupting it's chewing animation and repeat from step 4.
 ```
 
-
-## Metadata
 ## Notes
 Retrieving collision results in a purgatory equipment in the overworld, picking this equipment up will result in a crash of the game
 

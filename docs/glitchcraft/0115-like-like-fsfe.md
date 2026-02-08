@@ -1,4 +1,4 @@
----
+﻿---
 title: "Like-Like FSFE"
 ---
 
@@ -7,7 +7,7 @@ title: "Like-Like FSFE"
 ## Overview
 A method of Fuse Storage Fuse Entanglement.
 
-## How To
+## Instructions
 ```
 1. Drop target item in front of a like-like
 2. Fuse the target item to a weapon or shield on the same frame that a like like eats it
@@ -16,7 +16,6 @@ A method of Fuse Storage Fuse Entanglement.
 ```
 
 
-## Metadata
 ## Notes
 Fuse Entanglement
 For performing this on 1.2.1, you will need to have your target item auto FE'd to a shield or weapon, and feed the like-like the FE parent instead of the target item

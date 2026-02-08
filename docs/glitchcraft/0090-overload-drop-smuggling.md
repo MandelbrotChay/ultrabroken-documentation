@@ -1,4 +1,4 @@
----
+﻿---
 title: "Overload Drop Smuggling"
 ---
 
@@ -7,7 +7,7 @@ title: "Overload Drop Smuggling"
 ## Overview
 Allows you to drop smuggle via overload
 
-## How To
+## Instructions
 ```
 1. Zuggle Overload to the point that every weapon swap drops it on the ground.
 2. Swap to the target weapon such that it drops on the ground
@@ -18,7 +18,6 @@ Credit to BigDUCCO for setup!
 ```
 
 
-## Metadata
 ## Notes
 May 12, 2023 & June 12, 2023
 

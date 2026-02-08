@@ -7,7 +7,7 @@ title: "Bundled Item Duplication (BID)"
 ## Overview
 Culling dropping an item in a specific way and unloading it causes it to get put into a state of constantly respawning when holding another item, allowing for massive duping.
 
-## How To
+## Instructions
 ```
 1. Setup sdc culling or like like stick culling (some locations are more consistent than others(look-out landing like likes are terrible))
 2. Hold an item 1 frame before link culls
@@ -25,8 +25,6 @@ Discord (Lightos_)
 11. pickup the items and repeat steps 9-11
 ```
 
-
-## Metadata
 ## Notes
 —
 

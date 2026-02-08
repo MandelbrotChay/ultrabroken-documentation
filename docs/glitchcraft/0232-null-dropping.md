@@ -7,14 +7,12 @@ title: "Null Dropping"
 ## Overview
 Displays a glitched and empty chest quickmenu.
 
-## How To
+## Instructions
 ```
 1. Empty your inventory in front of a chest, containing the same type as you are dropping
 2. unpause and press A on the first frame
 ```
 
-
-## Metadata
 ## Notes
 —
 

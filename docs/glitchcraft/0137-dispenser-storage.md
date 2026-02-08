@@ -1,4 +1,4 @@
----
+﻿---
 title: "Dispenser Storage"
 ---
 
@@ -7,7 +7,7 @@ title: "Dispenser Storage"
 ## Overview
 Allows you to use zonai device dispensers as a temporary means to store items and bypass the 21 ground items limit.
 
-## How To
+## Instructions
 ```
 1. Put a heavy item that doesn’t slide much into a Zonai dispenser. 
 2. The dispenser hatch should remain open, otherwise try again.
@@ -18,7 +18,6 @@ Allows you to use zonai device dispensers as a temporary means to store items an
 ```
 
 
-## Metadata
 ## Notes
 Can be combined with ISD or MTD to reach max items.
 A Fan or Stabilizer placed next the hatch will stop it from closing when opened next.

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Travel Medallion storage (TMS)"
 ---
 
@@ -7,7 +7,7 @@ title: "Travel Medallion storage (TMS)"
 ## Overview
 Places the travel medallion at links feet after loading a file.
 
-## How To
+## Instructions
 ```
 1. Go to 0295 -1552 1364
 2. Hit the broken raft (anything will work) and hit + right before the your hit makes contact with the raft (it also work with koroks in a ballon but it is much harder)
@@ -18,7 +18,6 @@ Places the travel medallion at links feet after loading a file.
 ```
 
 
-## Metadata
 ## Notes
 —
 

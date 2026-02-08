@@ -7,7 +7,7 @@ title: "Split Item Duplication (SID)"
 ## Overview
 Allows you to dupe materials through Stack Splitting
 
-## How To
+## Instructions
 ```
 1. Perform Stack Splitting on your target, to have a stack of 1 and then a stack of at least 2 or more.
 2. Get into any midair state (shield surf, paraglide, Mineru, ...), then pause.
@@ -16,8 +16,6 @@ Allows you to dupe materials through Stack Splitting
 5. Unpause.
 ```
 
-
-## Metadata
 ## Notes
 —
 

@@ -7,7 +7,7 @@ title: "Master Sword Liberation"
 ## Overview
 Allows you to dupe the master sword/decayed master sword
 
-## How To
+## Instructions
 ```
 Method 1 (ock):
 1. Do the like like stick cull.
@@ -44,8 +44,6 @@ Method 3 (ock):
 6. When the bombs go off, the breezer cutscene will trigger and drop the Master Sword (this will also duplicate it)
 ```
 
-
-## Metadata
 ## Notes
 This can be combined with / decayed  zuggle to transfer it through files
 Method 2 (mulbery)

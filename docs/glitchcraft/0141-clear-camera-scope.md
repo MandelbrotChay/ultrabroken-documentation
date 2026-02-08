@@ -1,4 +1,4 @@
----
+﻿---
 title: "Clear Camera/Scope"
 ---
 
@@ -7,14 +7,13 @@ title: "Clear Camera/Scope"
 ## Overview
 Allows for First Person Gameplay, removing the HUD from the camera and scope.
 
-## How To
+## Instructions
 ```
 1. Peform Hold Smuggling, but not Full Hold Smuggling.
 2. After doing the final step of Hold Smuggling, make sure Link is holding the items in the menu, but is able to move freely in the overload. You should now have an HUDless Scope/Camera. Do not throw your held items, this will cancel it.
 ```
 
 
-## Metadata
 ## Notes
 Also works on Lookout Landing Telescope.
 Any loading screen will cancel the glitch, you can switch tabs in the inventory but you must rehold the items after changes without leaving the inventory.

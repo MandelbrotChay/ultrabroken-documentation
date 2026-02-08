@@ -1,4 +1,4 @@
----
+﻿---
 title: "Fuse Entangle Drop Zuggle (FEDZ)"
 ---
 
@@ -7,7 +7,7 @@ title: "Fuse Entangle Drop Zuggle (FEDZ)"
 ## Overview
 Similarily to FEWZ, this is not a real drop zuggle, but rather a shield zuggle
 
-## How To
+## Instructions
 ```
 1. FE a weapon to a shield and drop them both. (Optional: Fuse something to the weapon if needed)
 2. Sluggle some other weapon.
@@ -30,7 +30,6 @@ For multiple FEDZ, you must do it in this order:
 ```
 
 
-## Metadata
 ## Notes
 —
 

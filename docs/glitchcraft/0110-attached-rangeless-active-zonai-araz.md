@@ -1,4 +1,4 @@
----
+﻿---
 title: "Attached Rangeless Active Zonai (ARAZ)"
 ---
 
@@ -7,7 +7,7 @@ title: "Attached Rangeless Active Zonai (ARAZ)"
 ## Overview
 Is very similar to DRAZ but differs slightly.
 
-## How To
+## Instructions
 ```
 1. Drop a shield and equip another shield.
 2. FE shield 1 onto shield 2. 
@@ -32,7 +32,6 @@ ARAZ (Second Method)
 ```
 
 
-## Metadata
 ## Notes
 Can use certain Zonai devices that DRAZ cannot
 

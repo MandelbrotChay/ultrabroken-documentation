@@ -7,13 +7,11 @@ title: "Lift Fuse Interrupt"
 ## Overview
 Puts liftable objects in a strange state where fusing to them causes a null fuse and cancels the state.
 
-## How To
+## Instructions
 ```
 Lift an object on the same frame that a construct fuses it.
 ```
 
-
-## Metadata
 ## Notes
 Fusing an object in this state to a zuggle causes the object to be fuse entangled to the zuggle
 Can also be caused by fusing an object just as a moblin picks it up to throw.

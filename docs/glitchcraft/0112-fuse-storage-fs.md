@@ -1,4 +1,4 @@
----
+﻿---
 title: "Fuse Storage (FS)"
 ---
 
@@ -7,14 +7,13 @@ title: "Fuse Storage (FS)"
 ## Overview
 Fusing an item on the same frame that it culls interrupts the fuse. It will continue as soon as the item unculls, but can lead to FE or cold fuse by interrupting the fusion process in a specific way
 
-## How To
+## Instructions
 ```
 Like-Like Fuse Storage
 Culling Area Fuse Storage
 ```
 
 
-## Metadata
 ## Notes
 Fuse Entanglement
 Cold Fuse

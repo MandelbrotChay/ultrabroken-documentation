@@ -7,13 +7,11 @@ title: "Shrunken Actors"
 ## Overview
 Permanently shrink any ultrahandable object (ultrabroken method)
 
-## How To
+## Instructions
 ```
 Discord
 ```
 
-
-## Metadata
 ## Notes
 Possible on 1.2.0+ with a different method
 

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Arrow Smuggling"
 ---
 
@@ -7,7 +7,7 @@ title: "Arrow Smuggling"
 ## Overview
 A type of equipment smuggle that makes Link hold an arrow without pulling out his bow.
 
-## How To
+## Instructions
 ```
 1. Keep your bow sheathed and go through the steps of shock smuggling.
 2. Press ZR (to begin pulling out your bow) and + just before getting shocked. 
@@ -15,7 +15,6 @@ A type of equipment smuggle that makes Link hold an arrow without pulling out hi
 ```
 
 
-## Metadata
 ## Notes
 Allows for extremely easy jumpslash (animation) canceling, for performing Infinite Height and Fall Damage Cancel.
 A quicker and easier setup exists where you hold a shock fruit, pause and unpause while holding L as you throw it down at Link's feet. Use Recall, and press ZR and + on the same frame and then drop your bow.

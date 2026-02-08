@@ -7,15 +7,13 @@ title: "Lag Machines"
 ## Overview
 Filling up small areas with many objects causes a lot of lag and strange effects
 
-## How To
+## Instructions
 ```
 one method to perform this glitch would be:
 1. activate arrow unload
 2. fill up a small area like those stone boxes near look out landing with springs
 ```
 
-
-## Metadata
 ## Notes
 1. lag
 2. the game thinks link is not standing on ground

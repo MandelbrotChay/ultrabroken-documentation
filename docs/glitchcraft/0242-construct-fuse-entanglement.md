@@ -7,7 +7,7 @@ title: "Construct Fuse Entanglement"
 ## Overview
 Allows equipment to be fuse entangled to captain constructs' weapons. This only works with bows, shields, and weapons.
 
-## How To
+## Instructions
 ```
 1. Equip the item you want to FE to a captain construct and drop it nearby
 2. Pause the game or enter the quick menu on the frame that the construct fuses the item. If done correctly, the item should fuse to the construct's weapon and then fall
@@ -17,8 +17,6 @@ Alternatively, step 2 can be performed more consistently by entering the recall 
 frames until the item gets fused.
 ```
 
-
-## Metadata
 ## Notes
 Is particularly useful for early game or runeless setups, as this FE method does not require the fuse ability itself.
 

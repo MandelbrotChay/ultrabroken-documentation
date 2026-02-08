@@ -7,7 +7,7 @@ title: "Dialog Permacull"
 ## Overview
 Permanently culls any liftable object by triggering an NPC dialog while Link is culled
 
-## How To
+## Instructions
 ```
 1. Setup portable culling
 2. Lift target object and pause just before triggering an NPC dialog
@@ -16,8 +16,6 @@ Permanently culls any liftable object by triggering an NPC dialog while Link is 
 For older versions, portable culling can be replaced with any other form of intangible culling
 ```
 
-
-## Metadata
 ## Notes
 Not all NPC dialog interactions will work
 

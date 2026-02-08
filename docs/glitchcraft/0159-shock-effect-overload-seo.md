@@ -7,7 +7,7 @@ title: "Shock Effect Overload (SEO)"
 ## Overview
 Uses many non-despawnable Shock Emitters and placing them into a Fairy Fountain, activating them to overload the game’s memory, which causes invincibility, heavy lag and frame rate drops, non-visible effects like explosions, similar to Fence Overloading, can also cause Blood Moons if you overload the memory enough.
 
-## How To
+## Instructions
 ```
 Method for 1.1.2 and below:
 1. Make your way to a Fairy Fountain
@@ -26,8 +26,6 @@ Method for 1.2.0:
 5. Place them into the Fairy Fountain with some metal equipment and activate the Shock Emitters, and you are done with the glitch, the game should be dropping framerate. Throw a bomb to test the invincibility, if it does not work, simply shut off the Shock Emitters and MTD a few more then place them all in and activate them.
 ```
 
-
-## Metadata
 ## Notes
 this was a pain to write, still experimenting, if you have any discoveries please let us know
 

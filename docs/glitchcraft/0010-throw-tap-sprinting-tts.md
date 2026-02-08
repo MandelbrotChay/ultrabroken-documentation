@@ -1,4 +1,4 @@
----
+﻿---
 title: "Throw Tap Sprinting (TTS)"
 ---
 
@@ -7,14 +7,13 @@ title: "Throw Tap Sprinting (TTS)"
 ## Overview
 —
 
-## How To
+## Instructions
 ```
 tap B - R - B, repeat
 ```
 
 
 
-## Metadata
 ## Notes
 —
 

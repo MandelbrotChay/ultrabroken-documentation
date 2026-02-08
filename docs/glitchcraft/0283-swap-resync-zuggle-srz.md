@@ -7,7 +7,7 @@ title: "Swap Resync Zuggle (SRZ)"
 ## Overview
 Using Swap Resync, it's possible to zuggle anywhere simply using portacull equipment.
 
-## How To
+## Instructions
 ```
 0. Go in a position where you can drop a shield + a portacull but not your target type.
 1. Drop an unequipped piece of equipment.
@@ -33,8 +33,6 @@ There is a different setup for zuggling portacull equipment:
 5. Dismiss Mineru (will act as a fail drop).
 ```
 
-
-## Metadata
 ## Notes
 —
 

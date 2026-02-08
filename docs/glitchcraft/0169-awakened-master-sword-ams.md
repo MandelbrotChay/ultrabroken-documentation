@@ -8,7 +8,7 @@ title: "Awakened Master Sword (AMS)"
 You can use gas to leave a minigame and wrong warp into the phantom ganon fight, which makes it possible to escape the fight. 
 The result is that you get to play the game with a special flag that causes the master sword to be unbreakable and do 30 extra damage.
 
-## How To
+## Instructions
 ```
 1. setup GAS and lock your coordinates at the phantom ganon fight
 2. play a certain type of minigame
@@ -17,8 +17,6 @@ The result is that you get to play the game with a special flag that causes the 
 Watch Blize's guide for more info!
 ```
 
-
-## Metadata
 ## Notes
 After a game close and reopen, you will respawn at the phantom ganon fight, just reload a file to fix this
 Requires the crisis at Hyrule castle quest to be unfinished

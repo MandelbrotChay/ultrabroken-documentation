@@ -7,7 +7,7 @@ title: "Banc Storage"
 ## Overview
 Using memory interrupt, it's possible to store a banc change (shrine entry/exit, warp, panic blood moon, etc) to another save file
 
-## How To
+## Instructions
 ```
 1. Perform Memory Interrupt. For Warp Storage, press R at the end of it, for Shrine Storage and all other banc changes, press -.
 2. Trigger the banc change
@@ -17,8 +17,6 @@ It's also possible to go to the main menu, that way you can load a save and star
 After loading the save, the banc change should trigger.
 ```
 
-
-## Metadata
 ## Notes
 —
 

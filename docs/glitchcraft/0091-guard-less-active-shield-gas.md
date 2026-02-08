@@ -1,4 +1,4 @@
----
+﻿---
 title: "Guard-less Active Shield (GAS)"
 ---
 
@@ -7,7 +7,7 @@ title: "Guard-less Active Shield (GAS)"
 ## Overview
 Makes the fuse of a shield constantly active
 
-## How To
+## Instructions
 ```
 - Tap ZL as you get shocked, the shield should drop.
 - Pick up the shield and it should be on Link's back while still being active.
@@ -18,7 +18,6 @@ For 1.2.0: Can be achieved via Fuse Entanglement Drop Smuggling either a shield 
 ```
 
 
-## Metadata
 ## Notes
 This keeps the shield in an "on" state, many things will turn it off:
 - Dropping the shield.

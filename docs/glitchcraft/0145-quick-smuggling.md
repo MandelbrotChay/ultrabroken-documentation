@@ -7,7 +7,7 @@ title: "Quick Smuggling"
 ## Overview
 Allows for easy and quick smuggling of any equipment, including arrow smuggle.
 
-## How To
+## Instructions
 ```
 1. Open a menu (d-pad or inventory)
 2. Drop your equiped bow, shield or weapon.
@@ -15,8 +15,6 @@ Allows for easy and quick smuggling of any equipment, including arrow smuggle.
 4. Drop that item and exit the menu.
 ```
 
-
-## Metadata
 ## Notes
 Allows for infinite springboarding if you quick smuggle with a spring shield. The same also works with bombs.
 

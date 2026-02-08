@@ -7,15 +7,13 @@ title: "Unsheathed  (Also known as NX Method)"
 ## Overview
 Puts the master sword in a visual state where it is outside of it's sheath.
 
-## How To
+## Instructions
 ```
 1. Hold out a single handed sword and hold R and jump over your horse as you would for Hold Smuggling
 2. Open the inventory, drop your equipped weapon and equip the .
 3. Get off the horse and it should be unsheathed.
 ```
 
-
-## Metadata
 ## Notes
 Dropped equipment goes zoomy into the sky based on timing.
 

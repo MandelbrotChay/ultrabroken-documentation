@@ -1,4 +1,4 @@
----
+﻿---
 title: "Like-Like Smuggling"
 ---
 
@@ -7,7 +7,7 @@ title: "Like-Like Smuggling"
 ## Overview
 Allows for Equipment Smuggling via slugging.
 
-## How To
+## Instructions
 ```
 Method 1 (works 1.0.0-1.1.2):
 1. Sluggle and drop the equipped sluggled item
@@ -20,7 +20,6 @@ Method 2 (works 1.0.0-1.2.1):
 ```
 
 
-## Metadata
 ## Notes
 Method 2 can also be executed with a chest if you open it right before Link gets eaten by the like like
 

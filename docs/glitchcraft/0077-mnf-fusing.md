@@ -1,4 +1,4 @@
----
+﻿---
 title: "MNF Fusing"
 ---
 
@@ -7,7 +7,7 @@ title: "MNF Fusing"
 ## Overview
 Allows you to fuse to the MNF
 
-## How To
+## Instructions
 ```
 1. Equip your unfused MNF and drop the desired fuse in front of Link
 2. Activate Fuse and open the inventory
@@ -17,7 +17,6 @@ Allows you to fuse to the MNF
 ```
 
 
-## Metadata
 ## Notes
 —
 

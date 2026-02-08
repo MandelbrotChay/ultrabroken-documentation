@@ -7,7 +7,7 @@ title: "Recall Sluggle"
 ## Overview
 Using recall it's possible to sluggle a weapon by having access to it in the menu before it's properly equipped
 
-## How To
+## Instructions
 ```
 0. With your target unequipped, drop your target on the ground (won't work if the equipment was equipped before dropping). 
 1. If target is a weapon, pull out your bow. Then, activate Recall by pressing L.
@@ -18,8 +18,6 @@ At this point it should be sluggled until you cancel Recall.
 To get a Drop Smuggle: drop swap unequip the equipment, then pick it up.
 ```
 
-
-## Metadata
 ## Notes
 Dropped Purgatory (by dropping during Sluggle)
 Drop Smuggle (by drop swapping during Sluggle)

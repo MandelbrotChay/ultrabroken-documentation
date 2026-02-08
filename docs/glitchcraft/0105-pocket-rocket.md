@@ -1,4 +1,4 @@
----
+﻿---
 title: "Pocket Rocket"
 ---
 
@@ -7,7 +7,7 @@ title: "Pocket Rocket"
 ## Overview
 Allows for repeated boost from a midair rocket shield surf, making it a very good movement option.
 
-## How To
+## Instructions
 ```
 1. Fuse entangle a rocket to your shield
 2. Fuse that rocket to your equipped weapon
@@ -16,7 +16,6 @@ Allows for repeated boost from a midair rocket shield surf, making it a very goo
 ```
 
 
-## Metadata
 ## Notes
 1.2.0+ requires a different method
 

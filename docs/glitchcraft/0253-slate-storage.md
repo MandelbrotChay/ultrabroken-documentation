@@ -7,7 +7,7 @@ title: "Slate Storage"
 ## Overview
 Storing the opening animation of the Purah Pad allows for Fall Damage Cancel
 
-## How To
+## Instructions
 ```
 Please note that this does not work on 1.0.
 The glitch can only be performed if you have never seen the Purah Pad opening animation.
@@ -28,8 +28,6 @@ Fall Damage Cancel (Yee):
 The Fall Damage should be cancelled if you dived quick enough
 ```
 
-
-## Metadata
 ## Notes
 —
 

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Weapon FE"
 ---
 
@@ -7,7 +7,7 @@ title: "Weapon FE"
 ## Overview
 Allows for FE to weapons
 
-## How To
+## Instructions
 ```
 1. Fuse entangle weapon to shield 
 2. Zuggle a different weapon
@@ -17,7 +17,6 @@ Allows for FE to weapons
 ```
 
 
-## Metadata
 ## Notes
 September 12, 2023 and June 1, 2023
 

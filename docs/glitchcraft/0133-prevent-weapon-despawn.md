@@ -1,4 +1,4 @@
----
+﻿---
 title: "Prevent Weapon Despawn"
 ---
 
@@ -7,7 +7,7 @@ title: "Prevent Weapon Despawn"
 ## Overview
 Prevents equipment from despawning after certain NPC interactions and quests (Does not work in Pirate Ship quest, different flags, currently testing)
 
-## How To
+## Instructions
 ```
 1. Zuggle the desired equipment on Link 
 2. Drop the zuggled equipment, and only pick up the equipment used to drop it, not the one you previously zuggled 
@@ -15,7 +15,6 @@ Prevents equipment from despawning after certain NPC interactions and quests (Do
 ```
 
 
-## Metadata
 ## Notes
 You can bring back the weapon by zuggling before quest ends
 Best used in Eldin Cave Quest, experimenting with different despawn flags atm

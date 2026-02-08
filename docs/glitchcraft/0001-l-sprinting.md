@@ -7,7 +7,7 @@ title: "L Sprinting"
 ## Overview
 This is an infinite stamina sprinting method. It is not the fastest one and the timing is very hard.
 
-## How To
+## Instructions
 ```
 This works best on fuse and ultrahand. Hold B and tap L twice (one time to activate it and one time to cancel it)
 ```

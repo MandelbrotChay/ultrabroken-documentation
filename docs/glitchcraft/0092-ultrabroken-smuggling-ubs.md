@@ -1,4 +1,4 @@
----
+﻿---
 title: "Ultrabroken Smuggling (UBS)"
 ---
 
@@ -7,7 +7,7 @@ title: "Ultrabroken Smuggling (UBS)"
 ## Overview
 Makes an FE'd object follow the shield.
 
-## How To
+## Instructions
 ```
 1. FE an object to a shield
 2. Drop your FE shield and Ultrahand it to the object 
@@ -22,7 +22,6 @@ Makes an FE'd object follow the shield.
 ```
 
 
-## Metadata
 ## Notes
 —
 

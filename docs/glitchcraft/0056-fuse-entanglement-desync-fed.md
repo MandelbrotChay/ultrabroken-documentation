@@ -1,4 +1,4 @@
----
+﻿---
 title: "Fuse Entanglement Desync (FED)"
 ---
 
@@ -7,7 +7,7 @@ title: "Fuse Entanglement Desync (FED)"
 ## Overview
 Allows you to transfer the fuse and durability from one weapon to another. You can also decide to dupe the weapon or the fused material.
 
-## How To
+## Instructions
 ```
 Needed: Target item, donor item and extra shield (2 extras if weapon/bow).
 1. Drop donor and target items on ground
@@ -26,7 +26,6 @@ Needed: Target item, donor item and extra shield (2 extras if weapon/bow).
 ```
 
 
-## Metadata
 ## Notes
 Weapon State Transfer
 this does not wst on 1.0.0

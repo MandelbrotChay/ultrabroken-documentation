@@ -1,4 +1,4 @@
----
+﻿---
 title: "Dive Cancel Glide Boost"
 ---
 
@@ -7,7 +7,7 @@ title: "Dive Cancel Glide Boost"
 ## Overview
 Allows you to preserve the increased speed from diving with the Glide Suit into paragliding
 
-## How To
+## Instructions
 ```
 1. Skydive with the Glide Suit and get up to speed
 2. Cancel the dive with B, then immediately pull out the paraglider
@@ -17,7 +17,6 @@ Note: You will slowly slow back down to regular paragliding speed if you don't r
 ```
 
 
-## Metadata
 ## Notes
 Doesn't stack well with Tulin's ability. Can be maintained with Infinite Height.
 

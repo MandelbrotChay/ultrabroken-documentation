@@ -7,7 +7,7 @@ title: "Zuggle Load Object Transfering (ZLOT)"
 ## Overview
 Allows you to transfer objects through loads while maintaining their coordinates.
 
-## How To
+## Instructions
 ```
 Fuse entangle an object to a shield and then zuggle that shield.
 ```

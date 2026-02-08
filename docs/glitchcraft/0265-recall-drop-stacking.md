@@ -7,7 +7,7 @@ title: "Recall Drop Stacking"
 ## Overview
 Dropping many zonai devices in recall causes intense frame drops
 
-## How To
+## Instructions
 ```
 1. Select the recall rune from the L menu and enter the item quick menu before recall activates
 2. Drop a zonai device and spam the dpad to enter the quick menu again without unpausing
@@ -15,8 +15,6 @@ Dropping many zonai devices in recall causes intense frame drops
 4. Exit recall
 ```
 
-
-## Metadata
 ## Notes
 With enough lag, it's possible to clip objects through the ground similar to hydroclip
 The amount of lag generated is heavily dependent on the zonai device being dropped and the quantity.

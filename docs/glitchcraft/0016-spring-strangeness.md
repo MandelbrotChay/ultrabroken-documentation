@@ -1,4 +1,4 @@
----
+﻿---
 title: "Spring Strangeness"
 ---
 
@@ -7,7 +7,7 @@ title: "Spring Strangeness"
 ## Overview
 really strange things start happening both with collision and the camera when springs are used in different ways
 
-## How To
+## Instructions
 ```
 Currently 2 methods:
 -Method 1: The "box spring trap" where you fuse 4 open springs together, then stand inside and activate them. 
@@ -15,7 +15,6 @@ Currently 2 methods:
 ```
 
 
-## Metadata
 ## Notes
 might allow for some unloaded areas and/or clipping
 Method 1 is reliablely strange, while Method 2 has only been performed once thus far

@@ -7,7 +7,7 @@ title: "Shadow/Void Icons"
 ## Overview
 Using the camera it's possible to make equipment icons black, leaving only the equipment's shadow and some other eventual colors coming from the fuse. It's also possible to get fully empty icons.
 
-## How To
+## Instructions
 ```
 1. Drop your target equipment on the ground. Its icon needs to be dynamically generated, therefore it needs to have a fuse.
 2. Prepare the camera rune. Pick up your equipment, and instantly take a picture, you can do so by pressing A, then L, and spamming A. 
@@ -15,8 +15,6 @@ Depending on how quick you are, the outcome may change. If you were too slow, yo
 The icon stays on save/loading.
 ```
 
-
-## Metadata
 ## Notes
 Dropping the equipment
 makes it lose its special

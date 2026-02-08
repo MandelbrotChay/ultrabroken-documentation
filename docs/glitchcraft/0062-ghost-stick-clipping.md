@@ -1,4 +1,4 @@
----
+﻿---
 title: "Ghost Stick Clipping"
 ---
 
@@ -7,7 +7,7 @@ title: "Ghost Stick Clipping"
 ## Overview
 Allows Link to clip through walls by stepping onto a steering stick during ABCS.
 
-## How To
+## Instructions
 ```
 1. Create an autobuild of two steering sticks (one in front of the other diagonally, rotated 45 degrees). 
 2. Make sure the steering sticks don't pick up the real objects and perform ABCS.
@@ -15,7 +15,6 @@ Allows Link to clip through walls by stepping onto a steering stick during ABCS.
 ```
 
 
-## Metadata
 ## Notes
 Has a very good chance of crashing the game in certain areas. Depths are usually stable, but can still crash there too.
 

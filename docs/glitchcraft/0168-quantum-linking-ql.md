@@ -7,7 +7,7 @@ title: "Quantum Linking (QL)"
 ## Overview
 Uses culling to separate glued objects in space, while still retaining a coherent construction
 
-## How To
+## Instructions
 ```
 Requirements:
 - 1 shield
@@ -23,8 +23,6 @@ Procedure:
 6. Glue something to the separated other object in order to find the whole thing in your Autobuild history
 ```
 
-
-## Metadata
 ## Notes
 Quantum Anchor
 Adding ZLOT and recall locking to a culled object enables Antigravity on other objects quantum-linked to it

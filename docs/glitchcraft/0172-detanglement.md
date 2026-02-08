@@ -7,14 +7,12 @@ title: "Detanglement"
 ## Overview
 Using a rocket shield disconnects fuse-entangled objects from their source equipment without destroying the object.
 
-## How To
+## Instructions
 ```
 1. Zuggle a shield that has something fuse entangled to it
 2. Use a rocket shield
 ```
 
-
-## Metadata
 ## Notes
 Can be used to detangle wuggled equipment, turning it into a true zuggle.
 Fuse entangling a detangled object and dropping the shield will delete it.

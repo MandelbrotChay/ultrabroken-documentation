@@ -7,15 +7,13 @@ title: "Infinite Damage 2.0"
 ## Overview
 Use new prompt to do infinite damage without using durability.
 
-## How To
+## Instructions
 ```
 1. Charge spear attack at right distance.
 2. Hit enemy right as picking up a "???" prompt.
 3. If timed right, go in inventory, swap weapon, close, repeat.
 ```
 
-
-## Metadata
 ## Notes
 Can use 1 time use fuse material infinitely.
 

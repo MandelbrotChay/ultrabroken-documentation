@@ -7,7 +7,7 @@ title: "Anti-gravity GAS"
 ## Overview
 Allows for weapon GAS by throwing the base of an ARAZ connection just as Link gets shocked
 
-## How To
+## Instructions
 ```
 1. Zuggle a weapon and equip a different weapon over it
 2. Fuse the target zonai device to the equipped weapon
@@ -17,8 +17,6 @@ Allows for weapon GAS by throwing the base of an ARAZ connection just as Link ge
 6. Open the inventory and unequip the pause menu
 ```
 
-
-## Metadata
 ## Notes
 —
 

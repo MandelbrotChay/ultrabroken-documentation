@@ -1,4 +1,4 @@
----
+﻿---
 title: "Save Load Dupe (SLD)"
 ---
 
@@ -7,7 +7,7 @@ title: "Save Load Dupe (SLD)"
 ## Overview
 Allows easy duplication of your weapons, bows, and shields
 
-## How To
+## Instructions
 ```
 0. Have a save prepared nearby (makes it convenient for later).
 1. Equip the weapon/bow/shield you want to duplicate and make sure it appears on Link's back.
@@ -17,7 +17,6 @@ Allows easy duplication of your weapons, bows, and shields
 ```
 
 
-## Metadata
 ## Notes
 This effectively transfers the equipment to the dropped location, in the save that's loaded
 

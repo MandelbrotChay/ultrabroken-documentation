@@ -7,7 +7,7 @@ title: "Recipe Storage"
 ## Overview
 Delaying the recipe menu by a few frames allow for some holding shenanigans
 
-## How To
+## Instructions
 ```
 Method 1 (1.0.0) (mulberry):
 1. Select a meal
@@ -33,8 +33,6 @@ Recipe Hold Storage:
 3. Holding anything will pull out the hold stored objects (the recipe ingredients)
 ```
 
-
-## Metadata
 ## Notes
 —
 

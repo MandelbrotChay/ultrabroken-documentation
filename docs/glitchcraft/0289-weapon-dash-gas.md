@@ -7,7 +7,7 @@ title: "Weapon Dash GAS"
 ## Overview
 Allows for easy weapon GAS by performing a dash attack while its fused zonai device is culled
 
-## How To
+## Instructions
 ```
 1. Fuse entangle a battery-consuming zonai device to your equipped shield
 2. Fuse the zonai device to a weapon
@@ -18,8 +18,6 @@ Allows for easy weapon GAS by performing a dash attack while its fused zonai dev
 7. Detangle the zonai device from the shield that it is fuse-entangled to
 ```
 
-
-## Metadata
 ## Notes
 —
 

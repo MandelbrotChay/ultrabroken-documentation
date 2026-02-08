@@ -7,15 +7,13 @@ title: "Reball"
 ## Overview
 By combining recall with throwing a Zonai device capsule, you can jump onto and transfer momentum from the capsule into Link, providing significant speed.
 
-## How To
+## Instructions
 ```
 1. Throw a Zonai device capsule.
 2. Use recall on it and position yourself in such a way that when you jump, you intersect with the capsules path.
 3. Time a jump to land on tthe capsule at the moment the it is being recalled at max speed.
 ```
 
-
-## Metadata
 ## Notes
 Can be combined with arrow smuggle for momentum preservation.
 

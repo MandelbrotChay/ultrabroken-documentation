@@ -7,7 +7,7 @@ title: "Shock FE"
 ## Overview
 Interrupting a fuse to a zuggled item causes FE
 
-## How To
+## Instructions
 ```
 1. zuggle a shield or a weapon
 2. hold out the same type of equipment
@@ -16,8 +16,6 @@ Interrupting a fuse to a zuggled item causes FE
 The zuggled item will have it FE'd to it
 ```
 
-
-## Metadata
 ## Notes
 performing this twice with the same smuggle and fuse will pseudo fuse it to the other equipment
 

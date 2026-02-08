@@ -7,7 +7,7 @@ title: "Infinite Balloon"
 ## Overview
 Steal Robbie's balloon which has will never deplete.
 
-## How To
+## Instructions
 ```
 1. Get far enough into Joshua's quest "Camera Work in the Depths" to be able to auto build the balloon.
 2. Talk to Izra after starting "The Missing Farm Tools" and attach parts to the boat in a way that it will flow down river while in dialogue.
@@ -16,8 +16,6 @@ Steal Robbie's balloon which has will never deplete.
 5. The boat is gone but Izra is in a weird rolling state. Position where the balloon should be and autobuild the balloon away. After fading to black, the balloon should be positioned incorrectly and able to be moved.
 ```
 
-
-## Metadata
 ## Notes
 There are many NPCs that can be put into this weird rolling state.
 

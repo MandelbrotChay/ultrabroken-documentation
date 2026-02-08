@@ -7,15 +7,13 @@ title: "Shock Cold Fuse"
 ## Overview
 Interrupting a fuse on the first possible frame with shock causes cold fusion
 
-## How To
+## Instructions
 ```
 1. Use a shock emitter with the Thunder Helm equipped and electrify the weapon/shield while fuse is active with an object in range
 2. Pause and unequip the helm
 3. Unpause and fuse on the first frame possible
 ```
 
-
-## Metadata
 ## Notes
 —
 

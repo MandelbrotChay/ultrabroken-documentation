@@ -1,4 +1,4 @@
----
+﻿---
 title: "Drop Zuggle"
 ---
 
@@ -7,7 +7,7 @@ title: "Drop Zuggle"
 ## Overview
 Allows for a drop smuggled item to have the same transfer properties as zuggle
 
-## How To
+## Instructions
 ```
 -Drop smuggle your target weapon
 -Let the Like Like eat you
@@ -26,7 +26,6 @@ For weapons:
 ```
 
 
-## Metadata
 ## Notes
 —
 

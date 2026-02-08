@@ -7,7 +7,7 @@ title: "Arrow Prompt Storage (APS)"
 ## Overview
 Allows storage of the arrow prompt and can be given multiple times via an enemy shooting their unloaded arrow.
 
-## How To
+## Instructions
 ```
 1. Have an enemy shoot an arrow to your wooden shield without ever obtaining arrows before.
 2. Use recall and watch 2 memories.
@@ -16,8 +16,6 @@ Allows storage of the arrow prompt and can be given multiple times via an enemy 
 5. Enemies arrows will eventually de-load and give the arrow prompt.
 ```
 
-
-## Metadata
 ## Notes
 —
 

@@ -7,7 +7,7 @@ title: "Void Dipping"
 ## Overview
 An extremely powerful equipment state caused by interrupting and retrieving an equipment item that has been destroyed by the void.
 
-## How To
+## Instructions
 ```
 Perform one of the following dipping methods:
 - Pick up the target item the frame it is destroyed by the void
@@ -20,8 +20,6 @@ Then retrieve the item with one of the following methods:
 - Pick up the target item from the void
 ```
 
-
-## Metadata
 ## Notes
 Void dipped equipment have the following properties:
 - Uninteractable by runes

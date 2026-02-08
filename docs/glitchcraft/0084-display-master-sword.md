@@ -1,4 +1,4 @@
----
+﻿---
 title: "Display Master Sword"
 ---
 
@@ -7,7 +7,7 @@ title: "Display Master Sword"
 ## Overview
 Allows you to display the master sword, damaged master sword or MsgNotFound in a weapon display
 
-## How To
+## Instructions
 ```
 1. Zuggle Overload.
 2. Recall in front of a weapon display.
@@ -16,7 +16,6 @@ Allows you to display the master sword, damaged master sword or MsgNotFound in a
 ```
 
 
-## Metadata
 ## Notes
 For MsgNotFound you don't need to drop it out of recall
 

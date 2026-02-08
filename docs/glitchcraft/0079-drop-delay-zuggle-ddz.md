@@ -1,4 +1,4 @@
----
+﻿---
 title: "Drop Delay Zuggle (DDZ)"
 ---
 
@@ -7,7 +7,7 @@ title: "Drop Delay Zuggle (DDZ)"
 ## Overview
 Dropping a large amount of equipment causes a delay in equipment spawning, enabling zuggling.
 
-## How To
+## Instructions
 ```
 1. Face a wall
 2. Drop 15-20 weapons/bows/shields
@@ -18,7 +18,6 @@ Dropping a large amount of equipment causes a delay in equipment spawning, enabl
 ```
 
 
-## Metadata
 ## Notes
 You dont need a wall, if you load a file after going into the map.
 

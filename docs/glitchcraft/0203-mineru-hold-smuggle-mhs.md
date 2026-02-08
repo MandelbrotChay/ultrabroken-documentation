@@ -7,15 +7,13 @@ title: "Mineru Hold Smuggle (MHS)"
 ## Overview
 Allows holding items in inventory but not in overworld.
 
-## How To
+## Instructions
 ```
 1. Get on Mineru
 2. Disable Mineru and hold desired items
 3. Without closing menu, watch 2 memories
 ```
 
-
-## Metadata
 ## Notes
 Can duplicate items. Also see ISLT, 218 on how to transfer items through saves.
 

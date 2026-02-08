@@ -7,7 +7,7 @@ title: "Hand Locked Equipment Smuggling (HLES)"
 ## Overview
 Allows you to smuggle equipment only when your hands are busy.
 
-## How To
+## Instructions
 ```
 Stand next to a wall facing away from it
 Equip a bow/shield/weapon (this one wont get smuggled)
@@ -17,8 +17,6 @@ Equip a different bow/shield/weapon and then drop it too (this one gets smuggled
 Hold any material
 ```
 
-
-## Metadata
 ## Notes
 Hand locked smuggling can also be performed using runes, two handed weapon and hold throw
 

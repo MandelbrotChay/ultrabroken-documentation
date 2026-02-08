@@ -1,4 +1,4 @@
----
+﻿---
 title: "Springboard Clipping"
 ---
 
@@ -8,7 +8,6 @@ title: "Springboard Clipping"
 Allows link to clip through the floor while springboarding under a low ceiling.
 
 
-## Metadata
 ## Notes
 —
 

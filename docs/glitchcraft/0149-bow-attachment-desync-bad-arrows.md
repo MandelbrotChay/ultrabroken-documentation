@@ -7,7 +7,7 @@ title: "Bow Attachment Desync (BAD Arrows)"
 ## Overview
 Allows you to attach different materials to multishot arrows.
 
-## How To
+## Instructions
 ```
 1. Stand next to a wall facing away from it
 2. Equip a multishot bow
@@ -21,8 +21,6 @@ Repeat steps 4-6 for as many times as you want
 9. Fire the bow without removing it from Link's hand
 ```
 
-
-## Metadata
 ## Notes
 1.0.0 can perform single material Bad Arrows by first fusing a material, then equipping a multishot and immediately dropping it, this drops the material on the ground for infinite uses but also deletes bow modifiers.
 On 1.0.0/1.2.0 using single shot bows does not add a fuse into the mix.

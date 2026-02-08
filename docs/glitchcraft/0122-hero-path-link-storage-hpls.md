@@ -1,4 +1,4 @@
----
+﻿---
 title: "Hero Path Link Storage (HPLS)"
 ---
 
@@ -7,13 +7,12 @@ title: "Hero Path Link Storage (HPLS)"
 ## Overview
 Visual glitch with the hero path.
 
-## How To
+## Instructions
 ```
 Press X, then close the hero path and the map quickly
 ```
 
 
-## Metadata
 ## Notes
 Translates with map storage  and
 can cause a sheika symbol (map storage related)

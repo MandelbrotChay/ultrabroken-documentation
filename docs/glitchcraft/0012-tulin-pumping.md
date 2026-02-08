@@ -1,4 +1,4 @@
----
+﻿---
 title: "Tulin Pumping"
 ---
 
@@ -7,13 +7,12 @@ title: "Tulin Pumping"
 ## Overview
 Preserves the initial boost of tulin
 
-## How To
+## Instructions
 ```
 jump off a ledge and activate Tulin's ability, then close glider and reopen it for a boost, the closing and reopening can be repeated multiple times
 ```
 
 
-## Metadata
 ## Notes
 —
 

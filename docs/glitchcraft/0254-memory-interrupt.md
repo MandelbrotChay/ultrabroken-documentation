@@ -7,7 +7,7 @@ title: "Memory Interrupt"
 ## Overview
 Interrupting a memory causes a forced pause after a dialogue
 
-## How To
+## Instructions
 ```
 1. Select a memory
 2. Hold up on the D-Pad or the left stick
@@ -18,8 +18,6 @@ The next dialogue/cutscene causes a forced pause.
 The main use for this is Banc Storage, check the next row
 ```
 
-
-## Metadata
 ## Notes
 —
 

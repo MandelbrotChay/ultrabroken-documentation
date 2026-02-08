@@ -1,4 +1,4 @@
----
+﻿---
 title: "Jumpslash Canceling"
 ---
 
@@ -7,7 +7,7 @@ title: "Jumpslash Canceling"
 ## Overview
 Interrupt jumpslashes by swapping a shield mid-animation
 
-## How To
+## Instructions
 ```
 1. Jump off edge 
 2. Jumpslash 
@@ -15,7 +15,6 @@ Interrupt jumpslashes by swapping a shield mid-animation
 ```
 
 
-## Metadata
 ## Notes
 Infinite Height
 Jumpslash Cancel Clipping

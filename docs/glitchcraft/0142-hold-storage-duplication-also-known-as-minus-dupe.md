@@ -1,4 +1,4 @@
----
+﻿---
 title: "Hold Storage Duplication (Also known as Minus Dupe)"
 ---
 
@@ -7,7 +7,7 @@ title: "Hold Storage Duplication (Also known as Minus Dupe)"
 ## Overview
 Allows you to dupe items via hold storage.
 
-## How To
+## Instructions
 ```
 1. Activate hold storage onto a horse.
 2. From on top of the horse, throw all of the item onto the ground until you have none left.
@@ -16,7 +16,6 @@ Allows you to dupe items via hold storage.
 ```
 
 
-## Metadata
 ## Notes
 —
 

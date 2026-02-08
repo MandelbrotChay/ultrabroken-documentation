@@ -1,4 +1,4 @@
----
+﻿---
 title: "Memory Buffering"
 ---
 
@@ -7,13 +7,12 @@ title: "Memory Buffering"
 ## Overview
 Advances Links current animation by 1 frame while keeping the menu open. Links coordinates will not change.
 
-## How To
+## Instructions
 ```
 -Skip a playing memory during an animation.
 ```
 
 
-## Metadata
 ## Notes
 —
 

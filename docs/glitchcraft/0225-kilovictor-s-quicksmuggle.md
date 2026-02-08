@@ -7,7 +7,7 @@ title: "Kilovictor's quicksmuggle"
 ## Overview
 fusing an sdc stick to equipment allows for a different, stronger cull, which can be used to cull equipment.
 
-## How To
+## Instructions
 ```
 1. Perform sdc (you can use cold fuse to reduce the risk of cull locking)
 2. Fuse the sdc stick to something
@@ -21,8 +21,6 @@ Link should cull and uncull for a few frames, then fully cull
 9. To prevent further culling, you can destroy the sdc stick setup by picking it up in a way that removes it from the overworld
 ```
 
-
-## Metadata
 ## Notes
 it's very likely to cull lock, especially if you don't mount a steering stick, looking up seems to slightly reduce the chance of this happening
 

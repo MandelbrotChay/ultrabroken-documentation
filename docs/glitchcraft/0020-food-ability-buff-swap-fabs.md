@@ -1,4 +1,4 @@
----
+﻿---
 title: "Food Ability Buff Swap (FABS)"
 ---
 
@@ -7,7 +7,7 @@ title: "Food Ability Buff Swap (FABS)"
 ## Overview
 Allows you to get roasted food (stackable) with a food effect
 
-## How To
+## Instructions
 ```
 1. Cook a meal with the desired effect
 
@@ -23,7 +23,6 @@ Allows you to get roasted food (stackable) with a food effect
 ```
 
 
-## Metadata
 ## Notes
 These are all the places you can obtain cooked food to perform with FABS:
 - 2 at Kara Kara Bazaar (Gerudo)

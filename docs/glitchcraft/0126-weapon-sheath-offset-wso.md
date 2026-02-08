@@ -1,4 +1,4 @@
----
+﻿---
 title: "Weapon Sheath Offset (WSO)"
 ---
 
@@ -7,7 +7,7 @@ title: "Weapon Sheath Offset (WSO)"
 ## Overview
 Puts the weapon sheathe in an offset state, similar to the sheathe during Zuggle Overload
 
-## How To
+## Instructions
 ```
 1. Have two of the same weapon.
 
@@ -19,7 +19,6 @@ Puts the weapon sheathe in an offset state, similar to the sheathe during Zuggle
 ```
 
 
-## Metadata
 ## Notes
 This works for ALL weapons not just the .
 

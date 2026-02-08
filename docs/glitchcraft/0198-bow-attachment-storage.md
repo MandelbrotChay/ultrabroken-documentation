@@ -7,7 +7,7 @@ title: "Bow Attachment Storage"
 ## Overview
 You can store the bow fuse by dropping the bow during the bow fuse and interupting it with throw aim or a jump slash.
 
-## How To
+## Instructions
 ```
 Method 1:
 1. Aim with the bow
@@ -28,8 +28,6 @@ Method 2:
 7. The material will be fused to the bow as soon as you tap ZR
 ```
 
-
-## Metadata
 ## Notes
 A variant of this glitch can be done using zuggle overload (has been known for a while), but I am too lazy to add it to the sheet :D
 

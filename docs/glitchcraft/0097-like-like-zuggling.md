@@ -1,4 +1,4 @@
----
+﻿---
 title: "Like-Like Zuggling"
 ---
 
@@ -7,7 +7,7 @@ title: "Like-Like Zuggling"
 ## Overview
 Allows for zuggling via slugging
 
-## How To
+## Instructions
 ```
 Method 1 (works 1.0.0-1.1.2):
 1. Sluggle and drop the equipped sluggled item, then equip another item of the same type
@@ -26,7 +26,6 @@ Method 2 (works 1.2.0-1.2.1)
 ```
 
 
-## Metadata
 ## Notes
 Both methods can be used to zuggle multiple items at once. Simply repeat the steps for each subsequent zuggle except for the last step, which should be skipped until you have zuggled the desired amount of items (limit of 6 items per like like)
 For zuggling bows/shields on 1.1.2:

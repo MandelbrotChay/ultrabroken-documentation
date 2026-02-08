@@ -7,7 +7,7 @@ title: "Zuggle Overload Desync"
 ## Overview
 Allows you to transfer with menu desync from zuggle overload.
 
-## How To
+## Instructions
 ```
 Can also be performed using the steps in "Unload WST", a better method
 1. Get a weapon with the desired durability
@@ -19,8 +19,6 @@ Can also be performed using the steps in "Unload WST", a better method
 7. All weapons on the ground should have transferred over.
 ```
 
-
-## Metadata
 ## Notes
 causes WST
 Only transfers durability and fused material on 1.0.0, same as WST.

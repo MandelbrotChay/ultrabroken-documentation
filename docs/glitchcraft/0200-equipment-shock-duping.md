@@ -7,15 +7,13 @@ title: "Equipment Shock Duping"
 ## Overview
 Droping a recently equipped weapon shortly before shock dropping it, can cause a dupe.
 
-## How To
+## Instructions
 ```
 1. hold out a piece of equipment
 
 2. equip a new item right before getting shocked and drop it
 ```
 
-
-## Metadata
 ## Notes
 Test on more versions
 

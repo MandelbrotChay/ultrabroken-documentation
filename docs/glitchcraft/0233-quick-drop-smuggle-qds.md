@@ -7,7 +7,7 @@ title: "Quick Drop Smuggle (QDS)"
 ## Overview
 Dropping and equipping weapons in a specific way causes drop smuggle.
 
-## How To
+## Instructions
 ```
 1. Face links back against a wall
 2. pause
@@ -27,8 +27,6 @@ Dropping and equipping weapons in a specific way causes drop smuggle.
 to turn it into a full zuggle, swap equipment and faildrop
 ```
 
-
-## Metadata
 ## Notes
 Can cause dynamic zuggle
 

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Bow Sprinting"
 ---
 
@@ -7,13 +7,12 @@ title: "Bow Sprinting"
 ## Overview
 —
 
-## How To
+## Instructions
 ```
 tap B - ZR, repeat. Additional info: alternate tapping B then ZR. With a tempo of about 130-160 bpm (B being on the beat, ZR being the up beat)
 ```
 
 
-## Metadata
 ## Notes
 —
 

@@ -7,7 +7,7 @@ title: "Equipment Mitosis"
 ## Overview
 By combining zuggle overload with 1.0 modifier deletion, it is possible to mass dupe equipment
 
-## How To
+## Instructions
 ```
 1. Zuggle overload
 2. Face Links back to a wall
@@ -19,8 +19,6 @@ By combining zuggle overload with 1.0 modifier deletion, it is possible to mass 
 8. repeat steps 3-7 as much as you want
 ```
 
-
-## Metadata
 ## Notes
 —
 

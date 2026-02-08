@@ -1,4 +1,4 @@
----
+﻿---
 title: "Map Storage"
 ---
 
@@ -7,7 +7,7 @@ title: "Map Storage"
 ## Overview
 Allows you to have control over Link while the map is open.
 
-## How To
+## Instructions
 ```
 1. Open the camera.
 2. Press - and go to the map tab.
@@ -16,7 +16,6 @@ Allows you to have control over Link while the map is open.
 ```
 
 
-## Metadata
 ## Notes
 effects can range from softlocks to crashes
 

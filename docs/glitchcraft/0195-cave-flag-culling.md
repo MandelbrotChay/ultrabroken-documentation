@@ -7,7 +7,7 @@ title: "Cave Flag Culling"
 ## Overview
 For certain caves (like Pondside Cave), the game checks every object and determines if they belong to inside or outside the cave, and all objects with the outside value culls when Link is inside the cave.
 
-## How To
+## Instructions
 ```
 Method 1:
 1. Drop a piece  equipment outside the cave and carry it inside with UH
@@ -18,8 +18,6 @@ Method 2:
 2. Drop the equipment inside the cave
 ```
 
-
-## Metadata
 ## Notes
 https://discord.com/channels/1086729144307564648/1113557914444111873/1217232464695525496
 

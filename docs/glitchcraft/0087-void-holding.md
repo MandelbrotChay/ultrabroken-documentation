@@ -1,4 +1,4 @@
----
+﻿---
 title: "Void Holding"
 ---
 
@@ -7,13 +7,12 @@ title: "Void Holding"
 ## Overview
 Allows you to hold materials "whenever you want" as long as you are at a low enough Y coordinate
 
-## How To
+## Instructions
 ```
 Clip below roughly Y -4000 and hold any stack of items
 ```
 
 
-## Metadata
 ## Notes
 Can cause a weird hold smuggeling state that usually softlocks the game after a few seconds, however you can still do actions (e.g. warping), as long as you do it before the softlock
 Needs more testing

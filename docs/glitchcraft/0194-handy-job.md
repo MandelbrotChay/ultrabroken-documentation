@@ -7,15 +7,13 @@ title: "Handy Job"
 ## Overview
 Gloom hands reset the durability of enemy equipment.
 
-## How To
+## Instructions
 ```
 1. Give an enemy the equipment to repair
 2. Trigger a gloom hand
 3. Get the weapon back from the enemy
 ```
 
-
-## Metadata
 ## Notes
 Does not repair a weapon's fuse durability if an item has been fused to it previously
 

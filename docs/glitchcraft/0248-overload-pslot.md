@@ -7,7 +7,7 @@ title: "Overload PSLOT"
 ## Overview
 Using Overload it's possible to fully portably PSLOT on current versions
 
-## How To
+## Instructions
 ```
 1. Drop Zuggle 2 shields with overload and portacull.
 2. Overload Cold Fuse your target to a shield, this will FE to both shields.
@@ -16,8 +16,6 @@ Using Overload it's possible to fully portably PSLOT on current versions
 5. Detangle by drop zuggling the parent again and using a rocket shield.
 ```
 
-
-## Metadata
 ## Notes
 —
 

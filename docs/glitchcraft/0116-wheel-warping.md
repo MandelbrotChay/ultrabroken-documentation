@@ -1,4 +1,4 @@
----
+﻿---
 title: "Wheel Warping"
 ---
 
@@ -7,7 +7,7 @@ title: "Wheel Warping"
 ## Overview
 Zips small wheels to certain coordinates extremely quickly and can be used to launch Link a good distance and even pass through objects.
 
-## How To
+## Instructions
 ```
 1. Activate Arrow Unloading.
 2. Shoot a small wheel fused to the arrow.
@@ -17,7 +17,6 @@ Shooting the arrows in the right angle and terrain, can cause the small wheel to
 ```
 
 
-## Metadata
 ## Notes
 1.2.0-1.2.1 require an alternate setup
 

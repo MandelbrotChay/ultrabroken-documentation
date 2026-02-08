@@ -1,4 +1,4 @@
----
+﻿---
 title: "Animation Swap"
 ---
 
@@ -7,7 +7,7 @@ title: "Animation Swap"
 ## Overview
 Combine animation sets when zuggle overloaded.
 
-## How To
+## Instructions
 ```
 1. Zuggle overload
 2. Swap weapon types
@@ -15,7 +15,6 @@ Combine animation sets when zuggle overloaded.
 ```
 
 
-## Metadata
 ## Notes
 Allows quick spin attacks with the spear charge animation, and many other combinations.
 

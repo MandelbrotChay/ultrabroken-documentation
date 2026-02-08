@@ -1,4 +1,4 @@
----
+﻿---
 title: "Stamina Depletion Freeze (SDF)"
 ---
 
@@ -7,7 +7,7 @@ title: "Stamina Depletion Freeze (SDF)"
 ## Overview
 Certain actions can cause the stamina depletion to glitch out.
 
-## How To
+## Instructions
 ```
 There are several ways of activating it, most are currently unexplained, but this is the most consistent setup:
 
@@ -18,7 +18,6 @@ Letting go of B or stopping running cancels it
 ```
 
 
-## Metadata
 ## Notes
 —
 

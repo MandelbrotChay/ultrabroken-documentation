@@ -1,4 +1,4 @@
----
+﻿---
 title: "Forced Blood Moon"
 ---
 
@@ -7,7 +7,7 @@ title: "Forced Blood Moon"
 ## Overview
 Allows you to force a blood moon whenever you want
 
-## How To
+## Instructions
 ```
 1. Find a wall that is made of destroyable material. Something that you would be able to bomb to destroy
 2. Get into bullet time. This can be done by jumping off from above the wall, fan, or bomb (Note: Any method to get into bullet time will work)
@@ -16,7 +16,6 @@ Allows you to force a blood moon whenever you want
 ```
 
 
-## Metadata
 ## Notes
 Another way of performing a Forced Blood Moon is from using GAS to store overworld projectiles with a hydrant for a longer period of time in recall (about a minute, unsure if Zuggle Overload is needed or just staying in bullet time until you hit the ground).
 

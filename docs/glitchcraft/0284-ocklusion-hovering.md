@@ -7,15 +7,13 @@ title: "Ocklusion Hovering"
 ## Overview
 Triggering an ocklusion load while pickup smuggling certain objects pushes Link around, sometimes causing him to hover or levitate upwards
 
-## How To
+## Instructions
 ```
 1. Perform Ocklusion
 2. Take out a liftable object, such as a big battery, and perform pickup smuggling on it
 3. Trigger an ocklusion load
 ```
 
-
-## Metadata
 ## Notes
 TODO: Test other objects
 

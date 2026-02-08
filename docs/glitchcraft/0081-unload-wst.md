@@ -1,4 +1,4 @@
----
+﻿---
 title: "Unload WST"
 ---
 
@@ -7,7 +7,7 @@ title: "Unload WST"
 ## Overview
 Allows you to transfer modifiers and materials to any weapon. This method is unique as it allows for the modifiers to be tranfered to the master sword as well.
 
-## How To
+## Instructions
 ```
 0. Make two empty slots in the weapon/bow/shield tab.
 1. Overload the game by zuggling 16-20 times, until switching weapons causes it to drop on the ground (see notes in Smuggle Stacking for 1.1.2 Zuggling).
@@ -18,7 +18,6 @@ Allows you to transfer modifiers and materials to any weapon. This method is uni
 ```
 
 
-## Metadata
 ## Notes
 —
 

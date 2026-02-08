@@ -1,4 +1,4 @@
----
+﻿---
 title: "Mineru Ability Desync"
 ---
 
@@ -7,7 +7,7 @@ title: "Mineru Ability Desync"
 ## Overview
 Desyncs Flame Emitters attached to Mineru
 
-## How To
+## Instructions
 ```
 1. Wait for Mineru to use a Flame Emitter
 2. Use ascend while the Flame Emitter is active
@@ -15,7 +15,6 @@ Desyncs Flame Emitters attached to Mineru
 ```
 
 
-## Metadata
 ## Notes
 To do: test on other versions and with more emitters Seems similar to ARAZ
 

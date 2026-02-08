@@ -1,4 +1,4 @@
----
+﻿---
 title: "Recall Clip"
 ---
 
@@ -7,7 +7,7 @@ title: "Recall Clip"
 ## Overview
 Allows you to clip through things using a large object and recall
 
-## How To
+## Instructions
 ```
 -Set a block next to the door you want to clip through using ultrahand. 
 -Move the block away from the door, and then use recall on it. 
@@ -15,7 +15,6 @@ Allows you to clip through things using a large object and recall
 ```
 
 
-## Metadata
 ## Notes
 This can be done with a spring, making the entire trick much more portable
 

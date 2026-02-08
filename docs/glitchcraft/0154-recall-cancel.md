@@ -7,14 +7,12 @@ title: "Recall Cancel"
 ## Overview
 Lets you delay the dropping of weapon and items
 
-## How To
+## Instructions
 ```
 1. Hold L and go to recall
 2. Drop a weapon, bow, shield, or item from the quick menu before the rune activates
 ```
 
-
-## Metadata
 ## Notes
 Jumpslash cancel
 

@@ -1,4 +1,4 @@
----
+﻿---
 title: "MNF Zuggle Fuse"
 ---
 
@@ -7,7 +7,7 @@ title: "MNF Zuggle Fuse"
 ## Overview
 Allows to fuse to the MNF
 
-## How To
+## Instructions
 ```
 1. You need to have MNF and a not fused weapon.
 
@@ -25,7 +25,6 @@ Allows to fuse to the MNF
 ```
 
 
-## Metadata
 ## Notes
 Can also be done with other weapons and already fused weapons. This just replaces the fused material.
 

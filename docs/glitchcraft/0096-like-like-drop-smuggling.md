@@ -1,4 +1,4 @@
----
+﻿---
 title: "Like-Like Drop Smuggling"
 ---
 
@@ -7,7 +7,7 @@ title: "Like-Like Drop Smuggling"
 ## Overview
 Allows for Drop Smuggling via slugging
 
-## How To
+## Instructions
 ```
 Method 1 (works 1.0.0-1.1.2):
 Note: This method only works with weapons
@@ -21,7 +21,6 @@ Method 2 (works 1.0.0-1.2.1):
 ```
 
 
-## Metadata
 ## Notes
 The item that gets dropped enters purgatory, making FEWZ more accessible on newer patches
 

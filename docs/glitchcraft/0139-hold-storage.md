@@ -1,4 +1,4 @@
----
+﻿---
 title: "Hold Storage"
 ---
 
@@ -7,7 +7,7 @@ title: "Hold Storage"
 ## Overview
 Allows Link to remain in a object holding state when not normally possible, as well as desync the hold state.
 
-## How To
+## Instructions
 ```
 1. Find a decently high ledge and stand on it, hold R and select an item to hold in Links so he prepares to throw it.
 2. Jump off the ledge and just before Link hits the ground, open the menu. 
@@ -16,7 +16,6 @@ Allows Link to remain in a object holding state when not normally possible, as w
 ```
 
 
-## Metadata
 ## Notes
 Unless Link is put into a specific state while the held items are disconnected (I.e. swimming/horse riding), they will teleport back into Links hands, canceling the storage.
 Also possible by culling Link.

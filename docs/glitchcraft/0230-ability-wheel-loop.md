@@ -7,7 +7,7 @@ title: "Ability Wheel Loop"
 ## Overview
 Gets you stuck in the ability wheel indefinitely opening and closing.
 
-## How To
+## Instructions
 ```
 1. Begin holding L
 2. After a short delay perform an A-button action (like ultrahand/pick up/climb etc.)
@@ -16,8 +16,6 @@ Gets you stuck in the ability wheel indefinitely opening and closing.
 if the timing was right the ability wheel will come up right after the dpad menu.
 ```
 
-
-## Metadata
 ## Notes
 —
 

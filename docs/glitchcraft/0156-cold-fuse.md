@@ -7,15 +7,13 @@ title: "Cold Fuse"
 ## Overview
 Interrupting a fuse causes null fe without destroying the connection to the weapon/shield.
 
-## How To
+## Instructions
 ```
 Overload Cold Fuse
 Shock Cold Fuse
 Cull Cold Fuse
 ```
 
-
-## Metadata
 ## Notes
 Auto Fe:
 Fusing a cold fused object to its base causes fuse entanglement

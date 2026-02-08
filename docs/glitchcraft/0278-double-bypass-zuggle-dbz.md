@@ -7,7 +7,7 @@ title: "Double Bypass Zuggle (DBZ)"
 ## Overview
 Using a very specific and complex setup, it's possible to bypass dpad lock as well as drop swap culling, effectively giving parentless unculled zuggle on 1.2+
 
-## How To
+## Instructions
 ```
 1. Prepare a way of intangibly culling Link (SDC parent in culling area works great), as well as portacull equipment (you may use the same SDC stick for both the SDC parent and the portacull). Also prepare a topaz longblade if possible. Equip your target.
 2. Open the menu 1 frame before culling, while getting closer to the culling area. One way of doing that is getting outside of the culling area, hovering or selecting the SDC parent with ultrahand so it doesn't cull, put it in the culling area, then hold B and forward, and start holding L too a frame later. When the wheel opens, select the map rune.
@@ -23,8 +23,6 @@ There are variations of this setup that don't require a load, using a specific w
 - Portable Vortacull DBZ setup
 ```
 
-
-## Metadata
 ## Notes
 🐉
 

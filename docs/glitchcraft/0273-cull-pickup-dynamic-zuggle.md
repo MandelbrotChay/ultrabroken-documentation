@@ -7,7 +7,7 @@ title: "Cull Pickup Dynamic Zuggle"
 ## Overview
 Picking up a thrown boomerang on the same frame that it culls can lead to dynamic zuggle
 
-## How To
+## Instructions
 ```
 1. Fuse entangle a boomerang to a shield
 2. Drop the shield the boomerang is fuse entangled to in a culling area
@@ -19,8 +19,6 @@ Picking up a thrown boomerang on the same frame that it culls can lead to dynami
 8. Detangle the dynamic zuggle from the shield
 ```
 
-
-## Metadata
 ## Notes
 Works with any weapon that can be thrown instead of only boomerangs if combined with fail drop smuggle
 Possible to perform on 1.1.2+ with force swap on step 6. 1.2.0+ requires manual unculling of the dynamic smuggle after force swap

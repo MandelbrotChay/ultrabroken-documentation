@@ -7,7 +7,7 @@ title: "Temporary Devices"
 ## Overview
 Fusing during the unsheathe animation of a bow causes the fuse to appear for a few frames
 
-## How To
+## Instructions
 ```
 1. Pull out bow
 2. Press B to unsheathe, right before Link fully puts it away, (optionally swap bows to make it pop under Link) and fuse to your bow
@@ -16,8 +16,6 @@ On 1.0, it appears for a few frames, allowing Link to stand on it, on 1.1+ it ap
 Check the Extensions column for uses
 ```
 
-
-## Metadata
 ## Notes
 It's possible to FDC with it, either by chaining it (it emulates ground, so we can do multiple small falls to not take fall damage) or by getting a step up (highly inconsistent, has only been done a couple times). (discovered by PetitFrapo)
 

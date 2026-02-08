@@ -7,7 +7,7 @@ title: "Super Bomb Jump"
 ## Overview
 Jumping on a specific frame allows you to get a much higher bomb jump than usual
 
-## How To
+## Instructions
 ```
 Method 1:
 1. perform a neutral shieldjump with a bomb shield 
@@ -23,8 +23,6 @@ Method 2 :
 Method 2 in 1.0.0 will allow you to reuse your bomb flower infinitely, but also delete the modifier (modifier deletion wst).
 ```
 
-
-## Metadata
 ## Notes
 —
 

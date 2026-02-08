@@ -7,7 +7,7 @@ title: "Mineru Text Storage"
 ## Overview
 Lets you move while text is on screen
 
-## How To
+## Instructions
 ```
 1. Escape the last battle, to get the real sages to follow Link
 
@@ -16,8 +16,6 @@ Lets you move while text is on screen
 3. You'll keep moving while the text is on screen, causing various loading issues and allowing for super far camera zoom outs
 ```
 
-
-## Metadata
 ## Notes
 Only tested on 1.0.0, probably works on all versions
 

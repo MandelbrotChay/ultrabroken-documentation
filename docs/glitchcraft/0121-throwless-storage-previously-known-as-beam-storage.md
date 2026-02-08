@@ -1,4 +1,4 @@
----
+﻿---
 title: "Throwless Storage (Previously known as Beam Storage)"
 ---
 
@@ -7,7 +7,7 @@ title: "Throwless Storage (Previously known as Beam Storage)"
 ## Overview
 Makes it so that Link puts the weapon in an active state (allows for activation of Zonai Devices at all times)
 
-## How To
+## Instructions
 ```
 1. Fuse any Zonai Device to a weapon (that is not a rocket).
 2. Hold R, open the rune ability menu and let go of R before you open the map (or just open the menu).
@@ -17,7 +17,6 @@ If done properly, any Zonai devices fused to your weapon will become permanetly 
 ```
 
 
-## Metadata
 ## Notes
 Can also be done by pausing on a specific frame (Link's arm is extended outwards) and loading a save as well. If you fuse something and it does not activate, swap back and forth to that weapon.
 

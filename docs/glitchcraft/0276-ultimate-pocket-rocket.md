@@ -7,7 +7,7 @@ title: "Ultimate Pocket Rocket"
 ## Overview
 A pocket rocket which does not break on warps or drain energy cells, and has unlimited usage and range
 
-## How To
+## Instructions
 ```
 1. Fuse entangle a weapon on one durability (with no remaining fuse durability), to a shield
 
@@ -40,8 +40,6 @@ A pocket rocket which does not break on warps or drain energy cells, and has unl
 15. Move away from the moblin until it unloads, then warp anywhere
 ```
 
-
-## Metadata
 ## Notes
 —
 

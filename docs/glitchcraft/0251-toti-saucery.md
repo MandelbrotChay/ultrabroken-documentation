@@ -7,7 +7,7 @@ title: "Toti Saucery"
 ## Overview
 FSFEing an undiscovered item can cause several effects
 
-## How To
+## Instructions
 ```
 Perform FSFE on an undiscovered item/weapon to any type of equipment. This turns the undiscovered target invisible, creating what is called an "invisitem".
 
@@ -21,8 +21,6 @@ Prompt Storage:
 For more details, check the next row (not done yet, work in progress).
 ```
 
-
-## Metadata
 ## Notes
 —
 

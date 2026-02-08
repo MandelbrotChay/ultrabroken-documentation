@@ -7,7 +7,7 @@ title: "Equipped Throken"
 ## Overview
 Allows throken weapons to be equipped
 
-## How To
+## Instructions
 ```
 For 1.0.0-1.1.2:
 1. Fuse a bomb to a two-handed weapon on one durability (including its fuse durability)
@@ -24,8 +24,6 @@ For 1.0.0-1.2.1:
 5. Drop the boomerang with Link's back to a wall
 ```
 
-
-## Metadata
 ## Notes
 Having a like like steal the throken weapon from Link allows it to be picked up once again
 

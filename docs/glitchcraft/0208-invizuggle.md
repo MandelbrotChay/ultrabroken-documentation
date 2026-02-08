@@ -7,7 +7,7 @@ title: "Invizuggle"
 ## Overview
 Dropping equipment in a specific way during a cull causes an indestructable and invisible zuggle.
 
-## How To
+## Instructions
 ```
 There are multiple methods:
 
@@ -55,8 +55,6 @@ Method 4 (Discord) (Mulberry):
 9. warp away
 ```
 
-
-## Metadata
 ## Notes
 Todo:
 Add Method 5

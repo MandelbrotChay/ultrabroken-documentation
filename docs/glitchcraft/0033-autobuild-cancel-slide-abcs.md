@@ -1,4 +1,4 @@
----
+﻿---
 title: "Autobuild Cancel Slide (ABCS)"
 ---
 
@@ -7,7 +7,7 @@ title: "Autobuild Cancel Slide (ABCS)"
 ## Overview
 Allows you to slide on top of the blueprint build over the map at insane speeds, or gain immense amounts of height.
 
-## How To
+## Instructions
 ```
 1. Get some physical materials to create your blueprint autobuild (doesn't require all of them, just the needed ones for flooring).
 2. Select your blueprint you wish to build in the list.
@@ -18,7 +18,6 @@ If it works, your blueprint should be hovering up in front of you without the me
 ```
 
 
-## Metadata
 ## Notes
 Depending on how you create your build for ABCS, you can achieve many different results (either going very fast, ascending very high, or being able to clip through walls).
 

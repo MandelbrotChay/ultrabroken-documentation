@@ -7,7 +7,7 @@ title: "Purgatory SLD"
 ## Overview
 Allows equipment and objects to go through saves by sending its FE base to purgatory in a specific way.
 
-## How To
+## Instructions
 ```
 1. Cold fuse shield A to shield B
 2. Fuse entangle the target item/object to shield A
@@ -15,8 +15,6 @@ Allows equipment and objects to go through saves by sending its FE base to purga
 4. Equip shield B and load a save
 ```
 
-
-## Metadata
 ## Notes
 Grabbing a purgatory SLD object with ultrahand causes UltraSLOT.
 

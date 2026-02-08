@@ -1,4 +1,4 @@
----
+﻿---
 title: "Fuse Entanglement Clipping (FEC)"
 ---
 
@@ -7,7 +7,7 @@ title: "Fuse Entanglement Clipping (FEC)"
 ## Overview
 Using the object clipping properties of Fuse Entanglement with a steering-stick allows you to clip through certain walls, mostly invisble ones.
 
-## How To
+## Instructions
 ```
 1. Stand with your back to the wall you're trying to clip through.
 2. Fuse Entangle a steering-stick to place it through the wall.
@@ -15,7 +15,6 @@ Using the object clipping properties of Fuse Entanglement with a steering-stick 
 ```
 
 
-## Metadata
 ## Notes
 —
 
