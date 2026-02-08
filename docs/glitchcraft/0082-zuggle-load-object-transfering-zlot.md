@@ -13,7 +13,8 @@ Fuse entangle an object to a shield and then zuggle that shield.
 ```
 
 ## Metadata
-**Working Versions**  
+**Working Versions**
+
 - 1.0.0
 - 1.1.0/1.1.1
 - 1.1.2
@@ -36,7 +37,8 @@ InAMuffinCup, ChargeVolt (SLD transfer method) - June 7, 2023
 Can be used to load objects into other maps (like shrines) by placing them in the correct coordinates in Hyrule.
 Alternatively, you can do SLD instead of Zuggle to transfer over the shield, resulting in the same thing. If you ZLOT an object while recalling it the object will never move.
 
-**See also**  
+**See also**
+
 - Zuggling
 - Fuse Entanglement
 
