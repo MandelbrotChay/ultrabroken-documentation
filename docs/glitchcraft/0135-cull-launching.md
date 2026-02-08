@@ -15,15 +15,39 @@ By culling as object while its glued to another object, the unculled object will
 4. Reenter the culling area while on top of the regular object.
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-**Credit:** Asgorne - July 1, 2023
-**Source:** Discord
-**See also:** Object Culling
-**Effects/Extensions:** The position of the culled object relative to the regular object determines the speed and direction of the launch.
-**Examples:** https://discord.com/channels/1086729144307564648/1105598687167664239/1149779300283863073
+## Notes
+The position of the culled object relative to the regular object determines the speed and direction of the launch.
+
+## Credit
+Asgorne
+
+## Date
+July 1, 2023
+
+## Source
+
+- Discord
+
+## Examples
+
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1149779300283863073)
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+
+## See also
+
+- Object Culling
 
 ## Raw row
 ```csv

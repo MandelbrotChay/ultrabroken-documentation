@@ -13,14 +13,41 @@ A method for object culling
 2. Let the Like-Like eat the shield the object should cull.
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** Mozz - June 13, 2023
-**Source:** Discord
+## Notes
+—
+
+## Credit
+Mozz
+
+## Date
+June 13, 2023
+
+## Source
+
+- Discord
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+—
 
 ## Raw row
 ```csv

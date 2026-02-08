@@ -34,15 +34,43 @@ This method uses recall for a makeshift wall:
 4. Use recall to advance two frames (press L followed by B as fast as possible, do this twice)
 5. Recall the shield
 6. Pause
-7. Unequip the equipped weapon, re-equip, drop it
-8. Unpause, delay a tiny bit, fuse and press pause
+7. Unequip the equipped weapon, re-equip, drop it
+
+8. Unpause, delay a tiny bit, fuse and press pause
+
 9. Unpause
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-**Credit:** Zas - December 18, 2023
-**Source:** Twitter
+## Notes
+—
+
+## Credit
+Zas
+
+## Date
+December 18, 2023
+
+## Source
+
+- Twitter
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+
+## See also
+
+—
 
 ## Raw row
 ```csv
@@ -71,7 +99,9 @@ This method uses recall for a makeshift wall:
 4. Use recall to advance two frames (press L followed by B as fast as possible, do this twice)
 5. Recall the shield
 6. Pause
-7. Unequip the equipped weapon, re-equip, drop it
-8. Unpause, delay a tiny bit, fuse and press pause
+7. Unequip the equipped weapon, re-equip, drop it
+
+8. Unpause, delay a tiny bit, fuse and press pause
+
 9. Unpause, Working Versions: 1.0.0, Credit: Zas, Date: December 18, 2023, Link to Source: Twitter
 ```

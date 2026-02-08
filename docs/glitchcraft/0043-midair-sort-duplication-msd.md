@@ -15,13 +15,39 @@ Allows duplication of materials while midair.
 4. Pick up items
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-**Credit:** Zas, kurocat471 - May 21, 2023
-**Effects/Extensions:** Can also be used with Zonai devices to take them out without diminishing the actual total in inventory. (see ZSD for duping zonai devices) 
+## Notes
+Can also be used with Zonai devices to take them out without diminishing the actual total in inventory. (see ZSD for duping zonai devices)
 Y and exit must be pressed on the same frame.
-**Examples:** https://twitter.com/zasoot/status/1660458317934915584
+
+## Credit
+Zas, kurocat471
+
+## Date
+May 21, 2023
+
+## Source
+
+—
+
+## Examples
+
+- [Twitter/X](https://twitter.com/zasoot/status/1660458317934915584)
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+
+## See also
+
+—
 
 ## Raw row
 ```csv

@@ -23,28 +23,53 @@ Procedure:
 6. Glue something to the separated other object in order to find the whole thing in your Autobuild history
 ```
 
-## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** NaN Gogh, pyuk - August 30, 2023
-**Source:** Twitter
-Twitter
-Twitter (pyuk, Quantum Anchor)
-**See also:** Fuse Entanglement
-Object Culling
-Wireless Energy
-**Effects/Extensions:** Quantum Anchor
-Adding ZLOT and recall locking to a culled object enables Antigravity on other objects quantum-linked to it
-**Examples:** https://twitter.com/_nan_gogh/status/1676914554956132352
-https://vxtwitter.com/_nan_gogh/status/1678205905869889536?s=46
-**Tutorials/Resources:** https://www.youtube.com/watch?v=dxJru92WVtI
-**Notes:** The results, including the empty spaces in between objects, can be saved to Autobuild
 
-Quantum Link 6/30/2023
+## Metadata
+## Notes
+Quantum Anchor
+Adding ZLOT and recall locking to a culled object enables Antigravity on other objects quantum-linked to it
+The results, including the empty spaces in between objects, can be saved to Autobuild
+
+Quantum Link 6/30/2023
+
 Quantum Anchor 7/23/2023
+
+## Credit
+NaN Gogh, pyuk
+
+## Date
+August 30, 2023
+
+## Source
+
+- Twitter
+- Twitter
+- Twitter (pyuk
+- Quantum Anchor)
+
+## Examples
+
+- [Twitter/X](https://twitter.com/_nan_gogh/status/1676914554956132352)
+- [Twitter/X](https://vxtwitter.com/_nan_gogh/status/1678205905869889536?s=46)
+
+## Resources
+
+- [YouTube](https://www.youtube.com/watch?v=dxJru92WVtI)
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+- Fuse Entanglement
+- Object Culling
+- Wireless Energy
 
 ## Raw row
 ```csv
@@ -71,6 +96,7 @@ Wireless Energy, Effects/Extensions: Quantum Anchor
 Adding ZLOT and recall locking to a culled object enables Antigravity on other objects quantum-linked to it, Example(s): https://twitter.com/_nan_gogh/status/1676914554956132352
 https://vxtwitter.com/_nan_gogh/status/1678205905869889536?s=46, Tutorials/Resources: https://www.youtube.com/watch?v=dxJru92WVtI, Notes: The results, including the empty spaces in between objects, can be saved to Autobuild
 
-Quantum Link 6/30/2023
+Quantum Link 6/30/2023
+
 Quantum Anchor 7/23/2023
 ```

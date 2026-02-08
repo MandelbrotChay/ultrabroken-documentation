@@ -18,15 +18,40 @@ Fusing to an item on the same frame that a like-like eats it causes fuse storage
 7. When the like-like’s death animation completes, the target object will be entangled with your target weapon/shield and also drop on the ground next to the helper weapon/shield.
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-**Credit:** Mozz - June 18, 2023
-**Source:** https://discord.com/channels/1086729144307564648/1105598687167664239/1119880715832676423
-**See also:** Fuse Storage
-**Notes:** Only works with equipment and materials. Zonai devices cannot be culled by like likes, and are instead destroyed when eaten
+## Notes
+Only works with equipment and materials. Zonai devices cannot be culled by like likes, and are instead destroyed when eaten
+
+## Credit
+Mozz
+
+## Date
+June 18, 2023
+
+## Source
+
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1119880715832676423)
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+
+## See also
+
+- Fuse Storage
 
 ## Raw row
 ```csv

@@ -30,14 +30,41 @@ same as mode 1
 no camera ui
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** NaN Gogh - July 11, 2023
-**Source:** Twitter
+## Notes
+—
+
+## Credit
+NaN Gogh
+
+## Date
+July 11, 2023
+
+## Source
+
+- Twitter
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+—
 
 ## Raw row
 ```csv

@@ -24,20 +24,44 @@ Every chasm has an "unload box" that unloads the overworld if passed through. By
 13. unlock dpad using a chest
 ```
 
+
 ## Metadata
-**Working versions:** 1.2.0
-1.2.1
-**Credit:** Discovered by ock
-Optimized by mulberry, winnerboi - May 31, 2024
-**Source:** https://discord.com/channels/1086729144307564648/1105598687167664239/1246004390062587944
-**Effects/Extensions:** Extensions:
+## Notes
+Extensions:
 Mastersword zuggle (Ock)
 1. Desync the mastersword:
- - drop swapping the portacull equipment 
+ - drop swapping the portacull equipment
  - swap from ms to dropable weapon
  -  pause buffer
  -  fail drop weapon
 2. do regular chasm delay zuggle inputs
+
+## Credit
+Discovered by ock
+Optimized by mulberry, winnerboi - May 31, 2024
+
+## Date
+—
+## Source
+
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1246004390062587944)
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.2.0
+- 1.2.1
+
+## See also
+
+—
 
 ## Raw row
 ```csv

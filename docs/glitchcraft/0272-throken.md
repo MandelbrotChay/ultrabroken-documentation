@@ -14,16 +14,41 @@ Puts thrown weapons into a state of being broken and unbroken at the same time, 
 3. A prompt should appear saying that the weapon broke, but the weapon should still exist on the ground
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** Ikaboze - May 17, 2025
-**Source:** Discord
-**Effects/Extensions:** Throken weapons have no despawn radius, and can never be unloaded from distance
-**Examples:** Discord
+## Notes
+Throken weapons have no despawn radius, and can never be unloaded from distance
+
+## Credit
+Ikaboze
+
+## Date
+May 17, 2025
+
+## Source
+
+- Discord
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+—
 
 ## Raw row
 ```csv

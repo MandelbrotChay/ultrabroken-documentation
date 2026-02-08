@@ -18,23 +18,45 @@ Fuse entangling a shock emitter to two shields and permaculling one of its FE ba
 7. Uncull Link by watching a memory (if culled from SDC in culling area), and destroy the steering stick
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** Aergyl - September 16, 2024
-**Source:** Discord
-**See also:** Fuse Entanglement
-Stick Desync Clip (SDC)
-**Effects/Extensions:** Equipment Smuggle: Unsheathing the zapshield, dropping it and the equipped weapon after smuggles the weapon. This can also be used to smuggle the zapshield itself by dropping a different shield and then dropping the zapshield.
+## Notes
+Equipment Smuggle: Unsheathing the zapshield, dropping it and the equipped weapon after smuggles the weapon. This can also be used to smuggle the zapshield itself by dropping a different shield and then dropping the zapshield.
 Shock Cold Fuse: Unsheathing the zapshield and pressing ZL + Y while the fuse rune is active can be used to cold fuse objects to the equipped weapon.
 Zuggling the zapshield allows it to persist through loads.
-**Examples:** Discord (Smuggle)
-Discord (Cold Fuse)
-Discord (Object Packing)
-**Notes:** While zapshield itself can be created on all versions, it's applications are version dependent. Check the spreadsheet entry for a respective application to see which versions it works on.
+While zapshield itself can be created on all versions, it's applications are version dependent. Check the spreadsheet entry for a respective application to see which versions it works on.
+
+## Credit
+Aergyl
+
+## Date
+September 16, 2024
+
+## Source
+
+- Discord
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+- Fuse Entanglement
+- Stick Desync Clip (SDC)
 
 ## Raw row
 ```csv

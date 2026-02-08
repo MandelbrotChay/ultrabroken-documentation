@@ -19,18 +19,43 @@ Allows objects to go through saves by permanently culling their FE bases (parent
 The shield should now persist through saves! For object PSLOT, you can simply FE whatever object you wish to PSLOT to the shield.
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** mulberry - January 25, 2024
-**Source:** Discord
-**See also:** Fuse Entanglement
-Zuggle
-Stick Desync Clip
-**Notes:** PSLOT has a very long history of setups, some much more complex than others. The setup shown here is widely regarded to be one of the quickest and simplest methods.
+## Notes
+PSLOT has a very long history of setups, some much more complex than others. The setup shown here is widely regarded to be one of the quickest and simplest methods.
+
+## Credit
+mulberry
+
+## Date
+January 25, 2024
+
+## Source
+
+- Discord
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+- Fuse Entanglement
+- Zuggle
+- Stick Desync Clip
 
 ## Raw row
 ```csv

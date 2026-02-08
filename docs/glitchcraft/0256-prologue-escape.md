@@ -24,22 +24,45 @@ The main effects are:
 Check the Effects/Extensions column for more specific effects, such as Awakened Master Sword
 ```
 
-## Metadata
-**Working versions:** 1.0.0
-**Credit:** mulberry
-Aergyl
-Lightos
-LegendOfLinkk (initial discovery with memory editing)
 
-The entire glitch hunting community! - October 1st, 2024
-**Source:** https://discord.com/channels/1086729144307564648/1110956205624532993/1290703223467937898
-**Effects/Extensions:** Using Shrine Entry storage at Nachoyah, it's possible to beat Recall early, and sequence break. This locks you out of Purah Pad, and the Light Dragon won't spawn in the entire game. For casual use of Prologue Escape, it's recommended to not do that.
+## Metadata
+## Notes
+Using Shrine Entry storage at Nachoyah, it's possible to beat Recall early, and sequence break. This locks you out of Purah Pad, and the Light Dragon won't spawn in the entire game. For casual use of Prologue Escape, it's recommended to not do that.
 
 It's possible to get access to the Awakened Master Sword flag. Instead of making a new game in the loading screen, make one beforehand, and advance in prologue until Zelda tells Link that his sword is shining. Make a save/get an autosave past this point, this means the AMS flag is on.
 Now, perform Banc Storage, and load this save. You now have access to the AMS, without drawbacks. It goes away after beating Phantom Ganon at the castle, so avoid doing this to keep it.
 
 This glitch also allows for a setup to have infinite durability on any weapon, however due to its complexity this entry will not cover the steps. Feel free to ask glitch hunters in the speedrunning Discord about it.
-**Tutorials/Resources:** https://www.youtube.com/watch?v=RmjZKVGvstE
+
+## Credit
+mulberry
+Aergyl
+Lightos
+LegendOfLinkk (initial discovery with memory editing)
+
+The entire glitch hunting community! - October 1st, 2024
+
+## Date
+—
+## Source
+
+- [Discord](https://discord.com/channels/1086729144307564648/1110956205624532993/1290703223467937898)
+
+## Examples
+
+—
+
+## Resources
+
+- [YouTube](https://www.youtube.com/watch?v=RmjZKVGvstE)
+
+## Working Versions
+
+- 1.0.0
+
+## See also
+
+—
 
 ## Raw row
 ```csv

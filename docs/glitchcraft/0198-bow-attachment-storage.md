@@ -28,18 +28,43 @@ Method 2:
 7. The material will be fused to the bow as soon as you tap ZR
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** WinnerBoi77 - December 3, 2023
-**Source:** Discord
-**Examples:** https://discord.com/channels/1086729144307564648/1109838351596527726/1180885814230655017
-https://discord.com/channels/1086729144307564648/1109838351596527726/1180883442636955718
-https://vxtwitter.com/zasbotw/status/1731339526008963191
-**Notes:** A variant of this glitch can be done using zuggle overload (has been known for a while), but I am too lazy to add it to the sheet :D
+## Notes
+A variant of this glitch can be done using zuggle overload (has been known for a while), but I am too lazy to add it to the sheet :D
+
+## Credit
+WinnerBoi77
+
+## Date
+December 3, 2023
+
+## Source
+
+- Discord
+
+## Examples
+
+- [Discord](https://discord.com/channels/1086729144307564648/1109838351596527726/1180885814230655017)
+- [Discord](https://discord.com/channels/1086729144307564648/1109838351596527726/1180883442636955718)
+- [Twitter/X](https://vxtwitter.com/zasbotw/status/1731339526008963191)
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+—
 
 ## Raw row
 ```csv

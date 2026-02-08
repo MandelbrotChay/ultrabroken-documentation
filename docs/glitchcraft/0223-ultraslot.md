@@ -14,18 +14,42 @@ Uses purgatory to transfer ultrahanded objects through file loads.
 3. Grab the target object with ultrahand and load a file
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** mulberry - February 15, 2024
-**Source:** Discord
-**See also:** Fuse Entanglement
-Drop Smuggle
-**Effects/Extensions:** UltraSLOT objects can be continuously transferred between files as long as the object is grabbed with ultrahand before loading a file
-**Examples:** Discord
+## Notes
+UltraSLOT objects can be continuously transferred between files as long as the object is grabbed with ultrahand before loading a file
+
+## Credit
+mulberry
+
+## Date
+February 15, 2024
+
+## Source
+
+- Discord
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+- Fuse Entanglement
+- Drop Smuggle
 
 ## Raw row
 ```csv

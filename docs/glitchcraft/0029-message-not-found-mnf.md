@@ -31,20 +31,42 @@ Zuggle Overload Method:
 7. Load the save in which you want to have the MNF
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** LegendofLinkk (Zuggle Method) Abahbob (SLD Method) - May 17, 2023
-**Source:** Discord (Zuggle Method) 
-Discord (SLD Method)
-**See also:** The Zocument
-**Effects/Extensions:** This MNF can be powered up further! See WST or Unload WST for the method
-**Examples:** Youtube (Zuggle Method)
-Youtube (Zuggle Method) 
-Youtube (SLD Method)
+## Notes
+This MNF can be powered up further! See WST or Unload WST for the method
+
+## Credit
+LegendofLinkk (Zuggle Method) Abahbob (SLD Method)
+
+## Date
+May 17, 2023
+
+## Source
+
+- Discord (Zuggle Method)
+- Discord (SLD Method)
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+- The Zocument
 
 ## Raw row
 ```csv

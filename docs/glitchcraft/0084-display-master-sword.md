@@ -15,14 +15,39 @@ Allows you to display the master sword, damaged master sword or MsgNotFound in a
 4. Exit recall and press A right after to display it.
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-**Credit:** Zas - June 8, 2023
-**Source:** Twitter
-**Examples:** https://twitter.com/zasbotw/status/1666751564743315456
-**Notes:** For MsgNotFound you don't need to drop it out of recall
+## Notes
+For MsgNotFound you don't need to drop it out of recall
+
+## Credit
+Zas
+
+## Date
+June 8, 2023
+
+## Source
+
+- Twitter
+
+## Examples
+
+- [Twitter/X](https://twitter.com/zasbotw/status/1666751564743315456)
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+
+## See also
+
+—
 
 ## Raw row
 ```csv

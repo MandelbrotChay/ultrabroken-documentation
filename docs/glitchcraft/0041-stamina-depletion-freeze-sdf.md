@@ -17,13 +17,39 @@ There are several ways of activating it, most are currently unexplained, but thi
 Letting go of B or stopping running cancels it
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-**Credit:** Lightos_ - May 20, 2023
-**Source:** Discord
-**Examples:** https://discord.com/channels/1086729144307564648/1105598687167664239/1148688838198304779
+## Notes
+—
+
+## Credit
+Lightos_
+
+## Date
+May 20, 2023
+
+## Source
+
+- Discord
+
+## Examples
+
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1148688838198304779)
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+
+## See also
+
+—
 
 ## Raw row
 ```csv

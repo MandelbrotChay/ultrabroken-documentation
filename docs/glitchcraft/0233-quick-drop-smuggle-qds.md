@@ -27,13 +27,10 @@ Dropping and equipping weapons in a specific way causes drop smuggle.
 to turn it into a full zuggle, swap equipment and faildrop
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-**Credit:** Zas, mulberry, Aeolian - March 16, 2024
-**Source:** Discord
-**See also:** Dynamic Zuggle
-Hand Locked Equipment Smuggling
-**Effects/Extensions:** Can cause dynamic zuggle
+## Notes
+Can cause dynamic zuggle
 
 dynamic zuggle of equipped item (Winnerboi & Ryan?):
 Discord
@@ -44,6 +41,33 @@ Instant drop zuggle (Mulberry)
 Discord
 Mulberries drop input cheat sheet:
 Discord
+
+## Credit
+Zas, mulberry, Aeolian
+
+## Date
+March 16, 2024
+
+## Source
+
+- Discord
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+
+## See also
+
+- Dynamic Zuggle
+- Hand Locked Equipment Smuggling
 
 ## Raw row
 ```csv

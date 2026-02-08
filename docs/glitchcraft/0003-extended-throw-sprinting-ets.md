@@ -4,21 +4,44 @@ title: "Extended Throw Sprinting (ETS)"
 
 # Extended Throw Sprinting (ETS)
 
+## Overview
+—
+
 ## How To
 ```
 hold B, tap R, repeat
 ```
 
+
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** briochoc - May 12, 2023
-**Source:** Discord
-**Examples:** Youtube
-**Notes:** *not speedrun viable*
+## Notes
+—
+
+## Credit
+—
+
+## Date
+—
+## Source
+
+—
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+—
+
+## See also
+
+—
 
 ## Raw row
 ```csv

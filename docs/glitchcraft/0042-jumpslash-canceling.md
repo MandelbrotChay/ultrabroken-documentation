@@ -14,17 +14,42 @@ Interrupt jumpslashes by swapping a shield mid-animation
 4. Switch shield in quick menu
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** LegendOfLink, Mozz - May 21, 2023
-**See also:** Discord Example in the Ukouh Shrine
-**Effects/Extensions:** Infinite Height
+## Notes
+Infinite Height
 Jumpslash Cancel Clipping
-**Examples:** Discord
+
+## Credit
+LegendOfLink, Mozz
+
+## Date
+May 21, 2023
+
+## Source
+
+—
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+- Discord Example in the Ukouh Shrine
 
 ## Raw row
 ```csv

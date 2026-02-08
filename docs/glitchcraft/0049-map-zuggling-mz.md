@@ -20,14 +20,39 @@ Allows you to zuggle much faster than older versions
 Credit to ChargeVolt for writing the setup!
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-**Credit:** BigDUCCO - May 23, 2023
-**Source:** Discord
-**See also:** Zuggling
-**Effects/Extensions:** It's possible to perform Map Zuggling without a wall by standing away from a high ledge (2 springs count as long as you position Link properly) and performing it that way.
-**Examples:** https://www.youtube.com/watch?v=Qy5y06KXZeE (BigDUCCO) https://www.youtube.com/watch?v=iYSTevbZgBA (Flash, ledge setup)
+## Notes
+It's possible to perform Map Zuggling without a wall by standing away from a high ledge (2 springs count as long as you position Link properly) and performing it that way.
+
+## Credit
+BigDUCCO
+
+## Date
+May 23, 2023
+
+## Source
+
+- Discord
+
+## Examples
+
+- [YouTube](https://www.youtube.com/watch?v=Qy5y06KXZeE)
+- [YouTube](https://www.youtube.com/watch?v=iYSTevbZgBA)
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+
+## See also
+
+- Zuggling
 
 ## Raw row
 ```csv

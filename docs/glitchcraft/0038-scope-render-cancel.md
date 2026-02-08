@@ -19,22 +19,47 @@ Small Border Version:
 3. Shortly after, press L (Camera) twice in quick succession to open and close the Camera
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** NX721,  eXe - May 19, 2023
-**Source:** Discord
-Twitter
-**Effects/Extensions:** You can freely move around and attack while having the camera filter with you.
+## Notes
+You can freely move around and attack while having the camera filter with you.
 With the wide border, it will flash black for a frame or two when you enter a new area or culling zone. This can be used to find the entryway to locations or areas.
 You are sometimes able to take pictures with the scope pins in the picture.
-**Examples:** https://twitter.com/NX721_/status/1678114915293491200?s=20
-**Notes:** This glitch cancels any time you open any type of menu, any NPC or prompt interaction, etc.
+This glitch cancels any time you open any type of menu, any NPC or prompt interaction, etc.
 
 May 19, 2023, June 2, 2023 and July 9, 2023
+
+## Credit
+NX721,  eXe
+
+## Date
+May 19, 2023
+
+## Source
+
+- Discord
+- Twitter
+
+## Examples
+
+- [Twitter/X](https://twitter.com/NX721_/status/1678114915293491200?s=20)
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+—
 
 ## Raw row
 ```csv

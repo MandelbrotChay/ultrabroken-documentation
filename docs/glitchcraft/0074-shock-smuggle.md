@@ -13,15 +13,39 @@ Dropping an unsheathed equipment just before getting shocked causes equipment sm
 2. Drop the currently held item and exit the inventory
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-**Credit:** sleepyppls - June 1, 2023
-**Source:** Discord
-**See also:** Equipment Smuggling
-**Examples:** Discord
-**Notes:** Can be done much more consistently by equipping the Thunder Helm before walking into the shock emitter, unequipping the helmet and watching two memories, dropping the item you want to smuggle, and watching another memory before unpausing.
+## Notes
+Can be done much more consistently by equipping the Thunder Helm before walking into the shock emitter, unequipping the helmet and watching two memories, dropping the item you want to smuggle, and watching another memory before unpausing.
+
+## Credit
+sleepyppls
+
+## Date
+June 1, 2023
+
+## Source
+
+- Discord
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+
+## See also
+
+- Equipment Smuggling
 
 ## Raw row
 ```csv

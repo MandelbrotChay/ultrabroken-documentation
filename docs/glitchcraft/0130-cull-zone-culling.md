@@ -16,15 +16,41 @@ Cull zones as shown on the TOTK Object Map
 3. Get distance from the cull zone until the entangled object culls
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** Mozz - June 27, 2023
-**Source:** Discord
-**Notes:** Certain sub-areas such as caves can also act as cull zones
+## Notes
+Certain sub-areas such as caves can also act as cull zones
+
+## Credit
+Mozz
+
+## Date
+June 27, 2023
+
+## Source
+
+- Discord
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+—
 
 ## Raw row
 ```csv

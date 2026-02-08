@@ -17,12 +17,36 @@ It's also possible to go to the main menu, that way you can load a save and star
 After loading the save, the banc change should trigger.
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-**Credit:** Lightos, mulberry, Aergyl
+## Notes
+—
+
+## Credit
+Lightos, mulberry, Aergyl
 (no specific order) - October 1st, 2024
-**Source:** https://discord.com/channels/1086729144307564648/1110956205624532993/1290703223467937898
-**Tutorials/Resources:** https://www.youtube.com/watch?v=RmjZKVGvstE
+
+## Date
+—
+## Source
+
+- [Discord](https://discord.com/channels/1086729144307564648/1110956205624532993/1290703223467937898)
+
+## Examples
+
+—
+
+## Resources
+
+- [YouTube](https://www.youtube.com/watch?v=RmjZKVGvstE)
+
+## Working Versions
+
+- 1.0.0
+
+## See also
+
+—
 
 ## Raw row
 ```csv

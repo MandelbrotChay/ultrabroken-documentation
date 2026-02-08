@@ -16,17 +16,43 @@ Allows you to preserve the increased speed from diving with the Glide Suit into 
 Note: You will slowly slow back down to regular paragliding speed if you don't repeat the glitch
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** kurocat471, Mety333 - May 14, 2023
-**Examples:** https://youtu.be/oIzJKQAWPdI
-**Notes:** Doesn't stack well with Tulin's ability. Can be maintained with Infinite Height.
+## Notes
+Doesn't stack well with Tulin's ability. Can be maintained with Infinite Height.
 
 May 14, 2023 & June 9, 2023
+
+## Credit
+kurocat471, Mety333
+
+## Date
+May 14, 2023
+
+## Source
+
+—
+
+## Examples
+
+- [YouTube](https://youtu.be/oIzJKQAWPdI)
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+—
 
 ## Raw row
 ```csv

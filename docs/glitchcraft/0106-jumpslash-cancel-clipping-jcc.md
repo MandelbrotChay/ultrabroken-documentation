@@ -18,16 +18,41 @@ Note: In the case of standard infinite height inputs (L cancel method), ensure t
 Note: Arrow Smuggle IH or its alternatives makes this glitch much easier to execute compared to standard IH.
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** Mozz - June 16, 2023
-**See also:** Jumpslash Cancel
-**Effects/Extensions:** Highly less likely to work with flat ceilings.
-**Examples:** https://discord.com/channels/1086729144307564648/1113557914444111873/1119436112964890735
+## Notes
+Highly less likely to work with flat ceilings.
+
+## Credit
+Mozz
+
+## Date
+June 16, 2023
+
+## Source
+
+—
+
+## Examples
+
+- [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1119436112964890735)
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+- Jumpslash Cancel
 
 ## Raw row
 ```csv

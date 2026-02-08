@@ -14,17 +14,41 @@ Spring jump across terrain for as long as shield durability lasts.
 3. Start a shield surf.
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** Mozz - May 24, 2023
-**Source:** Discord
-**See also:** Fuse Entanglement
-**Effects/Extensions:** Springboard Clipping
-**Examples:** https://discord.com/channels/1086729144307564648/1105598687167664239/1111100603683323964
+## Notes
+Springboard Clipping
+
+## Credit
+Mozz
+
+## Date
+May 24, 2023
+
+## Source
+
+- Discord
+
+## Examples
+
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1111100603683323964)
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+- Fuse Entanglement
 
 ## Raw row
 ```csv

@@ -24,19 +24,43 @@ For 1.0.0-1.2.1:
 5. Drop the boomerang with Link's back to a wall
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** Aergyl, mulberry - May 20, 2025
-**Source:** Discord
-**See also:** Throken
-Equipment Smuggle
-Zuggle Overload
-**Effects/Extensions:** Having a like like steal the throken weapon from Link allows it to be picked up once again
-**Examples:** Discord (Zuggle overload setup)
+## Notes
+Having a like like steal the throken weapon from Link allows it to be picked up once again
+
+## Credit
+Aergyl, mulberry
+
+## Date
+May 20, 2025
+
+## Source
+
+- Discord
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+- Throken
+- Equipment Smuggle
+- Zuggle Overload
 
 ## Raw row
 ```csv

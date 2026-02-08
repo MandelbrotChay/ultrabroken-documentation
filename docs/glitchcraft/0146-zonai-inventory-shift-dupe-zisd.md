@@ -21,14 +21,41 @@ Steps:
 6. Go back to Zonai Devices Tab (Press +) and exit the menu
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** Ryan?, Quantim - July 10, 2023
-**Source:** Twitter
+## Notes
+—
+
+## Credit
+Ryan?, Quantim
+
+## Date
+July 10, 2023
+
+## Source
+
+- Twitter
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+—
 
 ## Raw row
 ```csv

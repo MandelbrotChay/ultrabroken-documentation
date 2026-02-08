@@ -15,22 +15,47 @@ Depending on how quick you are, the outcome may change. If you were too slow, yo
 The icon stays on save/loading.
 ```
 
-## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1+
-**Credit:** Consistent method discovered by PetitFrapo
 
-Original accidental discovery by Lightos - October 16, 2024
-**Source:** https://discord.com/channels/1086729144307564648/1113557914444111873/1296080453413109830
-**Notes:** Dropping the equipment
+## Metadata
+## Notes
+Dropping the equipment
 makes it lose its special
 icon, except if you instantly
 pick it back up.
 Timing on Switch 2 may be
 tighter.
+
+## Credit
+Consistent method discovered by PetitFrapo
+
+Original accidental discovery by Lightos - October 16, 2024
+
+## Date
+—
+## Source
+
+- [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1296080453413109830)
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1+
+
+## See also
+
+—
 
 ## Raw row
 ```csv

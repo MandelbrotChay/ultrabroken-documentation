@@ -16,13 +16,38 @@ Using Overload it's possible to fully portably PSLOT on current versions
 5. Detangle by drop zuggling the parent again and using a rocket shield.
 ```
 
+
 ## Metadata
-**Working versions:** 1.2.0
-1.2.1+
-**Credit:** mulberry - July 26, 2024
-**Source:** https://discord.com/channels/1086729144307564648/1113557914444111873/1266400937778610206
-**See also:** PSLOT
-Portacull Invismuggle
+## Notes
+—
+
+## Credit
+mulberry
+
+## Date
+July 26, 2024
+
+## Source
+
+- [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1266400937778610206)
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.2.0
+- 1.2.1+
+
+## See also
+
+- PSLOT
+- Portacull Invismuggle
 
 ## Raw row
 ```csv

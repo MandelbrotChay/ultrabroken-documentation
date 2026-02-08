@@ -14,14 +14,41 @@ Allows you to jump very far (can be chained infinitly)
 3. Press R - B - Y and repeat
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** Mozz, AgdoR - May 20, 2023
-**Examples:** https://discord.com/channels/1086729144307564648/1106412847359082506/1109296265847640094
+## Notes
+—
+
+## Credit
+Mozz, AgdoR
+
+## Date
+May 20, 2023
+
+## Source
+
+—
+
+## Examples
+
+- [Discord](https://discord.com/channels/1086729144307564648/1106412847359082506/1109296265847640094)
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+—
 
 ## Raw row
 ```csv

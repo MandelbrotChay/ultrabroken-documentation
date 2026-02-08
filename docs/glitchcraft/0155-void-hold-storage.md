@@ -15,13 +15,39 @@ Causes a menu softlock that revokes certain actions but allows for Link's model 
 4. Close the inventory or use the quick menu, you will now be softlocked.
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-**Credit:** Lightos_, NX721 - July 22, 2023
-**Source:** Discord
-**See also:** Void Holding
+## Notes
+—
+
+## Credit
+Lightos_, NX721
+
+## Date
+July 22, 2023
+
+## Source
+
+- Discord
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+
+## See also
+
+- Void Holding
 
 ## Raw row
 ```csv

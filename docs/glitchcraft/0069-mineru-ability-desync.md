@@ -14,12 +14,37 @@ Desyncs Flame Emitters attached to Mineru
 3. Look up with the camera and exit
 ```
 
+
 ## Metadata
-**Working versions:** 1.1.0/1.1.1
-**Credit:** Sillicat - May 30, 2023
-**Source:** Twitter
-**Examples:** https://twitter.com/SilicatYT/status/1663846017060700161
-**Notes:** To do: test on other versions and with more emitters Seems similar to ARAZ
+## Notes
+To do: test on other versions and with more emitters Seems similar to ARAZ
+
+## Credit
+Sillicat
+
+## Date
+May 30, 2023
+
+## Source
+
+- Twitter
+
+## Examples
+
+- [Twitter/X](https://twitter.com/SilicatYT/status/1663846017060700161)
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.1.0
+- 1.1.1
+
+## See also
+
+—
 
 ## Raw row
 ```csv

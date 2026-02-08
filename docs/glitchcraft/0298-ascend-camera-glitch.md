@@ -14,13 +14,40 @@ Keeps the camera far away from link after a file load for a short period of time
 3. Activate ascend and load the file while the camera is going up.
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:**  - {Unknown}
+## Notes
+—
+
+## Credit
+—
+
+## Date
+—
+## Source
+
+—
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+—
 
 ## Raw row
 ```csv

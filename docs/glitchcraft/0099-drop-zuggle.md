@@ -25,15 +25,41 @@ For weapons:
 -Kill the Like Like
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** BigDUCCO - June 15, 2023
-**Source:** Discord
-**See also:** Zuggle
+## Notes
+—
+
+## Credit
+BigDUCCO
+
+## Date
+June 15, 2023
+
+## Source
+
+- Discord
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+- Zuggle
 
 ## Raw row
 ```csv

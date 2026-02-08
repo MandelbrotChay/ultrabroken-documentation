@@ -15,12 +15,36 @@ You now have stored the zonai device!
 If you enter a shrine you may chose 1 to 10 zonai devices to spawn
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-**Credit:** bebu0815 - August 13, 2023
-**Source:** Discord
-**Effects/Extensions:** Activating zonai storage, dying and opening the inventory may crash the game
-**Tutorials/Resources:** https://www.youtube.com/watch?v=6plkkvYGW74&
+## Notes
+Activating zonai storage, dying and opening the inventory may crash the game
+
+## Credit
+bebu0815
+
+## Date
+August 13, 2023
+
+## Source
+
+- Discord
+
+## Examples
+
+—
+
+## Resources
+
+- [YouTube](https://www.youtube.com/watch?v=6plkkvYGW74&)
+
+## Working Versions
+
+- 1.0.0
+
+## See also
+
+—
 
 ## Raw row
 ```csv

@@ -15,19 +15,43 @@ Allows any equipment that can be fuse entangled to be smuggled using margin cull
 4. To make the smuggle permanent; once the item has unloaded, open the quick menu and drop it, then renenter the culling area and pick up the shield. (see Notes column for 1.2.0+)
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** Mozz - June 27, 2023
-**Source:** Discord
-**See also:** Object Culling
-Equipment Smuggle
-**Effects/Extensions:** Cull smuggling equipment with another equipment of the same type zuggled causes the smuggle to enter purgatory upon unculling.
-**Examples:** YouTube
-**Notes:** On 1.2.0 and 1.2.1, dropping culled equipment results in the item unculling and dropping normally. To counteract this, you must drop the equipment exactly 5 frames before it unloads (discovered by ROBUXY2ND and ock)
+## Notes
+Cull smuggling equipment with another equipment of the same type zuggled causes the smuggle to enter purgatory upon unculling.
+On 1.2.0 and 1.2.1, dropping culled equipment results in the item unculling and dropping normally. To counteract this, you must drop the equipment exactly 5 frames before it unloads (discovered by ROBUXY2ND and ock)
+
+## Credit
+Mozz
+
+## Date
+June 27, 2023
+
+## Source
+
+- Discord
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+- Object Culling
+- Equipment Smuggle
 
 ## Raw row
 ```csv

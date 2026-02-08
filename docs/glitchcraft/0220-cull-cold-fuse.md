@@ -4,6 +4,9 @@ title: "Cull Cold Fuse"
 
 # Cull Cold Fuse
 
+## Overview
+—
+
 ## How To
 ```
 1. place object in tarrey town culling area
@@ -19,10 +22,36 @@ if done correctly, the object will teleport to Link
 steps 8-9 are not required on 1.0.0
 ```
 
+
 ## Metadata
-**Credit:** mulberry - February 1, 2024
-**Source:** Discord
-**See also:** Fuse Storage
+## Notes
+—
+
+## Credit
+mulberry
+
+## Date
+February 1, 2024
+
+## Source
+
+- Discord
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+—
+
+## See also
+
+- Fuse Storage
 
 ## Raw row
 ```csv

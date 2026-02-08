@@ -21,18 +21,43 @@ Link should cull and uncull for a few frames, then fully cull
 9. To prevent further culling, you can destroy the sdc stick setup by picking it up in a way that removes it from the overworld
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** Kilovictor - February 23, 2024
-**Source:** Discord
-**See also:** Memory Buffering
-Object Culling
-Stick Desync
-**Notes:** it's very likely to cull lock, especially if you don't mount a steering stick, looking up seems to slightly reduce the chance of this happening
+## Notes
+it's very likely to cull lock, especially if you don't mount a steering stick, looking up seems to slightly reduce the chance of this happening
+
+## Credit
+Kilovictor
+
+## Date
+February 23, 2024
+
+## Source
+
+- Discord
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+- Memory Buffering
+- Object Culling
+- Stick Desync
 
 ## Raw row
 ```csv

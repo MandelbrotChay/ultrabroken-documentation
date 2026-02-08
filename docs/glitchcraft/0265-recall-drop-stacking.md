@@ -15,17 +15,41 @@ Dropping many zonai devices in recall causes intense frame drops
 4. Exit recall
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-**Credit:** Telkic, mulberry - January 4, 2025
-**Source:** Discord
-**Effects/Extensions:** With enough lag, it's possible to clip objects through the ground similar to hydroclip
-**Examples:** Discord
-Discord
-**Notes:** The amount of lag generated is heavily dependent on the zonai device being dropped and the quantity.
+## Notes
+With enough lag, it's possible to clip objects through the ground similar to hydroclip
+The amount of lag generated is heavily dependent on the zonai device being dropped and the quantity.
 Can be done on 1.2.0+ with materials only
+
+## Credit
+Telkic, mulberry
+
+## Date
+January 4, 2025
+
+## Source
+
+- Discord
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+
+## See also
+
+—
 
 ## Raw row
 ```csv

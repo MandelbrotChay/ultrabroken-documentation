@@ -14,15 +14,41 @@ Continue attack animation onto another weapon.
 3. Open inventory and swap weapon types.
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** NghtmaR3, WinnerBoi77 - January 21, 2024
-**Source:** Discord
-**Examples:** https://discord.com/channels/1086729144307564648/1113557914444111873/1198792795616464989
+## Notes
+—
+
+## Credit
+NghtmaR3, WinnerBoi77
+
+## Date
+January 21, 2024
+
+## Source
+
+- Discord
+
+## Examples
+
+- [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1198792795616464989)
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+—
 
 ## Raw row
 ```csv

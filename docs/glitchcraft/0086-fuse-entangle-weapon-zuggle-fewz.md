@@ -17,15 +17,40 @@ Allows you got zuggle each weapon you carry one time. This stacks the damage sim
 For multiple weapons, drop the shield at the end of step 2 and repeat steps 1-2 for each desired weapon. After that, pick up each shield one at a time and zuggle them one at a time
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-**Credit:** Ryan? - June 10, 2023
-**Source:** Discord
-**See also:** Fuse Entanglement
-Zuggling
-**Examples:** https://www.youtube.com/watch?v=jdqn8qvNhuI   (BigDUCCO)
+## Notes
+—
+
+## Credit
+Ryan?
+
+## Date
+June 10, 2023
+
+## Source
+
+- Discord
+
+## Examples
+
+- [YouTube](https://www.youtube.com/watch?v=jdqn8qvNhuI)
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+
+## See also
+
+- Fuse Entanglement
+- Zuggling
 
 ## Raw row
 ```csv

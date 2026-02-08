@@ -27,19 +27,43 @@ Alternatively:
 8. Swap equipment.
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** mulberry, Yee, Zas - February 25, 2024
-**Source:** Discord
-**See also:** Object Culling
-Fuse Storage
-**Effects/Extensions:** Chain FSFE (Mulberry)
+## Notes
+Chain FSFE (Mulberry)
 https://discord.com/channels/1086729144307564648/1113557914444111873/1217688933807296593
-**Tutorials/Resources:** https://youtu.be/Y8sOuZdQecU
+
+## Credit
+mulberry, Yee, Zas
+
+## Date
+February 25, 2024
+
+## Source
+
+- Discord
+
+## Examples
+
+—
+
+## Resources
+
+- [YouTube](https://youtu.be/Y8sOuZdQecU)
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+- Object Culling
+- Fuse Storage
 
 ## Raw row
 ```csv

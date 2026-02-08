@@ -7,14 +7,38 @@ title: "Minecart Rail Collision Launching (MRCL)"
 ## Overview
 Allows the usage of minecarts to be launched from awkward collision grabbing on rails.
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-**Credit:** そら-さん - May 18, 2023
-**Source:** Discord
-**Examples:** Discord
-Discord
-**Notes:** Still needs to be experimented with more.
+## Notes
+Still needs to be experimented with more.
+
+## Credit
+そら-さん
+
+## Date
+May 18, 2023
+
+## Source
+
+- Discord
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+
+## See also
+
+—
 
 ## Raw row
 ```csv

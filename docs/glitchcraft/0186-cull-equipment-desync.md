@@ -17,21 +17,44 @@ Allows to have a weapon equipped that is not in the inventory.
 6. Uncull
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** Blize, ock
+## Notes
+Arrow Smuggle
+
+## Credit
+Blize, ock
 
 (Cull Arrow Smuggle)
 Blize - October 10, 2023
-**Source:** Discord
-Discord
-**See also:** Object Culling
-**Effects/Extensions:** Arrow Smuggle
-**Examples:** https://discord.com/channels/1086729144307564648/1113557914444111873/1161345697346494587
+
+## Date
+—
+## Source
+
+- Discord
+- Discord
+
+## Examples
+
+- [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1161345697346494587)
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+- Object Culling
 
 ## Raw row
 ```csv

@@ -17,15 +17,41 @@ DO NOT UNLOCK THE WHEEL
 5. Fusing on the same frame as it culls causes fe with little to no softlock risk
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** mulberry, Yee - June 6, 2024
-**Source:** Discord
-**See also:** Stick Desync Clipping
+## Notes
+—
+
+## Credit
+mulberry, Yee
+
+## Date
+June 6, 2024
+
+## Source
+
+- Discord
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+- Stick Desync Clipping
 
 ## Raw row
 ```csv

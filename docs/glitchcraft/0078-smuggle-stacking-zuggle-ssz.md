@@ -17,21 +17,42 @@ Allows to zuggle bows and shields in version 1.1.2. Weapon zuggle on 1.1.2 is a 
 (WARNING: Failure to perform the glitch using shields may crash the game)
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-**Credit:** BigDUCCO, LegendofLink, Mozz - June 6, 2023
-**Source:** Discord
-**See also:** Zuggling
-**Effects/Extensions:** Loading a previous save will transfer a stacked bow/shield to that save. Effectivley allowing you to dupe it and retain it's modifier.
-**Examples:** https://discord.com/channels/1086729144307564648/1105598687167664239/1115669661732843610
-https://discord.com/channels/1086729144307564648/1105598687167664239/1115360099981086743
-(Smuggle stacking)
-https://www.youtube.com/watch?v=jrChkOtSc0A
-(Map buffer and overload)
-https://www.youtube.com/watch?v=8lSRXOM1xMc
-(Zuggle method)
+## Notes
+Loading a previous save will transfer a stacked bow/shield to that save. Effectivley allowing you to dupe it and retain it's modifier.
+
+## Credit
+BigDUCCO, LegendofLink, Mozz
+
+## Date
+June 6, 2023
+
+## Source
+
+- Discord
+
+## Examples
+
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1115669661732843610)
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1115360099981086743)
+- [YouTube](https://www.youtube.com/watch?v=jrChkOtSc0A)
+- [YouTube](https://www.youtube.com/watch?v=8lSRXOM1xMc)
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+
+## See also
+
+- Zuggling
 
 ## Raw row
 ```csv

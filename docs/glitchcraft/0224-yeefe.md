@@ -22,19 +22,44 @@ Yeefe can also be set up using the String Feory method (ofstrings2):
 This equipment can be used as a portacull, but also as a way to cull Link.
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** Yee, mulberry - February 20, 2024
-**Source:** Discord
-**See also:** Fuse Entanglement
-Stick Desync
-**Effects/Extensions:** Spears can be used to yeefe hoverstones, they cause the hoverstone to fe next to link (normally they fe on top of link and softlock)
+## Notes
+Spears can be used to yeefe hoverstones, they cause the hoverstone to fe next to link (normally they fe on top of link and softlock)
 https://discord.com/channels/1086729144307564648/1113557914444111873/1224074388983250975 (ofstrings2)
-**Notes:** Test on more versions
+Test on more versions
+
+## Credit
+Yee, mulberry
+
+## Date
+February 20, 2024
+
+## Source
+
+- Discord
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+- Fuse Entanglement
+- Stick Desync
 
 ## Raw row
 ```csv

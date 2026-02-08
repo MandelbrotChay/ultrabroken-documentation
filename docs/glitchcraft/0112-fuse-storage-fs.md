@@ -13,25 +13,44 @@ Like-Like Fuse Storage
 Culling Area Fuse Storage
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** Mozz - June 18, 2023
-**Source:** https://discord.com/channels/1086729144307564648/1105598687167664239/1119880715832676423
-**Effects/Extensions:** Fuse Entanglement
+## Notes
+Fuse Entanglement
 Cold Fuse
-**Examples:** Discord
+The most important thing for weapon FE is having something fused to an arrow while the delayed fuse is triggered.
+In all cases, you can get the like to drop it'"s stored fuse (or other objects) by stunning it and hitting it'"s weak spot.
 
-No Like-Like (Memory-less)
-Discord
+## Credit
+Mozz
 
-No Like-Like
-Discord
-**Notes:** The most important thing for weapon FE is having something fused to an arrow while the delayed fuse is triggered.
-In all cases, you can get the like to drop it’s stored fuse (or other objects) by stunning it and hitting it’s weak spot.
+## Date
+June 18, 2023
+
+## Source
+
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1119880715832676423)
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+—
 
 ## Raw row
 ```csv

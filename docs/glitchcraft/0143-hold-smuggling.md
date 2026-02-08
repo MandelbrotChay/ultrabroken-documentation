@@ -18,16 +18,42 @@ Enables full control of Link while holding objects in the menu.
 7. Unpause and ensure you can run around while the items are still held in inventory.
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** Mozz, NaN Gogh - July 4, 2023
-**Effects/Extensions:** Much more portable version of hold storage.
+## Notes
+Much more portable version of hold storage.
 Also removes HUD from Sheikah Scope
-**Examples:** https://twitter.com/_nan_gogh/status/1676384792818995200
+
+## Credit
+Mozz, NaN Gogh
+
+## Date
+July 4, 2023
+
+## Source
+
+—
+
+## Examples
+
+- [Twitter/X](https://twitter.com/_nan_gogh/status/1676384792818995200)
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+—
 
 ## Raw row
 ```csv

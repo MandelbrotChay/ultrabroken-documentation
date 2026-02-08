@@ -15,16 +15,41 @@ Lets you take weapons out of enemy's hands
 4.Take the weapon out of the enemy's hand
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** KAIDUDE64 - September 16, 2023
-**Examples:** Discord
-Discord 
-Youtube
+## Notes
+—
+
+## Credit
+KAIDUDE64
+
+## Date
+September 16, 2023
+
+## Source
+
+—
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+—
 
 ## Raw row
 ```csv

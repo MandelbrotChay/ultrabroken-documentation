@@ -13,14 +13,39 @@ Allows you to dupe equipment that can be put into displays.
 -Walk toward the display frame, get zapped and display the equipment at the same time, the held equipment will both be displayed and dropped, the equipment after the held one will be deleted
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-**Credit:** Pistonight - May 27, 2023
-**Source:** Twitter
-**Effects/Extensions:** Since this deletes the last equipment, consider placing the desired equipment last
-**Examples:** https://discord.com/channels/1086729144307564648/1105598687167664239/1112078050000117900
+## Notes
+Since this deletes the last equipment, consider placing the desired equipment last
+
+## Credit
+Pistonight
+
+## Date
+May 27, 2023
+
+## Source
+
+- Twitter
+
+## Examples
+
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1112078050000117900)
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+
+## See also
+
+—
 
 ## Raw row
 ```csv

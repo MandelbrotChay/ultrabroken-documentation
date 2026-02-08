@@ -15,19 +15,42 @@ Allows Link to remain in a object holding state when not normally possible, as w
 4. Close the menu, the held items should drop on the floor in a bundle as though disconnected from Links hands.
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** Ryan?, NaN Gogh, Mozz - July 2, 2023
-**Source:** Discord
-**See also:** Memory Buffering
-**Effects/Extensions:** Unless Link is put into a specific state while the held items are disconnected (I.e. swimming/horse riding), they will teleport back into Links hands, canceling the storage.
-**Examples:** Twitter (!NaN Gogh)
-Discord (Mozz)
-**Notes:** Also possible by culling Link.
+## Notes
+Unless Link is put into a specific state while the held items are disconnected (I.e. swimming/horse riding), they will teleport back into Links hands, canceling the storage.
+Also possible by culling Link.
+
+## Credit
+Ryan?, NaN Gogh, Mozz
+
+## Date
+July 2, 2023
+
+## Source
+
+- Discord
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+- Memory Buffering
 
 ## Raw row
 ```csv

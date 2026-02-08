@@ -15,15 +15,41 @@ Fusing to an overload dropped item causes cold fuse
 4. fuse the target object to the drop smuggled equippment type
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** F. Buffalo - July 23, 2023
-**Source:** Twitter
-**See also:** Zuggle Overload
+## Notes
+—
+
+## Credit
+F. Buffalo
+
+## Date
+July 23, 2023
+
+## Source
+
+- Twitter
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+- Zuggle Overload
 
 ## Raw row
 ```csv

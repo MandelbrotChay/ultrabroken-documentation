@@ -16,20 +16,43 @@ Makes it so that Link puts the weapon in an active state (allows for activation 
 If done properly, any Zonai devices fused to your weapon will become permanetly active until Link fully holds a weapon to throw again.
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-**Credit:** evilgabe (original glitch)
-nx (side effects) - June 19, 2023
-**Source:** Discord (Active Zonai effect)
-**See also:** Memory Buffering
-**Effects/Extensions:** Can also be done by pausing on a specific frame (Link's arm is extended outwards) and loading a save as well. If you fuse something and it does not activate, swap back and forth to that weapon. 
+## Notes
+Can also be done by pausing on a specific frame (Link's arm is extended outwards) and loading a save as well. If you fuse something and it does not activate, swap back and forth to that weapon.
 
 Zonai Devices active during this glitch will take more energy when being used.
-**Examples:** https://twitter.com/NX721_/status/1673788354805243904
-**Notes:** Rockets can be used, however they will simply become deactivated and will have no usage. To deactiavate a Zonai Weapon during Throwless Storage, simply drop and pick up the weapon. (https://twitter.com/NX721_/status/1674530272199741440)
+Rockets can be used, however they will simply become deactivated and will have no usage. To deactiavate a Zonai Weapon during Throwless Storage, simply drop and pick up the weapon. (https://twitter.com/NX721_/status/1674530272199741440)
+
+## Credit
+evilgabe (original glitch)
+nx (side effects) - June 19, 2023
+
+## Date
+—
+## Source
+
+- Discord (Active Zonai effect)
+
+## Examples
+
+- [Twitter/X](https://twitter.com/NX721_/status/1673788354805243904)
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+
+## See also
+
+- Memory Buffering
 
 ## Raw row
 ```csv

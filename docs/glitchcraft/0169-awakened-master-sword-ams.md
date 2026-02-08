@@ -17,18 +17,42 @@ The result is that you get to play the game with a special flag that causes the 
 Watch Blize's guide for more info!
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** tahatanogame - September 4, 2023
-**Source:** Youtube
-**See also:** GAS
-**Effects/Extensions:** After a game close and reopen, you will respawn at the phantom ganon fight, just reload a file to fix this
-**Tutorials/Resources:** https://www.youtube.com/watch?v=50RRbWV-d-A&t
-**Notes:** Requires the crisis at Hyrule castle quest to be unfinished
+## Notes
+After a game close and reopen, you will respawn at the phantom ganon fight, just reload a file to fix this
+Requires the crisis at Hyrule castle quest to be unfinished
+
+## Credit
+tahatanogame
+
+## Date
+September 4, 2023
+
+## Source
+
+- Youtube
+
+## Examples
+
+—
+
+## Resources
+
+- [YouTube](https://www.youtube.com/watch?v=50RRbWV-d-A&t)
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+- GAS
 
 ## Raw row
 ```csv

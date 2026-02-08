@@ -14,13 +14,40 @@ Allows you to cancel the ending animation of throwing via Runes, allowing you to
 -Tap R, then hold d-pad up
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** Quelfth - {Unknown}
+## Notes
+—
+
+## Credit
+Quelfth - —
+
+## Date
+—
+## Source
+
+—
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+—
 
 ## Raw row
 ```csv

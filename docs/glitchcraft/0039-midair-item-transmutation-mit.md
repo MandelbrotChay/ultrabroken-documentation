@@ -23,12 +23,38 @@ With this glitch you "lose" items! First you need to organize your inventory. Yo
 6. Pick up your items
 ```
 
+
 ## Metadata
-**Working versions:** 1.1.0/1.1.1
-**Credit:** eXe - May 20, 2023
-**Source:** Discord
-**Effects/Extensions:** You can chain this many times during 1 shield jump by repeating steps 2-5. It does not take any items if the items are in the last slot.
-**Examples:** https://discord.com/channels/1086729144307564648/1105598687167664239/1109460329966092319https://discord.com/channels/1086729144307564648/1105598687167664239/1109456967480647710
+## Notes
+You can chain this many times during 1 shield jump by repeating steps 2-5. It does not take any items if the items are in the last slot.
+
+## Credit
+eXe
+
+## Date
+May 20, 2023
+
+## Source
+
+- Discord
+
+## Examples
+
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1109460329966092319)
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1109456967480647710)
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.1.0
+- 1.1.1
+
+## See also
+
+—
 
 ## Raw row
 ```csv

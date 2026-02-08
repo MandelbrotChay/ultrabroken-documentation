@@ -14,16 +14,40 @@ Puts the master sword in a visual state where it is outside of it's sheath.
 3. Get off the horse and it should be unsheathed.
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-**Credit:** NX721, DanielNeia - July 11, 2023
-**Source:** Twitter
-**See also:** Hold Smuggling
-**Effects/Extensions:** Dropped equipment goes zoomy into the sky based on timing.
-**Examples:** https://twitter.com/NX721_/status/1678921120102371328
+## Notes
+Dropped equipment goes zoomy into the sky based on timing.
+
+## Credit
+NX721, DanielNeia
+
+## Date
+July 11, 2023
+
+## Source
+
+- Twitter
+
+## Examples
+
+- [Twitter/X](https://twitter.com/NX721_/status/1678921120102371328)
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+
+## See also
+
+- Hold Smuggling
 
 ## Raw row
 ```csv

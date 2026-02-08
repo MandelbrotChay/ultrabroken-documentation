@@ -13,10 +13,36 @@ Displays a glitched and empty chest quickmenu.
 2. unpause and press A on the first frame
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-**Credit:** Aergyl - March 16, 2024
-**Source:** Discord
+## Notes
+—
+
+## Credit
+Aergyl
+
+## Date
+March 16, 2024
+
+## Source
+
+- Discord
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+
+## See also
+
+—
 
 ## Raw row
 ```csv

@@ -33,15 +33,38 @@ There is a different setup for zuggling portacull equipment:
 5. Dismiss Mineru (will act as a fail drop).
 ```
 
+
 ## Metadata
-**Working versions:** 1.2.0
-1.2.1+
-**Credit:** mulberry, MandelbrotChaylay - August 11, 2025
-**Source:** https://discord.com/channels/1086729144307564648/1113557914444111873/1404450104525459546
-**See also:** Portable Culling
-Zuggle
-**Examples:** Zuggling portacull
-equipment
+## Notes
+—
+
+## Credit
+mulberry, MandelbrotChaylay
+
+## Date
+August 11, 2025
+
+## Source
+
+- [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1404450104525459546)
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.2.0
+- 1.2.1+
+
+## See also
+
+- Portable Culling
+- Zuggle
 
 ## Raw row
 ```csv

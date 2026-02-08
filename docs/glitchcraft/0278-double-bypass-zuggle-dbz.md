@@ -23,15 +23,38 @@ There are variations of this setup that don't require a load, using a specific w
 - Portable Vortacull DBZ setup
 ```
 
+
 ## Metadata
-**Working versions:** 1.2.0
-1.2.1+
-**Credit:** mulberry
+## Notes
+🐉
+
+## Credit
+mulberry
 dt13269 for making the culling logger which allowed for the discovery of the drop swap culling bypass frame in the menu - June 16, 2025
-**Source:** https://discord.com/channels/1086729144307564648/1110956205624532993/1383991495123796030
-**See also:** Zuggle
-Portable Culling
-**Notes:** 🐉
+
+## Date
+—
+## Source
+
+- [Discord](https://discord.com/channels/1086729144307564648/1110956205624532993/1383991495123796030)
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.2.0
+- 1.2.1+
+
+## See also
+
+- Zuggle
+- Portable Culling
 
 ## Raw row
 ```csv

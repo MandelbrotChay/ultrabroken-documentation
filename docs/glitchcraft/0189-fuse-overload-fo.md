@@ -15,18 +15,42 @@ By repeatedly cold fusing objects to the same weapon, it's possible to reach a l
 4. Fuse the target object to the weapon and it should fall through the ground. If not, take out more devices and fuse them to the weapon
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** ultrababouin, NghtmaR3 - November 3, 2023
-**Source:** Discord
-**See also:** Zuggle Overload
-**Effects/Extensions:** Fuse overloaded zonai devices can never expire, allowing for things like rockets to run indefinitely
-**Examples:** https://discord.com/channels/1086729144307564648/1113557914444111873/1201964183516876800
-**Notes:** Pickup overload can also be used in place of zuggle overload
+## Notes
+Fuse overloaded zonai devices can never expire, allowing for things like rockets to run indefinitely
+Pickup overload can also be used in place of zuggle overload
+
+## Credit
+ultrababouin, NghtmaR3
+
+## Date
+November 3, 2023
+
+## Source
+
+- Discord
+
+## Examples
+
+- [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1201964183516876800)
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+- Zuggle Overload
 
 ## Raw row
 ```csv

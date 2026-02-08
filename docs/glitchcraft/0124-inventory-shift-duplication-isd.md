@@ -15,14 +15,40 @@ Exploits inventory shift after creating an empty inventory slot to duplicate ite
 4. Pick up the duplicated items.
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-**Credit:** Blizzard Blanc, BigDUCCO, Maxmasher, Pyuk, Zas - June 25, 2023
-**Effects/Extensions:** The item that gets duplicated will always be to the right of the item you are holding. Exactly which item, can be controlled by how many inventory empty inventory slots were made.
-**Examples:** https://vxtwitter.com/zb_yuhudaddy/status/1673184858628296704?s=20 (Yuda)
-https://discord.com/channels/1086729144307564648/1105598687167664239/1122835952423944282 (Mozz)
+## Notes
+The item that gets duplicated will always be to the right of the item you are holding. Exactly which item, can be controlled by how many inventory empty inventory slots were made.
+
+## Credit
+Blizzard Blanc, BigDUCCO, Maxmasher, Pyuk, Zas
+
+## Date
+June 25, 2023
+
+## Source
+
+—
+
+## Examples
+
+- [Twitter/X](https://vxtwitter.com/zb_yuhudaddy/status/1673184858628296704?s=20)
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1122835952423944282)
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+
+## See also
+
+—
 
 ## Raw row
 ```csv

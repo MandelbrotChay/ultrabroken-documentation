@@ -13,15 +13,41 @@ Like-Like FSFE
 Culling Area FSFE
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** Ryan?, Mozz - June 18, 2023
-**See also:** Fuse Storage
-**Effects/Extensions:** Fuse Entanglement
+## Notes
+Fuse Entanglement
+
+## Credit
+Ryan?, Mozz
+
+## Date
+June 18, 2023
+
+## Source
+
+—
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+- Fuse Storage
 
 ## Raw row
 ```csv

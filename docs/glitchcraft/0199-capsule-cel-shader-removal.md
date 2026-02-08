@@ -12,18 +12,44 @@ Enables the inside of capsules to remove the cel shader and other shaders
 Throw out a Zonai Capsule, put a stake, Ultrahand the capsule to remove collision and attach to the stake, now go in the capsule to remove shaders.
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** NX721 - December 4, 2023
-**Source:** Twitter
-**Effects/Extensions:** There are 3 layers 
+## Notes
+There are 3 layers
 One normal cel shader remover that is near the outer layer of the capsule
 One white layer
 And one black layer that shows the base model
+
+## Credit
+NX721
+
+## Date
+December 4, 2023
+
+## Source
+
+- Twitter
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+—
 
 ## Raw row
 ```csv

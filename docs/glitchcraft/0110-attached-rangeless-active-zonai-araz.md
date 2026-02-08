@@ -31,17 +31,43 @@ ARAZ (Second Method)
 4. Either be close towards the shield (So it doesn't despawn), or simply use Autobuild Slide Cancel to keep it near you
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-**Credit:** "Ryan?", NX721 - June 16, 2023
-**See also:** Fuse Entanglement
-Zuggling
-**Effects/Extensions:** Can use certain Zonai devices that DRAZ cannot
+## Notes
+Can use certain Zonai devices that DRAZ cannot
 
 Can be kept permanently active via GAS and can be zuggled for transferring/other zuggle-related things
-**Notes:** June 16, 2023 and July 15, 2023
+June 16, 2023 and July 15, 2023
+
+## Credit
+"Ryan?", NX721
+
+## Date
+June 16, 2023
+
+## Source
+
+—
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+
+## See also
+
+- Fuse Entanglement
+- Zuggling
 
 ## Raw row
 ```csv

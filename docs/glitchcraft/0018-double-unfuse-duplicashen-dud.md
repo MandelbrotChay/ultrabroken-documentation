@@ -19,13 +19,38 @@ Required: 2 bows, 1 arrow, material to dupe, melee weapon
 7. Tada! you now have another item of whatever was fused to the bow
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-**Credit:** Li Shen (鯉神) - May 15, 2023
-**Source:** Bilibili
-**Examples:** https://www.youtube.com/watch?v=0sRvQzU2j5w
-**Notes:** Stops working if cooked meals page is full
+## Notes
+Stops working if cooked meals page is full
+
+## Credit
+Li Shen (鯉神)
+
+## Date
+May 15, 2023
+
+## Source
+
+- Bilibili
+
+## Examples
+
+- [YouTube](https://www.youtube.com/watch?v=0sRvQzU2j5w)
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+
+## See also
+
+—
 
 ## Raw row
 ```csv

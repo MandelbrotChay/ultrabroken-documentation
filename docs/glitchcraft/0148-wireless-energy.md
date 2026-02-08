@@ -14,13 +14,39 @@ Creates a wireless connection to a culled battery. By attaching a dragon part to
 3. Cull the battery
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-**Credit:** NaN Gogh - July 11, 2023
-**Source:** Twitter
-**See also:** Fuse Entanglement
+## Notes
+—
+
+## Credit
+NaN Gogh
+
+## Date
+July 11, 2023
+
+## Source
+
+- Twitter
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+
+## See also
+
+- Fuse Entanglement
 
 ## Raw row
 ```csv

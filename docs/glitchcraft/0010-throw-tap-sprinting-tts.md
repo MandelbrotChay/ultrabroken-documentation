@@ -4,22 +4,44 @@ title: "Throw Tap Sprinting (TTS)"
 
 # Throw Tap Sprinting (TTS)
 
+## Overview
+—
+
 ## How To
 ```
 tap B - R - B, repeat
 ```
 
+
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** Deystroyer, Tauktes - May 14, 2023
-**Source:** Discord
-**See also:** Totk Sprint Methods
-**Effects/Extensions:** currently infinite
-**Examples:** Youtube
+## Notes
+—
+
+## Credit
+—
+
+## Date
+—
+## Source
+
+—
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+—
+
+## See also
+
+—
 
 ## Raw row
 ```csv

@@ -18,15 +18,40 @@ At this point it should be sluggled until you cancel Recall.
 To get a Drop Smuggle: drop swap unequip the equipment, then pick it up.
 ```
 
+
 ## Metadata
-**Working versions:** 1.0
-1.1.0/1.1.1
-1.1.2
-**Credit:** Winnerboi77 - July 12, 2025
-**Source:** https://discord.com/channels/1086729144307564648/1110956205624532993/1393348393329365042
-**See also:** Slugging
-**Effects/Extensions:** Dropped Purgatory (by dropping during Sluggle)
+## Notes
+Dropped Purgatory (by dropping during Sluggle)
 Drop Smuggle (by drop swapping during Sluggle)
+
+## Credit
+Winnerboi77
+
+## Date
+July 12, 2025
+
+## Source
+
+- [Discord](https://discord.com/channels/1086729144307564648/1110956205624532993/1393348393329365042)
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+
+## See also
+
+- Slugging
 
 ## Raw row
 ```csv

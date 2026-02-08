@@ -22,19 +22,43 @@ For versions 1.0-1.1.2, you will have to get a load loop. Once at the coordinate
 When successful, go back up with a rocket. Step on the edge of a chasm and build a flying machine to explore the buggiest Hyrule!
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** ock
+## Notes
+Ocklusion Stutter:
+By going into the room of the secret stone in Lightning Temple, going up and down the stairs of the secret stone pedestal causes a strong load called Ocklusion Stutter. By opening menu a bit before it can lead to some menu weirdness.
+
+## Credit
+ock
 
 mulberry for the 1.0-1.1.2 method - May 29, 2024
-**Source:** Discord
-**Effects/Extensions:** Ocklusion Stutter:
-By going into the room of the secret stone in Lightning Temple, going up and down the stairs of the secret stone pedestal causes a strong load called Ocklusion Stutter. By opening menu a bit before it can lead to some menu weirdness.
-**Examples:** YouTube
+
+## Date
+—
+## Source
+
+- Discord
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+—
 
 ## Raw row
 ```csv

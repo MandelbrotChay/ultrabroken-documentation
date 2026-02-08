@@ -12,16 +12,41 @@ Get an abnormaly large shield jump boost when coming into contact with water.
 Time a shield surf to be at the moment before Link starts swimming in water.
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** InAMuffinCup - May 25, 2023
-**Source:** Discord
-**Effects/Extensions:** Initial velocity seems to play an effect when buoy bouncing, such as when falling from a significant height. Also cancels fall damage.
-**Examples:** https://discord.com/channels/1086729144307564648/1106412847359082506/1111400160879194165
+## Notes
+Initial velocity seems to play an effect when buoy bouncing, such as when falling from a significant height. Also cancels fall damage.
+
+## Credit
+InAMuffinCup
+
+## Date
+May 25, 2023
+
+## Source
+
+- Discord
+
+## Examples
+
+- [Discord](https://discord.com/channels/1086729144307564648/1106412847359082506/1111400160879194165)
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+—
 
 ## Raw row
 ```csv

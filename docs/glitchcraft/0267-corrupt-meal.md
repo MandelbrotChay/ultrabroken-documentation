@@ -14,17 +14,41 @@ Cooking an apple on the same frame that it is deleted results in a meal that tak
 3. Hold an apple and cook it on the same frame that the horse eats it
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** Telkic - February 7, 2025
-**Source:** Discord
-**Examples:** Discord
-Discord
-**Notes:** If no other foods have been cooked since last boot, nothing will be cooked and the food dialogue is skipped completely
+## Notes
+If no other foods have been cooked since last boot, nothing will be cooked and the food dialogue is skipped completely
+
+## Credit
+Telkic
+
+## Date
+February 7, 2025
+
+## Source
+
+- Discord
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+—
 
 ## Raw row
 ```csv

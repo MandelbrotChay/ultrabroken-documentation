@@ -13,15 +13,41 @@ Resets the cooldown of tulin or sidon.
 2. Use the ability mid surf
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** Knight7108 and Candlelor - May 28, 2023
-**Examples:** https://discord.com/channels/1086729144307564648/1113557914444111873/1128385969620533329
-**Notes:** SRC with tulin might be frame perfect
+## Notes
+SRC with tulin might be frame perfect
+
+## Credit
+Knight7108 and Candlelor
+
+## Date
+May 28, 2023
+
+## Source
+
+—
+
+## Examples
+
+- [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1128385969620533329)
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+—
 
 ## Raw row
 ```csv

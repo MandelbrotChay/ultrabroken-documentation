@@ -19,12 +19,40 @@ Allows you to cull Link via a LikeLike in a culling area. Can be used for Equipm
 8. Leads into Cull Fuse Entanglement, Equipment Transmutation
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
+## Notes
+—
+
+## Credit
+—
+
+## Date
+—
+## Source
+
+—
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+—
 
 ## Raw row
 ```csv

@@ -7,16 +7,41 @@ title: "Springboard Clipping"
 ## Overview
 Allows link to clip through the floor while springboarding under a low ceiling.
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** ab2x3z - May 27, 2023
-**Source:** Discord
-**See also:** Springboarding
-**Examples:** https://discord.com/channels/1086729144307564648/1105598687167664239/1112039527872217138
+## Notes
+—
+
+## Credit
+ab2x3z
+
+## Date
+May 27, 2023
+
+## Source
+
+- Discord
+
+## Examples
+
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1112039527872217138)
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+- Springboarding
 
 ## Raw row
 ```csv

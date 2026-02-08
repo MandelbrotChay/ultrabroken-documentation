@@ -15,17 +15,41 @@ Allows you to cancel fall damage from any height
 3. Exit the quickswap menu and dive while Link is still moving upwards.
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** simonfirefighter - May 23, 2023
-**Source:** Discord
-**See also:** Jumpslash Cancel
-**Effects/Extensions:** It's possible to Fall Damage Cancel by performing multiple frame perfect inputs without using the runes menu or a shield (D-PAD Right + ZR on same frame, unequip bow, press Y one frame later, then dive).
-**Examples:** https://discord.com/channels/1086729144307564648/1105598687167664239/1110642449954639932
+## Notes
+It's possible to Fall Damage Cancel by performing multiple frame perfect inputs without using the runes menu or a shield (D-PAD Right + ZR on same frame, unequip bow, press Y one frame later, then dive).
+
+## Credit
+simonfirefighter
+
+## Date
+May 23, 2023
+
+## Source
+
+- Discord
+
+## Examples
+
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1110642449954639932)
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+- Jumpslash Cancel
 
 ## Raw row
 ```csv

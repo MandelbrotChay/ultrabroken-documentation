@@ -15,15 +15,40 @@ Allows you to infinitely sell items to (steal from) a vendor using Hold Storage/
 4. Exit the shop and then reenter it, and resell the hold stored items.
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-**Credit:** NX721, Mozz, NaN Gogh - July 3, 2023
-**See also:** Hold Storage
-**Effects/Extensions:** Easiest method of reaching max rupees.
-**Examples:** https://twitter.com/NX721_/status/1675983600263778305
+## Notes
+Easiest method of reaching max rupees.
+
+## Credit
+NX721, Mozz, NaN Gogh
+
+## Date
+July 3, 2023
+
+## Source
+
+—
+
+## Examples
+
+- [Twitter/X](https://twitter.com/NX721_/status/1675983600263778305)
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+
+## See also
+
+- Hold Storage
 
 ## Raw row
 ```csv

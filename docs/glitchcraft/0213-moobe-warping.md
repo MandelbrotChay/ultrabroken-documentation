@@ -15,16 +15,41 @@ Using Moobe and a horse, it's possible to fully warp (opposed to only temporaril
 4. Unpause, Link should end up on the horse by set coordinates.
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** Ryan? - January 12, 2024
-**Source:** Discord
-**See also:** Mulberry's Out of Body Experience
-**Examples:** https://discord.com/channels/1086729144307564648/1194033039123165215/1195529500558114876
+## Notes
+—
+
+## Credit
+Ryan?
+
+## Date
+January 12, 2024
+
+## Source
+
+- Discord
+
+## Examples
+
+- [Discord](https://discord.com/channels/1086729144307564648/1194033039123165215/1195529500558114876)
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+- Mulberry's Out of Body Experience
 
 ## Raw row
 ```csv

@@ -21,14 +21,39 @@ This is best achieved at, althought isn't specific too, Mayachideg Shrine.
 8. Load any save.
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-**Credit:** BigDUCCO, Mozz, Rhkellz, Syb, NaN Gogh - June 7, 2023
-**Source:** Discord
-**See also:** Zuggling
-**Effects/Extensions:** Can be repeated multiple times to zuggle multiple weapons.
+## Notes
+Can be repeated multiple times to zuggle multiple weapons.
+
+## Credit
+BigDUCCO, Mozz, Rhkellz, Syb, NaN Gogh
+
+## Date
+June 7, 2023
+
+## Source
+
+- Discord
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+
+## See also
+
+- Zuggling
 
 ## Raw row
 ```csv

@@ -13,15 +13,41 @@ By putting away your shield during a specific moment while a time bomb fused to 
 2. Tap or release zl right when you hear the final noice of the bomb before it goes off
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** tzakazuki - November 4, 2023
-**Source:** Discord
-**Notes:** Also works with the msgnotfound
+## Notes
+Also works with the msgnotfound
+
+## Credit
+tzakazuki
+
+## Date
+November 4, 2023
+
+## Source
+
+- Discord
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+—
 
 ## Raw row
 ```csv

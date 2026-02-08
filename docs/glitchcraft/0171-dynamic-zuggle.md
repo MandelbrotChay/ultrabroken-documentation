@@ -45,23 +45,48 @@ Method 3 (Winnerboi & Ryan):
 8. Fail drop to complete
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-**Credit:** Originally discovered by Lightos_
+## Notes
+- You can replace the wall and turning by dropping two buffer weapons (small hitbox is recommended) before starting step 3
+
+- You may need to sprint away from the wall to avoid clipping during step 7
+
+## Credit
+Originally discovered by Lightos_
 
 Steps later recovered by Lightos, Zas
 
 optimized by Zas, Mulberry, Winnerboi and Ryan?
 
 researched for other versions by Winnerboi and CS16 - September 6, 2023
-**Source:** Discord
-Discord
-Discord
-**Notes:** - You can replace the wall and turning by dropping two buffer weapons (small hitbox is recommended) before starting step 3
 
-- You may need to sprint away from the wall to avoid clipping during step 7
+## Date
+—
+## Source
+
+- Discord
+- Discord
+- Discord
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+
+## See also
+
+—
 
 ## Raw row
 ```csv

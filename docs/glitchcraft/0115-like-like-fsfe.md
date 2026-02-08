@@ -15,16 +15,42 @@ A method of Fuse Storage Fuse Entanglement.
 4. Swap to a different item of the same type as the one you fused with (unequipping and reequipping the same item also works)
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** Ryan?, Mozz - June 18, 2023
-**See also:** Fuse Storage
-**Effects/Extensions:** Fuse Entanglement
-**Notes:** For performing this on 1.2.1, you will need to have your target item auto FE'd to a shield or weapon, and feed the like-like the FE parent instead of the target item
+## Notes
+Fuse Entanglement
+For performing this on 1.2.1, you will need to have your target item auto FE'd to a shield or weapon, and feed the like-like the FE parent instead of the target item
+
+## Credit
+Ryan?, Mozz
+
+## Date
+June 18, 2023
+
+## Source
+
+—
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+- Fuse Storage
 
 ## Raw row
 ```csv

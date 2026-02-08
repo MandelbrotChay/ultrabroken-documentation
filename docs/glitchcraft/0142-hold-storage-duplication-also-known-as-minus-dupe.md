@@ -15,16 +15,42 @@ Allows you to dupe items via hold storage.
 4. Pick up all your items.
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** NaN Gogh, Mozz - July 3, 2023
-**Source:** Twitter
-Discord
-**See also:** Hold Storage
+## Notes
+—
+
+## Credit
+NaN Gogh, Mozz
+
+## Date
+July 3, 2023
+
+## Source
+
+- Twitter
+- Discord
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+- Hold Storage
 
 ## Raw row
 ```csv

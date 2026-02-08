@@ -23,16 +23,41 @@ Method 2 :
 Method 2 in 1.0.0 will allow you to reuse your bomb flower infinitely, but also delete the modifier (modifier deletion wst).
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** ferruscube, Aergyl - September 14, 2023
-**Source:** Discord
-**See also:** Modifier Deletion WST
-**Tutorials/Resources:** https://www.youtube.com/watch?v=NP-owf2XiVM&t
+## Notes
+—
+
+## Credit
+ferruscube, Aergyl
+
+## Date
+September 14, 2023
+
+## Source
+
+- Discord
+
+## Examples
+
+—
+
+## Resources
+
+- [YouTube](https://www.youtube.com/watch?v=NP-owf2XiVM&t)
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+- Modifier Deletion WST
 
 ## Raw row
 ```csv

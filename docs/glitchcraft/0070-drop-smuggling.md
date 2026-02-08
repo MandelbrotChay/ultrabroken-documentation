@@ -15,17 +15,39 @@ Trick the game into thinking a weapon is both dropped and equiped at the same ti
 4. Unpause the game.
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-**Credit:** LegendofLinkk - May 31, 2023
-**Source:** Discord
-**Effects/Extensions:** The weapons hitbox remains constantly active, while being maintained at Links feet. This allows for the overlapping of the weapons hitbox with an objects, and propels the object in strange ways.
-**Examples:** Discord
-Discord
-Discord
-**Tutorials/Resources:** https://youtu.be/LWPbxaZcpCo
+## Notes
+The weapons hitbox remains constantly active, while being maintained at Links feet. This allows for the overlapping of the weapons hitbox with an objects, and propels the object in strange ways.
+
+## Credit
+LegendofLinkk
+
+## Date
+May 31, 2023
+
+## Source
+
+- Discord
+
+## Examples
+
+—
+
+## Resources
+
+- [YouTube](https://youtu.be/LWPbxaZcpCo)
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+
+## See also
+
+—
 
 ## Raw row
 ```csv

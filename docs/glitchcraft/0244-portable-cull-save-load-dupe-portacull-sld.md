@@ -18,13 +18,38 @@ Allows for Save Load Duplication on v1.2.0-1.2.1 by culling Link on the same fra
 7. Pickup the item dropped on the ground
 ```
 
+
 ## Metadata
-**Working versions:** 1.2.0
-1.2.1
-**Credit:** NghtmaR3 - July 17, 2024
-**Source:** Discord
-**See also:** Save Load Dupe
-Portable Culling
+## Notes
+—
+
+## Credit
+NghtmaR3
+
+## Date
+July 17, 2024
+
+## Source
+
+- Discord
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.2.0
+- 1.2.1
+
+## See also
+
+- Save Load Dupe
+- Portable Culling
 
 ## Raw row
 ```csv

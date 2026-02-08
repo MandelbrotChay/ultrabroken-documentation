@@ -14,16 +14,41 @@ Allows Link to pick up an object as if he were holding it like an item.
 3. Unpause.
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** Ame - May 28, 2023
-**Source:** Discord
-**See also:** Memory Buffering
-**Examples:** https://discord.com/channels/1086729144307564648/1105598687167664239/1112562187857297480
+## Notes
+—
+
+## Credit
+Ame
+
+## Date
+May 28, 2023
+
+## Source
+
+- Discord
+
+## Examples
+
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1112562187857297480)
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+- Memory Buffering
 
 ## Raw row
 ```csv

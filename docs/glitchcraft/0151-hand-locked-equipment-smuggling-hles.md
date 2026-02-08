@@ -17,10 +17,36 @@ Equip a different bow/shield/weapon and then drop it too (this one gets smuggled
 Hold any material
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-**Credit:** Aeolian - July 11, 2023
-**Effects/Extensions:** Hand locked smuggling can also be performed using runes, two handed weapon and hold throw
+## Notes
+Hand locked smuggling can also be performed using runes, two handed weapon and hold throw
+
+## Credit
+Aeolian
+
+## Date
+July 11, 2023
+
+## Source
+
+—
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+
+## See also
+
+—
 
 ## Raw row
 ```csv

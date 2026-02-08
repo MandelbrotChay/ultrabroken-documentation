@@ -33,20 +33,48 @@ With this variant the target item IS the donor
 The effect is that the modifier of the item got deleted.
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-**Credit:** {Unknown} - {Unknown}
-**Effects/Extensions:** Variant 2 can be used to infinitely re-use items on shields that break on impact. 
+## Notes
+Variant 2 can be used to infinitely re-use items on shields that break on impact.
 The main use for this are infinite bomb jumps, but it can also be used to break pots infinitely.
 
 Reusing bomb-shields (Zas)
 Discord
 Duping items with pots (very impractical lol (robuxy2nd))
 Discord
-**Notes:** Credit is almost impossible to pinpoint,
-many people have found this,
-but most of the research 
+Credit is almost impossible to pinpoint,
+
+many people have found this,
+
+but most of the research
+
 was done by Zas
+
+## Credit
+—
+
+## Date
+—
+## Source
+
+—
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+
+## See also
+
+—
 
 ## Raw row
 ```csv
@@ -77,8 +105,11 @@ The main use for this are infinite bomb jumps, but it can also be used to break 
 Reusing bomb-shields (Zas)
 Discord
 Duping items with pots (very impractical lol (robuxy2nd))
-Discord, Notes: Credit is almost impossible to pinpoint,
-many people have found this,
-but most of the research 
+Discord, Notes: Credit is almost impossible to pinpoint,
+
+many people have found this,
+
+but most of the research 
+
 was done by Zas
 ```

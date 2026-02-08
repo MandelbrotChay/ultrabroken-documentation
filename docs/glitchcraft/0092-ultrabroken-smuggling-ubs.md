@@ -21,16 +21,41 @@ Makes an FE'd object follow the shield.
 10. Pick up the shield again
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-**Credit:** The_Andromeda - June 13, 2023
-**Source:** Twitter
-Twitter
-**See also:** Ultrabroken
-**Examples:** https://twitter.com/goghnan/status/1668671033874821139?s=46
-https://discord.com/channels/1086729144307564648/1113557914444111873/1118059019974737922
+## Notes
+—
+
+## Credit
+The_Andromeda
+
+## Date
+June 13, 2023
+
+## Source
+
+- Twitter
+- Twitter
+
+## Examples
+
+- [Twitter/X](https://twitter.com/goghnan/status/1668671033874821139?s=46)
+- [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1118059019974737922)
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+
+## See also
+
+- Ultrabroken
 
 ## Raw row
 ```csv

@@ -25,18 +25,42 @@ If link doesn't uncull, you didn't move the stick outside of the culling area
 If he doesn't cull, you didn't get cull storage
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** mulberry - January 20, 2024
-**Source:** Discord
-**See also:** Object Culling
-Stick Desync Clipping
-**Examples:** https://discord.com/channels/1086729144307564648/1105598687167664239/1249007861523283999
-**Notes:** Can also be done by recalling the SDC stick while standing outside of the culling margin with the parent equipped, dropping the parent and picking it back up, and then walking back in the culling margin
+## Notes
+Can also be done by recalling the SDC stick while standing outside of the culling margin with the parent equipped, dropping the parent and picking it back up, and then walking back in the culling margin
+
+## Credit
+mulberry
+
+## Date
+January 20, 2024
+
+## Source
+
+- Discord
+
+## Examples
+
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1249007861523283999)
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+- Object Culling
+- Stick Desync Clipping
 
 ## Raw row
 ```csv

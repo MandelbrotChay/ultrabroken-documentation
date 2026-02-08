@@ -14,16 +14,41 @@ Gloom hands reset the durability of enemy equipment.
 3. Get the weapon back from the enemy
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** Ock - November 20, 2023
-**Source:** Discord
-**Tutorials/Resources:** YouTube
-**Notes:** Does not repair a weapon's fuse durability if an item has been fused to it previously
+## Notes
+Does not repair a weapon's fuse durability if an item has been fused to it previously
+
+## Credit
+Ock
+
+## Date
+November 20, 2023
+
+## Source
+
+- Discord
+
+## Examples
+
+—
+
+## Resources
+
+- YouTube
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+—
 
 ## Raw row
 ```csv

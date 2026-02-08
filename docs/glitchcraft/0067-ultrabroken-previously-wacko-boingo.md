@@ -15,16 +15,40 @@ Allows you to pull the object with another glued material while Link stands on t
 4. Stand on the Ultrabroken object and control the glued object using Ultrahand.
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-**Credit:** Duncan - May 29, 2023
-**Source:** Youtube
-**Effects/Extensions:** Presists through ZLOT/SLOT, allowing you to bring this to any prior save, and can allow the user to repeat the Ultrabroken glitch indefinitely.
-**Examples:** https://discord.com/channels/1086729144307564648/1110956205624532993/1116453456572588105 (V1.1.1)
-**Tutorials/Resources:** https://docs.google.com/document/d/1Q0RxFCc_-Sr08y0SHZqTPxkdoUFZ__pI_ojA86CUidw
-**Notes:** During flying with Ultrabroken, it can be very easily for the game to cancel out of Ultrahand if you're turning while the game lags/loads during a laggy area. It's best to keep it as steady as possible when traversing through areas where the FPS drops heavily.
+## Notes
+Presists through ZLOT/SLOT, allowing you to bring this to any prior save, and can allow the user to repeat the Ultrabroken glitch indefinitely.
+During flying with Ultrabroken, it can be very easily for the game to cancel out of Ultrahand if you're turning while the game lags/loads during a laggy area. It's best to keep it as steady as possible when traversing through areas where the FPS drops heavily.
+
+## Credit
+Duncan
+
+## Date
+May 29, 2023
+
+## Source
+
+- Youtube
+
+## Examples
+
+- [Discord](https://discord.com/channels/1086729144307564648/1110956205624532993/1116453456572588105)
+
+## Resources
+
+- [Google Doc](https://docs.google.com/document/d/1Q0RxFCc_-Sr08y0SHZqTPxkdoUFZ__pI_ojA86CUidw)
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+
+## See also
+
+—
 
 ## Raw row
 ```csv

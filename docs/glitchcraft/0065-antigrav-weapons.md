@@ -21,27 +21,55 @@ Puts weapons in an "Anti Gravity" state.
 6. Resume the game
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** 1.0.0-1.1.2 Setup
+## Notes
+Performing anti-grav with a weapon ARAZ connection (zonai device fused to weapon and FE'd to a different weapon) causes GAS
+It will obtain the property of anti-gravity unless you un-equip it or throw it. It also retains it's current momentum when dropped.
+
+Zas
+
+May 28, 2023
+
+
+
+Blize
+
+August 16, 2023
+
+## Credit
+1.0.0-1.1.2 Setup
 Zas
 
 1.2 Setup
 Blize - May 28, 2023
-**Source:** Discord
-**Effects/Extensions:** Performing anti-grav with a weapon ARAZ connection (zonai device fused to weapon and FE'd to a different weapon) causes GAS
-**Examples:** https://discord.com/channels/1086729144307564648/1105598687167664239/1112355745321713754
-**Notes:** It will obtain the property of anti-gravity unless you un-equip it or throw it. It also retains it's current momentum when dropped.
 
-Zas
-May 28, 2023
-
-Blize
-August 16, 2023
+## Date
+—
+## Source
+
+- Discord
+
+## Examples
+
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1112355745321713754)
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+—
 
 ## Raw row
 ```csv
@@ -64,9 +92,13 @@ Zas
 1.2 Setup
 Blize, Date: May 28, 2023, Link to Source: Discord, Effects/Extensions: Performing anti-grav with a weapon ARAZ connection (zonai device fused to weapon and FE'd to a different weapon) causes GAS, Example(s): https://discord.com/channels/1086729144307564648/1105598687167664239/1112355745321713754, Notes: It will obtain the property of anti-gravity unless you un-equip it or throw it. It also retains it's current momentum when dropped.
 
-Zas
-May 28, 2023
-
-Blize
+Zas
+
+May 28, 2023
+
+
+
+Blize
+
 August 16, 2023
 ```

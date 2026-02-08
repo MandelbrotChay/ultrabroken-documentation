@@ -14,19 +14,43 @@ one method to perform this glitch would be:
 2. fill up a small area like those stone boxes near look out landing with springs
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** Mozz - October 5, 2023
-**Source:** Discord
-**See also:** Arrow Unloading
-**Effects/Extensions:** 1. lag
+## Notes
+1. lag
 2. the game thinks link is not standing on ground
-**Examples:** https://discord.com/channels/1086729144307564648/1105598687167664239/1190155134051819580
-**Notes:** Still being researched
+Still being researched
+
+## Credit
+Mozz
+
+## Date
+October 5, 2023
+
+## Source
+
+- Discord
+
+## Examples
+
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1190155134051819580)
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+- Arrow Unloading
 
 ## Raw row
 ```csv

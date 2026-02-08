@@ -13,18 +13,43 @@ Allows for First Person Gameplay, removing the HUD from the camera and scope.
 2. After doing the final step of Hold Smuggling, make sure Link is holding the items in the menu, but is able to move freely in the overload. You should now have an HUDless Scope/Camera. Do not throw your held items, this will cancel it.
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** NX721 - July 3, 2023
-**Source:** Twitter
-**Effects/Extensions:** Also works on Lookout Landing Telescope.
+## Notes
+Also works on Lookout Landing Telescope.
 Any loading screen will cancel the glitch, you can switch tabs in the inventory but you must rehold the items after changes without leaving the inventory.
-**Examples:** https://twitter.com/NX721_/status/1681732748476596344
-**Notes:** how was this not found
+how was this not found
+
+## Credit
+NX721
+
+## Date
+July 3, 2023
+
+## Source
+
+- Twitter
+
+## Examples
+
+- [Twitter/X](https://twitter.com/NX721_/status/1681732748476596344)
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+—
 
 ## Raw row
 ```csv

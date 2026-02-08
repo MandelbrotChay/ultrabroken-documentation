@@ -19,17 +19,42 @@ Picking up a thrown boomerang on the same frame that it culls can lead to dynami
 8. Detangle the dynamic zuggle from the shield
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-**Credit:** mulberry - May 18, 2025
-**Source:** Discord
-**See also:** Dynamic Zuggle
-Fuse Entanglement
-Object Culling
-Detanglement
-**Effects/Extensions:** Works with any weapon that can be thrown instead of only boomerangs if combined with fail drop smuggle
-**Notes:** Possible to perform on 1.1.2+ with force swap on step 6. 1.2.0+ requires manual unculling of the dynamic smuggle after force swap
+## Notes
+Works with any weapon that can be thrown instead of only boomerangs if combined with fail drop smuggle
+Possible to perform on 1.1.2+ with force swap on step 6. 1.2.0+ requires manual unculling of the dynamic smuggle after force swap
+
+## Credit
+mulberry
+
+## Date
+May 18, 2025
+
+## Source
+
+- Discord
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+
+## See also
+
+- Dynamic Zuggle
+- Fuse Entanglement
+- Object Culling
+- Detanglement
 
 ## Raw row
 ```csv

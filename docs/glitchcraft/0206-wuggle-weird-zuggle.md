@@ -18,18 +18,42 @@ By dropping and equipping equipment in a specific way during a cull causes a gli
 7. open the quickmenu during the chest opening and attempt to drop the currently equipped shield/bow/weapon to unlock the dpad
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** ock, robuxy2nd - December 29, 2023
-**Source:** Discord
-**See also:** Fuse Entanglement
-Object Culling
-**Examples:** https://discord.com/channels/1086729144307564648/1113557914444111873/1190371844142928002
-**Tutorials/Resources:** https://www.youtube.com/watch?v=gO6cB5cSQTY&t
+## Notes
+—
+
+## Credit
+ock, robuxy2nd
+
+## Date
+December 29, 2023
+
+## Source
+
+- Discord
+
+## Examples
+
+- [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1190371844142928002)
+
+## Resources
+
+- [YouTube](https://www.youtube.com/watch?v=gO6cB5cSQTY&t)
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+- Fuse Entanglement
+- Object Culling
 
 ## Raw row
 ```csv

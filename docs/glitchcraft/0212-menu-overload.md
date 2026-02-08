@@ -13,19 +13,43 @@ Overloads the item menu via Moobe, acting similarly to menu overload in BOTW
 2. Open the items menu and begin swapping equipment, check for visual errors or desync.
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** Mozz - January 11, 2024
-**Source:** Discord
-**See also:** Mulberry's Out of Body Experience
-**Effects/Extensions:** WST
+## Notes
+WST
 Transmutation
 Texture Tearing
-**Examples:** https://discord.com/channels/1086729144307564648/1194033039123165215/1196033176183779430
+
+## Credit
+Mozz
+
+## Date
+January 11, 2024
+
+## Source
+
+- Discord
+
+## Examples
+
+- [Discord](https://discord.com/channels/1086729144307564648/1194033039123165215/1196033176183779430)
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+- Mulberry's Out of Body Experience
 
 ## Raw row
 ```csv

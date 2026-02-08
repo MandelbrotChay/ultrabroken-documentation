@@ -14,12 +14,38 @@ Crouch, pause, and then drop 5 (preferrably 2 handed and fused) weapons on the g
 Additionally, weapon smuggling can be performed and stored through saves by mashing A through the pause-unpause process during WSD.
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-**Credit:** Erling附身 - May 16, 2023
-**Source:** Bilibili
-**Effects/Extensions:** This is just zuggling, but you drop your equipped weapon at the end, that being said, any zuggle method should work (map zuggle is reccomended)
+## Notes
+This is just zuggling, but you drop your equipped weapon at the end, that being said, any zuggle method should work (map zuggle is reccomended)
+
+## Credit
+Erling附身
+
+## Date
+May 16, 2023
+
+## Source
+
+- Bilibili
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+
+## See also
+
+—
 
 ## Raw row
 ```csv

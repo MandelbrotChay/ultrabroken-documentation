@@ -21,21 +21,45 @@ Allows you to Fuse Entangle objects by culling Link the same frame the fuse is a
 10. Uncull using an object to pick up or warp to a nearby location
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** ultrababouin, and susannediazz (original)
+## Notes
+Save your progress! This can lead to softlocking your game!
+September 21, 2023 (Original)
+October 10, 2023 (Ock)
+
+## Credit
+ultrababouin, and susannediazz (original)
 Ock
 SteFen45 (Recall FE method) - September 21, 2023
-**Source:** Discord (Original) 
-Discord (Ock)
-**See also:** Stick Desync Clip
-**Effects/Extensions:** Save your progress! This can lead to softlocking your game!
-**Notes:** September 21, 2023 (Original)
-October 10, 2023 (Ock)
+
+## Date
+—
+## Source
+
+- Discord (Original)
+- Discord (Ock)
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+- Stick Desync Clip
 
 ## Raw row
 ```csv

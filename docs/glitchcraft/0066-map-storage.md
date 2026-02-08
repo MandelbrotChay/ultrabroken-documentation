@@ -15,12 +15,37 @@ Allows you to have control over Link while the map is open.
 4. Press B and  + in the same frame or one frame later
 ```
 
+
 ## Metadata
-**Working versions:** 1.1.0/1.1.1
-**Credit:** blueberryoats - May 29, 2023
-**Source:** Discord
-**Effects/Extensions:** effects can range from softlocks to crashes
-**Tutorials/Resources:** https://youtu.be/cZZ-enDJ6jY
+## Notes
+effects can range from softlocks to crashes
+
+## Credit
+blueberryoats
+
+## Date
+May 29, 2023
+
+## Source
+
+- Discord
+
+## Examples
+
+—
+
+## Resources
+
+- [YouTube](https://youtu.be/cZZ-enDJ6jY)
+
+## Working Versions
+
+- 1.1.0
+- 1.1.1
+
+## See also
+
+—
 
 ## Raw row
 ```csv

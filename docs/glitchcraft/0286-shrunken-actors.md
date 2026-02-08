@@ -12,16 +12,41 @@ Permanently shrink any ultrahandable object (ultrabroken method)
 Discord
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-**Credit:** mulberry - October 26, 2025
-**Source:** Discord
-**See also:** Fuse Overload (FO)
-Fuse Storage Fuse Entanglement (FSFE)
-Ultrabroken
-**Notes:** Possible on 1.2.0+ with a different method
+## Notes
+Possible on 1.2.0+ with a different method
+
+## Credit
+mulberry
+
+## Date
+October 26, 2025
+
+## Source
+
+- Discord
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+
+## See also
+
+- Fuse Overload (FO)
+- Fuse Storage Fuse Entanglement (FSFE)
+- Ultrabroken
 
 ## Raw row
 ```csv

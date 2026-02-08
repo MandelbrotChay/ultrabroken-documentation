@@ -26,18 +26,42 @@ Method for 1.2.0:
 5. Place them into the Fairy Fountain with some metal equipment and activate the Shock Emitters, and you are done with the glitch, the game should be dropping framerate. Throw a bomb to test the invincibility, if it does not work, simply shut off the Shock Emitters and MTD a few more then place them all in and activate them.
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** NX721, R4000 - July 26, 2023
-**Source:** Youtube
-Youtube
-**See also:** Midair Throw Duplication
-**Examples:** https://twitter.com/NX721_/status/1684303947224473602?s=20
-**Notes:** this was a pain to write, still experimenting, if you have any discoveries please let us know
+## Notes
+this was a pain to write, still experimenting, if you have any discoveries please let us know
+
+## Credit
+NX721, R4000
+
+## Date
+July 26, 2023
+
+## Source
+
+- Youtube
+- Youtube
+
+## Examples
+
+- [Twitter/X](https://twitter.com/NX721_/status/1684303947224473602?s=20)
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+- Midair Throw Duplication
 
 ## Raw row
 ```csv

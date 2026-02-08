@@ -44,22 +44,49 @@ Method 3 (ock):
 6. When the bombs go off, the breezer cutscene will trigger and drop the Master Sword (this will also duplicate it)
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** ock, Mulbery - November 11, 2023
-**Source:** Discord
-Discord
-**Effects/Extensions:** This can be combined with / decayed  zuggle to transfer it through files
+## Notes
+This can be combined with / decayed  zuggle to transfer it through files
 Method 2 (mulbery)
 https://discord.com/channels/1086729144307564648/1105598687167664239/1178791475216134194
-**Examples:** https://discord.com/channels/1086729144307564648/1113557914444111873/1191987058412101725 (Method 3)
-**Notes:** Nov 11, 2023, 
-Nov 27, 2023 &
+Nov 11, 2023,
+
+Nov 27, 2023 &
+
 Dec 2, 2023
+
+## Credit
+ock, Mulbery
+
+## Date
+November 11, 2023
+
+## Source
+
+- Discord
+- Discord
+
+## Examples
+
+- [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1191987058412101725)
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+—
 
 ## Raw row
 ```csv
@@ -102,7 +129,9 @@ Method 3 (ock):
 1.2.1, Credit: ock, Mulbery, Date: November 11, 2023, Link to Source: Discord
 Discord, Effects/Extensions: This can be combined with / decayed  zuggle to transfer it through files
 Method 2 (mulbery)
-https://discord.com/channels/1086729144307564648/1105598687167664239/1178791475216134194, Example(s): https://discord.com/channels/1086729144307564648/1113557914444111873/1191987058412101725 (Method 3), Notes: Nov 11, 2023, 
-Nov 27, 2023 &
+https://discord.com/channels/1086729144307564648/1105598687167664239/1178791475216134194, Example(s): https://discord.com/channels/1086729144307564648/1113557914444111873/1191987058412101725 (Method 3), Notes: Nov 11, 2023, 
+
+Nov 27, 2023 &
+
 Dec 2, 2023
 ```

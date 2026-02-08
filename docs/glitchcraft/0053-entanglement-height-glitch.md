@@ -12,18 +12,42 @@ Suspends Link a certain distance off the ground while shield surfing.
 Fuse entangle a spring to a shield and start a shield surf within its activation radius. Or alternatively, move far enough away from the spring that it unloads.
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** Mozz - May 24, 2023
-**Source:** Discord
-**See also:** Fuse Entanglement
-**Effects/Extensions:** Only lasts while shield surfing, but is infintely active.
-**Examples:** https://discord.com/channels/1086729144307564648/1105598687167664239/1111097783445880885
-**Notes:** Only deactivates upon shield unequip.
+## Notes
+Only lasts while shield surfing, but is infintely active.
+Only deactivates upon shield unequip.
+
+## Credit
+Mozz
+
+## Date
+May 24, 2023
+
+## Source
+
+- Discord
+
+## Examples
+
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1111097783445880885)
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+- Fuse Entanglement
 
 ## Raw row
 ```csv

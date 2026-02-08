@@ -16,18 +16,42 @@ The wheel will either zip to the bow or to the last location you warped from.
 Shooting the arrows in the right angle and terrain, can cause the small wheel to launch Link very far and sometimes even clip him through walls, floor and ceillings.
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** Mozz, pyuk - June 18, 2023
-**Source:** Discord
-**See also:** Arrow Unloading
-**Examples:** https://discord.com/channels/1086729144307564648/1105598687167664239/1138481656093749359
-https://youtu.be/NU0jvd-S9rQ
-**Notes:** 1.2.0-1.2.1 require an alternate setup
+## Notes
+1.2.0-1.2.1 require an alternate setup
+
+## Credit
+Mozz, pyuk
+
+## Date
+June 18, 2023
+
+## Source
+
+- Discord
+
+## Examples
+
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1138481656093749359)
+- [YouTube](https://youtu.be/NU0jvd-S9rQ)
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+- Arrow Unloading
 
 ## Raw row
 ```csv

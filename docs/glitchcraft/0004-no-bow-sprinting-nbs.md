@@ -4,21 +4,44 @@ title: "No Bow Sprinting (NBS)"
 
 # No Bow Sprinting (NBS)
 
+## Overview
+—
+
 ## How To
 ```
 unequip bow, hold ZL, and mash R, ZR, and B
 ```
 
+
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** Steel - May 12, 2023
-**Source:** Discord
-**See also:** Totk Sprint Methods
-**Examples:** Youtube
+## Notes
+—
+
+## Credit
+—
+
+## Date
+—
+## Source
+
+—
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+—
+
+## See also
+
+—
 
 ## Raw row
 ```csv

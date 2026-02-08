@@ -25,19 +25,42 @@ Needed: Target item, donor item and extra shield (2 extras if weapon/bow).
 (9. Unfuse your shield at Tarrey Town to get a modifier-less copy of the target)
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** Physioninja - May 26, 2023
-**Source:** Youtube
-**See also:** Fuse Entanglement
-**Effects/Extensions:** Weapon State Transfer
-**Examples:** https://youtu.be/E3nDTPL6IdU
-**Tutorials/Resources:** https://youtu.be/E3nDTPL6IdU
-**Notes:** this does not wst on 1.0.0
+## Notes
+Weapon State Transfer
+this does not wst on 1.0.0
+
+## Credit
+Physioninja
+
+## Date
+May 26, 2023
+
+## Source
+
+- Youtube
+
+## Examples
+
+- [YouTube](https://youtu.be/E3nDTPL6IdU)
+
+## Resources
+
+- [YouTube](https://youtu.be/E3nDTPL6IdU)
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+- Fuse Entanglement
 
 ## Raw row
 ```csv

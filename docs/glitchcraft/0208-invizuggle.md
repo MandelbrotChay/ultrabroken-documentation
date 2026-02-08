@@ -55,17 +55,42 @@ Method 4 (Discord) (Mulberry):
 9. warp away
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** ock, Yee - January 3, 2024
-**Source:** Discord
-**Examples:** https://discord.com/channels/1086729144307564648/1105598687167664239/1195821216326488264
-**Notes:** Todo:
+## Notes
+Todo:
 Add Method 5
+
+## Credit
+ock, Yee
+
+## Date
+January 3, 2024
+
+## Source
+
+- Discord
+
+## Examples
+
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1195821216326488264)
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+—
 
 ## Raw row
 ```csv

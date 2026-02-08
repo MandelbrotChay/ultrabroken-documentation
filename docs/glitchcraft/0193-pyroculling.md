@@ -12,17 +12,41 @@ The fire from a fire emitter prevents objects in a cull area from culling until 
 Place the object(s) in a culling area, then activate a fire emitter and place it so that the fire comes in contact with the object. After getting outside the culling area, the object(s) in the fire will only cull once a pause is triggered (menu, DPad, L Wheel, etc).
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.2.0
-1.2.1+
-**Credit:** Robuxy2nd - November 17, 2023
-**Source:** Discord 
-(Hyrule Engineering)
-**See also:** Object Culling
-**Examples:** Discord
-Discord
+## Notes
+—
+
+## Credit
+Robuxy2nd
+
+## Date
+November 17, 2023
+
+## Source
+
+- Discord
+- (Hyrule Engineering)
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.2.0
+- 1.2.1+
+
+## See also
+
+- Object Culling
 
 ## Raw row
 ```csv

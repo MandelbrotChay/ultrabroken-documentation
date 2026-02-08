@@ -12,16 +12,41 @@ Ascending through water under a plattform allows link to ascend up into the sky,
 <Self explaining
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** Redrooey - November 27, 2023
-**Source:** Discord
-**Examples:** Discord
-Discord
+## Notes
+—
+
+## Credit
+Redrooey
+
+## Date
+November 27, 2023
+
+## Source
+
+- Discord
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+—
 
 ## Raw row
 ```csv

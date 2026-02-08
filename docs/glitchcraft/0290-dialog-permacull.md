@@ -16,22 +16,45 @@ Permanently culls any liftable object by triggering an NPC dialog while Link is 
 For older versions, portable culling can be replaced with any other form of intangible culling
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-1.3.0/1.4.0
-1.4.1
-1.4.2
-Switch 2
-**Credit:** mulberry - Novermber 28, 2025
-**Source:** Discord
-**See also:** Portable Culling
-**Examples:** Discord
-Discord
-**Notes:** Not all NPC dialog interactions will work
+## Notes
+Not all NPC dialog interactions will work
+
+## Credit
+mulberry - Novermber 28, 2025
+
+## Date
+—
+## Source
+
+- Discord
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+- 1.3.0
+- 1.4.0
+- 1.4.1
+- 1.4.2
+- Switch 2
+
+## See also
+
+- Portable Culling
 
 ## Raw row
 ```csv

@@ -14,13 +14,40 @@ By combining recall with throwing a Zonai device capsule, you can jump onto and 
 3. Time a jump to land on tthe capsule at the moment the it is being recalled at max speed.
 ```
 
+
 ## Metadata
-**Working versions:** 1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** Mozz - July 6, 2023
-**Effects/Extensions:** Can be combined with arrow smuggle for momentum preservation.
+## Notes
+Can be combined with arrow smuggle for momentum preservation.
+
+## Credit
+Mozz
+
+## Date
+July 6, 2023
+
+## Source
+
+—
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+—
 
 ## Raw row
 ```csv

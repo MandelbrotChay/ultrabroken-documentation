@@ -18,13 +18,38 @@ Allows for full fuse entanglement by combining portable culling with the mechani
 7. Unequip overload drop, pickup drop zuggled item, and drop it with Link's back to a wall
 ```
 
+
 ## Metadata
-**Working versions:** 1.2.0
-1.2.1
-**Credit:** mulberry - July 23, 2024
-**Source:** Discord
-**See also:** Zuggle Overload
-Portable Culling
+## Notes
+—
+
+## Credit
+mulberry
+
+## Date
+July 23, 2024
+
+## Source
+
+- Discord
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.2.0
+- 1.2.1
+
+## See also
+
+- Zuggle Overload
+- Portable Culling
 
 ## Raw row
 ```csv
@@ -34,7 +59,8 @@ Glitch: Overload Fuse Entanglement, Glitch Overview: Allows for full fuse entang
 4. The item should drop smuggle upon picking it up empty-handed, pickup the portacull item and SLD it once again (without loading a save). This will cause it to drop zuggle.
 5. Overload drop another item of the same type as the target and fuse it to opposite equipment type (weapon -> shield OR shield -> weapon)
 6. Fuse the target item to the overload dropped item
-7. Unequip overload drop, pickup drop zuggled item, and drop it with Link's back to a wall, Working Versions: 1.2.0
+7. Unequip overload drop, pickup drop zuggled item, and drop it with Link's back to a wall, Working Versions: 1.2.0
+
 1.2.1, Credit: mulberry, Date: July 23, 2024, Link to Source: Discord, See Also: Zuggle Overload
 Portable Culling
 ```

@@ -15,12 +15,36 @@ Weapon stands force equip with a little delay on 1.0, making it possible to dyna
 The dynamic smuggle should go at your feet, equip it, swap to something else, and drop it to turn it into a dynamic zuggle
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-**Credit:** Winnerboi77 - March 14, 2024
-**Source:** https://discord.com/channels/1086729144307564648/1105598687167664239/1217864399855943740
-**See also:** Dynamic Zuggle
-**Notes:** Although this was found 2 days before dynamic zuggle steps were recovered, it was not found to be a dsmuggle before a bit afterwards
+## Notes
+Although this was found 2 days before dynamic zuggle steps were recovered, it was not found to be a dsmuggle before a bit afterwards
+
+## Credit
+Winnerboi77
+
+## Date
+March 14, 2024
+
+## Source
+
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1217864399855943740)
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+
+## See also
+
+- Dynamic Zuggle
 
 ## Raw row
 ```csv

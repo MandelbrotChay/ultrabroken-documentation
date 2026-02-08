@@ -19,17 +19,42 @@ Can also be performed using the steps in "Unload WST", a better method
 7. All weapons on the ground should have transferred over.
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** {Unknown} - {Unknown}
-**See also:** Zuggle Overload
-**Effects/Extensions:** causes WST
-**Examples:** https://discord.com/channels/1086729144307564648/1108141837954330686/1108826680052686989 https://discord.com/channels/1086729144307564648/1108141837954330686/1109068615724048444
-**Notes:** Only transfers durability and fused material on 1.0.0, same as WST.
+## Notes
+causes WST
+Only transfers durability and fused material on 1.0.0, same as WST.
+
+## Credit
+—
+
+## Date
+—
+## Source
+
+—
+
+## Examples
+
+- [Discord](https://discord.com/channels/1086729144307564648/1108141837954330686/1108826680052686989)
+- [Discord](https://discord.com/channels/1086729144307564648/1108141837954330686/1109068615724048444)
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+- Zuggle Overload
 
 ## Raw row
 ```csv

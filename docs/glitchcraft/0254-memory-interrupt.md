@@ -18,12 +18,36 @@ The next dialogue/cutscene causes a forced pause.
 The main use for this is Banc Storage, check the next row
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-**Credit:** mulberry - October 1st, 2024
-**Source:** https://discord.com/channels/1086729144307564648/1110956205624532993/1290665812855885846
-**Tutorials/Resources:** https://www.youtube.com/watch?v=RmjZKVGvstE
-(The beginning of the video shows it)
+## Notes
+—
+
+## Credit
+mulberry
+
+## Date
+October 1st, 2024
+
+## Source
+
+- [Discord](https://discord.com/channels/1086729144307564648/1110956205624532993/1290665812855885846)
+
+## Examples
+
+—
+
+## Resources
+
+- [YouTube](https://www.youtube.com/watch?v=RmjZKVGvstE)
+
+## Working Versions
+
+- 1.0.0
+
+## See also
+
+—
 
 ## Raw row
 ```csv

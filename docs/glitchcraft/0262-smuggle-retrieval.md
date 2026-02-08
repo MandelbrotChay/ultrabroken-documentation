@@ -16,15 +16,41 @@ Dropping an unloaded piece of equipment drops a smuggle instead (if Link has one
 (1.2+ might need chests to drop the equipment)
 ```
 
+
 ## Metadata
-**Working versions:** 1.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1+
-**Credit:** PetitFrapo - December 18, 2024
-**Source:** https://discord.com/channels/1086729144307564648/1113557914444111873/1318712104361922664
-**See also:** Equipment Smuggle
+## Notes
+—
+
+## Credit
+PetitFrapo
+
+## Date
+December 18, 2024
+
+## Source
+
+- [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1318712104361922664)
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1+
+
+## See also
+
+- Equipment Smuggle
 
 ## Raw row
 ```csv

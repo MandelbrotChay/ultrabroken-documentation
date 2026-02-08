@@ -20,19 +20,43 @@ Method 2:
 2. Pick up the bow from the ground as late as possible when the Like-like goes to eat it and Link.
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** Mozz, pyuk, Zas - June 18, 2023
-**Source:** Discord
-**Effects/Extensions:** Can be used to create batteryless Zonai devices, clip objects through walls, as well as other strange quirks
+## Notes
+Can be used to create batteryless Zonai devices, clip objects through walls, as well as other strange quirks
 .
 Arrows fired from a multi-shot bow are warped to 0,0,0.
-**Examples:** https://www.youtube.com/watch?v=MDNuNpKpi9U
-(Mozz)
+
+## Credit
+Mozz, pyuk, Zas
+
+## Date
+June 18, 2023
+
+## Source
+
+- Discord
+
+## Examples
+
+- [YouTube](https://www.youtube.com/watch?v=MDNuNpKpi9U)
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+—
 
 ## Raw row
 ```csv

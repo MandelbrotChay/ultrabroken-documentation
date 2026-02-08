@@ -37,21 +37,44 @@ There are other ways of clipping with hydro:
 - Crouching (only works inside shrines)
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** Simonfirefighter, Maxmasher (Flurry rush method), KnightPohtaytoh (Crouch method), pyuk (throw method) - June 15, 2023
-**Source:** Discord
-**See also:** Fuse Entanglement
-**Examples:** https://discord.com/channels/1086729144307564648/1113557914444111873/1119350629584879796 https://discord.com/channels/1086729144307564648/1113557914444111873/1119350059633496107
+## Notes
+1.2.1 requires a different method
 
-https://discord.com/channels/1086729144307564648/1110956205624532993/1131300216562262047 (KnightPohtaytoh)
+## Credit
+Simonfirefighter, Maxmasher (Flurry rush method), KnightPohtaytoh (Crouch method), pyuk (throw method)
 
-https://fxtwitter.com/FBuffalo3/status/1681022210906152960 (pyuk)
-**Notes:** 1.2.1 requires a different method
+## Date
+June 15, 2023
+
+## Source
+
+- Discord
+
+## Examples
+
+- [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1119350629584879796)
+- [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1119350059633496107)
+- [Discord](https://discord.com/channels/1086729144307564648/1110956205624532993/1131300216562262047)
+- [Twitter/X](https://fxtwitter.com/FBuffalo3/status/1681022210906152960)
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+- Fuse Entanglement
 
 ## Raw row
 ```csv

@@ -20,33 +20,56 @@ Then retrieve the item with one of the following methods:
 - Pick up the target item from the void
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-1.3.0/1.4.0
-1.4.1
-1.4.2
-Switch 2
-**Credit:** Squidwest, mulberry, Aergyl - December 29, 2025
-**Source:** Discord
-**See also:** Portable Culling
-Fuse Entanglement
-Zuggle Overload
-**Effects/Extensions:** Void dipped equipment have the following properties:
+## Notes
+Void dipped equipment have the following properties:
 - Uninteractable by runes
 - Cannot lose durability
 - Single-use fuses become infinite use (ancient blades, gibdo bones, etc.)
 - Cannot be directly culled from drop swap culling
 - Can be easily smuggled via drop swap unequip or fail drop
 - Does not induce smuggle locking (d-pad lock) when smuggled on v1.1.2+
-**Examples:** Discord
-Discord
-Discord
-**Notes:** - Overload dropping is not required for the 3rd dipping method if paired with the pickup retrieval method
+- Overload dropping is not required for the 3rd dipping method if paired with the pickup retrieval method
 - Culling-related dipping methods are also possible with phase culling
+
+## Credit
+Squidwest, mulberry, Aergyl
+
+## Date
+December 29, 2025
+
+## Source
+
+- Discord
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+- 1.3.0
+- 1.4.0
+- 1.4.1
+- 1.4.2
+- Switch 2
+
+## See also
+
+- Portable Culling
+- Fuse Entanglement
+- Zuggle Overload
 
 ## Raw row
 ```csv

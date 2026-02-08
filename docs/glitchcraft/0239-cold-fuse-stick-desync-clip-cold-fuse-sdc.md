@@ -9,29 +9,60 @@ An easier way to perform stick desync clip using cold fuse that allows for an al
 
 ## How To
 ```
-1. Cold fuse a steering stick to a weapon or shield
-2. Mount the steering stick
-3. Unequip the weapon or shield that the steering stick is cold fused to
+1. Cold fuse a steering stick to a weapon or shield
+
+2. Mount the steering stick
+
+3. Unequip the weapon or shield that the steering stick is cold fused to
+
 4. Mash B immediately upon unpausing (skip this step if clipping is desired)
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** mulberry, KiloVictor - June 4, 2024
-**Source:** Discord
-**See also:** Stick Desync Clipping
-Cold Fuse
-**Examples:** Discord
+## Notes
+—
+
+## Credit
+mulberry, KiloVictor
+
+## Date
+June 4, 2024
+
+## Source
+
+- Discord
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+- Stick Desync Clipping
+- Cold Fuse
 
 ## Raw row
 ```csv
-Glitch: Cold Fuse Stick Desync Clip (Cold Fuse SDC), Glitch Overview: An easier way to perform stick desync clip using cold fuse that allows for an almost immediate dismount, making it useful for stick desync without clipping, How To: 1. Cold fuse a steering stick to a weapon or shield
-2. Mount the steering stick
-3. Unequip the weapon or shield that the steering stick is cold fused to
+Glitch: Cold Fuse Stick Desync Clip (Cold Fuse SDC), Glitch Overview: An easier way to perform stick desync clip using cold fuse that allows for an almost immediate dismount, making it useful for stick desync without clipping, How To: 1. Cold fuse a steering stick to a weapon or shield
+
+2. Mount the steering stick
+
+3. Unequip the weapon or shield that the steering stick is cold fused to
+
 4. Mash B immediately upon unpausing (skip this step if clipping is desired), Working Versions: 1.0.0
 1.1.0/1.1.1
 1.1.2

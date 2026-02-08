@@ -16,19 +16,43 @@ Allows storage of the arrow prompt and can be given multiple times via an enemy 
 5. Enemies arrows will eventually de-load and give the arrow prompt.
 ```
 
-## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** Ryan?, NghtmaR3 - October 4, 2023
-**Source:** Discord
-**See also:** Memory Buffering
-**Examples:** Obtain arrow prompt while in menu https://discord.com/channels/1086729144307564648/1105598687167664239/1159274618285207723
 
-Full setup https://discord.com/channels/1086729144307564648/1113557914444111873/1163980374100148365 
-https://discord.com/channels/1086729144307564648/1113557914444111873/1163996130699395144
+## Metadata
+## Notes
+—
+
+## Credit
+Ryan?, NghtmaR3
+
+## Date
+October 4, 2023
+
+## Source
+
+- Discord
+
+## Examples
+
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1159274618285207723)
+- [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1163980374100148365)
+- [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1163996130699395144)
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+- Memory Buffering
 
 ## Raw row
 ```csv

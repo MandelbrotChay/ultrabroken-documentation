@@ -13,11 +13,36 @@ When Link surfes onto a slope and his surfing state gets canceled with in a sing
 Shield surf against a slope
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-**Credit:** Mozz - September 22, 2023
-**Source:** Discord
-**Examples:** https://discord.com/channels/1086729144307564648/1105598687167664239/1155495303642882099
+## Notes
+—
+
+## Credit
+Mozz
+
+## Date
+September 22, 2023
+
+## Source
+
+- Discord
+
+## Examples
+
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1155495303642882099)
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+
+## See also
+
+—
 
 ## Raw row
 ```csv

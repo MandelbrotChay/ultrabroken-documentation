@@ -23,15 +23,41 @@ the horse should still be alive, but no longer on the map
 11. revieve it with the horse god
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** ock - March 22, 2024
-**Source:** Discord
-**See also:** Stick Desync
+## Notes
+—
+
+## Credit
+ock
+
+## Date
+March 22, 2024
+
+## Source
+
+- Discord
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+- Stick Desync
 
 ## Raw row
 ```csv

@@ -18,17 +18,43 @@ Allows for easy weapon GAS by performing a dash attack while its fused zonai dev
 7. Detangle the zonai device from the shield that it is fuse-entangled to
 ```
 
+
 ## Metadata
-**Working versions:** 1.2.0
-1.2.1
-1.3.0/1.4.0
-1.4.1
-1.4.2
-Switch 2
-**Credit:** Toti Sauce - November 28, 2025
-**Source:** Discord
-**See also:** Guard-less Active Shield (GAS)
-Fuse Entanglement
+## Notes
+—
+
+## Credit
+Toti Sauce
+
+## Date
+November 28, 2025
+
+## Source
+
+- Discord
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.2.0
+- 1.2.1
+- 1.3.0
+- 1.4.0
+- 1.4.1
+- 1.4.2
+- Switch 2
+
+## See also
+
+- Guard-less Active Shield (GAS)
+- Fuse Entanglement
 
 ## Raw row
 ```csv

@@ -12,21 +12,47 @@ Allows you to overload your game, causing many other glitches
 Zuggle or Invizuggle 9-10 (1.0.0) / 13-14 (1.1.0-1.2.1) weapons/shields/bows, and optionally load a save
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** Zvleon - May 17, 2023
-**See also:** The Zocument
-Zuggle
-**Effects/Extensions:** Overload Drop: This drops equipment on the ground when switched to, causing many glitches, including the movement allowed by arrow smuggling
+## Notes
+Overload Drop: This drops equipment on the ground when switched to, causing many glitches, including the movement allowed by arrow smuggling
 Overload Pickup: Picking up equipment into Link's hands in zuggle overload causes it to become overload dropped
-**Notes:** This glitch overloads an actors "Relation Array"
+This glitch overloads an actors "Relation Array"
 Sizes:
 29 Actors on 1.0
 33 Actors on 1.1.0+
+
+## Credit
+Zvleon
+
+## Date
+May 17, 2023
+
+## Source
+
+—
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+- The Zocument
+- Zuggle
 
 ## Raw row
 ```csv

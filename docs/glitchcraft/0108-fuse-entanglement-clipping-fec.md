@@ -14,13 +14,39 @@ Using the object clipping properties of Fuse Entanglement with a steering-stick 
 3. Mount the steering stick to be placed through the wall.
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-**Credit:** circyit - June 16, 2023
-**Source:** Youtube
-**See also:** Fuse Entanglement
+## Notes
+—
+
+## Credit
+circyit
+
+## Date
+June 16, 2023
+
+## Source
+
+- Youtube
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+
+## See also
+
+- Fuse Entanglement
 
 ## Raw row
 ```csv

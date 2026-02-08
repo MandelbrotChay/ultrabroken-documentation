@@ -14,19 +14,45 @@ Allows for easy detanglement of any shield using octoballoons
 3. While continuing to hold ZL, unpause and press B in quick succession
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-1.3.0/1.4.0
-1.4.1
-1.4.2
-Switch 2
-**Credit:** mulberry - Novermber 16, 2025
-**Source:** Discord
-**See also:** Detanglement
+## Notes
+—
+
+## Credit
+mulberry - Novermber 16, 2025
+
+## Date
+—
+## Source
+
+- Discord
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+- 1.3.0
+- 1.4.0
+- 1.4.1
+- 1.4.2
+- Switch 2
+
+## See also
+
+- Detanglement
 
 ## Raw row
 ```csv

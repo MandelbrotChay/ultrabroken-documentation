@@ -17,14 +17,39 @@ Allows you to drop smuggle via overload
 Credit to BigDUCCO for setup!
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-**Credit:** ChargeVolt, Windocks - June 12, 2023
-**See also:** Zuggle Overload
-**Examples:** https://discord.com/channels/1086729144307564648/1113557914444111873/1118058095734685766
-**Notes:** May 12, 2023 & June 12, 2023
+## Notes
+May 12, 2023 & June 12, 2023
+
+## Credit
+ChargeVolt, Windocks
+
+## Date
+June 12, 2023
+
+## Source
+
+—
+
+## Examples
+
+- [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1118058095734685766)
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+
+## See also
+
+- Zuggle Overload
 
 ## Raw row
 ```csv

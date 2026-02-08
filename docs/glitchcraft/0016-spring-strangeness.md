@@ -14,15 +14,42 @@ Currently 2 methods:
 -Method 2: This involves putting 2 springs facing each other, slightly offset. Stand against the springs and trigger them.
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** Orionsayshi (Method 1), Owen (Method 2) - May 15, 2023
-**Effects/Extensions:** might allow for some unloaded areas and/or clipping
-**Notes:** Method 1 is reliablely strange, while Method 2 has only been performed once thus far
+## Notes
+might allow for some unloaded areas and/or clipping
+Method 1 is reliablely strange, while Method 2 has only been performed once thus far
+
+## Credit
+Orionsayshi (Method 1), Owen (Method 2)
+
+## Date
+May 15, 2023
+
+## Source
+
+—
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+—
 
 ## Raw row
 ```csv

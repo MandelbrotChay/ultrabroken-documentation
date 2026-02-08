@@ -18,25 +18,55 @@ Compendium pictures:
 2. Load your destination file
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** Picture in Link's house
+## Notes
+Picture in Link's house
+
+June 18, 2023
+
+
+
+Compendium pictures
+
+Zas
+
+August 16, 2023
+
+## Credit
+Picture in Link's house
 R4000
 
 Compendium pictures
 Zas - June 18, 2023
-**Source:** Youtube
-Twitter
-**Notes:** Picture in Link's house
-June 18, 2023
-
-Compendium pictures
-Zas
-August 16, 2023
+
+## Date
+—
+## Source
+
+- Youtube
+- Twitter
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+—
 
 ## Raw row
 ```csv
@@ -55,10 +85,15 @@ R4000
 
 Compendium pictures
 Zas, Date: June 18, 2023, Link to Source: Youtube
-Twitter, Notes: Picture in Link's house
-June 18, 2023
-
-Compendium pictures
-Zas
+Twitter, Notes: Picture in Link's house
+
+June 18, 2023
+
+
+
+Compendium pictures
+
+Zas
+
 August 16, 2023
 ```

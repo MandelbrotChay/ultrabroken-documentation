@@ -14,16 +14,41 @@ title: "Mulberry's Out of Body Experience (Moobe)"
 3. Ensure Links position has changed via the map.
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** mulberry - January 6, 2024
-**Source:** Discord
-**See also:** Memory Buffering
-**Effects/Extensions:** (Presumably) Causes the game to believe Link is in two positions at the same time, resulting in unloading of the area around the player, while still in said area.
+## Notes
+(Presumably) Causes the game to believe Link is in two positions at the same time, resulting in unloading of the area around the player, while still in said area.
+
+## Credit
+mulberry
+
+## Date
+January 6, 2024
+
+## Source
+
+- Discord
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+- Memory Buffering
 
 ## Raw row
 ```csv

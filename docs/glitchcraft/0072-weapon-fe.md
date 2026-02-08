@@ -16,14 +16,39 @@ Allows for FE to weapons
 5. Swap off shield with weapon
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-**Credit:** Rediscovered by robuxy2nd and originally found by Physioninja - June 1, 2023
-**Source:** Discord
-**See also:** Fuse Entanglement
-**Notes:** September 12, 2023 and June 1, 2023
+## Notes
+September 12, 2023 and June 1, 2023
+
+## Credit
+Rediscovered by robuxy2nd and originally found by Physioninja
+
+## Date
+June 1, 2023
+
+## Source
+
+- Discord
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+
+## See also
+
+- Fuse Entanglement
 
 ## Raw row
 ```csv

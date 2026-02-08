@@ -16,13 +16,37 @@ Interrupting a fuse to a zuggled item causes FE
 The zuggled item will have it FE'd to it
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-**Credit:** Zas - September 12, 2023
-**Source:** Twitter
-**See also:** Zuggling
-Fuse Entanglment
-**Effects/Extensions:** performing this twice with the same smuggle and fuse will pseudo fuse it to the other equipment
+## Notes
+performing this twice with the same smuggle and fuse will pseudo fuse it to the other equipment
+
+## Credit
+Zas
+
+## Date
+September 12, 2023
+
+## Source
+
+- Twitter
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+
+## See also
+
+- Zuggling
+- Fuse Entanglment
 
 ## Raw row
 ```csv

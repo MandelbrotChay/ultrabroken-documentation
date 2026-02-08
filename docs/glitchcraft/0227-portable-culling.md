@@ -15,27 +15,37 @@ Fusing a cold fused sdc stick makes it possible to cull link anywhere, empty slo
 4. Unpause, link will cull for a few frames
 ```
 
+
 ## Metadata
-**Working versions:** 1.2.0
-1.2.1
-**Credit:** Mulberry - February 27, 2024
-**Source:** Discord
-**See also:** Stick Desync Clip (SDC)
-**Examples:** empty slot smuggle (mulberry): equip the target item, do portable culling, pause while link is culled and drop the target item
-Discord
+## Notes
+doing a drop swap drop softlocks
 
-invizuggle  (Mulberry, NghtmaR3, Blackmars): Drop sdc equipment, swap to something else, drop target item, pause bufffer, equip another equipment of that type.
+## Credit
+Mulberry
 
-desync (mulberry):
-1. go to a wall in a way that lets sdc stick item drop without letting target drop
-2. drop sdc swap stick equipment 
-3. swap to target
-4. advance a bit of time (like pause buffer and map buffer)
-5. attempt to drop the equipment you swapped to for the desync
+## Date
+February 27, 2024
 
-mineru fe (winnerboi): portable culling while an item is fusing to mineru causes mineru fe, doing it early may result in a cold fuse
-Discord
-**Notes:** doing a drop swap drop softlocks
+## Source
+
+- Discord
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.2.0
+- 1.2.1
+
+## See also
+
+- Stick Desync Clip (SDC)
 
 ## Raw row
 ```csv

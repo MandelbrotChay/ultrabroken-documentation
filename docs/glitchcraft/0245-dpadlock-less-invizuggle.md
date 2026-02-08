@@ -34,18 +34,42 @@ If you want to zlot an item with invizuggle, you can do the following:
 8. drop the child to uncull it
 ```
 
+
 ## Metadata
-**Working versions:** 1.2.0
-1.2.1
-**Credit:** Discovered by mulberry
+## Notes
+—
+
+## Credit
+Discovered by mulberry
 
 Optimized by
 blackmars, mulberry, NghtmaR3 (order is alphabetically) - July 17, 2024
-**Source:** Invizuggle:
-Discord
 
-Dpad-lock bypass discovery via sld:
-Discord
+## Date
+—
+## Source
+
+- Invizuggle:
+- Discord
+- Dpad-lock bypass discovery via sld:
+- Discord
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.2.0
+- 1.2.1
+
+## See also
+
+—
 
 ## Raw row
 ```csv

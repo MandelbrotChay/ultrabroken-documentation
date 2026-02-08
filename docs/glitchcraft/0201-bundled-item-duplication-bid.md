@@ -25,18 +25,43 @@ Discord (Lightos_)
 11. pickup the items and repeat steps 9-11
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** Ock - December 12, 2023
-**Source:** Discord
-**See also:** Stick Desync Clipping
-Object Culling
-Memory Buffering
-**Tutorials/Resources:** https://www.youtube.com/watch?v=WNnnI13a954&t
+## Notes
+—
+
+## Credit
+Ock
+
+## Date
+December 12, 2023
+
+## Source
+
+- Discord
+
+## Examples
+
+—
+
+## Resources
+
+- [YouTube](https://www.youtube.com/watch?v=WNnnI13a954&t)
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+- Stick Desync Clipping
+- Object Culling
+- Memory Buffering
 
 ## Raw row
 ```csv

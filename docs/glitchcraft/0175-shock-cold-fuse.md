@@ -14,11 +14,37 @@ Interrupting a fuse on the first possible frame with shock causes cold fusion
 3. Unpause and fuse on the first frame possible
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-**Credit:** Zas - September 11, 2023
-**Source:** Discord
-Discord
+## Notes
+—
+
+## Credit
+Zas
+
+## Date
+September 11, 2023
+
+## Source
+
+- Discord
+- Discord
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+
+## See also
+
+—
 
 ## Raw row
 ```csv

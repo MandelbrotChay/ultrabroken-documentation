@@ -14,17 +14,42 @@ allows you to launch a large horizontal distance using springs
 -Once you hit the spring with the shield spin, pause, unequip sheild to ragdoll, and get launched
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** Mozz - May 15, 2023
-**Source:** Discord
-**See also:** Discord
-**Effects/Extensions:** Can be used to clip back inbounds from the depths ceiling. (See Also)
-**Notes:** Can chain more springs to make the horizontal launch more powerful
+## Notes
+Can be used to clip back inbounds from the depths ceiling. (See Also)
+Can chain more springs to make the horizontal launch more powerful
+
+## Credit
+Mozz
+
+## Date
+May 15, 2023
+
+## Source
+
+- Discord
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+- Discord
 
 ## Raw row
 ```csv

@@ -30,25 +30,50 @@ Note: This method ONLY works with bows, shields, and weapons
 4. Close the menu/unpause
 ```
 
-## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** ock (Method 1 & 3), WinnerBoi77 (Method 2) - October 18, 2023
-**Source:** Discord
-**See also:** Fuse Entanglement
-Portable Culling
-LikeLike Stick Smuggling
-Detanglement
-**Effects/Extensions:** - Dismissing Mineru removes any objects FE'd to her from the world, allowing for equipment desync and, consequently, WST for equipment
-- Certain actions like paragliding, climbing, entering a town/stable, and walking around with fuse or ultrahand active can cull Mineru, consequently culling anything FE'd to her. This can be used for all sorts of things, including zuggling equipment and cold fusing almost anywhere. 
-- Fusing something to Mineru on the same slot as an FE'd object will detangle that object from Mineru. Discovered by Mullberry.
-**Examples:** https://discord.com/channels/1086729144307564648/1113557914444111873/1216477146978193530
 
-https://discord.com/channels/1086729144307564648/1109838351596527726/1235768638796071013
-**Notes:** For method 1, any method of culling Link can work in place of like like stick culling
+## Metadata
+## Notes
+- Dismissing Mineru removes any objects FE'd to her from the world, allowing for equipment desync and, consequently, WST for equipment
+
+- Certain actions like paragliding, climbing, entering a town/stable, and walking around with fuse or ultrahand active can cull Mineru, consequently culling anything FE'd to her. This can be used for all sorts of things, including zuggling equipment and cold fusing almost anywhere.
+
+- Fusing something to Mineru on the same slot as an FE'd object will detangle that object from Mineru. Discovered by Mullberry.
+For method 1, any method of culling Link can work in place of like like stick culling
+
+## Credit
+ock (Method 1 & 3), WinnerBoi77 (Method 2)
+
+## Date
+October 18, 2023
+
+## Source
+
+- Discord
+
+## Examples
+
+- [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1216477146978193530)
+- [Discord](https://discord.com/channels/1086729144307564648/1109838351596527726/1235768638796071013)
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+- Fuse Entanglement
+- Portable Culling
+- LikeLike Stick Smuggling
+- Detanglement
 
 ## Raw row
 ```csv
@@ -77,8 +102,10 @@ Note: This method ONLY works with bows, shields, and weapons
 1.2.1, Credit: ock (Method 1 & 3), WinnerBoi77 (Method 2), Date: October 18, 2023, Link to Source: Discord, See Also: Fuse Entanglement
 Portable Culling
 LikeLike Stick Smuggling
-Detanglement, Effects/Extensions: - Dismissing Mineru removes any objects FE'd to her from the world, allowing for equipment desync and, consequently, WST for equipment
-- Certain actions like paragliding, climbing, entering a town/stable, and walking around with fuse or ultrahand active can cull Mineru, consequently culling anything FE'd to her. This can be used for all sorts of things, including zuggling equipment and cold fusing almost anywhere. 
+Detanglement, Effects/Extensions: - Dismissing Mineru removes any objects FE'd to her from the world, allowing for equipment desync and, consequently, WST for equipment
+
+- Certain actions like paragliding, climbing, entering a town/stable, and walking around with fuse or ultrahand active can cull Mineru, consequently culling anything FE'd to her. This can be used for all sorts of things, including zuggling equipment and cold fusing almost anywhere. 
+
 - Fusing something to Mineru on the same slot as an FE'd object will detangle that object from Mineru. Discovered by Mullberry., Example(s): https://discord.com/channels/1086729144307564648/1113557914444111873/1216477146978193530
 
 https://discord.com/channels/1086729144307564648/1109838351596527726/1235768638796071013, Notes: For method 1, any method of culling Link can work in place of like like stick culling

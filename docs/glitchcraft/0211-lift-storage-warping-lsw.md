@@ -17,19 +17,44 @@ Using detanglement makes this wrong warp state permanent.
 5. (optional, makes it permanent) use a rocket shield
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** mulberry - January 8, 2024
-**Source:** Discord
-**See also:** Stick Desync Clip
-Object Culling
-ZLOT
-Lift Warping
-**Notes:** Test with like like stick culling
+## Notes
+Test with like like stick culling
+
+## Credit
+mulberry
+
+## Date
+January 8, 2024
+
+## Source
+
+- Discord
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+- Stick Desync Clip
+- Object Culling
+- ZLOT
+- Lift Warping
 
 ## Raw row
 ```csv

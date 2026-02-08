@@ -14,14 +14,39 @@ Allows you to clip OOB using zuggle overload
 3. You now clip into the floor!
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-**Credit:** AngryEgg - May 18, 2023
-**Source:** Discord
-**See also:** Zuggle Overload
-**Examples:** Youtube
+## Notes
+—
+
+## Credit
+AngryEgg
+
+## Date
+May 18, 2023
+
+## Source
+
+- Discord
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+
+## See also
+
+- Zuggle Overload
 
 ## Raw row
 ```csv

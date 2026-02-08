@@ -15,17 +15,44 @@ Like-Like Culling
 Cull Zone Culling
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** Mozz, researched by tori - June 27, 2023
-**Effects/Extensions:** With the help of chain FE, it is possible to make an infinitely large cull radius
+## Notes
+With the help of chain FE, it is possible to make an infinitely large cull radius
 (discovered by Mulberry and Timber)
-Discord 
+Discord
 YouTube
+
+## Credit
+Mozz, researched by tori
+
+## Date
+June 27, 2023
+
+## Source
+
+—
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+—
 
 ## Raw row
 ```csv

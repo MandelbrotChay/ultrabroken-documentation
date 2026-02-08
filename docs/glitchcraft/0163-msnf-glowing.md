@@ -13,17 +13,42 @@ Be near a gloom hand spawn, then cross a specific coordinate while the mnf is un
 This can also be done with phantom ganon and for some reason this works on all versions.
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** evilgabe - August 2, 2023
-**Source:** Youtube
-**Examples:** https://youtu.be/x71Zp-zBbEE
-**Notes:** MSNF needs to be unsheated or it won't add the glow.
+## Notes
+MSNF needs to be unsheated or it won't add the glow.
 Gloom hands only work on 1.0.0 while phantom ganon works on all versions
+
+## Credit
+evilgabe
+
+## Date
+August 2, 2023
+
+## Source
+
+- Youtube
+
+## Examples
+
+- [YouTube](https://youtu.be/x71Zp-zBbEE)
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+—
 
 ## Raw row
 ```csv

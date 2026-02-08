@@ -17,14 +17,41 @@ Places the travel medallion at links feet after loading a file.
 6. Now the frist time you get a loading screen the medallion will go under link feet at the end of the loading screen
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** kirigaya - June 16, 2023
-**Source:** Discord
+## Notes
+—
+
+## Credit
+kirigaya
+
+## Date
+June 16, 2023
+
+## Source
+
+- Discord
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+—
 
 ## Raw row
 ```csv

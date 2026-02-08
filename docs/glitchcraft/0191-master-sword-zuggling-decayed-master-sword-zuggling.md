@@ -33,19 +33,44 @@ An alternative much easier method of getting the desync and transfering it:
 10. Map zuggle the newly equipped weapon.
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** Zas - November 6, 2023
-**Source:** Discord
-**See also:** Mineru Culling
-Zuggling
-**Effects/Extensions:** Altenative method (mulbery)
+## Notes
+Altenative method (mulbery)
 https://discord.com/channels/1086729144307564648/1105598687167664239/1178791475216134194
 This can be combined with mastersword liberation to drop the dms/ms
+
+## Credit
+Zas
+
+## Date
+November 6, 2023
+
+## Source
+
+- Discord
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+- Mineru Culling
+- Zuggling
 
 ## Raw row
 ```csv

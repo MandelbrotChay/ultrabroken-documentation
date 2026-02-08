@@ -27,17 +27,43 @@ It's crucial that you get that cancel on that frame otherwise you will get Refer
 You know you get regular FE if Recall is auto-cancelled when you Recall the FE child and ascend/use a cooking pot.
 ```
 
+
 ## Metadata
-**Working versions:** 1.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1+
-**Credit:** mulberry - May 26, 2025
-**Source:** https://discord.com/channels/1086729144307564648/1105598687167664239/1376489712146976839
-**See also:** Overload Cold Fuse
-Fuse Overload
-Fuse Entanglement
+## Notes
+—
+
+## Credit
+mulberry
+
+## Date
+May 26, 2025
+
+## Source
+
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1376489712146976839)
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1+
+
+## See also
+
+- Overload Cold Fuse
+- Fuse Overload
+- Fuse Entanglement
 
 ## Raw row
 ```csv

@@ -16,21 +16,46 @@ Unloads throwable items in a way that allows them to be duped by picking them up
 5. When the chasm load ends, immediately re-select the held item with d-pad up and pick it up
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-1.3.0/1.4.0
-1.4.1
-1.4.2
-Switch 2
-**Credit:** Telkic, mulberry - October 12, 2025
-**Source:** Discord
-**See also:** Portable Culling
-**Examples:** Discord
-**Notes:** Can be performed without portacull by positioning Link underneath the chasm boundary (see example clip), or with ocklusion
+## Notes
+Can be performed without portacull by positioning Link underneath the chasm boundary (see example clip), or with ocklusion
+
+## Credit
+Telkic, mulberry
+
+## Date
+October 12, 2025
+
+## Source
+
+- Discord
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+- 1.3.0
+- 1.4.0
+- 1.4.1
+- 1.4.2
+- Switch 2
+
+## See also
+
+- Portable Culling
 
 ## Raw row
 ```csv

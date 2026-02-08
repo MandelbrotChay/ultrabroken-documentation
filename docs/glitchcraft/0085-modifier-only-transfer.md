@@ -16,14 +16,40 @@ Allows you to transfer only the modifier, but only works on weapons.
 5. Save and reload
 ```
 
+
 ## Metadata
-**Working versions:** 1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** kurocat471, BigDUCCO - June 9, 2023
-**Tutorials/Resources:** https://youtu.be/ycKeFgsb7gs
-**Notes:** 1.2.0-1.2.1 need an altenative method
+## Notes
+1.2.0-1.2.1 need an altenative method
+
+## Credit
+kurocat471, BigDUCCO
+
+## Date
+June 9, 2023
+
+## Source
+
+—
+
+## Examples
+
+—
+
+## Resources
+
+- [YouTube](https://youtu.be/ycKeFgsb7gs)
+
+## Working Versions
+
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+—
 
 ## Raw row
 ```csv

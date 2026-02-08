@@ -24,23 +24,47 @@ To stop the culling, you can mount a steering stick or lift an item.
 Link can't cull if the base is equipped.
 ```
 
-## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** NaN Gogh, DisguisedMoth - July 1, 2023
-**Source:** Twitter
-Discord
 
-July 28, 2023
-(Originally) July 1, 2023
-**See also:** Fuse Entanglement
-**Examples:** https://twitter.com/_nan_gogh/status/1675121229462642689?s=20
-**Tutorials/Resources:** https://discord.com/channels/1086729144307564648/1113557914444111873/1134569862497304629
-**Notes:** - The glitch will not work if you do get on the steering stick immediately after dropping
+## Metadata
+## Notes
+- The glitch will not work if you do get on the steering stick immediately after dropping
 - You will lose the shield so it is best to entangle the stick to a low level/non important shield
+
+## Credit
+NaN Gogh, DisguisedMoth
+
+## Date
+July 1, 2023
+
+## Source
+
+- Twitter
+- Discord
+- July 28
+- 2023
+- (Originally) July 1
+- 2023
+
+## Examples
+
+- [Twitter/X](https://twitter.com/_nan_gogh/status/1675121229462642689?s=20)
+
+## Resources
+
+- [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1134569862497304629)
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+- Fuse Entanglement
 
 ## Raw row
 ```csv

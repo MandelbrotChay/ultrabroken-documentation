@@ -16,12 +16,37 @@ Allows you to dupe materials through Stack Splitting
 5. Unpause.
 ```
 
+
 ## Metadata
-**Working versions:** 1.2.0
-1.2.1+
-**Credit:** Telkic, mulberry, Winnerboi77 - June 19, 2025
-**Source:** Discord
-**See also:** Stack Splitting
+## Notes
+—
+
+## Credit
+Telkic, mulberry, Winnerboi77
+
+## Date
+June 19, 2025
+
+## Source
+
+- Discord
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.2.0
+- 1.2.1+
+
+## See also
+
+- Stack Splitting
 
 ## Raw row
 ```csv

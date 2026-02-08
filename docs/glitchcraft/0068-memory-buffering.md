@@ -12,13 +12,41 @@ Advances Links current animation by 1 frame while keeping the menu open. Links c
 -Skip a playing memory during an animation.
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** Mozz - May 29, 2023
+## Notes
+—
+
+## Credit
+Mozz
+
+## Date
+May 29, 2023
+
+## Source
+
+—
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+—
 
 ## Raw row
 ```csv

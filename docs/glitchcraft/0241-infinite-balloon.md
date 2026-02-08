@@ -16,15 +16,41 @@ Steal Robbie's balloon which has will never deplete.
 5. The boat is gone but Izra is in a weird rolling state. Position where the balloon should be and autobuild the balloon away. After fading to black, the balloon should be positioned incorrectly and able to be moved.
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** kurone_yuu - June 13, 2024
-**Source:** https://x.com/kurone_yuu/status/1801239224378900947?s=46&t=DdtmlnCQqIbD5irw-jnKbQ
-**Notes:** There are many NPCs that can be put into this weird rolling state.
+## Notes
+There are many NPCs that can be put into this weird rolling state.
+
+## Credit
+kurone_yuu
+
+## Date
+June 13, 2024
+
+## Source
+
+- [Twitter/X](https://x.com/kurone_yuu/status/1801239224378900947?s=46&t=DdtmlnCQqIbD5irw-jnKbQ)
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+—
 
 ## Raw row
 ```csv

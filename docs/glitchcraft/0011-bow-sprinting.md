@@ -4,21 +4,49 @@ title: "Bow Sprinting"
 
 # Bow Sprinting
 
+## Overview
+—
+
 ## How To
 ```
 tap B - ZR, repeat. Additional info: alternate tapping B then ZR. With a tempo of about 130-160 bpm (B being on the beat, ZR being the up beat)
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** Steel - May 14, 2023
-**Source:** Discord
-**See also:** Totk Sprint Methods
-**Examples:** Youtube
+## Notes
+—
+
+## Credit
+Steel
+
+## Date
+May 14, 2023
+
+## Source
+
+- Discord
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+- Totk Sprint Methods
 
 ## Raw row
 ```csv

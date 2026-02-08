@@ -14,15 +14,38 @@ Stacking the glow from the MsgNotFound sword to extreme lengths causes many visu
 You can continue to stack the glow by zuggling more MNFs and/or jumping for longer amounts of time, which gradually amplifies the overload effects
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-**Credit:** Toti Sauce - January 3, 2025
-**Source:** Discord
-**See also:** Message Not Found (MNF)
-Zuggle
-**Effects/Extensions:** Extreme overload can sometimes unload specific actors
-**Examples:** Discord
-**Notes:** Also works in other locations with gloom hands nearby
+## Notes
+Extreme overload can sometimes unload specific actors
+Also works in other locations with gloom hands nearby
+
+## Credit
+Toti Sauce
+
+## Date
+January 3, 2025
+
+## Source
+
+- Discord
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+
+## See also
+
+- Message Not Found (MNF)
+- Zuggle
 
 ## Raw row
 ```csv

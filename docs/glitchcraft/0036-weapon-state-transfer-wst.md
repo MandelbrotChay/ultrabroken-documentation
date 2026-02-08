@@ -37,26 +37,49 @@ Setup:
 If done correctly, the target item should have everything the donor item has.
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** BigDUCCO, kurocat471, ElDuende, Mentor_Kurt - May 19, 2023
-**Source:** Discord
-**Effects/Extensions:** The weapons, shields and bows aren't the only ones that work, it all depends on their hitboxes 
+## Notes
+The weapons, shields and bows aren't the only ones that work, it all depends on their hitboxes
 You might find equal success using other thin bows, thin spears with other targets
 Similarily, the shield fuse is not always necessary, as some shields are naturally bigger than others
 
 1.0.0 has a different and easier method, see video for method
-**Examples:** this outlines the old method. new method works better, but has the same results.
-**Tutorials/Resources:** https://youtu.be/Kzf_uJBvRjI 
-
-https://www.youtube.com/watch?v=1gWV6p814F8 (1.0.0)
-**Notes:** In 1.0.0, performing WST this way can allow you to delete the modifier completely.
+In 1.0.0, performing WST this way can allow you to delete the modifier completely.
 
 Depending on the bow you use (ex. Phrenic Bow), you'll still be able to perform WST, but the Old Wooden Bow has very good consistency.
+
+## Credit
+BigDUCCO, kurocat471, ElDuende, Mentor_Kurt
+
+## Date
+May 19, 2023
+
+## Source
+
+- Discord
+
+## Examples
+
+—
+
+## Resources
+
+- [YouTube](https://youtu.be/Kzf_uJBvRjI)
+- [YouTube](https://www.youtube.com/watch?v=1gWV6p814F8)
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+—
 
 ## Raw row
 ```csv

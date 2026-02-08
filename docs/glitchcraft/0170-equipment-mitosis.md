@@ -19,12 +19,36 @@ By combining zuggle overload with 1.0 modifier deletion, it is possible to mass 
 8. repeat steps 3-7 as much as you want
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-**Credit:** Mozz - September 5, 2023
-**Source:** Discord
-**See also:** Zuggle Overload
-**Examples:** https://discord.com/channels/1086729144307564648/1105598687167664239/1170394698083479702
+## Notes
+—
+
+## Credit
+Mozz
+
+## Date
+September 5, 2023
+
+## Source
+
+- Discord
+
+## Examples
+
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1170394698083479702)
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+
+## See also
+
+- Zuggle Overload
 
 ## Raw row
 ```csv

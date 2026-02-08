@@ -15,19 +15,43 @@ Allows equipment and objects to go through saves by sending its FE base to purga
 4. Equip shield B and load a save
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** mulberry - February 11, 2024
-**Source:** Discord
-**See also:** Fuse Entanglement
-Cold Fuse
-Drop Smuggle
-**Effects/Extensions:** Grabbing a purgatory SLD object with ultrahand causes UltraSLOT.
-**Examples:** Discord
+## Notes
+Grabbing a purgatory SLD object with ultrahand causes UltraSLOT.
+
+## Credit
+mulberry
+
+## Date
+February 11, 2024
+
+## Source
+
+- Discord
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+- Fuse Entanglement
+- Cold Fuse
+- Drop Smuggle
 
 ## Raw row
 ```csv

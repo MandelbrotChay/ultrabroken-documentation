@@ -19,12 +19,37 @@ This glitch gives dpad lock after being performed!
 Performing Invismuggle while having a (drop) zuggle sends the equipment to culled purgatory, allowing for PSLOT.
 ```
 
+
 ## Metadata
-**Working versions:** 1.2.0
-1.2.1+
-**Credit:** mulberry - February 29, 2024
-**Source:** https://discord.com/channels/1086729144307564648/1113557914444111873/1212758084980572270
-**See also:** PSLOT
+## Notes
+—
+
+## Credit
+mulberry
+
+## Date
+February 29, 2024
+
+## Source
+
+- [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1212758084980572270)
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.2.0
+- 1.2.1+
+
+## See also
+
+- PSLOT
 
 ## Raw row
 ```csv

@@ -23,17 +23,42 @@ Versions 1.2+:
 Versions 1.0-1.1.2 have a slightly easier setup, they can use another zuggle method for steps 1-3, such as Map Zuggle or Drop Delay Zuggle. Step 4 can be done through L Cancel FE. Step 5 is slightly different: cull Link through Mineru, and drop shield B while culled. This sends shield A to culled purgatory. In order to uncull the target you may cull Link through Mineru while having shield A equipped. Afterwards, just Map Zuggle or DDZ then detangle to finish the PSLOT.
 ```
 
+
 ## Metadata
-**Working versions:** 1.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1+
-**Credit:** Discovered by mulberry
+## Notes
+—
+
+## Credit
+Discovered by mulberry
 Setup by ArmindoEmiya - July 27, 2024
-**Source:** https://discord.com/channels/1086729144307564648/1113557914444111873/1266787525855547463
-**See also:** PSLOT
-Portacull Invismuggle
+
+## Date
+—
+## Source
+
+- [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1266787525855547463)
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1+
+
+## See also
+
+- PSLOT
+- Portacull Invismuggle
 
 ## Raw row
 ```csv

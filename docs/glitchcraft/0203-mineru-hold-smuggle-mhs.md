@@ -14,17 +14,41 @@ Allows holding items in inventory but not in overworld.
 3. Without closing menu, watch 2 memories
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** Winnerboi77 - December 20, 2023
-**Source:** Discord
-**See also:** Memory Buffering
-**Effects/Extensions:** Can duplicate items. Also see ISLT, 218 on how to transfer items through saves.
-**Tutorials/Resources:** https://youtu.be/mHC8BJpDxGE?si=-KT6KxiVW-O_PDto
+## Notes
+Can duplicate items. Also see ISLT, 218 on how to transfer items through saves.
+
+## Credit
+Winnerboi77
+
+## Date
+December 20, 2023
+
+## Source
+
+- Discord
+
+## Examples
+
+—
+
+## Resources
+
+- [YouTube](https://youtu.be/mHC8BJpDxGE?si=-KT6KxiVW-O_PDto)
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+- Memory Buffering
 
 ## Raw row
 ```csv

@@ -23,16 +23,41 @@ Prerequisites:
 8. Travel back to the Foothill Monster Den and talk to the NPCs to quit the minigame
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** Blackmars, Tahata, EM - April 19, 2024
-**Source:** Discord
-**Examples:** YouTube (tahatanogame)
-**Tutorials/Resources:** YouTube (Suishi)
+## Notes
+—
+
+## Credit
+Blackmars, Tahata, EM
+
+## Date
+April 19, 2024
+
+## Source
+
+- Discord
+
+## Examples
+
+—
+
+## Resources
+
+- YouTube (Suishi)
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+—
 
 ## Raw row
 ```csv

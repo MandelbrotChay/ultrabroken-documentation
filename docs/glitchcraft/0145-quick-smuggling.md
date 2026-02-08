@@ -15,13 +15,36 @@ Allows for easy and quick smuggling of any equipment, including arrow smuggle.
 4. Drop that item and exit the menu.
 ```
 
+
 ## Metadata
-**Working versions:** 1.2.0
-**Credit:** Suishi - July 10, 2023
-**Source:** Youtube
-**Effects/Extensions:** Allows for infinite springboarding if you quick smuggle with a spring shield. The same also works with bombs.
-**Examples:** https://discord.com/channels/1086729144307564648/1113557914444111873/1128052108109811784
-**Tutorials/Resources:** https://youtu.be/Tw3sjs0ftyk?si=R6hf6xgIuHwTYv_k
+## Notes
+Allows for infinite springboarding if you quick smuggle with a spring shield. The same also works with bombs.
+
+## Credit
+Suishi
+
+## Date
+July 10, 2023
+
+## Source
+
+- Youtube
+
+## Examples
+
+- [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1128052108109811784)
+
+## Resources
+
+- [YouTube](https://youtu.be/Tw3sjs0ftyk?si=R6hf6xgIuHwTYv_k)
+
+## Working Versions
+
+- 1.2.0
+
+## See also
+
+—
 
 ## Raw row
 ```csv

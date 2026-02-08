@@ -12,18 +12,36 @@ Damage repeats infinitely during spin attack.
 Mid-charge of a spin with a two-handed weapon, obtain a new item at the exact moment it hits an enemy.
 ```
 
+
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-**Credit:** GamSla341 - May 13, 2023
-**Source:** Youtube
-**Effects/Extensions:** Could work in other menus? With other weapons, i.e. arrows?
-**Examples:** Youtube
-Reddit
-Twitter
-**Tutorials/Resources:** None at the moment
-**Notes:** Todo: Replicate in TotK, test in BotW.
+## Notes
+—
+
+## Credit
+—
+
+## Date
+—
+## Source
+
+—
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+—
+
+## See also
+
+—
 
 ## Raw row
 ```csv

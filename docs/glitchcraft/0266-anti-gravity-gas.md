@@ -17,15 +17,40 @@ Allows for weapon GAS by throwing the base of an ARAZ connection just as Link ge
 6. Open the inventory and unequip the pause menu
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-**Credit:** mulberry - January 22, 2025
-**Source:** Discord
-**See also:** AntiGrav Weapons
-Zuggle
-**Examples:** Discord
+## Notes
+—
+
+## Credit
+mulberry
+
+## Date
+January 22, 2025
+
+## Source
+
+- Discord
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+
+## See also
+
+- AntiGrav Weapons
+- Zuggle
 
 ## Raw row
 ```csv

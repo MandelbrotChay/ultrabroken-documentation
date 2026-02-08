@@ -34,16 +34,42 @@ In order to make it rangeless, you need to PSLOT the target.
 ! For liftable objects, while doing the culled purgatory, lift it, it will uncull with Link, you can now fuse or cold fuse to another piece of equipment. For other objects, you will need a second parent for the FE at first, it needs to be a shield, use it to uncull after culled purgatory. You then need to detangle it by zuggling it and using a rocket shield.
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** Discovered by Toti Sauce
+## Notes
+—
+
+## Credit
+Discovered by Toti Sauce
 
 Developed by PetitFrapo, Jordan - October 30th, 2024
-**Source:** https://discord.com/channels/1086729144307564648/1113557914444111873/1301144333499760670
+
+## Date
+—
+## Source
+
+- [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1301144333499760670)
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+—
 
 ## Raw row
 ```csv

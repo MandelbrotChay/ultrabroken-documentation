@@ -13,17 +13,41 @@ Like-Like Warping
 Cucco Warping
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** Originally discovered by Mozz - June 15, 2023
-**Source:** Discord
-**Effects/Extensions:** Can also be achieved with object culling (steps/examples needed.)
-**Examples:** https://www.youtube.com/watch?v=AAMX8LRxSK0 
-(Mozz)
+## Notes
+Can also be achieved with object culling (steps/examples needed.)
+
+## Credit
+Originally discovered by Mozz
+
+## Date
+June 15, 2023
+
+## Source
+
+- Discord
+
+## Examples
+
+- [YouTube](https://www.youtube.com/watch?v=AAMX8LRxSK0)
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+—
 
 ## Raw row
 ```csv

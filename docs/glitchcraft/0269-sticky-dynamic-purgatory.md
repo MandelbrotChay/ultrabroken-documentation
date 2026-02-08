@@ -13,19 +13,42 @@ Culling the cold fuse base of a dynamic purgatory equipment using a like like te
 2. Feed the cold fuse base to a like like
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** mulberry - February 15, 2024
-**Source:** Discord
-**See also:** Dynamic Purgatory Zuggle
-Cold Fuse
-**Examples:** Discord
-Discord
-**Notes:** TODO: Test other forms of culling
+## Notes
+TODO: Test other forms of culling
+
+## Credit
+mulberry
+
+## Date
+February 15, 2024
+
+## Source
+
+- Discord
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+- Dynamic Purgatory Zuggle
+- Cold Fuse
 
 ## Raw row
 ```csv

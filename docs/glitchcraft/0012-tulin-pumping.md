@@ -12,15 +12,41 @@ Preserves the initial boost of tulin
 jump off a ledge and activate Tulin's ability, then close glider and reopen it for a boost, the closing and reopening can be repeated multiple times
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** Ikkitrix - May 14, 2023
-**Source:** Discord
-**See also:** Tulin Movement (Credit: atz)
+## Notes
+—
+
+## Credit
+Ikkitrix
+
+## Date
+May 14, 2023
+
+## Source
+
+- Discord
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+- Tulin Movement (Credit: atz)
 
 ## Raw row
 ```csv

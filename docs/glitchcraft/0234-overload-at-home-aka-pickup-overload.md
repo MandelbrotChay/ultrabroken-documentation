@@ -19,16 +19,39 @@ By repeatedly culling Link while lifting an object during house building, it's p
 8. Test if you are overloaded by switching equipment. If nothing is falling on/through the ground, take out one or two more zonai devices and try again from step 4
 ```
 
+
 ## Metadata
-**Working versions:** 1.2.0
-1.2.1
-**Credit:** ock - March 20, 2024
-**Source:** Discord
-**See also:** Portable Culling
-Stick Desync
-**Effects/Extensions:** Allows you to do most things that zuggle overload can do, including mass equipment duping and drop smuggling equipment
-**Examples:** https://youtu.be/wpylJH-rejM?si=1WJA1gy2jIHIqG5s
-**Notes:** Unlike zuggle overload, pickup overload does not persist through saves. It can also end by going too far away from the area in which the glitch was performed
+## Notes
+Allows you to do most things that zuggle overload can do, including mass equipment duping and drop smuggling equipment
+Unlike zuggle overload, pickup overload does not persist through saves. It can also end by going too far away from the area in which the glitch was performed
+
+## Credit
+ock
+
+## Date
+March 20, 2024
+
+## Source
+
+- Discord
+
+## Examples
+
+- [YouTube](https://youtu.be/wpylJH-rejM?si=1WJA1gy2jIHIqG5s)
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.2.0
+- 1.2.1
+
+## See also
+
+- Portable Culling
+- Stick Desync
 
 ## Raw row
 ```csv

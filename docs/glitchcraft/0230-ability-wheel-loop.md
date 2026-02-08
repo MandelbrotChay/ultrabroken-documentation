@@ -16,10 +16,36 @@ Gets you stuck in the ability wheel indefinitely opening and closing.
 if the timing was right the ability wheel will come up right after the dpad menu.
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-**Credit:** Zas - March 11, 2024
-**Source:** Discord
+## Notes
+—
+
+## Credit
+Zas
+
+## Date
+March 11, 2024
+
+## Source
+
+- Discord
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+
+## See also
+
+—
 
 ## Raw row
 ```csv

@@ -29,14 +29,41 @@ For multiple FEDZ, you must do it in this order:
 -Steps 10-11 for each shield
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-**Credit:** "Ryan?" - June 17, 2023
-**See also:** Fuse Entanglement
-Slugging
-Zuggling
+## Notes
+—
+
+## Credit
+"Ryan?"
+
+## Date
+June 17, 2023
+
+## Source
+
+—
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+
+## See also
+
+- Fuse Entanglement
+- Slugging
+- Zuggling
 
 ## Raw row
 ```csv

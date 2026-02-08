@@ -19,20 +19,44 @@ OR
 Have an item fall onto the ground from zuggle overload and have a like like eat the item
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** Mozz - June 15, 2023
-**Source:** Discord
-**See also:** Fuse Entanglement
-Equipment Smuggling
-Zuggle Overload
-**Effects/Extensions:** Unculling a sluggled item without retrieving it from the like like causes the item to have no collision
-**Examples:** https://discord.com/channels/1086729144307564648/1105598687167664239/1118481958276698202
-https://discord.com/channels/1086729144307564648/1105598835088162816/1118456182072418335
+## Notes
+Unculling a sluggled item without retrieving it from the like like causes the item to have no collision
+
+## Credit
+Mozz
+
+## Date
+June 15, 2023
+
+## Source
+
+- Discord
+
+## Examples
+
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1118481958276698202)
+- [Discord](https://discord.com/channels/1086729144307564648/1105598835088162816/1118456182072418335)
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+- Fuse Entanglement
+- Equipment Smuggling
+- Zuggle Overload
 
 ## Raw row
 ```csv

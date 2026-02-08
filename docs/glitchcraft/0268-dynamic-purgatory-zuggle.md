@@ -27,27 +27,51 @@ For 1.2.0-1.2.1:
 8. Stand on top of a fire chuchu jelly and get eaten by a like like
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** mulberry - February 14, 2025
-**Source:** Discord
-**See also:** Fuse Entanglement
-Portable Culling
-Invizuggle
-Dpadlock-less Invizuggle
-Slugging
-Fuse Entangle Weapon Zuggle (FEWZ)
-Dynamic Zuggle
-**Examples:** Discord
-**Notes:** Equipment order can be reversed to dynamic zuggle shields or bows.
+## Notes
+Equipment order can be reversed to dynamic zuggle shields or bows.
 
 The FE connection between the zuggled base shield and the dynamic purgatory weapon can be substituted for Cold Fuse.
 
 For dynamic purgatory without zuggling, omit step 5 for the first method and steps 2-4 for the second method
+
+## Credit
+mulberry
+
+## Date
+February 14, 2025
+
+## Source
+
+- Discord
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+- Fuse Entanglement
+- Portable Culling
+- Invizuggle
+- Dpadlock-less Invizuggle
+- Slugging
+- Fuse Entangle Weapon Zuggle (FEWZ)
+- Dynamic Zuggle
 
 ## Raw row
 ```csv

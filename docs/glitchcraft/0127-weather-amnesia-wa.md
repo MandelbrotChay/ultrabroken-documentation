@@ -13,15 +13,41 @@ Viewing a memory near a cave will overwrite its local weather with the overworld
 2. Watch a memory
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** pyuk - June 25, 2023
-**See also:** Memory Buffering (MB)
-**Notes:** Certain triggers, such as text boxes, will restore the caves' local weather.
+## Notes
+Certain triggers, such as text boxes, will restore the caves' local weather.
+
+## Credit
+pyuk
+
+## Date
+June 25, 2023
+
+## Source
+
+—
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+- Memory Buffering (MB)
 
 ## Raw row
 ```csv

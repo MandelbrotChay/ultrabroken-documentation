@@ -14,17 +14,41 @@ Combine animation sets when zuggle overloaded.
 3. Swap weapon again to restore normal animations
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** Swinginman - May 17, 2023
-**Source:** Discord
-**See also:** Zuggle Overload
-**Effects/Extensions:** Allows quick spin attacks with the spear charge animation, and many other combinations.
-**Examples:** Youtube
+## Notes
+Allows quick spin attacks with the spear charge animation, and many other combinations.
+
+## Credit
+Swinginman
+
+## Date
+May 17, 2023
+
+## Source
+
+- Discord
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+- Zuggle Overload
 
 ## Raw row
 ```csv

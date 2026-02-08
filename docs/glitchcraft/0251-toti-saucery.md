@@ -21,17 +21,42 @@ Prompt Storage:
 For more details, check the next row (not done yet, work in progress).
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** Toti Sauce
+## Notes
+—
+
+## Credit
+Toti Sauce
 
 Anti-grav discovered by Toti Sauce and Telkic - August 17, 2024
-**Source:** Discord
-**See also:** Fuse Storage Fuse Entanglement
+
+## Date
+—
+## Source
+
+- Discord
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+- Fuse Storage Fuse Entanglement
 
 ## Raw row
 ```csv

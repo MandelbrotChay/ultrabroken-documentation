@@ -12,13 +12,41 @@ The camera follows a sage falling down a chasm.
 Activate the text box you get after obtaining a sage while the sage falls down a chasm
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** Aci - July 18, 2023
+## Notes
+—
+
+## Credit
+Aci
+
+## Date
+July 18, 2023
+
+## Source
+
+—
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+—
 
 ## Raw row
 ```csv

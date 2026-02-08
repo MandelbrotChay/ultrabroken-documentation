@@ -17,13 +17,38 @@ Prevents zonai devices from spawning out of the inventory.
 6. load a file
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-**Credit:** SCFD-GK2 and Nicnac - June 19, 2023
-**Source:** Discord
-**Examples:** https://youtu.be/V6ZeZmfpvEI
-**Notes:** Only way to cancel it is by closing the game
+## Notes
+Only way to cancel it is by closing the game
+
+## Credit
+SCFD-GK2 and Nicnac
+
+## Date
+June 19, 2023
+
+## Source
+
+- Discord
+
+## Examples
+
+- [YouTube](https://youtu.be/V6ZeZmfpvEI)
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+
+## See also
+
+—
 
 ## Raw row
 ```csv

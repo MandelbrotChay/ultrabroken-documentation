@@ -15,21 +15,45 @@ Extends and stacks the damage frames of an attack with memory buffering, causing
 4. Unpause
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** Lightos_ - December 22, 2023
-**Source:** Discord
-Discord
-**See also:** Memory Buffering
-Infinite Damage
-**Effects/Extensions:** 1. this can be combined with zuggle for even higher damage
+## Notes
+1. this can be combined with zuggle for even higher damage
 2. performing this with a cucco gives you a (insert odds later) chance of optaining an egg for every memory you watch
-**Examples:** https://discord.com/channels/1086729144307564648/1105598687167664239/1187789030037926000
-https://www.youtube.com/watch?v=I9HZDkiArJc
+
+## Credit
+Lightos_
+
+## Date
+December 22, 2023
+
+## Source
+
+- Discord
+- Discord
+
+## Examples
+
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1187789030037926000)
+- [YouTube](https://www.youtube.com/watch?v=I9HZDkiArJc)
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+- Memory Buffering
+- Infinite Damage
 
 ## Raw row
 ```csv

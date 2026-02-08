@@ -12,13 +12,36 @@ The game puts a floor inside Link
 Go into a laser, slowly glide down, when the floor flips back up you are out of bounds
 ```
 
+
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-**Credit:** Xeryph - May 13, 2023
-**Source:** Discord
-**Examples:** Youtube
-**Notes:** You need a laser nearby.
+## Notes
+—
+
+## Credit
+—
+
+## Date
+—
+## Source
+
+—
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+—
+
+## See also
+
+—
 
 ## Raw row
 ```csv

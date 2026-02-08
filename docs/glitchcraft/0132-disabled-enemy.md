@@ -19,20 +19,44 @@ altenative method for all versions (discovered by ralseidewitt):
 3. Hit the monster with a fireball
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** shio_0725, altenative method by ralseidewitt - June 27, 2023
-**Source:** Twitter
-**See also:** BAD Arrows (Bow Attachment Desync)
-**Effects/Extensions:** https://twitter.com/shio_0725_4040/status/1684764043708678144
-**Examples:** https://twitter.com/shio_0725_4040/status/1685176978742403072?t=m0yFnWCFAxKgkgQHeoYGAQ&s=19
-**Notes:** Majora's Mask and Bullet Time are not required like in the Example video. 
+## Notes
+https://twitter.com/shio_0725_4040/status/1684764043708678144
+Majora's Mask and Bullet Time are not required like in the Example video.
 
 June 27, 2023 & November 19, 2023
+
+## Credit
+shio_0725, altenative method by ralseidewitt
+
+## Date
+June 27, 2023
+
+## Source
+
+- Twitter
+
+## Examples
+
+- [Twitter/X](https://twitter.com/shio_0725_4040/status/1685176978742403072?t=m0yFnWCFAxKgkgQHeoYGAQ&s=19)
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+- BAD Arrows (Bow Attachment Desync)
 
 ## Raw row
 ```csv

@@ -15,17 +15,41 @@ Allows for repeated boost from a midair rocket shield surf, making it a very goo
 4. Spam B (or time it precisely).
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** Mozz, SmallAnt - June 15, 2023
-**See also:** Fuse Entanglement
-**Examples:** https://youtu.be/10PdzT0eEl0
-**Tutorials/Resources:** https://youtu.be/OmuWEI46dXo?t=163
-**Notes:** 1.2.0+ requires a different method
+## Notes
+1.2.0+ requires a different method
+
+## Credit
+Mozz, SmallAnt
+
+## Date
+June 15, 2023
+
+## Source
+
+—
+
+## Examples
+
+- [YouTube](https://youtu.be/10PdzT0eEl0)
+
+## Resources
+
+- [YouTube](https://youtu.be/OmuWEI46dXo?t=163)
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+- Fuse Entanglement
 
 ## Raw row
 ```csv

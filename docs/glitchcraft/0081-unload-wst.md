@@ -17,17 +17,41 @@ Allows you to transfer modifiers and materials to any weapon. This method is uni
 (5. Resync your inventory by re-equipping)
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** BigDUCCO,  𝓥𝓮𝓮.𝓜𝓲𝓰𝓱𝓽.𝓔𝔁𝓲𝓼𝓽, syb - June 7, 2023
-**Source:** Discord(BigDUCCO)
-**See also:** Invizuggle overload for 1.2+ methods
-**Examples:** https://www.youtube.com/watch?v=pMsoToqT52g
-**Tutorials/Resources:** https://youtu.be/ycKeFgsb7gs
+## Notes
+—
+
+## Credit
+BigDUCCO,  𝓥𝓮𝓮.𝓜𝓲𝓰𝓱𝓽.𝓔𝔁𝓲𝓼𝓽, syb
+
+## Date
+June 7, 2023
+
+## Source
+
+- Discord(BigDUCCO)
+
+## Examples
+
+- [YouTube](https://www.youtube.com/watch?v=pMsoToqT52g)
+
+## Resources
+
+- [YouTube](https://youtu.be/ycKeFgsb7gs)
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+- Invizuggle overload for 1.2+ methods
 
 ## Raw row
 ```csv

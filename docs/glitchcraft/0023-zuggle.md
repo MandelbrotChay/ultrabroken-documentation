@@ -22,19 +22,42 @@ Chasm Delay Zuggle (CDZ)
 Cull Storage Zuggle (CSZ)
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** Zvleon - May 16, 2023
-**Source:** Discord
-**See also:** The Zocument
-**Effects/Extensions:** Zuggled equipment persists through file loads and map changes, making it very useful when combined with other glitches
-**Examples:** https://discord.com/channels/1086729144307564648/1105598687167664239/1108101391983067216
-**Tutorials/Resources:** https://discord.com/channels/1086729144307564648/1105598687167664239/1110408813116407859 (BigDUCCO's method)
-**Notes:** zuggle discussion in the zuggle- thread on the discord please
+## Notes
+Zuggled equipment persists through file loads and map changes, making it very useful when combined with other glitches
+zuggle discussion in the zuggle- thread on the discord please
+
+## Credit
+Zvleon
+
+## Date
+May 16, 2023
+
+## Source
+
+- Discord
+
+## Examples
+
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1108101391983067216)
+
+## Resources
+
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1110408813116407859)
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+- The Zocument
 
 ## Raw row
 ```csv

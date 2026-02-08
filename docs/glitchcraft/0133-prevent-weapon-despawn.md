@@ -14,18 +14,44 @@ Prevents equipment from despawning after certain NPC interactions and quests (Do
 3. Start whatever quest that despawns all equipment on the ground and use Ultrahand to bring your desired weapon towards you
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** NX721 - June 28, 2023
-**Source:** Twitter
-(Please ignore the zuggled MSNF, those are not needed)
-**See also:** Zuggling
-**Effects/Extensions:** You can bring back the weapon by zuggling before quest ends
-**Notes:** Best used in Eldin Cave Quest, experimenting with different despawn flags atm
+## Notes
+You can bring back the weapon by zuggling before quest ends
+Best used in Eldin Cave Quest, experimenting with different despawn flags atm
+
+## Credit
+NX721
+
+## Date
+June 28, 2023
+
+## Source
+
+- Twitter
+- (Please ignore the zuggled MSNF
+- those are not needed)
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+- Zuggling
 
 ## Raw row
 ```csv

@@ -16,17 +16,42 @@ Equipping and unfusing a shield with Robbie's infinite balloon fused to it does 
 5. Repeat the previous step for each shield that you duplicated in step 2
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** Jordan, mulberry, ofstrings2 - March 8, 2025
-**Source:** Discord
-**See also:** Infinite Balloon
-Equipment Duplication Glitches
-**Examples:** Discord
+## Notes
+—
+
+## Credit
+Jordan, mulberry, ofstrings2
+
+## Date
+March 8, 2025
+
+## Source
+
+- Discord
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+- Infinite Balloon
+- Equipment Duplication Glitches
 
 ## Raw row
 ```csv

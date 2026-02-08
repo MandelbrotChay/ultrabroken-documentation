@@ -30,17 +30,42 @@ Method 2 (1.2.0-1.2.1) (PetitFrapo, mulberry):
 Once AC is set up, in order to Physical AC, put a SDC in the wind and the base outside of the culling area, and for Intangible AC do the opposite, so base in wind and SDC outside of culling area. The video in Examples shows them being performed.
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** Discovered by Aergyl
+## Notes
+—
+
+## Credit
+Discovered by Aergyl
 
 Developed by Aergyl, mulberry - August 11, 2024
-**Source:** Discord
-**Examples:** Method 2 video: https://www.youtube.com/watch?v=o-9HO3NbfPU
+
+## Date
+—
+## Source
+
+- Discord
+
+## Examples
+
+- [YouTube](https://www.youtube.com/watch?v=o-9HO3NbfPU)
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+—
 
 ## Raw row
 ```csv

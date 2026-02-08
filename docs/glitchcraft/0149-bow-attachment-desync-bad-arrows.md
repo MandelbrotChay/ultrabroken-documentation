@@ -21,19 +21,45 @@ Repeat steps 4-6 for as many times as you want
 9. Fire the bow without removing it from Link's hand
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** Zas, Aeolian - July 11, 2023
-**Source:** Twitter (Zas)
-Discord (Aeolian with 1.0.0 item drop)
-**Effects/Extensions:** 1.0.0 can perform single material Bad Arrows by first fusing a material, then equipping a multishot and immediately dropping it, this drops the material on the ground for infinite uses but also deletes bow modifiers.
-**Notes:** On 1.0.0/1.2.0 using single shot bows does not add a fuse into the mix.
+## Notes
+1.0.0 can perform single material Bad Arrows by first fusing a material, then equipping a multishot and immediately dropping it, this drops the material on the ground for infinite uses but also deletes bow modifiers.
+On 1.0.0/1.2.0 using single shot bows does not add a fuse into the mix.
 
 On 1.1.0-1.1.2 only the last material is consumed.
+
+## Credit
+Zas, Aeolian
+
+## Date
+July 11, 2023
+
+## Source
+
+- Twitter (Zas)
+- Discord (Aeolian with 1.0.0 item drop)
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+—
 
 ## Raw row
 ```csv

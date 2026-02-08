@@ -22,20 +22,44 @@ Time Bomb setup:
 3. Unzuggle the FE-shield, euip it and shield surf
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-**Credit:** NaN Gogh - August 2, 2023
-**Source:** Twitter
-**See also:** Fuse Entanglement (FE)
-Zuggle Load Object Transfer (ZLOT)
-Recall Locking (RL)
-**Examples:** https://twitter.com/_nan_gogh/status/1686427149786370055?s=20
-**Notes:** Known means to revert object with Mass Amnesia back to normal:
+## Notes
+Known means to revert object with Mass Amnesia back to normal:
 - Get too close to the objects
 - Shoot with arrows at the objects
 - Try to glue something to the objects
+
+## Credit
+NaN Gogh
+
+## Date
+August 2, 2023
+
+## Source
+
+- Twitter
+
+## Examples
+
+- [Twitter/X](https://twitter.com/_nan_gogh/status/1686427149786370055?s=20)
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+
+## See also
+
+- Fuse Entanglement (FE)
+- Zuggle Load Object Transfer (ZLOT)
+- Recall Locking (RL)
 
 ## Raw row
 ```csv

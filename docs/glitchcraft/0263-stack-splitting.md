@@ -27,15 +27,41 @@ Method 2 (1.0.0, s0ft)
 3. Pick up what you put on the ground.
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1+
-**Credit:** s0ft, Telkic, mulberry - December 31, 2024
-**Source:** Discord
-**Effects/Extensions:** Can lead to Split Item Duplication, a material duplication glitch
+## Notes
+Can lead to Split Item Duplication, a material duplication glitch
+
+## Credit
+s0ft, Telkic, mulberry
+
+## Date
+December 31, 2024
+
+## Source
+
+- Discord
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1+
+
+## See also
+
+—
 
 ## Raw row
 ```csv

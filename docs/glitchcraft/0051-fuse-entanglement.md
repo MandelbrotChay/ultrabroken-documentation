@@ -14,26 +14,14 @@ Allows your shield to have an effect on an object as though it is fused to the s
 3. Instantly after this, open the shield swap menu (d-pad left), and equip a different shield, this will override its fuse. (You can also achieve FE by zuggling a shield, fusing to it and then dropping the zuggled shield and pick up the shield with no fused item)
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** Physioninja - May 24, 2023
-**Source:** Youtube
-**Effects/Extensions:** Springboarding
+## Notes
+Springboarding
 Entanglement Height Glitch
 Pelison Duping
 Fuse Entanglement Desync
-**Examples:** https://discord.com/channels/1086729144307564648/1105598687167664239/1111050337822978138
-
-https://vxtwitter.com/_nan_gogh/status/1668449729305296899?s=46(Antighost, Nan Gogh)
-
-https://vxtwitter.com/_nan_gogh/status/1677819049235951617?s=46 (Null Fe, Nan Gogh)
-
-https://discord.com/channels/1086729144307564648/1128894970653327401/1148262809277313035 (Throw method)
-**Notes:** 1.2.0:
+1.2.0:
 Limited to what a like like can spit out/a mobin can throw
 
 1.2.1:
@@ -54,6 +42,40 @@ Objects fuse entangled to a shield will be fuse entangled to zuggled shields asw
 
 Throw method
 Recall a thrown object (needs to by thrown by an enemy), then fuse it
+
+## Credit
+Physioninja
+
+## Date
+May 24, 2023
+
+## Source
+
+- Youtube
+
+## Examples
+
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1111050337822978138)
+- [Twitter/X](https://vxtwitter.com/_nan_gogh/status/1668449729305296899?s=46(Antighost)
+- [Twitter/X](https://vxtwitter.com/_nan_gogh/status/1677819049235951617?s=46)
+- [Discord](https://discord.com/channels/1086729144307564648/1128894970653327401/1148262809277313035)
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+—
 
 ## Raw row
 ```csv

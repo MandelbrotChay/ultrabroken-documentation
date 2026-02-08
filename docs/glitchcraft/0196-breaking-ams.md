@@ -23,15 +23,41 @@ Method 2:
 4. press Y
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** Infrasolid - November 26, 2023
-**Source:** Discord
-**See also:** AMS
+## Notes
+—
+
+## Credit
+Infrasolid
+
+## Date
+November 26, 2023
+
+## Source
+
+- Discord
+
+## Examples
+
+—
+
+## Resources
+
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+- AMS
 
 ## Raw row
 ```csv

@@ -14,17 +14,41 @@ Allows transferring held items through saves.
 3. Hold an item and drop it on the ground.
 ```
 
+
 ## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:** Luckstyle - December 22, 2023
-**Source:** Discord
-**See also:** Mineru Hold Smuggle
-**Effects/Extensions:** Fairies on GSI
-**Tutorials/Resources:** https://youtu.be/Gu_zlst9T0w?si=x6FNI5zIrRNrQLh-
+## Notes
+Fairies on GSI
+
+## Credit
+Luckstyle
+
+## Date
+December 22, 2023
+
+## Source
+
+- Discord
+
+## Examples
+
+—
+
+## Resources
+
+- [YouTube](https://youtu.be/Gu_zlst9T0w?si=x6FNI5zIrRNrQLh-)
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0
+- 1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+- Mineru Hold Smuggle
 
 ## Raw row
 ```csv
