@@ -46,7 +46,7 @@ June 25, 2023
 
 ## Resources
 
-- Tutorial by Blize (ty)
+- [Tutorial by Blize (ty)](https://www.youtube.com/watch?v=4oxjOE0onxI)
 
 ## Versions
 

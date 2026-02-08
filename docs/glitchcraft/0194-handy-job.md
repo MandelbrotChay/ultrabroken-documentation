@@ -33,7 +33,7 @@ November 20, 2023
 
 ## Resources
 
-- YouTube
+- [YouTube](https://www.youtube.com/watch?v=a0slhXe6jzU)
 
 ## Versions
 

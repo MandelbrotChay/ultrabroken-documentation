@@ -42,7 +42,7 @@ April 19, 2024
 
 ## Resources
 
-- YouTube (Suishi)
+- [YouTube](https://youtu.be/sJdmYu9j1FI?si=vVZEzINRlSywPMqD)
 
 ## Versions
 
