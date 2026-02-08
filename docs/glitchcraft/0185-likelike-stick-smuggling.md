@@ -39,7 +39,7 @@ Allows you to cull Link via a LikeLike in a culling area. Can be used for Equipm
 
 —
 
-## Working Versions
+## Versions
 
 - 1.0.0
 - 1.1.0

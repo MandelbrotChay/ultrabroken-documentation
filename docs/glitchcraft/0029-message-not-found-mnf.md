@@ -48,13 +48,15 @@ May 17, 2023
 
 ## Examples
 
-—
+- [Youtube](https://youtu.be/8mEBVQNCkns)
+- [Youtube](https://youtu.be/EAthghngbKs)
+- [Youtube](https://www.youtube.com/watch?v=TKSQJ23ES_c)
 
 ## Resources
 
 —
 
-## Working Versions
+## Versions
 
 - 1.0.0
 - 1.1.0

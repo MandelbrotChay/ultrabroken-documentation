@@ -40,13 +40,13 @@ May 18, 2023
 
 ## Examples
 
-—
+- [Discord](https://discord.com/channels/1086729144307564648/1108141837954330686/1108622215672496138)
 
 ## Resources
 
 —
 
-## Working Versions
+## Versions
 
 - 1.0.0
 - 1.1.0

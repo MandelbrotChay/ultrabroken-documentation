@@ -45,7 +45,7 @@ February 20, 2024
 
 —
 
-## Working Versions
+## Versions
 
 - 1.0.0
 - 1.1.0

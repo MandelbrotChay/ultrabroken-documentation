@@ -28,13 +28,13 @@ unequip bow, hold ZL, and mash R, ZR, and B
 
 ## Examples
 
-—
+- [Youtube](https://youtu.be/ad9HCM39b8o)
 
 ## Resources
 
 —
 
-## Working Versions
+## Versions
 
 —
 

@@ -33,7 +33,7 @@ January 2, 2024
 
 —
 
-## Working Versions
+## Versions
 
 - 1.1.0
 - 1.1.1

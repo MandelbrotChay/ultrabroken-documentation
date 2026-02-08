@@ -41,7 +41,7 @@ Only transfers durability and fused material on 1.0.0, same as WST.
 
 —
 
-## Working Versions
+## Versions
 
 - 1.0.0
 - 1.1.0

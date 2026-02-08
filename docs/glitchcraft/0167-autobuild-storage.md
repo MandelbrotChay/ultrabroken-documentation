@@ -29,13 +29,14 @@ August 28, 2023
 
 ## Examples
 
-—
+- [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1145897049963892797)
+- [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1147602597168029728)
 
 ## Resources
 
 - [YouTube](https://youtu.be/u3ke0m3VNFA)
 
-## Working Versions
+## Versions
 
 - 1.0.0
 - 1.1.0

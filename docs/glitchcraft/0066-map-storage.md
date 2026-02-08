@@ -37,7 +37,7 @@ May 29, 2023
 
 - [YouTube](https://youtu.be/cZZ-enDJ6jY)
 
-## Working Versions
+## Versions
 
 - 1.1.0
 - 1.1.1

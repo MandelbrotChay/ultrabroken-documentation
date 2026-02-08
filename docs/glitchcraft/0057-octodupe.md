@@ -42,7 +42,7 @@ This does not work on items that cannot be modified or octoroks that have alread
 
 —
 
-## Working Versions
+## Versions
 
 - 1.0.0
 - 1.1.0

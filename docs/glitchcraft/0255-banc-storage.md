@@ -38,7 +38,7 @@ Lightos, mulberry, Aergyl
 
 - [YouTube](https://www.youtube.com/watch?v=RmjZKVGvstE)
 
-## Working Versions
+## Versions
 
 - 1.0.0
 

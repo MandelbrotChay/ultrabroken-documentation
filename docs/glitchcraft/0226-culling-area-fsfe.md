@@ -49,7 +49,7 @@ February 25, 2024
 
 - [YouTube](https://youtu.be/Y8sOuZdQecU)
 
-## Working Versions
+## Versions
 
 - 1.0.0
 - 1.1.0

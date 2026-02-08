@@ -34,7 +34,7 @@ Keeps the camera far away from link after a file load for a short period of time
 
 —
 
-## Working Versions
+## Versions
 
 - 1.0.0
 - 1.1.0

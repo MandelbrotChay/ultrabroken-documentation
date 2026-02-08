@@ -39,7 +39,7 @@ October 1st, 2024
 
 - [YouTube](https://www.youtube.com/watch?v=RmjZKVGvstE)
 
-## Working Versions
+## Versions
 
 - 1.0.0
 

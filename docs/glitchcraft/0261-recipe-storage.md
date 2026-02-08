@@ -58,7 +58,7 @@ November 10th, 2024 (1.0 method)
 
 —
 
-## Working Versions
+## Versions
 
 - 1.0.0
 - 1.1.0

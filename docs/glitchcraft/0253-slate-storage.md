@@ -49,7 +49,7 @@ September 21st, 2024
 
 - [YouTube](https://www.youtube.com/watch?v=S_zTJymG-s0)
 
-## Working Versions
+## Versions
 
 - 1.1.0
 - 1.1.1

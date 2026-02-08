@@ -30,13 +30,15 @@ May 21, 2023
 
 ## Examples
 
-—
+- [Discord](https://discord.com/channels/1086729144307564648/1110956205624532993/1342646563184312432)
+- [Discord](https://discordapp.com/channels/1086729144307564648/1110956205624532993/1342580552447950961)
+- [YouTube](https://youtu.be/E2Qp3Zj15fo?si=CWroyqmk9prT3vwu)
 
 ## Resources
 
 —
 
-## Working Versions
+## Versions
 
 - 1.0.0
 - 1.1.0

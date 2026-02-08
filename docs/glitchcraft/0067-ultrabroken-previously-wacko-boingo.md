@@ -38,7 +38,7 @@ May 29, 2023
 
 - [Google Doc](https://docs.google.com/document/d/1Q0RxFCc_-Sr08y0SHZqTPxkdoUFZ__pI_ojA86CUidw)
 
-## Working Versions
+## Versions
 
 - 1.0.0
 - 1.1.0

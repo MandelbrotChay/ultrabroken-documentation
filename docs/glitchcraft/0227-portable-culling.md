@@ -30,13 +30,14 @@ February 27, 2024
 
 ## Examples
 
-—
+- [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1212137974708568084)
+- [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1216477146978193530)
 
 ## Resources
 
 —
 
-## Working Versions
+## Versions
 
 - 1.2.0
 - 1.2.1

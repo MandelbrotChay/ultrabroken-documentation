@@ -32,13 +32,14 @@ July 2, 2023
 
 ## Examples
 
-—
+- [Twitter](https://vxtwitter.com/goghnan/status/1675895184637276161?s=46)
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1125225951710691338)
 
 ## Resources
 
 —
 
-## Working Versions
+## Versions
 
 - 1.0.0
 - 1.1.0

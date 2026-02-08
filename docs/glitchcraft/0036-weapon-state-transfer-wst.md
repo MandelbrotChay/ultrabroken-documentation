@@ -60,14 +60,14 @@ May 19, 2023
 
 ## Examples
 
-—
+- [this outlines the old method. new method works better, but has the same results.](https://www.youtube.com/watch?v=NRZpPp1vVsQ.)
 
 ## Resources
 
 - [YouTube](https://youtu.be/Kzf_uJBvRjI)
 - [YouTube](https://www.youtube.com/watch?v=1gWV6p814F8)
 
-## Working Versions
+## Versions
 
 - 1.0.0
 - 1.1.0

@@ -28,13 +28,15 @@ Mid-charge of a spin with a two-handed weapon, obtain a new item at the exact mo
 
 ## Examples
 
-—
+- [Youtube](https://youtu.be/Q1aWa0Kg-8Y)
+- [Reddit](https://www.reddit.com/r/TOTK/comments/13tho3e)
+- [Twitter](https://twitter.com/ThatOneNerd0329/status/1662590423582535680)
 
 ## Resources
 
 —
 
-## Working Versions
+## Versions
 
 —
 

@@ -32,13 +32,14 @@ June 30, 2024
 
 ## Examples
 
-—
+- [Discord](https://discord.com/channels/1086729144307564648/1110956205624532993/1333083284967784538)
+- [YouTube](https://youtu.be/5P6vfDaVYBQ?si=XsK0Zpsw_TmlmFKG)
 
 ## Resources
 
 —
 
-## Working Versions
+## Versions
 
 - 1.0.0
 - 1.1.0

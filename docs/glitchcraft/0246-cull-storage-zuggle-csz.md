@@ -41,13 +41,13 @@ July 18, 2024
 
 ## Examples
 
-—
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1287526225585373248)
 
 ## Resources
 
 —
 
-## Working Versions
+## Versions
 
 - 1.0.0
 - 1.1.0

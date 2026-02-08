@@ -25,12 +25,12 @@ press B - ZR - R - B (or B - R - ZR - B) and repeat
 
 ## Examples
 
-- YouTube
+- [Youtube](https://youtu.be/Mb8rgAwELYY)
 
 ## Resources
 —
 
-## Working Versions
+## Versions
 
 - 1.0.0
 - 1.1.0/1.1.1

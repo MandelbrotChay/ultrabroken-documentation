@@ -23,13 +23,13 @@ June 16, 2023
 
 ## Examples
 
-—
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1169727626353577984)
 
 ## Resources
 
 —
 
-## Working Versions
+## Versions
 
 - 1.0.0
 - 1.1.0

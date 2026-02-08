@@ -33,13 +33,13 @@ June 4, 2024
 
 ## Examples
 
-—
+- [Discord](https://discord.com/channels/1086729144307564648/1109838351596527726/1267029375925096489)
 
 ## Resources
 
 —
 
-## Working Versions
+## Versions
 
 - 1.0.0
 - 1.1.0

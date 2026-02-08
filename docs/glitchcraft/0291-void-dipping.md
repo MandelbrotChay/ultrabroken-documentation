@@ -43,13 +43,13 @@ December 29, 2025
 
 ## Examples
 
-—
+- [DiscordDiscordDiscord](https://discord.com/channels/1086729144307564648/1113557914444111873/1456747616430850126)
 
 ## Resources
 
 —
 
-## Working Versions
+## Versions
 
 - 1.0.0
 - 1.1.0

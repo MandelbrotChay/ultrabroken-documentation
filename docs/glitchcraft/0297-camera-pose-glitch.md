@@ -35,7 +35,7 @@ Link keeps walking while frozen in the camera animation.
 
 —
 
-## Working Versions
+## Versions
 
 - 1.0.0
 - 1.1.0

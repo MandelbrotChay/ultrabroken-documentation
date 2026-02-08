@@ -38,7 +38,7 @@ June 26, 2025
 
 —
 
-## Working Versions
+## Versions
 
 - 1.2.0
 - 1.2.1+

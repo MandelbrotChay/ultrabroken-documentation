@@ -39,7 +39,7 @@ September 4, 2023
 
 - [YouTube](https://www.youtube.com/watch?v=50RRbWV-d-A&t)
 
-## Working Versions
+## Versions
 
 - 1.0.0
 - 1.1.0
