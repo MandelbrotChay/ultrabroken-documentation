@@ -31,7 +31,6 @@ ARAZ (Second Method)
 4. Either be close towards the shield (So it doesn't despawn), or simply use Autobuild Slide Cancel to keep it near you
 ```
 
-
 ## Notes
 Can use certain Zonai devices that DRAZ cannot
 

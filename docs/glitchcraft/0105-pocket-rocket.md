@@ -15,7 +15,6 @@ Allows for repeated boost from a midair rocket shield surf, making it a very goo
 4. Spam B (or time it precisely).
 ```
 
-
 ## Notes
 1.2.0+ requires a different method
 

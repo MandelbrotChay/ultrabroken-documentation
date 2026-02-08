@@ -17,7 +17,6 @@ Places the travel medallion at links feet after loading a file.
 6. Now the frist time you get a loading screen the medallion will go under link feet at the end of the loading screen
 ```
 
-
 ## Notes
 —
 

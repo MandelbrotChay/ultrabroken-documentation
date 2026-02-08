@@ -15,7 +15,6 @@ Trick the game into thinking a weapon is both dropped and equiped at the same ti
 4. Unpause the game.
 ```
 
-
 ## Notes
 The weapons hitbox remains constantly active, while being maintained at Links feet. This allows for the overlapping of the weapons hitbox with an objects, and propels the object in strange ways.
 

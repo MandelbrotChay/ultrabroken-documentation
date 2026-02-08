@@ -14,7 +14,6 @@ Allows you to clip OOB using zuggle overload
 3. You now clip into the floor!
 ```
 
-
 ## Notes
 —
 

@@ -14,7 +14,6 @@ Allows Link to pick up an object as if he were holding it like an item.
 3. Unpause.
 ```
 
-
 ## Notes
 —
 

@@ -13,7 +13,6 @@ Like-Like Warping
 Cucco Warping
 ```
 
-
 ## Notes
 Can also be achieved with object culling (steps/examples needed.)
 

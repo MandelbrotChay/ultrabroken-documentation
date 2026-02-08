@@ -17,7 +17,6 @@ Allows you to slide on top of the blueprint build over the map at insane speeds,
 If it works, your blueprint should be hovering up in front of you without the menu overlay. Find a barricade to push it closer towards you, and then ascend into it to get on top.
 ```
 
-
 ## Notes
 Depending on how you create your build for ABCS, you can achieve many different results (either going very fast, ascending very high, or being able to clip through walls).
 

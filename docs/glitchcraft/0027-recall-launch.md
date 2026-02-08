@@ -18,7 +18,6 @@ allows you to launch yourself very far
 4. Stand on your plank or wing and recall the weapon
 ```
 
-
 ## Notes
 This works very good with boomerangs. It also works with anything Link can pick up. In this case you can use the momentum from rotating or picking up the object to perform the launch.
 

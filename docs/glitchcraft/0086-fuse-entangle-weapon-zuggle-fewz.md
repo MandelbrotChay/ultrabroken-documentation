@@ -17,7 +17,6 @@ Allows you got zuggle each weapon you carry one time. This stacks the damage sim
 For multiple weapons, drop the shield at the end of step 2 and repeat steps 1-2 for each desired weapon. After that, pick up each shield one at a time and zuggle them one at a time
 ```
 
-
 ## Notes
 —
 

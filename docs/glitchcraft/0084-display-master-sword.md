@@ -15,7 +15,6 @@ Allows you to display the master sword, damaged master sword or MsgNotFound in a
 4. Exit recall and press A right after to display it.
 ```
 
-
 ## Notes
 For MsgNotFound you don't need to drop it out of recall
 

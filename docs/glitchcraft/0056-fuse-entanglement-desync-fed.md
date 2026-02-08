@@ -25,7 +25,6 @@ Needed: Target item, donor item and extra shield (2 extras if weapon/bow).
 (9. Unfuse your shield at Tarrey Town to get a modifier-less copy of the target)
 ```
 
-
 ## Notes
 Weapon State Transfer
 this does not wst on 1.0.0

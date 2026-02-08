@@ -14,8 +14,6 @@ Pick up NEW item (displays ???) then in the text popup press + , sort inventory,
 Requirement: The new item must change positions when you sort your inventory. So for shields & bows, the new item must have higher strength than the lowest strength shield/bow currently in your inventory. Weapons are slightly more complicated because they can only be sorted by type.
 ```
 
-
-
 ## Notes
 —
 

@@ -12,8 +12,6 @@ title: "Extended Throw Sprinting (ETS)"
 hold B, tap R, repeat
 ```
 
-
-
 ## Notes
 —
 

@@ -17,7 +17,6 @@ There are several ways of activating it, most are currently unexplained, but thi
 Letting go of B or stopping running cancels it
 ```
 
-
 ## Notes
 —
 

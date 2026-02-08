@@ -20,7 +20,6 @@ Allows you to zuggle much faster than older versions
 Credit to ChargeVolt for writing the setup!
 ```
 
-
 ## Notes
 It's possible to perform Map Zuggling without a wall by standing away from a high ledge (2 springs count as long as you position Link properly) and performing it that way.
 

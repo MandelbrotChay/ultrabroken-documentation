@@ -17,7 +17,6 @@ Only works in some caves!
 5. Repeat
 ```
 
-
 ## Notes
 The glitch may be not exclusive to bubbulfrogs (just a theory)
 Needs to be tested more, and see if it can be consistently replicated.

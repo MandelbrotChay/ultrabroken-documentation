@@ -21,7 +21,6 @@ Puts weapons in an "Anti Gravity" state.
 6. Resume the game
 ```
 
-
 ## Notes
 Performing anti-grav with a weapon ARAZ connection (zonai device fused to weapon and FE'd to a different weapon) causes GAS
 It will obtain the property of anti-gravity unless you un-equip it or throw it. It also retains it's current momentum when dropped.

@@ -14,7 +14,6 @@ Allows you to jump very far (can be chained infinitly)
 3. Press R - B - Y and repeat
 ```
 
-
 ## Notes
 —
 

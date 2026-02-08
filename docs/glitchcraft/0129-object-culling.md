@@ -15,7 +15,6 @@ Like-Like Culling
 Cull Zone Culling
 ```
 
-
 ## Notes
 With the help of chain FE, it is possible to make an infinitely large cull radius
 (discovered by Mulberry and Timber)

@@ -14,7 +14,6 @@ Allows Link to clip through walls by stepping onto a steering stick during ABCS.
 3. Hop onto the steering sticks near a wall while walking towards them.
 ```
 
-
 ## Notes
 Has a very good chance of crashing the game in certain areas. Depths are usually stable, but can still crash there too.
 

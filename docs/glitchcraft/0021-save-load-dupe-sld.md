@@ -16,7 +16,6 @@ Allows easy duplication of your weapons, bows, and shields
 4. Load your save and pick up the item that's on the ground.
 ```
 
-
 ## Notes
 This effectively transfers the equipment to the dropped location, in the save that's loaded
 

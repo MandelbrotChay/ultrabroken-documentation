@@ -15,7 +15,6 @@ Allows duplication of materials while midair.
 4. Pick up items
 ```
 
-
 ## Notes
 Can also be used with Zonai devices to take them out without diminishing the actual total in inventory. (see ZSD for duping zonai devices)
 Y and exit must be pressed on the same frame.

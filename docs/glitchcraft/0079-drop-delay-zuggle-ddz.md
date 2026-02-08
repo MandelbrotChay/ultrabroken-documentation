@@ -17,7 +17,6 @@ Dropping a large amount of equipment causes a delay in equipment spawning, enabl
 6. When the map is open, hold down and unpause
 ```
 
-
 ## Notes
 You dont need a wall, if you load a file after going into the map.
 

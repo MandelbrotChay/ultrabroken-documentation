@@ -19,7 +19,6 @@ Method 2 (works 1.0.0-1.2.1):
 3. Drop the target item a few frames before Link gets eaten by the like like
 ```
 
-
 ## Notes
 Method 2 can also be executed with a chest if you open it right before Link gets eaten by the like like
 

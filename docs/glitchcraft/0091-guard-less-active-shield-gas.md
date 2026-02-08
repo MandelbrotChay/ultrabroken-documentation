@@ -17,7 +17,6 @@ You can Zuggle the shield after, either on Link's back or in his hand by Zugglin
 For 1.2.0: Can be achieved via Fuse Entanglement Drop Smuggling either a shield or a weapon and Double Fuse Entangling a Zonai Device to both drop smuggled and actually equipped equipment. See "Link to Source(s)" for more.
 ```
 
-
 ## Notes
 This keeps the shield in an "on" state, many things will turn it off:
 - Dropping the shield.

@@ -17,7 +17,6 @@ Allows you to transfer modifiers and materials to any weapon. This method is uni
 (5. Resync your inventory by re-equipping)
 ```
 
-
 ## Notes
 —
 

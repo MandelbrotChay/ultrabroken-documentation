@@ -15,7 +15,6 @@ Allows you to dupe items via hold storage.
 4. Pick up all your items.
 ```
 
-
 ## Notes
 —
 

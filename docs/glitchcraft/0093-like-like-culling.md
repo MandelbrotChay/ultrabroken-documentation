@@ -13,7 +13,6 @@ A method for object culling
 2. Let the Like-Like eat the shield the object should cull.
 ```
 
-
 ## Notes
 —
 

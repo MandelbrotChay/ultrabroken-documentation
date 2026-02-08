@@ -13,7 +13,6 @@ Allows for desync and consequently, WST via slugging.
 2. Unload the like like by warping or by going far enough away
 ```
 
-
 ## Notes
 —
 

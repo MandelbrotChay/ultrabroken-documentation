@@ -24,7 +24,6 @@ Allows to fuse to the MNF
 7. Do NOT pick up your other weapon!
 ```
 
-
 ## Notes
 Can also be done with other weapons and already fused weapons. This just replaces the fused material.
 

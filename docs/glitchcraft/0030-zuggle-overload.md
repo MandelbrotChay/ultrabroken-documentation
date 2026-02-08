@@ -12,7 +12,6 @@ Allows you to overload your game, causing many other glitches
 Zuggle or Invizuggle 9-10 (1.0.0) / 13-14 (1.1.0-1.2.1) weapons/shields/bows, and optionally load a save
 ```
 
-
 ## Notes
 Overload Drop: This drops equipment on the ground when switched to, causing many glitches, including the movement allowed by arrow smuggling
 Overload Pickup: Picking up equipment into Link's hands in zuggle overload causes it to become overload dropped

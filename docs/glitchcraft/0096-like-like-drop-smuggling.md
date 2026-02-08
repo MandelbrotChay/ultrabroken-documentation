@@ -20,7 +20,6 @@ Method 2 (works 1.0.0-1.2.1):
 3. Drop an item and swap to the target item of the same type, then unpause
 ```
 
-
 ## Notes
 The item that gets dropped enters purgatory, making FEWZ more accessible on newer patches
 

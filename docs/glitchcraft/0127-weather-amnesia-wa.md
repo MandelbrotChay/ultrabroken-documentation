@@ -13,7 +13,6 @@ Viewing a memory near a cave will overwrite its local weather with the overworld
 2. Watch a memory
 ```
 
-
 ## Notes
 Certain triggers, such as text boxes, will restore the caves' local weather.
 

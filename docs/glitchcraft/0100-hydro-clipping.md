@@ -37,7 +37,6 @@ There are other ways of clipping with hydro:
 - Crouching (only works inside shrines)
 ```
 
-
 ## Notes
 1.2.1 requires a different method
 

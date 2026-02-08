@@ -17,7 +17,6 @@ Allows to zuggle bows and shields in version 1.1.2. Weapon zuggle on 1.1.2 is a 
 (WARNING: Failure to perform the glitch using shields may crash the game)
 ```
 
-
 ## Notes
 Loading a previous save will transfer a stacked bow/shield to that save. Effectivley allowing you to dupe it and retain it's modifier.
 

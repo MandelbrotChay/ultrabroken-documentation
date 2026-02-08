@@ -14,7 +14,6 @@ title: "Like-Like Warping"
 2. Draw the Like-Likes attention to the shield, and before it eats it, pickup the entangled bomb.
 ```
 
-
 ## Notes
 —
 

@@ -15,7 +15,6 @@ Exploits inventory shift after creating an empty inventory slot to duplicate ite
 4. Pick up the duplicated items.
 ```
 
-
 ## Notes
 The item that gets duplicated will always be to the right of the item you are holding. Exactly which item, can be controlled by how many inventory empty inventory slots were made.
 

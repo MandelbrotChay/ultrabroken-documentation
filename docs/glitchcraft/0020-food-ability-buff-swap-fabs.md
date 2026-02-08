@@ -22,7 +22,6 @@ Allows you to get roasted food (stackable) with a food effect
 -You can roast more food and it will automaticially have the effect as long as you still have at least one of the roasted food.
 ```
 
-
 ## Notes
 These are all the places you can obtain cooked food to perform with FABS:
 - 2 at Kara Kara Bazaar (Gerudo)

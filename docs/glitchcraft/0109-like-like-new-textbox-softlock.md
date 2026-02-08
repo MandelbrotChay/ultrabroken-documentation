@@ -6,8 +6,6 @@ title: "Like Like New Textbox Softlock"
 
 ## Overview
 Picking up a new item while it gets eaten by a like like softlocks the game
-
-
 ## Notes
 test for 1.2.0/1.2.1
 

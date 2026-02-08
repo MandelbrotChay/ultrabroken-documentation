@@ -6,8 +6,6 @@ title: "Springboard Clipping"
 
 ## Overview
 Allows link to clip through the floor while springboarding under a low ceiling.
-
-
 ## Notes
 —
 

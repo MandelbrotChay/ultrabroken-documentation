@@ -12,7 +12,6 @@ Visual glitch with the hero path.
 Press X, then close the hero path and the map quickly
 ```
 
-
 ## Notes
 Translates with map storage  and
 can cause a sheika symbol (map storage related)

@@ -16,7 +16,6 @@ Allows you to fuse to the MNF
 5. If the equipped weapon has an invisble fuse, and the MNF is now named "" instead of "MsgNotFound" on the ground, pick up the MNF, if not, retry
 ```
 
-
 ## Notes
 —
 

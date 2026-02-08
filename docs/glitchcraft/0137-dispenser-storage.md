@@ -17,7 +17,6 @@ Allows you to use zonai device dispensers as a temporary means to store items an
 6. When your ready to collect, move the stabilizer out of the opening to have the items fall out. You will have to collect them quickly or they will start to despawn as they go above the 21 item limit.
 ```
 
-
 ## Notes
 Can be combined with ISD or MTD to reach max items.
 A Fan or Stabilizer placed next the hatch will stop it from closing when opened next.

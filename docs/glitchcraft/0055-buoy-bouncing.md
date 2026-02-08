@@ -12,7 +12,6 @@ Get an abnormaly large shield jump boost when coming into contact with water.
 Time a shield surf to be at the moment before Link starts swimming in water.
 ```
 
-
 ## Notes
 Initial velocity seems to play an effect when buoy bouncing, such as when falling from a significant height. Also cancels fall damage.
 

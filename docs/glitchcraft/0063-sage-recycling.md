@@ -13,7 +13,6 @@ Resets the cooldown of tulin or sidon.
 2. Use the ability mid surf
 ```
 
-
 ## Notes
 SRC with tulin might be frame perfect
 

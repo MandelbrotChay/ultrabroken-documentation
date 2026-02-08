@@ -14,7 +14,6 @@ Dismounting a steering stick on the same frame that a temple discovery cutscene 
 3. Mount the steering stick
 ```
 
-
 ## Notes
 Grabbing the steering stick with Ultrahand after mount lock causes Link to disconnect from the steering stick, ignoring all collision. On 1.0.0, climbing a wall and jumping back out of it in this state retains Link's collision with the terrain.
 

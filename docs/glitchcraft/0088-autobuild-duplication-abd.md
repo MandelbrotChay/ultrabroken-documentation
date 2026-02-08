@@ -24,7 +24,6 @@ This only works with items that change into other items in another temperature.
 6. Wait a few seconds and pick up your duped items.
 ```
 
-
 ## Notes
 —
 

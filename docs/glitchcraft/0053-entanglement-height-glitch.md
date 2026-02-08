@@ -12,7 +12,6 @@ Suspends Link a certain distance off the ground while shield surfing.
 Fuse entangle a spring to a shield and start a shield surf within its activation radius. Or alternatively, move far enough away from the spring that it unloads.
 ```
 
-
 ## Notes
 Only lasts while shield surfing, but is infintely active.
 Only deactivates upon shield unequip.

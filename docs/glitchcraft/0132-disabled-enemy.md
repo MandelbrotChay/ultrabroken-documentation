@@ -19,7 +19,6 @@ altenative method for all versions (discovered by ralseidewitt):
 3. Hit the monster with a fireball
 ```
 
-
 ## Notes
 https://twitter.com/shio_0725_4040/status/1684764043708678144
 Majora's Mask and Bullet Time are not required like in the Example video.

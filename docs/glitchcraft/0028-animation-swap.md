@@ -14,7 +14,6 @@ Combine animation sets when zuggle overloaded.
 3. Swap weapon again to restore normal animations
 ```
 
-
 ## Notes
 Allows quick spin attacks with the spear charge animation, and many other combinations.
 

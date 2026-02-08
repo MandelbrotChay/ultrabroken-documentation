@@ -24,7 +24,6 @@ To stop the culling, you can mount a steering stick or lift an item.
 Link can't cull if the base is equipped.
 ```
 
-
 ## Notes
 - The glitch will not work if you do get on the steering stick immediately after dropping
 - You will lose the shield so it is best to entangle the stick to a low level/non important shield

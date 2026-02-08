@@ -37,7 +37,6 @@ Setup:
 If done correctly, the target item should have everything the donor item has.
 ```
 
-
 ## Notes
 The weapons, shields and bows aren't the only ones that work, it all depends on their hitboxes
 You might find equal success using other thin bows, thin spears with other targets

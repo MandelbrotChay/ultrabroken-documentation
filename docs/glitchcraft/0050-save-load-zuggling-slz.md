@@ -17,7 +17,6 @@ Allows you to zuggle anywhere as no wall is required. It is extremely similar to
 6). Load from any save you currently have.
 ```
 
-
 ## Notes
 It's also possible to perform Wall-less Zuggling without the map, by performing the same steps and pausing the game 1 frame (frame perfect pause) after exiting the quickswap menu.
 

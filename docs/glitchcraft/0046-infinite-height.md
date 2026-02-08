@@ -20,7 +20,6 @@ Allows you chain jump attacks to jump infinitly.
 5. Repeat
 ```
 
-
 ## Notes
 —
 

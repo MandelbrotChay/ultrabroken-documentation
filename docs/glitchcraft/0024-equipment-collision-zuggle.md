@@ -26,7 +26,6 @@ The original zuggle method discovered by Zvleon.
 8) Unpause and switch weapons
 ```
 
-
 ## Notes
 Zuggle has many ways of being executed, this is the oldest one. Map Zuggling is the most reccomended method for pre-1.1.2
 For 1.1.2, see FEZ and smuggle stacking zuggling (and FEWZ)

@@ -15,7 +15,6 @@ Allows Link to remain in a object holding state when not normally possible, as w
 4. Close the menu, the held items should drop on the floor in a bundle as though disconnected from Links hands.
 ```
 
-
 ## Notes
 Unless Link is put into a specific state while the held items are disconnected (I.e. swimming/horse riding), they will teleport back into Links hands, canceling the storage.
 Also possible by culling Link.

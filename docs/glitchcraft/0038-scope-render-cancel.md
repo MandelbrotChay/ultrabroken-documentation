@@ -19,7 +19,6 @@ Small Border Version:
 3. Shortly after, press L (Camera) twice in quick succession to open and close the Camera
 ```
 
-
 ## Notes
 You can freely move around and attack while having the camera filter with you.
 With the wide border, it will flash black for a frame or two when you enter a new area or culling zone. This can be used to find the entryway to locations or areas.

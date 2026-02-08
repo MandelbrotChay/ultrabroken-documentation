@@ -16,7 +16,6 @@ By firing arrows between load triggers, items fused to the arrows get dropped. A
 If done properly, the arrows should unload, but the materials you fired will stay in the air. Walking up to them will make them fall down and allow you to collect them.
 ```
 
-
 ## Notes
 This also works in any other chasm in which you have enough room to shoot your arrows and unload them too.
 

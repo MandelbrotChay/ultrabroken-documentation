@@ -16,7 +16,6 @@ Allows you to transfer only the modifier, but only works on weapons.
 5. Save and reload
 ```
 
-
 ## Notes
 1.2.0-1.2.1 need an altenative method
 

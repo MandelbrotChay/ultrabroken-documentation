@@ -14,7 +14,6 @@ Using a Zlotted object to obstruct a warp position, you can offset Link, while w
 3. Place the zlotted object over the travel medallion and then warp to the travel medallion.
 ```
 
-
 ## Notes
 —
 

@@ -12,8 +12,6 @@ title: "Throw Tap Sprinting (TTS)"
 tap B - R - B, repeat
 ```
 
-
-
 ## Notes
 —
 

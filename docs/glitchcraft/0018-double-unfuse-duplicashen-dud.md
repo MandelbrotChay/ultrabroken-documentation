@@ -19,7 +19,6 @@ Required: 2 bows, 1 arrow, material to dupe, melee weapon
 7. Tada! you now have another item of whatever was fused to the bow
 ```
 
-
 ## Notes
 Stops working if cooked meals page is full
 

@@ -19,7 +19,6 @@ Causes the object to fling Link great distances with relative ease.
 If done properly, Link will be sent flying off in the opposite direction of wherever the fan was pushing the object to.
 ```
 
-
 ## Notes
 Ascending also works if Link picks up a Big Battery or Rock and Ascends into it. The trajectory of where Link launches depends on how long the user waits to exit ascend. It's also possible to continue launching further into the air if a Hover Stone is activated in midair to keep yourself grounded to perform it again (refer to 2nd example video).
 

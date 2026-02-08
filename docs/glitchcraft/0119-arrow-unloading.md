@@ -20,7 +20,6 @@ Method 2:
 2. Pick up the bow from the ground as late as possible when the Like-like goes to eat it and Link.
 ```
 
-
 ## Notes
 Can be used to create batteryless Zonai devices, clip objects through walls, as well as other strange quirks
 .

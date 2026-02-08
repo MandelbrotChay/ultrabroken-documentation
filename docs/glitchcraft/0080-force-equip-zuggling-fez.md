@@ -21,7 +21,6 @@ This is best achieved at, althought isn't specific too, Mayachideg Shrine.
 8. Load any save.
 ```
 
-
 ## Notes
 Can be repeated multiple times to zuggle multiple weapons.
 

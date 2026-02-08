@@ -14,7 +14,6 @@ Allows you to clip through things using a large object and recall
 -Run in the blocks path, and it should clip you through the door
 ```
 
-
 ## Notes
 This can be done with a spring, making the entire trick much more portable
 

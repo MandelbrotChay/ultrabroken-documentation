@@ -12,8 +12,6 @@ Damage repeats infinitely during spin attack.
 Mid-charge of a spin with a two-handed weapon, obtain a new item at the exact moment it hits an enemy.
 ```
 
-
-
 ## Notes
 —
 

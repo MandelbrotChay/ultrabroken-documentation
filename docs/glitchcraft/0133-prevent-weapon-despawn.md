@@ -14,7 +14,6 @@ Prevents equipment from despawning after certain NPC interactions and quests (Do
 3. Start whatever quest that despawns all equipment on the ground and use Ultrahand to bring your desired weapon towards you
 ```
 
-
 ## Notes
 You can bring back the weapon by zuggling before quest ends
 Best used in Eldin Cave Quest, experimenting with different despawn flags atm

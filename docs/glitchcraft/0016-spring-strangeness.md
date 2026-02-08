@@ -14,7 +14,6 @@ Currently 2 methods:
 -Method 2: This involves putting 2 springs facing each other, slightly offset. Stand against the springs and trigger them.
 ```
 
-
 ## Notes
 might allow for some unloaded areas and/or clipping
 Method 1 is reliablely strange, while Method 2 has only been performed once thus far

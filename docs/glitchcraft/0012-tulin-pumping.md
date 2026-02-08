@@ -12,7 +12,6 @@ Preserves the initial boost of tulin
 jump off a ledge and activate Tulin's ability, then close glider and reopen it for a boost, the closing and reopening can be repeated multiple times
 ```
 
-
 ## Notes
 —
 

@@ -14,7 +14,6 @@ Spring jump across terrain for as long as shield durability lasts.
 3. Start a shield surf.
 ```
 
-
 ## Notes
 Springboard Clipping
 

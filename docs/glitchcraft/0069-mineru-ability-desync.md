@@ -14,7 +14,6 @@ Desyncs Flame Emitters attached to Mineru
 3. Look up with the camera and exit
 ```
 
-
 ## Notes
 To do: test on other versions and with more emitters Seems similar to ARAZ
 

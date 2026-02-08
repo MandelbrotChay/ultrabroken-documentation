@@ -13,7 +13,6 @@ Dropping an unsheathed equipment just before getting shocked causes equipment sm
 2. Drop the currently held item and exit the inventory
 ```
 
-
 ## Notes
 Can be done much more consistently by equipping the Thunder Helm before walking into the shock emitter, unequipping the helmet and watching two memories, dropping the item you want to smuggle, and watching another memory before unpausing.
 

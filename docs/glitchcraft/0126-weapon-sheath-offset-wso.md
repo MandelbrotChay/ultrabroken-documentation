@@ -18,7 +18,6 @@ Puts the weapon sheathe in an offset state, similar to the sheathe during Zuggle
 4. Warp to accentuate the offset
 ```
 
-
 ## Notes
 This works for ALL weapons not just the .
 

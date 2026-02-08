@@ -14,7 +14,6 @@ A type of equipment smuggle that makes Link hold an arrow without pulling out hi
 3. Drop your equipped bow from the pause menu, and unpause.
 ```
 
-
 ## Notes
 Allows for extremely easy jumpslash (animation) canceling, for performing Infinite Height and Fall Damage Cancel.
 A quicker and easier setup exists where you hold a shock fruit, pause and unpause while holding L as you throw it down at Link's feet. Use Recall, and press ZR and + on the same frame and then drop your bow.

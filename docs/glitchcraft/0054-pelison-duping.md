@@ -17,7 +17,6 @@ Duplicate weapons using Pelison to remove them from an entangled shield.
 5. Pick up duplicated item.
 ```
 
-
 ## Notes
 Costs 20 rupees. Also completely removes the modifier on the duped item.
 

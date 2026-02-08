@@ -14,7 +14,6 @@ Interrupt jumpslashes by swapping a shield mid-animation
 4. Switch shield in quick menu
 ```
 
-
 ## Notes
 Infinite Height
 Jumpslash Cancel Clipping

@@ -31,7 +31,6 @@ Zuggle Overload Method:
 7. Load the save in which you want to have the MNF
 ```
 
-
 ## Notes
 This MNF can be powered up further! See WST or Unload WST for the method
 

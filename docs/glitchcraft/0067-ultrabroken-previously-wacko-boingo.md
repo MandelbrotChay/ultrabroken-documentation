@@ -15,7 +15,6 @@ Allows you to pull the object with another glued material while Link stands on t
 4. Stand on the Ultrabroken object and control the glued object using Ultrahand.
 ```
 
-
 ## Notes
 Presists through ZLOT/SLOT, allowing you to bring this to any prior save, and can allow the user to repeat the Ultrabroken glitch indefinitely.
 During flying with Ultrabroken, it can be very easily for the game to cancel out of Ultrahand if you're turning while the game lags/loads during a laggy area. It's best to keep it as steady as possible when traversing through areas where the FPS drops heavily.

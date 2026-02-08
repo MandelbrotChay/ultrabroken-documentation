@@ -12,8 +12,6 @@ title: "Crouch Sprinting"
 press b, tap crouch right after, wait a little bit for the stamina to regen, repeat (84 bpm is the perfect tempo, so on every beat tap crouch and tap b right after)
 ```
 
-
-
 ## Notes
 —
 

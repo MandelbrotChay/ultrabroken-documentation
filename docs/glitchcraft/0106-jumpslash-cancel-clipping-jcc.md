@@ -18,7 +18,6 @@ Note: In the case of standard infinite height inputs (L cancel method), ensure t
 Note: Arrow Smuggle IH or its alternatives makes this glitch much easier to execute compared to standard IH.
 ```
 
-
 ## Notes
 Highly less likely to work with flat ceilings.
 

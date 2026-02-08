@@ -15,7 +15,6 @@ Allows you to dupe any item that can be thrown, including Zonai capsules.
 4. Repeat up to 20 times, then pick up duplicated items.
 ```
 
-
 ## Notes
 —
 

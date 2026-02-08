@@ -19,7 +19,6 @@ OR
 Have an item fall onto the ground from zuggle overload and have a like like eat the item
 ```
 
-
 ## Notes
 Unculling a sluggled item without retrieving it from the like like causes the item to have no collision
 

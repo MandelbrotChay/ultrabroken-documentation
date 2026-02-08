@@ -12,7 +12,6 @@ Advances Links current animation by 1 frame while keeping the menu open. Links c
 -Skip a playing memory during an animation.
 ```
 
-
 ## Notes
 —
 

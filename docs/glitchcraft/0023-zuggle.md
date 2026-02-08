@@ -22,7 +22,6 @@ Chasm Delay Zuggle (CDZ)
 Cull Storage Zuggle (CSZ)
 ```
 
-
 ## Notes
 Zuggled equipment persists through file loads and map changes, making it very useful when combined with other glitches
 zuggle discussion in the zuggle- thread on the discord please

@@ -16,7 +16,6 @@ The wheel will either zip to the bow or to the last location you warped from.
 Shooting the arrows in the right angle and terrain, can cause the small wheel to launch Link very far and sometimes even clip him through walls, floor and ceillings.
 ```
 
-
 ## Notes
 1.2.0-1.2.1 require an alternate setup
 

@@ -13,7 +13,6 @@ Like-Like Fuse Storage
 Culling Area Fuse Storage
 ```
 
-
 ## Notes
 Fuse Entanglement
 Cold Fuse

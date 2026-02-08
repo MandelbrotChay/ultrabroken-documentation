@@ -18,7 +18,6 @@ Compendium pictures:
 2. Load your destination file
 ```
 
-
 ## Notes
 Picture in Link's house
 

@@ -29,7 +29,6 @@ For multiple FEDZ, you must do it in this order:
 -Steps 10-11 for each shield
 ```
 
-
 ## Notes
 —
 

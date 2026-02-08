@@ -12,7 +12,6 @@ allows you to get more speed with tulin than just normal tulin (isnt' as effecti
 activate bullet time 2 times during the tulin wind
 ```
 
-
 ## Notes
 This glitch may be removed from the spreasheet in the future, it is just tulin pumping but the glider closing is done with bullet time
 

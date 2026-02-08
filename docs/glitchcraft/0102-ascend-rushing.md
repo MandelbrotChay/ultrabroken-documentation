@@ -13,7 +13,6 @@ Allows you to flury rush after ascending
 2. Backflip or Side Hop as if dodging the attack
 ```
 
-
 ## Notes
 —
 

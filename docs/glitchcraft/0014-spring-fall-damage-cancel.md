@@ -16,7 +16,6 @@ currently allows you to fall from certian heights without taking fall damage
 -Tap B and hold forward
 ```
 
-
 ## Notes
 Glitchless Fall Damage Cancel
 

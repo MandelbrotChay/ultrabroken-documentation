@@ -17,7 +17,6 @@ Prevents zonai devices from spawning out of the inventory.
 6. load a file
 ```
 
-
 ## Notes
 Only way to cancel it is by closing the game
 

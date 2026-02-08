@@ -15,7 +15,6 @@ Allows you to infinitely sell items to (steal from) a vendor using Hold Storage/
 4. Exit the shop and then reenter it, and resell the hold stored items.
 ```
 
-
 ## Notes
 Easiest method of reaching max rupees.
 

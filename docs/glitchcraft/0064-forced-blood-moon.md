@@ -15,7 +15,6 @@ Allows you to force a blood moon whenever you want
 4. Simply fall to the ground. The game should then cause a panic blood moon
 ```
 
-
 ## Notes
 Another way of performing a Forced Blood Moon is from using GAS to store overworld projectiles with a hydrant for a longer period of time in recall (about a minute, unsure if Zuggle Overload is needed or just staying in bullet time until you hit the ground).
 

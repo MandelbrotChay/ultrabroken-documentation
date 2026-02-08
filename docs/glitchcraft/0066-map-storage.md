@@ -15,7 +15,6 @@ Allows you to have control over Link while the map is open.
 4. Press B and  + in the same frame or one frame later
 ```
 
-
 ## Notes
 effects can range from softlocks to crashes
 

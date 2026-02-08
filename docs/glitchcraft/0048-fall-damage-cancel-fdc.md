@@ -15,7 +15,6 @@ Allows you to cancel fall damage from any height
 3. Exit the quickswap menu and dive while Link is still moving upwards.
 ```
 
-
 ## Notes
 It's possible to Fall Damage Cancel by performing multiple frame perfect inputs without using the runes menu or a shield (D-PAD Right + ZR on same frame, unequip bow, press Y one frame later, then dive).
 

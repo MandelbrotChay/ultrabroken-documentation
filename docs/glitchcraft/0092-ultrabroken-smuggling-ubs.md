@@ -21,7 +21,6 @@ Makes an FE'd object follow the shield.
 10. Pick up the shield again
 ```
 
-
 ## Notes
 —
 

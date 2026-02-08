@@ -16,7 +16,6 @@ Makes it so the game never updates Link's last valid coordinates for as long as 
 Wherever the fused device was picked up at is where the game will treat Link's last valid coordinates. No matter how far you go away from where you picked it up, if you save and load or void out, it will always take him back there for as long as the device remains active.
 ```
 
-
 ## Notes
 Autosaves will no longer be made (unless through loading screens), due to the game being unsure of where Link's realtime coordinates are.
 Does not persist through map changes, or through previous saves that were made before this glitch was performed.

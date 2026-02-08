@@ -12,8 +12,6 @@ title: "No Bow Sprinting (NBS)"
 unequip bow, hold ZL, and mash R, ZR, and B
 ```
 
-
-
 ## Notes
 —
 
