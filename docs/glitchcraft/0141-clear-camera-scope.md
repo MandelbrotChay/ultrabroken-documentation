@@ -27,7 +27,7 @@ July 3, 2023
 
 ## Source
 
-- Twitter
+- [Twitter](https://twitter.com/NX721_/status/1681732748476596344)
 
 ## Examples
 

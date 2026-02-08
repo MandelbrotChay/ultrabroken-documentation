@@ -26,8 +26,8 @@ September 9, 2023
 
 ## Source
 
-- Twitter
-- Discord
+- [Twitter](https://vxtwitter.com/zasbotw/status/1700578075816403202)
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1150136975504982167)
 
 ## Examples
 

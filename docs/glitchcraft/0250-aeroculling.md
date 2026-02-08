@@ -42,7 +42,7 @@ Developed by Aergyl, mulberry - August 11, 2024
 —
 ## Source
 
-- Discord
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1283455775976718346)
 
 ## Examples
 

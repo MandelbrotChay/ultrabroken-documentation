@@ -23,8 +23,7 @@ November 17, 2023
 
 ## Source
 
-- Discord
-- (Hyrule Engineering)
+- [Discord](https://discord.com/channels/1111875355758837830/1128775917376897145/1175099874174320761)
 
 ## Examples
 

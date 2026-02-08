@@ -43,8 +43,8 @@ Zas - June 18, 2023
 —
 ## Source
 
-- Youtube
-- Twitter
+- [Youtube](https://www.youtube.com/watch?v=DWA_cTNykyo)
+- [Twitter](https://vxtwitter.com/zasbotw/status/1692295854173167930)
 
 ## Examples
 

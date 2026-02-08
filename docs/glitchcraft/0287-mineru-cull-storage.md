@@ -23,7 +23,7 @@ ofstrings2 - Novermber 12, 2025
 —
 ## Source
 
-- Discord
+- [Discord](https://discord.com/channels/1111875355758837830/1247621060657025197/1438180015635304529)
 
 ## Examples
 

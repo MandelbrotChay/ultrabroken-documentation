@@ -25,8 +25,8 @@ September 11, 2023
 
 ## Source
 
-- Discord
-- Discord
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1150759871520710666)
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1151265557295923220)
 
 ## Examples
 

@@ -24,7 +24,7 @@ February 15, 2024
 
 ## Source
 
-- Discord
+- [Discord](https://discordapp.com/channels/1086729144307564648/1105598687167664239/1340344666331021322)
 
 ## Examples
 

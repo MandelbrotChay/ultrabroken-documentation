@@ -37,12 +37,8 @@ July 1, 2023
 
 ## Source
 
-- Twitter
-- Discord
-- July 28
-- 2023
-- (Originally) July 1
-- 2023
+- [Twitter](https://twitter.com/_nan_gogh/status/1675121229462642689?s=20)
+- [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1134569862497304629)
 
 ## Examples
 

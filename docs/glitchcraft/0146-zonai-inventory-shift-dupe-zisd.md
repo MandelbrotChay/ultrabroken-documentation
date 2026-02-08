@@ -32,7 +32,7 @@ July 10, 2023
 
 ## Source
 
-- Twitter
+- [Twitter](https://twitter.com/quantim/status/1678509305044115458?s=46)
 
 ## Examples
 

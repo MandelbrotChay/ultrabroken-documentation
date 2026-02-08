@@ -29,7 +29,7 @@ June 7, 2023
 
 ## Source
 
-- Discord(BigDUCCO)
+- [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1116378940546748416)
 
 ## Examples
 

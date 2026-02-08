@@ -39,7 +39,7 @@ December 3, 2023
 
 ## Source
 
-- Discord
+- [Discord](https://discord.com/channels/1086729144307564648/1109838351596527726/1180879489094393866)
 
 ## Examples
 

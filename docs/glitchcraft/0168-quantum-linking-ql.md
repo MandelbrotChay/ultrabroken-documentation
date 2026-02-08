@@ -40,10 +40,9 @@ August 30, 2023
 
 ## Source
 
-- Twitter
-- Twitter
-- Twitter (pyuk
-- Quantum Anchor)
+- [Twitter](https://fxtwitter.com/goghnan/status/1674596305698471936?s=46)
+- [Twitter](https://twitter.com/_nan_gogh/status/1676914554956132352)
+- [Twitter](https://fxtwitter.com/FBuffalo3/status/1682898128368963584)
 
 ## Examples
 

@@ -27,9 +27,7 @@ June 28, 2023
 
 ## Source
 
-- Twitter
-- (Please ignore the zuggled MSNF
-- those are not needed)
+- [Twitter](https://twitter.com/NX721_/status/1674217769267781633?s=20)
 
 ## Examples
 

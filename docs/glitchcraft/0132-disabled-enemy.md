@@ -34,7 +34,7 @@ June 27, 2023
 
 ## Source
 
-- Twitter
+- [Twitter](https://twitter.com/shio_0725_4040/status/1684509550026924032?s=20)
 
 ## Examples
 

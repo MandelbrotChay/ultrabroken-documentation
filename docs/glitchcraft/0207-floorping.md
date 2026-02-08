@@ -23,7 +23,7 @@ January 2, 2024
 
 ## Source
 
-- Discord
+- [Discord](https://discord.com/channels/1086729144307564648/1110956205624532993/1191838704646488145)
 
 ## Examples
 

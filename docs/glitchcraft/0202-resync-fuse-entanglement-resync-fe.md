@@ -52,7 +52,7 @@ December 18, 2023
 
 ## Source
 
-- Twitter
+- [Twitter](https://vxtwitter.com/zasbotw/status/1736818709677977998)
 
 ## Examples
 

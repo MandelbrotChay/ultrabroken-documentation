@@ -27,7 +27,7 @@ September 12, 2023
 
 ## Source
 
-- Twitter
+- [Twitter](https://vxtwitter.com/zasbotw/status/1701713294464364573)
 
 ## Examples
 

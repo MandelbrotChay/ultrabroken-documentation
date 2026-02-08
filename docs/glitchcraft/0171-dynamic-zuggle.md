@@ -63,9 +63,9 @@ researched for other versions by Winnerboi and CS16 - September 6, 2023
 —
 ## Source
 
-- Discord
-- Discord
-- Discord
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1149037981181689936)
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1218667308671832134)
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1218672345749913642)
 
 ## Examples
 

@@ -35,7 +35,7 @@ mulberry for the 1.0-1.1.2 method - May 29, 2024
 —
 ## Source
 
-- Discord
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1245447960658051184)
 
 ## Examples
 

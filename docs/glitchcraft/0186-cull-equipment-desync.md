@@ -30,8 +30,8 @@ Blize - October 10, 2023
 —
 ## Source
 
-- Discord
-- Discord
+- [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1161316800911376414)
+- [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1161340166846300282)
 
 ## Examples
 

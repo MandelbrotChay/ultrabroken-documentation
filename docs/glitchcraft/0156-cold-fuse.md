@@ -38,7 +38,7 @@ July 23, 2023
 
 ## Source
 
-- Twitter
+- [Twitter](https://fxtwitter.com/FBuffalo3/status/1683255977758584832)
 
 ## Examples
 

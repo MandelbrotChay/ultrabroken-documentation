@@ -47,7 +47,7 @@ Blize - May 28, 2023
 —
 ## Source
 
-- Discord
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1112349555606966292)
 
 ## Examples
 

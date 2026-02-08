@@ -31,7 +31,7 @@ June 15, 2023
 
 ## Source
 
-- Discord
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1118505594215743501)
 
 ## Examples
 

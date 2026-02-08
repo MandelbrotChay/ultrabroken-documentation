@@ -25,7 +25,7 @@ February 7, 2025
 
 ## Source
 
-- Discord
+- [Discord](https://discordapp.com/channels/1086729144307564648/1110956205624532993/1337566200418537554)
 
 ## Examples
 

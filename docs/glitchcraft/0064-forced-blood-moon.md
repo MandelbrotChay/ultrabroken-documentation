@@ -34,8 +34,8 @@ May 28, 2023
 
 ## Source
 
-- Twitter
-- Discord
+- [Twitter](https://twitter.com/W0ERYySQgZyGOY3/status/1663062133939253250)
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1134025370279104532)
 
 ## Examples
 

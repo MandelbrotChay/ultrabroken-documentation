@@ -29,7 +29,7 @@ May 23, 2023
 
 ## Source
 
-- Discord
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1110699150602928209)
 
 ## Examples
 

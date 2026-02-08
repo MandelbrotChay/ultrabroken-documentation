@@ -36,7 +36,7 @@ August 2, 2023
 
 ## Source
 
-- Twitter
+- [Twitter](https://twitter.com/_nan_gogh/status/1686427149786370055?s=20)
 
 ## Examples
 

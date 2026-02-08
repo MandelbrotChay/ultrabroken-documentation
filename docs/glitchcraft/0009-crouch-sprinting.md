@@ -24,7 +24,7 @@ press b, tap crouch right after, wait a little bit for the stamina to regen, rep
 —
 ## Source
 
-—
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1107351279312830505)
 
 ## Examples
 

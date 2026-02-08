@@ -42,7 +42,7 @@ February 14, 2025
 
 ## Source
 
-- Discord
+- [Discord](https://discordapp.com/channels/1086729144307564648/1105598687167664239/1340135268706942986)
 
 ## Examples
 

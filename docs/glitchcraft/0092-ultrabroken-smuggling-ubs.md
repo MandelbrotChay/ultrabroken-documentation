@@ -33,8 +33,8 @@ June 13, 2023
 
 ## Source
 
-- Twitter
-- Twitter
+- [Twitter](https://twitter.com/goghnan/status/1668671033874821139?s=46)
+- [Twitter](https://twitter.com/goghnan/status/1668693248913580049?s=46)
 
 ## Examples
 

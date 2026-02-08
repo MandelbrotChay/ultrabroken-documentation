@@ -43,8 +43,8 @@ May 17, 2023
 
 ## Source
 
-- Discord (Zuggle Method)
-- Discord (SLD Method)
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1108369158237859902)
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1108527513203912794)
 
 ## Examples
 

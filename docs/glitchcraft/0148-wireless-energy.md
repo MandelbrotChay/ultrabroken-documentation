@@ -25,7 +25,7 @@ July 11, 2023
 
 ## Source
 
-- Twitter
+- [Twitter](https://vxtwitter.com/_nan_gogh/status/1678848829259382786?s=46)
 
 ## Examples
 
