@@ -9,15 +9,33 @@ title: "BThrow Sprinting"
 press B - ZR - R - B (or B - R - ZR - B) and repeat
 ```
 
-## Metadata
-**Working versions:** 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-**Credit:**  - May 12, 2023
-**See also:** Totk Sprint Methods
-**Examples:** Youtube
+## Notes
+—
+
+## Credit
+— (May 12, 2023)
+
+## Source
+—
+
+## Examples
+
+- YouTube
+
+## Resources
+—
+
+## Working Versions
+
+- 1.0.0
+- 1.1.0/1.1.1
+- 1.1.2
+- 1.2.0
+- 1.2.1
+
+## See also
+
+- Totk Sprint Methods
 
 ## Raw row
 ```csv
