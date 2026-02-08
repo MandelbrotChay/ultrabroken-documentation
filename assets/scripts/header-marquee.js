@@ -2,8 +2,8 @@
  * Ping-pong marquee for clipped header titles.
  *
  * Uses the native scrollLeft property on the overflow:hidden container.
- * Overflow detection is simply  el.scrollWidth > el.clientWidth — no
- * inner-span wrappers or transform tricks needed.
+ * Re-queries the DOM element each frame to handle MkDocs Material replacing
+ * the element when scrolling past section headings.
  *
  * Configurable via CSS custom properties:
  *   --ub-marquee-speed      scroll speed in px/sec  (default 40)
@@ -18,110 +18,121 @@ document.addEventListener('DOMContentLoaded', () => {
   const cssPause  = parseInt(getComputedStyle(root).getPropertyValue('--ub-marquee-pause-ms'), 10) || 0;
   const PAUSE     = cssPause > 0 ? cssPause : 1200;
 
-  document.querySelectorAll('.md-header__title .md-ellipsis').forEach(el => {
-    if (el.dataset.ubMarquee) return;
-    el.dataset.ubMarquee = '1';
+  const SELECTOR = '.md-header__title .md-ellipsis';
 
-    /* ---- clean up DOM left by earlier marquee versions ---- */
-    const oldInner = el.querySelector('.ub-marquee-inner');
-    if (oldInner) el.textContent = oldInner.textContent;
-    const oldTrack = el.querySelector('.marquee-track');
-    if (oldTrack) {
-      const items = oldTrack.querySelectorAll('.marquee-item');
-      el.textContent = items.length ? items[0].textContent : oldTrack.textContent;
-    }
+  /* ---- animation state (global, not per-element) ---- */
+  let raf      = null;
+  let prev     = 0;
+  let pos      = 0;
+  let dir      = 1;
+  let going    = false;
+  let paused   = false;
+  let lastText = '';
 
-    /* ---- animation state ---- */
-    let raf   = null;
-    let prev  = 0;      // previous rAF timestamp
-    let pos   = 0;      // virtual scrollLeft position
-    let dir   = 1;      // 1 = forward (right), -1 = backward (left)
-    let going = false;
+  function getEl() {
+    return document.querySelector(SELECTOR);
+  }
 
-    function maxScroll() {
-      return Math.max(0, el.scrollWidth - el.clientWidth);
-    }
+  function maxScroll(el) {
+    return el ? Math.max(0, el.scrollWidth - el.clientWidth) : 0;
+  }
 
-    function tick(ts) {
-      if (!going) return;
-      if (!prev) { prev = ts; raf = requestAnimationFrame(tick); return; }
-      const dt = (ts - prev) / 1000;
-      prev = ts;
+  function tick(ts) {
+    if (!going || paused) return;
 
-      pos += SPEED * dt * dir;
-      const mx = maxScroll();
+    const el = getEl();
+    if (!el) { raf = requestAnimationFrame(tick); return; }
 
-      /* hit far end */
-      if (dir === 1 && pos >= mx) {
-        pos = mx;
-        el.scrollLeft = pos;
-        going = false;
-        setTimeout(() => { dir = -1; prev = 0; going = true; raf = requestAnimationFrame(tick); }, PAUSE);
-        return;
-      }
-
-      /* hit home end */
-      if (dir === -1 && pos <= 0) {
-        pos = 0;
-        el.scrollLeft = 0;
-        going = false;
-        setTimeout(() => { dir = 1; prev = 0; going = true; raf = requestAnimationFrame(tick); }, PAUSE);
-        return;
-      }
-
-      el.scrollLeft = pos;
-      raf = requestAnimationFrame(tick);
-    }
-
-    function start() {
-      if (going) return;
-      if (maxScroll() < 2) return;
-      going = true;
-      prev  = 0;
-      raf   = requestAnimationFrame(tick);
-    }
-
-    function stop() {
-      going = false;
-      if (raf) cancelAnimationFrame(raf);
-      raf  = null;
-      pos  = 0;
-      dir  = 1;
+    /* Check if text changed — if so, reset to start */
+    const currentText = el.textContent.trim();
+    if (currentText !== lastText) {
+      lastText = currentText;
+      pos = 0;
+      dir = 1;
       prev = 0;
       el.scrollLeft = 0;
-    }
-
-    function check() {
-      if (maxScroll() > 2) {
+      // Re-evaluate if marquee is needed
+      const mx = maxScroll(el);
+      if (mx > 2) {
         el.classList.add('is-marquee');
-        start();
       } else {
         el.classList.remove('is-marquee');
-        stop();
+        going = false;
+        return;
       }
     }
 
-    /* ---- observers ---- */
-    if (window.ResizeObserver) {
-      new ResizeObserver(() => { stop(); requestAnimationFrame(check); }).observe(el);
+    if (!prev) { prev = ts; raf = requestAnimationFrame(tick); return; }
+    const dt = (ts - prev) / 1000;
+    prev = ts;
+
+    pos += SPEED * dt * dir;
+    const mx = maxScroll(el);
+
+    /* hit far end */
+    if (dir === 1 && pos >= mx) {
+      pos = mx;
+      el.scrollLeft = pos;
+      paused = true;
+      setTimeout(() => { dir = -1; prev = 0; paused = false; raf = requestAnimationFrame(tick); }, PAUSE);
+      return;
+    }
+
+    /* hit home end */
+    if (dir === -1 && pos <= 0) {
+      pos = 0;
+      el.scrollLeft = 0;
+      paused = true;
+      setTimeout(() => { dir = 1; prev = 0; paused = false; raf = requestAnimationFrame(tick); }, PAUSE);
+      return;
+    }
+
+    el.scrollLeft = pos;
+    raf = requestAnimationFrame(tick);
+  }
+
+  function start() {
+    if (going) return;
+    const el = getEl();
+    if (!el) return;
+    if (maxScroll(el) < 2) return;
+    lastText = el.textContent.trim();
+    el.classList.add('is-marquee');
+    going  = true;
+    paused = false;
+    prev   = 0;
+    raf    = requestAnimationFrame(tick);
+  }
+
+  function stop() {
+    going  = false;
+    paused = false;
+    if (raf) cancelAnimationFrame(raf);
+    raf  = null;
+    pos  = 0;
+    dir  = 1;
+    prev = 0;
+    const el = getEl();
+    if (el) {
+      el.scrollLeft = 0;
+      el.classList.remove('is-marquee');
+    }
+  }
+
+  function check() {
+    const el = getEl();
+    if (!el) return;
+    if (maxScroll(el) > 2) {
+      start();
     } else {
-      window.addEventListener('resize', () => { stop(); requestAnimationFrame(check); });
+      stop();
     }
+  }
 
-    /* Poll for text content changes (more robust than MutationObserver when
-       MkDocs Material updates the header on scroll through section headings).
-       Reset marquee when text actually changes so new title starts from left. */
-    let lastText = el.textContent.trim();
-    setInterval(() => {
-      const newText = el.textContent.trim();
-      if (newText !== lastText) {
-        lastText = newText;
-        stop();
-        requestAnimationFrame(check);
-      }
-    }, 200);
+  /* ---- observers ---- */
+  window.addEventListener('resize', () => { stop(); requestAnimationFrame(check); });
 
-    requestAnimationFrame(check);
-    setTimeout(check, 600);
-  });
+  /* Initial start */
+  requestAnimationFrame(check);
+  setTimeout(check, 600);
 });
