@@ -20,8 +20,7 @@ By repeatedly culling Link while lifting an object during house building, it's p
 ```
 
 ## Notes
-Allows you to do most things that zuggle overload can do, including mass equipment duping and drop smuggling equipment
-Unlike zuggle overload, pickup overload does not persist through saves. It can also end by going too far away from the area in which the glitch was performed
+Allows you to do most things that zuggle overload can do, including mass equipment duping and drop smuggling equipment. Unlike zuggle overload, pickup overload does not persist through saves. It can also end by going too far away from the area in which the glitch was performed.
 
 ## Credit
 

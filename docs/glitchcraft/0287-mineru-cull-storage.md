@@ -14,7 +14,7 @@ Stores the callback of Mineru while mouted on her, useful for swap resync zuggle
 ```
 
 ## Notes
-—
+Mineru Cull Storage SRZ neither requires frame–perfect pausing (like Mineru Dismissal SRZ) nor the risk of losing your portacull/vortacull (like Mineru Wall SRZ)
 
 ## Credit
 

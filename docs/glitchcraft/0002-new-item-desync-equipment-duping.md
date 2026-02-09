@@ -15,7 +15,9 @@ Requirement: The new item must change positions when you sort your inventory. So
 ```
 
 ## Notes
-—
+In addition to desyncing your inventory, it will also transfer any fused objects from the new item to the item you equip in the menu.
+
+Can only be done with new items once. Must meet sorting requirements listed under “How To”.
 
 ## Credit
 

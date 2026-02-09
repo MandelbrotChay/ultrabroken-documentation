@@ -13,7 +13,7 @@ Mid-charge of a spin with a two-handed weapon, obtain a new item at the exact mo
 ```
 
 ## Notes
-—
+Todo: Replicate in TotK, test in BotW.
 
 ## Credit
 

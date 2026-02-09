@@ -13,7 +13,7 @@ Go into a laser, slowly glide down, when the floor flips back up you are out of 
 ```
 
 ## Notes
-—
+You need a laser nearby.
 
 ## Credit
 

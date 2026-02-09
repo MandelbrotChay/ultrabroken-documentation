@@ -13,7 +13,7 @@ press b, tap crouch right after, wait a little bit for the stamina to regen, rep
 ```
 
 ## Notes
-—
+Currently infinite
 
 ## Credit
 

@@ -34,20 +34,9 @@ The effect is that the modifier of the item got deleted.
 ```
 
 ## Notes
-Variant 2 can be used to infinitely re-use items on shields that break on impact.
-The main use for this are infinite bomb jumps, but it can also be used to break pots infinitely.
+Variant 2 can be used to infinitely re-use items on shields that break on impact. The main use for this are infinite bomb jumps, but it can also be used to break pots infinitely.
 
-Reusing bomb-shields (Zas)
-Discord
-Duping items with pots (very impractical lol (robuxy2nd))
-Discord
-Credit is almost impossible to pinpoint,
-
-many people have found this,
-
-but most of the research
-
-was done by Zas
+Credit is almost impossible to pinpoint. Many people have found this, but most of the research was done by Zas
 
 ## Credit
 —
@@ -61,7 +50,8 @@ was done by Zas
 
 ## Examples
 
-—
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1155267014848430111)
+- [Discord](https://discord.com/channels/1086729144307564648/1110956205624532993/1180149524874940498)
 
 ## Resources
 

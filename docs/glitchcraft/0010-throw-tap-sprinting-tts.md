@@ -13,7 +13,7 @@ tap B - R - B, repeat
 ```
 
 ## Notes
-—
+Currently infinite
 
 ## Credit
 

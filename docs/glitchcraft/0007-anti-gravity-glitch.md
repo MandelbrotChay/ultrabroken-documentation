@@ -13,7 +13,7 @@ Go to -3650 0760 0177 (Tabantha Frontier; south of Nero Hill). Talk with the man
 ```
 
 ## Notes
-—
+Todo: Find other places where this glitch could be replicated (maybe on the Great Sky Island?)
 
 ## Credit
 
