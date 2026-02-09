@@ -31,6 +31,7 @@ extra_javascript:
   - assets/scripts/search-enter-disable.js
   - assets/scripts/header-reserve.js
   - assets/scripts/header-marquee.js
+  - assets/scripts/particles-constellations.js
   
 
 nav:
