@@ -3,7 +3,7 @@ title: "Dispenser Storage"
 ---
 
 # Dispenser Storage
-***
+
 ## Overview
 Allows you to use zonai device dispensers as a temporary means to store items and bypass the 21 ground items limit.
 

@@ -3,7 +3,7 @@ title: "Zuggle Overload Desync"
 ---
 
 # Zuggle Overload Desync
-***
+
 ## Overview
 Allows you to transfer with menu desync from zuggle overload.
 

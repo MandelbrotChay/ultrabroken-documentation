@@ -3,7 +3,7 @@ title: "Fuse Entangle Drop Zuggle (FEDZ)"
 ---
 
 # Fuse Entangle Drop Zuggle (FEDZ)
-***
+
 ## Overview
 Similarily to FEWZ, this is not a real drop zuggle, but rather a shield zuggle
 

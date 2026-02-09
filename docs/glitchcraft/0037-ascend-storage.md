@@ -3,7 +3,7 @@ title: "Ascend Storage"
 ---
 
 # Ascend Storage
-***
+
 ## Overview
 Misplaces the point where Link goes after using Ascend.
 

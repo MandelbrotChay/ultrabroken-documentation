@@ -3,7 +3,7 @@ title: "Zuggle Overload"
 ---
 
 # Zuggle Overload
-***
+
 ## Overview
 Allows you to overload your game, causing many other glitches
 

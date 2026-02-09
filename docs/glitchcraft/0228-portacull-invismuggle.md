@@ -3,7 +3,7 @@ title: "Portacull Invismuggle"
 ---
 
 # Portacull Invismuggle
-***
+
 ## Overview
 Using portable culling equipment it's possible to get a culled smuggle (invismuggle).
 

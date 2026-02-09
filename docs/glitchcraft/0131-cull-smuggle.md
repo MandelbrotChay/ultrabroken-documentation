@@ -3,7 +3,7 @@ title: "Cull Smuggle"
 ---
 
 # Cull Smuggle
-***
+
 ## Overview
 Allows any equipment that can be fuse entangled to be smuggled using margin culling.
 

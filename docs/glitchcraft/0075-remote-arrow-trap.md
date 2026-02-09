@@ -3,7 +3,7 @@ title: "Remote Arrow (Trap)"
 ---
 
 # Remote Arrow (Trap)
-***
+
 ## Overview
 Allows you to fire arrows remotely from the location the glitch was set up in.
 

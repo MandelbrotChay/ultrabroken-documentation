@@ -3,7 +3,7 @@ title: "Prologue Escape"
 ---
 
 # Prologue Escape
-***
+
 ## Overview
 Using Banc Storage, it's possible to get Link out of the prologue, allowing for a lot of side effects.
 

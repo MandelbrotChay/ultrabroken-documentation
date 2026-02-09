@@ -3,7 +3,7 @@ title: "Infinite Height"
 ---
 
 # Infinite Height
-***
+
 ## Overview
 Allows you chain jump attacks to jump infinitly.
 

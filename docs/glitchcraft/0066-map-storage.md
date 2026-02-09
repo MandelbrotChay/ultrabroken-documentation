@@ -3,7 +3,7 @@ title: "Map Storage"
 ---
 
 # Map Storage
-***
+
 ## Overview
 Allows you to have control over Link while the map is open.
 

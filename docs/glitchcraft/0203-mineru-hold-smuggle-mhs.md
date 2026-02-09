@@ -3,7 +3,7 @@ title: "Mineru Hold Smuggle (MHS)"
 ---
 
 # Mineru Hold Smuggle (MHS)
-***
+
 ## Overview
 Allows holding items in inventory but not in overworld.
 

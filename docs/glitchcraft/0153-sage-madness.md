@@ -3,7 +3,7 @@ title: "Sage Madness"
 ---
 
 # Sage Madness
-***
+
 ## Overview
 The camera follows a sage falling down a chasm.
 

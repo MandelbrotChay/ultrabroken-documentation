@@ -3,7 +3,7 @@ title: "Throw Tap Sprinting (TTS)"
 ---
 
 # Throw Tap Sprinting (TTS)
-***
+
 ## Overview
 —
 

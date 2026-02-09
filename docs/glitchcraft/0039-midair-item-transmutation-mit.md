@@ -3,7 +3,7 @@ title: "Midair Item Transmutation (MIT)"
 ---
 
 # Midair Item Transmutation (MIT)
-***
+
 ## Overview
 Allows you to transmutate any material very fast. Technical explanation: let's say you have
 Slot A: [1x Apple]

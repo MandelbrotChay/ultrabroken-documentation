@@ -3,7 +3,7 @@ title: "Object Culling"
 ---
 
 # Object Culling
-***
+
 ## Overview
 Places an object in a half-unloaded, limbo like state. Leading to unintended interactions such as Zonai devices occupying the same space, remote control, and more.
 

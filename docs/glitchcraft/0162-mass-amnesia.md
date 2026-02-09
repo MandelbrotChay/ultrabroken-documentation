@@ -3,7 +3,7 @@ title: "Mass Amnesia"
 ---
 
 # Mass Amnesia
-***
+
 ## Overview
 Freezes objects in a state where gravity does not affect them, as long as they are not messed with by any means.
 

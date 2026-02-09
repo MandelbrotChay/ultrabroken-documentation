@@ -3,7 +3,7 @@ title: "Extended Throw Sprinting (ETS)"
 ---
 
 # Extended Throw Sprinting (ETS)
-***
+
 ## Overview
 —
 

@@ -3,7 +3,7 @@ title: "Back-in-Time Art"
 ---
 
 # Back-in-Time Art
-***
+
 ## Overview
 Transfers the picture in Link's House to a previous save. Is also capable of transferring compendium pictures.
 

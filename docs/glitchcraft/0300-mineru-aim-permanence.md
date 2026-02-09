@@ -3,7 +3,7 @@ title: "Mineru Aim Permanence"
 ---
 
 # Mineru Aim Permanence
-***
+
 ## Overview
 Lets you bring Mineru's Construct into towns and stables
 

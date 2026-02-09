@@ -3,7 +3,7 @@ title: "Purgatory SLD"
 ---
 
 # Purgatory SLD
-***
+
 ## Overview
 Allows equipment and objects to go through saves by sending its FE base to purgatory in a specific way.
 

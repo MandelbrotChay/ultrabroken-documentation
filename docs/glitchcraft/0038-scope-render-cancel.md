@@ -3,7 +3,7 @@ title: "Scope Render Cancel"
 ---
 
 # Scope Render Cancel
-***
+
 ## Overview
 Removes scope HUD and reveals two borders that show an overlay that renders flames, visual effects, etc. Another version of this glitch can be used to reduce the size of the borders for the camera filter for cinematic shots.
 

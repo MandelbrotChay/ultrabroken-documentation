@@ -3,7 +3,7 @@ title: "Master Sword Zuggling/ Decayed Master Sword Zuggling"
 ---
 
 # Master Sword Zuggling/ Decayed Master Sword Zuggling
-***
+
 ## Overview
 Allows you to zuggle the master sword or decayed master sword by desyncing it
 

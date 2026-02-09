@@ -3,7 +3,7 @@ title: "Lift Fuse Interrupt"
 ---
 
 # Lift Fuse Interrupt
-***
+
 ## Overview
 Puts liftable objects in a strange state where fusing to them causes a null fuse and cancels the state.
 

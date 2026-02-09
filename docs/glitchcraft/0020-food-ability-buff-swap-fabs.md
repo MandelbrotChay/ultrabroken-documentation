@@ -3,7 +3,7 @@ title: "Food Ability Buff Swap (FABS)"
 ---
 
 # Food Ability Buff Swap (FABS)
-***
+
 ## Overview
 Allows you to get roasted food (stackable) with a food effect
 

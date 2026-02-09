@@ -3,7 +3,7 @@ title: "Shock FE"
 ---
 
 # Shock FE
-***
+
 ## Overview
 Interrupting a fuse to a zuggled item causes FE
 

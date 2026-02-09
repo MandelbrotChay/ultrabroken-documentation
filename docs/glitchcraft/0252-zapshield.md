@@ -3,7 +3,7 @@ title: "Zapshield"
 ---
 
 # Zapshield
-***
+
 ## Overview
 Fuse entangling a shock emitter to two shields and permaculling one of its FE bases results in a permanently electrified shield which makes applications involving shock more portable
 

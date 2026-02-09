@@ -3,7 +3,7 @@ title: "Overload Cold Fuse"
 ---
 
 # Overload Cold Fuse
-***
+
 ## Overview
 Fusing to an overload dropped item causes cold fuse
 

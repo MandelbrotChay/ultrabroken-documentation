@@ -3,7 +3,7 @@ title: "Buoy Bouncing"
 ---
 
 # Buoy Bouncing
-***
+
 ## Overview
 Get an abnormaly large shield jump boost when coming into contact with water.
 

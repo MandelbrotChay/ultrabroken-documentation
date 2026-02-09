@@ -3,7 +3,7 @@ title: "Dialog Permacull"
 ---
 
 # Dialog Permacull
-***
+
 ## Overview
 Permanently culls any liftable object by triggering an NPC dialog while Link is culled
 

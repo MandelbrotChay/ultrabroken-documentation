@@ -3,7 +3,7 @@ title: "Mineru Culling"
 ---
 
 # Mineru Culling
-***
+
 ## Overview
 Allows for Link's model to be operated from Mineru, by unloading Mineru, Link can be culled at will.
 

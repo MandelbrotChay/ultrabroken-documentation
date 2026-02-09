@@ -3,7 +3,7 @@ title: "Zonai Storage"
 ---
 
 # Zonai Storage
-***
+
 ## Overview
 Allows Zonai devices to be stored and taken into shrines
 

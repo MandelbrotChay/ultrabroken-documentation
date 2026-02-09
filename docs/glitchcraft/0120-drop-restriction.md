@@ -3,7 +3,7 @@ title: "Drop Restriction"
 ---
 
 # Drop Restriction
-***
+
 ## Overview
 Prevents zonai devices from spawning out of the inventory.
 

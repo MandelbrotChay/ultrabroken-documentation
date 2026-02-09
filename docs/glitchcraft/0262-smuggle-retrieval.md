@@ -3,7 +3,7 @@ title: "Smuggle Retrieval"
 ---
 
 # Smuggle Retrieval
-***
+
 ## Overview
 Dropping an unloaded piece of equipment drops a smuggle instead (if Link has one). Fail dropping equips it back.
 

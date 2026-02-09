@@ -3,7 +3,7 @@ title: "Overload Fuse Entanglement"
 ---
 
 # Overload Fuse Entanglement
-***
+
 ## Overview
 Allows for full fuse entanglement by combining portable culling with the mechanics of zuggle overload.
 

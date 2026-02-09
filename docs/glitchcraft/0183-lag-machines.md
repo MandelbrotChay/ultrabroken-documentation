@@ -3,7 +3,7 @@ title: "Lag Machines"
 ---
 
 # Lag Machines
-***
+
 ## Overview
 Filling up small areas with many objects causes a lot of lag and strange effects
 

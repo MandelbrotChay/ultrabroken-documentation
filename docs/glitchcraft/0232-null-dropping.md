@@ -3,7 +3,7 @@ title: "Null Dropping"
 ---
 
 # Null Dropping
-***
+
 ## Overview
 Displays a glitched and empty chest quickmenu.
 

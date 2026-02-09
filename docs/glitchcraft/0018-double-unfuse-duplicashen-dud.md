@@ -3,7 +3,7 @@ title: "Double Unfuse Duplicashen (DUD)"
 ---
 
 # Double Unfuse Duplicashen (DUD)
-***
+
 ## Overview
 allows you to duplicate any material that can be fused to an arrow
 

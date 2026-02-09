@@ -3,7 +3,7 @@ title: "No Bow Sprinting (NBS)"
 ---
 
 # No Bow Sprinting (NBS)
-***
+
 ## Overview
 —
 

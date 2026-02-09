@@ -3,7 +3,7 @@ title: "Hold Storage"
 ---
 
 # Hold Storage
-***
+
 ## Overview
 Allows Link to remain in a object holding state when not normally possible, as well as desync the hold state.
 

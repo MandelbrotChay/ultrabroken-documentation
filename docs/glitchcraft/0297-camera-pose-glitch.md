@@ -3,7 +3,7 @@ title: "Camera Pose Glitch"
 ---
 
 # Camera Pose Glitch
-***
+
 ## Overview
 Link keeps walking while frozen in the camera animation.
 

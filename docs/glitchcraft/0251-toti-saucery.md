@@ -3,7 +3,7 @@ title: "Toti Saucery"
 ---
 
 # Toti Saucery
-***
+
 ## Overview
 FSFEing an undiscovered item can cause several effects
 

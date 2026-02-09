@@ -3,7 +3,7 @@ title: "Quick Drop Smuggle (QDS)"
 ---
 
 # Quick Drop Smuggle (QDS)
-***
+
 ## Overview
 Dropping and equipping weapons in a specific way causes drop smuggle.
 

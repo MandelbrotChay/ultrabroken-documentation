@@ -3,7 +3,7 @@ title: "Object (Moe) Enlargement"
 ---
 
 # Object (Moe) Enlargement
-***
+
 ## Overview
 Using a moblin, it's possible to enlarge objects
 

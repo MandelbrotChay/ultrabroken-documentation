@@ -3,7 +3,7 @@ title: "MSNF glowing"
 ---
 
 # MSNF glowing
-***
+
 ## Overview
 The msnf starts glowing at gloom hand coordinates and near phantom ganon
 

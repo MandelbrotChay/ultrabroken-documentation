@@ -3,7 +3,7 @@ title: "Dive Cancel Glide Boost"
 ---
 
 # Dive Cancel Glide Boost
-***
+
 ## Overview
 Allows you to preserve the increased speed from diving with the Glide Suit into paragliding
 

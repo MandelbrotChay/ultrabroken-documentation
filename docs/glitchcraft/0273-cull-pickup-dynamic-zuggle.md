@@ -3,7 +3,7 @@ title: "Cull Pickup Dynamic Zuggle"
 ---
 
 # Cull Pickup Dynamic Zuggle
-***
+
 ## Overview
 Picking up a thrown boomerang on the same frame that it culls can lead to dynamic zuggle
 

@@ -3,7 +3,7 @@ title: "Aeroculling"
 ---
 
 # Aeroculling
-***
+
 ## Overview
 Putting a perma-culled fan equipment's wind in a culling area prevents objects in it from getting culled, except if Link stands on most objects (including Zonai devices).
 

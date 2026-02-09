@@ -3,7 +3,7 @@ title: "Shock Cold Fuse"
 ---
 
 # Shock Cold Fuse
-***
+
 ## Overview
 Interrupting a fuse on the first possible frame with shock causes cold fusion
 

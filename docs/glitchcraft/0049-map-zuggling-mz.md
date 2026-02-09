@@ -3,7 +3,7 @@ title: "Map Zuggling (MZ)"
 ---
 
 # Map Zuggling (MZ)
-***
+
 ## Overview
 Allows you to zuggle much faster than older versions
 

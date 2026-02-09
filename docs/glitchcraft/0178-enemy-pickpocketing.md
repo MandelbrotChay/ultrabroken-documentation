@@ -3,7 +3,7 @@ title: "Enemy Pickpocketing"
 ---
 
 # Enemy Pickpocketing
-***
+
 ## Overview
 Lets you take weapons out of enemy's hands
 

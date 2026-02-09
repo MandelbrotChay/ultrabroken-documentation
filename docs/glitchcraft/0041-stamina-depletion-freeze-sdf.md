@@ -3,7 +3,7 @@ title: "Stamina Depletion Freeze (SDF)"
 ---
 
 # Stamina Depletion Freeze (SDF)
-***
+
 ## Overview
 Certain actions can cause the stamina depletion to glitch out.
 

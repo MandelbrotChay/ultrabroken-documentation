@@ -3,7 +3,7 @@ title: "Arrow Unlink"
 ---
 
 # Arrow Unlink
-***
+
 ## Overview
 makes arrow float away allowing you to spawn fused stuff in other loactions
 

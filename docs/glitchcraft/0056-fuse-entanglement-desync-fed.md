@@ -3,7 +3,7 @@ title: "Fuse Entanglement Desync (FED)"
 ---
 
 # Fuse Entanglement Desync (FED)
-***
+
 ## Overview
 Allows you to transfer the fuse and durability from one weapon to another. You can also decide to dupe the weapon or the fused material.
 

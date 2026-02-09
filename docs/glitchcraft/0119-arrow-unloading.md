@@ -3,7 +3,7 @@ title: "Arrow Unloading"
 ---
 
 # Arrow Unloading
-***
+
 ## Overview
 Unloads a fired arrow while retaining its fused attachment, leading to strange interactions.
 

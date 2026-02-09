@@ -3,7 +3,7 @@ title: "Travel Medallion storage (TMS)"
 ---
 
 # Travel Medallion storage (TMS)
-***
+
 ## Overview
 Places the travel medallion at links feet after loading a file.
 

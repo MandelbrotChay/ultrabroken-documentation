@@ -3,7 +3,7 @@ title: "Like-Like Culling"
 ---
 
 # Like-Like Culling
-***
+
 ## Overview
 A method for object culling
 

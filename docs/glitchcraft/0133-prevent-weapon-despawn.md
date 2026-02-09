@@ -3,7 +3,7 @@ title: "Prevent Weapon Despawn"
 ---
 
 # Prevent Weapon Despawn
-***
+
 ## Overview
 Prevents equipment from despawning after certain NPC interactions and quests (Does not work in Pirate Ship quest, different flags, currently testing)
 

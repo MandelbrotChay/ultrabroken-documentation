@@ -3,7 +3,7 @@ title: "Ghost SLOT"
 ---
 
 # Ghost SLOT
-***
+
 ## Overview
 Allows objects to be transferred through saves by creating a fuse ghost and detangling it out of range. The object will continue to persist through saves until it is "de-ghosted".
 

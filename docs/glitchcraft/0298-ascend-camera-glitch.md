@@ -3,7 +3,7 @@ title: "Ascend Camera Glitch"
 ---
 
 # Ascend Camera Glitch
-***
+
 ## Overview
 Keeps the camera far away from link after a file load for a short period of time.
 

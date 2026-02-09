@@ -3,7 +3,7 @@ title: "Cucco Warping"
 ---
 
 # Cucco Warping
-***
+
 ## Overview
 Picking up a cucco right as it voids out from entering water warps Link to its respawn location
 

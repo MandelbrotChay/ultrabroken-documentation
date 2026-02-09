@@ -3,7 +3,7 @@ title: "Like-Like Smuggling"
 ---
 
 # Like-Like Smuggling
-***
+
 ## Overview
 Allows for Equipment Smuggling via slugging.
 

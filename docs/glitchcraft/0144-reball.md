@@ -3,7 +3,7 @@ title: "Reball"
 ---
 
 # Reball
-***
+
 ## Overview
 By combining recall with throwing a Zonai device capsule, you can jump onto and transfer momentum from the capsule into Link, providing significant speed.
 

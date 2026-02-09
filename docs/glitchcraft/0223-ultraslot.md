@@ -3,7 +3,7 @@ title: "UltraSLOT"
 ---
 
 # UltraSLOT
-***
+
 ## Overview
 Uses purgatory to transfer ultrahanded objects through file loads.
 

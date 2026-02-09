@@ -3,7 +3,7 @@ title: "MNF Fusing"
 ---
 
 # MNF Fusing
-***
+
 ## Overview
 Allows you to fuse to the MNF
 

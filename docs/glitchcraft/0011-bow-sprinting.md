@@ -3,7 +3,7 @@ title: "Bow Sprinting"
 ---
 
 # Bow Sprinting
-***
+
 ## Overview
 —
 

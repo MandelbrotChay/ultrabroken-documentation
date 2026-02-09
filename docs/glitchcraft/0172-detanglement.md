@@ -3,7 +3,7 @@ title: "Detanglement"
 ---
 
 # Detanglement
-***
+
 ## Overview
 Using a rocket shield disconnects fuse-entangled objects from their source equipment without destroying the object.
 

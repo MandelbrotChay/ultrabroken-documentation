@@ -3,7 +3,7 @@ title: "Like-Like Zuggling"
 ---
 
 # Like-Like Zuggling
-***
+
 ## Overview
 Allows for zuggling via slugging
 

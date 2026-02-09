@@ -3,7 +3,7 @@ title: "Drop Smuggling"
 ---
 
 # Drop Smuggling
-***
+
 ## Overview
 Trick the game into thinking a weapon is both dropped and equiped at the same time, leading to strange behaviors.
 

@@ -3,7 +3,7 @@ title: "Handy Job"
 ---
 
 # Handy Job
-***
+
 ## Overview
 Gloom hands reset the durability of enemy equipment.
 

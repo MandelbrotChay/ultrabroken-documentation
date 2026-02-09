@@ -3,7 +3,7 @@ title: "Death PSLOT"
 ---
 
 # Death PSLOT
-***
+
 ## Overview
 Death dropping is equivalent to shock dropping. It's therefore possible to use death dropping as a way to send to culled purgatory, effectively resulting in PSLOT
 

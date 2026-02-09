@@ -3,7 +3,7 @@ title: "Weather Amnesia (WA)"
 ---
 
 # Weather Amnesia (WA)
-***
+
 ## Overview
 Viewing a memory near a cave will overwrite its local weather with the overworld's weather.
 

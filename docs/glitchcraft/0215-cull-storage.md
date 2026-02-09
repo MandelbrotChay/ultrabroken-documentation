@@ -3,7 +3,7 @@ title: "Cull Storage"
 ---
 
 # Cull Storage
-***
+
 ## Overview
 Culling and unculling an sdc stick in a specific way allows you to store its cull.
 

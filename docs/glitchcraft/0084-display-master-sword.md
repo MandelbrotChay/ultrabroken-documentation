@@ -3,7 +3,7 @@ title: "Display Master Sword"
 ---
 
 # Display Master Sword
-***
+
 ## Overview
 Allows you to display the master sword, damaged master sword or MsgNotFound in a weapon display
 

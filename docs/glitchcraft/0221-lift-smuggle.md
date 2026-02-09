@@ -3,7 +3,7 @@ title: "Lift Smuggle"
 ---
 
 # Lift Smuggle
-***
+
 ## Overview
 By picking up an item like a battery while a specific cutscene (e.g. korok) is playing, you can get into a state similar to lift smuggeling (botw glitch).
 

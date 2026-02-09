@@ -3,7 +3,7 @@ title: "Bundled Item Duplication (BID)"
 ---
 
 # Bundled Item Duplication (BID)
-***
+
 ## Overview
 Culling dropping an item in a specific way and unloading it causes it to get put into a state of constantly respawning when holding another item, allowing for massive duping.
 

@@ -3,7 +3,7 @@ title: "Shock Effect Overload (SEO)"
 ---
 
 # Shock Effect Overload (SEO)
-***
+
 ## Overview
 Uses many non-despawnable Shock Emitters and placing them into a Fairy Fountain, activating them to overload the game’s memory, which causes invincibility, heavy lag and frame rate drops, non-visible effects like explosions, similar to Fence Overloading, can also cause Blood Moons if you overload the memory enough.
 

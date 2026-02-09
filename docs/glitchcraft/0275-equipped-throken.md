@@ -3,7 +3,7 @@ title: "Equipped Throken"
 ---
 
 # Equipped Throken
-***
+
 ## Overview
 Allows throken weapons to be equipped
 

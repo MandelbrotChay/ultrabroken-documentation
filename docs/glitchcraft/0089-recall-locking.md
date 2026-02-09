@@ -3,7 +3,7 @@ title: "Recall Locking"
 ---
 
 # Recall Locking
-***
+
 ## Overview
 Completely locks objects in place by recalling it before zlotting it
 

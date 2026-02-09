@@ -3,7 +3,7 @@ title: "Moobe Warping"
 ---
 
 # Moobe Warping
-***
+
 ## Overview
 Using Moobe and a horse, it's possible to fully warp (opposed to only temporarily) to a preset climbing position.
 

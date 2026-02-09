@@ -3,7 +3,7 @@ title: "Mineru PSLOT"
 ---
 
 # Mineru PSLOT
-***
+
 ## Overview
 Using Mineru Culling it's possible to send a piece of equipment to culled purgatory portably, allowing for PSLOT
 

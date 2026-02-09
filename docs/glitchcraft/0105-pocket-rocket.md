@@ -3,7 +3,7 @@ title: "Pocket Rocket"
 ---
 
 # Pocket Rocket
-***
+
 ## Overview
 Allows for repeated boost from a midair rocket shield surf, making it a very good movement option.
 

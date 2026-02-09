@@ -3,7 +3,7 @@ title: "Hold Smuggling"
 ---
 
 # Hold Smuggling
-***
+
 ## Overview
 Enables full control of Link while holding objects in the menu.
 

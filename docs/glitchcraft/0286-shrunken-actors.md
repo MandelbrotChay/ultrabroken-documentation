@@ -3,7 +3,7 @@ title: "Shrunken Actors"
 ---
 
 # Shrunken Actors
-***
+
 ## Overview
 Permanently shrink any ultrahandable object (ultrabroken method)
 

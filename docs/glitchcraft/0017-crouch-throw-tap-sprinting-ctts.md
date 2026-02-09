@@ -3,7 +3,7 @@ title: "Crouch Throw Tap Sprinting (CTTS)"
 ---
 
 # Crouch Throw Tap Sprinting (CTTS)
-***
+
 ## Overview
 infinite and fastest way of sprinting
 

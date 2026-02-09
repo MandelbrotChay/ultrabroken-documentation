@@ -3,7 +3,7 @@ title: "Cull Equipment Desync"
 ---
 
 # Cull Equipment Desync
-***
+
 ## Overview
 Allows to have a weapon equipped that is not in the inventory.
 

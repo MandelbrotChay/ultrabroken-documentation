@@ -3,7 +3,7 @@ title: "Throken"
 ---
 
 # Throken
-***
+
 ## Overview
 Puts thrown weapons into a state of being broken and unbroken at the same time, leading to strange behavior such as being unable to be picked up by Link or enemies
 

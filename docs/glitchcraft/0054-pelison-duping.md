@@ -3,7 +3,7 @@ title: "Pelison Duping"
 ---
 
 # Pelison Duping
-***
+
 ## Overview
 Duplicate weapons using Pelison to remove them from an entangled shield.
 

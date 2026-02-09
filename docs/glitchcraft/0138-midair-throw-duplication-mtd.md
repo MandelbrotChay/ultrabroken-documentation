@@ -3,7 +3,7 @@ title: "Midair Throw Duplication (MTD)"
 ---
 
 # Midair Throw Duplication (MTD)
-***
+
 ## Overview
 Allows you to dupe any item that can be thrown, including Zonai capsules.
 

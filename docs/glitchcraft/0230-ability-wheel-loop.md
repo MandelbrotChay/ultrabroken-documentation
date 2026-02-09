@@ -3,7 +3,7 @@ title: "Ability Wheel Loop"
 ---
 
 # Ability Wheel Loop
-***
+
 ## Overview
 Gets you stuck in the ability wheel indefinitely opening and closing.
 

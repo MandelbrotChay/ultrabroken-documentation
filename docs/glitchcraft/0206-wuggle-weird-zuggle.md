@@ -3,7 +3,7 @@ title: "Wuggle (Weird Zuggle)"
 ---
 
 # Wuggle (Weird Zuggle)
-***
+
 ## Overview
 By dropping and equipping equipment in a specific way during a cull causes a glitch similar to zuggle.
 

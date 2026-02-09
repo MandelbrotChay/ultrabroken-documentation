@@ -3,7 +3,7 @@ title: "Jumpslash Cancel Clipping (JCC)"
 ---
 
 # Jumpslash Cancel Clipping (JCC)
-***
+
 ## Overview
 Allows for clipping through thin ceilings.
 

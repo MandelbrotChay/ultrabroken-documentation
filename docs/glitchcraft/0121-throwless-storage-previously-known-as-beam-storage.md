@@ -3,7 +3,7 @@ title: "Throwless Storage (Previously known as Beam Storage)"
 ---
 
 # Throwless Storage (Previously known as Beam Storage)
-***
+
 ## Overview
 Makes it so that Link puts the weapon in an active state (allows for activation of Zonai Devices at all times)
 

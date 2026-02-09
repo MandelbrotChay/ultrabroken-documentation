@@ -3,7 +3,7 @@ title: "Octodupe"
 ---
 
 # Octodupe
-***
+
 ## Overview
 Allows for the duplication of items sucked up by a rock octorok.
 

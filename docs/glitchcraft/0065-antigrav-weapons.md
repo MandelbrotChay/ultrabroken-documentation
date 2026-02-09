@@ -3,7 +3,7 @@ title: "AntiGrav Weapons"
 ---
 
 # AntiGrav Weapons
-***
+
 ## Overview
 Puts weapons in an "Anti Gravity" state.
 

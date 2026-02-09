@@ -3,7 +3,7 @@ title: "Bomb Skew"
 ---
 
 # Bomb Skew
-***
+
 ## Overview
 In similar fashion to skew from BOTW, this affects the direction a shield surf spring jump will send you.
 

@@ -3,7 +3,7 @@ title: "Sage Recycling"
 ---
 
 # Sage Recycling
-***
+
 ## Overview
 Resets the cooldown of tulin or sidon.
 

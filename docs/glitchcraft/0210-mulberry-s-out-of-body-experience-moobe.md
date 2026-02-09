@@ -3,7 +3,7 @@ title: "Mulberry's Out of Body Experience (Moobe)"
 ---
 
 # Mulberry's Out of Body Experience (Moobe)
-***
+
 ## Overview
 (Temporarily) Warps Link to a previous climbing position from anywhere in the world, only while the game is paused.
 

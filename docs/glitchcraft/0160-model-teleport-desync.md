@@ -3,7 +3,7 @@ title: "Model Teleport Desync"
 ---
 
 # Model Teleport Desync
-***
+
 ## Overview
 This allows for invisibility, model desyncing when gliding, staggering when getting hit to prevent ragdoll, without the previous method that required you to overload.
 

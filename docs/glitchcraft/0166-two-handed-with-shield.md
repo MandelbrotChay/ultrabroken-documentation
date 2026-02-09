@@ -3,7 +3,7 @@ title: "Two Handed With Shield"
 ---
 
 # Two Handed With Shield
-***
+
 ## Overview
 Allows you to use a shield and a two handed weapon at the same time
 

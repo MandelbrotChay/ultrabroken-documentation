@@ -3,7 +3,7 @@ title: "Like-Like Fuse Storage"
 ---
 
 # Like-Like Fuse Storage
-***
+
 ## Overview
 Fusing to an item on the same frame that a like-like eats it causes fuse storage
 

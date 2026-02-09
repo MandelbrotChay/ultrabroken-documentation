@@ -3,7 +3,7 @@ title: "Swap Resync Zuggle (SRZ)"
 ---
 
 # Swap Resync Zuggle (SRZ)
-***
+
 ## Overview
 Using Swap Resync, it's possible to zuggle anywhere simply using portacull equipment.
 

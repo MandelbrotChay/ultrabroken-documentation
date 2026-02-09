@@ -3,7 +3,7 @@ title: "Split Item Duplication (SID)"
 ---
 
 # Split Item Duplication (SID)
-***
+
 ## Overview
 Allows you to dupe materials through Stack Splitting
 

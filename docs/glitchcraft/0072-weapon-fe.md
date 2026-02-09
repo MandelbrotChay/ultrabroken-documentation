@@ -3,7 +3,7 @@ title: "Weapon FE"
 ---
 
 # Weapon FE
-***
+
 ## Overview
 Allows for FE to weapons
 

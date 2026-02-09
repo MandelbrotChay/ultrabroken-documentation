@@ -3,7 +3,7 @@ title: "Anti-gravity GAS"
 ---
 
 # Anti-gravity GAS
-***
+
 ## Overview
 Allows for weapon GAS by throwing the base of an ARAZ connection just as Link gets shocked
 

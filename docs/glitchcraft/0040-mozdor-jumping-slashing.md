@@ -3,7 +3,7 @@ title: "Mozdor jumping/slashing"
 ---
 
 # Mozdor jumping/slashing
-***
+
 ## Overview
 Allows you to jump very far (can be chained infinitly)
 

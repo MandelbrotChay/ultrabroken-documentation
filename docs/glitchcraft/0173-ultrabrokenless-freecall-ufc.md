@@ -3,7 +3,7 @@ title: "Ultrabrokenless Freecall (UFC)"
 ---
 
 # Ultrabrokenless Freecall (UFC)
-***
+
 ## Overview
 Breaks the lock on a recall lock, allowing the object to be in freecall without ub
 

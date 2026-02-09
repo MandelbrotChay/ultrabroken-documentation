@@ -3,7 +3,7 @@ title: "Overload at Home (AKA Pickup Overload)"
 ---
 
 # Overload at Home (AKA Pickup Overload)
-***
+
 ## Overview
 By repeatedly culling Link while lifting an object during house building, it's possible to achieve an effect similar to zuggle overload
 

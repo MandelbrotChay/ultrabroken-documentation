@@ -3,7 +3,7 @@ title: "Like-Like Drop Smuggling"
 ---
 
 # Like-Like Drop Smuggling
-***
+
 ## Overview
 Allows for Drop Smuggling via slugging
 

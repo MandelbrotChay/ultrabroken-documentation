@@ -3,7 +3,7 @@ title: "Springboarding"
 ---
 
 # Springboarding
-***
+
 ## Overview
 Spring jump across terrain for as long as shield durability lasts.
 

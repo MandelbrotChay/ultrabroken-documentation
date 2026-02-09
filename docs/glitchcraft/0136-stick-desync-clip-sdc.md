@@ -3,7 +3,7 @@ title: "Stick Desync Clip (SDC)"
 ---
 
 # Stick Desync Clip (SDC)
-***
+
 ## Overview
 By dropping a shield just before mounting a steering stick that is fuse entangled to it, we can clip through floors easily.
 This also has a side effect of culling link if the sdc stick is in a culling area and the base is not equipped. This happens because link is still tied to the sdc stick

@@ -3,7 +3,7 @@ title: "Entanglement Height Glitch"
 ---
 
 # Entanglement Height Glitch
-***
+
 ## Overview
 Suspends Link a certain distance off the ground while shield surfing.
 

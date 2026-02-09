@@ -3,7 +3,7 @@ title: "Horse Duping"
 ---
 
 # Horse Duping
-***
+
 ## Overview
 Killing a horse while in a specific cull setup, sends it to the horse god without killing it.
 

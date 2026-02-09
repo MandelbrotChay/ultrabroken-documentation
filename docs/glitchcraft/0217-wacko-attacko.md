@@ -3,7 +3,7 @@ title: "Wacko Attacko"
 ---
 
 # Wacko Attacko
-***
+
 ## Overview
 Continue attack animation onto another weapon.
 

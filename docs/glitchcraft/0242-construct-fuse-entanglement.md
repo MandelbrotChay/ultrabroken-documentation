@@ -3,7 +3,7 @@ title: "Construct Fuse Entanglement"
 ---
 
 # Construct Fuse Entanglement
-***
+
 ## Overview
 Allows equipment to be fuse entangled to captain constructs' weapons. This only works with bows, shields, and weapons.
 

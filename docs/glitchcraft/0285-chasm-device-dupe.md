@@ -3,7 +3,7 @@ title: "Chasm Device Dupe"
 ---
 
 # Chasm Device Dupe
-***
+
 ## Overview
 Unloads throwable items in a way that allows them to be duped by picking them up from Link's hand, most notably zonai capsules
 

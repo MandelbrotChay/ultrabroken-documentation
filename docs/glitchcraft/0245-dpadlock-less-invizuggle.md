@@ -3,7 +3,7 @@ title: "Dpadlock-less Invizuggle"
 ---
 
 # Dpadlock-less Invizuggle
-***
+
 ## Overview
 The first frame of a cull does not dpadlock, so it can be used for invizuggle
 

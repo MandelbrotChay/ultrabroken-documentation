@@ -3,7 +3,7 @@ title: "Mineru Text Storage"
 ---
 
 # Mineru Text Storage
-***
+
 ## Overview
 Lets you move while text is on screen
 

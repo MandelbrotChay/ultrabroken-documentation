@@ -3,7 +3,7 @@ title: "Wheel Warping"
 ---
 
 # Wheel Warping
-***
+
 ## Overview
 Zips small wheels to certain coordinates extremely quickly and can be used to launch Link a good distance and even pass through objects.
 

@@ -3,7 +3,7 @@ title: "Cutscene Combo Amplifier"
 ---
 
 # Cutscene Combo Amplifier
-***
+
 ## Overview
 Extends and stacks the damage frames of an attack with memory buffering, causing huge damage.
 

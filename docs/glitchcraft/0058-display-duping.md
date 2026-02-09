@@ -3,7 +3,7 @@ title: "Display Duping"
 ---
 
 # Display Duping
-***
+
 ## Overview
 Allows you to dupe equipment that can be put into displays.
 

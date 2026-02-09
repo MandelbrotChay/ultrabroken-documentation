@@ -3,7 +3,7 @@ title: "Quantum Linking (QL)"
 ---
 
 # Quantum Linking (QL)
-***
+
 ## Overview
 Uses culling to separate glued objects in space, while still retaining a coherent construction
 

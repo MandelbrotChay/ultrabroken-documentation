@@ -3,7 +3,7 @@ title: "Infinite Damage"
 ---
 
 # Infinite Damage
-***
+
 ## Overview
 Damage repeats infinitely during spin attack.
 

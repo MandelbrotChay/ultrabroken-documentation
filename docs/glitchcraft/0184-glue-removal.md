@@ -3,7 +3,7 @@ title: "Glue Removal"
 ---
 
 # Glue Removal
-***
+
 ## Overview
 lets you break apart things that have been ultrahanded together
 

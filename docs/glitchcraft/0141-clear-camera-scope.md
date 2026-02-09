@@ -3,7 +3,7 @@ title: "Clear Camera/Scope"
 ---
 
 # Clear Camera/Scope
-***
+
 ## Overview
 Allows for First Person Gameplay, removing the HUD from the camera and scope.
 

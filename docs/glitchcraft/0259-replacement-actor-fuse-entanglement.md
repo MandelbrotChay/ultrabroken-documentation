@@ -3,7 +3,7 @@ title: "Replacement Actor Fuse Entanglement"
 ---
 
 # Replacement Actor Fuse Entanglement
-***
+
 ## Overview
 Allows objects that have fuse replacement actors to be fuse entangled. Objects that have replacement actors set to themselves, such as bomb flowers, cannot be fuse entangled
 

@@ -3,7 +3,7 @@ title: "Quick Smuggling"
 ---
 
 # Quick Smuggling
-***
+
 ## Overview
 Allows for easy and quick smuggling of any equipment, including arrow smuggle.
 

@@ -3,7 +3,7 @@ title: "Camera CFW"
 ---
 
 # Camera CFW
-***
+
 ## Overview
 Glitches out the camera rune and can remove the waymarkers and the camera UI
 

@@ -3,7 +3,7 @@ title: "Springdolling"
 ---
 
 # Springdolling
-***
+
 ## Overview
 allows you to launch a large horizontal distance using springs
 

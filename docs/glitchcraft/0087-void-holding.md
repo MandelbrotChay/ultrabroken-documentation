@@ -3,7 +3,7 @@ title: "Void Holding"
 ---
 
 # Void Holding
-***
+
 ## Overview
 Allows you to hold materials "whenever you want" as long as you are at a low enough Y coordinate
 

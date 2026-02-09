@@ -3,7 +3,7 @@ title: "Invizuggle"
 ---
 
 # Invizuggle
-***
+
 ## Overview
 Dropping equipment in a specific way during a cull causes an indestructable and invisible zuggle.
 

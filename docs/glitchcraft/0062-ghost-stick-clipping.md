@@ -3,7 +3,7 @@ title: "Ghost Stick Clipping"
 ---
 
 # Ghost Stick Clipping
-***
+
 ## Overview
 Allows Link to clip through walls by stepping onto a steering stick during ABCS.
 

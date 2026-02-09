@@ -3,7 +3,7 @@ title: "Jumpslash Canceling"
 ---
 
 # Jumpslash Canceling
-***
+
 ## Overview
 Interrupt jumpslashes by swapping a shield mid-animation
 

@@ -3,7 +3,7 @@ title: "Shock Smuggle"
 ---
 
 # Shock Smuggle
-***
+
 ## Overview
 Dropping an unsheathed equipment just before getting shocked causes equipment smuggle.
 

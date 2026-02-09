@@ -3,7 +3,7 @@ title: "Memory Interrupt"
 ---
 
 # Memory Interrupt
-***
+
 ## Overview
 Interrupting a memory causes a forced pause after a dialogue
 

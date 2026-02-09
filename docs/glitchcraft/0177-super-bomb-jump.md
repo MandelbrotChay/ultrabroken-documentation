@@ -3,7 +3,7 @@ title: "Super Bomb Jump"
 ---
 
 # Super Bomb Jump
-***
+
 ## Overview
 Jumping on a specific frame allows you to get a much higher bomb jump than usual
 

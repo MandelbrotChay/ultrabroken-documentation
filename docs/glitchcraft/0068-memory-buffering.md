@@ -3,7 +3,7 @@ title: "Memory Buffering"
 ---
 
 # Memory Buffering
-***
+
 ## Overview
 Advances Links current animation by 1 frame while keeping the menu open. Links coordinates will not change.
 

@@ -3,7 +3,7 @@ title: "Equipment Collision Zuggle"
 ---
 
 # Equipment Collision Zuggle
-***
+
 ## Overview
 The original zuggle method discovered by Zvleon.
 

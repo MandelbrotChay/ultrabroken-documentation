@@ -3,7 +3,7 @@ title: "Vendor Scamming"
 ---
 
 # Vendor Scamming
-***
+
 ## Overview
 Allows you to infinitely sell items to (steal from) a vendor using Hold Storage/Smuggling.
 

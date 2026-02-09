@@ -3,7 +3,7 @@ title: "Bow Attachment Storage"
 ---
 
 # Bow Attachment Storage
-***
+
 ## Overview
 You can store the bow fuse by dropping the bow during the bow fuse and interupting it with throw aim or a jump slash.
 

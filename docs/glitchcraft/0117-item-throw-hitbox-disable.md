@@ -3,7 +3,7 @@ title: "Item Throw Hitbox Disable"
 ---
 
 # Item Throw Hitbox Disable
-***
+
 ## Overview
 —
 

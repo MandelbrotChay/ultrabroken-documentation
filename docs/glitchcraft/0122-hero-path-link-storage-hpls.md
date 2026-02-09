@@ -3,7 +3,7 @@ title: "Hero Path Link Storage (HPLS)"
 ---
 
 # Hero Path Link Storage (HPLS)
-***
+
 ## Overview
 Visual glitch with the hero path.
 

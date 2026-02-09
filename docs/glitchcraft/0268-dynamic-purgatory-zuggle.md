@@ -3,7 +3,7 @@ title: "Dynamic Purgatory Zuggle"
 ---
 
 # Dynamic Purgatory Zuggle
-***
+
 ## Overview
 It's possible to send a dynamic smuggle to purgatory, keeping it connected to Link by equipping (and zuggling) its FE base in a similar fashion to FEWZ. While not a true dynamic zuggle, it is generally considered to be the most convenient method for dynamic zuggle on v1.2.0+
 

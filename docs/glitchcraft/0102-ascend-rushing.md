@@ -3,7 +3,7 @@ title: "Ascend Rushing"
 ---
 
 # Ascend Rushing
-***
+
 ## Overview
 Allows you to flury rush after ascending
 

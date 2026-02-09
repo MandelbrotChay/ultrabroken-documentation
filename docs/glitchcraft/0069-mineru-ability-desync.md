@@ -3,7 +3,7 @@ title: "Mineru Ability Desync"
 ---
 
 # Mineru Ability Desync
-***
+
 ## Overview
 Desyncs Flame Emitters attached to Mineru
 

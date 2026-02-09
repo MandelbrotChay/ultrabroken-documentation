@@ -3,7 +3,7 @@ title: "Culling Area FSFE"
 ---
 
 # Culling Area FSFE
-***
+
 ## Overview
 A method for FSFE using AreaCulling
 

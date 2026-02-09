@@ -3,7 +3,7 @@ title: "Spring Strangeness"
 ---
 
 # Spring Strangeness
-***
+
 ## Overview
 really strange things start happening both with collision and the camera when springs are used in different ways
 

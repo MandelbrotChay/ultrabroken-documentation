@@ -3,7 +3,7 @@ title: "Throw Cancelling"
 ---
 
 # Throw Cancelling
-***
+
 ## Overview
 Allows you to cancel the ending animation of throwing via Runes, allowing you to throw faster
 

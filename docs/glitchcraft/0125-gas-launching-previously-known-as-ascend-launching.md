@@ -3,7 +3,7 @@ title: "GAS Launching (Previously known as Ascend Launching)"
 ---
 
 # GAS Launching (Previously known as Ascend Launching)
-***
+
 ## Overview
 Causes the object to fling Link great distances with relative ease.
 

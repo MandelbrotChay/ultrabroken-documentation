@@ -3,7 +3,7 @@ title: "Equipment Smuggle"
 ---
 
 # Equipment Smuggle
-***
+
 ## Overview
 An equipment state where items remain equipped in Link's hands after being removed from the inventory
 

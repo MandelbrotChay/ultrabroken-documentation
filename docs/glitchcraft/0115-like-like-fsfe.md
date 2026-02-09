@@ -3,7 +3,7 @@ title: "Like-Like FSFE"
 ---
 
 # Like-Like FSFE
-***
+
 ## Overview
 A method of Fuse Storage Fuse Entanglement.
 

@@ -3,7 +3,7 @@ title: "Infinite Balloon"
 ---
 
 # Infinite Balloon
-***
+
 ## Overview
 Steal Robbie's balloon which has will never deplete.
 

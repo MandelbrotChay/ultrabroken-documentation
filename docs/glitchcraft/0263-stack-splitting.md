@@ -3,7 +3,7 @@ title: "Stack Splitting"
 ---
 
 # Stack Splitting
-***
+
 ## Overview
 Using an arrow fuse returning, it's possible to get two slots for one item
 

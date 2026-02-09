@@ -3,7 +3,7 @@ title: "L Sprinting"
 ---
 
 # L Sprinting
-***
+
 ## Overview
 This is an infinite stamina sprinting method. It is not the fastest one and the timing is very hard.
 

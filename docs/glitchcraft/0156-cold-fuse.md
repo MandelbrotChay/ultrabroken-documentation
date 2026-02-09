@@ -3,7 +3,7 @@ title: "Cold Fuse"
 ---
 
 # Cold Fuse
-***
+
 ## Overview
 Interrupting a fuse causes null fe without destroying the connection to the weapon/shield.
 

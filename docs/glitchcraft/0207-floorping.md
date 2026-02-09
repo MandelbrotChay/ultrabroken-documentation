@@ -3,7 +3,7 @@ title: "Floorping"
 ---
 
 # Floorping
-***
+
 ## Overview
 When reloading a save, force Link to warp vertically on a floor he wasn't on previously.
 

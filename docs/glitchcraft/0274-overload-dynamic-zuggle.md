@@ -3,7 +3,7 @@ title: "Overload Dynamic Zuggle"
 ---
 
 # Overload Dynamic Zuggle
-***
+
 ## Overview
 Picking up a thrown boomerang while zuggle overloaded can cause dynamic zuggle
 

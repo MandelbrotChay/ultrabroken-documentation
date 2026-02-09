@@ -3,7 +3,7 @@ title: "Void Dipping"
 ---
 
 # Void Dipping
-***
+
 ## Overview
 An extremely powerful equipment state caused by interrupting and retrieving an equipment item that has been destroyed by the void.
 

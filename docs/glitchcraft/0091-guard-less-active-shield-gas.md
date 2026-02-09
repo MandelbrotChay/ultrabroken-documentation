@@ -3,7 +3,7 @@ title: "Guard-less Active Shield (GAS)"
 ---
 
 # Guard-less Active Shield (GAS)
-***
+
 ## Overview
 Makes the fuse of a shield constantly active
 

@@ -3,7 +3,7 @@ title: "Durability-"
 ---
 
 # Durability-
-***
+
 ## Overview
 Dropping and picking up a bow with a durability modifier removes the extra durability.
 

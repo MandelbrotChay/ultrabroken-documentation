@@ -3,7 +3,7 @@ title: "Time Bomb cancel"
 ---
 
 # Time Bomb cancel
-***
+
 ## Overview
 By putting away your shield during a specific moment while a time bomb fused to the mastersword is going off, it will explode without any damage to the environment.
 

@@ -3,7 +3,7 @@ title: "Temporary Devices"
 ---
 
 # Temporary Devices
-***
+
 ## Overview
 Fusing during the unsheathe animation of a bow causes the fuse to appear for a few frames
 

@@ -3,7 +3,7 @@ title: "Damage Amnesia"
 ---
 
 # Damage Amnesia
-***
+
 ## Overview
 Allows Link to negate sources of damage.
 

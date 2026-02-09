@@ -3,7 +3,7 @@ title: "Hold Storage Duplication (Also known as Minus Dupe)"
 ---
 
 # Hold Storage Duplication (Also known as Minus Dupe)
-***
+
 ## Overview
 Allows you to dupe items via hold storage.
 

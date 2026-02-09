@@ -3,7 +3,7 @@ title: "Weapon Stand Dynamic Zuggle"
 ---
 
 # Weapon Stand Dynamic Zuggle
-***
+
 ## Overview
 Weapon stands force equip with a little delay on 1.0, making it possible to dynamic zuggle with them
 

@@ -3,7 +3,7 @@ title: "Octo-balloon Detanglement"
 ---
 
 # Octo-balloon Detanglement
-***
+
 ## Overview
 Allows for easy detanglement of any shield using octoballoons
 

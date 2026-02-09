@@ -3,7 +3,7 @@ title: "Recall Launch"
 ---
 
 # Recall Launch
-***
+
 ## Overview
 allows you to launch yourself very far
 

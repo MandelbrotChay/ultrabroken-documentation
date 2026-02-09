@@ -3,7 +3,7 @@ title: "Master Sword Liberation"
 ---
 
 # Master Sword Liberation
-***
+
 ## Overview
 Allows you to dupe the master sword/decayed master sword
 

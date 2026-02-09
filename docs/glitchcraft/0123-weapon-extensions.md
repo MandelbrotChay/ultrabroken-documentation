@@ -3,7 +3,7 @@ title: "Weapon Extensions"
 ---
 
 # Weapon Extensions
-***
+
 ## Overview
 Allows the weapon to hit other entites from further away (excluding 2H weapons).
 

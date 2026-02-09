@@ -3,7 +3,7 @@ title: "Capsule Cel Shader Removal"
 ---
 
 # Capsule Cel Shader Removal
-***
+
 ## Overview
 Enables the inside of capsules to remove the cel shader and other shaders
 

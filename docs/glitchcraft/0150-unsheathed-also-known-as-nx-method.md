@@ -3,7 +3,7 @@ title: "Unsheathed  (Also known as NX Method)"
 ---
 
 # Unsheathed  (Also known as NX Method)
-***
+
 ## Overview
 Puts the master sword in a visual state where it is outside of it's sheath.
 

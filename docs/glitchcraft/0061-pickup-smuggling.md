@@ -3,7 +3,7 @@ title: "Pickup Smuggling"
 ---
 
 # Pickup Smuggling
-***
+
 ## Overview
 Allows Link to pick up an object as if he were holding it like an item.
 

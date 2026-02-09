@@ -3,7 +3,7 @@ title: "Cave Flag Culling"
 ---
 
 # Cave Flag Culling
-***
+
 ## Overview
 For certain caves (like Pondside Cave), the game checks every object and determines if they belong to inside or outside the cave, and all objects with the outside value culls when Link is inside the cave.
 

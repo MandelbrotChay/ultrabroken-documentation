@@ -3,7 +3,7 @@ title: "Forced Blood Moon"
 ---
 
 # Forced Blood Moon
-***
+
 ## Overview
 Allows you to force a blood moon whenever you want
 

@@ -3,7 +3,7 @@ title: "Recipe Storage"
 ---
 
 # Recipe Storage
-***
+
 ## Overview
 Delaying the recipe menu by a few frames allow for some holding shenanigans
 

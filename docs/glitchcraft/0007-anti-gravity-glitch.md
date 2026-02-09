@@ -3,7 +3,7 @@ title: "Anti-Gravity Glitch"
 ---
 
 # Anti-Gravity Glitch
-***
+
 ## Overview
 After a specific cutscene, Link is stuck airborne when attempting to descend
 

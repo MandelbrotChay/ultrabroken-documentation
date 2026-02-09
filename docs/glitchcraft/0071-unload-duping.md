@@ -3,7 +3,7 @@ title: "Unload Duping"
 ---
 
 # Unload Duping
-***
+
 ## Overview
 By firing arrows between load triggers, items fused to the arrows get dropped. Allowing you to dupe items with multi-shot bows.
 

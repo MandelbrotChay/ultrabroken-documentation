@@ -3,7 +3,7 @@ title: "Laser-OOB"
 ---
 
 # Laser-OOB
-***
+
 ## Overview
 The game puts a floor inside Link
 

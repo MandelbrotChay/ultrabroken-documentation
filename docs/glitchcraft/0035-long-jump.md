@@ -3,7 +3,7 @@ title: "Long Jump"
 ---
 
 # Long Jump
-***
+
 ## Overview
 Jump farther
 

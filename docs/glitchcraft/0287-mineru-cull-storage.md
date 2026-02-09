@@ -3,7 +3,7 @@ title: "Mineru Cull Storage"
 ---
 
 # Mineru Cull Storage
-***
+
 ## Overview
 Stores the callback of Mineru while mouted on her, useful for swap resync zuggle setups
 

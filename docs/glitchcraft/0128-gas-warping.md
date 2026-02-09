@@ -3,7 +3,7 @@ title: "GAS Warping"
 ---
 
 # GAS Warping
-***
+
 ## Overview
 Makes it so the game never updates Link's last valid coordinates for as long as the GAS device is active (a temporary travel medallion).
 

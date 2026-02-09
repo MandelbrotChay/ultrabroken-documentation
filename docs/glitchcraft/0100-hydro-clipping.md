@@ -3,7 +3,7 @@ title: "Hydro Clipping"
 ---
 
 # Hydro Clipping
-***
+
 ## Overview
 Using  guardless active shield or throwless storage on a hydrant shield (FED to a weapon) can cause link and enemies to clip through the ground. It can also force panic blood moons
 

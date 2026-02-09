@@ -3,7 +3,7 @@ title: "Weapon Stacking Duplication (WSD)"
 ---
 
 # Weapon Stacking Duplication (WSD)
-***
+
 ## Overview
 allows for a quick dupe of any weapon, bow or shield
 
