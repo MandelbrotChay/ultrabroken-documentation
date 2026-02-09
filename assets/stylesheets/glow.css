@@ -523,7 +523,11 @@ body::before {
   width: 100% !important;
   height: 100% !important;
   pointer-events: none !important;
-  z-index: 0 !important;
+  /* Put canvas behind normal page content without changing layout.
+     Using a negative z-index avoids creating stacking contexts on
+     theme elements like `.md-content`/`.md-main`, which can interfere
+     with sticky headers or drawers. */
+  z-index: -1 !important;
 }
 
 /* Ensure main content sits above the canvas */
