@@ -3487,19 +3487,19 @@
 <p>Subsequently, a mod was developed to set this boolean to <code>true</code>, effectively resolving the Ultrabroken issue. It's worth noting that this incorrectly set boolean is completely unparalleled throughout the entire game thus far.</p>
 <h2 id="the-code-snippet">The Code Snippet</h2>
 <p>Here is the code snippet where the magic occurs:</p>
-<div class="highlight"><pre><span></span><code><span class="n">GameSystemActor</span><span class="o">.</span><span class="n">EventClearActorsAnchor</span><span class="p">(</span>
-    <span class="p">{</span>
-        <span class="s1">&#39;IsSweepOut&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
-        <span class="s1">&#39;AnchorActorName&#39;</span><span class="p">:</span> <span class="s1">&#39;DestinationActor&#39;</span><span class="p">,</span>
-        <span class="s1">&#39;AnchorInstanceName&#39;</span><span class="p">:</span> <span class="s1">&#39;LinkWarp_AfterZoronaEvent&#39;</span><span class="p">,</span>
-        <span class="s1">&#39;Radius&#39;</span><span class="p">:</span> <span class="mf">5.0</span><span class="p">,</span>
-        <span class="s1">&#39;Height&#39;</span><span class="p">:</span> <span class="mf">4.0</span><span class="p">,</span>
-        <span class="s1">&#39;IsDeleteActor&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
-        <span class="s1">&#39;IsExcludePlacedAroundAnchor&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
-        <span class="s1">&#39;IsWaitEnd&#39;</span><span class="p">:</span> <span class="kc">False</span>  <span class="c1"># &lt;-- THE BUG!</span>
-    <span class="p">}</span>
-<span class="p">)</span>
-</code></pre></div>
+<p>```python
+GameSystemActor.EventClearActorsAnchor(
+    {
+        'IsSweepOut': True,
+        'AnchorActorName': 'DestinationActor',
+        'AnchorInstanceName': 'LinkWarp_AfterZoronaEvent',
+        'Radius': 5.0,
+        'Height': 4.0,
+        'IsDeleteActor': True,
+        'IsExcludePlacedAroundAnchor': False,
+        'IsWaitEnd': False  # &lt;-- THE BUG!
+    }
+)</p>
 <p>The <code>IsWaitEnd</code> being set to <code>False</code> instead of <code>True</code> causes the system to fail to properly wait for the end of the anchor clearing sequence, leaving objects in a broken state.</p>
 <hr />
 <p><strong>Now that you understand the core mechanic, explore the <a href="../../effects/">Effects</a>!</strong></p>
