@@ -16,17 +16,34 @@
       const permalink = window.location.href.split('#')[0] + '#' + id;
       
       navigator.clipboard.writeText(permalink).then(() => {
-        // Show brief visual feedback
-        const originalText = heading.textContent;
-        const originalColor = heading.style.color;
-        
-        heading.textContent = '✓ Copied!';
-        heading.style.color = 'var(--md-accent-fg-color)';
-        
-        setTimeout(() => {
-          heading.textContent = originalText;
-          heading.style.color = originalColor;
-        }, 1500);
+        // Show a transient checkmark next to the heading instead of replacing text
+        try {
+          // If a previous check exists, clear its timeout and remove it first
+          const prev = heading.querySelector('.ub-copy-check');
+          if (prev) {
+            if (prev._ubTimeout) clearTimeout(prev._ubTimeout);
+            prev.remove();
+          }
+
+          const check = document.createElement('span');
+          check.className = 'ub-copy-check';
+          check.setAttribute('aria-hidden', 'true');
+          check.textContent = '✓';
+          heading.appendChild(check);
+
+          // Trigger visible state for CSS transition
+          requestAnimationFrame(() => check.classList.add('ub-copy-check--visible'));
+
+          // Remove after short delay
+          const t = setTimeout(() => {
+            check.classList.remove('ub-copy-check--visible');
+            setTimeout(() => { if (check.parentNode) check.parentNode.removeChild(check); }, 180);
+          }, 1400);
+          // store timeout so we can clear if another copy happens quickly
+          check._ubTimeout = t;
+        } catch (err) {
+          console.error('Clipboard feedback error:', err);
+        }
       }).catch(err => {
         console.error('Failed to copy permalink:', err);
       });
