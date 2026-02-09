@@ -1,8 +1,8 @@
 ﻿---
-title: "Fuse Overload Fuse Entanglement (FOFE)"
+title: "Fuse Overload Fuse Entanglement"
 ---
 
-# Fuse Overload Fuse Entanglement (FOFE)
+# Fuse Overload Fuse Entanglement `FOFE`
 
 ## Overview
 Using Fuse Overload it's possible to portably and quickly Fuse Entangle

@@ -1,8 +1,8 @@
 ﻿---
-title: "Force Equip Zuggling (FEZ)"
+title: "Force Equip Zuggling"
 ---
 
-# Force Equip Zuggling (FEZ)
+# Force Equip Zuggling `FEZ`
 
 ## Overview
 Allows Link to zuggle weapons using any interaction that forcefully equips a weapon. Best achieved by shrines or quests.

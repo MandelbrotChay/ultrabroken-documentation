@@ -8,9 +8,9 @@ title: "Throw Cancelling"
 Allows you to cancel the ending animation of throwing via Runes, allowing you to throw faster
 
 ## Instructions
--Throw an item
--Press L on either the Fuse, Recall, Ascend or Amiibo rune (using Fuse won't work if there's fusable things in front of Link)
--Tap R, then hold d-pad up
+1. Throw an item
+2. Press L on either the Fuse, Recall, Ascend or Amiibo rune (using Fuse won't work if there's fusable things in front of Link)
+3. Tap R, then hold d-pad up
 
 ## Notes
 —

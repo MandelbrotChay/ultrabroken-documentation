@@ -8,20 +8,20 @@ title: "Drop Zuggle"
 Allows for a drop smuggled item to have the same transfer properties as zuggle
 
 ## Instructions
--Drop smuggle your target weapon
--Let the Like Like eat you
--Drop the equipped item, then equip another item of the same category
+1. Drop smuggle your target weapon
+2. Let the Like Like eat you
+3. Drop the equipped item, then equip another item of the same category
 
 For bows/shields:
--Hold L to open the rune menu and upon letting go of L, hold either Dpad left (for shields) or Dpad right + ZR (for bows), to open the quick menu.
--Drop your currently equipped bow/shield.
--Kill the Like Like
+1. Hold L to open the rune menu and upon letting go of L, hold either Dpad left (for shields) or Dpad right + ZR (for bows), to open the quick menu.
+2. Drop your currently equipped bow/shield.
+3. Kill the Like Like
 
 For weapons:
--You'll need a full weapon inventory before the glitch, an extra weapon and a chest with a weapon
--Pick up the weapon on the ground
--Open the chest and drop your equipped weapon
--Kill the Like Like
+0. You'll need a full weapon inventory before the glitch, an extra weapon and a chest with a weapon
+1. Pick up the weapon on the ground
+2. Open the chest and drop your equipped weapon
+3. Kill the Like Like
 
 ## Notes
 —

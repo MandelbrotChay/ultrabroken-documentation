@@ -1,8 +1,8 @@
 ﻿---
-title: "Ultrabroken Smuggling (UBS)"
+title: "Ultrabroken Smuggling"
 ---
 
-# Ultrabroken Smuggling (UBS)
+# Ultrabroken Smuggling `UBS`
 
 ## Overview
 Makes an FE'd object follow the shield.

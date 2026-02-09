@@ -1,8 +1,8 @@
 ﻿---
-title: "Attached Rangeless Active Zonai (ARAZ)"
+title: "Attached Rangeless Active Zonai"
 ---
 
-# Attached Rangeless Active Zonai (ARAZ)
+# Attached Rangeless Active Zonai `ARAZ`
 
 ## Overview
 Is very similar to DRAZ but differs slightly.

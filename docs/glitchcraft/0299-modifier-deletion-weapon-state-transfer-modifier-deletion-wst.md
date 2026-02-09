@@ -1,8 +1,8 @@
 ﻿---
-title: "Modifier Deletion Weapon State Transfer (Modifier Deletion WST)"
+title: "Modifier Deletion Weapon State Transfer"
 ---
 
-# Modifier Deletion Weapon State Transfer (Modifier Deletion WST)
+# Modifier Deletion Weapon State Transfer `MDWST`
 
 ## Overview
 Equipping and dropping items in a specific order causes wst with a sideeffect of deleting modifiers.

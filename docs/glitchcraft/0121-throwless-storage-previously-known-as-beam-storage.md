@@ -1,8 +1,8 @@
 ﻿---
-title: "Throwless Storage (Previously known as Beam Storage)"
+title: "Throwless Storage"
 ---
 
-# Throwless Storage (Previously known as Beam Storage)
+# Throwless Storage
 
 ## Overview
 Makes it so that Link puts the weapon in an active state (allows for activation of Zonai Devices at all times)
@@ -15,6 +15,8 @@ Makes it so that Link puts the weapon in an active state (allows for activation 
 If done properly, any Zonai devices fused to your weapon will become permanetly active until Link fully holds a weapon to throw again.
 
 ## Notes
+Previously known as Beam Storage.
+
 Can also be done by pausing on a specific frame (Link's arm is extended outwards) and loading a save as well. If you fuse something and it does not activate, swap back and forth to that weapon.
 
 Zonai Devices active during this glitch will take more energy when being used.

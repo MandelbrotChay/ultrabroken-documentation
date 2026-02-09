@@ -1,8 +1,8 @@
 ﻿---
-title: "Save Load Dupe (SLD)"
+title: "Save Load Dupe"
 ---
 
-# Save Load Dupe (SLD)
+# Save Load Dupe `SLD`
 
 ## Overview
 Allows easy duplication of your weapons, bows, and shields

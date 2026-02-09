@@ -1,14 +1,14 @@
 ﻿---
-title: "Jumpslash Cancel Clipping (JCC)"
+title: "Jumpslash Cancel Clipping"
 ---
 
-# Jumpslash Cancel Clipping (JCC)
+# Jumpslash Cancel Clipping `JCC`
 
 ## Overview
 Allows for clipping through thin ceilings.
 
 ## Instructions
-- Perform any jumpslash cancel Infinite Height variant against a ceiling until Links head clips through while in bullet time. 
+Perform any jumpslash cancel Infinite Height variant against a ceiling until Links head clips through while in bullet time. 
 
 Note: In the case of standard infinite height inputs (L cancel method), ensure that you cancel the jumpslash on the first frame of it's activation. 
 

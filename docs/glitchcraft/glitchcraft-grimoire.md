@@ -157,7 +157,7 @@ This page lists generated glitch stubs created from the community CSV.
 - [Camera CFW](./0147-camera-cfw.md)
 - [Wireless Energy](./0148-wireless-energy.md)
 - [Bow Attachment Desync (BAD Arrows)](./0149-bow-attachment-desync-bad-arrows.md)
-- [Unsheathed  (Also known as NX Method)](./0150-unsheathed-also-known-as-nx-method.md)
+- [Unsheathed  (Also known as NX Method)](./0150-unsheathed-mastersword.md)
 - [Hand Locked Equipment Smuggling (HLES)](./0151-hand-locked-equipment-smuggling-hles.md)
 - [Wheel Zoomy (Also known as Wheel Wacko Boingo)](./0152-wheel-zoomy-also-known-as-wheel-wacko-boingo.md)
 - [Sage Madness](./0153-sage-madness.md)

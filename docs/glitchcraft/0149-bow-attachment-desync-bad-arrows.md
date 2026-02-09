@@ -1,8 +1,8 @@
 ﻿---
-title: "Bow Attachment Desync (BAD Arrows)"
+title: "Bow Attachment Desync"
 ---
 
-# Bow Attachment Desync (BAD Arrows)
+# Bow Attachment Desync `BAD`
 
 ## Overview
 Allows you to attach different materials to multishot arrows.

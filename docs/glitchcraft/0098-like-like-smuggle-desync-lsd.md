@@ -1,8 +1,8 @@
 ﻿---
-title: "Like-Like Smuggle Desync (LSD)"
+title: "Like-Like Smuggle Desync"
 ---
 
-# Like-Like Smuggle Desync (LSD)
+# Like-Like Smuggle Desync `LSD`
 
 ## Overview
 Allows for desync and consequently, WST via slugging.

@@ -1,8 +1,8 @@
 ﻿---
-title: "Zuggle Load Object Transfering (ZLOT)"
+title: "Zuggle Load Object Transfering"
 ---
 
-# Zuggle Load Object Transfering (ZLOT)
+# Zuggle Load Object Transfering `ZLOT`
 
 ## Overview
 Allows you to transfer objects through loads while maintaining their coordinates.

@@ -1,8 +1,8 @@
 ﻿---
-title: "Fuse Storage Fuse Entanglement (FSFE)"
+title: "Fuse Storage Fuse Entanglement"
 ---
 
-# Fuse Storage Fuse Entanglement (FSFE)
+# Fuse Storage Fuse Entanglement `FSFE`
 
 ## Overview
 Unique methods of achieving Fuse Entanglement through Fuse Storage.

@@ -1,9 +1,8 @@
 ﻿---
-title: "Portable Cull Save Load Dupe (Portacull SLD)"
+title: "Portable Cull Save Load Dupe"
 ---
 
-# Portable Cull Save Load Dupe (Portacull SLD)
-
+# Portable Cull Save Load Dupe `PSLD`
 ## Overview
 Allows for Save Load Duplication on v1.2.0-1.2.1 by culling Link on the same frame that the process is performed
 

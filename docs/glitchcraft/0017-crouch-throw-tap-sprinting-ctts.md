@@ -1,8 +1,8 @@
 ﻿---
-title: "Crouch Throw Tap Sprinting (CTTS)"
+title: "Crouch Throw Tap Sprinting"
 ---
 
-# Crouch Throw Tap Sprinting (CTTS)
+# Crouch Throw Tap Sprinting `CTTS`
 
 ## Overview
 infinite and fastest way of sprinting

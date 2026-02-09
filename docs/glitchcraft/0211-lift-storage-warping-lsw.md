@@ -1,8 +1,8 @@
 ﻿---
-title: "Lift Storage Warping (LSW)"
+title: "Lift Storage Warping"
 ---
 
-# Lift Storage Warping (LSW)
+# Lift Storage Warping `LSW`
 
 ## Overview
 Culling link while holding a zlot'ed item puts link into a wrong warp state. After loading a file, he will get placed between his position before the file load and the position from the file loaded. Loading the same file again won't change his position though.

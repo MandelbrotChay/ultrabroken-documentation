@@ -1,8 +1,8 @@
 ﻿---
-title: "GAS Launching (Previously known as Ascend Launching)"
+title: "GAS Launching"
 ---
 
-# GAS Launching (Previously known as Ascend Launching)
+# GAS Launching
 
 ## Overview
 Causes the object to fling Link great distances with relative ease.
@@ -18,6 +18,8 @@ Causes the object to fling Link great distances with relative ease.
 If done properly, Link will be sent flying off in the opposite direction of wherever the fan was pushing the object to.
 
 ## Notes
+Previously known as Ascend Launching.
+
 Ascending also works if Link picks up a Big Battery or Rock and Ascends into it. The trajectory of where Link launches depends on how long the user waits to exit ascend. It's also possible to continue launching further into the air if a Hover Stone is activated in midair to keep yourself grounded to perform it again (refer to 2nd example video).
 
 Recall Method: Stand on a Battery (example) and use Recall and stay as you would for Hydro Clipping for a boost. Batteries work best. Please see Blize's video for more info.

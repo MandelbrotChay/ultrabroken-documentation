@@ -1,8 +1,8 @@
 ﻿---
-title: "Persistent Save Load Object Transfer (PSLOT)"
+title: "Persistent Save Load Object Transfer"
 ---
 
-# Persistent Save Load Object Transfer (PSLOT)
+# Persistent Save Load Object Transfer `PSLOT`
 
 ## Overview
 Allows objects to go through saves by permanently culling their FE bases (parents). Unlike ZLOT, PSLOT can only be cancelled by destroying the object being transferred or closing the game.

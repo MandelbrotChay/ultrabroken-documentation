@@ -1,8 +1,8 @@
 ﻿---
-title: "Hold Storage Duplication (Also known as Minus Dupe)"
+title: "Hold Storage Duplication"
 ---
 
-# Hold Storage Duplication (Also known as Minus Dupe)
+# Hold Storage Duplication
 
 ## Overview
 Allows you to dupe items via hold storage.
@@ -14,7 +14,7 @@ Allows you to dupe items via hold storage.
 4. Pick up all your items.
 
 ## Notes
-—
+Also known as Minus Dupe.
 
 ## Credit
 NaN Gogh, Mozz

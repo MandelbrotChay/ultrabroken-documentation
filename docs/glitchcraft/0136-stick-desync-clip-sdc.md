@@ -1,8 +1,8 @@
 ﻿---
-title: "Stick Desync Clip (SDC)"
+title: "Stick Desync Clip"
 ---
 
-# Stick Desync Clip (SDC)
+# Stick Desync Clip `SDC`
 
 ## Overview
 By dropping a shield just before mounting a steering stick that is fuse entangled to it, we can clip through floors easily.

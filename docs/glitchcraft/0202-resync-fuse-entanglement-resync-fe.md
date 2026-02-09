@@ -1,8 +1,8 @@
 ﻿---
-title: "Resync Fuse Entanglement (Resync FE)"
+title: "Resync Fuse Entanglement"
 ---
 
-# Resync Fuse Entanglement (Resync FE)
+# Resync Fuse Entanglement `RFE`
 
 ## Overview
 "Fe'ing" with a drop swap drop and then pausing to mess with the fuse prevents a full fuse and causes FE

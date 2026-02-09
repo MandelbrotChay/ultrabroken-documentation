@@ -1,8 +1,8 @@
 ﻿---
-title: "Awakened Master Sword (AMS)"
+title: "Awakened Master Sword"
 ---
 
-# Awakened Master Sword (AMS)
+# Awakened Master Sword `AMS`
 
 ## Overview
 You can use gas to leave a minigame and wrong warp into the phantom ganon fight, which makes it possible to escape the fight. 

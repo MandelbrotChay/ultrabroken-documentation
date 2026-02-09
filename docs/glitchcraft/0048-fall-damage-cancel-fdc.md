@@ -1,8 +1,8 @@
 ﻿---
-title: "Fall Damage Cancel (FDC)"
+title: "Fall Damage Cancel"
 ---
 
-# Fall Damage Cancel (FDC)
+# Fall Damage Cancel `FDC`
 
 ## Overview
 Allows you to cancel fall damage from any height

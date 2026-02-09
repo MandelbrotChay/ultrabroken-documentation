@@ -8,9 +8,9 @@ title: "Springdolling"
 allows you to launch a large horizontal distance using springs
 
 ## Instructions
--Set a spring facing in the dirrection you want to launch. From there, stand next to the spring. 
--Shield surf, and upon landing, press Y. 
--Once you hit the spring with the shield spin, pause, unequip sheild to ragdoll, and get launched
+1. Set a spring facing in the dirrection you want to launch. From there, stand next to the spring. 
+2. Shield surf, and upon landing, press Y. 
+3. Once you hit the spring with the shield spin, pause, unequip sheild to ragdoll, and get launched
 
 ## Notes
 Can be used to clip back inbounds from the depths ceiling. (See Also)

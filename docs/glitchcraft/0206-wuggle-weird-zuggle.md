@@ -1,8 +1,8 @@
 ﻿---
-title: "Wuggle (Weird Zuggle)"
+title: "Wuggle"
 ---
 
-# Wuggle (Weird Zuggle)
+# Wuggle
 
 ## Overview
 By dropping and equipping equipment in a specific way during a cull causes a glitch similar to zuggle.
@@ -17,7 +17,7 @@ By dropping and equipping equipment in a specific way during a cull causes a gli
 7. open the quickmenu during the chest opening and attempt to drop the currently equipped shield/bow/weapon to unlock the dpad
 
 ## Notes
-—
+Also known as Weird Zuggle.
 
 ## Credit
 ock, robuxy2nd

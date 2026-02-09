@@ -1,8 +1,8 @@
 ﻿---
-title: "Extended Throw Sprinting (ETS)"
+title: "Extended Throw Sprinting"
 ---
 
-# Extended Throw Sprinting (ETS)
+# Extended Throw Sprinting `ETS`
 
 ## Overview
 —

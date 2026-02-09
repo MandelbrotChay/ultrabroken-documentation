@@ -1,8 +1,8 @@
 ﻿---
-title: "Autobuild Duplication (ABD)"
+title: "Autobuild Duplication"
 ---
 
-# Autobuild Duplication (ABD)
+# Autobuild Duplication `ABD`
 
 ## Overview
 Allows you to dupe materials that change into other materials in other temperature. (For example raw meat.)

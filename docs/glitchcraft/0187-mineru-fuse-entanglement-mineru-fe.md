@@ -1,8 +1,8 @@
 ﻿---
-title: "Mineru Fuse Entanglement (Mineru FE)"
+title: "Mineru Fuse Entanglement"
 ---
 
-# Mineru Fuse Entanglement (Mineru FE)
+# Mineru Fuse Entanglement `MFE`
 
 ## Overview
 Fusing to Mineru and then pausing the game or culling Link while riding Mineru on a specific frame causes objects to FE to Mineru

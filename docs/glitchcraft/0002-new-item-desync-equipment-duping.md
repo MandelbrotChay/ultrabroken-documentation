@@ -1,8 +1,8 @@
 ﻿---
-title: "New Item Desync (equipment duping)"
+title: "New Item Desync"
 ---
 
-# New Item Desync (equipment duping)
+# New Item Desync
 
 ## Overview
 Desyncs equipment after sorting a new item pickup, allowing for single use duplication, durability transfer, and transfering fused items.

@@ -1,8 +1,8 @@
 ﻿---
-title: "Wheel Zoomy (Also known as Wheel Wacko Boingo)"
+title: "Wheel Zoomy"
 ---
 
-# Wheel Zoomy (Also known as Wheel Wacko Boingo)
+# Wheel Zoomy
 
 ## Overview
 Uses a formation of wheels to gain momentum on land, similar speeds to Wacko Boingo
@@ -13,7 +13,9 @@ Uses a formation of wheels to gain momentum on land, similar speeds to Wacko Boi
 3. Summon a wing or get on a board, activate and hold down with the wheels, (It should be sticking on the floor, not moving when Link is walking) and get on the wing, hold down with the wheels on the wing and walk forward.
 
 ## Notes
-Also possible with two wheels
+Also known as Wheel Wacko Boingo. 
+
+Also possible with two wheels.
 
 ## Credit
 Solo_Turtle

@@ -1,8 +1,8 @@
 ﻿---
-title: "Midair Sort Duplication (MSD)"
+title: "Midair Sort Duplication"
 ---
 
-# Midair Sort Duplication (MSD)
+# Midair Sort Duplication `MSD`
 
 ## Overview
 Allows duplication of materials while midair.

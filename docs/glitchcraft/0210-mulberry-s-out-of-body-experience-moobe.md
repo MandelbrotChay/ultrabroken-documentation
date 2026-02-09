@@ -1,8 +1,8 @@
 ﻿---
-title: "Mulberry's Out of Body Experience (Moobe)"
+title: "Mulberry's Out of Body Experience"
 ---
 
-# Mulberry's Out of Body Experience (Moobe)
+# Mulberry's Out of Body Experience `MOOBE`
 
 ## Overview
 (Temporarily) Warps Link to a previous climbing position from anywhere in the world, only while the game is paused.

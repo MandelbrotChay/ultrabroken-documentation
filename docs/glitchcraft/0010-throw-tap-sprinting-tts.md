@@ -1,8 +1,8 @@
 ﻿---
-title: "Throw Tap Sprinting (TTS)"
+title: "Throw Tap Sprinting"
 ---
 
-# Throw Tap Sprinting (TTS)
+# Throw Tap Sprinting `TTS`
 
 ## Overview
 —

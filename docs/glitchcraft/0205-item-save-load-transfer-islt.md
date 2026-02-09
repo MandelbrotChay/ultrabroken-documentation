@@ -1,8 +1,8 @@
 ﻿---
-title: "Item Save Load Transfer (ISLT)"
+title: "Item Save Load Transfer"
 ---
 
-# Item Save Load Transfer (ISLT)
+# Item Save Load Transfer `ISLT`
 
 ## Overview
 Allows transferring held items through saves.

@@ -1,8 +1,8 @@
 ﻿---
-title: "Unsheathed  (Also known as NX Method)"
+title: "Unsheathed Mastersword"
 ---
 
-# Unsheathed  (Also known as NX Method)
+# Unsheathed Mastersword
 
 ## Overview
 Puts the master sword in a visual state where it is outside of it's sheath.
@@ -13,6 +13,8 @@ Puts the master sword in a visual state where it is outside of it's sheath.
 3. Get off the horse and it should be unsheathed.
 
 ## Notes
+Also known as NX Method.
+
 Dropped equipment goes zoomy into the sky based on timing.
 
 ## Credit

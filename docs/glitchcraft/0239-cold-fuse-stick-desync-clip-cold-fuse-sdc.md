@@ -1,8 +1,8 @@
 ﻿---
-title: "Cold Fuse Stick Desync Clip (Cold Fuse SDC)"
+title: "Cold Fuse Stick Desync Clip"
 ---
 
-# Cold Fuse Stick Desync Clip (Cold Fuse SDC)
+# Cold Fuse Stick Desync Clip `CSSDC`
 
 ## Overview
 An easier way to perform stick desync clip using cold fuse that allows for an almost immediate dismount, making it useful for stick desync without clipping

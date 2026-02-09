@@ -1,8 +1,8 @@
 ﻿---
-title: "Weapon State Transfer (WST)"
+title: "Weapon State Transfer"
 ---
 
-# Weapon State Transfer (WST)
+# Weapon State Transfer `WST`
 
 ## Overview
 allows you to transfer the durability, fused material, and modifier of a weapon

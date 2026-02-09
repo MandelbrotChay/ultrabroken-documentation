@@ -1,14 +1,14 @@
 ﻿---
-title: "Guard-less Active Shield (GAS)"
+title: "Guard-less Active Shield"
 ---
 
-# Guard-less Active Shield (GAS)
+# Guard-less Active Shield `GAS`
 
 ## Overview
 Makes the fuse of a shield constantly active
 
 ## Instructions
-- Tap ZL as you get shocked, the shield should drop.
+ Tap ZL as you get shocked, the shield should drop.
 - Pick up the shield and it should be on Link's back while still being active.
 
 You can Zuggle the shield after, either on Link's back or in his hand by Zuggling with a one-handed weapon out.
