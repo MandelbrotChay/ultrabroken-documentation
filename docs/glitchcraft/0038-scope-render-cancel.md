@@ -38,7 +38,7 @@ May 19, 2023
 
 ## Examples
 
-- [Twitter/X](https://twitter.com/NX721_/status/1678114915293491200?s=20)
+- [Twitter](https://twitter.com/NX721_/status/1678114915293491200?s=20)
 
 ## Resources
 

@@ -33,7 +33,7 @@ June 20, 2023
 ## Examples
 
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1121798115595403375)
-- [Twitter/X](https://vxtwitter.com/zasbotw/status/1672240465985323011)
+- [Twitter](https://vxtwitter.com/zasbotw/status/1672240465985323011)
 
 ## Resources
 

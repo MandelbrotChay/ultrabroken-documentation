@@ -32,7 +32,7 @@ June 19, 2023
 
 ## Examples
 
-- [Twitter/X](https://twitter.com/NX721_/status/1673788354805243904)
+- [Twitter](https://twitter.com/NX721_/status/1673788354805243904)
 
 ## Resources
 

@@ -27,7 +27,7 @@ May 30, 2023
 
 ## Examples
 
-- [Twitter/X](https://twitter.com/SilicatYT/status/1663846017060700161)
+- [Twitter](https://twitter.com/SilicatYT/status/1663846017060700161)
 
 ## Resources
 

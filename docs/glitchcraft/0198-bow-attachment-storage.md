@@ -43,7 +43,7 @@ December 3, 2023
 
 - [Discord](https://discord.com/channels/1086729144307564648/1109838351596527726/1180885814230655017)
 - [Discord](https://discord.com/channels/1086729144307564648/1109838351596527726/1180883442636955718)
-- [Twitter/X](https://vxtwitter.com/zasbotw/status/1731339526008963191)
+- [Twitter](https://vxtwitter.com/zasbotw/status/1731339526008963191)
 
 ## Resources
 

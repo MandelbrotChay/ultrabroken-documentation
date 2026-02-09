@@ -30,7 +30,7 @@ June 1, 2023
 
 ## Examples
 
-- [Twitter/X](https://twitter.com/goghnan/status/1664921192527020033?s=46)
+- [Twitter](https://twitter.com/goghnan/status/1664921192527020033?s=46)
 
 ## Resources
 

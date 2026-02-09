@@ -52,8 +52,8 @@ May 24, 2023
 ## Examples
 
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1111050337822978138)
-- [Twitter/X](https://vxtwitter.com/_nan_gogh/status/1668449729305296899?s=46(Antighost)
-- [Twitter/X](https://vxtwitter.com/_nan_gogh/status/1677819049235951617?s=46)
+- [Twitter](https://vxtwitter.com/_nan_gogh/status/1668449729305296899?s=46(Antighost)
+- [Twitter](https://vxtwitter.com/_nan_gogh/status/1677819049235951617?s=46)
 - [Discord](https://discord.com/channels/1086729144307564648/1128894970653327401/1148262809277313035)
 
 ## Resources

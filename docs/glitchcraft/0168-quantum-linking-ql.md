@@ -44,8 +44,8 @@ August 30, 2023
 
 ## Examples
 
-- [Twitter/X](https://twitter.com/_nan_gogh/status/1676914554956132352)
-- [Twitter/X](https://vxtwitter.com/_nan_gogh/status/1678205905869889536?s=46)
+- [Twitter](https://twitter.com/_nan_gogh/status/1676914554956132352)
+- [Twitter](https://vxtwitter.com/_nan_gogh/status/1678205905869889536?s=46)
 
 ## Resources
 

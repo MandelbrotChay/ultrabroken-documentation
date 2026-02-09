@@ -38,7 +38,7 @@ May 18, 2023
 ## Examples
 
 - [YouTube](https://youtu.be/3DHEaqoDl1M)
-- [Twitter/X](https://twitter.com/PowerGaymerKai/status/1659292261572829184)
+- [Twitter](https://twitter.com/PowerGaymerKai/status/1659292261572829184)
 
 ## Resources
 

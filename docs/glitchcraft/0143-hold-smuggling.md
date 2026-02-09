@@ -32,7 +32,7 @@ July 4, 2023
 
 ## Examples
 
-- [Twitter/X](https://twitter.com/_nan_gogh/status/1676384792818995200)
+- [Twitter](https://twitter.com/_nan_gogh/status/1676384792818995200)
 
 ## Resources
 

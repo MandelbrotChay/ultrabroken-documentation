@@ -27,7 +27,7 @@ July 12, 2023
 
 ## Examples
 
-- [Twitter/X](https://twitter.com/NX721_/status/1679259808757870592?t=O2gULUcC_CmV0isS44RMEg&s=19)
+- [Twitter](https://twitter.com/NX721_/status/1679259808757870592?t=O2gULUcC_CmV0isS44RMEg&s=19)
 
 ## Resources
 

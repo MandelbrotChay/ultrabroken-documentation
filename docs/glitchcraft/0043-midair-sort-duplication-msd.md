@@ -29,7 +29,7 @@ May 21, 2023
 
 ## Examples
 
-- [Twitter/X](https://twitter.com/zasoot/status/1660458317934915584)
+- [Twitter](https://twitter.com/zasoot/status/1660458317934915584)
 
 ## Resources
 

@@ -35,7 +35,7 @@ June 27, 2023
 
 ## Examples
 
-- [Twitter/X](https://twitter.com/shio_0725_4040/status/1685176978742403072?t=m0yFnWCFAxKgkgQHeoYGAQ&s=19)
+- [Twitter](https://twitter.com/shio_0725_4040/status/1685176978742403072?t=m0yFnWCFAxKgkgQHeoYGAQ&s=19)
 
 ## Resources
 

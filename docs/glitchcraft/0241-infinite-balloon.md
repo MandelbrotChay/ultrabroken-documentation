@@ -25,7 +25,7 @@ June 13, 2024
 
 ## Source
 
-- [Twitter/X](https://x.com/kurone_yuu/status/1801239224378900947?s=46&t=DdtmlnCQqIbD5irw-jnKbQ)
+- [Twitter](https://x.com/kurone_yuu/status/1801239224378900947?s=46&t=DdtmlnCQqIbD5irw-jnKbQ)
 
 ## Examples
 
