@@ -3,7 +3,7 @@ title: "Portable Cull Save Load Dupe (Portacull SLD)"
 ---
 
 # Portable Cull Save Load Dupe (Portacull SLD)
-
+***
 ## Overview
 Allows for Save Load Duplication on v1.2.0-1.2.1 by culling Link on the same frame that the process is performed
 
@@ -20,8 +20,7 @@ Allows for Save Load Duplication on v1.2.0-1.2.1 by culling Link on the same fra
 —
 
 ## Credit
-
-- NghtmaR3
+NghtmaR3
 
 ## Date
 July 17, 2024

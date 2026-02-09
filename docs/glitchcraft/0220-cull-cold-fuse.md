@@ -3,7 +3,7 @@ title: "Cull Cold Fuse"
 ---
 
 # Cull Cold Fuse
-
+***
 ## Overview
 —
 
@@ -24,8 +24,7 @@ steps 8-9 are not required on 1.0.0
 —
 
 ## Credit
-
-- mulberry
+mulberry
 
 ## Date
 February 1, 2024

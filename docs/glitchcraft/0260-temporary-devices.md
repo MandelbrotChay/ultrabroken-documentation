@@ -3,7 +3,7 @@ title: "Temporary Devices"
 ---
 
 # Temporary Devices
-
+***
 ## Overview
 Fusing during the unsheathe animation of a bow causes the fuse to appear for a few frames
 
@@ -22,8 +22,7 @@ With a Quick Smuggled bomb shield, it's possible to get a lot of height by spawn
 On 1.0, Link can stand on it, allowing to jump off it, and get more height off the ground for some easier glitch setups.
 
 ## Credit
-
-- mulberry
+mulberry
 
 ## Date
 November 30th, 2024

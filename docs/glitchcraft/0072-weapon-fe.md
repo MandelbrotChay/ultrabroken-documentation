@@ -3,7 +3,7 @@ title: "Weapon FE"
 ---
 
 # Weapon FE
-
+***
 ## Overview
 Allows for FE to weapons
 
@@ -18,8 +18,7 @@ Allows for FE to weapons
 September 12, 2023 and June 1, 2023
 
 ## Credit
-
-- Rediscovered by robuxy2nd and originally found by Physioninja
+Rediscovered by robuxy2nd and originally found by Physioninja
 
 ## Date
 June 1, 2023

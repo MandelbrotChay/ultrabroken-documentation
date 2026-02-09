@@ -3,7 +3,7 @@ title: "Fuse Overload (FO)"
 ---
 
 # Fuse Overload (FO)
-
+***
 ## Overview
 By repeatedly cold fusing objects to the same weapon, it's possible to reach a limit that causes any additional cold fused objects to lose their collision. This can lead to strange behavior
 
@@ -18,8 +18,7 @@ Fuse overloaded zonai devices can never expire, allowing for things like rockets
 Pickup overload can also be used in place of zuggle overload
 
 ## Credit
-
-- ultrababouin, NghtmaR3
+ultrababouin, NghtmaR3
 
 ## Date
 November 3, 2023

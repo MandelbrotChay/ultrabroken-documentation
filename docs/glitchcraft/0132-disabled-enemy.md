@@ -3,7 +3,7 @@ title: "Disabled Enemy"
 ---
 
 # Disabled Enemy
-
+***
 ## Overview
 Puts the enemy into a doll-like state similar to the glitch back in Breath of the Wild, disabling the enemy's movement.
 
@@ -24,8 +24,7 @@ Majora's Mask and Bullet Time are not required like in the Example video.
 June 27, 2023 & November 19, 2023
 
 ## Credit
-
-- shio_0725, altenative method by ralseidewitt
+shio_0725, altenative method by ralseidewitt
 
 ## Date
 June 27, 2023

@@ -3,7 +3,7 @@ title: "Wheel Zoomy (Also known as Wheel Wacko Boingo)"
 ---
 
 # Wheel Zoomy (Also known as Wheel Wacko Boingo)
-
+***
 ## Overview
 Uses a formation of wheels to gain momentum on land, similar speeds to Wacko Boingo
 
@@ -16,8 +16,7 @@ Uses a formation of wheels to gain momentum on land, similar speeds to Wacko Boi
 Also possible with two wheels
 
 ## Credit
-
-- Solo_Turtle
+Solo_Turtle
 
 ## Date
 July 12, 2023

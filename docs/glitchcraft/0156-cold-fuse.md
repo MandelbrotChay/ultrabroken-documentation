@@ -3,7 +3,7 @@ title: "Cold Fuse"
 ---
 
 # Cold Fuse
-
+***
 ## Overview
 Interrupting a fuse causes null fe without destroying the connection to the weapon/shield.
 
@@ -29,8 +29,7 @@ Combining pseudo fuse with purgatory items allows you to store multiple objects 
 Discord (mulberry)
 
 ## Credit
-
-- pyuk, Ryan?, Zas
+pyuk, Ryan?, Zas
 
 ## Date
 July 23, 2023

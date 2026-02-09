@@ -3,7 +3,7 @@ title: "Throwless Storage (Previously known as Beam Storage)"
 ---
 
 # Throwless Storage (Previously known as Beam Storage)
-
+***
 ## Overview
 Makes it so that Link puts the weapon in an active state (allows for activation of Zonai Devices at all times)
 
@@ -21,8 +21,7 @@ Zonai Devices active during this glitch will take more energy when being used.
 Rockets can be used, however they will simply become deactivated and will have no usage. To deactiavate a Zonai Weapon during Throwless Storage, simply drop and pick up the weapon. (https://twitter.com/NX721_/status/1674530272199741440)
 
 ## Credit
-
-- evilgabe (original glitch)nx (side effects)
+evilgabe (original glitch)nx (side effects)
 
 ## Date
 June 19, 2023

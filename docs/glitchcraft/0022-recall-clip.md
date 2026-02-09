@@ -3,7 +3,7 @@ title: "Recall Clip"
 ---
 
 # Recall Clip
-
+***
 ## Overview
 Allows you to clip through things using a large object and recall
 
@@ -16,8 +16,7 @@ Allows you to clip through things using a large object and recall
 This can be done with a spring, making the entire trick much more portable
 
 ## Credit
-
-- こんそめ
+こんそめ
 
 ## Date
 May 16, 2023

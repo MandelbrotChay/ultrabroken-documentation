@@ -3,7 +3,7 @@ title: "Sticky Dynamic Purgatory"
 ---
 
 # Sticky Dynamic Purgatory
-
+***
 ## Overview
 Culling the cold fuse base of a dynamic purgatory equipment using a like like temporarily removes its dynamic properties, allowing it to remain stuck in the sheathed or unsheathed state except when swapping equipment. For example, if a dynamic purgatory item is stuck to Link's back and the equipped weapon is unsheathed before switching weapons, the dynamic purgatory item will now be stuck to Link's hands, and vice versa.
 
@@ -15,8 +15,7 @@ Culling the cold fuse base of a dynamic purgatory equipment using a like like te
 TODO: Test other forms of culling
 
 ## Credit
-
-- mulberry
+mulberry
 
 ## Date
 February 15, 2024

@@ -3,7 +3,7 @@ title: "Persistent Save Load Object Transfer (PSLOT)"
 ---
 
 # Persistent Save Load Object Transfer (PSLOT)
-
+***
 ## Overview
 Allows objects to go through saves by permanently culling their FE bases (parents). Unlike ZLOT, PSLOT can only be cancelled by destroying the object being transferred or closing the game.
 
@@ -21,8 +21,7 @@ The shield should now persist through saves! For object PSLOT, you can simply FE
 PSLOT has a very long history of setups, some much more complex than others. The setup shown here is widely regarded to be one of the quickest and simplest methods.
 
 ## Credit
-
-- mulberry
+mulberry
 
 ## Date
 January 25, 2024

@@ -3,7 +3,7 @@ title: "Drop Restriction"
 ---
 
 # Drop Restriction
-
+***
 ## Overview
 Prevents zonai devices from spawning out of the inventory.
 
@@ -19,8 +19,7 @@ Prevents zonai devices from spawning out of the inventory.
 Only way to cancel it is by closing the game
 
 ## Credit
-
-- SCFD-GK2 and Nicnac
+SCFD-GK2 and Nicnac
 
 ## Date
 June 19, 2023

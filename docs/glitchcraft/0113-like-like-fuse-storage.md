@@ -3,7 +3,7 @@ title: "Like-Like Fuse Storage"
 ---
 
 # Like-Like Fuse Storage
-
+***
 ## Overview
 Fusing to an item on the same frame that a like-like eats it causes fuse storage
 
@@ -20,8 +20,7 @@ Fusing to an item on the same frame that a like-like eats it causes fuse storage
 Only works with equipment and materials. Zonai devices cannot be culled by like likes, and are instead destroyed when eaten
 
 ## Credit
-
-- Mozz
+Mozz
 
 ## Date
 June 18, 2023

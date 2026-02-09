@@ -3,7 +3,7 @@ title: "Midair Throw Duplication (MTD)"
 ---
 
 # Midair Throw Duplication (MTD)
-
+***
 ## Overview
 Allows you to dupe any item that can be thrown, including Zonai capsules.
 
@@ -17,8 +17,7 @@ Allows you to dupe any item that can be thrown, including Zonai capsules.
 —
 
 ## Credit
-
-- quantim
+quantim
 
 ## Date
 July 2, 2023

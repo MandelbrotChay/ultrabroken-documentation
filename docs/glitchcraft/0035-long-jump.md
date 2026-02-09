@@ -3,7 +3,7 @@ title: "Long Jump"
 ---
 
 # Long Jump
-
+***
 ## Overview
 Jump farther
 
@@ -14,8 +14,7 @@ While facing sideways (any angle that is more than or equal to 90 degrees from t
 —
 
 ## Credit
-
-- Mozz
+Mozz
 
 ## Date
 May 18, 2023

@@ -3,7 +3,7 @@ title: "Bow Sprinting"
 ---
 
 # Bow Sprinting
-
+***
 ## Overview
 —
 
@@ -14,8 +14,7 @@ tap B - ZR, repeat. Additional info: alternate tapping B then ZR. With a tempo o
 —
 
 ## Credit
-
-- Steel
+Steel
 
 ## Date
 May 14, 2023

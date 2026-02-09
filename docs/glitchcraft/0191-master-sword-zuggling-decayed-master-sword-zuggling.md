@@ -3,7 +3,7 @@ title: "Master Sword Zuggling/ Decayed Master Sword Zuggling"
 ---
 
 # Master Sword Zuggling/ Decayed Master Sword Zuggling
-
+***
 ## Overview
 Allows you to zuggle the master sword or decayed master sword by desyncing it
 
@@ -37,8 +37,7 @@ https://discord.com/channels/1086729144307564648/1105598687167664239/11787914752
 This can be combined with mastersword liberation to drop the dms/ms
 
 ## Credit
-
-- Zas
+Zas
 
 ## Date
 November 6, 2023

@@ -3,7 +3,7 @@ title: "Menu Overload"
 ---
 
 # Menu Overload
-
+***
 ## Overview
 Overloads the item menu via Moobe, acting similarly to menu overload in BOTW
 
@@ -17,8 +17,7 @@ Transmutation
 Texture Tearing
 
 ## Credit
-
-- Mozz
+Mozz
 
 ## Date
 January 11, 2024

@@ -3,7 +3,7 @@ title: "Mass Amnesia"
 ---
 
 # Mass Amnesia
-
+***
 ## Overview
 Freezes objects in a state where gravity does not affect them, as long as they are not messed with by any means.
 
@@ -27,8 +27,7 @@ Known means to revert object with Mass Amnesia back to normal:
 - Try to glue something to the objects
 
 ## Credit
-
-- NaN Gogh
+NaN Gogh
 
 ## Date
 August 2, 2023

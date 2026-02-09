@@ -3,7 +3,7 @@ title: "Zonai Sort Duplication (ZSD)"
 ---
 
 # Zonai Sort Duplication (ZSD)
-
+***
 ## Overview
 Allows you to dupe zonai parts back into your inventory.
 
@@ -18,8 +18,7 @@ If the game lags, then the glitch will work. If it doesn't, you were too close t
 For a more consistent method, 3 shield parries away should work on most walls if they're wide enough. If the game isn't lagging, try moving a bit further away, but still keep Link facing towards the wall. Cornered walls or enclosed spaces (like the Hateno Tech Lab) work best with ZSD.
 
 ## Credit
-
-- Quelfth, Flash
+Quelfth, Flash
 
 ## Date
 May 22, 2023

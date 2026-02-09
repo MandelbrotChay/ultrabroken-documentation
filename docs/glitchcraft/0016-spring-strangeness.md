@@ -3,7 +3,7 @@ title: "Spring Strangeness"
 ---
 
 # Spring Strangeness
-
+***
 ## Overview
 really strange things start happening both with collision and the camera when springs are used in different ways
 
@@ -17,8 +17,7 @@ might allow for some unloaded areas and/or clipping
 Method 1 is reliablely strange, while Method 2 has only been performed once thus far
 
 ## Credit
-
-- Orionsayshi (Method 1), Owen (Method 2)
+Orionsayshi (Method 1), Owen (Method 2)
 
 ## Date
 May 15, 2023

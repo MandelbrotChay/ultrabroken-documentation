@@ -3,7 +3,7 @@ title: "Breaking AMS"
 ---
 
 # Breaking AMS
-
+***
 ## Overview
 By using certain setups, it is possible to ignore the no durability use.
 
@@ -25,8 +25,7 @@ Method 2:
 —
 
 ## Credit
-
-- Infrasolid
+Infrasolid
 
 ## Date
 November 26, 2023

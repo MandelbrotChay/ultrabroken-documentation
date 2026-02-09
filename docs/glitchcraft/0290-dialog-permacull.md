@@ -3,7 +3,7 @@ title: "Dialog Permacull"
 ---
 
 # Dialog Permacull
-
+***
 ## Overview
 Permanently culls any liftable object by triggering an NPC dialog while Link is culled
 
@@ -18,8 +18,7 @@ For older versions, portable culling can be replaced with any other form of inta
 Not all NPC dialog interactions will work
 
 ## Credit
-
-- mulberry
+mulberry
 
 ## Date
 November 28, 2025

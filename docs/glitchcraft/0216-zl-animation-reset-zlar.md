@@ -3,7 +3,7 @@ title: "ZL Animation Reset (ZLAR)"
 ---
 
 # ZL Animation Reset (ZLAR)
-
+***
 ## Overview
 Performing a zl-less jump while the "Two Handed With Shield" glitch is active (works with one handed weapons and spears too), then mashing zl uppon landing causes links animation to constantly reset.
 
@@ -16,8 +16,7 @@ Performing a zl-less jump while the "Two Handed With Shield" glitch is active (w
 Getting hit by a weak attack during zlar results in invincibility.
 
 ## Credit
-
-- nghtmar31
+nghtmar31
 
 ## Date
 January 21, 2024

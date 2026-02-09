@@ -3,7 +3,7 @@ title: "Bow Attachment Desync (BAD Arrows)"
 ---
 
 # Bow Attachment Desync (BAD Arrows)
-
+***
 ## Overview
 Allows you to attach different materials to multishot arrows.
 
@@ -26,8 +26,7 @@ On 1.0.0/1.2.0 using single shot bows does not add a fuse into the mix.
 On 1.1.0-1.1.2 only the last material is consumed.
 
 ## Credit
-
-- Zas, Aeolian
+Zas, Aeolian
 
 ## Date
 July 11, 2023

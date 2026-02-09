@@ -3,7 +3,7 @@ title: "Ultrabroken"
 ---
 
 # Ultrabroken
-
+***
 ## Overview
 Allows you to pull the object with another glued material while Link stands on top of it, sending it flying forwards from the pull itself.
 
@@ -18,8 +18,7 @@ Presists through ZLOT/SLOT, allowing you to bring this to any prior save, and ca
 During flying with Ultrabroken, it can be very easily for the game to cancel out of Ultrahand if you're turning while the game lags/loads during a laggy area. It's best to keep it as steady as possible when traversing through areas where the FPS drops heavily.
 
 ## Credit
-
-- Duncan
+Duncan
 
 ## Date
 May 29, 2023

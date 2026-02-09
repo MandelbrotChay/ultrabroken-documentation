@@ -3,7 +3,7 @@ title: "Recall Sluggle"
 ---
 
 # Recall Sluggle
-
+***
 ## Overview
 Using recall it's possible to sluggle a weapon by having access to it in the menu before it's properly equipped
 
@@ -21,8 +21,7 @@ Dropped Purgatory (by dropping during Sluggle)
 Drop Smuggle (by drop swapping during Sluggle)
 
 ## Credit
-
-- Winnerboi77
+Winnerboi77
 
 ## Date
 July 12, 2025

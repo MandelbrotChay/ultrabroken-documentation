@@ -3,7 +3,7 @@ title: "Fuse Overload Fuse Entanglement (FOFE)"
 ---
 
 # Fuse Overload Fuse Entanglement (FOFE)
-
+***
 ## Overview
 Using Fuse Overload it's possible to portably and quickly Fuse Entangle
 
@@ -29,8 +29,7 @@ You know you get regular FE if Recall is auto-cancelled when you Recall the FE c
 —
 
 ## Credit
-
-- mulberry
+mulberry
 
 ## Date
 May 26, 2025

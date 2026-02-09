@@ -3,7 +3,7 @@ title: "Hero Path Link Storage (HPLS)"
 ---
 
 # Hero Path Link Storage (HPLS)
-
+***
 ## Overview
 Visual glitch with the hero path.
 
@@ -16,8 +16,7 @@ can cause a sheika symbol (map storage related)
 Percists through file loads and warps but opening the hero path or return to title cancels it
 
 ## Credit
-
-- Lightos_
+Lightos_
 
 ## Date
 June 20, 2023

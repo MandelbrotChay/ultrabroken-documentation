@@ -3,7 +3,7 @@ title: "Springboarding"
 ---
 
 # Springboarding
-
+***
 ## Overview
 Spring jump across terrain for as long as shield durability lasts.
 
@@ -16,8 +16,7 @@ Spring jump across terrain for as long as shield durability lasts.
 Springboard Clipping
 
 ## Credit
-
-- Mozz
+Mozz
 
 ## Date
 May 24, 2023

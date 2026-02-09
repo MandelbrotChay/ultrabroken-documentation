@@ -3,7 +3,7 @@ title: "Message Not Found (MNF)"
 ---
 
 # Message Not Found (MNF)
-
+***
 ## Overview
 Allows you to obtain the prologue master sword (named MsgNotFound or MNF), whose durability cannot decrease
 
@@ -33,8 +33,7 @@ Zuggle Overload Method:
 This MNF can be powered up further! See WST or Unload WST for the method
 
 ## Credit
-
-- LegendofLinkk (Zuggle Method), Abahbob (SLD Method)
+LegendofLinkk (Zuggle Method), Abahbob (SLD Method)
 
 ## Date
 May 17, 2023

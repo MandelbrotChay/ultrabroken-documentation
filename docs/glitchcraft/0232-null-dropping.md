@@ -3,7 +3,7 @@ title: "Null Dropping"
 ---
 
 # Null Dropping
-
+***
 ## Overview
 Displays a glitched and empty chest quickmenu.
 
@@ -15,8 +15,7 @@ Displays a glitched and empty chest quickmenu.
 —
 
 ## Credit
-
-- Aergyl
+Aergyl
 
 ## Date
 March 16, 2024

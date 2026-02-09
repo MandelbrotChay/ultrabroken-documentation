@@ -3,7 +3,7 @@ title: "Autobuild Cancel Slide (ABCS)"
 ---
 
 # Autobuild Cancel Slide (ABCS)
-
+***
 ## Overview
 Allows you to slide on top of the blueprint build over the map at insane speeds, or gain immense amounts of height.
 
@@ -26,8 +26,7 @@ If you have "Aim with motion controls" enabled, the object will often float away
 On 1.0.0, the speed that can be achieved is much slower than what is seen on 1.1.0 - 1.1.1.
 
 ## Credit
-
-- Takosensai1
+Takosensai1
 
 ## Date
 May 18, 2023

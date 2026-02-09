@@ -3,7 +3,7 @@ title: "Forced Blood Moon"
 ---
 
 # Forced Blood Moon
-
+***
 ## Overview
 Allows you to force a blood moon whenever you want
 
@@ -22,8 +22,7 @@ Bullet time is not always needed and other gems could work too. There are many w
 May 28, 2023, June 16, 2023, & June 27, 2023
 
 ## Credit
-
-- 1789(@W0ERYySQgZyGOY3), simonfirefighter, Maxmasher, Flash, acaepius
+1789(@W0ERYySQgZyGOY3), simonfirefighter, Maxmasher, Flash, acaepius
 
 ## Date
 May 28, 2023

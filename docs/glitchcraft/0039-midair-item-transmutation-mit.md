@@ -3,7 +3,7 @@ title: "Midair Item Transmutation (MIT)"
 ---
 
 # Midair Item Transmutation (MIT)
-
+***
 ## Overview
 Allows you to transmutate any material very fast. Technical explanation: let's say you have
 Slot A: [1x Apple]
@@ -25,8 +25,7 @@ With this glitch you "lose" items! First you need to organize your inventory. Yo
 You can chain this many times during 1 shield jump by repeating steps 2-5. It does not take any items if the items are in the last slot.
 
 ## Credit
-
-- eXe
+eXe
 
 ## Date
 May 20, 2023

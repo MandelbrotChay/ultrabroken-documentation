@@ -3,7 +3,7 @@ title: "Infinite Height"
 ---
 
 # Infinite Height
-
+***
 ## Overview
 Allows you chain jump attacks to jump infinitly.
 
@@ -22,8 +22,7 @@ Allows you chain jump attacks to jump infinitly.
 —
 
 ## Credit
-
-- Mozz, Physioninja
+Mozz, Physioninja
 
 ## Date
 May 22, 2023

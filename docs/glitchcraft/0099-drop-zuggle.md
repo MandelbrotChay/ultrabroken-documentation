@@ -3,7 +3,7 @@ title: "Drop Zuggle"
 ---
 
 # Drop Zuggle
-
+***
 ## Overview
 Allows for a drop smuggled item to have the same transfer properties as zuggle
 
@@ -27,8 +27,7 @@ For weapons:
 —
 
 ## Credit
-
-- BigDUCCO
+BigDUCCO
 
 ## Date
 June 15, 2023

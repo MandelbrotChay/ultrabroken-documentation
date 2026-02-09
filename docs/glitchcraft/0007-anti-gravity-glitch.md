@@ -3,7 +3,7 @@ title: "Anti-Gravity Glitch"
 ---
 
 # Anti-Gravity Glitch
-
+***
 ## Overview
 After a specific cutscene, Link is stuck airborne when attempting to descend
 
@@ -14,8 +14,7 @@ Go to -3650 0760 0177 (Tabantha Frontier; south of Nero Hill). Talk with the man
 Todo: Find other places where this glitch could be replicated (maybe on the Great Sky Island?)
 
 ## Credit
-
-- [Kaldemar](https://www.youtube.com/@Kaldemar)
+[Kaldemar](https://www.youtube.com/@Kaldemar)
 
 ## Date
 May 13, 2023

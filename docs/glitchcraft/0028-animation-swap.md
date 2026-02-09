@@ -3,7 +3,7 @@ title: "Animation Swap"
 ---
 
 # Animation Swap
-
+***
 ## Overview
 Combine animation sets when zuggle overloaded.
 
@@ -16,8 +16,7 @@ Combine animation sets when zuggle overloaded.
 Allows quick spin attacks with the spear charge animation, and many other combinations.
 
 ## Credit
-
-- Swinginman
+Swinginman
 
 ## Date
 May 17, 2023

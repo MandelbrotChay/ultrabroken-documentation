@@ -3,7 +3,7 @@ title: "Map Flickering"
 ---
 
 # Map Flickering
-
+***
 ## Overview
 EPILEPSY WARNING
 Causes intense screen flickering when you try to edit a pin, or hover over certain ones

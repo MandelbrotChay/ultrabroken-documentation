@@ -3,7 +3,7 @@ title: "Construct Fuse Entanglement"
 ---
 
 # Construct Fuse Entanglement
-
+***
 ## Overview
 Allows equipment to be fuse entangled to captain constructs' weapons. This only works with bows, shields, and weapons.
 
@@ -19,8 +19,7 @@ frames until the item gets fused.
 Is particularly useful for early game or runeless setups, as this FE method does not require the fuse ability itself.
 
 ## Credit
-
-- mulberry
+mulberry
 
 ## Date
 June 30, 2024

@@ -3,7 +3,7 @@ title: "GAS Warping"
 ---
 
 # GAS Warping
-
+***
 ## Overview
 Makes it so the game never updates Link's last valid coordinates for as long as the GAS device is active (a temporary travel medallion).
 
@@ -19,8 +19,7 @@ Autosaves will no longer be made (unless through loading screens), due to the ga
 Does not persist through map changes, or through previous saves that were made before this glitch was performed.
 
 ## Credit
-
-- Flash, pyuk
+Flash, pyuk
 
 ## Date
 June 26, 2023

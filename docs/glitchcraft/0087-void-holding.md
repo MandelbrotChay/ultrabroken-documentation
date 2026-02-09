@@ -3,7 +3,7 @@ title: "Void Holding"
 ---
 
 # Void Holding
-
+***
 ## Overview
 Allows you to hold materials "whenever you want" as long as you are at a low enough Y coordinate
 
@@ -15,8 +15,7 @@ Can cause a weird hold smuggeling state that usually softlocks the game after a 
 Needs more testing
 
 ## Credit
-
-- Lightos_
+Lightos_
 
 ## Date
 June 10, 2023

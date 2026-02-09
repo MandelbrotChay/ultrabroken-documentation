@@ -3,7 +3,7 @@ title: "Slugging"
 ---
 
 # Slugging
-
+***
 ## Overview
 Allows Link to hold an unloaded piece of equipment using a like like. This also causes the item to share a relation with the like like, allowing for many glitches
 
@@ -21,8 +21,7 @@ Have an item fall onto the ground from zuggle overload and have a like like eat 
 Unculling a sluggled item without retrieving it from the like like causes the item to have no collision
 
 ## Credit
-
-- Mozz
+Mozz
 
 ## Date
 June 15, 2023

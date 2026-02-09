@@ -3,7 +3,7 @@ title: "Equipment Smuggle"
 ---
 
 # Equipment Smuggle
-
+***
 ## Overview
 An equipment state where items remain equipped in Link's hands after being removed from the inventory
 
@@ -19,8 +19,7 @@ On 1.1.2+, equipment smuggle force disables the quick menus and prevents the pla
 On 1.2.0 and 1.2.1, equipping an item of the same type as a smuggle causes the smuggle to permanently cull, known as invismuggle. However, specific techniques allow invismuggles to be unculled into regular smuggles.
 
 ## Credit
-
-- sleepyppls, Mozz, mulberry, NaN Gogh
+sleepyppls, Mozz, mulberry, NaN Gogh
 
 ## Date
 June 1, 2023

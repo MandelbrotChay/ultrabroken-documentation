@@ -3,7 +3,7 @@ title: "Like-Like Smuggle Desync (LSD)"
 ---
 
 # Like-Like Smuggle Desync (LSD)
-
+***
 ## Overview
 Allows for desync and consequently, WST via slugging.
 
@@ -15,8 +15,7 @@ Allows for desync and consequently, WST via slugging.
 —
 
 ## Credit
-
-- Mozz
+Mozz
 
 ## Date
 June 15, 2023

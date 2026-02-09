@@ -3,7 +3,7 @@ title: "Unsheathed  (Also known as NX Method)"
 ---
 
 # Unsheathed  (Also known as NX Method)
-
+***
 ## Overview
 Puts the master sword in a visual state where it is outside of it's sheath.
 
@@ -16,8 +16,7 @@ Puts the master sword in a visual state where it is outside of it's sheath.
 Dropped equipment goes zoomy into the sky based on timing.
 
 ## Credit
-
-- NX721, DanielNeia
+NX721, DanielNeia
 
 ## Date
 July 11, 2023

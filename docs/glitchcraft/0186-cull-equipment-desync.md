@@ -3,7 +3,7 @@ title: "Cull Equipment Desync"
 ---
 
 # Cull Equipment Desync
-
+***
 ## Overview
 Allows to have a weapon equipped that is not in the inventory.
 
@@ -19,8 +19,7 @@ Allows to have a weapon equipped that is not in the inventory.
 Arrow Smuggle
 
 ## Credit
-
-- Blize, ock (Cull Arrow Smuggle), Blize
+Blize, ock (Cull Arrow Smuggle), Blize
 
 ## Date
 October 10, 2023

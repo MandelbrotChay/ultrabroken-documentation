@@ -3,7 +3,7 @@ title: "Back-in-Time Art"
 ---
 
 # Back-in-Time Art
-
+***
 ## Overview
 Transfers the picture in Link's House to a previous save. Is also capable of transferring compendium pictures.
 
@@ -28,8 +28,7 @@ Zas
 August 16, 2023
 
 ## Credit
-
-- Picture in Link's house R4000, Compendium pictures Zas
+Picture in Link's house R4000, Compendium pictures Zas
 
 ## Date
 June 18, 2023

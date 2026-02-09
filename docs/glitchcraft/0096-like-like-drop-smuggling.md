@@ -3,7 +3,7 @@ title: "Like-Like Drop Smuggling"
 ---
 
 # Like-Like Drop Smuggling
-
+***
 ## Overview
 Allows for Drop Smuggling via slugging
 
@@ -22,8 +22,7 @@ Method 2 (works 1.0.0-1.2.1):
 The item that gets dropped enters purgatory, making FEWZ more accessible on newer patches
 
 ## Credit
-
-- Mozz, mulberry
+Mozz, mulberry
 
 ## Date
 June 15, 2023

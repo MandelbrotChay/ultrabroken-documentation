@@ -3,7 +3,7 @@ title: "Mineru PSLOT"
 ---
 
 # Mineru PSLOT
-
+***
 ## Overview
 Using Mineru Culling it's possible to send a piece of equipment to culled purgatory portably, allowing for PSLOT
 
@@ -25,8 +25,7 @@ Versions 1.0-1.1.2 have a slightly easier setup, they can use another zuggle met
 —
 
 ## Credit
-
-- Discovered by mulberry, setup by Armindo, Emiya
+Discovered by mulberry, setup by Armindo, Emiya
 
 ## Date
 July 27, 2024

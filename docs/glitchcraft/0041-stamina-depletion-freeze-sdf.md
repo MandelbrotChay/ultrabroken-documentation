@@ -3,7 +3,7 @@ title: "Stamina Depletion Freeze (SDF)"
 ---
 
 # Stamina Depletion Freeze (SDF)
-
+***
 ## Overview
 Certain actions can cause the stamina depletion to glitch out.
 
@@ -19,8 +19,7 @@ Letting go of B or stopping running cancels it
 —
 
 ## Credit
-
-- Lightos_
+Lightos_
 
 ## Date
 May 20, 2023

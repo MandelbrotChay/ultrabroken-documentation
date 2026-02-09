@@ -3,7 +3,7 @@ title: "Food Ability Buff Swap (FABS)"
 ---
 
 # Food Ability Buff Swap (FABS)
-
+***
 ## Overview
 Allows you to get roasted food (stackable) with a food effect
 
@@ -28,8 +28,7 @@ These are all the places you can obtain cooked food to perform with FABS:
 - 1 from completing the beginner's course of the Lurelin Water Rally race (South of East Necluda, at Lurelin Village)
 
 ## Credit
-
-- fabs
+fabs
 
 ## Date
 May 16, 2023

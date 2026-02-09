@@ -3,7 +3,7 @@ title: "Zuggle"
 ---
 
 # Zuggle
-
+***
 ## Overview
 Read the zuggle document for more info! 
 Zuggling allows you to stack weapons to get more attack power by cloning equiment onto Link, adding hitboxes on top of each other. The technical explanation is that an item desync occurs when an item is prevented from being dropped by another item, but not the world. Your menu thinks it cannot be dropped and keeps it in your inventory, but the world does think it can be dropped so it does. As a result, your equipped weapon (the one that should have been dropped) stays in Link's hand.
@@ -25,8 +25,7 @@ Zuggled equipment persists through file loads and map changes, making it very us
 zuggle discussion in the zuggle- thread on the discord please
 
 ## Credit
-
-- Zvleon
+Zvleon
 
 ## Date
 May 16, 2023

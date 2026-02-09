@@ -3,7 +3,7 @@ title: "Double Tulin Boost"
 ---
 
 # Double Tulin Boost
-
+***
 ## Overview
 Allows you to get more speed with tulin than just normal tulin (isnt' as effective as tulin pumping)
 

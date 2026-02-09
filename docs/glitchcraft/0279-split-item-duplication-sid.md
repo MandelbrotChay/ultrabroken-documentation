@@ -3,7 +3,7 @@ title: "Split Item Duplication (SID)"
 ---
 
 # Split Item Duplication (SID)
-
+***
 ## Overview
 Allows you to dupe materials through Stack Splitting
 
@@ -19,8 +19,7 @@ Allows you to dupe materials through Stack Splitting
 —
 
 ## Credit
-
-- Telkic, mulberry, Winnerboi77
+Telkic, mulberry, Winnerboi77
 
 ## Date
 June 19, 2025

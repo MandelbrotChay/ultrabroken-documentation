@@ -3,7 +3,7 @@ title: "Cull Smuggle"
 ---
 
 # Cull Smuggle
-
+***
 ## Overview
 Allows any equipment that can be fuse entangled to be smuggled using margin culling.
 
@@ -18,8 +18,7 @@ Cull smuggling equipment with another equipment of the same type zuggled causes 
 On 1.2.0 and 1.2.1, dropping culled equipment results in the item unculling and dropping normally. To counteract this, you must drop the equipment exactly 5 frames before it unloads (discovered by ROBUXY2ND and ock)
 
 ## Credit
-
-- Mozz
+Mozz
 
 ## Date
 June 27, 2023

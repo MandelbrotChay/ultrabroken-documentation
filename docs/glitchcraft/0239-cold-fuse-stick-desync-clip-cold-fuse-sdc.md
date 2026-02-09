@@ -3,7 +3,7 @@ title: "Cold Fuse Stick Desync Clip (Cold Fuse SDC)"
 ---
 
 # Cold Fuse Stick Desync Clip (Cold Fuse SDC)
-
+***
 ## Overview
 An easier way to perform stick desync clip using cold fuse that allows for an almost immediate dismount, making it useful for stick desync without clipping
 
@@ -20,8 +20,7 @@ An easier way to perform stick desync clip using cold fuse that allows for an al
 —
 
 ## Credit
-
-- mulberry, KiloVictor
+mulberry, KiloVictor
 
 ## Date
 June 4, 2024

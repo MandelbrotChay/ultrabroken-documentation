@@ -3,7 +3,7 @@ title: "Overload Drop Smuggling"
 ---
 
 # Overload Drop Smuggling
-
+***
 ## Overview
 Allows you to drop smuggle via overload
 
@@ -19,8 +19,7 @@ Credit to BigDUCCO for setup!
 May 12, 2023 & June 12, 2023
 
 ## Credit
-
-- ChargeVolt, Windocks
+ChargeVolt, Windocks
 
 ## Date
 June 12, 2023

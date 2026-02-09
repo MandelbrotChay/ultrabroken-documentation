@@ -3,7 +3,7 @@ title: "Hold Storage"
 ---
 
 # Hold Storage
-
+***
 ## Overview
 Allows Link to remain in a object holding state when not normally possible, as well as desync the hold state.
 
@@ -18,8 +18,7 @@ Unless Link is put into a specific state while the held items are disconnected (
 Also possible by culling Link.
 
 ## Credit
-
-- Ryan?, NaN Gogh, Mozz
+Ryan?, NaN Gogh, Mozz
 
 ## Date
 July 2, 2023

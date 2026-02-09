@@ -3,7 +3,7 @@ title: "Zapshield"
 ---
 
 # Zapshield
-
+***
 ## Overview
 Fuse entangling a shock emitter to two shields and permaculling one of its FE bases results in a permanently electrified shield which makes applications involving shock more portable
 
@@ -23,8 +23,7 @@ Zuggling the zapshield allows it to persist through loads.
 While zapshield itself can be created on all versions, it's applications are version dependent. Check the spreadsheet entry for a respective application to see which versions it works on.
 
 ## Credit
-
-- Aergyl
+Aergyl
 
 ## Date
 September 16, 2024

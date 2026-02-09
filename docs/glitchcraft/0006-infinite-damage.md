@@ -3,7 +3,7 @@ title: "Infinite Damage"
 ---
 
 # Infinite Damage
-
+***
 ## Overview
 Damage repeats infinitely during spin attack.
 
@@ -14,8 +14,7 @@ Mid-charge of a spin with a two-handed weapon, obtain a new item at the exact mo
 Todo: Replicate in TotK, test in BotW.
 
 ## Credit
-
-- [GamSla341](https://www.youtube.com/@gamsla3413)
+[GamSla341](https://www.youtube.com/@gamsla3413)
 
 ## Date
 May 13, 2023

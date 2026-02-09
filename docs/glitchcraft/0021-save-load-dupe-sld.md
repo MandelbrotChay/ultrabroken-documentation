@@ -3,7 +3,7 @@ title: "Save Load Dupe (SLD)"
 ---
 
 # Save Load Dupe (SLD)
-
+***
 ## Overview
 Allows easy duplication of your weapons, bows, and shields
 
@@ -25,8 +25,7 @@ Update to include the easier, old, drop swap drop method.
 Requires Portable culling to be performed on 1.2.0/1.2.1
 
 ## Credit
-
-- ZombieBoy225, ness, ElDuende
+ZombieBoy225, ness, ElDuende
 
 ## Date
 May 16, 2023

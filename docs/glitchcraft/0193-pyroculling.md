@@ -3,7 +3,7 @@ title: "Pyroculling"
 ---
 
 # Pyroculling
-
+***
 ## Overview
 The fire from a fire emitter prevents objects in a cull area from culling until the game is paused (also works with ice emitters)
 
@@ -14,8 +14,7 @@ Place the object(s) in a culling area, then activate a fire emitter and place it
 —
 
 ## Credit
-
-- Robuxy2nd
+Robuxy2nd
 
 ## Date
 November 17, 2023

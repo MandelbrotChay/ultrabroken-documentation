@@ -3,7 +3,7 @@ title: "Floorping"
 ---
 
 # Floorping
-
+***
 ## Overview
 When reloading a save, force Link to warp vertically on a floor he wasn't on previously.
 
@@ -14,8 +14,7 @@ Have Link on the VERY edge of a platform and save. For best results, have the pl
 Test on more versions
 
 ## Credit
-
-- koreth
+koreth
 
 ## Date
 January 2, 2024

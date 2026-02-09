@@ -3,7 +3,7 @@ title: "Cull Storage Zuggle (CSZ)"
 ---
 
 # Cull Storage Zuggle (CSZ)
-
+***
 ## Overview
 Uses cull storage to temporarily bypass the equipment swap and drop restrictions on newer versions, allowing for weapons to be zuggled easily on v1.1.2
 
@@ -28,8 +28,7 @@ Results in invizuggle when performed on v1.2.0-1.2.1
 - Instead of using hoverstones, it is possible to zuggle by dropping the equipped shield while Link is facing a wall and then quickly turning his back to the wall just before the ability wheel opens
 
 ## Credit
-
-- mulberry, Blackmars
+mulberry, Blackmars
 
 ## Date
 July 18, 2024

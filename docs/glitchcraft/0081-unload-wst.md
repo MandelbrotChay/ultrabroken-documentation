@@ -3,7 +3,7 @@ title: "Unload WST"
 ---
 
 # Unload WST
-
+***
 ## Overview
 Allows you to transfer modifiers and materials to any weapon. This method is unique as it allows for the modifiers to be tranfered to the master sword as well.
 
@@ -19,8 +19,7 @@ Allows you to transfer modifiers and materials to any weapon. This method is uni
 —
 
 ## Credit
-
-- BigDUCCO,  Vee.Might.Exist, syb
+BigDUCCO,  Vee.Might.Exist, syb
 
 ## Date
 June 7, 2023

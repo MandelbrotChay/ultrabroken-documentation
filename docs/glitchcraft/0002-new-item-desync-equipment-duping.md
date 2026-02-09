@@ -3,7 +3,7 @@ title: "New Item Desync (equipment duping)"
 ---
 
 # New Item Desync (equipment duping)
-
+***
 ## Overview
 Desyncs equipment after sorting a new item pickup, allowing for single use duplication, durability transfer, and transfering fused items.
 
@@ -18,8 +18,7 @@ In addition to desyncing your inventory, it will also transfer any fused objects
 Can only be done with new items once. Must meet sorting requirements listed under “Instructions”.
 
 ## Credit
-
-- [Modoki_returns](https://twitter.com/Modoki_returns)
+[Modoki_returns](https://twitter.com/Modoki_returns)
 
 ## Date
 May 12, 2023

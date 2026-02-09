@@ -3,7 +3,7 @@ title: "LikeLike Stick Smuggling"
 ---
 
 # LikeLike Stick Smuggling
-
+***
 ## Overview
 Allows you to cull Link via a LikeLike in a culling area. Can be used for Equipment Transmutation, Fuse Entanglement, WST, Drop Smuggle.
 

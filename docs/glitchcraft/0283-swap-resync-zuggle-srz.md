@@ -3,7 +3,7 @@ title: "Swap Resync Zuggle (SRZ)"
 ---
 
 # Swap Resync Zuggle (SRZ)
-
+***
 ## Overview
 Using Swap Resync, it's possible to zuggle anywhere simply using portacull equipment.
 
@@ -35,8 +35,7 @@ There is a different setup for zuggling portacull equipment:
 —
 
 ## Credit
-
-- mulberry, MandelbrotChaylay
+mulberry, MandelbrotChaylay
 
 ## Date
 August 11, 2025

@@ -3,7 +3,7 @@ title: "Mulberry's Out of Body Experience (Moobe)"
 ---
 
 # Mulberry's Out of Body Experience (Moobe)
-
+***
 ## Overview
 (Temporarily) Warps Link to a previous climbing position from anywhere in the world, only while the game is paused.
 
@@ -16,8 +16,7 @@ title: "Mulberry's Out of Body Experience (Moobe)"
 (Presumably) Causes the game to believe Link is in two positions at the same time, resulting in unloading of the area around the player, while still in said area.
 
 ## Credit
-
-- mulberry
+mulberry
 
 ## Date
 January 6, 2024

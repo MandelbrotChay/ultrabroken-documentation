@@ -3,7 +3,7 @@ title: "Capsule Cel Shader Removal"
 ---
 
 # Capsule Cel Shader Removal
-
+***
 ## Overview
 Enables the inside of capsules to remove the cel shader and other shaders
 
@@ -17,8 +17,7 @@ One white layer
 And one black layer that shows the base model
 
 ## Credit
-
-- NX721
+NX721
 
 ## Date
 December 4, 2023

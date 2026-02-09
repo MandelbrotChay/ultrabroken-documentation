@@ -3,7 +3,7 @@ title: "Item Save Load Transfer (ISLT)"
 ---
 
 # Item Save Load Transfer (ISLT)
-
+***
 ## Overview
 Allows transferring held items through saves.
 
@@ -16,8 +16,7 @@ Allows transferring held items through saves.
 Fairies on GSI
 
 ## Credit
-
-- Luckstyle
+Luckstyle
 
 ## Date
 December 22, 2023

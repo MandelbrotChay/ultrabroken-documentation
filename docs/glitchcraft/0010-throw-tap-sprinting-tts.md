@@ -3,7 +3,7 @@ title: "Throw Tap Sprinting (TTS)"
 ---
 
 # Throw Tap Sprinting (TTS)
-
+***
 ## Overview
 —
 
@@ -14,8 +14,7 @@ tap B - R - B, repeat
 Currently infinite
 
 ## Credit
-
-- Deystroyer, Tauktes
+Deystroyer, Tauktes
 
 ## Date
 May 14, 2023

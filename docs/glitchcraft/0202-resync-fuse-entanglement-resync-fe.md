@@ -3,7 +3,7 @@ title: "Resync Fuse Entanglement (Resync FE)"
 ---
 
 # Resync Fuse Entanglement (Resync FE)
-
+***
 ## Overview
 "Fe'ing" with a drop swap drop and then pausing to mess with the fuse prevents a full fuse and causes FE
 
@@ -43,8 +43,7 @@ This method uses recall for a makeshift wall:
 —
 
 ## Credit
-
-- Zas
+Zas
 
 ## Date
 December 18, 2023

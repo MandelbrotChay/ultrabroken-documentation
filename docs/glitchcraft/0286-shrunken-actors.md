@@ -3,7 +3,7 @@ title: "Shrunken Actors"
 ---
 
 # Shrunken Actors
-
+***
 ## Overview
 Permanently shrink any ultrahandable object (ultrabroken method)
 
@@ -14,8 +14,7 @@ Discord
 Possible on 1.2.0+ with a different method
 
 ## Credit
-
-- mulberry
+mulberry
 
 ## Date
 October 26, 2025

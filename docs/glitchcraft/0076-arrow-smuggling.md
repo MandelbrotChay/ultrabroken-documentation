@@ -3,7 +3,7 @@ title: "Arrow Smuggling"
 ---
 
 # Arrow Smuggling
-
+***
 ## Overview
 A type of equipment smuggle that makes Link hold an arrow without pulling out his bow.
 
@@ -23,8 +23,7 @@ To do:
 Update this entry
 
 ## Credit
-
-- Mozz
+Mozz
 
 ## Date
 June 4, 2023

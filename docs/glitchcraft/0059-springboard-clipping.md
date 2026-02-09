@@ -3,7 +3,7 @@ title: "Springboard Clipping"
 ---
 
 # Springboard Clipping
-
+***
 ## Overview
 Allows link to clip through the floor while springboarding under a low ceiling.
 
@@ -14,8 +14,7 @@ Allows link to clip through the floor while springboarding under a low ceiling.
 —
 
 ## Credit
-
-- ab2x3z
+ab2x3z
 
 ## Date
 May 27, 2023

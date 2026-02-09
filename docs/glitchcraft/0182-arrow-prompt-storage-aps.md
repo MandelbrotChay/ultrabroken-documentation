@@ -3,7 +3,7 @@ title: "Arrow Prompt Storage (APS)"
 ---
 
 # Arrow Prompt Storage (APS)
-
+***
 ## Overview
 Allows storage of the arrow prompt and can be given multiple times via an enemy shooting their unloaded arrow.
 
@@ -18,8 +18,7 @@ Allows storage of the arrow prompt and can be given multiple times via an enemy 
 —
 
 ## Credit
-
-- Ryan?, NghtmaR3
+Ryan?, NghtmaR3
 
 ## Date
 October 4, 2023

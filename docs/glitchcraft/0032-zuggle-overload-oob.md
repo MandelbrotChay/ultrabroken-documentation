@@ -3,7 +3,7 @@ title: "Zuggle Overload OOB"
 ---
 
 # Zuggle Overload OOB
-
+***
 ## Overview
 Allows you to clip OOB using zuggle overload
 
@@ -16,8 +16,7 @@ Allows you to clip OOB using zuggle overload
 —
 
 ## Credit
-
-- AngryEgg
+AngryEgg
 
 ## Date
 May 18, 2023

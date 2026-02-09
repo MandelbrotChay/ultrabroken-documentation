@@ -3,7 +3,7 @@ title: "Awakened Master Sword (AMS)"
 ---
 
 # Awakened Master Sword (AMS)
-
+***
 ## Overview
 You can use gas to leave a minigame and wrong warp into the phantom ganon fight, which makes it possible to escape the fight. 
 The result is that you get to play the game with a special flag that causes the master sword to be unbreakable and do 30 extra damage.
@@ -20,8 +20,7 @@ After a game close and reopen, you will respawn at the phantom ganon fight, just
 Requires the crisis at Hyrule castle quest to be unfinished
 
 ## Credit
-
-- tahatanogame
+tahatanogame
 
 ## Date
 September 4, 2023

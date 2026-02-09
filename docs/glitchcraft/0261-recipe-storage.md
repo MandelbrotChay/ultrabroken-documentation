@@ -3,7 +3,7 @@ title: "Recipe Storage"
 ---
 
 # Recipe Storage
-
+***
 ## Overview
 Delaying the recipe menu by a few frames allow for some holding shenanigans
 
@@ -35,8 +35,7 @@ Recipe Hold Storage:
 —
 
 ## Credit
-
-- mulberry (1.0 method), ock (original discovery with Ocklusion)
+mulberry (1.0 method), ock (original discovery with Ocklusion)
 
 ## Date
 September 14th, 2024 (Ocklusion method) November 10th, 2024 (1.0 method)

@@ -3,7 +3,7 @@ title: "Lag Machines"
 ---
 
 # Lag Machines
-
+***
 ## Overview
 Filling up small areas with many objects causes a lot of lag and strange effects
 
@@ -18,8 +18,7 @@ one method to perform this glitch would be:
 Still being researched
 
 ## Credit
-
-- Mozz
+Mozz
 
 ## Date
 October 5, 2023

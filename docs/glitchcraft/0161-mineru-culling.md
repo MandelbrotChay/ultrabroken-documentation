@@ -3,7 +3,7 @@ title: "Mineru Culling"
 ---
 
 # Mineru Culling
-
+***
 ## Overview
 Allows for Link's model to be operated from Mineru, by unloading Mineru, Link can be culled at will.
 
@@ -20,8 +20,7 @@ If you mount a Steering Stick, the invincibilty will be disabled, but the cull w
 Before being culled you can perform an action, culling it will pause it and then unculling will resume it.
 
 ## Credit
-
-- Lightos_
+Lightos_
 
 ## Date
 July 31, 2023

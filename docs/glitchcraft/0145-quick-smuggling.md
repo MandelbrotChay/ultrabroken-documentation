@@ -3,7 +3,7 @@ title: "Quick Smuggling"
 ---
 
 # Quick Smuggling
-
+***
 ## Overview
 Allows for easy and quick smuggling of any equipment, including arrow smuggle.
 
@@ -17,8 +17,7 @@ Allows for easy and quick smuggling of any equipment, including arrow smuggle.
 Allows for infinite springboarding if you quick smuggle with a spring shield. The same also works with bombs.
 
 ## Credit
-
-- Suishi
+Suishi
 
 ## Date
 July 10, 2023

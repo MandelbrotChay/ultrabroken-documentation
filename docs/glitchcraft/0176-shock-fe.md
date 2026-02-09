@@ -3,7 +3,7 @@ title: "Shock FE"
 ---
 
 # Shock FE
-
+***
 ## Overview
 Interrupting a fuse to a zuggled item causes FE
 
@@ -18,8 +18,7 @@ The zuggled item will have it FE'd to it
 performing this twice with the same smuggle and fuse will pseudo fuse it to the other equipment
 
 ## Credit
-
-- Zas
+Zas
 
 ## Date
 September 12, 2023

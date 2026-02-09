@@ -3,7 +3,7 @@ title: "Travel Medallion storage (TMS)"
 ---
 
 # Travel Medallion storage (TMS)
-
+***
 ## Overview
 Places the travel medallion at links feet after loading a file.
 
@@ -19,8 +19,7 @@ Places the travel medallion at links feet after loading a file.
 —
 
 ## Credit
-
-- kirigaya
+kirigaya
 
 ## Date
 June 16, 2023

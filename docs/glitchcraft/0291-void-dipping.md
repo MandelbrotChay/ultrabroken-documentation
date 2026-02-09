@@ -3,7 +3,7 @@ title: "Void Dipping"
 ---
 
 # Void Dipping
-
+***
 ## Overview
 An extremely powerful equipment state caused by interrupting and retrieving an equipment item that has been destroyed by the void.
 
@@ -30,8 +30,7 @@ Void dipped equipment have the following properties:
 - Culling-related dipping methods are also possible with phase culling
 
 ## Credit
-
-- Squidwest, mulberry, Aergyl
+Squidwest, mulberry, Aergyl
 
 ## Date
 December 29, 2025

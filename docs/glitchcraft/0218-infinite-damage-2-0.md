@@ -3,7 +3,7 @@ title: "Infinite Damage 2.0"
 ---
 
 # Infinite Damage 2.0
-
+***
 ## Overview
 Use new prompt to do infinite damage without using durability.
 
@@ -16,8 +16,7 @@ Use new prompt to do infinite damage without using durability.
 Can use 1 time use fuse material infinitely.
 
 ## Credit
-
-- NghtmaR3
+NghtmaR3
 
 ## Date
 January 21, 2024

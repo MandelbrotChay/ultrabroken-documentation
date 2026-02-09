@@ -3,7 +3,7 @@ title: "Detanglement"
 ---
 
 # Detanglement
-
+***
 ## Overview
 Using a rocket shield disconnects fuse-entangled objects from their source equipment without destroying the object.
 
@@ -17,8 +17,7 @@ Fuse entangling a detangled object and dropping the shield will delete it.
 Objects fuse entangled to Mineru can be detangled by fusing another object over the same slot as the target object.
 
 ## Credit
-
-- Zas
+Zas
 
 ## Date
 September 9, 2023

@@ -3,7 +3,7 @@ title: "Master Sword Liberation"
 ---
 
 # Master Sword Liberation
-
+***
 ## Overview
 Allows you to dupe the master sword/decayed master sword
 
@@ -53,8 +53,7 @@ Nov 27, 2023 &
 Dec 2, 2023
 
 ## Credit
-
-- ock, Mulbery
+ock, Mulbery
 
 ## Date
 November 11, 2023

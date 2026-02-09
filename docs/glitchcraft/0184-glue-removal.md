@@ -3,7 +3,7 @@ title: "Glue Removal"
 ---
 
 # Glue Removal
-
+***
 ## Overview
 lets you break apart things that have been ultrahanded together
 
@@ -18,8 +18,7 @@ lets you break apart things that have been ultrahanded together
 Doesn't work with every object
 
 ## Credit
-
-- R4000
+R4000
 
 ## Date
 October 5, 2023

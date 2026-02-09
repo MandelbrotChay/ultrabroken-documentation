@@ -3,7 +3,7 @@ title: "Like-Like FSFE"
 ---
 
 # Like-Like FSFE
-
+***
 ## Overview
 A method of Fuse Storage Fuse Entanglement.
 
@@ -18,8 +18,7 @@ Fuse Entanglement
 For performing this on 1.2.1, you will need to have your target item auto FE'd to a shield or weapon, and feed the like-like the FE parent instead of the target item
 
 ## Credit
-
-- Ryan?, Mozz
+Ryan?, Mozz
 
 ## Date
 June 18, 2023

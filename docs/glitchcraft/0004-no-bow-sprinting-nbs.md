@@ -3,19 +3,18 @@ title: "No Bow Sprinting (NBS)"
 ---
 
 # No Bow Sprinting (NBS)
-
+***
 ## Overview
 —
 
 ## Instructions
-unequip bow, hold ZL, and mash R, ZR, and B
+Unequip bow, hold ZL, and mash R, ZR, and B
 
 ## Notes
 —
 
 ## Credit
-
-- Steel
+Steel
 
 ## Date
 May 12, 2023

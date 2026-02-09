@@ -3,7 +3,7 @@ title: "MNF Fusing"
 ---
 
 # MNF Fusing
-
+***
 ## Overview
 Allows you to fuse to the MNF
 
@@ -18,8 +18,7 @@ Allows you to fuse to the MNF
 —
 
 ## Credit
-
-- LegendofLinkk
+LegendofLinkk
 
 ## Date
 June 5, 2023

@@ -3,7 +3,7 @@ title: "Cull Fuse Entanglement (Cull FE)"
 ---
 
 # Cull Fuse Entanglement (Cull FE)
-
+***
 ## Overview
 Allows you to Fuse Entangle objects by culling Link the same frame the fuse is applied.
 
@@ -25,8 +25,7 @@ September 21, 2023 (Original)
 October 10, 2023 (Ock)
 
 ## Credit
-
-- ultrababouin, susannediazz (original), Ock, SteFen45 (Recall FE method)
+ultrababouin, susannediazz (original), Ock, SteFen45 (Recall FE method)
 
 ## Date
 September 21, 2023

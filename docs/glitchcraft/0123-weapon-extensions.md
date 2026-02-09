@@ -3,7 +3,7 @@ title: "Weapon Extensions"
 ---
 
 # Weapon Extensions
-
+***
 ## Overview
 Allows the weapon to hit other entites from further away (excluding 2H weapons).
 
@@ -21,8 +21,7 @@ Has yet to be seen if this can work on 2H weapons. Also works on fused 1H/Spear 
 June 20, 2023 & June 23, 2023
 
 ## Credit
-
-- Deltenic, Flash, Zas
+Deltenic, Flash, Zas
 
 ## Date
 June 20, 2023

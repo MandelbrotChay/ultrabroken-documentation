@@ -3,7 +3,7 @@ title: "Swap Resync"
 ---
 
 # Swap Resync
-
+***
 ## Overview
 Swapping any piece of equipment/armor attempts to sync any swaps that may have failed to register. The main use of this is to properly register swaps while Link is culled, allowing for various easier setups.
 
@@ -27,8 +27,7 @@ the portacull.
 Swap Resync Zuggle: see next row
 
 ## Credit
-
-- MandelbrotChaylay
+MandelbrotChaylay
 
 ## Date
 August 10, 2025

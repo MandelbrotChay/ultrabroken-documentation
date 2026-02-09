@@ -3,7 +3,7 @@ title: "Recall Drop Stacking"
 ---
 
 # Recall Drop Stacking
-
+***
 ## Overview
 Dropping many zonai devices in recall causes intense frame drops
 
@@ -19,8 +19,7 @@ The amount of lag generated is heavily dependent on the zonai device being dropp
 Can be done on 1.2.0+ with materials only
 
 ## Credit
-
-- Telkic, mulberry
+Telkic, mulberry
 
 ## Date
 January 4, 2025

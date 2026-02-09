@@ -3,7 +3,7 @@ title: "Infinite Bubbul Frog Gems"
 ---
 
 # Infinite Bubbul Frog Gems
-
+***
 ## Overview
 Allows you to get infinite bubbul gems
 

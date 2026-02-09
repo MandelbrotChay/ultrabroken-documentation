@@ -3,7 +3,7 @@ title: "Weapon Stand Dynamic Zuggle"
 ---
 
 # Weapon Stand Dynamic Zuggle
-
+***
 ## Overview
 Weapon stands force equip with a little delay on 1.0, making it possible to dynamic zuggle with them
 
@@ -17,8 +17,7 @@ The dynamic smuggle should go at your feet, equip it, swap to something else, an
 Although this was found 2 days before dynamic zuggle steps were recovered, it was not found to be a dsmuggle before a bit afterwards
 
 ## Credit
-
-- Winnerboi77
+Winnerboi77
 
 ## Date
 March 14, 2024

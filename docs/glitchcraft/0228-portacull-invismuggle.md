@@ -3,7 +3,7 @@ title: "Portacull Invismuggle"
 ---
 
 # Portacull Invismuggle
-
+***
 ## Overview
 Using portable culling equipment it's possible to get a culled smuggle (invismuggle).
 
@@ -21,8 +21,7 @@ Performing Invismuggle while having a (drop) zuggle sends the equipment to culle
 —
 
 ## Credit
-
-- mulberry
+mulberry
 
 ## Date
 February 29, 2024

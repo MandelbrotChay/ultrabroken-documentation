@@ -3,7 +3,7 @@ title: "Octo-balloon Detanglement"
 ---
 
 # Octo-balloon Detanglement
-
+***
 ## Overview
 Allows for easy detanglement of any shield using octoballoons
 
@@ -16,8 +16,7 @@ Allows for easy detanglement of any shield using octoballoons
 —
 
 ## Credit
-
-- mulberry
+mulberry
 
 ## Date
 November 16, 2025

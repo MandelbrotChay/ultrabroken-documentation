@@ -3,7 +3,7 @@ title: "Prologue Escape"
 ---
 
 # Prologue Escape
-
+***
 ## Overview
 Using Banc Storage, it's possible to get Link out of the prologue, allowing for a lot of side effects.
 
@@ -31,8 +31,7 @@ Now, perform Banc Storage, and load this save. You now have access to the AMS, w
 This glitch also allows for a setup to have infinite durability on any weapon, however due to its complexity this entry will not cover the steps. Feel free to ask glitch hunters in the speedrunning Discord about it.
 
 ## Credit
-
-- mulberry, Aergyl, Lightos, LegendOfLinkk (initial discovery with memory editing)The entire glitch hunting community!
+mulberry, Aergyl, Lightos, LegendOfLinkk (initial discovery with memory editing)The entire glitch hunting community!
 
 ## Date
 October 1st, 2024

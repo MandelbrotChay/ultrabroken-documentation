@@ -3,7 +3,7 @@ title: "Equipped Throken"
 ---
 
 # Equipped Throken
-
+***
 ## Overview
 Allows throken weapons to be equipped
 
@@ -26,8 +26,7 @@ For 1.0.0-1.2.1:
 Having a like like steal the throken weapon from Link allows it to be picked up once again
 
 ## Credit
-
-- Aergyl, mulberry
+Aergyl, mulberry
 
 ## Date
 May 20, 2025

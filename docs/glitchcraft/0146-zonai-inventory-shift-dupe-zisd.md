@@ -3,7 +3,7 @@ title: "Zonai Inventory Shift Dupe (ZISD)"
 ---
 
 # Zonai Inventory Shift Dupe (ZISD)
-
+***
 ## Overview
 Uses Memory Buffering and MTD to duplicate Zonai Devices
 
@@ -23,8 +23,7 @@ Steps:
 —
 
 ## Credit
-
-- Ryan?, Quantim
+Ryan?, Quantim
 
 ## Date
 July 10, 2023

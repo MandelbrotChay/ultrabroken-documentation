@@ -3,7 +3,7 @@ title: "Quick Drop Smuggle (QDS)"
 ---
 
 # Quick Drop Smuggle (QDS)
-
+***
 ## Overview
 Dropping and equipping weapons in a specific way causes drop smuggle.
 
@@ -39,8 +39,7 @@ Mulberries drop input cheat sheet:
 Discord
 
 ## Credit
-
-- Zas, mulberry, Aeolian
+Zas, mulberry, Aeolian
 
 ## Date
 March 16, 2024

@@ -3,7 +3,7 @@ title: "Like-Like Culling"
 ---
 
 # Like-Like Culling
-
+***
 ## Overview
 A method for object culling
 
@@ -15,8 +15,7 @@ A method for object culling
 —
 
 ## Credit
-
-- Mozz
+Mozz
 
 ## Date
 June 13, 2023

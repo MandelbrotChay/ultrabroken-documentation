@@ -3,7 +3,7 @@ title: "Fuse Entanglement"
 ---
 
 # Fuse Entanglement
-
+***
 ## Overview
 Allows your shield to have an effect on an object as though it is fused to the shield, despite the object existing in the world and not being tethered to your shield.
 
@@ -40,8 +40,7 @@ Throw method
 Recall a thrown object (needs to by thrown by an enemy), then fuse it
 
 ## Credit
-
-- Physioninja
+Physioninja
 
 ## Date
 May 24, 2023

@@ -3,7 +3,7 @@ title: "Hold Storage Duplication (Also known as Minus Dupe)"
 ---
 
 # Hold Storage Duplication (Also known as Minus Dupe)
-
+***
 ## Overview
 Allows you to dupe items via hold storage.
 
@@ -17,8 +17,7 @@ Allows you to dupe items via hold storage.
 —
 
 ## Credit
-
-- NaN Gogh, Mozz
+NaN Gogh, Mozz
 
 ## Date
 July 3, 2023

@@ -3,7 +3,7 @@ title: "Unload Duping"
 ---
 
 # Unload Duping
-
+***
 ## Overview
 By firing arrows between load triggers, items fused to the arrows get dropped. Allowing you to dupe items with multi-shot bows.
 
@@ -18,8 +18,7 @@ If done properly, the arrows should unload, but the materials you fired will sta
 This also works in any other chasm in which you have enough room to shoot your arrows and unload them too.
 
 ## Credit
-
-- 魔法本就不科学 (magic is not science), 千年茶饼 (Thousand Year Tea)
+魔法本就不科学 (magic is not science), 千年茶饼 (Thousand Year Tea)
 
 ## Date
 May 31, 2023

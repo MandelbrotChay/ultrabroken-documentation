@@ -3,7 +3,7 @@ title: "Double Unfuse Duplicashen (DUD)"
 ---
 
 # Double Unfuse Duplicashen (DUD)
-
+***
 ## Overview
 allows you to duplicate any material that can be fused to an arrow
 
@@ -21,8 +21,7 @@ Required: 2 bows, 1 arrow, material to dupe, melee weapon
 Stops working if cooked meals page is full
 
 ## Credit
-
-- Li Shen (鯉神)
+Li Shen (鯉神)
 
 ## Date
 May 15, 2023

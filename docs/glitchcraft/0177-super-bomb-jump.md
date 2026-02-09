@@ -3,7 +3,7 @@ title: "Super Bomb Jump"
 ---
 
 # Super Bomb Jump
-
+***
 ## Overview
 Jumping on a specific frame allows you to get a much higher bomb jump than usual
 
@@ -25,8 +25,7 @@ Method 2 in 1.0.0 will allow you to reuse your bomb flower infinitely, but also 
 —
 
 ## Credit
-
-- ferruscube, Aergyl
+ferruscube, Aergyl
 
 ## Date
 September 14, 2023

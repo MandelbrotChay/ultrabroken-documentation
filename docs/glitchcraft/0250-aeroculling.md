@@ -3,7 +3,7 @@ title: "Aeroculling"
 ---
 
 # Aeroculling
-
+***
 ## Overview
 Putting a perma-culled fan equipment's wind in a culling area prevents objects in it from getting culled, except if Link stands on most objects (including Zonai devices).
 
@@ -32,8 +32,7 @@ Once AC is set up, in order to Physical AC, put a SDC in the wind and the base o
 —
 
 ## Credit
-
-- Discovered by Aergyl, developed by Aergyl, mulberry
+Discovered by Aergyl, developed by Aergyl, mulberry
 
 ## Date
 August 11, 2024

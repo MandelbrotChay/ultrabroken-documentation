@@ -3,7 +3,7 @@ title: "Zonai Storage"
 ---
 
 # Zonai Storage
-
+***
 ## Overview
 Allows Zonai devices to be stored and taken into shrines
 
@@ -17,8 +17,7 @@ If you enter a shrine you may chose 1 to 10 zonai devices to spawn
 Activating zonai storage, dying and opening the inventory may crash the game
 
 ## Credit
-
-- bebu0815
+bebu0815
 
 ## Date
 August 13, 2023

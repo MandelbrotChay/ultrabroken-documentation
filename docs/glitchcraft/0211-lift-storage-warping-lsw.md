@@ -3,7 +3,7 @@ title: "Lift Storage Warping (LSW)"
 ---
 
 # Lift Storage Warping (LSW)
-
+***
 ## Overview
 Culling link while holding a zlot'ed item puts link into a wrong warp state. After loading a file, he will get placed between his position before the file load and the position from the file loaded. Loading the same file again won't change his position though.
 Using detanglement makes this wrong warp state permanent.
@@ -19,8 +19,7 @@ Using detanglement makes this wrong warp state permanent.
 Test with like like stick culling
 
 ## Credit
-
-- mulberry
+mulberry
 
 ## Date
 January 8, 2024

@@ -3,7 +3,7 @@ title: "Lift Smuggle"
 ---
 
 # Lift Smuggle
-
+***
 ## Overview
 By picking up an item like a battery while a specific cutscene (e.g. korok) is playing, you can get into a state similar to lift smuggeling (botw glitch).
 
@@ -17,8 +17,7 @@ Pressing Zr during a specific time frame also allows the bow to be held. This wo
 https://discord.com/channels/1086729144307564648/1105598687167664239/1203350214304600084 (Lightos_)
 
 ## Credit
-
-- Blackmars
+Blackmars
 
 ## Date
 February 3, 2024

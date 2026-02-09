@@ -3,7 +3,7 @@ title: "Fuse Storage Fuse Entanglement (FSFE)"
 ---
 
 # Fuse Storage Fuse Entanglement (FSFE)
-
+***
 ## Overview
 Unique methods of achieving Fuse Entanglement through Fuse Storage.
 
@@ -15,8 +15,7 @@ Culling Area FSFE
 Fuse Entanglement
 
 ## Credit
-
-- Ryan?, Mozz
+Ryan?, Mozz
 
 ## Date
 June 18, 2023

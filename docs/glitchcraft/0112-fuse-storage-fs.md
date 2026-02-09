@@ -3,7 +3,7 @@ title: "Fuse Storage (FS)"
 ---
 
 # Fuse Storage (FS)
-
+***
 ## Overview
 Fusing an item on the same frame that it culls interrupts the fuse. It will continue as soon as the item unculls, but can lead to FE or cold fuse by interrupting the fusion process in a specific way
 
@@ -18,8 +18,7 @@ The most important thing for weapon FE is having something fused to an arrow whi
 In all cases, you can get the like to drop it'"s stored fuse (or other objects) by stunning it and hitting it'"s weak spot.
 
 ## Credit
-
-- Mozz
+Mozz
 
 ## Date
 June 18, 2023
