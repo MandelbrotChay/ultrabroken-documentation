@@ -530,10 +530,11 @@ body::before {
 }
 
 /* Ensure main content sits above the canvas */
-.md-main, .md-content, .md-nav, .md-header, .md-footer {
-  position: relative;
-  z-index: 1;
-}
+/* Keep canvas behind content without forcing layout changes on core layout elements.
+   Avoid setting `position: relative` on `.md-main`, `.md-nav`, or `.md-header` because
+   it can interfere with the theme's sticky/drawer behavior and cause the sidebar
+   to be pushed below the header. The header already has a higher z-index defined
+   earlier to sit above decorative layers. */
 
 /* Search highlighting - clean teal background without spacing */
 mark {
