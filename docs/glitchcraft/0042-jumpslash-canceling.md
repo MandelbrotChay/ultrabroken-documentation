@@ -47,7 +47,7 @@ May 21, 2023
 
 ## See also
 
-- Discord Example in the Ukouh Shrine
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1110004852823703552)
 
 ## Raw row
 ```csv

@@ -57,8 +57,7 @@ January 20, 2024
 
 ## See also
 
-- Object Culling
-- Stick Desync Clipping
+- Object CullingStick Desync Clipping
 
 ## Raw row
 ```csv

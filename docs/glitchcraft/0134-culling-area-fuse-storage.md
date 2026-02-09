@@ -33,8 +33,7 @@ June 30, 2023
 
 ## See also
 
-- Fuse Storage
-- Object Culling
+- Fuse StorageObject Culling
 
 ## Raw row
 ```csv

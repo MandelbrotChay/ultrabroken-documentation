@@ -51,8 +51,7 @@ October 12, 2025
 
 ## See also
 
-- Ocklusion
-- Pickup Smuggling
+- OcklusionPickup Smuggling
 
 ## Raw row
 ```csv

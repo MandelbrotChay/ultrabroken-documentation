@@ -69,9 +69,6 @@ October 18, 2023
 ## See also
 
 - Fuse Entanglement
-- Portable Culling
-- LikeLike Stick Smuggling
-- Detanglement
 
 ## Raw row
 ```csv

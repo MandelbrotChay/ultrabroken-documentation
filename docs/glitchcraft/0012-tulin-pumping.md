@@ -44,7 +44,7 @@ May 14, 2023
 
 ## See also
 
-- Tulin Movement (Credit: atz)
+- Tulin Movement
 
 ## Raw row
 ```csv

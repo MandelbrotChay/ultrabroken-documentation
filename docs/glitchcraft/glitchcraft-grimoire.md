@@ -74,7 +74,7 @@ This page lists generated glitch stubs created from the community CSV.
 - [Forced Blood Moon](./0064-forced-blood-moon.md)
 - [AntiGrav Weapons](./0065-antigrav-weapons.md)
 - [Map Storage](./0066-map-storage.md)
-- [Ultrabroken (previously Wacko Boingo)](./0067-ultrabroken-previously-wacko-boingo.md)
+- [Ultrabroken (previously Wacko Boingo)](./0067-ultrabroken.md)
 - [Memory Buffering](./0068-memory-buffering.md)
 - [Mineru Ability Desync](./0069-mineru-ability-desync.md)
 - [Drop Smuggling](./0070-drop-smuggling.md)

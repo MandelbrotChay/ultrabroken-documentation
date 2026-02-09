@@ -52,8 +52,7 @@ November 9, 2024
 
 ## See also
 
-- Column O in AttachmentParam shows the replacement actor for every object in the game
-- if one exists. See Notes for more info
+- [AttachmentParam](https://docs.google.com/spreadsheets/d/13_I_wPuG6AvFm02qgtIBDamQrrb6x4a8--UouZYKOsc/)
 
 ## Raw row
 ```csv

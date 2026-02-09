@@ -44,8 +44,7 @@ July 26, 2024
 
 ## See also
 
-- PSLOT
-- Portacull Invismuggle
+- PSLOTPortacull Invismuggle
 
 ## Raw row
 ```csv

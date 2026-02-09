@@ -49,10 +49,7 @@ January 8, 2024
 
 ## See also
 
-- Stick Desync Clip
-- Object Culling
-- ZLOT
-- Lift Warping
+- Stick Desync ClipObject Culling
 
 ## Raw row
 ```csv

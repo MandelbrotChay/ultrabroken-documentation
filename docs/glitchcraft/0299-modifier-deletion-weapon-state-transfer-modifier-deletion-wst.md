@@ -72,7 +72,6 @@ was done by Zas
 - 1.0.0
 
 ## See also
-
 —
 
 ## Raw row

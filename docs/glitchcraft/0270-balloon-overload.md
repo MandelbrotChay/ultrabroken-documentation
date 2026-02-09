@@ -49,7 +49,6 @@ March 8, 2025
 ## See also
 
 - Infinite Balloon
-- Equipment Duplication Glitches
 
 ## Raw row
 ```csv

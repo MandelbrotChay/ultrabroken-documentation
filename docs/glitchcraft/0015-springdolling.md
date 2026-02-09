@@ -47,7 +47,7 @@ May 15, 2023
 
 ## See also
 
-- Discord
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1112137651743637584)
 
 ## Raw row
 ```csv

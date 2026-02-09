@@ -43,8 +43,7 @@ September 12, 2023
 
 ## See also
 
-- Zuggling
-- Fuse Entanglment
+- ZugglingFuse Entanglment
 
 ## Raw row
 ```csv

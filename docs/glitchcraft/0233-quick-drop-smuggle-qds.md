@@ -64,8 +64,7 @@ March 16, 2024
 
 ## See also
 
-- Dynamic Zuggle
-- Hand Locked Equipment Smuggling
+- Dynamic ZuggleHand Locked Equipment Smuggling
 
 ## Raw row
 ```csv

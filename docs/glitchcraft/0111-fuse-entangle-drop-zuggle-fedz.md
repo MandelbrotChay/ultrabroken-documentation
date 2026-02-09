@@ -59,9 +59,7 @@ June 17, 2023
 
 ## See also
 
-- Fuse Entanglement
-- Slugging
-- Zuggling
+- Fuse EntanglementSluggingZuggling
 
 ## Raw row
 ```csv

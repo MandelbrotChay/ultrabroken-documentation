@@ -43,7 +43,6 @@ Allows objects to lose their gravity.
 - 1.1.2
 
 ## See also
-
 —
 
 ## Raw row

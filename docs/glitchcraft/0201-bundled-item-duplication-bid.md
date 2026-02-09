@@ -57,9 +57,7 @@ December 12, 2023
 
 ## See also
 
-- Stick Desync Clipping
-- Object Culling
-- Memory Buffering
+- Stick Desync ClippingObject CullingMemory Buffering
 
 ## Raw row
 ```csv

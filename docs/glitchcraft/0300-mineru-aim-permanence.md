@@ -49,7 +49,6 @@ The Construct will stick around despite the other sage avatars going away
 - 1.2.1
 
 ## See also
-
 —
 
 ## Raw row

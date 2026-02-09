@@ -1,8 +1,8 @@
 ﻿---
-title: "Ultrabroken (previously Wacko Boingo)"
+title: "Ultrabroken"
 ---
 
-# Ultrabroken (previously Wacko Boingo)
+# Ultrabroken
 
 ## Overview
 Allows you to pull the object with another glued material while Link stands on top of it, sending it flying forwards from the pull itself.
