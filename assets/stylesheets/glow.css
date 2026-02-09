@@ -21,9 +21,7 @@ html, body {
 /* Header background - solid backdrop for better visibility */
 .md-header {
   background: linear-gradient(180deg, #00796b, #00695c) !important;
-  /*box-shadow: 0 6px 24px rgba(0,240,194,0.3);*/
-  /* Prevent header children from causing horizontal scroll */
-  overflow-x: hidden !important;
+  /* box-shadow intentionally removed to keep header subtle */
 }
 
 .md-header__title {
