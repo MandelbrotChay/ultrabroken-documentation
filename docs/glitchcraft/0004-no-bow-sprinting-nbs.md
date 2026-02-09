@@ -2,7 +2,7 @@
 title: "No Bow Sprinting"
 ---
 
-# No Bow Sprinting
+# No Bow Sprinting `NBS`
 
 ## Tag
 NBS
