@@ -6,7 +6,7 @@
     maxSize: 3.5,
     minSpeed: 10,            // px/sec
     maxSpeed: 80,            // px/sec
-    lineDistance: 200,       // px threshold to draw a line
+    lineDistance: 300,       // px threshold to draw a line
     lineMaxAlpha: 0.12,
     particleAlpha: 0.9,
     spawnPadding: 40         // spawn below bottom
