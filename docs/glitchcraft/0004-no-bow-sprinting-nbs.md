@@ -1,9 +1,9 @@
 ﻿---
-title: "No Bow Sprinting (NBS)"
+title: "No Bow Sprinting"
 ---
 
-# No Bow Sprinting `NBS`
-
+# No Bow Sprinting
+# `NBS`
 ## Overview
 —
 
