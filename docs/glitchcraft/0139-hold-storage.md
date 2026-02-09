@@ -20,7 +20,8 @@ Unless Link is put into a specific state while the held items are disconnected (
 Also possible by culling Link.
 
 ## Credit
-Ryan?, NaN Gogh, Mozz
+
+- Ryan?, NaN Gogh, Mozz
 
 ## Date
 July 2, 2023

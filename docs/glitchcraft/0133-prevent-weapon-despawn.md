@@ -19,7 +19,8 @@ You can bring back the weapon by zuggling before quest ends
 Best used in Eldin Cave Quest, experimenting with different despawn flags atm
 
 ## Credit
-NX721
+
+- NX721
 
 ## Date
 June 28, 2023

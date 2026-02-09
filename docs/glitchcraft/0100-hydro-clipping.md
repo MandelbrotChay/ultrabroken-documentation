@@ -41,7 +41,8 @@ There are other ways of clipping with hydro:
 1.2.1 requires a different method
 
 ## Credit
-Simonfirefighter, Maxmasher (Flurry rush method), KnightPohtaytoh (Crouch method), pyuk (throw method)
+
+- Simonfirefighter, Maxmasher (Flurry rush method), KnightPohtaytoh (Crouch method), pyuk (throw method)
 
 ## Date
 June 15, 2023

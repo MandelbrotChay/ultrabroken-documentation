@@ -19,7 +19,8 @@ Can be used to clip back inbounds from the depths ceiling. (See Also)
 Can chain more springs to make the horizontal launch more powerful
 
 ## Credit
-Mozz
+
+- Mozz
 
 ## Date
 May 15, 2023

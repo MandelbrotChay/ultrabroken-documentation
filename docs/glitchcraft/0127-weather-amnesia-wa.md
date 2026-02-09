@@ -17,7 +17,8 @@ Viewing a memory near a cave will overwrite its local weather with the overworld
 Certain triggers, such as text boxes, will restore the caves' local weather.
 
 ## Credit
-pyuk
+
+- pyuk
 
 ## Date
 June 25, 2023

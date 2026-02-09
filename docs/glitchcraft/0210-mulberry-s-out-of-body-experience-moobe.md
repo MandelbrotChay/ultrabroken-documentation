@@ -18,7 +18,8 @@ title: "Mulberry's Out of Body Experience (Moobe)"
 (Presumably) Causes the game to believe Link is in two positions at the same time, resulting in unloading of the area around the player, while still in said area.
 
 ## Credit
-mulberry
+
+- mulberry
 
 ## Date
 January 6, 2024

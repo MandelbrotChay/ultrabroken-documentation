@@ -17,7 +17,8 @@ Cucco Warping
 Can also be achieved with object culling (steps/examples needed.)
 
 ## Credit
-Originally discovered by Mozz
+
+- Originally discovered by Mozz
 
 ## Date
 June 15, 2023

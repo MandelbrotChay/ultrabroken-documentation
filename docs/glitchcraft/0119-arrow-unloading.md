@@ -26,7 +26,8 @@ Can be used to create batteryless Zonai devices, clip objects through walls, as 
 Arrows fired from a multi-shot bow are warped to 0,0,0.
 
 ## Credit
-Mozz, pyuk, Zas
+
+- Mozz, pyuk, Zas
 
 ## Date
 June 18, 2023

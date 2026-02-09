@@ -28,7 +28,8 @@ The fuse ghost will continue to persist through saves for as long as it remains 
 By combining ghost SLOT with moobe and pseudo fuse, its possible to send fuse ghosts to specific locations where they can be later retrieved. Check Example(s) for a specific setup.
 
 ## Credit
-Aergyl
+
+- Aergyl
 
 ## Date
 March 8, 2024

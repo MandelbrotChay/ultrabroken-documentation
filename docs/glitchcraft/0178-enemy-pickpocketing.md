@@ -19,7 +19,8 @@ Lets you take weapons out of enemy's hands
 —
 
 ## Credit
-KAIDUDE64
+
+- KAIDUDE64
 
 ## Date
 September 16, 2023

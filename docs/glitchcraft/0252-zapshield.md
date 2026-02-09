@@ -25,7 +25,8 @@ Zuggling the zapshield allows it to persist through loads.
 While zapshield itself can be created on all versions, it's applications are version dependent. Check the spreadsheet entry for a respective application to see which versions it works on.
 
 ## Credit
-Aergyl
+
+- Aergyl
 
 ## Date
 September 16, 2024

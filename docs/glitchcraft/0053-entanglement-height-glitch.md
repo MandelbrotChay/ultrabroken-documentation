@@ -17,7 +17,8 @@ Only lasts while shield surfing, but is infintely active.
 Only deactivates upon shield unequip.
 
 ## Credit
-Mozz
+
+- Mozz
 
 ## Date
 May 24, 2023

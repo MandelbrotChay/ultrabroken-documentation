@@ -20,7 +20,8 @@ The exact cause of texture tearing remains unknown and there are no well defined
 —
 
 ## Credit
-ock
+
+- ock
 
 ## Date
 January 13, 2024

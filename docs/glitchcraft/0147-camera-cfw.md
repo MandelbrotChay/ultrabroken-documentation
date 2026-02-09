@@ -34,7 +34,8 @@ no camera ui
 —
 
 ## Credit
-NaN Gogh
+
+- NaN Gogh
 
 ## Date
 July 11, 2023

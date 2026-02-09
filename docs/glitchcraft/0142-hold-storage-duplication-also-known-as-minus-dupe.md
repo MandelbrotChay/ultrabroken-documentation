@@ -19,7 +19,8 @@ Allows you to dupe items via hold storage.
 —
 
 ## Credit
-NaN Gogh, Mozz
+
+- NaN Gogh, Mozz
 
 ## Date
 July 3, 2023

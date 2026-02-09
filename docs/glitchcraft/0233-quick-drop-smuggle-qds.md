@@ -41,7 +41,8 @@ Mulberries drop input cheat sheet:
 Discord
 
 ## Credit
-Zas, mulberry, Aeolian
+
+- Zas, mulberry, Aeolian
 
 ## Date
 March 16, 2024

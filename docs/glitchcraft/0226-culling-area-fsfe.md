@@ -32,7 +32,8 @@ Chain FSFE (Mulberry)
 https://discord.com/channels/1086729144307564648/1113557914444111873/1217688933807296593
 
 ## Credit
-mulberry, Yee, Zas
+
+- mulberry, Yee, Zas
 
 ## Date
 February 25, 2024

@@ -42,7 +42,8 @@ Throw method
 Recall a thrown object (needs to by thrown by an enemy), then fuse it
 
 ## Credit
-Physioninja
+
+- Physioninja
 
 ## Date
 May 24, 2023

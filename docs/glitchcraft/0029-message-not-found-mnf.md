@@ -35,7 +35,8 @@ Zuggle Overload Method:
 This MNF can be powered up further! See WST or Unload WST for the method
 
 ## Credit
-LegendofLinkk (Zuggle Method) Abahbob (SLD Method)
+
+- LegendofLinkk (Zuggle Method), Abahbob (SLD Method)
 
 ## Date
 May 17, 2023

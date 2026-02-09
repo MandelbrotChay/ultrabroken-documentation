@@ -32,11 +32,8 @@ Zas
 August 16, 2023
 
 ## Credit
-Picture in Link's house
-R4000
 
-Compendium pictures
-Zas - June 18, 2023
+- Picture in Link's house R4000, Compendium pictures Zas
 
 ## Date
 June 18, 2023

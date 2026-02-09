@@ -20,7 +20,8 @@ Cull zones as shown on the TOTK Object Map
 Certain sub-areas such as caves can also act as cull zones
 
 ## Credit
-Mozz
+
+- Mozz
 
 ## Date
 June 27, 2023

@@ -32,7 +32,8 @@ Void dipped equipment have the following properties:
 - Culling-related dipping methods are also possible with phase culling
 
 ## Credit
-Squidwest, mulberry, Aergyl
+
+- Squidwest, mulberry, Aergyl
 
 ## Date
 December 29, 2025

@@ -18,7 +18,8 @@ Allows Link to pick up an object as if he were holding it like an item.
 —
 
 ## Credit
-Ame
+
+- Ame
 
 ## Date
 May 28, 2023

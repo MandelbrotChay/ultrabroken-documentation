@@ -17,7 +17,8 @@ Stores the callback of Mineru while mouted on her, useful for swap resync zuggle
 —
 
 ## Credit
-ofstrings2 - Novermber 12, 2025
+
+- ofstrings2
 
 ## Date
 November 9, 2025

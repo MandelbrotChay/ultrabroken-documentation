@@ -17,7 +17,8 @@ It works without stamina if you use 100 bpm, with the crouch on the beat. 101 bp
 With current testing, this is the fastest sprinting method
 
 ## Credit
-Deystroyer
+
+- Deystroyer
 
 ## Date
 May 15, 2023

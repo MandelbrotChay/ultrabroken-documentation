@@ -18,7 +18,8 @@ Additionally, weapon smuggling can be performed and stored through saves by mash
 This is just zuggling, but you drop your equipped weapon at the end, that being said, any zuggle method should work (map zuggle is reccomended)
 
 ## Credit
-Erling附身
+
+- Erling附身
 
 ## Date
 May 16, 2023

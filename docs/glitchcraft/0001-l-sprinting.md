@@ -16,7 +16,8 @@ This works best on fuse and ultrahand. Hold B and tap L twice (one time to activ
 —
 
 ## Credit
-Tauktes
+
+- Tauktes
 
 ## Date
 May 12, 2023

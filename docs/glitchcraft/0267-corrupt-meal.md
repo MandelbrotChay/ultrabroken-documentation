@@ -18,7 +18,8 @@ Cooking an apple on the same frame that it is deleted results in a meal that tak
 If no other foods have been cooked since last boot, nothing will be cooked and the food dialogue is skipped completely
 
 ## Credit
-Telkic
+
+- Telkic
 
 ## Date
 February 7, 2025

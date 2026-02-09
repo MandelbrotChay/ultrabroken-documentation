@@ -44,7 +44,8 @@ For zuggling weapons on 1.1.2:
 3. Open the chest and drop your equipped weapon with Link's back against a wall
 
 ## Credit
-NaN Gogh, "Ryan?", Blackmars
+
+- NaN Gogh, Ryan?, Blackmars
 
 ## Date
 June 15, 2023

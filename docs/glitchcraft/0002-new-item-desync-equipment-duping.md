@@ -18,7 +18,8 @@ Requirement: The new item must change positions when you sort your inventory. So
 —
 
 ## Credit
-—
+
+- [Modoki_returns](https://twitter.com/Modoki_returns)
 
 ## Date
 May 12, 2023

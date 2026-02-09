@@ -16,6 +16,7 @@ methods are incosistent currently
 Testing is still being done. As more is discovered, this section will be updated, as well as new glitches added
 
 ## Credit
+
 —
 
 ## Date

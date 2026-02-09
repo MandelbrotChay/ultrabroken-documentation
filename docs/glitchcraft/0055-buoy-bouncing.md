@@ -16,7 +16,8 @@ Time a shield surf to be at the moment before Link starts swimming in water.
 Initial velocity seems to play an effect when buoy bouncing, such as when falling from a significant height. Also cancels fall damage.
 
 ## Credit
-InAMuffinCup
+
+- InAMuffinCup
 
 ## Date
 May 25, 2023

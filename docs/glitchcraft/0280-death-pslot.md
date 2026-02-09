@@ -21,7 +21,8 @@ When reloading, you should see your target PSLOTed on the ground.
 —
 
 ## Credit
-mulberry
+
+- mulberry
 
 ## Date
 June 26, 2025

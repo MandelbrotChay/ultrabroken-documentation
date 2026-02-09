@@ -35,8 +35,8 @@ Mastersword zuggle (Ock)
 2. do regular chasm delay zuggle inputs
 
 ## Credit
-Discovered by ock
-Optimized by mulberry, winnerboi - May 31, 2024
+
+- Discovered by ock, optimized by mulberry, winnerboi
 
 ## Date
 May 31, 2024

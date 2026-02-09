@@ -18,7 +18,8 @@ Gloom hands reset the durability of enemy equipment.
 Does not repair a weapon's fuse durability if an item has been fused to it previously
 
 ## Credit
-Ock
+
+- Ock
 
 ## Date
 November 20, 2023

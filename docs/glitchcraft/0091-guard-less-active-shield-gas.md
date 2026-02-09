@@ -25,7 +25,8 @@ This keeps the shield in an "on" state, many things will turn it off:
 1.2.0 and 1.2.1 require altenative setups
 
 ## Credit
-venaticus
+
+- venaticus
 
 ## Date
 June 12, 2023

@@ -21,7 +21,8 @@ The amount of lag generated is heavily dependent on the zonai device being dropp
 Can be done on 1.2.0+ with materials only
 
 ## Credit
-Telkic, mulberry
+
+- Telkic, mulberry
 
 ## Date
 January 4, 2025

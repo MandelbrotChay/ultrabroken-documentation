@@ -18,7 +18,8 @@ Desyncs Flame Emitters attached to Mineru
 To do: test on other versions and with more emitters Seems similar to ARAZ
 
 ## Credit
-Sillicat
+
+- Sillicat
 
 ## Date
 May 30, 2023

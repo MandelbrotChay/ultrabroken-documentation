@@ -18,7 +18,8 @@ title: "Like-Like Warping"
 —
 
 ## Credit
-Mozz
+
+- Mozz
 
 ## Date
 June 15, 2023

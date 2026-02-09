@@ -18,7 +18,8 @@ You can do the glitch with a one handed and then switch to a two handed one, can
 Disable the earthwake ability or press "R" instead of "Y".
 
 ## Credit
-R4000, Bucket_Sloe
+
+- R4000, Bucket_Sloe
 
 ## Date
 August 21, 2023

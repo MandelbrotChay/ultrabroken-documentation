@@ -21,7 +21,8 @@ Autosaves will no longer be made (unless through loading screens), due to the ga
 Does not persist through map changes, or through previous saves that were made before this glitch was performed.
 
 ## Credit
-Flash, pyuk
+
+- Flash, pyuk
 
 ## Date
 June 26, 2023

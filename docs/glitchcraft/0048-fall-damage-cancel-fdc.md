@@ -19,7 +19,8 @@ Allows you to cancel fall damage from any height
 It's possible to Fall Damage Cancel by performing multiple frame perfect inputs without using the runes menu or a shield (D-PAD Right + ZR on same frame, unequip bow, press Y one frame later, then dive).
 
 ## Credit
-simonfirefighter
+
+- simonfirefighter
 
 ## Date
 May 23, 2023

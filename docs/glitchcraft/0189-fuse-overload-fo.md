@@ -20,7 +20,8 @@ Fuse overloaded zonai devices can never expire, allowing for things like rockets
 Pickup overload can also be used in place of zuggle overload
 
 ## Credit
-ultrababouin, NghtmaR3
+
+- ultrababouin, NghtmaR3
 
 ## Date
 November 3, 2023

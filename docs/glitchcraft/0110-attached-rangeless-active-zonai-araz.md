@@ -38,7 +38,8 @@ Can be kept permanently active via GAS and can be zuggled for transferring/other
 June 16, 2023 and July 15, 2023
 
 ## Credit
-"Ryan?", NX721
+
+- Ryan?, NX721
 
 ## Date
 June 16, 2023

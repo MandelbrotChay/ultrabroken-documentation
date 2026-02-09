@@ -18,7 +18,8 @@ Can also be caused by fusing an object just as a moblin picks it up to throw.
 It is not yet understood what causes this glitch.
 
 ## Credit
-Yee
+
+- Yee
 
 ## Date
 April 22, 2025

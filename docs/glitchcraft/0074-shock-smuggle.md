@@ -17,7 +17,8 @@ Dropping an unsheathed equipment just before getting shocked causes equipment sm
 Can be done much more consistently by equipping the Thunder Helm before walking into the shock emitter, unequipping the helmet and watching two memories, dropping the item you want to smuggle, and watching another memory before unpausing.
 
 ## Credit
-sleepyppls
+
+- sleepyppls
 
 ## Date
 June 1, 2023

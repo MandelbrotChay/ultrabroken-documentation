@@ -18,7 +18,8 @@ Interrupting a fuse on the first possible frame with shock causes cold fusion
 —
 
 ## Credit
-Zas
+
+- Zas
 
 ## Date
 September 11, 2023

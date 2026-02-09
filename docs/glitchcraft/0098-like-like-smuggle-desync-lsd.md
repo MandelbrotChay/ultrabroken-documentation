@@ -17,7 +17,8 @@ Allows for desync and consequently, WST via slugging.
 —
 
 ## Credit
-Mozz
+
+- Mozz
 
 ## Date
 June 15, 2023

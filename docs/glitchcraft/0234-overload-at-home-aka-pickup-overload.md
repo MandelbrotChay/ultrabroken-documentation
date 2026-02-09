@@ -24,7 +24,8 @@ Allows you to do most things that zuggle overload can do, including mass equipme
 Unlike zuggle overload, pickup overload does not persist through saves. It can also end by going too far away from the area in which the glitch was performed
 
 ## Credit
-ock
+
+- ock
 
 ## Date
 March 20, 2024

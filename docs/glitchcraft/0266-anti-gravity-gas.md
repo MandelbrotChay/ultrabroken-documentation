@@ -21,7 +21,8 @@ Allows for weapon GAS by throwing the base of an ARAZ connection just as Link ge
 —
 
 ## Credit
-mulberry
+
+- mulberry
 
 ## Date
 January 22, 2025

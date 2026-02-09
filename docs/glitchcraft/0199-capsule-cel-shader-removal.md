@@ -19,7 +19,8 @@ One white layer
 And one black layer that shows the base model
 
 ## Credit
-NX721
+
+- NX721
 
 ## Date
 December 4, 2023

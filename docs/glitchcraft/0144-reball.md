@@ -18,7 +18,8 @@ By combining recall with throwing a Zonai device capsule, you can jump onto and 
 Can be combined with arrow smuggle for momentum preservation.
 
 ## Credit
-Mozz
+
+- Mozz
 
 ## Date
 July 6, 2023

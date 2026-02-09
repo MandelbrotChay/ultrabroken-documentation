@@ -22,7 +22,8 @@ Puts the weapon sheathe in an offset state, similar to the sheathe during Zuggle
 This works for ALL weapons not just the .
 
 ## Credit
-circyit, dash
+
+- circyit, dash
 
 ## Date
 June 25, 2023

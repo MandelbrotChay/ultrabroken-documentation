@@ -20,7 +20,8 @@ Shooting with a desynced arrow at 0 causes the arrow count to drop into the nega
 Firing from any other bow with this glitch active, will allow it to shoot from the same location once before it goes back to normal at Link's position (needs to be verified if this happens with all bows).
 
 ## Credit
-Flash, ElDuende, kirigaya
+
+- Flash, ElDuende, kirigaya
 
 ## Date
 June 2, 2023

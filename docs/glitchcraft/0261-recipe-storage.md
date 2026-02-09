@@ -37,10 +37,8 @@ Recipe Hold Storage:
 —
 
 ## Credit
-mulberry (1.0 method)
-ock (original discovery with Ocklusion) - September 14th, 2024 (Ocklusion method)
 
-November 10th, 2024 (1.0 method)
+- mulberry (1.0 method), ock (original discovery with Ocklusion)
 
 ## Date
 September 14th, 2024 (Ocklusion method) November 10th, 2024 (1.0 method)

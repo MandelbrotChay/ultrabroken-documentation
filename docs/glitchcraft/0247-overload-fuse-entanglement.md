@@ -22,7 +22,8 @@ Allows for full fuse entanglement by combining portable culling with the mechani
 —
 
 ## Credit
-mulberry
+
+- mulberry
 
 ## Date
 July 23, 2024

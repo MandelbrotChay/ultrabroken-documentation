@@ -22,7 +22,8 @@ An easier way to perform stick desync clip using cold fuse that allows for an al
 —
 
 ## Credit
-mulberry, KiloVictor
+
+- mulberry, KiloVictor
 
 ## Date
 June 4, 2024

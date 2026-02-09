@@ -20,7 +20,8 @@ Shooting the arrows in the right angle and terrain, can cause the small wheel to
 1.2.0-1.2.1 require an alternate setup
 
 ## Credit
-Mozz, pyuk
+
+- Mozz, pyuk
 
 ## Date
 June 18, 2023

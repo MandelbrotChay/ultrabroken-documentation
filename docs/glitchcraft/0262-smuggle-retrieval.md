@@ -20,7 +20,8 @@ Dropping an unloaded piece of equipment drops a smuggle instead (if Link has one
 —
 
 ## Credit
-PetitFrapo
+
+- PetitFrapo
 
 ## Date
 December 18, 2024

@@ -22,7 +22,8 @@ Allows for Save Load Duplication on v1.2.0-1.2.1 by culling Link on the same fra
 —
 
 ## Credit
-NghtmaR3
+
+- NghtmaR3
 
 ## Date
 July 17, 2024

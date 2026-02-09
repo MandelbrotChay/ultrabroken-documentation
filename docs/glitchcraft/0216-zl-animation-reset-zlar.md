@@ -18,7 +18,8 @@ Performing a zl-less jump while the "Two Handed With Shield" glitch is active (w
 Getting hit by a weak attack during zlar results in invincibility.
 
 ## Credit
-nghtmar31
+
+- nghtmar31
 
 ## Date
 January 21, 2024

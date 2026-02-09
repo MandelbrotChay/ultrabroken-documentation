@@ -18,7 +18,8 @@ Allows you to clip OOB using zuggle overload
 —
 
 ## Credit
-AngryEgg
+
+- AngryEgg
 
 ## Date
 May 18, 2023

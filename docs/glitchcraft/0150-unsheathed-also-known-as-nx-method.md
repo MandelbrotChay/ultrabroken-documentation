@@ -18,7 +18,8 @@ Puts the master sword in a visual state where it is outside of it's sheath.
 Dropped equipment goes zoomy into the sky based on timing.
 
 ## Credit
-NX721, DanielNeia
+
+- NX721, DanielNeia
 
 ## Date
 July 11, 2023

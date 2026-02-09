@@ -27,7 +27,8 @@ the horse should still be alive, but no longer on the map
 —
 
 ## Credit
-ock
+
+- ock
 
 ## Date
 March 22, 2024

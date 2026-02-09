@@ -19,7 +19,8 @@ Extreme overload can sometimes unload specific actors
 Also works in other locations with gloom hands nearby
 
 ## Credit
-Toti Sauce
+
+- Toti Sauce
 
 ## Date
 January 3, 2025

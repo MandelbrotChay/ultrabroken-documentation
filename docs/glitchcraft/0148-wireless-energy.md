@@ -18,7 +18,8 @@ Creates a wireless connection to a culled battery. By attaching a dragon part to
 —
 
 ## Credit
-NaN Gogh
+
+- NaN Gogh
 
 ## Date
 July 11, 2023

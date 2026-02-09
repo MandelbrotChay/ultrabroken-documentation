@@ -17,7 +17,8 @@ Culling Area FSFE
 Fuse Entanglement
 
 ## Credit
-Ryan?, Mozz
+
+- Ryan?, Mozz
 
 ## Date
 June 18, 2023

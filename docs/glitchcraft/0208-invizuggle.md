@@ -60,7 +60,8 @@ Todo:
 Add Method 5
 
 ## Credit
-ock, Yee
+
+- ock, Yee
 
 ## Date
 January 3, 2024

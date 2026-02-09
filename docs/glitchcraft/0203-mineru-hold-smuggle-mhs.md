@@ -18,7 +18,8 @@ Allows holding items in inventory but not in overworld.
 Can duplicate items. Also see ISLT, 218 on how to transfer items through saves.
 
 ## Credit
-Winnerboi77
+
+- Winnerboi77
 
 ## Date
 December 20, 2023

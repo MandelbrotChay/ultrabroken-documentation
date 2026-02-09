@@ -19,7 +19,8 @@ Any loading screen will cancel the glitch, you can switch tabs in the inventory 
 how was this not found
 
 ## Credit
-NX721
+
+- NX721
 
 ## Date
 July 3, 2023

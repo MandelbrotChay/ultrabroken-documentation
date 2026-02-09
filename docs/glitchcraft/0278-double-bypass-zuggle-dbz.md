@@ -27,8 +27,8 @@ There are variations of this setup that don't require a load, using a specific w
 🐉
 
 ## Credit
-mulberry
-dt13269 for making the culling logger which allowed for the discovery of the drop swap culling bypass frame in the menu - June 16, 2025
+
+- mulberry, dt13269 for making the culling logger which allowed for the discovery of the drop swap culling bypass frame in the menu
 
 ## Date
 June 16, 2025

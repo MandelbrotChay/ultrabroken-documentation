@@ -23,7 +23,8 @@ Costs 20 rupees. Also completely removes the modifier on the duped item.
 The target item remains in desync in the inventory until the duplicate is picked up, or the target is unequipped from inventory.
 
 ## Credit
-AngryEgg, BigDUCCO (setup for current method)
+
+- AngryEgg, BigDUCCO (setup for current method)
 
 ## Date
 May 25, 2023

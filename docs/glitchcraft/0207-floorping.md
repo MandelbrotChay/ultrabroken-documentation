@@ -16,7 +16,8 @@ Have Link on the VERY edge of a platform and save. For best results, have the pl
 Test on more versions
 
 ## Credit
-koreth
+
+- koreth
 
 ## Date
 January 2, 2024

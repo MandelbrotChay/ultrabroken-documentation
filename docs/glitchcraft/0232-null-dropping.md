@@ -17,7 +17,8 @@ Displays a glitched and empty chest quickmenu.
 —
 
 ## Credit
-Aergyl
+
+- Aergyl
 
 ## Date
 March 16, 2024

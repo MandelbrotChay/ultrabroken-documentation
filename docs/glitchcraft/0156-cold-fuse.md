@@ -31,7 +31,8 @@ Combining pseudo fuse with purgatory items allows you to store multiple objects 
 Discord (mulberry)
 
 ## Credit
-pyuk, Ryan?, Zas
+
+- pyuk, Ryan?, Zas
 
 ## Date
 July 23, 2023

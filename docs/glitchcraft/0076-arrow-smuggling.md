@@ -25,7 +25,8 @@ To do:
 Update this entry
 
 ## Credit
-Mozz
+
+- Mozz
 
 ## Date
 June 4, 2023

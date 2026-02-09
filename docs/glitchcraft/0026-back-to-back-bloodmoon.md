@@ -6,11 +6,16 @@ title: "Back to Back Bloodmoon"
 
 ## Overview
 A strange phenominon where blood moons occured back to back. Nothing has come of this glitch so far, though not much testing has been done. It is unknown what exactly caused it.
+
+## Instructions
+—
+
 ## Notes
 —
 
 ## Credit
-Lopitty
+
+- Lopitty
 
 ## Date
 May 17, 2023

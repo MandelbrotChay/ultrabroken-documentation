@@ -20,7 +20,8 @@ The most important thing for weapon FE is having something fused to an arrow whi
 In all cases, you can get the like to drop it'"s stored fuse (or other objects) by stunning it and hitting it'"s weak spot.
 
 ## Credit
-Mozz
+
+- Mozz
 
 ## Date
 June 18, 2023

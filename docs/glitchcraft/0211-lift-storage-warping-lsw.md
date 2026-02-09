@@ -21,7 +21,8 @@ Using detanglement makes this wrong warp state permanent.
 Test with like like stick culling
 
 ## Credit
-mulberry
+
+- mulberry
 
 ## Date
 January 8, 2024

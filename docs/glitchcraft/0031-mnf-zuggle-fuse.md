@@ -28,7 +28,8 @@ Allows to fuse to the MNF
 Can also be done with other weapons and already fused weapons. This just replaces the fused material.
 
 ## Credit
-Zvleon
+
+- Zvleon
 
 ## Date
 May 18, 2023

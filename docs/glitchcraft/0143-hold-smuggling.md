@@ -23,7 +23,8 @@ Much more portable version of hold storage.
 Also removes HUD from Sheikah Scope
 
 ## Credit
-Mozz, NaN Gogh
+
+- Mozz, NaN Gogh
 
 ## Date
 July 4, 2023

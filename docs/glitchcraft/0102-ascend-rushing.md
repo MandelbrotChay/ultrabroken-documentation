@@ -17,7 +17,8 @@ Allows you to flury rush after ascending
 —
 
 ## Credit
-R4000
+
+- R4000
 
 ## Date
 June 15, 2023

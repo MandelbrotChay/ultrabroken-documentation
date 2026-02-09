@@ -21,10 +21,8 @@ Allows to have a weapon equipped that is not in the inventory.
 Arrow Smuggle
 
 ## Credit
-Blize, ock
 
-(Cull Arrow Smuggle)
-Blize - October 10, 2023
+- Blize, ock (Cull Arrow Smuggle), Blize
 
 ## Date
 October 10, 2023

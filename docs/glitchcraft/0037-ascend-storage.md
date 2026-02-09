@@ -21,7 +21,8 @@ Misplaces the point where Link goes after using Ascend.
 - Immediately upon hitting A Recall gets cancelled
 
 ## Credit
-Saria
+
+- Saria
 
 ## Date
 May 19, 2023

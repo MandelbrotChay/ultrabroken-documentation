@@ -20,7 +20,8 @@ Lets you move while text is on screen
 Only tested on 1.0.0, probably works on all versions
 
 ## Credit
-CM30
+
+- CM30
 
 ## Date
 July 11, 2024

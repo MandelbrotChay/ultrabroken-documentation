@@ -20,7 +20,8 @@ if the timing was right the ability wheel will come up right after the dpad menu
 —
 
 ## Credit
-Zas
+
+- Zas
 
 ## Date
 March 11, 2024

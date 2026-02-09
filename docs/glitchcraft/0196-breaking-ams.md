@@ -27,7 +27,8 @@ Method 2:
 —
 
 ## Credit
-Infrasolid
+
+- Infrasolid
 
 ## Date
 November 26, 2023

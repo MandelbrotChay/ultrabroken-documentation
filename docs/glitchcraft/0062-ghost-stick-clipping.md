@@ -18,7 +18,8 @@ Allows Link to clip through walls by stepping onto a steering stick during ABCS.
 Has a very good chance of crashing the game in certain areas. Depths are usually stable, but can still crash there too.
 
 ## Credit
-rocomox
+
+- rocomox
 
 ## Date
 May 28, 2023

@@ -16,7 +16,8 @@ Pause at the moment before taking damage and view a memory in the menu (for long
 Can be combined with springbombing.
 
 ## Credit
-Mozz
+
+- Mozz
 
 ## Date
 May 27, 2023

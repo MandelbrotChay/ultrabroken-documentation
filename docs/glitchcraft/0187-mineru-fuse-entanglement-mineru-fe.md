@@ -39,7 +39,8 @@ Note: This method ONLY works with bows, shields, and weapons
 For method 1, any method of culling Link can work in place of like like stick culling
 
 ## Credit
-ock (Method 1 & 3), WinnerBoi77 (Method 2)
+
+- ock (Method 1 & 3), WinnerBoi77 (Method 2)
 
 ## Date
 October 18, 2023

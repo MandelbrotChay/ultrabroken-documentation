@@ -20,7 +20,8 @@ For older versions, portable culling can be replaced with any other form of inta
 Not all NPC dialog interactions will work
 
 ## Credit
-mulberry - Novermber 28, 2025
+
+- mulberry
 
 ## Date
 November 28, 2025

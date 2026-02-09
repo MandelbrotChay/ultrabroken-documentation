@@ -27,8 +27,8 @@ Versions 1.0-1.1.2 have a slightly easier setup, they can use another zuggle met
 —
 
 ## Credit
-Discovered by mulberry
-Setup by ArmindoEmiya - July 27, 2024
+
+- Discovered by mulberry, setup by Armindo, Emiya
 
 ## Date
 July 27, 2024

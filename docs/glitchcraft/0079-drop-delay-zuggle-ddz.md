@@ -21,7 +21,8 @@ Dropping a large amount of equipment causes a delay in equipment spawning, enabl
 You dont need a wall, if you load a file after going into the map.
 
 ## Credit
-LegendofLinkk
+
+- LegendofLinkk
 
 ## Date
 June 6, 2023

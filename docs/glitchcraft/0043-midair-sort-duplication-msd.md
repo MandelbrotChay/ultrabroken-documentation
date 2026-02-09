@@ -20,7 +20,8 @@ Can also be used with Zonai devices to take them out without diminishing the act
 Y and exit must be pressed on the same frame.
 
 ## Credit
-Zas, kurocat471
+
+- Zas, kurocat471
 
 ## Date
 May 21, 2023

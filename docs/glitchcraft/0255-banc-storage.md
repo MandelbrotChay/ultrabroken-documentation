@@ -21,8 +21,8 @@ After loading the save, the banc change should trigger.
 —
 
 ## Credit
-Lightos, mulberry, Aergyl
-(no specific order) - October 1st, 2024
+
+- Lightos, mulberry, Aergyl(no specific order)
 
 ## Date
 October 1st, 2024

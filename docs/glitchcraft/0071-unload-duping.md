@@ -20,8 +20,8 @@ If done properly, the arrows should unload, but the materials you fired will sta
 This also works in any other chasm in which you have enough room to shoot your arrows and unload them too.
 
 ## Credit
-魔法本就不科学 (magic is not science),
-千年茶饼 (Thousand Year Tea) - May 31, 2023
+
+- 魔法本就不科学 (magic is not science), 千年茶饼 (Thousand Year Tea)
 
 ## Date
 May 31, 2023

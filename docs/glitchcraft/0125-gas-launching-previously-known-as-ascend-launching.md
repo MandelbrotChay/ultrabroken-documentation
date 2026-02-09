@@ -26,7 +26,8 @@ Recall Method: Stand on a Battery (example) and use Recall and stay as you would
 Can also be done with cooking pots and rocks too, but they don't give a lot of vertical height.
 
 ## Credit
-NX721, pyuk, Flash, Mozz, Blize
+
+- NX721, pyuk, Flash, Mozz, Blize
 
 ## Date
 June 25, 2023

@@ -27,7 +27,8 @@ Zuggled equipment persists through file loads and map changes, making it very us
 zuggle discussion in the zuggle- thread on the discord please
 
 ## Credit
-Zvleon
+
+- Zvleon
 
 ## Date
 May 16, 2023

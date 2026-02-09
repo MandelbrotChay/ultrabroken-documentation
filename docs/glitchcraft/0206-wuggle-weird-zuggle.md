@@ -22,7 +22,8 @@ By dropping and equipping equipment in a specific way during a cull causes a gli
 —
 
 ## Credit
-ock, robuxy2nd
+
+- ock, robuxy2nd
 
 ## Date
 December 29, 2023

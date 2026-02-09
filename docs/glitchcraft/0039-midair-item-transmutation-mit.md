@@ -27,7 +27,8 @@ With this glitch you "lose" items! First you need to organize your inventory. Yo
 You can chain this many times during 1 shield jump by repeating steps 2-5. It does not take any items if the items are in the last slot.
 
 ## Credit
-eXe
+
+- eXe
 
 ## Date
 May 20, 2023

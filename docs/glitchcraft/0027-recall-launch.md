@@ -22,7 +22,8 @@ allows you to launch yourself very far
 This works very good with boomerangs. It also works with anything Link can pick up. In this case you can use the momentum from rotating or picking up the object to perform the launch.
 
 ## Credit
-Deep
+
+- Deep
 
 ## Date
 May 17, 2023

@@ -38,10 +38,8 @@ If you want to zlot an item with invizuggle, you can do the following:
 —
 
 ## Credit
-Discovered by mulberry
 
-Optimized by
-blackmars, mulberry, NghtmaR3 (order is alphabetically) - July 17, 2024
+- Discovered by mulberry, optimized by blackmars, mulberry, NghtmaR3 (order is alphabetically)
 
 ## Date
 July 17, 2024

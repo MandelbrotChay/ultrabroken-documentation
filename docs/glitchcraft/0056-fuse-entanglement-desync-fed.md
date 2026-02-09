@@ -30,7 +30,8 @@ Weapon State Transfer
 this does not wst on 1.0.0
 
 ## Credit
-Physioninja
+
+- Physioninja
 
 ## Date
 May 26, 2023

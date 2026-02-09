@@ -19,7 +19,8 @@ Infinite Height
 Jumpslash Cancel Clipping
 
 ## Credit
-LegendOfLink, Mozz
+
+- LegendOfLink, Mozz
 
 ## Date
 May 21, 2023

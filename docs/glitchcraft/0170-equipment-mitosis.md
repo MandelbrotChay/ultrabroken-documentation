@@ -23,7 +23,8 @@ By combining zuggle overload with 1.0 modifier deletion, it is possible to mass 
 —
 
 ## Credit
-Mozz
+
+- Mozz
 
 ## Date
 September 5, 2023

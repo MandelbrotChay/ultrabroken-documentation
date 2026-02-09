@@ -27,7 +27,8 @@ Method 2 in 1.0.0 will allow you to reuse your bomb flower infinitely, but also 
 —
 
 ## Credit
-ferruscube, Aergyl
+
+- ferruscube, Aergyl
 
 ## Date
 September 14, 2023

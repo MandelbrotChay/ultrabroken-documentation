@@ -28,7 +28,8 @@ https://discord.com/channels/1086729144307564648/1113557914444111873/12240743889
 Test on more versions
 
 ## Credit
-Yee, mulberry
+
+- Yee, mulberry
 
 ## Date
 February 20, 2024

@@ -29,7 +29,8 @@ Known means to revert object with Mass Amnesia back to normal:
 - Try to glue something to the objects
 
 ## Credit
-NaN Gogh
+
+- NaN Gogh
 
 ## Date
 August 2, 2023

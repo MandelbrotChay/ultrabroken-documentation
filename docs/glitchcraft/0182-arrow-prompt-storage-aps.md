@@ -20,7 +20,8 @@ Allows storage of the arrow prompt and can be given multiple times via an enemy 
 —
 
 ## Credit
-Ryan?, NghtmaR3
+
+- Ryan?, NghtmaR3
 
 ## Date
 October 4, 2023

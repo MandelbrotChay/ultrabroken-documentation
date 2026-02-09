@@ -18,7 +18,8 @@ Picking up a cucco right as it voids out from entering water warps Link to its r
 —
 
 ## Credit
-onion
+
+- onion
 
 ## Date
 July 23, 2023

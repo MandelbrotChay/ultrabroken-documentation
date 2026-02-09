@@ -21,7 +21,8 @@ Letting go of B or stopping running cancels it
 —
 
 ## Credit
-Lightos_
+
+- Lightos_
 
 ## Date
 May 20, 2023

@@ -37,7 +37,8 @@ There is a different setup for zuggling portacull equipment:
 —
 
 ## Credit
-mulberry, MandelbrotChaylay
+
+- mulberry, MandelbrotChaylay
 
 ## Date
 August 11, 2025

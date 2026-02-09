@@ -25,7 +25,8 @@ Makes an FE'd object follow the shield.
 —
 
 ## Credit
-The_Andromeda
+
+- The_Andromeda
 
 ## Date
 June 13, 2023

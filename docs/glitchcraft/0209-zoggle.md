@@ -26,7 +26,8 @@ Mineru Fuse Entanglement can be used instead to zoggle. Just FE to her and drop 
 Test on previous versions
 
 ## Credit
-Ryan?, ock
+
+- Ryan?, ock
 
 ## Date
 January 4, 2024

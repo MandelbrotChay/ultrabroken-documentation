@@ -18,7 +18,8 @@ Puts thrown weapons into a state of being broken and unbroken at the same time, 
 Throken weapons have no despawn radius, and can never be unloaded from distance
 
 ## Credit
-Ikaboze
+
+- Ikaboze
 
 ## Date
 May 17, 2025

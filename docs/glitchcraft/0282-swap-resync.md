@@ -29,7 +29,8 @@ the portacull.
 Swap Resync Zuggle: see next row
 
 ## Credit
-MandelbrotChaylay
+
+- MandelbrotChaylay
 
 ## Date
 August 10, 2025

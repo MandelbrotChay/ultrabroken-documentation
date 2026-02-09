@@ -20,7 +20,8 @@ Equipping and unfusing a shield with Robbie's infinite balloon fused to it does 
 —
 
 ## Credit
-Jordan, mulberry, ofstrings2
+
+- Jordan, mulberry, ofstrings2
 
 ## Date
 March 8, 2025

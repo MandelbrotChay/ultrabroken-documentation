@@ -16,7 +16,8 @@ Mid-charge of a spin with a two-handed weapon, obtain a new item at the exact mo
 —
 
 ## Credit
-—
+
+- [GamSla341](https://www.youtube.com/@gamsla3413)
 
 ## Date
 May 13, 2023

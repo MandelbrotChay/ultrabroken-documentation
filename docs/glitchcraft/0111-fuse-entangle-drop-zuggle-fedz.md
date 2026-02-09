@@ -33,7 +33,8 @@ For multiple FEDZ, you must do it in this order:
 —
 
 ## Credit
-"Ryan?"
+
+- Ryan?
 
 ## Date
 June 17, 2023

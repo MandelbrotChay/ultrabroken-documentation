@@ -23,7 +23,8 @@ Method 2 (works 1.0.0-1.2.1):
 Method 2 can also be executed with a chest if you open it right before Link gets eaten by the like like
 
 ## Credit
-Mozz, mulberry
+
+- Mozz, mulberry
 
 ## Date
 June 15, 2023

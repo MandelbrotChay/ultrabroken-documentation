@@ -28,7 +28,8 @@ This only works with items that change into other items in another temperature.
 —
 
 ## Credit
-—
+
+- {Unknown}
 
 ## Date
 June 11, 2023

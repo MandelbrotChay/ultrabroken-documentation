@@ -18,7 +18,8 @@ Continue attack animation onto another weapon.
 —
 
 ## Credit
-NghtmaR3, WinnerBoi77
+
+- NghtmaR3, WinnerBoi77
 
 ## Date
 January 21, 2024

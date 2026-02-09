@@ -29,7 +29,8 @@ For weapons:
 —
 
 ## Credit
-BigDUCCO
+
+- BigDUCCO
 
 ## Date
 June 15, 2023

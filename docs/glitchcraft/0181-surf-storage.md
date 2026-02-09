@@ -17,7 +17,8 @@ Shield surf against a slope
 —
 
 ## Credit
-Mozz
+
+- Mozz
 
 ## Date
 September 22, 2023

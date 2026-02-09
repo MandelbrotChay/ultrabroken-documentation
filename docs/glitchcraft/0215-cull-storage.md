@@ -29,7 +29,8 @@ If he doesn't cull, you didn't get cull storage
 Can also be done by recalling the SDC stick while standing outside of the culling margin with the parent equipped, dropping the parent and picking it back up, and then walking back in the culling margin
 
 ## Credit
-mulberry
+
+- mulberry
 
 ## Date
 January 20, 2024

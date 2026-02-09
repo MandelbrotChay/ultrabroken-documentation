@@ -32,7 +32,8 @@ Method 2:
 A variant of this glitch can be done using zuggle overload (has been known for a while), but I am too lazy to add it to the sheet :D
 
 ## Credit
-WinnerBoi77
+
+- WinnerBoi77
 
 ## Date
 December 3, 2023

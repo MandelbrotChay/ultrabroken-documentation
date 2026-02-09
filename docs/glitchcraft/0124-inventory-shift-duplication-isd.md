@@ -19,7 +19,8 @@ Exploits inventory shift after creating an empty inventory slot to duplicate ite
 The item that gets duplicated will always be to the right of the item you are holding. Exactly which item, can be controlled by how many inventory empty inventory slots were made.
 
 ## Credit
-Blizzard Blanc, BigDUCCO, Maxmasher, Pyuk, Zas
+
+- Blizzard Blanc, BigDUCCO, Maxmasher, Pyuk, Zas
 
 ## Date
 June 25, 2023

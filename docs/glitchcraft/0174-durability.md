@@ -16,7 +16,8 @@ Drop a bow that has Durability (or D+) in your inventory without Link holding it
 For some reason, the game only removes durability if it's considered a cold drop (Link doesn't hold it). If the bow is a warm drop (Link is holding it), no durability is removed at all.
 
 ## Credit
-Zas
+
+- Zas
 
 ## Date
 September 11, 2023

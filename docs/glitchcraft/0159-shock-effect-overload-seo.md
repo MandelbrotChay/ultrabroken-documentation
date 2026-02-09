@@ -30,7 +30,8 @@ Method for 1.2.0:
 this was a pain to write, still experimenting, if you have any discoveries please let us know
 
 ## Credit
-NX721, R4000
+
+- NX721, R4000
 
 ## Date
 July 26, 2023

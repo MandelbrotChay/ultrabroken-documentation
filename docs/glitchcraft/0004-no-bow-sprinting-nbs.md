@@ -16,7 +16,8 @@ unequip bow, hold ZL, and mash R, ZR, and B
 —
 
 ## Credit
-—
+
+- Steel
 
 ## Date
 May 12, 2023

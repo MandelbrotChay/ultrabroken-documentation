@@ -18,7 +18,8 @@ Allows you to manually delay the instance of items being attached with Autobuild
 Can do launches with Octo Balloons and pulling items towards the Like Like's location
 
 ## Credit
-Blackmars, R4000
+
+- Blackmars, R4000
 
 ## Date
 August 28, 2023

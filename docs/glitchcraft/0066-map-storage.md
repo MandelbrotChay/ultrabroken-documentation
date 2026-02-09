@@ -19,7 +19,8 @@ Allows you to have control over Link while the map is open.
 effects can range from softlocks to crashes
 
 ## Credit
-blueberryoats
+
+- blueberryoats
 
 ## Date
 May 29, 2023

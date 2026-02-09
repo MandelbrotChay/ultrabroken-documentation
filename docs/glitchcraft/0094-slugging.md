@@ -23,7 +23,8 @@ Have an item fall onto the ground from zuggle overload and have a like like eat 
 Unculling a sluggled item without retrieving it from the like like causes the item to have no collision
 
 ## Credit
-Mozz
+
+- Mozz
 
 ## Date
 June 15, 2023

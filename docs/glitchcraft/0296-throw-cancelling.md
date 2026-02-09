@@ -18,7 +18,12 @@ Allows you to cancel the ending animation of throwing via Runes, allowing you to
 —
 
 ## Credit
-Quelfth
+
+- Quelfth
+
+## Date
+
+—
 
 ## Source
 

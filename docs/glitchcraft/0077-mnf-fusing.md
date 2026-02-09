@@ -20,7 +20,8 @@ Allows you to fuse to the MNF
 —
 
 ## Credit
-LegendofLinkk
+
+- LegendofLinkk
 
 ## Date
 June 5, 2023

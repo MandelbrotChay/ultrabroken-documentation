@@ -51,13 +51,8 @@ Method 3 (Winnerboi & Ryan):
 - You may need to sprint away from the wall to avoid clipping during step 7
 
 ## Credit
-Originally discovered by Lightos_
 
-Steps later recovered by Lightos, Zas
-
-optimized by Zas, Mulberry, Winnerboi and Ryan?
-
-researched for other versions by Winnerboi and CS16 - September 6, 2023
+- Originally discovered by Lightos, _Steps later recovered by Lightos, Zasoptimized by Zas, Mulberry, Winnerboi and Ryan?researched for other versions by Winnerboi and CS16
 
 ## Date
 September 6, 2023

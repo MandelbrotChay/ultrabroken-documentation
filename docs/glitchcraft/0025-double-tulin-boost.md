@@ -16,6 +16,7 @@ activate bullet time 2 times during the tulin wind
 This glitch may be removed from the spreasheet in the future, it is just tulin pumping but the glider closing is done with bullet time
 
 ## Credit
+
 —
 
 ## Date

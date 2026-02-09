@@ -16,7 +16,8 @@ Discord
 Possible on 1.2.0+ with a different method
 
 ## Credit
-mulberry
+
+- mulberry
 
 ## Date
 October 26, 2025

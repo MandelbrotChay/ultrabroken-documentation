@@ -18,7 +18,8 @@ Droping a recently equipped weapon shortly before shock dropping it, can cause a
 Test on more versions
 
 ## Credit
-Zas
+
+- Zas
 
 ## Date
 December 12, 2023

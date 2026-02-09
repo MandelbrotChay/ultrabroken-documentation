@@ -25,9 +25,8 @@ For more details, check the next row (not done yet, work in progress).
 —
 
 ## Credit
-Toti Sauce
 
-Anti-grav discovered by Toti Sauce and Telkic - August 17, 2024
+- Toti Sauce, Anti-grav discovered by Toti Sauce and Telkic
 
 ## Date
 August 17, 2024

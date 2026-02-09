@@ -38,9 +38,8 @@ In order to make it rangeless, you need to PSLOT the target.
 —
 
 ## Credit
-Discovered by Toti Sauce
 
-Developed by PetitFrapo, Jordan - October 30th, 2024
+- Discovered by Toti Sauce, developed by PetitFrapo, Jordan
 
 ## Date
 October 30th, 2024

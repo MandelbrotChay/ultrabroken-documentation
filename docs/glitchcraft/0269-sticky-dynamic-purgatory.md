@@ -17,7 +17,8 @@ Culling the cold fuse base of a dynamic purgatory equipment using a like like te
 TODO: Test other forms of culling
 
 ## Credit
-mulberry
+
+- mulberry
 
 ## Date
 February 15, 2024

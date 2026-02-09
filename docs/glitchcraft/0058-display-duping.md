@@ -17,7 +17,8 @@ Allows you to dupe equipment that can be put into displays.
 Since this deletes the last equipment, consider placing the desired equipment last
 
 ## Credit
-Pistonight
+
+- Pistonight
 
 ## Date
 May 27, 2023

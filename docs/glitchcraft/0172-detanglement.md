@@ -19,7 +19,8 @@ Fuse entangling a detangled object and dropping the shield will delete it.
 Objects fuse entangled to Mineru can be detangled by fusing another object over the same slot as the target object.
 
 ## Credit
-Zas
+
+- Zas
 
 ## Date
 September 9, 2023

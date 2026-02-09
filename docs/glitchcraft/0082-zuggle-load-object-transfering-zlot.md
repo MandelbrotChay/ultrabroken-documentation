@@ -17,7 +17,8 @@ Can be used to load objects into other maps (like shrines) by placing them in th
 Alternatively, you can do SLD instead of Zuggle to transfer over the shield, resulting in the same thing. If you ZLOT an object while recalling it the object will never move.
 
 ## Credit
-InAMuffinCup, ChargeVolt (SLD transfer method)
+
+- InAMuffinCup, ChargeVolt (SLD transfer method)
 
 ## Date
 June 7, 2023

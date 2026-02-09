@@ -17,7 +17,8 @@ By putting away your shield during a specific moment while a time bomb fused to 
 Also works with the msgnotfound
 
 ## Credit
-tzakazuki
+
+- tzakazuki
 
 ## Date
 November 4, 2023

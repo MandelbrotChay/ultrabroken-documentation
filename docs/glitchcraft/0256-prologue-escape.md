@@ -33,12 +33,8 @@ Now, perform Banc Storage, and load this save. You now have access to the AMS, w
 This glitch also allows for a setup to have infinite durability on any weapon, however due to its complexity this entry will not cover the steps. Feel free to ask glitch hunters in the speedrunning Discord about it.
 
 ## Credit
-mulberry
-Aergyl
-Lightos
-LegendOfLinkk (initial discovery with memory editing)
 
-The entire glitch hunting community! - October 1st, 2024
+- mulberry, Aergyl, Lightos, LegendOfLinkk (initial discovery with memory editing)The entire glitch hunting community!
 
 ## Date
 October 1st, 2024

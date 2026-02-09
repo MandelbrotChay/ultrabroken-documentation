@@ -21,7 +21,8 @@ Allows to zuggle bows and shields in version 1.1.2. Weapon zuggle on 1.1.2 is a 
 Loading a previous save will transfer a stacked bow/shield to that save. Effectivley allowing you to dupe it and retain it's modifier.
 
 ## Credit
-BigDUCCO, LegendofLink, Mozz
+
+- BigDUCCO, LegendofLink, Mozz
 
 ## Date
 June 6, 2023

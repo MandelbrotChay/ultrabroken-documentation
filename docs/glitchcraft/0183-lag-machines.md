@@ -20,7 +20,8 @@ one method to perform this glitch would be:
 Still being researched
 
 ## Credit
-Mozz
+
+- Mozz
 
 ## Date
 October 5, 2023

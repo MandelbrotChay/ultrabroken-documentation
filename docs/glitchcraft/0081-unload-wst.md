@@ -21,7 +21,8 @@ Allows you to transfer modifiers and materials to any weapon. This method is uni
 —
 
 ## Credit
-BigDUCCO,  𝓥𝓮𝓮.𝓜𝓲𝓰𝓱𝓽.𝓔𝔁𝓲𝓼𝓽, syb
+
+- BigDUCCO,  Vee.Might.Exist, syb
 
 ## Date
 June 7, 2023

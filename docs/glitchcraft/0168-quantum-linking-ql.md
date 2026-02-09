@@ -33,7 +33,8 @@ Quantum Link 6/30/2023
 Quantum Anchor 7/23/2023
 
 ## Credit
-NaN Gogh, pyuk
+
+- NaN Gogh, pyuk
 
 ## Date
 August 30, 2023

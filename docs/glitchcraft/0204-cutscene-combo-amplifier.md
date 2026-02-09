@@ -20,7 +20,8 @@ Extends and stacks the damage frames of an attack with memory buffering, causing
 2. performing this with a cucco gives you a (insert odds later) chance of optaining an egg for every memory you watch
 
 ## Credit
-Lightos_
+
+- Lightos_
 
 ## Date
 December 22, 2023

@@ -27,9 +27,8 @@ September 21, 2023 (Original)
 October 10, 2023 (Ock)
 
 ## Credit
-ultrababouin, and susannediazz (original)
-Ock
-SteFen45 (Recall FE method) - September 21, 2023
+
+- ultrababouin, susannediazz (original), Ock, SteFen45 (Recall FE method)
 
 ## Date
 September 21, 2023

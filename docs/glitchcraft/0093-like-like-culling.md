@@ -17,7 +17,8 @@ A method for object culling
 —
 
 ## Credit
-Mozz
+
+- Mozz
 
 ## Date
 June 13, 2023

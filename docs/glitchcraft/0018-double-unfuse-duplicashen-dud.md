@@ -23,7 +23,8 @@ Required: 2 bows, 1 arrow, material to dupe, melee weapon
 Stops working if cooked meals page is full
 
 ## Credit
-Li Shen (鯉神)
+
+- Li Shen (鯉神)
 
 ## Date
 May 15, 2023

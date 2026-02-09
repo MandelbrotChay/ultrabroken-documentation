@@ -21,7 +21,8 @@ Sizes:
 33 Actors on 1.1.0+
 
 ## Credit
-Zvleon
+
+- Zvleon
 
 ## Date
 May 17, 2023

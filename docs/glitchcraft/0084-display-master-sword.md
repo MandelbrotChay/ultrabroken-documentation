@@ -19,7 +19,8 @@ Allows you to display the master sword, damaged master sword or MsgNotFound in a
 For MsgNotFound you don't need to drop it out of recall
 
 ## Credit
-Zas
+
+- Zas
 
 ## Date
 June 8, 2023

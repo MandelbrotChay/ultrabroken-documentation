@@ -25,7 +25,8 @@ Link should cull and uncull for a few frames, then fully cull
 it's very likely to cull lock, especially if you don't mount a steering stick, looking up seems to slightly reduce the chance of this happening
 
 ## Credit
-Kilovictor
+
+- Kilovictor
 
 ## Date
 February 23, 2024

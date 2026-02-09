@@ -19,7 +19,8 @@ By culling as object while its glued to another object, the unculled object will
 The position of the culled object relative to the regular object determines the speed and direction of the launch.
 
 ## Credit
-Asgorne
+
+- Asgorne
 
 ## Date
 July 1, 2023

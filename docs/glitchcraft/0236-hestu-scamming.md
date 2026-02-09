@@ -27,7 +27,8 @@ Prerequisites:
 —
 
 ## Credit
-Blackmars, Tahata, EM
+
+- Blackmars, Tahata, EM
 
 ## Date
 April 19, 2024

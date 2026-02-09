@@ -18,7 +18,8 @@ MSNF needs to be unsheated or it won't add the glow.
 Gloom hands only work on 1.0.0 while phantom ganon works on all versions
 
 ## Credit
-evilgabe
+
+- evilgabe
 
 ## Date
 August 2, 2023

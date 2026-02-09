@@ -18,7 +18,8 @@ Using a Zlotted object to obstruct a warp position, you can offset Link, while w
 —
 
 ## Credit
-Mozz, InAMuffinCup
+
+- Mozz, InAMuffinCup
 
 ## Date
 June 7, 2023

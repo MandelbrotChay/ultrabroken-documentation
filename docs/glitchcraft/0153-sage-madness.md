@@ -16,7 +16,8 @@ Activate the text box you get after obtaining a sage while the sage falls down a
 —
 
 ## Credit
-Aci
+
+- Aci
 
 ## Date
 July 18, 2023

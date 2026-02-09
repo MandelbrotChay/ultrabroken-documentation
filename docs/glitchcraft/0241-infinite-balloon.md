@@ -20,7 +20,8 @@ Steal Robbie's balloon which has will never deplete.
 There are many NPCs that can be put into this weird rolling state.
 
 ## Credit
-kurone_yuu
+
+- kurone_yuu
 
 ## Date
 June 13, 2024

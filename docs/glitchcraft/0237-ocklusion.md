@@ -27,9 +27,8 @@ Ocklusion Stutter:
 By going into the room of the secret stone in Lightning Temple, going up and down the stairs of the secret stone pedestal causes a strong load called Ocklusion Stutter. By opening menu a bit before it can lead to some menu weirdness.
 
 ## Credit
-ock
 
-mulberry for the 1.0-1.1.2 method - May 29, 2024
+- ock, mulberry for the 1.0-1.1.2 method
 
 ## Date
 May 29, 2024

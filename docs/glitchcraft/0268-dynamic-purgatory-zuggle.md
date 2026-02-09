@@ -35,7 +35,8 @@ The FE connection between the zuggled base shield and the dynamic purgatory weap
 For dynamic purgatory without zuggling, omit step 5 for the first method and steps 2-4 for the second method
 
 ## Credit
-mulberry
+
+- mulberry
 
 ## Date
 February 14, 2025

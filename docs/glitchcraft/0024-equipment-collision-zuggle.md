@@ -31,7 +31,8 @@ Zuggle has many ways of being executed, this is the oldest one. Map Zuggling is 
 For 1.1.2, see FEZ and smuggle stacking zuggling (and FEWZ)
 
 ## Credit
-Zvleon
+
+- Zvleon
 
 ## Date
 May 16, 2023

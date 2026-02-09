@@ -29,7 +29,8 @@ Link can't cull if the base is equipped.
 - You will lose the shield so it is best to entangle the stick to a low level/non important shield
 
 ## Credit
-NaN Gogh, DisguisedMoth
+
+- NaN Gogh, DisguisedMoth
 
 ## Date
 July 1, 2023

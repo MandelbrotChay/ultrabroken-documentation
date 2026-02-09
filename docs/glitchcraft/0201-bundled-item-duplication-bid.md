@@ -29,7 +29,8 @@ Discord (Lightos_)
 —
 
 ## Credit
-Ock
+
+- Ock
 
 ## Date
 December 12, 2023

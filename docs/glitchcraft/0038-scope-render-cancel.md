@@ -28,7 +28,8 @@ This glitch cancels any time you open any type of menu, any NPC or prompt intera
 May 19, 2023, June 2, 2023 and July 9, 2023
 
 ## Credit
-NX721,  eXe
+
+- NX721,  eXe
 
 ## Date
 May 19, 2023

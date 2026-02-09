@@ -24,9 +24,8 @@ Timing on Switch 2 may be
 tighter.
 
 ## Credit
-Consistent method discovered by PetitFrapo
 
-Original accidental discovery by Lightos - October 16, 2024
+- Consistent method discovered by PetitFrapoOriginal accidental discovery by Lightos
 
 ## Date
 October 16, 2024

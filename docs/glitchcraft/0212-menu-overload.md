@@ -19,7 +19,8 @@ Transmutation
 Texture Tearing
 
 ## Credit
-Mozz
+
+- Mozz
 
 ## Date
 January 11, 2024

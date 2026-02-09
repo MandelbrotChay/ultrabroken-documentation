@@ -30,7 +30,8 @@ Results in invizuggle when performed on v1.2.0-1.2.1
 - Instead of using hoverstones, it is possible to zuggle by dropping the equipped shield while Link is facing a wall and then quickly turning his back to the wall just before the ability wheel opens
 
 ## Credit
-mulberry, Blackmars
+
+- mulberry, Blackmars
 
 ## Date
 July 18, 2024

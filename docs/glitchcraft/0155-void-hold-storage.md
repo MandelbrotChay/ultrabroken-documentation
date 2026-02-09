@@ -19,7 +19,8 @@ Causes a menu softlock that revokes certain actions but allows for Link's model 
 —
 
 ## Credit
-Lightos_, NX721
+
+- Lightos_, NX721
 
 ## Date
 July 22, 2023

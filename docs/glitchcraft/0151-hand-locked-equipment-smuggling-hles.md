@@ -21,7 +21,8 @@ Hold any material
 Hand locked smuggling can also be performed using runes, two handed weapon and hold throw
 
 ## Credit
-Aeolian
+
+- Aeolian
 
 ## Date
 July 11, 2023

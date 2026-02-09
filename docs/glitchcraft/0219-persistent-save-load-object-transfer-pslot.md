@@ -23,7 +23,8 @@ The shield should now persist through saves! For object PSLOT, you can simply FE
 PSLOT has a very long history of setups, some much more complex than others. The setup shown here is widely regarded to be one of the quickest and simplest methods.
 
 ## Credit
-mulberry
+
+- mulberry
 
 ## Date
 January 25, 2024

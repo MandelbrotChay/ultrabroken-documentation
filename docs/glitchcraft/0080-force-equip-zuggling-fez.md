@@ -25,7 +25,8 @@ This is best achieved at, althought isn't specific too, Mayachideg Shrine.
 Can be repeated multiple times to zuggle multiple weapons.
 
 ## Credit
-BigDUCCO, Mozz, Rhkellz, Syb, NaN Gogh
+
+- BigDUCCO, Mozz, Rhkellz, Syb, NaN Gogh
 
 ## Date
 June 7, 2023

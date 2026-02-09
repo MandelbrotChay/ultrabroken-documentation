@@ -19,7 +19,8 @@ Allows equipment and objects to go through saves by sending its FE base to purga
 Grabbing a purgatory SLD object with ultrahand causes UltraSLOT.
 
 ## Credit
-mulberry
+
+- mulberry
 
 ## Date
 February 11, 2024

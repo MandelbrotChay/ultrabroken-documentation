@@ -22,6 +22,7 @@ The modifier on the base weapon can still be changed after this glitch is perfor
 This does not work on items that cannot be modified or octoroks that have already been used.
 
 ## Credit
+
 —
 
 ## Date

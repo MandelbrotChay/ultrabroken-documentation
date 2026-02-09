@@ -32,7 +32,8 @@ The Fall Damage should be cancelled if you dived quick enough
 —
 
 ## Credit
-LegendOfLinkk
+
+- LegendOfLinkk
 
 ## Date
 September 21st, 2024

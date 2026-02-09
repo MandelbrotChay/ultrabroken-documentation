@@ -23,7 +23,8 @@ Dropped Purgatory (by dropping during Sluggle)
 Drop Smuggle (by drop swapping during Sluggle)
 
 ## Credit
-Winnerboi77
+
+- Winnerboi77
 
 ## Date
 July 12, 2025

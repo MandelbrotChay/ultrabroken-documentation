@@ -27,7 +27,8 @@ https://discord.com/channels/1086729144307564648/1113557914444111873/12172529384
 Dropping from higher up makes the cull more consistent
 
 ## Credit
-Ock, Aergyl
+
+- Ock, Aergyl
 
 ## Date
 November 24, 2023

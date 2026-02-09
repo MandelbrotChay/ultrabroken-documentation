@@ -44,7 +44,8 @@ A pocket rocket which does not break on warps or drain energy cells, and has unl
 —
 
 ## Credit
-Aergyl, mulberry, Ikaboze, Jordan
+
+- Aergyl, mulberry, Ikaboze, Jordan
 
 ## Date
 May 20, 2025

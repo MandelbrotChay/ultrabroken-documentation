@@ -16,7 +16,8 @@ Advances Links current animation by 1 frame while keeping the menu open. Links c
 —
 
 ## Credit
-Mozz
+
+- Mozz
 
 ## Date
 May 29, 2023

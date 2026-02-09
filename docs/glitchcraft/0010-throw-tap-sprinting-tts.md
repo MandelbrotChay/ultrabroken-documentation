@@ -16,7 +16,8 @@ tap B - R - B, repeat
 —
 
 ## Credit
-—
+
+- Deystroyer, Tauktes
 
 ## Date
 May 14, 2023
