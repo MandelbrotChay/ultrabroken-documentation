@@ -47,4 +47,3 @@ May 23, 2023
 ## See also
 
 - Jumpslash Cancel
-

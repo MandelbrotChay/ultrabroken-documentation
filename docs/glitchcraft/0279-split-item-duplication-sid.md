@@ -45,4 +45,3 @@ June 19, 2025
 ## See also
 
 - Stack Splitting
-

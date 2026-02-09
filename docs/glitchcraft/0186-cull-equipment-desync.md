@@ -50,4 +50,3 @@ October 10, 2023
 ## See also
 
 - Object Culling
-

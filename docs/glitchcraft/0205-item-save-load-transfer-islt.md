@@ -46,4 +46,3 @@ December 22, 2023
 ## See also
 
 - Mineru Hold Smuggle
-

@@ -45,4 +45,3 @@ July 22, 2023
 ## See also
 
 - Void Holding
-

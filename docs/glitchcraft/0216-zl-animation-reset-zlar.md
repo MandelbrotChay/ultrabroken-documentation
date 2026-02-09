@@ -46,4 +46,3 @@ January 21, 2024
 ## See also
 
 - Two Handed With Shield
-

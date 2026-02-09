@@ -56,4 +56,3 @@ November 24, 2023
 ## See also
 
 - Object Culling
-

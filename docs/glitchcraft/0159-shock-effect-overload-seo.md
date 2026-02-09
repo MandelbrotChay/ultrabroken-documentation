@@ -58,4 +58,3 @@ July 26, 2023
 ## See also
 
 - Midair Throw Duplication
-

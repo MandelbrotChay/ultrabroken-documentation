@@ -49,4 +49,3 @@ July 12, 2025
 ## See also
 
 - Slugging
-

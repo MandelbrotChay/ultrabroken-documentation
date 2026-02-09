@@ -49,4 +49,3 @@ January 8, 2024
 ## See also
 
 - Stick Desync ClipObject Culling
-

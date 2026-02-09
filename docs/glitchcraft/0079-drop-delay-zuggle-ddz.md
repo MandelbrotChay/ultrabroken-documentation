@@ -47,4 +47,3 @@ June 6, 2023
 ## See also
 
 - Zuggling
-

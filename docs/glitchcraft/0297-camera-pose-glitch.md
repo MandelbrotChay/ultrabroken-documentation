@@ -45,4 +45,3 @@ Link keeps walking while frozen in the camera animation.
 
 ## See also
 —
-

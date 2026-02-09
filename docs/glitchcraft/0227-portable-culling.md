@@ -44,4 +44,3 @@ February 27, 2024
 ## See also
 
 - Stick Desync Clip (SDC)
-

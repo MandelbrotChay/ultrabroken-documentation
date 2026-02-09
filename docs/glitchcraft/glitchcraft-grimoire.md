@@ -308,4 +308,3 @@ This page lists generated glitch stubs created from the community CSV.
 - [Modifier Deletion Weapon State Transfer (Modifier Deletion WST)](./0299-modifier-deletion-weapon-state-transfer-modifier-deletion-wst.md)
 - [Mineru Aim Permanence](./0300-mineru-aim-permanence.md)
 - [Map Flickering](./0301-map-flickering.md)
-

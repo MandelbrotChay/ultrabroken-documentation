@@ -54,4 +54,3 @@ November 28, 2025
 ## See also
 
 - Portable Culling
-

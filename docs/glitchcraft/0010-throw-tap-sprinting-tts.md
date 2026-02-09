@@ -44,4 +44,3 @@ May 14, 2023
 ## See also
 
 - [Totk Sprint Methods](https://docs.google.com/spreadsheets/d/1aXefsoOStTvzwOAzFIaofCtjMf1l6XXbEP5pp_iepzw/edit?usp=sharing)
-

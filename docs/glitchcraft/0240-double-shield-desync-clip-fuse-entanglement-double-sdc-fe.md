@@ -49,4 +49,3 @@ June 6, 2024
 ## See also
 
 - Stick Desync Clipping
-
