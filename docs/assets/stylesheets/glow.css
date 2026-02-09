@@ -197,6 +197,11 @@ a:hover {
   text-shadow: 0 0 6px rgba(0,240,194,0.06);
 }
 
+/* Use teal accent for top-level headings only (h1) */
+.md-content h1, h1 {
+  color: var(--teal-glow) !important;
+}
+
 /* Using default MkDocs Material permalink styles (no custom permalink overrides) */
 
 /* Sidebar section headers - override ellipsis clipping */
