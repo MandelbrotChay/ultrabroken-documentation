@@ -43,7 +43,7 @@ Discovered by Toti Sauce
 Developed by PetitFrapo, Jordan - October 30th, 2024
 
 ## Date
-—
+October 30th, 2024
 
 ## Source
 

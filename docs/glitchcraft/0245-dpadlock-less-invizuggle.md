@@ -44,7 +44,7 @@ Optimized by
 blackmars, mulberry, NghtmaR3 (order is alphabetically) - July 17, 2024
 
 ## Date
-—
+July 17, 2024
 
 ## Source
 

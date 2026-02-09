@@ -30,7 +30,7 @@ Toti Sauce
 Anti-grav discovered by Toti Sauce and Telkic - August 17, 2024
 
 ## Date
-—
+August 17, 2024
 
 ## Source
 

@@ -41,7 +41,7 @@ LegendOfLinkk (initial discovery with memory editing)
 The entire glitch hunting community! - October 1st, 2024
 
 ## Date
-—
+October 1st, 2024
 
 ## Source
 

@@ -27,7 +27,7 @@ Blize, ock
 Blize - October 10, 2023
 
 ## Date
-—
+October 10, 2023
 
 ## Source
 

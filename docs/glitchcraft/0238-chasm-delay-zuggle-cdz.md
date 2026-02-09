@@ -39,7 +39,7 @@ Discovered by ock
 Optimized by mulberry, winnerboi - May 31, 2024
 
 ## Date
-—
+May 31, 2024
 
 ## Source
 

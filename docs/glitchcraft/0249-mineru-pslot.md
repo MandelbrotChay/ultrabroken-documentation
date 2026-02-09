@@ -31,7 +31,7 @@ Discovered by mulberry
 Setup by ArmindoEmiya - July 27, 2024
 
 ## Date
-—
+July 27, 2024
 
 ## Source
 

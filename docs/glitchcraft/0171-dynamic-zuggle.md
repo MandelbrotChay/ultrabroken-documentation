@@ -60,7 +60,7 @@ optimized by Zas, Mulberry, Winnerboi and Ryan?
 researched for other versions by Winnerboi and CS16 - September 6, 2023
 
 ## Date
-—
+September 6, 2023
 
 ## Source
 

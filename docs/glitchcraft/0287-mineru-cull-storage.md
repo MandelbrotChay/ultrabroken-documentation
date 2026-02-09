@@ -20,7 +20,7 @@ Stores the callback of Mineru while mouted on her, useful for swap resync zuggle
 ofstrings2 - Novermber 12, 2025
 
 ## Date
-—
+November 9, 2025
 
 ## Source
 

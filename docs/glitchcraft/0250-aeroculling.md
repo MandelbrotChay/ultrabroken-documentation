@@ -39,7 +39,7 @@ Discovered by Aergyl
 Developed by Aergyl, mulberry - August 11, 2024
 
 ## Date
-—
+August 11, 2024
 
 ## Source
 

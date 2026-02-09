@@ -27,7 +27,7 @@ evilgabe (original glitch)
 nx (side effects) - June 19, 2023
 
 ## Date
-—
+June 19, 2023
 
 ## Source
 

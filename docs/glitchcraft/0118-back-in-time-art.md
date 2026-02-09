@@ -39,7 +39,7 @@ Compendium pictures
 Zas - June 18, 2023
 
 ## Date
-—
+June 18, 2023
 
 ## Source
 

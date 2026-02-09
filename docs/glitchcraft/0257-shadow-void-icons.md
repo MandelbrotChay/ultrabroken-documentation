@@ -29,7 +29,7 @@ Consistent method discovered by PetitFrapo
 Original accidental discovery by Lightos - October 16, 2024
 
 ## Date
-—
+October 16, 2024
 
 ## Source
 

@@ -23,7 +23,7 @@ Not all NPC dialog interactions will work
 mulberry - Novermber 28, 2025
 
 ## Date
-—
+November 28, 2025
 
 ## Source
 

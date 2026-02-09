@@ -19,7 +19,7 @@ unequip bow, hold ZL, and mash R, ZR, and B
 —
 
 ## Date
-—
+May 12, 2023
 
 ## Source
 
