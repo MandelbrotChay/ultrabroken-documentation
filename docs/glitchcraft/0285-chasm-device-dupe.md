@@ -56,19 +56,3 @@ October 12, 2025
 
 - Portable Culling
 
-## Raw row
-```csv
-Glitch: Chasm Device Dupe, Glitch Overview: Unloads throwable items in a way that allows them to be duped by picking them up from Link's hand, most notably zonai capsules, How To: 1. Prepare portacull item
-2. Go into any chasm, make sure you are deep enough that portaculling triggers a chasm load
-3. Hold R, select the item you want to throw using d-pad up, and spam d-pad left/right to re-enter the quick menu without unpausing
-4. Activate portacull to trigger a chasm load
-5. When the chasm load ends, immediately re-select the held item with d-pad up and pick it up, Working Versions: 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1
-1.3.0/1.4.0
-1.4.1
-1.4.2
-Switch 2, Credit: Telkic, mulberry, Date: October 12, 2025, Link to Source: Discord, See Also: Portable Culling, Example(s): Discord, Notes: Can be performed without portacull by positioning Link underneath the chasm boundary (see example clip), or with ocklusion
-```

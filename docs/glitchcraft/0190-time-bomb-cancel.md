@@ -48,12 +48,3 @@ November 4, 2023
 
 —
 
-## Raw row
-```csv
-Glitch: Time Bomb cancel, Glitch Overview: By putting away your shield during a specific moment while a time bomb fused to the mastersword is going off, it will explode without any damage to the environment., How To: 1. Attack with a time-bomb mastersword
-2. Tap or release zl right when you hear the final noice of the bomb before it goes off, Working Versions: 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1, Credit: tzakazuki, Date: November 4, 2023, Link to Source: Discord, Notes: Also works with the msgnotfound
-```

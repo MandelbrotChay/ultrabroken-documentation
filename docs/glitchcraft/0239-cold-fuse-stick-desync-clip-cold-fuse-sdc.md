@@ -54,18 +54,3 @@ June 4, 2024
 - Stick Desync Clipping
 - Cold Fuse
 
-## Raw row
-```csv
-Glitch: Cold Fuse Stick Desync Clip (Cold Fuse SDC), Glitch Overview: An easier way to perform stick desync clip using cold fuse that allows for an almost immediate dismount, making it useful for stick desync without clipping, How To: 1. Cold fuse a steering stick to a weapon or shield
-
-2. Mount the steering stick
-
-3. Unequip the weapon or shield that the steering stick is cold fused to
-
-4. Mash B immediately upon unpausing (skip this step if clipping is desired), Working Versions: 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1, Credit: mulberry, KiloVictor, Date: June 4, 2024, Link to Source: Discord, See Also: Stick Desync Clipping
-Cold Fuse, Example(s): Discord
-```

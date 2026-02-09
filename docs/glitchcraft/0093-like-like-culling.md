@@ -48,12 +48,3 @@ June 13, 2023
 
 —
 
-## Raw row
-```csv
-Glitch: Like-Like Culling, Glitch Overview: A method for object culling, How To: 1. Fuse entangle any object to a shield, and drop the shield next to a Like-Like.
-2. Let the Like-Like eat the shield the object should cull., Working Versions: 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1, Credit: Mozz, Date: June 13, 2023, Link to Source: Discord
-```

@@ -65,29 +65,3 @@ December 3, 2023
 
 —
 
-## Raw row
-```csv
-Glitch: Bow Attachment Storage, Glitch Overview: You can store the bow fuse by dropping the bow during the bow fuse and interupting it with throw aim or a jump slash., How To: Method 1:
-1. Aim with the bow
-2. Press R, then press dpadup a few frames later
-3. Select a material
-4. Drop the bow
-5. Exit the menu
-6. Pick up the bow
-7. The material will be fused to the bow as soon as you tap ZR
-
-Method 2:
-1. Tap ZR
-2. Press dpadup a few frames later
-3. Select a material
-4. Drop the bow
-5. Exit the menu, then interupt it as soon as possible
-6. Pickup the bow
-7. The material will be fused to the bow as soon as you tap ZR, Working Versions: 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1, Credit: WinnerBoi77, Date: December 3, 2023, Link to Source: Discord, Example(s): https://discord.com/channels/1086729144307564648/1109838351596527726/1180885814230655017
-https://discord.com/channels/1086729144307564648/1109838351596527726/1180883442636955718
-https://vxtwitter.com/zasbotw/status/1731339526008963191, Notes: A variant of this glitch can be done using zuggle overload (has been known for a while), but I am too lazy to add it to the sheet :D
-```

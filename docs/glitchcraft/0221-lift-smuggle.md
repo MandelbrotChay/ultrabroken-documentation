@@ -50,14 +50,3 @@ February 3, 2024
 
 - Equipment Smuggle
 
-## Raw row
-```csv
-Glitch: Lift Smuggle, Glitch Overview: By picking up an item like a battery while a specific cutscene (e.g. korok) is playing, you can get into a state similar to lift smuggeling (botw glitch)., How To: 1. Perform shield smuggle culling or shock (can't be on links back)
-Don't swap shields!
-2. pick up an item, like a battery while a specific cutscene starts, koroks work best, Working Versions: 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1, Credit: Blackmars, Date: February 3, 2024, Link to Source: Discord, See Also: Equipment Smuggle, Effects/Extensions: Pressing Zr during a specific time frame also allows the bow to be held. This works independently from koroks too.
-https://discord.com/channels/1086729144307564648/1105598687167664239/1203350214304600084 (Lightos_)
-```

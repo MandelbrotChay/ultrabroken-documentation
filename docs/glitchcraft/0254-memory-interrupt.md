@@ -48,14 +48,3 @@ October 1st, 2024
 
 —
 
-## Raw row
-```csv
-Glitch: Memory Interrupt, Glitch Overview: Interrupting a memory causes a forced pause after a dialogue, How To: 1. Select a memory
-2. Hold up on the D-Pad or the left stick
-3. Press B, then A a frame later
-4. Quickly press - or R
-
-The next dialogue/cutscene causes a forced pause.
-The main use for this is Banc Storage, check the next row, Working Versions: 1.0.0, Credit: mulberry, Date: October 1st, 2024, Link to Source: https://discord.com/channels/1086729144307564648/1110956205624532993/1290665812855885846, Tutorials/Resources: https://www.youtube.com/watch?v=RmjZKVGvstE
-(The beginning of the video shows it)
-```

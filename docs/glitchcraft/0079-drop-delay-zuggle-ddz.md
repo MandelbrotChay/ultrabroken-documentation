@@ -50,14 +50,3 @@ June 6, 2023
 
 - Zuggling
 
-## Raw row
-```csv
-Glitch: Drop Delay Zuggle (DDZ), Glitch Overview: Dropping a large amount of equipment causes a delay in equipment spawning, enabling zuggling., How To: 1. Face a wall
-2. Drop 15-20 weapons/bows/shields
-3. Drop equiped equipment and equip something new
-4. Hold L and press + at the same time
-5. Select rune and drop equipment
-6. When the map is open, hold down and unpause, Working Versions: 1.0.0
-1.1.0/1.1.1
-1.1.2, Credit: LegendofLinkk, Date: June 6, 2023, Link to Source: Twitter, See Also: Zuggling, Notes: You dont need a wall, if you load a file after going into the map.
-```

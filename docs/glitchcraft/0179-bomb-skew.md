@@ -43,8 +43,3 @@ September 21, 2023
 
 —
 
-## Raw row
-```csv
-Glitch: Bomb Skew, Glitch Overview: In similar fashion to skew from BOTW, this affects the direction a shield surf spring jump will send you., How To: 1. Shield surf onto a slope.
-2. Fuse a bomb/spring to your shield or switch to a shield with a bomb/spring already attached and shield surf., Working Versions: 1.0.0, Credit: Aergyl, FerrusCube, Mozz, Date: September 21, 2023, Link to Source: Discord, Example(s): https://discord.com/channels/1086729144307564648/1105598254198050947/1154555245830086706
-```

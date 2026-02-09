@@ -49,13 +49,3 @@ July 12, 2023
 
 —
 
-## Raw row
-```csv
-Glitch: Wheel Zoomy (Also known as Wheel Wacko Boingo), Glitch Overview: Uses a formation of wheels to gain momentum on land, similar speeds to Wacko Boingo, How To: 1. Attach three wheels, attach two wheels with the center wheel, attaching it in the same direction right to the side of the center wheel's axis. (Check example for a visual)
-2. Press ZL to put the wheels in a position where the center wheel is facing towards you horizontally, and rotate it in these directions: Left > Up
-3. Summon a wing or get on a board, activate and hold down with the wheels, (It should be sticking on the floor, not moving when Link is walking) and get on the wing, hold down with the wheels on the wing and walk forward., Working Versions: 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1, Credit: Solo_Turtle, Date: July 12, 2023, Example(s): https://twitter.com/NX721_/status/1679259808757870592?t=O2gULUcC_CmV0isS44RMEg&s=19, Notes: Also possible with two wheels
-```

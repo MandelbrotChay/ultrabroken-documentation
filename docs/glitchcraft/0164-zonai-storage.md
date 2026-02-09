@@ -45,10 +45,3 @@ August 13, 2023
 
 —
 
-## Raw row
-```csv
-Glitch: Zonai Storage, Glitch Overview: Allows Zonai devices to be stored and taken into shrines, How To: 1. Select any Zonai device 
-2. Press A and B at the same time
-You now have stored the zonai device!
-If you enter a shrine you may chose 1 to 10 zonai devices to spawn, Working Versions: 1.0.0, Credit: bebu0815, Date: August 13, 2023, Link to Source: Discord, Effects/Extensions: Activating zonai storage, dying and opening the inventory may crash the game, Tutorials/Resources: https://www.youtube.com/watch?v=6plkkvYGW74&
-```

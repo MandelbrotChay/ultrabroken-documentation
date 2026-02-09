@@ -57,20 +57,3 @@ May 18, 2023
 
 —
 
-## Raw row
-```csv
-Glitch: Autobuild Cancel Slide (ABCS), Glitch Overview: Allows you to slide on top of the blueprint build over the map at insane speeds, or gain immense amounts of height., How To: 1. Get some physical materials to create your blueprint autobuild (doesn't require all of them, just the needed ones for flooring).
-2. Select your blueprint you wish to build in the list.
-3. Press B and then Y, the timing is a bit tight (suspected to be frame perfect).
-4. Select the same blueprint you chose before.
-
-If it works, your blueprint should be hovering up in front of you without the menu overlay. Find a barricade to push it closer towards you, and then ascend into it to get on top., Working Versions: 1.0.0
-1.1.0/1.1.1, Credit: Takosensai1, Date: May 18, 2023, Link to Source: Discord, Effects/Extensions: Depending on how you create your build for ABCS, you can achieve many different results (either going very fast, ascending very high, or being able to clip through walls).
-
-See Ghost Stick clipping, Example(s): https://youtu.be/3DHEaqoDl1M
-https://twitter.com/PowerGaymerKai/status/1659292261572829184, Notes: If you're having trouble getting the timing down, you should be pressing Y around the time where Link can successfully pull out his weapon.
-
-If you have "Aim with motion controls" enabled, the object will often float away from Link making it very difficult or impossible to get on top of. Turning it off fixes the issue.
-
-On 1.0.0, the speed that can be achieved is much slower than what is seen on 1.1.0 - 1.1.1.
-```

@@ -50,15 +50,3 @@ July 17, 2024
 - Save Load Dupe
 - Portable Culling
 
-## Raw row
-```csv
-Glitch: Portable Cull Save Load Dupe (Portacull SLD), Glitch Overview: Allows for Save Load Duplication on v1.2.0-1.2.1 by culling Link on the same frame that the process is performed, How To: 1. Setup Portable Culling
-2. Save your game
-3. Pause, drop the target item, and swap to a different item of the same type (target item cannot be the same type as your portacull item)
-4. Drop portacull item and swap to a different item of the same type
-5. Pause buffer
-6. Drop the item you swapped to in step 3 and load the save you made in step 2
-7. Pickup the item dropped on the ground, Working Versions: 1.2.0
-1.2.1, Credit: NghtmaR3, Date: July 17, 2024, Link to Source: Discord, See Also: Save Load Dupe
-Portable Culling
-```

@@ -50,14 +50,3 @@ July 23, 2023
 
 - Zuggle Overload
 
-## Raw row
-```csv
-Glitch: Overload Cold Fuse, Glitch Overview: Fusing to an overload dropped item causes cold fuse, How To: 1. Zuggle Overload
-2. overload drop a weapon/shield
-3. fuse it to the opposite equippment type
-4. fuse the target object to the drop smuggled equippment type, Working Versions: 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1, Credit: F. Buffalo, Date: July 23, 2023, Link to Source: Twitter, See Also: Zuggle Overload
-```

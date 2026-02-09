@@ -53,20 +53,3 @@ June 18, 2023
 
 —
 
-## Raw row
-```csv
-Glitch: Fuse Storage (FS), Glitch Overview: Fusing an item on the same frame that it culls interrupts the fuse. It will continue as soon as the item unculls, but can lead to FE or cold fuse by interrupting the fusion process in a specific way, How To: Like-Like Fuse Storage
-Culling Area Fuse Storage, Working Versions: 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1, Credit: Mozz, Date: June 18, 2023, Link to Source: https://discord.com/channels/1086729144307564648/1105598687167664239/1119880715832676423, Effects/Extensions: Fuse Entanglement
-Cold Fuse, Example(s): Discord
-
-No Like-Like (Memory-less)
-Discord
-
-No Like-Like
-Discord, Notes: The most important thing for weapon FE is having something fused to an arrow while the delayed fuse is triggered.
-In all cases, you can get the like to drop it’s stored fuse (or other objects) by stunning it and hitting it’s weak spot.
-```

@@ -49,13 +49,3 @@ July 3, 2023
 
 - Hold Storage
 
-## Raw row
-```csv
-Glitch: Vendor Scamming, Glitch Overview: Allows you to infinitely sell items to (steal from) a vendor using Hold Storage/Smuggling., How To: 1. Activate hold storage onto a horse.
-2. Still atop the horse, aproach a vendor and then prepare to throw an item, and interact with the vendor.
-3. Sell the hold stored items to the vendor.
-4. Exit the shop and then reenter it, and resell the hold stored items., Working Versions: 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0, Credit: NX721, Mozz, NaN Gogh, Date: July 3, 2023, See Also: Hold Storage, Effects/Extensions: Easiest method of reaching max rupees., Example(s): https://twitter.com/NX721_/status/1675983600263778305
-```

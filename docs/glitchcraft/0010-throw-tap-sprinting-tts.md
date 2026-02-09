@@ -47,11 +47,3 @@ May 14, 2023
 
 - [Totk Sprint Methods](https://docs.google.com/spreadsheets/d/1aXefsoOStTvzwOAzFIaofCtjMf1l6XXbEP5pp_iepzw/edit?usp=sharing)
 
-## Raw row
-```csv
-Glitch: Throw Tap Sprinting (TTS), How To: tap B - R - B, repeat, Working Versions: 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1, Credit: Deystroyer, Tauktes, Date: May 14, 2023, Link to Source: Discord, See Also: Totk Sprint Methods, Effects/Extensions: currently infinite, Example(s): Youtube
-```

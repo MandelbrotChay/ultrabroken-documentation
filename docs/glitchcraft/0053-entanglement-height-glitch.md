@@ -48,11 +48,3 @@ May 24, 2023
 
 - Fuse Entanglement
 
-## Raw row
-```csv
-Glitch: Entanglement Height Glitch, Glitch Overview: Suspends Link a certain distance off the ground while shield surfing., How To: Fuse entangle a spring to a shield and start a shield surf within its activation radius. Or alternatively, move far enough away from the spring that it unloads., Working Versions: 1.0.0
-1.1.0/1.1.1
-1.1.2
-1.2.0
-1.2.1, Credit: Mozz, Date: May 24, 2023, Link to Source: Discord, See Also: Fuse Entanglement, Effects/Extensions: Only lasts while shield surfing, but is infintely active., Example(s): https://discord.com/channels/1086729144307564648/1105598687167664239/1111097783445880885, Notes: Only deactivates upon shield unequip.
-```

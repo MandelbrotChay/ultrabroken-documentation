@@ -46,10 +46,3 @@ May 29, 2023
 
 —
 
-## Raw row
-```csv
-Glitch: Map Storage, Glitch Overview: Allows you to have control over Link while the map is open., How To: 1. Open the camera.
-2. Press - and go to the map tab.
-3. Close the map.
-4. Press B and  + in the same frame or one frame later, Working Versions: 1.1.0/1.1.1, Credit: blueberryoats, Date: May 29, 2023, Link to Source: Discord, Effects/Extensions: effects can range from softlocks to crashes, Tutorials/Resources: https://youtu.be/cZZ-enDJ6jY
-```
