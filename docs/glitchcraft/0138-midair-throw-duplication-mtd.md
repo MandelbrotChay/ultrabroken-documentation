@@ -8,12 +8,10 @@ title: "Midair Throw Duplication (MTD)"
 Allows you to dupe any item that can be thrown, including Zonai capsules.
 
 ## Instructions
-```
 1. Have only 1 of the item you're trying to dupe in inventory, and find a decently high ledge.
 2. Hold R and select the item to hold the item in Links hand.
 3. Walk off the ledge and immediately press d-pad up to open the quick menu, then let go of R then press X to drop the held item.
 4. Repeat up to 20 times, then pick up duplicated items.
-```
 
 ## Notes
 —

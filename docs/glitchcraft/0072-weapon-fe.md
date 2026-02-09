@@ -8,13 +8,11 @@ title: "Weapon FE"
 Allows for FE to weapons
 
 ## Instructions
-```
 1. Fuse entangle weapon to shield 
 2. Zuggle a different weapon
 3. Pick up fe weapon
 4. Do normal fuse entanglement setup but begin fusing to weapon instead 
 5. Swap off shield with weapon
-```
 
 ## Notes
 September 12, 2023 and June 1, 2023

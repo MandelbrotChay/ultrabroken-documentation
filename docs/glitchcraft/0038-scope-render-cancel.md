@@ -8,7 +8,6 @@ title: "Scope Render Cancel"
 Removes scope HUD and reveals two borders that show an overlay that renders flames, visual effects, etc. Another version of this glitch can be used to reduce the size of the borders for the camera filter for cinematic shots.
 
 ## Instructions
-```
 Wide Border Version:
 1. Open Camera rune and take a picture
 2. Delete this picture
@@ -17,7 +16,6 @@ Small Border Version:
 1. Use the telescope at Lookout Landing
 2. Press B + R3 (Scope) 
 3. Shortly after, press L (Camera) twice in quick succession to open and close the Camera
-```
 
 ## Notes
 You can freely move around and attack while having the camera filter with you.

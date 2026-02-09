@@ -1,4 +1,4 @@
----
+﻿---
 title: "Zonai Inventory Shift Dupe (ZISD)"
 ---
 
@@ -8,7 +8,6 @@ title: "Zonai Inventory Shift Dupe (ZISD)"
 Uses Memory Buffering and MTD to duplicate Zonai Devices
 
 ## Instructions
-```
 Requirements: Have 1 of a Zonai Device to throw Have 10 of another Zonai Device
 have at least 1 of the Zonai Device you want to dupe, make sure it is immediately after the Zonai Device you have 10 of (ie. to the right in pause menu)
 
@@ -19,7 +18,6 @@ Steps:
 4. Select the "Take Out"option and select 10 of the Zonai Devices next to the device you want to dupe
 5. Without exiting the menu, go to the Map (Press -) and watch a memory
 6. Go back to Zonai Devices Tab (Press +) and exit the menu
-```
 
 ## Notes
 —

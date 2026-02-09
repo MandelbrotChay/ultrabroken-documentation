@@ -1,4 +1,4 @@
----
+﻿---
 title: "Equipped Throken"
 ---
 
@@ -8,7 +8,6 @@ title: "Equipped Throken"
 Allows throken weapons to be equipped
 
 ## Instructions
-```
 For 1.0.0-1.1.2:
 1. Fuse a bomb to a two-handed weapon on one durability (including its fuse durability)
 2. Equip a different weapon and smuggle it in any form
@@ -22,7 +21,6 @@ For 1.0.0-1.2.1:
 3. Jumpslash in place to activate the time bomb, then throw the boomerang shortly after
 4. Overload pickup the boomerang just as it explodes, the boomerang should be equipped despite the broken weapon message indicating otherwise
 5. Drop the boomerang with Link's back to a wall
-```
 
 ## Notes
 Having a like like steal the throken weapon from Link allows it to be picked up once again

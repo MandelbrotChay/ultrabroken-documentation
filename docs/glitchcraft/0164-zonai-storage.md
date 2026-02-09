@@ -1,4 +1,4 @@
----
+﻿---
 title: "Zonai Storage"
 ---
 
@@ -8,12 +8,10 @@ title: "Zonai Storage"
 Allows Zonai devices to be stored and taken into shrines
 
 ## Instructions
-```
 1. Select any Zonai device 
 2. Press A and B at the same time
 You now have stored the zonai device!
 If you enter a shrine you may chose 1 to 10 zonai devices to spawn
-```
 
 ## Notes
 Activating zonai storage, dying and opening the inventory may crash the game

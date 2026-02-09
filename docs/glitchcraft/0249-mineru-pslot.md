@@ -1,4 +1,4 @@
----
+﻿---
 title: "Mineru PSLOT"
 ---
 
@@ -8,7 +8,6 @@ title: "Mineru PSLOT"
 Using Mineru Culling it's possible to send a piece of equipment to culled purgatory portably, allowing for PSLOT
 
 ## Instructions
-```
 Versions 1.2+:
 0. Prepare a SDC stick through Mineru Cold Fuse or any other method, and fuse it to Mineru, as well as a portacull weapon, and a rocket shield
 1. Mineru FE a shield A.
@@ -21,7 +20,6 @@ Versions 1.2+:
 8. Use the rocket shield to detangle.
 
 Versions 1.0-1.1.2 have a slightly easier setup, they can use another zuggle method for steps 1-3, such as Map Zuggle or Drop Delay Zuggle. Step 4 can be done through L Cancel FE. Step 5 is slightly different: cull Link through Mineru, and drop shield B while culled. This sends shield A to culled purgatory. In order to uncull the target you may cull Link through Mineru while having shield A equipped. Afterwards, just Map Zuggle or DDZ then detangle to finish the PSLOT.
-```
 
 ## Notes
 —

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Portable Cull Save Load Dupe (Portacull SLD)"
 ---
 
@@ -8,7 +8,6 @@ title: "Portable Cull Save Load Dupe (Portacull SLD)"
 Allows for Save Load Duplication on v1.2.0-1.2.1 by culling Link on the same frame that the process is performed
 
 ## Instructions
-```
 1. Setup Portable Culling
 2. Save your game
 3. Pause, drop the target item, and swap to a different item of the same type (target item cannot be the same type as your portacull item)
@@ -16,7 +15,6 @@ Allows for Save Load Duplication on v1.2.0-1.2.1 by culling Link on the same fra
 5. Pause buffer
 6. Drop the item you swapped to in step 3 and load the save you made in step 2
 7. Pickup the item dropped on the ground
-```
 
 ## Notes
 —

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Modifier Deletion Weapon State Transfer (Modifier Deletion WST)"
 ---
 
@@ -8,7 +8,6 @@ title: "Modifier Deletion Weapon State Transfer (Modifier Deletion WST)"
 Equipping and dropping items in a specific order causes wst with a sideeffect of deleting modifiers.
 
 ## Instructions
-```
 There are a couple of variants:
 
 Variant 1:
@@ -31,7 +30,6 @@ With this variant the target item IS the donor
 3. equip the target/donor item
 4. drop it
 The effect is that the modifier of the item got deleted.
-```
 
 ## Notes
 Variant 2 can be used to infinitely re-use items on shields that break on impact. The main use for this are infinite bomb jumps, but it can also be used to break pots infinitely.

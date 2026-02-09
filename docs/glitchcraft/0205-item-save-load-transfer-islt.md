@@ -1,4 +1,4 @@
----
+﻿---
 title: "Item Save Load Transfer (ISLT)"
 ---
 
@@ -8,11 +8,9 @@ title: "Item Save Load Transfer (ISLT)"
 Allows transferring held items through saves.
 
 ## Instructions
-```
 1. Preform Mineru Hold Smuggle. (Hold up to 4 items you don't have on another file).
 2. Die and quit to load another save without closing the material tab.
 3. Hold an item and drop it on the ground.
-```
 
 ## Notes
 Fairies on GSI

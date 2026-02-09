@@ -1,4 +1,4 @@
----
+﻿---
 title: "Glue Removal"
 ---
 
@@ -8,13 +8,11 @@ title: "Glue Removal"
 lets you break apart things that have been ultrahanded together
 
 ## Instructions
-```
 1. Have 2 attached objects 
 
 2. Recall them
 
 3. Go into bullet time
-```
 
 ## Notes
 Doesn't work with every object

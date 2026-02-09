@@ -1,4 +1,4 @@
----
+﻿---
 title: "Mineru Fuse Entanglement (Mineru FE)"
 ---
 
@@ -8,7 +8,6 @@ title: "Mineru Fuse Entanglement (Mineru FE)"
 Fusing to Mineru and then pausing the game or culling Link while riding Mineru on a specific frame causes objects to FE to Mineru
 
 ## Instructions
-```
 Method 1:
 1. Perform like like stick culling in an area where Mineru can be summoned
 2. Quickly mount Mineru and take out the target item
@@ -28,7 +27,6 @@ Note: This method ONLY works with bows, shields, and weapons
 2. Mount Mineru
 3. Fuse the target item to any slot and pause the game or open a d-pad menu exactly 3 frames later
 4. Close the menu/unpause
-```
 
 ## Notes
 - Dismissing Mineru removes any objects FE'd to her from the world, allowing for equipment desync and, consequently, WST for equipment

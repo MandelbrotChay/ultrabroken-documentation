@@ -1,4 +1,4 @@
----
+﻿---
 title: "Camera CFW"
 ---
 
@@ -8,7 +8,6 @@ title: "Camera CFW"
 Glitches out the camera rune and can remove the waymarkers and the camera UI
 
 ## Instructions
-```
 1. Open camera rune
 2. Take a photograph
 3. Delete the snapshot
@@ -28,7 +27,6 @@ borders render layered weirdness
 mode 3:
 same as mode 1
 no camera ui
-```
 
 ## Notes
 —

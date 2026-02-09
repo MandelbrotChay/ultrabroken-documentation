@@ -1,4 +1,4 @@
----
+﻿---
 title: "Dpadlock-less Invizuggle"
 ---
 
@@ -8,7 +8,6 @@ title: "Dpadlock-less Invizuggle"
 The first frame of a cull does not dpadlock, so it can be used for invizuggle
 
 ## Instructions
-```
 The easiest way:
 1. Prepare a portable cull item of the opposite equippment type that you intend to invizuggle
 2. Hold L to open the ability menu and select the map
@@ -32,7 +31,6 @@ If you want to zlot an item with invizuggle, you can do the following:
 6. leave the culling area, then hold L in such a way that causes the menu to open one frame frame before link culls
 7. do regular dpadlockless invizuggle inputs
 8. drop the child to uncull it
-```
 
 ## Notes
 —

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Prologue Escape"
 ---
 
@@ -8,7 +8,6 @@ title: "Prologue Escape"
 Using Banc Storage, it's possible to get Link out of the prologue, allowing for a lot of side effects.
 
 ## Instructions
-```
 Perform Banc Storage (check the row above). The banc change you use matters. You will need to use either a warp to the Nachoyah (Recall) shrine, or a shrine entry/exit of that same shrine. 
 You want to create a new game while in the infinite loading screen, so go to the main menu, and create a new game.
 Link from the new game should get warped, with a weird cutscene after that happens, you can skip it.
@@ -22,7 +21,6 @@ The main effects are:
 - Decayed Master Sword not picked up, allows for other glitches
 
 Check the Effects/Extensions column for more specific effects, such as Awakened Master Sword
-```
 
 ## Notes
 Using Shrine Entry storage at Nachoyah, it's possible to beat Recall early, and sequence break. This locks you out of Purah Pad, and the Light Dragon won't spawn in the entire game. For casual use of Prologue Escape, it's recommended to not do that.

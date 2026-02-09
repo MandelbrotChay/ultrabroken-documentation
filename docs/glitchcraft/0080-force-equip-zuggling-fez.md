@@ -8,7 +8,6 @@ title: "Force Equip Zuggling (FEZ)"
 Allows Link to zuggle weapons using any interaction that forcefully equips a weapon. Best achieved by shrines or quests.
 
 ## Instructions
-```
 This is best achieved at, althought isn't specific too, Mayachideg Shrine.
 
 1. Before entering the shrine, make sure you have a WEAPON EQUIPPED, and a FULL WEAPON INVENTORY and then enter the shrine.
@@ -19,7 +18,6 @@ This is best achieved at, althought isn't specific too, Mayachideg Shrine.
 6. Open the chest, you should get an options to drop a weapon. Then drop your currently equipped weapon.
 7. The menu should close and the prompt "You can't drop that here." should appear.
 8. Load any save.
-```
 
 ## Notes
 Can be repeated multiple times to zuggle multiple weapons.

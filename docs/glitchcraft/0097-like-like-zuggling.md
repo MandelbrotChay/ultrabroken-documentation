@@ -8,7 +8,6 @@ title: "Like-Like Zuggling"
 Allows for zuggling via slugging
 
 ## Instructions
-```
 Method 1 (works 1.0.0-1.1.2):
 1. Sluggle and drop the equipped sluggled item, then equip another item of the same type
 2. Zuggle by dropping the item you swapped to (see notes for 1.1.2)
@@ -23,7 +22,6 @@ Method 2 (works 1.2.0-1.2.1)
 6. Close the quick menu and let the map open
 7. Press + to go into the inventory, drop the item that you first swapped to
 8. Retrieve the item from the like like
-```
 
 ## Notes
 Both methods can be used to zuggle multiple items at once. Simply repeat the steps for each subsequent zuggle except for the last step, which should be skipped until you have zuggled the desired amount of items (limit of 6 items per like like)

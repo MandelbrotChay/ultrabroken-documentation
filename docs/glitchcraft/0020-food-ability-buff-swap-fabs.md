@@ -8,7 +8,6 @@ title: "Food Ability Buff Swap (FABS)"
 Allows you to get roasted food (stackable) with a food effect
 
 ## Instructions
-```
 1. Cook a meal with the desired effect
 
 2. Go to a NPC who sells/gives roasted food DO NOT SORT (see notes for all locations)
@@ -20,7 +19,6 @@ Allows you to get roasted food (stackable) with a food effect
 5. Now you have the cooked food with an effect (stackable effect food) 
 
 -You can roast more food and it will automaticially have the effect as long as you still have at least one of the roasted food.
-```
 
 ## Notes
 These are all the places you can obtain cooked food to perform with FABS:

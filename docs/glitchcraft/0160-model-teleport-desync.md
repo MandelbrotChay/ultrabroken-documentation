@@ -1,4 +1,4 @@
----
+﻿---
 title: "Model Teleport Desync"
 ---
 
@@ -8,9 +8,7 @@ title: "Model Teleport Desync"
 This allows for invisibility, model desyncing when gliding, staggering when getting hit to prevent ragdoll, without the previous method that required you to overload.
 
 ## Instructions
-```
 1. Find a culling area                                                                                                                                                                                                                    2. Summon a steering stick                                                                                                                                                                                                              3. Perform SDC (Shield Desync Clip) and quickly hop off the stick after clipping through the previous ground layer                                                                  4. Link should get culled, then load any save (This glitch gets cancelled by most cutscenes and by watching a memory.)
-```
 
 ## Notes
 - Animation Staggering

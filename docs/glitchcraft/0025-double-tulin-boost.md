@@ -5,12 +5,10 @@ title: "Double Tulin Boost"
 # Double Tulin Boost
 
 ## Overview
-allows you to get more speed with tulin than just normal tulin (isnt' as effective as tulin pumping)
+Allows you to get more speed with tulin than just normal tulin (isnt' as effective as tulin pumping)
 
 ## Instructions
-```
-activate bullet time 2 times during the tulin wind
-```
+Activate bullet time 2 times during the tulin wind
 
 ## Notes
 This glitch may be removed from the spreasheet in the future, it is just tulin pumping but the glider closing is done with bullet time

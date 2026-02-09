@@ -1,4 +1,4 @@
----
+﻿---
 title: "Quantum Linking (QL)"
 ---
 
@@ -8,7 +8,6 @@ title: "Quantum Linking (QL)"
 Uses culling to separate glued objects in space, while still retaining a coherent construction
 
 ## Instructions
-```
 Requirements:
 - 1 shield
 - 1 object to be culled
@@ -21,7 +20,6 @@ Procedure:
 4. Ultrahand any of your other object(s)
 5. Leave the culling area
 6. Glue something to the separated other object in order to find the whole thing in your Autobuild history
-```
 
 ## Notes
 Quantum Anchor

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Master Sword Liberation"
 ---
 
@@ -8,7 +8,6 @@ title: "Master Sword Liberation"
 Allows you to dupe the master sword/decayed master sword
 
 ## Instructions
-```
 Method 1 (ock):
 1. Do the like like stick cull.
 2. During the cull, get on mineru to cull both yourself and mineru.
@@ -42,7 +41,6 @@ Method 3 (ock):
 4. Watch a memory to re-cull
 5. Unpause and transmutate the Master Sword 
 6. When the bombs go off, the breezer cutscene will trigger and drop the Master Sword (this will also duplicate it)
-```
 
 ## Notes
 This can be combined with / decayed  zuggle to transfer it through files

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Cold Fuse"
 ---
 
@@ -8,11 +8,9 @@ title: "Cold Fuse"
 Interrupting a fuse causes null fe without destroying the connection to the weapon/shield.
 
 ## Instructions
-```
 Overload Cold Fuse
 Shock Cold Fuse
 Cull Cold Fuse
-```
 
 ## Notes
 Auto Fe:

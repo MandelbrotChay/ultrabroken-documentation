@@ -1,4 +1,4 @@
----
+﻿---
 title: "YeeFE"
 ---
 
@@ -8,7 +8,6 @@ title: "YeeFE"
 Uses culling with mineru and an sdc stick to fuse entangle
 
 ## Instructions
-```
 1. Perform sdc with the cold fuse base (for 1.2.0-1.2.1), overload, or fe base 
 2. Fuse the sdc steering stick to mineru
 3. Fuse before link culls
@@ -20,7 +19,6 @@ Yeefe can also be set up using the String Feory method (ofstrings2):
 4. Perform Cold Fuse SDC, but instead of swapping like you would normally do, drop the cold fuse base and mount the stick instantly (like you would do with regular FE SDC). This allows to keep the Mineru FE connection.
 5. Fuse the SDC stick to the Mineru FEd equipment (you may mount Mineru/a steering stick to unlock the rune wheel in order to access Fuse)
 This equipment can be used as a portacull, but also as a way to cull Link.
-```
 
 ## Notes
 Spears can be used to yeefe hoverstones, they cause the hoverstone to fe next to link (normally they fe on top of link and softlock)

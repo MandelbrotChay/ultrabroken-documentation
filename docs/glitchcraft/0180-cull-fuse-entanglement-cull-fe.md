@@ -1,4 +1,4 @@
----
+﻿---
 title: "Cull Fuse Entanglement (Cull FE)"
 ---
 
@@ -8,7 +8,6 @@ title: "Cull Fuse Entanglement (Cull FE)"
 Allows you to Fuse Entangle objects by culling Link the same frame the fuse is applied.
 
 ## Instructions
-```
 1. Set up a way to cull Link (LikeLike Stick Smuggling or SDC in a culling area)
 2. Drop down the object to be Fuse Entangled
 3. Cull Link
@@ -19,7 +18,6 @@ Allows you to Fuse Entangle objects by culling Link the same frame the fuse is a
 8. Let go and press the corresponding Fuse button 18 frames after closing out of the Rune Menu
 9. The object will move toward Link and the D-Pad will be locked if done correcly
 10. Uncull using an object to pick up or warp to a nearby location
-```
 
 ## Notes
 Save your progress! This can lead to softlocking your game!

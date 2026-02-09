@@ -8,9 +8,7 @@ title: "Throw Tap Sprinting (TTS)"
 —
 
 ## Instructions
-```
 tap B - R - B, repeat
-```
 
 ## Notes
 Currently infinite

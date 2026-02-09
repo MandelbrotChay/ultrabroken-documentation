@@ -8,7 +8,6 @@ title: "Arrow Unloading"
 Unloads a fired arrow while retaining its fused attachment, leading to strange interactions.
 
 ## Instructions
-```
 Method 1:
 1. Zuggle Overload
 2. Drop a bow by switching equipment
@@ -18,7 +17,6 @@ Method 1:
 Method 2: 
 1. Drop a bow in front of a Like-like and stand next to it.
 2. Pick up the bow from the ground as late as possible when the Like-like goes to eat it and Link.
-```
 
 ## Notes
 Can be used to create batteryless Zonai devices, clip objects through walls, as well as other strange quirks

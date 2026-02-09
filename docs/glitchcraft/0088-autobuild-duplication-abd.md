@@ -8,7 +8,6 @@ title: "Autobuild Duplication (ABD)"
 Allows you to dupe materials that change into other materials in other temperature. (For example raw meat.)
 
 ## Instructions
-```
 This only works with items that change into other items in another temperature.
 
 1. Fuse the material to a weapon or shield. (twice or more)
@@ -22,7 +21,6 @@ This only works with items that change into other items in another temperature.
 5. Use autobuild to got the "ghostbuild" in front of you.
 
 6. Wait a few seconds and pick up your duped items.
-```
 
 ## Notes
 —

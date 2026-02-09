@@ -8,14 +8,12 @@ title: "Stamina Depletion Freeze (SDF)"
 Certain actions can cause the stamina depletion to glitch out.
 
 ## Instructions
-```
 There are several ways of activating it, most are currently unexplained, but this is the most consistent setup:
 
 1. Activate the Yiga Earthwake Technique
 2. Hold a direction and B while the animation is playing.
 
 Letting go of B or stopping running cancels it
-```
 
 ## Notes
 —

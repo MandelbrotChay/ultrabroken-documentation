@@ -1,4 +1,4 @@
----
+﻿---
 title: "Sage Madness"
 ---
 
@@ -8,9 +8,7 @@ title: "Sage Madness"
 The camera follows a sage falling down a chasm.
 
 ## Instructions
-```
 Activate the text box you get after obtaining a sage while the sage falls down a chasm
-```
 
 ## Notes
 —

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Swap Resync"
 ---
 
@@ -8,9 +8,7 @@ title: "Swap Resync"
 Swapping any piece of equipment/armor attempts to sync any swaps that may have failed to register. The main use of this is to properly register swaps while Link is culled, allowing for various easier setups.
 
 ## Instructions
-```
 See the Effects/Extensions column for uses.
-```
 
 ## Notes
 A few uses of swap resync:

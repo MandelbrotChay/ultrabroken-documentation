@@ -1,4 +1,4 @@
----
+﻿---
 title: "Dynamic Purgatory Zuggle"
 ---
 
@@ -8,7 +8,6 @@ title: "Dynamic Purgatory Zuggle"
 It's possible to send a dynamic smuggle to purgatory, keeping it connected to Link by equipping (and zuggling) its FE base in a similar fashion to FEWZ. While not a true dynamic zuggle, it is generally considered to be the most convenient method for dynamic zuggle on v1.2.0+
 
 ## Instructions
-```
 For 1.0.0-1.1.2:
 1. Fuse entangle a weapon to a shield and drop both on the ground
 2. Smuggle a different weapon, then equip and unequip a third weapon from the inventory
@@ -25,7 +24,6 @@ For 1.2.0-1.2.1:
 6. Pickup the weapon fuse entangled to the shield and get eaten by a like like to sluggle it
 7. Without unsheathing, drop the equipped weapon with Link's back to a wall
 8. Stand on top of a fire chuchu jelly and get eaten by a like like
-```
 
 ## Notes
 Equipment order can be reversed to dynamic zuggle shields or bows.

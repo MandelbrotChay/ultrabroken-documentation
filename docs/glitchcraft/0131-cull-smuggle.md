@@ -8,12 +8,10 @@ title: "Cull Smuggle"
 Allows any equipment that can be fuse entangled to be smuggled using margin culling.
 
 ## Instructions
-```
 1. Find any area that can cause object culling
 2. Fuse entangle any piece of equipment to a shield, and drop the shield within the culling area.
 3. Exit the culling area and wait for the equipment to unload. This will put the equipment in "limbo," essentially a temporary form of smuggling.
 4. To make the smuggle permanent; once the item has unloaded, open the quick menu and drop it, then renenter the culling area and pick up the shield. (see Notes column for 1.2.0+)
-```
 
 ## Notes
 Cull smuggling equipment with another equipment of the same type zuggled causes the smuggle to enter purgatory upon unculling.

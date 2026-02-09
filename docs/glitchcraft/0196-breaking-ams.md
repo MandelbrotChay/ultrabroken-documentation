@@ -1,4 +1,4 @@
----
+﻿---
 title: "Breaking AMS"
 ---
 
@@ -8,7 +8,6 @@ title: "Breaking AMS"
 By using certain setups, it is possible to ignore the no durability use.
 
 ## Instructions
-```
 Method 1:
 1. Activate arrow smuggle
 2. activate sidons ability
@@ -21,7 +20,6 @@ Method 2:
 2. hold out the bow
 3. side hop
 4. press Y
-```
 
 ## Notes
 —

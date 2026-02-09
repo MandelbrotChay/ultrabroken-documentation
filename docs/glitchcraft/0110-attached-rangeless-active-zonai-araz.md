@@ -8,7 +8,6 @@ title: "Attached Rangeless Active Zonai (ARAZ)"
 Is very similar to DRAZ but differs slightly.
 
 ## Instructions
-```
 1. Drop a shield and equip another shield.
 2. FE shield 1 onto shield 2. 
 3. Drop shield 2 (shield-shield) and equip shield 1.  
@@ -29,7 +28,6 @@ ARAZ (Second Method)
 2. Drop the shields and pickup the shield with no fused visible item on it
 3. Activate GAS
 4. Either be close towards the shield (So it doesn't despawn), or simply use Autobuild Slide Cancel to keep it near you
-```
 
 ## Notes
 Can use certain Zonai devices that DRAZ cannot

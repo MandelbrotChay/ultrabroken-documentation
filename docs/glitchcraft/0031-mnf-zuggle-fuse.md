@@ -8,7 +8,6 @@ title: "MNF Zuggle Fuse"
 Allows to fuse to the MNF
 
 ## Instructions
-```
 1. You need to have MNF and a not fused weapon.
 
 2. Zuggle MNF and equip the weapon.
@@ -22,7 +21,6 @@ Allows to fuse to the MNF
 6. Pick up you now fused MNF.
 
 7. Do NOT pick up your other weapon!
-```
 
 ## Notes
 Can also be done with other weapons and already fused weapons. This just replaces the fused material.

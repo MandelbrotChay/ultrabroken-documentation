@@ -8,7 +8,6 @@ title: "Equipment Collision Zuggle"
 The original zuggle method discovered by Zvleon.
 
 ## Instructions
-```
 1) Stand infront of a wall. (about 1 link away from it) (facing away from it)
 
 2) Equip a weapon, ideally two-handed. Seems to be more consistent and press y to hold your weapon.
@@ -24,7 +23,6 @@ The original zuggle method discovered by Zvleon.
 7) Repeat until you hear a sound (the one that indicates you that you can't drop more items). So far, the visual cue is when the icons of the weapons take longer to load)
 
 8) Unpause and switch weapons
-```
 
 ## Notes
 Zuggle has many ways of being executed, this is the oldest one. Map Zuggling is the most reccomended method for pre-1.1.2

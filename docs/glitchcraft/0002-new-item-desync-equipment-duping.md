@@ -8,16 +8,14 @@ title: "New Item Desync (equipment duping)"
 Desyncs equipment after sorting a new item pickup, allowing for single use duplication, durability transfer, and transfering fused items.
 
 ## Instructions
-```
 Pick up NEW item (displays ???) then in the text popup press + , sort inventory, equip something else, close inventory. Now Link should be holding the new item in the overworld but has something else selected in your inventory menu.
 
 Requirement: The new item must change positions when you sort your inventory. So for shields & bows, the new item must have higher strength than the lowest strength shield/bow currently in your inventory. Weapons are slightly more complicated because they can only be sorted by type.
-```
 
 ## Notes
 In addition to desyncing your inventory, it will also transfer any fused objects from the new item to the item you equip in the menu.
 
-Can only be done with new items once. Must meet sorting requirements listed under “How To”.
+Can only be done with new items once. Must meet sorting requirements listed under “Instructions”.
 
 ## Credit
 

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Hold Smuggling"
 ---
 
@@ -8,7 +8,6 @@ title: "Hold Smuggling"
 Enables full control of Link while holding objects in the menu.
 
 ## Instructions
-```
 1. Activate hold storage onto a horse.
 2. Throw all of the hold stored item until none are left in inventory.
 3. Jump off the horse, Link should start holding the stored items, then open the menu and hit X to stop holding them.
@@ -16,7 +15,6 @@ Enables full control of Link while holding objects in the menu.
 5. Load a save, then open the menu, and hit X to bring the stored items back.
 6. Unpause and then repause, then stop holding all the stored items, and then rehold them.
 7. Unpause and ensure you can run around while the items are still held in inventory.
-```
 
 ## Notes
 Much more portable version of hold storage.

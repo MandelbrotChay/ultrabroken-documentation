@@ -8,7 +8,6 @@ title: "Drop Zuggle"
 Allows for a drop smuggled item to have the same transfer properties as zuggle
 
 ## Instructions
-```
 -Drop smuggle your target weapon
 -Let the Like Like eat you
 -Drop the equipped item, then equip another item of the same category
@@ -23,7 +22,6 @@ For weapons:
 -Pick up the weapon on the ground
 -Open the chest and drop your equipped weapon
 -Kill the Like Like
-```
 
 ## Notes
 —

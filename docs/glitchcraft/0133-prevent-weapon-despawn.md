@@ -8,11 +8,9 @@ title: "Prevent Weapon Despawn"
 Prevents equipment from despawning after certain NPC interactions and quests (Does not work in Pirate Ship quest, different flags, currently testing)
 
 ## Instructions
-```
 1. Zuggle the desired equipment on Link 
 2. Drop the zuggled equipment, and only pick up the equipment used to drop it, not the one you previously zuggled 
 3. Start whatever quest that despawns all equipment on the ground and use Ultrahand to bring your desired weapon towards you
-```
 
 ## Notes
 You can bring back the weapon by zuggling before quest ends

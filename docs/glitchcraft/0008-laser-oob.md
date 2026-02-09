@@ -8,9 +8,7 @@ title: "Laser-OOB"
 The game puts a floor inside Link
 
 ## Instructions
-```
 Go into a laser, slowly glide down, when the floor flips back up you are out of bounds
-```
 
 ## Notes
 You need a laser nearby.

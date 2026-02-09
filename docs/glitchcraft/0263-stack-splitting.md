@@ -1,4 +1,4 @@
----
+﻿---
 title: "Stack Splitting"
 ---
 
@@ -8,7 +8,6 @@ title: "Stack Splitting"
 Using an arrow fuse returning, it's possible to get two slots for one item
 
 ## Instructions
-```
 Requirements for 1.1+: 
 - Have a sacrifice edible/usable item that sorts before your target item in any of the 4 ways to sort items. Either have 1 of the sacrifice, or drop all extra items to make it 1. It will be more convenient if you have a low amount of the sacrifice.
 - Have at least 2 of the target item you want to split (3 if you plan on using it for SID, see row 267). The target must be fusable to a bow.
@@ -25,7 +24,6 @@ Method 2 (1.0.0, s0ft)
 1. Get in a midair state, such as shield jumping, and hold something you have less than 5 of. It has to be to the left of your target. 
 2. Go to the map, and press B to unpause.
 3. Pick up what you put on the ground.
-```
 
 ## Notes
 Can lead to Split Item Duplication, a material duplication glitch

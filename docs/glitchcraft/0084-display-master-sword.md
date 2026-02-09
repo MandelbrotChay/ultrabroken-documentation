@@ -8,12 +8,10 @@ title: "Display Master Sword"
 Allows you to display the master sword, damaged master sword or MsgNotFound in a weapon display
 
 ## Instructions
-```
 1. Zuggle Overload.
 2. Recall in front of a weapon display.
 3. Equip the master sword or MsgNotFound.
 4. Exit recall and press A right after to display it.
-```
 
 ## Notes
 For MsgNotFound you don't need to drop it out of recall

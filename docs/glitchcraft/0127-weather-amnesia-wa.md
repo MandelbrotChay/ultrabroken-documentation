@@ -8,10 +8,8 @@ title: "Weather Amnesia (WA)"
 Viewing a memory near a cave will overwrite its local weather with the overworld's weather.
 
 ## Instructions
-```
 1. Position Link near a cave
 2. Watch a memory
-```
 
 ## Notes
 Certain triggers, such as text boxes, will restore the caves' local weather.

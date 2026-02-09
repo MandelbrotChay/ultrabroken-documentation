@@ -1,4 +1,4 @@
----
+﻿---
 title: "Enemy Pickpocketing"
 ---
 
@@ -8,12 +8,10 @@ title: "Enemy Pickpocketing"
 Lets you take weapons out of enemy's hands
 
 ## Instructions
-```
 1.Have a full inventory and have a weapon on the ground
 2.Spam a to pick up the weapon when an enemy picks it up
 3.Drop a weapon and equip a different weapon
 4.Take the weapon out of the enemy's hand
-```
 
 ## Notes
 —

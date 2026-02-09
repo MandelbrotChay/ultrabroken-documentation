@@ -8,10 +8,8 @@ title: "Crouch Throw Tap Sprinting (CTTS)"
 infinite and fastest way of sprinting
 
 ## Instructions
-```
 Press Crouch - B - R - B and repeat (B should be pressed direcly after crouch)
 It works without stamina if you use 100 bpm, with the crouch on the beat. 101 bpm is a little bit faster but it costs stamina
-```
 
 ## Notes
 With current testing, this is the fastest sprinting method

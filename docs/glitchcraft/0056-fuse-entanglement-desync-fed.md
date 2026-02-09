@@ -8,7 +8,6 @@ title: "Fuse Entanglement Desync (FED)"
 Allows you to transfer the fuse and durability from one weapon to another. You can also decide to dupe the weapon or the fused material.
 
 ## Instructions
-```
 Needed: Target item, donor item and extra shield (2 extras if weapon/bow).
 1. Drop donor and target items on ground
 2. Equip unfused shield
@@ -23,7 +22,6 @@ Needed: Target item, donor item and extra shield (2 extras if weapon/bow).
 7. Pickup donor item (WST)
 8. Drop equipped item to transmute / dupe the donor item OR Resync to keep the WST item
 (9. Unfuse your shield at Tarrey Town to get a modifier-less copy of the target)
-```
 
 ## Notes
 Weapon State Transfer

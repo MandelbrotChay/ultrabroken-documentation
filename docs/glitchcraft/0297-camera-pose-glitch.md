@@ -1,4 +1,4 @@
----
+﻿---
 title: "Camera Pose Glitch"
 ---
 
@@ -8,12 +8,10 @@ title: "Camera Pose Glitch"
 Link keeps walking while frozen in the camera animation.
 
 ## Instructions
-```
 1. Activate the camera rune
 2.  Hold ZL
 3.  Move in any direction
 4.  Press B (Keep holding ZL and Left Stick in any direction)
-```
 
 ## Notes
 —

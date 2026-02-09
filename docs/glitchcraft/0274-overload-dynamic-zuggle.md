@@ -1,4 +1,4 @@
----
+﻿---
 title: "Overload Dynamic Zuggle"
 ---
 
@@ -8,14 +8,12 @@ title: "Overload Dynamic Zuggle"
 Picking up a thrown boomerang while zuggle overloaded can cause dynamic zuggle
 
 ## Instructions
-```
 1. Zuggle overload
 2. Equip a boomerang and throw it
 3. Overload pickup the boomerang when it comes back to Link and immediately pause
 4. Drop the boomerang, equip a different weapon, and unequip it before unpausing
 5. Pickup the dropped boomerang and switch weapons
 6. Drop the equipped weapon to zuggle
-```
 
 ## Notes
 Works with any weapon that can be thrown instead of only boomerangs if combined with fail drop smuggle

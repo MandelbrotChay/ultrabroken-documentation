@@ -1,4 +1,4 @@
----
+﻿---
 title: "Cull Cold Fuse"
 ---
 
@@ -8,7 +8,6 @@ title: "Cull Cold Fuse"
 —
 
 ## Instructions
-```
 1. place object in tarrey town culling area
 2. move outside culling area while having the object in ultrahand focus
 3. select fuse and pause
@@ -20,7 +19,6 @@ title: "Cull Cold Fuse"
 if done correctly, the object will teleport to Link
 
 steps 8-9 are not required on 1.0.0
-```
 
 ## Notes
 —

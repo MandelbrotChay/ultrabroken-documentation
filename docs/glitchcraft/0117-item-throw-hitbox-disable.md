@@ -8,9 +8,7 @@ title: "Item Throw Hitbox Disable"
 —
 
 ## Instructions
-```
 Throw an item, then recall it.
-```
 
 ## Notes
 Impact triggered items can still go off if hit by an explosion. For Bomb Flowers, fire and gravity is enough to explode them.

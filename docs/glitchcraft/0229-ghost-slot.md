@@ -1,4 +1,4 @@
----
+﻿---
 title: "Ghost SLOT"
 ---
 
@@ -8,7 +8,6 @@ title: "Ghost SLOT"
 Allows objects to be transferred through saves by creating a fuse ghost and detangling it out of range. The object will continue to persist through saves until it is "de-ghosted".
 
 ## Instructions
-```
 There are two ways to achieve this:
 1. Fuse entangle the target object to a shield
 2. Cold fuse (or null fuse) the same object to a different shield
@@ -21,7 +20,6 @@ OR
 4. Drop the target equipment with Link's back to a wall, then move away from a wall and drop it again
 5. Zuggle the shield and detangle it from the target equipment out of range
 A slight variation of this setup can be used to ghost SLOT objects, check Example(s) for more info.
-```
 
 ## Notes
 The fuse ghost will continue to persist through saves for as long as it remains a ghost. If the player moves close enough to the ghost, it will "de-ghost" and return to its normal state.

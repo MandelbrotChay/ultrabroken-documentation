@@ -1,4 +1,4 @@
----
+﻿---
 title: "Bomb Skew"
 ---
 
@@ -8,10 +8,8 @@ title: "Bomb Skew"
 In similar fashion to skew from BOTW, this affects the direction a shield surf spring jump will send you.
 
 ## Instructions
-```
 1. Shield surf onto a slope.
 2. Fuse a bomb/spring to your shield or switch to a shield with a bomb/spring already attached and shield surf.
-```
 
 ## Notes
 —

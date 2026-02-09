@@ -1,4 +1,4 @@
----
+﻿---
 title: "Ultrabrokenless Freecall (UFC)"
 ---
 
@@ -8,12 +8,10 @@ title: "Ultrabrokenless Freecall (UFC)"
 Breaks the lock on a recall lock, allowing the object to be in freecall without ub
 
 ## Instructions
-```
 1. recall lock an object
 2. attach an object to it
 3. recall said object
 4. break off the object with UH
-```
 
 ## Notes
 —

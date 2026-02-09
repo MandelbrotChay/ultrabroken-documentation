@@ -8,10 +8,8 @@ title: "Sage Recycling"
 Resets the cooldown of tulin or sidon.
 
 ## Instructions
-```
 1. Shield surf 
 2. Use the ability mid surf
-```
 
 ## Notes
 SRC with tulin might be frame perfect

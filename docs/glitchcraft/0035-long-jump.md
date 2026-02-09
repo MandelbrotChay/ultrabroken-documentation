@@ -8,9 +8,7 @@ title: "Long Jump"
 Jump farther
 
 ## Instructions
-```
 While facing sideways (any angle that is more than or equal to 90 degrees from the direction Link is moving in), either by starting so or pivoting mid air, jump momentum can be carried into a jumpslash, significantly extending the length of the jump.
-```
 
 ## Notes
 —

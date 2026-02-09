@@ -8,9 +8,7 @@ title: "Memory Buffering"
 Advances Links current animation by 1 frame while keeping the menu open. Links coordinates will not change.
 
 ## Instructions
-```
 -Skip a playing memory during an animation.
-```
 
 ## Notes
 —

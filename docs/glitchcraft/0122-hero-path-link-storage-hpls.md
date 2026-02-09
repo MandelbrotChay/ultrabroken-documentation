@@ -8,9 +8,7 @@ title: "Hero Path Link Storage (HPLS)"
 Visual glitch with the hero path.
 
 ## Instructions
-```
 Press X, then close the hero path and the map quickly
-```
 
 ## Notes
 Translates with map storage  and

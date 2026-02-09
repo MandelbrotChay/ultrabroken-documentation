@@ -1,4 +1,4 @@
----
+﻿---
 title: "Two Handed With Shield"
 ---
 
@@ -8,10 +8,8 @@ title: "Two Handed With Shield"
 Allows you to use a shield and a two handed weapon at the same time
 
 ## Instructions
-```
 1. Drop a Two Handed Weapon
 2. Hold ZL, press Y to start the no weapon equipped animation, midway through the animation pick the weapon up
-```
 
 ## Notes
 You can do the glitch with a one handed and then switch to a two handed one, canceled by many animations.

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Mineru Aim Permanence"
 ---
 
@@ -8,7 +8,6 @@ title: "Mineru Aim Permanence"
 Lets you bring Mineru's Construct into towns and stables
 
 ## Instructions
-```
 1. While outside the town or stable, get on Mineru's Construct
 
 2. Aim one of the weapons attached to the Construct
@@ -16,7 +15,6 @@ Lets you bring Mineru's Construct into towns and stables
 3. Enter town/stable
 
 The Construct will stick around despite the other sage avatars going away
-```
 
 ## Notes
 —

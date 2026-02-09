@@ -1,4 +1,4 @@
----
+﻿---
 title: "Culling Area FSFE"
 ---
 
@@ -8,7 +8,6 @@ title: "Culling Area FSFE"
 A method for FSFE using AreaCulling
 
 ## Instructions
-```
 1. Position the target object at the edge of a culling area with a small margin (like the tarry town culling area)
 2 Activate the fuse rune while outside of the culling area, culling the target.
 3. Approach culling area and immediatly turn around when entering it. 
@@ -25,7 +24,6 @@ Alternativley:
 Alternatively:
 7. Walk towards the culling area and activate Recall shortly before entering.
 8. Swap equipment.
-```
 
 ## Notes
 Chain FSFE (Mulberry)

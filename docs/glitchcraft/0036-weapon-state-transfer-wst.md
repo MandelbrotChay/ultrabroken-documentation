@@ -8,7 +8,6 @@ title: "Weapon State Transfer (WST)"
 allows you to transfer the durability, fused material, and modifier of a weapon
 
 ## Instructions
-```
 Required:
 - 2 long sticks (can be found on an enemy southeast of Fuse shrine)
 - A target item (weapon/bow/shield)
@@ -35,7 +34,6 @@ Setup:
 9. Pick up the donor item without picking up anything else.
 
 If done correctly, the target item should have everything the donor item has.
-```
 
 ## Notes
 The weapons, shields and bows aren't the only ones that work, it all depends on their hitboxes

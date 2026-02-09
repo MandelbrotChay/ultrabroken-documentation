@@ -8,7 +8,6 @@ title: "AntiGrav Weapons"
 Puts weapons in an "Anti Gravity" state.
 
 ## Instructions
-```
 1.0.0-1.1.2 Setup:
 1. Throw a weapon at the same time Link drops it.
 
@@ -19,7 +18,6 @@ Puts weapons in an "Anti Gravity" state.
 4. Buffer memories until 3 Frames before the weapon leaves the inventory
 5. Open the inventory and unequip the Lightning Helm
 6. Resume the game
-```
 
 ## Notes
 Performing anti-grav with a weapon ARAZ connection (zonai device fused to weapon and FE'd to a different weapon) causes GAS

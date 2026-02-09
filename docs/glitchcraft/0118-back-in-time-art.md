@@ -8,7 +8,6 @@ title: "Back-in-Time Art"
 Transfers the picture in Link's House to a previous save. Is also capable of transferring compendium pictures.
 
 ## Instructions
-```
 Picture in Link's house:
 1. Change the painting in Link's house to a different painting
 2. Load a file with a different painting
@@ -16,7 +15,6 @@ Picture in Link's house:
 Compendium pictures:
 1. Take a picture of an existing compendium entry
 2. Load your destination file
-```
 
 ## Notes
 Picture in Link's house

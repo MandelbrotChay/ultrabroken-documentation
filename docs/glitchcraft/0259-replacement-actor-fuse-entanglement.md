@@ -1,4 +1,4 @@
----
+﻿---
 title: "Replacement Actor Fuse Entanglement"
 ---
 
@@ -8,7 +8,6 @@ title: "Replacement Actor Fuse Entanglement"
 Allows objects that have fuse replacement actors to be fuse entangled. Objects that have replacement actors set to themselves, such as bomb flowers, cannot be fuse entangled
 
 ## Instructions
-```
 1. Cold fuse shield A to shield B
 
 2. Zuggle shield B, equip shield A and fuse the target object to the shields
@@ -18,7 +17,6 @@ Allows objects that have fuse replacement actors to be fuse entangled. Objects t
 4. Place shield B in a culling area, zuggle shield A and detangle it outside of the culling area
 
 5. Fuse Entangle the target object
-```
 
 ## Notes
 Objects which do not have a replacement actor as listed on the AttachmentParam spreadsheet can be fuse entangled normally.

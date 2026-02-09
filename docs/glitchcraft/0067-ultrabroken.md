@@ -8,12 +8,10 @@ title: "Ultrabroken"
 Allows you to pull the object with another glued material while Link stands on top of it, sending it flying forwards from the pull itself.
 
 ## Instructions
-```
 1. Take out an object and set it beside Zorona and Kairo near Riverside Stable, and talk to them while standing on top of it.
 2. Once the cutscene ends, the object should be in a state where it cannot be moved around with Ultrahand.
 3. Use Ultrahand to glue anything to the Ultrabroken object.
 4. Stand on the Ultrabroken object and control the glued object using Ultrahand.
-```
 
 ## Notes
 Presists through ZLOT/SLOT, allowing you to bring this to any prior save, and can allow the user to repeat the Ultrabroken glitch indefinitely.

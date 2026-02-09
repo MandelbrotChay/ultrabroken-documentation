@@ -1,4 +1,4 @@
----
+﻿---
 title: "Mineru Text Storage"
 ---
 
@@ -8,13 +8,11 @@ title: "Mineru Text Storage"
 Lets you move while text is on screen
 
 ## Instructions
-```
 1. Escape the last battle, to get the real sages to follow Link
 
 2. Either fuse to an item in Hateno Village, try to enter Gerudo Town wearing the wrong gear or activate a Yiga ambush
 
 3. You'll keep moving while the text is on screen, causing various loading issues and allowing for super far camera zoom outs
-```
 
 ## Notes
 Only tested on 1.0.0, probably works on all versions

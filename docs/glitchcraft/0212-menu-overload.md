@@ -1,4 +1,4 @@
----
+﻿---
 title: "Menu Overload"
 ---
 
@@ -8,10 +8,8 @@ title: "Menu Overload"
 Overloads the item menu via Moobe, acting similarly to menu overload in BOTW
 
 ## Instructions
-```
 1. Perform Moobe with a climb position at Lookout Landing and a trigger position at a distant sky shrine. (Igoshon shrine gives good results)
 2. Open the items menu and begin swapping equipment, check for visual errors or desync.
-```
 
 ## Notes
 WST

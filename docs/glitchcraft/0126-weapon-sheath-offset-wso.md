@@ -8,7 +8,6 @@ title: "Weapon Sheath Offset (WSO)"
 Puts the weapon sheathe in an offset state, similar to the sheathe during Zuggle Overload
 
 ## Instructions
-```
 1. Have two of the same weapon.
 
 2. Open the menu and drop one weapon.
@@ -16,7 +15,6 @@ Puts the weapon sheathe in an offset state, similar to the sheathe during Zuggle
 3. While still in the menu equip another of the same weapon.
 
 4. Warp to accentuate the offset
-```
 
 ## Notes
 This works for ALL weapons not just the .

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Void Dipping"
 ---
 
@@ -8,7 +8,6 @@ title: "Void Dipping"
 An extremely powerful equipment state caused by interrupting and retrieving an equipment item that has been destroyed by the void.
 
 ## Instructions
-```
 Perform one of the following dipping methods:
 - Pick up the target item the frame it is destroyed by the void
 - Ultrahand the overload-dropped target item into the void, recall it, and watch a memory
@@ -18,7 +17,6 @@ Then retrieve the item with one of the following methods:
 - Activate portacull
 - Drop swap the fuse-entangled base of the target item
 - Pick up the target item from the void
-```
 
 ## Notes
 Void dipped equipment have the following properties:

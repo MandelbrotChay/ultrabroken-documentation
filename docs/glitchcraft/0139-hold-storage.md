@@ -8,12 +8,10 @@ title: "Hold Storage"
 Allows Link to remain in a object holding state when not normally possible, as well as desync the hold state.
 
 ## Instructions
-```
 1. Find a decently high ledge and stand on it, hold R and select an item to hold in Links so he prepares to throw it.
 2. Jump off the ledge and just before Link hits the ground, open the menu. 
 3. Hold any number of items, then open the map menu, play a memory, then go back to the item menu and rehold the items.
 4. Close the menu, the held items should drop on the floor in a bundle as though disconnected from Links hands.
-```
 
 ## Notes
 Unless Link is put into a specific state while the held items are disconnected (I.e. swimming/horse riding), they will teleport back into Links hands, canceling the storage.

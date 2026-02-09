@@ -8,7 +8,6 @@ title: "Recall Launch"
 allows you to launch yourself very far
 
 ## Instructions
-```
 1. Get a plank or wing or something like that
 
 2. Throw a weapon
@@ -16,7 +15,6 @@ allows you to launch yourself very far
 3. Recall that weapon and quickly ultrahand it to your plank or wing
 
 4. Stand on your plank or wing and recall the weapon
-```
 
 ## Notes
 This works very good with boomerangs. It also works with anything Link can pick up. In this case you can use the momentum from rotating or picking up the object to perform the launch.

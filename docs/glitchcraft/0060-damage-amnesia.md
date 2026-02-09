@@ -8,9 +8,7 @@ title: "Damage Amnesia"
 Allows Link to negate sources of damage.
 
 ## Instructions
-```
 Pause at the moment before taking damage and view a memory in the menu (for longer duration sources of damage, multiple memories may be required). Then unpause.
-```
 
 ## Notes
 Can be combined with springbombing.

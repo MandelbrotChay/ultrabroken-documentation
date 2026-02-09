@@ -1,4 +1,4 @@
----
+﻿---
 title: "Void Hold Storage"
 ---
 
@@ -8,12 +8,10 @@ title: "Void Hold Storage"
 Causes a menu softlock that revokes certain actions but allows for Link's model in the control panel, softlocks when attempting exiting any menu, and Link can be moved freely before opening the menu.
 
 ## Instructions
-```
 1. Save, and clip under the depths at Y -4000.
 2. Glide, open the menu, hold 2 items press + twice in quick succession.
 3. Hold 5 items, Press R until you reach the control panel and load your save.
 4. Close the inventory or use the quick menu, you will now be softlocked.
-```
 
 ## Notes
 —

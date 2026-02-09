@@ -1,4 +1,4 @@
----
+﻿---
 title: "Wacko Attacko"
 ---
 
@@ -8,11 +8,9 @@ title: "Wacko Attacko"
 Continue attack animation onto another weapon.
 
 ## Instructions
-```
 1. Hold "Y" with the weapon animation desired.
 2. Pick up something new that has "???" on it.
 3. Open inventory and swap weapon types.
-```
 
 ## Notes
 —

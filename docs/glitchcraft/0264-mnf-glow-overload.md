@@ -1,4 +1,4 @@
----
+﻿---
 title: "MNF Glow Overload"
 ---
 
@@ -8,11 +8,9 @@ title: "MNF Glow Overload"
 Stacking the glow from the MsgNotFound sword to extreme lengths causes many visual effects to stop rendering correctly
 
 ## Instructions
-```
 1. Zuggle at least one MNF and equip a different one
 2. Stand at 1158, -0774, 0133 just behind Morok shrine and jump repeatedly while holding ZL for at least 1 min
 You can continue to stack the glow by zuggling more MNFs and/or jumping for longer amounts of time, which gradually amplifies the overload effects
-```
 
 ## Notes
 Extreme overload can sometimes unload specific actors

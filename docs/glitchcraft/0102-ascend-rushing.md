@@ -8,10 +8,8 @@ title: "Ascend Rushing"
 Allows you to flury rush after ascending
 
 ## Instructions
-```
 1. Ascend up a platform before being attacked
 2. Backflip or Side Hop as if dodging the attack
-```
 
 ## Notes
 —

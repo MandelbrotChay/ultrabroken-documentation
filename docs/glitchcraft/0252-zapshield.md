@@ -1,4 +1,4 @@
----
+﻿---
 title: "Zapshield"
 ---
 
@@ -8,7 +8,6 @@ title: "Zapshield"
 Fuse entangling a shock emitter to two shields and permaculling one of its FE bases results in a permanently electrified shield which makes applications involving shock more portable
 
 ## Instructions
-```
 1. Fuse Entangle a steering stick to a shield and perform Stick Desync Clip with it
 2. Position the steering stick inside a culling area OR fuse it to Mineru
 3. Zuggle a shield and equip a different shield over it
@@ -16,7 +15,6 @@ Fuse entangling a shock emitter to two shields and permaculling one of its FE ba
 5. Activate the shock emitter and cull Link, either by walking out of the culling margin or by culling Mineru
 6. Drop the equipped shield while Link is culled
 7. Uncull Link by watching a memory (if culled from SDC in culling area), and destroy the steering stick
-```
 
 ## Notes
 Equipment Smuggle: Unsheathing the zapshield, dropping it and the equipped weapon after smuggles the weapon. This can also be used to smuggle the zapshield itself by dropping a different shield and then dropping the zapshield.

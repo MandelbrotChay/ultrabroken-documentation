@@ -1,4 +1,4 @@
----
+﻿---
 title: "Arrow Prompt Storage (APS)"
 ---
 
@@ -8,13 +8,11 @@ title: "Arrow Prompt Storage (APS)"
 Allows storage of the arrow prompt and can be given multiple times via an enemy shooting their unloaded arrow.
 
 ## Instructions
-```
 1. Have an enemy shoot an arrow to your wooden shield without ever obtaining arrows before.
 2. Use recall and watch 2 memories.
 3. (Optional) Can be set up multiple times as long as you haven't obtained an arrow in inventory.
 4. Arrows will now be stuck fully to your shield. Un-equip shield and have the enemy shoot at you.
 5. Enemies arrows will eventually de-load and give the arrow prompt.
-```
 
 ## Notes
 —

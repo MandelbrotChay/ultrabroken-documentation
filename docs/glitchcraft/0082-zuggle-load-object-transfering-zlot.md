@@ -1,4 +1,4 @@
----
+﻿---
 title: "Zuggle Load Object Transfering (ZLOT)"
 ---
 
@@ -8,9 +8,7 @@ title: "Zuggle Load Object Transfering (ZLOT)"
 Allows you to transfer objects through loads while maintaining their coordinates.
 
 ## Instructions
-```
 Fuse entangle an object to a shield and then zuggle that shield.
-```
 
 ## Notes
 Can be used to load objects into other maps (like shrines) by placing them in the correct coordinates in Hyrule.

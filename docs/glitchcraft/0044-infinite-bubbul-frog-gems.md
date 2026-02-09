@@ -8,14 +8,12 @@ title: "Infinite Bubbul Frog Gems"
 Allows you to get infinite bubbul gems
 
 ## Instructions
-```
 Only works in some caves!
 1. Shoot the bubbul frog
 2. Ascend during it's death
 3. Cancel the ascend
 4. Shoot the bubbul frog
 5. Repeat
-```
 
 ## Notes
 The glitch may be not exclusive to bubbulfrogs (just a theory)

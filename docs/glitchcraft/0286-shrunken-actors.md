@@ -1,4 +1,4 @@
----
+﻿---
 title: "Shrunken Actors"
 ---
 
@@ -8,9 +8,7 @@ title: "Shrunken Actors"
 Permanently shrink any ultrahandable object (ultrabroken method)
 
 ## Instructions
-```
 Discord
-```
 
 ## Notes
 Possible on 1.2.0+ with a different method

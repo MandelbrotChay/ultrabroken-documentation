@@ -8,7 +8,6 @@ title: "Jumpslash Cancel Clipping (JCC)"
 Allows for clipping through thin ceilings.
 
 ## Instructions
-```
 - Perform any jumpslash cancel Infinite Height variant against a ceiling until Links head clips through while in bullet time. 
 
 Note: In the case of standard infinite height inputs (L cancel method), ensure that you cancel the jumpslash on the first frame of it's activation. 
@@ -16,7 +15,6 @@ Note: In the case of standard infinite height inputs (L cancel method), ensure t
 - Wait for Link to reach the peak of his height gain and then start a shield surf.
 
 Note: Arrow Smuggle IH or its alternatives makes this glitch much easier to execute compared to standard IH.
-```
 
 ## Notes
 Highly less likely to work with flat ceilings.

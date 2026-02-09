@@ -8,11 +8,9 @@ title: "Equipment Smuggle"
 An equipment state where items remain equipped in Link's hands after being removed from the inventory
 
 ## Instructions
-```
 Shock Smuggle
 Like-Like Smuggle
 Cull Smuggle
-```
 
 ## Notes
 If an item is smuggled in Link's hands without another item equipped over it, it is impossible to put away the smuggled item. Additionally, smuggling to the back without another item equipped over the smuggle prevents Link from being able to unsheathe that item, though the item itself still carries its normal behavior.

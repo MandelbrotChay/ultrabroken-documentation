@@ -1,4 +1,4 @@
----
+﻿---
 title: "Mineru Culling"
 ---
 
@@ -8,11 +8,9 @@ title: "Mineru Culling"
 Allows for Link's model to be operated from Mineru, by unloading Mineru, Link can be culled at will.
 
 ## Instructions
-```
 1. Zuggle overload
 2. Mount Mineru over a void out area
 3. Unload Mineru in some way, like climbing a wall
-```
 
 ## Notes
 The Mineru+void out makes you invincible to all attacks. (found by HI-5GamerXD)

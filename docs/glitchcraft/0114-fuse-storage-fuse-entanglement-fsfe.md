@@ -8,10 +8,8 @@ title: "Fuse Storage Fuse Entanglement (FSFE)"
 Unique methods of achieving Fuse Entanglement through Fuse Storage.
 
 ## Instructions
-```
 Like-Like FSFE
 Culling Area FSFE
-```
 
 ## Notes
 Fuse Entanglement

@@ -8,7 +8,6 @@ title: "GAS Launching (Previously known as Ascend Launching)"
 Causes the object to fling Link great distances with relative ease.
 
 ## Instructions
-```
 (Uses Recall, but anything that freezes time works too.)
 1. Spawn in a fan and fuse it to your shield.
 2. Perform GAS using any method available.
@@ -17,7 +16,6 @@ Causes the object to fling Link great distances with relative ease.
 5. Exit recall.
 
 If done properly, Link will be sent flying off in the opposite direction of wherever the fan was pushing the object to.
-```
 
 ## Notes
 Ascending also works if Link picks up a Big Battery or Rock and Ascends into it. The trajectory of where Link launches depends on how long the user waits to exit ascend. It's also possible to continue launching further into the air if a Hover Stone is activated in midair to keep yourself grounded to perform it again (refer to 2nd example video).

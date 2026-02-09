@@ -8,13 +8,11 @@ title: "Spring Fall Damage Cancel"
 currently allows you to fall from certian heights without taking fall damage
 
 ## Instructions
-```
 -Jump or shield surf off a ledge. (Note: if you shield surfed you'll need to pause and unequip the shield before entering bullet time). 
 
 -Tap ZR to enter bullet time, and wait until Links head is about 1/2 down the spring. 
 
 -Tap B and hold forward
-```
 
 ## Notes
 Glitchless Fall Damage Cancel

@@ -8,14 +8,12 @@ title: "Drop Restriction"
 Prevents zonai devices from spawning out of the inventory.
 
 ## Instructions
-```
 1. Hold L
 2. Select the map ability
 3. Let go of L and open the material"quick"menu before the game advances a frame
 4. Drop a zonai device with X
 5. Let go of the dpad
 6. load a file
-```
 
 ## Notes
 Only way to cancel it is by closing the game

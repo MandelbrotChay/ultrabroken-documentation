@@ -1,4 +1,4 @@
----
+﻿---
 title: "Toti Saucery"
 ---
 
@@ -8,7 +8,6 @@ title: "Toti Saucery"
 FSFEing an undiscovered item can cause several effects
 
 ## Instructions
-```
 Perform FSFE on an undiscovered item/weapon to any type of equipment. This turns the undiscovered target invisible, creating what is called an "invisitem".
 
 Anti-gravity:
@@ -19,7 +18,6 @@ Anti-gravity:
 Prompt Storage:
 - Before unpausing after the FSFE, watch another memory, this stores the new item prompt.
 For more details, check the next row (not done yet, work in progress).
-```
 
 ## Notes
 —

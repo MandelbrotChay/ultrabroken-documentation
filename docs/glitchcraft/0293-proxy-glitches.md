@@ -1,16 +1,14 @@
----
+﻿---
 title: "Proxy Glitches"
 ---
 
 # Proxy Glitches
 
 ## Overview
-when link gets into areas he is not supposed to (e.g. clipped into a wall or out of bounds), the game forces link back into bounds with large amounts of force
+When link gets into areas he is not supposed to (e.g. clipped into a wall or out of bounds), the game forces link back into bounds with large amounts of force
 
 ## Instructions
-```
-methods are incosistent currently
-```
+Methods are incosistent currently
 
 ## Notes
 Testing is still being done. As more is discovered, this section will be updated, as well as new glitches added

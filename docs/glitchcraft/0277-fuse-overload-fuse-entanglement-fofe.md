@@ -1,4 +1,4 @@
----
+﻿---
 title: "Fuse Overload Fuse Entanglement (FOFE)"
 ---
 
@@ -8,7 +8,6 @@ title: "Fuse Overload Fuse Entanglement (FOFE)"
 Using Fuse Overload it's possible to portably and quickly Fuse Entangle
 
 ## Instructions
-```
 Fuse Overload:
 1. Overload drop A and fuse A to B of opposite type.
 2. Overload cold fuse C of the same type as A to A by fusing C to A.
@@ -25,7 +24,6 @@ FOFE:
 
 It's crucial that you get that cancel on that frame otherwise you will get Reference FE, which crashes the game if you drop the FE parent.
 You know you get regular FE if Recall is auto-cancelled when you Recall the FE child and ascend/use a cooking pot.
-```
 
 ## Notes
 —

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Slate Storage"
 ---
 
@@ -8,7 +8,6 @@ title: "Slate Storage"
 Storing the opening animation of the Purah Pad allows for Fall Damage Cancel
 
 ## Instructions
-```
 Please note that this does not work on 1.0.
 The glitch can only be performed if you have never seen the Purah Pad opening animation.
 
@@ -26,7 +25,6 @@ Fall Damage Cancel (Yee):
 1. Jump. When at a reasonably close distance to the ground (one where if you jumped from there you wouldnt take fall damage), open and close the Purah Pad
 2. The put away animation should trigger, mash R to start diving as soon as possible
 The Fall Damage should be cancelled if you dived quick enough
-```
 
 ## Notes
 —

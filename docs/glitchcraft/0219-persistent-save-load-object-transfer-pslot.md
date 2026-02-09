@@ -1,4 +1,4 @@
----
+﻿---
 title: "Persistent Save Load Object Transfer (PSLOT)"
 ---
 
@@ -8,7 +8,6 @@ title: "Persistent Save Load Object Transfer (PSLOT)"
 Allows objects to go through saves by permanently culling their FE bases (parents). Unlike ZLOT, PSLOT can only be cancelled by destroying the object being transferred or closing the game.
 
 ## Instructions
-```
 1. Fuse entangle a steering stick to a shield, place the steering stick in a culling area, and perform Stick Desync Clip with it
 2. Get on another steering stick/Mineru to unlock the ability wheel, attach something to the steering stick with ultrahand
 3. Fuse entangle a shield to a weapon
@@ -17,7 +16,6 @@ Allows objects to go through saves by permanently culling their FE bases (parent
 6. Watch a memory to uncull Link
 7. Warp to a nearby shrine and drop the equipped shield (warping is not necessary on 1.2.0+)
 The shield should now persist through saves! For object PSLOT, you can simply FE whatever object you wish to PSLOT to the shield.
-```
 
 ## Notes
 PSLOT has a very long history of setups, some much more complex than others. The setup shown here is widely regarded to be one of the quickest and simplest methods.

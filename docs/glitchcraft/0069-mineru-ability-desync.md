@@ -8,11 +8,9 @@ title: "Mineru Ability Desync"
 Desyncs Flame Emitters attached to Mineru
 
 ## Instructions
-```
 1. Wait for Mineru to use a Flame Emitter
 2. Use ascend while the Flame Emitter is active
 3. Look up with the camera and exit
-```
 
 ## Notes
 To do: test on other versions and with more emitters Seems similar to ARAZ

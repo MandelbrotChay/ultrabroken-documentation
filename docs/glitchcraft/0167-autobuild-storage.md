@@ -1,4 +1,4 @@
----
+﻿---
 title: "Autobuild Storage"
 ---
 
@@ -8,11 +8,9 @@ title: "Autobuild Storage"
 Allows you to manually delay the instance of items being attached with Autobuild
 
 ## Instructions
-```
 1. Attach 2 items a Like Like can eat together and save it within your Autobuild history.
 2. Select the Autobuild and let a Like Like eat the items, then press A to build.
 3. Kill or stun the Like Like during it's eating animation.
-```
 
 ## Notes
 Can do launches with Octo Balloons and pulling items towards the Like Like's location

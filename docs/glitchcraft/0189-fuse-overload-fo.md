@@ -1,4 +1,4 @@
----
+﻿---
 title: "Fuse Overload (FO)"
 ---
 
@@ -8,12 +8,10 @@ title: "Fuse Overload (FO)"
 By repeatedly cold fusing objects to the same weapon, it's possible to reach a limit that causes any additional cold fused objects to lose their collision. This can lead to strange behavior
 
 ## Instructions
-```
 1. Zuggle overload
 2. Swap weapons until it drops on the ground
 3. Take out zonai devices and fuse each one to the weapon until ~30 have been fused
 4. Fuse the target object to the weapon and it should fall through the ground. If not, take out more devices and fuse them to the weapon
-```
 
 ## Notes
 Fuse overloaded zonai devices can never expire, allowing for things like rockets to run indefinitely

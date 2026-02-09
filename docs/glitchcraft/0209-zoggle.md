@@ -1,4 +1,4 @@
----
+﻿---
 title: "Zoggle"
 ---
 
@@ -8,7 +8,6 @@ title: "Zoggle"
 Using deentenglement to untie the wuggled equippment from their fe parent
 
 ## Instructions
-```
 1. Make a rocket shield and Like like stick cull
 2. Once in area you can cull, preform Fuse entanglement (FE)
 3. FE a shield(2) to an equipped shield(1) 
@@ -19,7 +18,6 @@ Using deentenglement to untie the wuggled equippment from their fe parent
 8. Fill inventory and fail a drop via a chest (has to be done twice)
 9. Once the d pad is unlocked equip a rocket shield and use it fully, this untangles shield(2) from weapon(sword) 
 10. To confirm it was preformed correctly load a save, if achieved, true zuggle has occurred
-```
 
 ## Notes
 Mineru Fuse Entanglement can be used instead to zoggle. Just FE to her and drop swap as she culls. Fail drop and fuse over the equipment attached to Mineru.

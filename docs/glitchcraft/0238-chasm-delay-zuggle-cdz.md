@@ -1,4 +1,4 @@
----
+﻿---
 title: "Chasm Delay Zuggle (CDZ)"
 ---
 
@@ -8,7 +8,6 @@ title: "Chasm Delay Zuggle (CDZ)"
 Every chasm has an "unload box" that unloads the overworld if passed through. By positioning link inside the box, with the help of portable culling it's possible to infinitely delay a drop, causing a zuggle.
 
 ## Instructions
-```
 1. setup portable culling using the opposite equipment type of your target
 2. position yourself anywhere inside a chasm box, for instance, the akkala citadel chasm box starts at y-coordinate 179
 3. equip target 
@@ -22,7 +21,6 @@ Every chasm has an "unload box" that unloads the overworld if passed through. By
 11. drop the portable equipment type
 12. unpause
 13. unlock dpad using a chest
-```
 
 ## Notes
 Extensions:

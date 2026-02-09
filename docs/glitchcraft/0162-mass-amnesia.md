@@ -1,4 +1,4 @@
----
+﻿---
 title: "Mass Amnesia"
 ---
 
@@ -8,7 +8,6 @@ title: "Mass Amnesia"
 Freezes objects in a state where gravity does not affect them, as long as they are not messed with by any means.
 
 ## Instructions
-```
 General setup:
 1. ZLOT an object and recall-lock it
 2. Glue the recall-locked object to your desired objects
@@ -20,7 +19,6 @@ Time Bomb setup:
 2. Glue your desired objects to the recall-locked Time Bomb
 4. Get some distance
 3. Unzuggle the FE-shield, euip it and shield surf
-```
 
 ## Notes
 Known means to revert object with Mass Amnesia back to normal:

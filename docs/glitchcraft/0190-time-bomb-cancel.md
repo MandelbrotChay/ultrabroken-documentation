@@ -1,4 +1,4 @@
----
+﻿---
 title: "Time Bomb cancel"
 ---
 
@@ -8,10 +8,8 @@ title: "Time Bomb cancel"
 By putting away your shield during a specific moment while a time bomb fused to the mastersword is going off, it will explode without any damage to the environment.
 
 ## Instructions
-```
 1. Attack with a time-bomb mastersword
 2. Tap or release zl right when you hear the final noice of the bomb before it goes off
-```
 
 ## Notes
 Also works with the msgnotfound

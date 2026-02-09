@@ -8,7 +8,6 @@ title: "Ultrabroken Smuggling (UBS)"
 Makes an FE'd object follow the shield.
 
 ## Instructions
-```
 1. FE an object to a shield
 2. Drop your FE shield and Ultrahand it to the object 
 3. Perform Ultrabroken with that object
@@ -19,7 +18,6 @@ Makes an FE'd object follow the shield.
 8. Ultrahand another object close to the shield
 9. Ultrahand the shield to the second object object
 10. Pick up the shield again
-```
 
 ## Notes
 —

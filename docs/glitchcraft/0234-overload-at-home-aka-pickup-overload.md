@@ -1,4 +1,4 @@
----
+﻿---
 title: "Overload at Home (AKA Pickup Overload)"
 ---
 
@@ -8,7 +8,6 @@ title: "Overload at Home (AKA Pickup Overload)"
 By repeatedly culling Link while lifting an object during house building, it's possible to achieve an effect similar to zuggle overload
 
 ## Instructions
-```
 1. Setup portable culling
 2. Warp to Link's house and talk to Granteson to enter house building
 3. Take out 13-14 zonai devices
@@ -17,7 +16,6 @@ By repeatedly culling Link while lifting an object during house building, it's p
 6. Unpause
 7. Repeat steps 4 through 6 until all zonai devices have been culled
 8. Test if you are overloaded by switching equipment. If nothing is falling on/through the ground, take out one or two more zonai devices and try again from step 4
-```
 
 ## Notes
 Allows you to do most things that zuggle overload can do, including mass equipment duping and drop smuggling equipment. Unlike zuggle overload, pickup overload does not persist through saves. It can also end by going too far away from the area in which the glitch was performed.

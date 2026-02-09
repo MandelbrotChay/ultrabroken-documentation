@@ -9,7 +9,6 @@ Read the zuggle document for more info!
 Zuggling allows you to stack weapons to get more attack power by cloning equiment onto Link, adding hitboxes on top of each other. The technical explanation is that an item desync occurs when an item is prevented from being dropped by another item, but not the world. Your menu thinks it cannot be dropped and keeps it in your inventory, but the world does think it can be dropped so it does. As a result, your equipped weapon (the one that should have been dropped) stays in Link's hand.
 
 ## Instructions
-```
 Equipment Collision Zuggle
 Map Zuggling (MZ)
 Save Load Zuggle (SLZ)
@@ -20,7 +19,6 @@ Like-Like Zuggling
 Master Sword Zuggling/ Decayed Master Sword Zuggling
 Chasm Delay Zuggle (CDZ)
 Cull Storage Zuggle (CSZ)
-```
 
 ## Notes
 Zuggled equipment persists through file loads and map changes, making it very useful when combined with other glitches

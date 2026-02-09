@@ -8,13 +8,11 @@ title: "Unload Duping"
 By firing arrows between load triggers, items fused to the arrows get dropped. Allowing you to dupe items with multi-shot bows.
 
 ## Instructions
-```
 1. Head to Tobio's Hollow Chasm and stand at around these exact coordinates: "1021, -2261, -0156"
 2. Take out any multi-shot bow (Five-Shot Burst bows work best).
 3. Fuse a material to your bow and shoot upwards into the cave from where you came from.
 
 If done properly, the arrows should unload, but the materials you fired will stay in the air. Walking up to them will make them fall down and allow you to collect them.
-```
 
 ## Notes
 This also works in any other chasm in which you have enough room to shoot your arrows and unload them too.

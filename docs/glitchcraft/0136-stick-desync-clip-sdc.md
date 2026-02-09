@@ -9,7 +9,6 @@ By dropping a shield just before mounting a steering stick that is fuse entangle
 This also has a side effect of culling link if the sdc stick is in a culling area and the base is not equipped. This happens because link is still tied to the sdc stick
 
 ## Instructions
-```
 1. Fuse entangle a steering stick
 2. Get close to a steering stick so you can see the mount button
 3. Drop the base and immediately mount the steering stick
@@ -22,7 +21,6 @@ Watching memories allows link to uncull for roughly half a second.
 Dropping the base in the culling area can lead to a cull lock.
 To stop the culling, you can mount a steering stick or lift an item.
 Link can't cull if the base is equipped.
-```
 
 ## Notes
 - The glitch will not work if you do get on the steering stick immediately after dropping

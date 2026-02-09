@@ -8,7 +8,6 @@ title: "Map Zuggling (MZ)"
 Allows you to zuggle much faster than older versions
 
 ## Instructions
-```
 1). Stand next to a wall facing away from it
 2). Unsheathe equipment to stack the weapon in link's hand (optional for duping)
 3). Open the rune menu by holding L, select the map rune and open the quickmenu for the desired equipment type (weapon/bow/shield) by spamming the d-pad
@@ -18,7 +17,6 @@ Allows you to zuggle much faster than older versions
 7). Drop equipped equipment
 8). Close menu
 Credit to ChargeVolt for writing the setup!
-```
 
 ## Notes
 It's possible to perform Map Zuggling without a wall by standing away from a high ledge (2 springs count as long as you position Link properly) and performing it that way.

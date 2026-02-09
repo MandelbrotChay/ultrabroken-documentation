@@ -8,7 +8,6 @@ title: "Message Not Found (MNF)"
 Allows you to obtain the prologue master sword (named MsgNotFound or MNF), whose durability cannot decrease
 
 ## Instructions
-```
 There are 2 methods to obtain the MNF: (Watch videos for more info) 
 
 SLD Method (recommended):
@@ -29,7 +28,6 @@ Zuggle Overload Method:
 5. Pick up all weapons (until inventory is full) 
 6. Zuggle MNF
 7. Load the save in which you want to have the MNF
-```
 
 ## Notes
 This MNF can be powered up further! See WST or Unload WST for the method

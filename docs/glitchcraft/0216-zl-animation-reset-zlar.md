@@ -1,4 +1,4 @@
----
+﻿---
 title: "ZL Animation Reset (ZLAR)"
 ---
 
@@ -8,11 +8,9 @@ title: "ZL Animation Reset (ZLAR)"
 Performing a zl-less jump while the "Two Handed With Shield" glitch is active (works with one handed weapons and spears too), then mashing zl uppon landing causes links animation to constantly reset.
 
 ## Instructions
-```
 1. Activate "Two Handed With Shield" with any weapon
 2. perform a zl-less jump
 3. Mash Zl as soon as you land
-```
 
 ## Notes
 Getting hit by a weak attack during zlar results in invincibility.

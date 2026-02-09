@@ -8,9 +8,7 @@ title: "Extended Throw Sprinting (ETS)"
 —
 
 ## Instructions
-```
 hold B, tap R, repeat
-```
 
 ## Notes
 —

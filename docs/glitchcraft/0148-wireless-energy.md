@@ -1,4 +1,4 @@
----
+﻿---
 title: "Wireless Energy"
 ---
 
@@ -8,11 +8,9 @@ title: "Wireless Energy"
 Creates a wireless connection to a culled battery. By attaching a dragon part to the battery shield, you can increase the range up to 2000m.
 
 ## Instructions
-```
 1. Ultrahand a fuse entangled battery to a zonai device
 2. (Optional): Attach a dragon part to the battery shield to increase the wireless range
 3. Cull the battery
-```
 
 ## Notes
 —

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Arrow Unlink"
 ---
 
@@ -8,11 +8,9 @@ title: "Arrow Unlink"
 makes arrow float away allowing you to spawn fused stuff in other loactions
 
 ## Instructions
-```
 1.Zuggle until your bow drops 
 2.Fuse the bow on the ground to a sheild
 3.let the arrow float away then drop the sheild
-```
 
 ## Notes
 Can cause some form of warping with wings, springs and big wheels

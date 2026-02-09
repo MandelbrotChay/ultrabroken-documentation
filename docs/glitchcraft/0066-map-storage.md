@@ -8,12 +8,10 @@ title: "Map Storage"
 Allows you to have control over Link while the map is open.
 
 ## Instructions
-```
 1. Open the camera.
 2. Press - and go to the map tab.
 3. Close the map.
 4. Press B and  + in the same frame or one frame later
-```
 
 ## Notes
 effects can range from softlocks to crashes

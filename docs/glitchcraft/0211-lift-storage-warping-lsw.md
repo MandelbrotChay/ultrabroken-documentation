@@ -1,4 +1,4 @@
----
+﻿---
 title: "Lift Storage Warping (LSW)"
 ---
 
@@ -9,13 +9,11 @@ Culling link while holding a zlot'ed item puts link into a wrong warp state. Aft
 Using detanglement makes this wrong warp state permanent.
 
 ## Instructions
-```
 1. Setup sdc culling
 2. zlot an item, like a battery
 3. pickup the item and leave the culling area
 4. load a file
 5. (optional, makes it permanent) use a rocket shield
-```
 
 ## Notes
 Test with like like stick culling

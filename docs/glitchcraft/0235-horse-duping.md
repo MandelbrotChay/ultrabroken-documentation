@@ -1,4 +1,4 @@
----
+﻿---
 title: "Horse Duping"
 ---
 
@@ -8,7 +8,6 @@ title: "Horse Duping"
 Killing a horse while in a specific cull setup, sends it to the horse god without killing it.
 
 ## Instructions
-```
 1. perform sdc
 2. leave the sdc stick in a culling area
 3. place sdc stick base outside of the culling area
@@ -21,7 +20,6 @@ Killing a horse while in a specific cull setup, sends it to the horse god withou
 10. warp away
 the horse should still be alive, but no longer on the map
 11. revieve it with the horse god
-```
 
 ## Notes
 —

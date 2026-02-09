@@ -1,4 +1,4 @@
----
+﻿---
 title: "BThrow Sprinting"
 ---
 
@@ -8,9 +8,7 @@ title: "BThrow Sprinting"
 —
 
 ## Instructions
-```
 press B - ZR - R - B (or B - R - ZR - B) and repeat
-```
 
 ## Notes
 —

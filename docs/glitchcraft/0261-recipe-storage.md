@@ -1,4 +1,4 @@
----
+﻿---
 title: "Recipe Storage"
 ---
 
@@ -8,7 +8,6 @@ title: "Recipe Storage"
 Delaying the recipe menu by a few frames allow for some holding shenanigans
 
 ## Instructions
-```
 Method 1 (1.0.0) (mulberry):
 1. Select a meal
 2. Hold up, press B then A a frame later, then X in the next 2 frames
@@ -31,7 +30,6 @@ Recipe Hold Storage:
 1. Perform the overload only holding steps while on Mineru
 2. Get off Mineru
 3. Holding anything will pull out the hold stored objects (the recipe ingredients)
-```
 
 ## Notes
 —

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Ocklusion"
 ---
 
@@ -8,7 +8,6 @@ title: "Ocklusion"
 Portaculling at the top of a chasm box unloads the surface
 
 ## Instructions
-```
 0. For 1.2.0/1.2.1, prepare portacull equipment. It will make the process far easier compared to other versions.
 1. Go to any chasm. Although, I recommend using either the Akkala Citadel one or the East Gerudo Chasm if planning to use stutter
 
@@ -20,7 +19,6 @@ Once you're there, if on 1.2.x, jump, and open D-Pad. If you see a loading in th
 For versions 1.0-1.1.2, you will have to get a load loop. Once at the coordinates, try and go ever so slightly higher, then try to jump. You can use a tilted hoverstone to get more precision. When at the right coordinates, the game should load forever (warning, this is extremely precise and can take a long time). Then, open the rune wheel in-between the loads, and the glitch will be active.
 
 When successful, go back up with a rocket. Step on the edge of a chasm and build a flying machine to explore the buggiest Hyrule!
-```
 
 ## Notes
 Ocklusion Stutter:

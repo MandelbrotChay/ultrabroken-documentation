@@ -1,4 +1,4 @@
----
+﻿---
 title: "Wuggle (Weird Zuggle)"
 ---
 
@@ -8,7 +8,6 @@ title: "Wuggle (Weird Zuggle)"
 By dropping and equipping equipment in a specific way during a cull causes a glitch similar to zuggle.
 
 ## Instructions
-```
 1. Fe your target equipment
 2. leave the shield or weapon it is fed to in a culling area
 3. pick up the fe item
@@ -16,7 +15,6 @@ By dropping and equipping equipment in a specific way during a cull causes a gli
 5. without closing the menu, switch to a different weapon
 6. open a chest containing the wuggled equipment type while having a full inventory of that type
 7. open the quickmenu during the chest opening and attempt to drop the currently equipped shield/bow/weapon to unlock the dpad
-```
 
 ## Notes
 —

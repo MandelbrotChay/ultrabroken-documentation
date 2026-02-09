@@ -8,12 +8,10 @@ title: "Forced Blood Moon"
 Allows you to force a blood moon whenever you want
 
 ## Instructions
-```
 1. Find a wall that is made of destroyable material. Something that you would be able to bomb to destroy
 2. Get into bullet time. This can be done by jumping off from above the wall, fan, or bomb (Note: Any method to get into bullet time will work)
 3. Use a multishot bow (3x or 5x will work) and shoot the wall with opals until the game become incredibly laggy
 4. Simply fall to the ground. The game should then cause a panic blood moon
-```
 
 ## Notes
 Another way of performing a Forced Blood Moon is from using GAS to store overworld projectiles with a hydrant for a longer period of time in recall (about a minute, unsure if Zuggle Overload is needed or just staying in bullet time until you hit the ground).

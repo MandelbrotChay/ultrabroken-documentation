@@ -1,4 +1,4 @@
----
+﻿---
 title: "Cutscene Combo Amplifier"
 ---
 
@@ -8,12 +8,10 @@ title: "Cutscene Combo Amplifier"
 Extends and stacks the damage frames of an attack with memory buffering, causing huge damage.
 
 ## Instructions
-```
 1. attack something with a weapon or shield
 2. pause the game one frame before the attacks hits, if done correctly, you should not see it hitting the enemy and you should not be able to unequip your weapon/shield
 3. watch and skip memories, for every memory buffer it will apply the damage of the attack (stacks with attack up!)
 4. Unpause
-```
 
 ## Notes
 1. this can be combined with zuggle for even higher damage

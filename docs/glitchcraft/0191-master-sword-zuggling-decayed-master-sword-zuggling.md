@@ -1,4 +1,4 @@
----
+﻿---
 title: "Master Sword Zuggling/ Decayed Master Sword Zuggling"
 ---
 
@@ -8,7 +8,6 @@ title: "Master Sword Zuggling/ Decayed Master Sword Zuggling"
 Allows you to zuggle the master sword or decayed master sword by desyncing it
 
 ## Instructions
-```
 Method1:
 1. Obtain a Mineru Culled Object.
 2. Bring the Mineru Culled Object to a location where holding a Minaru Culled Object causes you to blink.
@@ -31,7 +30,6 @@ An alternative much easier method of getting the desync and transfering it:
 8. watch a memory
 9. drop the equiped weapon, then unpause
 10. Map zuggle the newly equipped weapon.
-```
 
 ## Notes
 Altenative method (mulbery)

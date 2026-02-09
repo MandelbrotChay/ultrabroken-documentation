@@ -1,4 +1,4 @@
----
+﻿---
 title: "Death PSLOT"
 ---
 
@@ -8,14 +8,12 @@ title: "Death PSLOT"
 Death dropping is equivalent to shock dropping. It's therefore possible to use death dropping as a way to send to culled purgatory, effectively resulting in PSLOT
 
 ## Instructions
-```
 1. FE your target equipment to something of the opposite type, equip both
 2. Throw something that will kill you (for example a bomb), but activate Recall before it does.
 3. Press Y to cancel Recall and + to pause as soon as possible.
 4. Drop your target child and buffer drop 15+ buffer equipment, then drop swap the parent.
 5. Unpause and let Link die.
 When reloading, you should see your target PSLOTed on the ground.
-```
 
 ## Notes
 —
