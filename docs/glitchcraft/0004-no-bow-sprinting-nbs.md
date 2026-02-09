@@ -4,7 +4,7 @@ title: "No Bow Sprinting"
 
 # No Bow Sprinting
 
-## Short
+## Tag
 NBS
 
 ## Overview
