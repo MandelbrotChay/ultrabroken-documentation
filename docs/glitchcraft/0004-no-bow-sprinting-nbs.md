@@ -3,7 +3,10 @@ title: "No Bow Sprinting"
 ---
 
 # No Bow Sprinting
-# `NBS`
+
+## Short
+NBS
+
 ## Overview
 —
 
