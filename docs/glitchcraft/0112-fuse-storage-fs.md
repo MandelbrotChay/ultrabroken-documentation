@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Fuse Storage"
 ---
 
@@ -9,8 +9,7 @@ title: "Fuse Storage"
 Fusing an item on the same frame that it culls interrupts the fuse. It will continue as soon as the item unculls, but can lead to FE or cold fuse by interrupting the fusion process in a specific way
 
 ## Instructions
-Like-Like Fuse Storage
-Culling Area Fuse Storage
+—
 
 ## Notes
 Fuse Entanglement
@@ -31,4 +30,5 @@ June 18, 2023
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1202899097921658940)
 
 ## See also
-—
+- Like-Like Fuse Storage
+- Culling Area Fuse Storage
