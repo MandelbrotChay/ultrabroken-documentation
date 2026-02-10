@@ -3,6 +3,7 @@ title: "Ocklusion"
 ---
 
 # Ocklusion
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Portaculling at the top of a chasm box unloads the surface
@@ -33,15 +34,6 @@ May 29, 2024
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1245447960658051184)
 - [YouTube](https://youtu.be/krR0oUnjauw?si=wONqdugV6JZbda4s)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
-- 1.2.1
 
 ## See also
 —

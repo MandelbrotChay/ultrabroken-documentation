@@ -3,6 +3,7 @@ title: "Lift Smuggle"
 ---
 
 # Lift Smuggle
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 By picking up an item like a battery while a specific cutscene (e.g. korok) is playing, you can get into a state similar to lift smuggeling (botw glitch).
@@ -24,15 +25,6 @@ February 3, 2024
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1203341730867314723)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
-- 1.2.1
 
 ## See also
 - Equipment Smuggle

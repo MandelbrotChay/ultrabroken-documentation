@@ -3,6 +3,7 @@ title: "Inventory Shift Duplication"
 ---
 
 # Inventory Shift Duplication `ISD`
+`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Overview
 Exploits inventory shift after creating an empty inventory slot to duplicate items.
@@ -25,13 +26,6 @@ June 25, 2023
 ## Resources
 - [Twitter](https://vxtwitter.com/zb_yuhudaddy/status/1673184858628296704?s=20)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1122835952423944282)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
 
 ## See also
 —

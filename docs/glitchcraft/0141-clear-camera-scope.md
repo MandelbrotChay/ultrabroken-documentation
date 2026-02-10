@@ -3,6 +3,7 @@ title: "Clear Camera/Scope"
 ---
 
 # Clear Camera/Scope
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Allows for First Person Gameplay, removing the HUD from the camera and scope.
@@ -25,15 +26,6 @@ July 3, 2023
 ## Resources
 - [Twitter](https://twitter.com/NX721_/status/1681732748476596344)
 - [Twitter](https://twitter.com/NX721_/status/1681732748476596344)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
-- 1.2.1
 
 ## See also
 —

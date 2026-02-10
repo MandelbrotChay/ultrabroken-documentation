@@ -3,6 +3,7 @@ title: "Midair Item Transmutation"
 ---
 
 # Midair Item Transmutation `MIT`
+`1.1.0` `1.1.1`
 
 ## Overview
 Allows you to transmutate any material very fast. Technical explanation: let's say you have
@@ -35,11 +36,6 @@ May 20, 2023
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1109456967480647710)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1109460329966092319)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1109456967480647710)
-
-## Versions
-
-- 1.1.0
-- 1.1.1
 
 ## See also
 —

@@ -3,6 +3,7 @@ title: "Dive Cancel Glide Boost"
 ---
 
 # Dive Cancel Glide Boost
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Allows you to preserve the increased speed from diving with the Glide Suit into paragliding
@@ -28,15 +29,6 @@ May 14, 2023
 
 ## Resources
 - [YouTube](https://youtu.be/oIzJKQAWPdI)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
-- 1.2.1
 
 ## See also
 —

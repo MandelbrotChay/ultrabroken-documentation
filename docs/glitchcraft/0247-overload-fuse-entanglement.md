@@ -3,6 +3,7 @@ title: "Overload Fuse Entanglement"
 ---
 
 # Overload Fuse Entanglement
+`1.2.0` `1.2.1`
 
 ## Overview
 Allows for full fuse entanglement by combining portable culling with the mechanics of zuggle overload.
@@ -27,11 +28,6 @@ July 23, 2024
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1265367839997693993)
-
-## Versions
-
-- 1.2.0
-- 1.2.1
 
 ## See also
 - Zuggle Overload

@@ -3,6 +3,7 @@ title: "Breaking AMS"
 ---
 
 # Breaking AMS
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 By using certain setups, it is possible to ignore the no durability use.
@@ -32,15 +33,6 @@ November 26, 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1178449991786827928)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
-- 1.2.1
 
 ## See also
 - AMS

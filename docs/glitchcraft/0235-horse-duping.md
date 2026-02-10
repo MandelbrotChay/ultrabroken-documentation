@@ -3,6 +3,7 @@ title: "Horse Duping"
 ---
 
 # Horse Duping
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Killing a horse while in a specific cull setup, sends it to the horse god without killing it.
@@ -32,15 +33,6 @@ March 22, 2024
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1220805468746940586)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
-- 1.2.1
 
 ## See also
 - Stick Desync

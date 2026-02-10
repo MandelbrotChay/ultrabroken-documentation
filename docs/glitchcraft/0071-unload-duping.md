@@ -3,6 +3,7 @@ title: "Unload Duping"
 ---
 
 # Unload Duping
+`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Overview
 By firing arrows between load triggers, items fused to the arrows get dropped. Allowing you to dupe items with multi-shot bows.
@@ -28,13 +29,6 @@ May 31, 2023
 - [Bilibili](https://www.bilibili.com/video/BV1QL411q742)
 - [YouTube](https://www.youtube.com/watch?v=69IW7x_JFeU)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1113480578583511122)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
 
 ## See also
 —

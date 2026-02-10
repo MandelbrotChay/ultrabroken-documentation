@@ -3,6 +3,7 @@ title: "Like-Like Smuggling"
 ---
 
 # Like-Like Smuggling
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Allows for Equipment Smuggling via slugging.
@@ -32,15 +33,6 @@ June 15, 2023
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1118505594215743501)
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1118690695910273074)
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1250839219329302679)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
-- 1.2.1
 
 ## See also
 - Slugging

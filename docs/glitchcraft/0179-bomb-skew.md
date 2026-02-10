@@ -3,6 +3,7 @@ title: "Bomb Skew"
 ---
 
 # Bomb Skew
+`1.0.0`
 
 ## Overview
 In similar fashion to skew from BOTW, this affects the direction a shield surf spring jump will send you.
@@ -23,10 +24,6 @@ September 21, 2023
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598254198050947/1154554443644293171)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598254198050947/1154555245830086706)
-
-## Versions
-
-- 1.0.0
 
 ## See also
 —

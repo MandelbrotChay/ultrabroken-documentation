@@ -3,6 +3,7 @@ title: "Mount Lock"
 ---
 
 # Mount Lock
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Dismounting a steering stick on the same frame that a temple discovery cutscene is played causes Link to be stuck to the steering stick while standing on it, allowing him to perform actions that would otherwise be impossible while mounted
@@ -27,15 +28,6 @@ May 21, 2023
 - [Discord](https://discord.com/channels/1086729144307564648/1110956205624532993/1342646563184312432)
 - [Discord](https://discordapp.com/channels/1086729144307564648/1110956205624532993/1342580552447950961)
 - [YouTube](https://youtu.be/E2Qp3Zj15fo?si=CWroyqmk9prT3vwu)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
-- 1.2.1
 
 ## See also
 —

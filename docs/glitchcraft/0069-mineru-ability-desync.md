@@ -3,6 +3,7 @@ title: "Mineru Ability Desync"
 ---
 
 # Mineru Ability Desync
+`1.1.0` `1.1.1`
 
 ## Overview
 Desyncs Flame Emitters attached to Mineru
@@ -25,11 +26,6 @@ May 30, 2023
 ## Resources
 - [Twitter](https://twitter.com/SilicatYT/status/1663658677302353920)
 - [Twitter](https://twitter.com/SilicatYT/status/1663846017060700161)
-
-## Versions
-
-- 1.1.0
-- 1.1.1
 
 ## See also
 —

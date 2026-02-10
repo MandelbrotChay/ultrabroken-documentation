@@ -3,6 +3,7 @@ title: "Infinite Damage"
 ---
 
 # Infinite Damage
+`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Overview
 Damage repeats infinitely during spin attack.
@@ -24,13 +25,6 @@ May 13, 2023
 - [Youtube](https://youtu.be/Q1aWa0Kg-8Y)
 - [Reddit](https://www.reddit.com/r/TOTK/comments/13tho3e)
 - [Twitter](https://twitter.com/ThatOneNerd0329/status/1662590423582535680)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
 
 ## See also
 —

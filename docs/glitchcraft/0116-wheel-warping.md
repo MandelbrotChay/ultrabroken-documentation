@@ -3,6 +3,7 @@ title: "Wheel Warping"
 ---
 
 # Wheel Warping
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Zips small wheels to certain coordinates extremely quickly and can be used to launch Link a good distance and even pass through objects.
@@ -27,15 +28,6 @@ June 18, 2023
 - [Discord](https://discord.com/channels/1086729144307564648/1110956205624532993/1119903350255796265)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1138481656093749359)
 - [YouTube](https://youtu.be/NU0jvd-S9rQ)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
-- 1.2.1
 
 ## See also
 - Arrow Unloading

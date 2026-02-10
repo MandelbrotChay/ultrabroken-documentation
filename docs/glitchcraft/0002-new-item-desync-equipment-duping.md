@@ -28,6 +28,7 @@ May 12, 2023
 - [Youtube](https://youtu.be/7_1fwTUz0A4)
 - [Youtube](https://youtu.be/7_1fwTUz0A4)
 - [Youtube](https://youtu.be/7_1fwTUz0A4)
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1107447184745582662)
 
 ## See also
-- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1107447184745582662)
+—

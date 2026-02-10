@@ -3,6 +3,7 @@ title: "Void Dipping"
 ---
 
 # Void Dipping
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1` `1.3.0` `1.4.0` `1.4.1` `1.4.2` `Switch 2`
 
 ## Overview
 An extremely powerful equipment state caused by interrupting and retrieving an equipment item that has been destroyed by the void.
@@ -38,20 +39,6 @@ December 29, 2025
 ## Resources
 - [Discord](https://discord.com/channels/1111875355758837830/1128775917376897145/1455340505096261796)
 - [DiscordDiscordDiscord](https://discord.com/channels/1086729144307564648/1113557914444111873/1456747616430850126)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
-- 1.2.1
-- 1.3.0
-- 1.4.0
-- 1.4.1
-- 1.4.2
-- Switch 2
 
 ## See also
 - Portable Culling

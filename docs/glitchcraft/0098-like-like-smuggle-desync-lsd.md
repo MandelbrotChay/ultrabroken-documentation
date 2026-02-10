@@ -3,6 +3,7 @@ title: "Like-Like Smuggle Desync"
 ---
 
 # Like-Like Smuggle Desync `LSD`
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Allows for desync and consequently, WST via slugging.
@@ -23,15 +24,6 @@ June 15, 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1118373368115232788)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
-- 1.2.1
 
 ## See also
 - Slugging

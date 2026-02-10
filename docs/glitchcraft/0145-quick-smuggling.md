@@ -3,6 +3,7 @@ title: "Quick Smuggling"
 ---
 
 # Quick Smuggling
+`1.2.0`
 
 ## Overview
 Allows for easy and quick smuggling of any equipment, including arrow smuggle.
@@ -26,10 +27,6 @@ July 10, 2023
 - [Youtube](https://youtu.be/emvoQHVRaCE)
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1128052108109811784)
 - [YouTube](https://youtu.be/Tw3sjs0ftyk?si=R6hf6xgIuHwTYv_k)
-
-## Versions
-
-- 1.2.0
 
 ## See also
 —

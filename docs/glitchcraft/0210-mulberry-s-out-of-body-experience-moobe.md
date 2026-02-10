@@ -3,6 +3,7 @@ title: "Mulberry's Out of Body Experience"
 ---
 
 # Mulberry's Out of Body Experience `MOOBE`
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 (Temporarily) Warps Link to a previous climbing position from anywhere in the world, only while the game is paused.
@@ -23,15 +24,6 @@ January 6, 2024
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1110956205624532993/1193262026273861764)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
-- 1.2.1
 
 ## See also
 - Memory Buffering

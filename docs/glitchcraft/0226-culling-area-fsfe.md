@@ -3,6 +3,7 @@ title: "Culling Area FSFE"
 ---
 
 # Culling Area FSFE
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 A method for FSFE using AreaCulling
@@ -38,15 +39,6 @@ February 25, 2024
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1211151054633172993)
 - [YouTube](https://youtu.be/Y8sOuZdQecU)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
-- 1.2.1
 
 ## See also
 - Object Culling

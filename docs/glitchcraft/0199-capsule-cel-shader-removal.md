@@ -3,6 +3,7 @@ title: "Capsule Cel Shader Removal"
 ---
 
 # Capsule Cel Shader Removal
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Enables the inside of capsules to remove the cel shader and other shaders
@@ -24,15 +25,6 @@ December 4, 2023
 
 ## Resources
 - [Twitter](https://x.com/NX721_/status/1731784487636443229?s=20)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
-- 1.2.1
 
 ## See also
 —

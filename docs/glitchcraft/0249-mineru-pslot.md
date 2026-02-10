@@ -3,6 +3,7 @@ title: "Mineru PSLOT"
 ---
 
 # Mineru PSLOT
+`1.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1+`
 
 ## Overview
 Using Mineru Culling it's possible to send a piece of equipment to culled purgatory portably, allowing for PSLOT
@@ -32,15 +33,6 @@ July 27, 2024
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1266787525855547463)
-
-## Versions
-
-- 1.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
-- 1.2.1+
 
 ## See also
 - PSLOTPortacull Invismuggle

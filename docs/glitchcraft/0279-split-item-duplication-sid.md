@@ -3,6 +3,7 @@ title: "Split Item Duplication"
 ---
 
 # Split Item Duplication `SID`
+`1.2.0` `1.2.1+`
 
 ## Overview
 Allows you to dupe materials through Stack Splitting
@@ -26,11 +27,6 @@ June 19, 2025
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1221545645844725760/1385097896575373412)
-
-## Versions
-
-- 1.2.0
-- 1.2.1+
 
 ## See also
 - Stack Splitting

@@ -3,6 +3,7 @@ title: "Dialog Permacull"
 ---
 
 # Dialog Permacull
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1` `1.3.0` `1.4.0` `1.4.1` `1.4.2` `Switch 2`
 
 ## Overview
 Permanently culls any liftable object by triggering an NPC dialog while Link is culled
@@ -27,20 +28,6 @@ November 28, 2025
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1444037681855070351)
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1444042968062496930)
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1444082029074583815)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
-- 1.2.1
-- 1.3.0
-- 1.4.0
-- 1.4.1
-- 1.4.2
-- Switch 2
 
 ## See also
 - Portable Culling

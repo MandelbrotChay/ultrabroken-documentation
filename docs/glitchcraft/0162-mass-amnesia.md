@@ -3,6 +3,7 @@ title: "Mass Amnesia"
 ---
 
 # Mass Amnesia
+`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Overview
 Freezes objects in a state where gravity does not affect them, as long as they are not messed with by any means.
@@ -35,13 +36,6 @@ August 2, 2023
 ## Resources
 - [Twitter](https://twitter.com/_nan_gogh/status/1686427149786370055?s=20)
 - [Twitter](https://twitter.com/_nan_gogh/status/1686427149786370055?s=20)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
 
 ## See also
 - Fuse Entanglement (FE)

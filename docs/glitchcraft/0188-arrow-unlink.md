@@ -3,6 +3,7 @@ title: "Arrow Unlink"
 ---
 
 # Arrow Unlink
+`1.0.0`
 
 ## Overview
 makes arrow float away allowing you to spawn fused stuff in other loactions
@@ -25,10 +26,6 @@ October 26, 2023
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1167228288834486362)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1167228288834486362)
-
-## Versions
-
-- 1.0.0
 
 ## See also
 - Zuggle

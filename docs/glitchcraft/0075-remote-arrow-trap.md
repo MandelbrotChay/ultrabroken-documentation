@@ -3,6 +3,7 @@ title: "Remote Arrow"
 ---
 
 # Remote Arrow
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0`
 
 ## Overview
 Allows you to fire arrows remotely from the location the glitch was set up in.
@@ -28,14 +29,6 @@ June 2, 2023
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1114292162268499979)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1114294468363960490)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1114313664535732315)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
 
 ## See also
 —

@@ -3,6 +3,7 @@ title: "Double Shield Desync Clip Fuse Entanglement"
 ---
 
 # Double Shield Desync Clip Fuse Entanglement `DSDCFE`
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 ## Overview
 Setting up an unlocked sdc stick in a culling area and a locked sdc outside of the culling area allows for short, softlock-free fe compatible culls
 
@@ -25,15 +26,6 @@ June 6, 2024
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1248306185472442480)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
-- 1.2.1
 
 ## See also
 - Stick Desync Clipping

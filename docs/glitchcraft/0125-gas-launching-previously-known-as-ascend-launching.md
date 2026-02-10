@@ -3,6 +3,7 @@ title: "GAS Launching"
 ---
 
 # GAS Launching
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Causes the object to fling Link great distances with relative ease.
@@ -39,15 +40,6 @@ June 25, 2023
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1122714860199870506)
 - [Discord](https://discordapp.com/channels/1086729144307564648/1105598687167664239/1149978844573487156)
 - [Tutorial by Blize (ty)](https://www.youtube.com/watch?v=4oxjOE0onxI)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
-- 1.2.1
 
 ## See also
 - Guardless Active Shield

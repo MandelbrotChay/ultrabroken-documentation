@@ -3,6 +3,7 @@ title: "Double Unfuse Duplicashen"
 ---
 
 # Double Unfuse Duplicashen `DUD`
+`1.0.0` `1.1.0` `1.1.1`
 
 ## Overview
 allows you to duplicate any material that can be fused to an arrow
@@ -30,12 +31,6 @@ May 15, 2023
 ## Resources
 - [Bilibili](https://www.bilibili.com/video/BV19h4y147iR/)
 - [YouTube](https://www.youtube.com/watch?v=0sRvQzU2j5w)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
 
 ## See also
 —

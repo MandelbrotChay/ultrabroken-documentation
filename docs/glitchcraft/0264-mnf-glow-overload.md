@@ -3,6 +3,7 @@ title: "MNF Glow Overload"
 ---
 
 # MNF Glow Overload
+`1.0.0`
 
 ## Overview
 Stacking the glow from the MsgNotFound sword to extreme lengths causes many visual effects to stop rendering correctly
@@ -25,10 +26,6 @@ January 3, 2025
 ## Resources
 - [Discord](https://discordapp.com/channels/1086729144307564648/1105598687167664239/1324766216266453096)
 - [Discord](https://discordapp.com/channels/1086729144307564648/1105598687167664239/1324769679495139420)
-
-## Versions
-
-- 1.0.0
 
 ## See also
 - Message Not Found (MNF)

@@ -3,6 +3,7 @@ title: "Zuggle Overload"
 ---
 
 # Zuggle Overload
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Allows you to overload your game, causing many other glitches
@@ -26,15 +27,6 @@ May 17, 2023
 
 ## Resources
 —
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
-- 1.2.1
 
 ## See also
 - [Zocument](https://docs.google.com/document/d/1-BeufJtao2cG5ABG0ZDEUX1SbgQwc_89n7C0VZjPAdI/edit?usp=sharing)

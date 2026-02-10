@@ -3,6 +3,7 @@ title: "Pickup Smuggling"
 ---
 
 # Pickup Smuggling
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Allows Link to pick up an object as if he were holding it like an item.
@@ -25,15 +26,6 @@ May 28, 2023
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1112560911522222192)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1112562187857297480)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
-- 1.2.1
 
 ## See also
 - Memory Buffering

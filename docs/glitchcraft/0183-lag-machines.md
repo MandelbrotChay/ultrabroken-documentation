@@ -3,6 +3,7 @@ title: "Lag Machines"
 ---
 
 # Lag Machines
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Filling up small areas with many objects causes a lot of lag and strange effects
@@ -27,15 +28,6 @@ October 5, 2023
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1159689904763179069)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1190155134051819580)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
-- 1.2.1
 
 ## See also
 - Arrow Unloading

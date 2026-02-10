@@ -3,6 +3,7 @@ title: "Dispenser Storage"
 ---
 
 # Dispenser Storage
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Allows you to use zonai device dispensers as a temporary means to store items and bypass the 21 ground items limit.
@@ -30,15 +31,6 @@ July 2, 2023
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1125043115397484596)
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1125069475541164032)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
-- 1.2.1
 
 ## See also
 —

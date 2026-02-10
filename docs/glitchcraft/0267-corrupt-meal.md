@@ -3,6 +3,7 @@ title: "Corrupt Meal"
 ---
 
 # Corrupt Meal
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Cooking an apple on the same frame that it is deleted results in a meal that takes up whatever was last cooked since the last game boot, though it does not go into the inventory.
@@ -25,15 +26,6 @@ February 7, 2025
 - [Discord](https://discordapp.com/channels/1086729144307564648/1110956205624532993/1337566200418537554)
 - [Discord](https://discordapp.com/channels/1086729144307564648/1110956205624532993/1337605400777719931)
 - [Discord](https://discordapp.com/channels/1086729144307564648/1110956205624532993/1337612908300865617)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
-- 1.2.1
 
 ## See also
 —

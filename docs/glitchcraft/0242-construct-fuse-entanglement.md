@@ -3,6 +3,7 @@ title: "Construct Fuse Entanglement"
 ---
 
 # Construct Fuse Entanglement
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Allows equipment to be fuse entangled to captain constructs' weapons. This only works with bows, shields, and weapons.
@@ -28,15 +29,6 @@ June 30, 2024
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1257088890926399529)
 - [Discord](https://discord.com/channels/1086729144307564648/1110956205624532993/1333083284967784538)
 - [YouTube](https://youtu.be/5P6vfDaVYBQ?si=XsK0Zpsw_TmlmFKG)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
-- 1.2.1
 
 ## See also
 - Fuse Entanglement

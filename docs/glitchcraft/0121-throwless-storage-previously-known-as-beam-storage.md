@@ -3,6 +3,7 @@ title: "Throwless Storage"
 ---
 
 # Throwless Storage
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0`
 
 ## Overview
 Makes it so that Link puts the weapon in an active state (allows for activation of Zonai Devices at all times)
@@ -31,14 +32,6 @@ June 19, 2023
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1120815854729306223)
 - [Twitter](https://twitter.com/NX721_/status/1673788354805243904)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
 
 ## See also
 - Memory Buffering

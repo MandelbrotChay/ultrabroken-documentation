@@ -3,6 +3,7 @@ title: "Attached Rangeless Active Zonai"
 ---
 
 # Attached Rangeless Active Zonai `ARAZ`
+`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Overview
 Is very similar to DRAZ but differs slightly.
@@ -45,13 +46,6 @@ June 16, 2023
 
 ## Resources
 —
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
 
 ## See also
 - Fuse EntanglementZuggling

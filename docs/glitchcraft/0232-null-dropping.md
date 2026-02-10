@@ -3,6 +3,7 @@ title: "Null Dropping"
 ---
 
 # Null Dropping
+`1.0.0`
 
 ## Overview
 Displays a glitched and empty chest quickmenu.
@@ -22,10 +23,6 @@ March 16, 2024
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1218578523690897458)
-
-## Versions
-
-- 1.0.0
 
 ## See also
 —

@@ -3,6 +3,7 @@ title: "Octo-balloon Detanglement"
 ---
 
 # Octo-balloon Detanglement
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1` `1.3.0` `1.4.0` `1.4.1` `1.4.2` `Switch 2`
 
 ## Overview
 Allows for easy detanglement of any shield using octoballoons
@@ -23,20 +24,6 @@ November 16, 2025
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1439763376753344604)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
-- 1.2.1
-- 1.3.0
-- 1.4.0
-- 1.4.1
-- 1.4.2
-- Switch 2
 
 ## See also
 - Detanglement

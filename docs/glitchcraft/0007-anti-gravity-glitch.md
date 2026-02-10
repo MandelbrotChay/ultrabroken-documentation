@@ -3,6 +3,7 @@ title: "Anti-Gravity Glitch"
 ---
 
 # Anti-Gravity Glitch
+`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Overview
 After a specific cutscene, Link is stuck airborne when attempting to descend
@@ -22,13 +23,6 @@ May 13, 2023
 ## Resources
 - [Youtube](https://www.youtube.com/watch?v=109kaxFj8FQ)
 - [Youtube](https://www.youtube.com/watch?v=109kaxFj8FQ)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
 
 ## See also
 —

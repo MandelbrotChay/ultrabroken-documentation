@@ -3,6 +3,7 @@ title: "Zuggle Overload OOB"
 ---
 
 # Zuggle Overload OOB
+`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Overview
 Allows you to clip OOB using zuggle overload
@@ -25,13 +26,6 @@ May 18, 2023
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1108780208137437314)
 - [Youtube](https://youtu.be/w1fI3QYrerQ)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
 
 ## See also
 - Zuggle Overload

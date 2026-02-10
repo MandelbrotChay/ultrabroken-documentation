@@ -3,6 +3,7 @@ title: "Lift Fuse Interrupt"
 ---
 
 # Lift Fuse Interrupt
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Puts liftable objects in a strange state where fusing to them causes a null fuse and cancels the state.
@@ -26,15 +27,6 @@ April 22, 2025
 - [Discord](https://discord.com/channels/1086729144307564648/1109838351596527726/1364240647736791071)
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1367499196676051034)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1366561351069077616)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
-- 1.2.1
 
 ## See also
 —

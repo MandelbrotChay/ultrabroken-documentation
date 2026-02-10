@@ -3,6 +3,7 @@ title: "Drop Restriction"
 ---
 
 # Drop Restriction
+`1.0.0` `1.1.0` `1.1.1`
 
 ## Overview
 Prevents zonai devices from spawning out of the inventory.
@@ -27,12 +28,6 @@ June 19, 2023
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1120378339442556990)
 - [YouTube](https://youtu.be/V6ZeZmfpvEI)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
 
 ## See also
 —

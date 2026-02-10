@@ -3,6 +3,7 @@ title: "Cull Pickup Dynamic Zuggle"
 ---
 
 # Cull Pickup Dynamic Zuggle
+`1.0.0` `1.1.0` `1.1.1`
 
 ## Overview
 Picking up a thrown boomerang on the same frame that it culls can lead to dynamic zuggle
@@ -29,12 +30,6 @@ May 18, 2025
 
 ## Resources
 - [Discord](https://discordapp.com/channels/1086729144307564648/1113557914444111873/1373670648777277510)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
 
 ## See also
 - Dynamic Zuggle

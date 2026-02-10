@@ -3,6 +3,7 @@ title: "Cull Storage"
 ---
 
 # Cull Storage
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Culling and unculling an sdc stick in a specific way allows you to store its cull.
@@ -35,15 +36,6 @@ January 20, 2024
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1198393841464651807)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1249007861523283999)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
-- 1.2.1
 
 ## See also
 - Object CullingStick Desync Clipping

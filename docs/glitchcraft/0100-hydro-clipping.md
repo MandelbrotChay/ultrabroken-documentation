@@ -3,6 +3,7 @@ title: "Hydro Clipping"
 ---
 
 # Hydro Clipping
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Using  guardless active shield or throwless storage on a hydrant shield (FED to a weapon) can cause link and enemies to clip through the ground. It can also force panic blood moons
@@ -55,15 +56,6 @@ June 15, 2023
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1119350059633496107)
 - [Discord](https://discord.com/channels/1086729144307564648/1110956205624532993/1131300216562262047)
 - [Twitter](https://fxtwitter.com/FBuffalo3/status/1681022210906152960)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
-- 1.2.1
 
 ## See also
 - Fuse Entanglement

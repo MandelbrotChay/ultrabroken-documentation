@@ -3,6 +3,7 @@ title: "Menu Overload"
 ---
 
 # Menu Overload
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Overloads the item menu via Moobe, acting similarly to menu overload in BOTW
@@ -25,15 +26,6 @@ January 11, 2024
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1194033039123165215/1195129250265694289)
 - [Discord](https://discord.com/channels/1086729144307564648/1194033039123165215/1196033176183779430)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
-- 1.2.1
 
 ## See also
 - Mulberry's Out of Body Experience

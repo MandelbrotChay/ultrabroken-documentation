@@ -3,6 +3,7 @@ title: "Bundled Item Duplication"
 ---
 
 # Bundled Item Duplication `BID`
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Culling dropping an item in a specific way and unloading it causes it to get put into a state of constantly respawning when holding another item, allowing for massive duping.
@@ -35,15 +36,6 @@ December 12, 2023
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1184150352174514308)
 - [YouTube](https://www.youtube.com/watch?v=WNnnI13a954&t)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
-- 1.2.1
 
 ## See also
 - Stick Desync ClippingObject CullingMemory Buffering

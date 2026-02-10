@@ -3,6 +3,7 @@ title: "Stack Splitting"
 ---
 
 # Stack Splitting
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1+`
 
 ## Overview
 Using an arrow fuse returning, it's possible to get two slots for one item
@@ -36,15 +37,6 @@ December 31, 2024
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1110956205624532993/1323483601756622899)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
-- 1.2.1+
 
 ## See also
 —

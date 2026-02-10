@@ -3,6 +3,7 @@ title: "Fuse Entangle Weapon Zuggle"
 ---
 
 # Fuse Entangle Weapon Zuggle `FEWZ`
+`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Overview
 Allows you got zuggle each weapon you carry one time. This stacks the damage similar to the original version of zuggling
@@ -28,13 +29,6 @@ June 10, 2023
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1116941948746465410)
 - [YouTube](https://www.youtube.com/watch?v=jdqn8qvNhuI)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
 
 ## See also
 - Fuse Entanglement

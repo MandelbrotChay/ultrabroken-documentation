@@ -3,6 +3,7 @@ title: "Disabled Enemy"
 ---
 
 # Disabled Enemy
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Puts the enemy into a doll-like state similar to the glitch back in Breath of the Wild, disabling the enemy's movement.
@@ -32,15 +33,6 @@ June 27, 2023
 ## Resources
 - [Twitter](https://twitter.com/shio_0725_4040/status/1684509550026924032?s=20)
 - [Twitter](https://twitter.com/shio_0725_4040/status/1685176978742403072?t=m0yFnWCFAxKgkgQHeoYGAQ&s=19)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
-- 1.2.1
 
 ## See also
 - BAD Arrows (Bow Attachment Desync)

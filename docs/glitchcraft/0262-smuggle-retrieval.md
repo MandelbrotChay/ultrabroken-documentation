@@ -3,6 +3,7 @@ title: "Smuggle Retrieval"
 ---
 
 # Smuggle Retrieval
+`1.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1+`
 
 ## Overview
 Dropping an unloaded piece of equipment drops a smuggle instead (if Link has one). Fail dropping equips it back.
@@ -25,15 +26,6 @@ December 18, 2024
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1318712104361922664)
-
-## Versions
-
-- 1.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
-- 1.2.1+
 
 ## See also
 - Equipment Smuggle

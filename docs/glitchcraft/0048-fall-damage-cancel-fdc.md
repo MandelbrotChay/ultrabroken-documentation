@@ -3,6 +3,7 @@ title: "Fall Damage Cancel"
 ---
 
 # Fall Damage Cancel `FDC`
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Allows you to cancel fall damage from any height
@@ -26,15 +27,6 @@ May 23, 2023
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1110634140803551445)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1110642449954639932)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
-- 1.2.1
 
 ## See also
 - Jumpslash Cancel

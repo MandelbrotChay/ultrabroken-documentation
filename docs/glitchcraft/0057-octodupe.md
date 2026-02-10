@@ -3,6 +3,7 @@ title: "Octodupe"
 ---
 
 # Octodupe
+`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Overview
 Allows for the duplication of items sucked up by a rock octorok.
@@ -32,13 +33,6 @@ May 26, 2023
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1111702277451960370)
 - [YouTube](https://www.youtube.com/watch?v=oXzMRPK2sRM)
 - [YouTube](https://www.youtube.com/watch?v=FSxiPP-SDtM)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
 
 ## See also
 —

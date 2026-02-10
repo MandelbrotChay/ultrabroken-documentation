@@ -3,6 +3,7 @@ title: "MNF Fusing"
 ---
 
 # MNF Fusing
+`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Overview
 Allows you to fuse to the MNF
@@ -26,13 +27,6 @@ June 5, 2023
 
 ## Resources
 - [YouTube](https://youtu.be/n2nP6FNjEPI)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
 
 ## See also
 —

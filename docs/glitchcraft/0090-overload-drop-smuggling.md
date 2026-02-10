@@ -3,6 +3,7 @@ title: "Overload Drop Smuggling"
 ---
 
 # Overload Drop Smuggling
+`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Overview
 Allows you to drop smuggle via overload
@@ -27,13 +28,6 @@ June 12, 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1118058095734685766)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
 
 ## See also
 - Zuggle Overload

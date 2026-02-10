@@ -3,6 +3,7 @@ title: "BThrow Sprinting"
 ---
 
 # BThrow Sprinting
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 —
@@ -22,15 +23,6 @@ May 12, 2023
 
 ## Resources
 - [Youtube](https://youtu.be/Mb8rgAwELYY)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
-- 1.2.1
 
 ## See also
 - [Totk Sprint Methods](https://docs.google.com/spreadsheets/d/1aXefsoOStTvzwOAzFIaofCtjMf1l6XXbEP5pp_iepzw/edit?usp=sharing)

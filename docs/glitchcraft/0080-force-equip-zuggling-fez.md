@@ -3,6 +3,7 @@ title: "Force Equip Zuggling"
 ---
 
 # Force Equip Zuggling `FEZ`
+`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Overview
 Allows Link to zuggle weapons using any interaction that forcefully equips a weapon. Best achieved by shrines or quests.
@@ -30,13 +31,6 @@ June 7, 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1116094902795780096)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
 
 ## See also
 - Zuggling

@@ -3,6 +3,7 @@ title: "Ultimate Pocket Rocket"
 ---
 
 # Ultimate Pocket Rocket
+`1.0.0`
 
 ## Overview
 A pocket rocket which does not break on warps or drain energy cells, and has unlimited usage and range
@@ -50,10 +51,6 @@ May 20, 2025
 ## Resources
 - [Discord](https://discordapp.com/channels/1086729144307564648/1110956205624532993/1374486971551973386)
 - [YouTube](https://www.youtube.com/watch?v=PPyR-ipbhbE)
-
-## Versions
-
-- 1.0.0
 
 ## See also
 - Fuse Entanglement

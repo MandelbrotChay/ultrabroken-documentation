@@ -3,6 +3,7 @@ title: "Fuse Entanglement Drop Smuggling"
 ---
 
 # Fuse Entanglement Drop Smuggling
+`1.2.0`
 
 ## Overview
 Allows for Drop Smuggling of Fuse Entangled Equipment. Can be used for GAS and Double-FE on 1.2.0
@@ -27,10 +28,6 @@ August 15, 2023
 
 ## Resources
 - [Link](https://discordapp.com/channels/1086729144307564648/1113557914444111873/1140772467707760750)
-
-## Versions
-
-- 1.2.0
 
 ## See also
 - Fuse Entanglement

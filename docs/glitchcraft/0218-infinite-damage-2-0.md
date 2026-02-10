@@ -3,6 +3,7 @@ title: "Infinite Damage 2.0"
 ---
 
 # Infinite Damage 2.0
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Use new prompt to do infinite damage without using durability.
@@ -24,15 +25,6 @@ January 21, 2024
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1198804902961479691)
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1198807476305412188)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
-- 1.2.1
 
 ## See also
 - Wacko Attacko

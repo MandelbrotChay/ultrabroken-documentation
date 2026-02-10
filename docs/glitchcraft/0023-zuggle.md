@@ -3,6 +3,7 @@ title: "Zuggle"
 ---
 
 # Zuggle
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Read the zuggle document for more info! 
@@ -34,15 +35,6 @@ May 16, 2023
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1108035223993729044)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1108101391983067216)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1110408813116407859)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
-- 1.2.1
 
 ## See also
 - [Zocument](https://docs.google.com/document/d/1-BeufJtao2cG5ABG0ZDEUX1SbgQwc_89n7C0VZjPAdI/edit?usp=sharing)

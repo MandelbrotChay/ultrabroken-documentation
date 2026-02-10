@@ -3,6 +3,7 @@ title: "Hand Locked Equipment Smuggling"
 ---
 
 # Hand Locked Equipment Smuggling `HLES`
+`1.0.0`
 
 ## Overview
 Allows you to smuggle equipment only when your hands are busy.
@@ -26,10 +27,6 @@ July 11, 2023
 
 ## Resources
 —
-
-## Versions
-
-- 1.0.0
 
 ## See also
 —

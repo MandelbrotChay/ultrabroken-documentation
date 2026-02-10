@@ -3,6 +3,7 @@ title: "Anti-gravity GAS"
 ---
 
 # Anti-gravity GAS
+`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Overview
 Allows for weapon GAS by throwing the base of an ARAZ connection just as Link gets shocked
@@ -27,13 +28,6 @@ January 22, 2025
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1331788286011904123)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1331789466683052175)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
 
 ## See also
 - AntiGrav Weapons

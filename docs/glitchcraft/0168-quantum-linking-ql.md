@@ -3,6 +3,7 @@ title: "Quantum Linking"
 ---
 
 # Quantum Linking `QL`
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Uses culling to separate glued objects in space, while still retaining a coherent construction
@@ -43,15 +44,6 @@ August 30, 2023
 - [Twitter](https://twitter.com/_nan_gogh/status/1676914554956132352)
 - [Twitter](https://vxtwitter.com/_nan_gogh/status/1678205905869889536?s=46)
 - [YouTube](https://www.youtube.com/watch?v=dxJru92WVtI)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
-- 1.2.1
 
 ## See also
 - Fuse EntanglementObject Culling

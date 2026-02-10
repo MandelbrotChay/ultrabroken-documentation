@@ -3,6 +3,7 @@ title: "Fuse Entanglement"
 ---
 
 # Fuse Entanglement
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Allows your shield to have an effect on an object as though it is fused to the shield, despite the object existing in the world and not being tethered to your shield.
@@ -52,15 +53,6 @@ May 24, 2023
 - [Twitter](https://vxtwitter.com/_nan_gogh/status/1668449729305296899?s=46(Antighost)
 - [Twitter](https://vxtwitter.com/_nan_gogh/status/1677819049235951617?s=46)
 - [Discord](https://discord.com/channels/1086729144307564648/1128894970653327401/1148262809277313035)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
-- 1.2.1
 
 ## See also
 —

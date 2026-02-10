@@ -3,6 +3,7 @@ title: "Durability-"
 ---
 
 # Durability-
+`1.0.0`
 
 ## Overview
 Dropping and picking up a bow with a durability modifier removes the extra durability.
@@ -21,10 +22,6 @@ September 11, 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1150849925140197517)
-
-## Versions
-
-- 1.0.0
 
 ## See also
 —

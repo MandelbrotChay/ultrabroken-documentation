@@ -3,6 +3,7 @@ title: "Spring Fall Damage Cancel"
 ---
 
 # Spring Fall Damage Cancel
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Currently allows you to fall from certian heights without taking fall damage
@@ -24,15 +25,6 @@ May 15, 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1107739989544009828)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
-- 1.2.1
 
 ## See also
 —

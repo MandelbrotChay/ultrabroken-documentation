@@ -3,6 +3,7 @@ title: "Purgatory SLD"
 ---
 
 # Purgatory SLD
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Allows equipment and objects to go through saves by sending its FE base to purgatory in a specific way.
@@ -25,15 +26,6 @@ February 11, 2024
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1206398133408505927)
 - [Discord](https://discord.com/channels/1086729144307564648/1131261670975606916/1208044244766425168)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
-- 1.2.1
 
 ## See also
 - Fuse Entanglement

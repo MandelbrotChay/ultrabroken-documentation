@@ -3,6 +3,7 @@ title: "Equipment Smuggle"
 ---
 
 # Equipment Smuggle
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 An equipment state where items remain equipped in Link's hands after being removed from the inventory
@@ -28,15 +29,6 @@ June 1, 2023
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1113917918422511776)
 - [Twitter](https://twitter.com/goghnan/status/1664921192527020033?s=46)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
-- 1.2.1
 
 ## See also
 —

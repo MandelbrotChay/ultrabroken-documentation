@@ -3,6 +3,7 @@ title: "Ability Wheel Loop"
 ---
 
 # Ability Wheel Loop
+`1.0.0`
 
 ## Overview
 Gets you stuck in the ability wheel indefinitely opening and closing.
@@ -25,10 +26,6 @@ March 11, 2024
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1216873236248395896)
-
-## Versions
-
-- 1.0.0
 
 ## See also
 —

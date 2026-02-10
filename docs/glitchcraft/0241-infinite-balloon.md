@@ -3,6 +3,7 @@ title: "Infinite Balloon"
 ---
 
 # Infinite Balloon
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Steal Robbie's balloon which has will never deplete.
@@ -25,15 +26,6 @@ June 13, 2024
 
 ## Resources
 - [Twitter](https://x.com/kurone_yuu/status/1801239224378900947?s=46&t=DdtmlnCQqIbD5irw-jnKbQ)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
-- 1.2.1
 
 ## See also
 —

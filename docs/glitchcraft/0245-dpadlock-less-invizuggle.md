@@ -3,6 +3,7 @@ title: "Dpadlock-less Invizuggle"
 ---
 
 # Dpadlock-less Invizuggle
+`1.2.0` `1.2.1`
 
 ## Overview
 The first frame of a cull does not dpadlock, so it can be used for invizuggle
@@ -44,11 +45,6 @@ July 17, 2024
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1262927638683582505)
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1263286685198712883)
-
-## Versions
-
-- 1.2.0
-- 1.2.1
 
 ## See also
 —

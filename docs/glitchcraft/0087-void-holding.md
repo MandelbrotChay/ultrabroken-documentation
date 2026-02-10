@@ -3,6 +3,7 @@ title: "Void Holding"
 ---
 
 # Void Holding
+`1.0.0` `1.1.0` `1.1.1`
 
 ## Overview
 Allows you to hold materials "whenever you want" as long as you are at a low enough Y coordinate
@@ -23,12 +24,6 @@ June 10, 2023
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1117164294505779244)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1117479024063684660)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
 
 ## See also
 —

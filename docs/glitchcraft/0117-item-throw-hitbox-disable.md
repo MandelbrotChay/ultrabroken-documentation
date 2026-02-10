@@ -3,6 +3,7 @@ title: "Item Throw Hitbox Disable"
 ---
 
 # Item Throw Hitbox Disable
+`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Overview
 —
@@ -23,13 +24,6 @@ June 18, 2023
 
 ## Resources
 —
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
 
 ## See also
 —

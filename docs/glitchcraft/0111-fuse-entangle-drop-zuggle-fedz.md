@@ -3,6 +3,7 @@ title: "Fuse Entangle Drop Zuggle"
 ---
 
 # Fuse Entangle Drop Zuggle `FEDZ`
+`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Overview
 Similarily to FEWZ, this is not a real drop zuggle, but rather a shield zuggle
@@ -39,13 +40,6 @@ June 17, 2023
 
 ## Resources
 —
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
 
 ## See also
 - Fuse EntanglementSluggingZuggling

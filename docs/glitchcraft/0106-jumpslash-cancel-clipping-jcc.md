@@ -3,6 +3,7 @@ title: "Jumpslash Cancel Clipping"
 ---
 
 # Jumpslash Cancel Clipping `JCC`
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Allows for clipping through thin ceilings.
@@ -27,15 +28,6 @@ June 16, 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1119436112964890735)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
-- 1.2.1
 
 ## See also
 - Jumpslash Cancel

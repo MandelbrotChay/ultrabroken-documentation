@@ -3,6 +3,7 @@ title: "Like-Like Zuggling"
 ---
 
 # Like-Like Zuggling
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Allows for zuggling via slugging
@@ -50,15 +51,6 @@ June 15, 2023
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1118709904614629427)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1126132309687537705)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
-- 1.2.1
 
 ## See also
 - Slugging

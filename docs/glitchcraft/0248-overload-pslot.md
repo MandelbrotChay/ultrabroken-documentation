@@ -3,6 +3,7 @@ title: "Overload PSLOT"
 ---
 
 # Overload PSLOT
+`1.2.0` `1.2.1+`
 
 ## Overview
 Using Overload it's possible to fully portably PSLOT on current versions
@@ -25,11 +26,6 @@ July 26, 2024
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1266400937778610206)
-
-## Versions
-
-- 1.2.0
-- 1.2.1+
 
 ## See also
 - PSLOTPortacull Invismuggle

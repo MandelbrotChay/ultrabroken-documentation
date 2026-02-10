@@ -3,6 +3,7 @@ title: "Stick Desync Clip"
 ---
 
 # Stick Desync Clip `SDC`
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 By dropping a shield just before mounting a steering stick that is fuse entangled to it, we can clip through floors easily.
@@ -37,15 +38,6 @@ July 1, 2023
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1134569862497304629)
 - [Twitter](https://twitter.com/_nan_gogh/status/1675121229462642689?s=20)
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1134569862497304629)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
-- 1.2.1
 
 ## See also
 - Fuse Entanglement

@@ -3,6 +3,7 @@ title: "Zonai Storage"
 ---
 
 # Zonai Storage
+`1.0.0`
 
 ## Overview
 Allows Zonai devices to be stored and taken into shrines
@@ -25,10 +26,6 @@ August 13, 2023
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1140347990368854047)
 - [YouTube](https://www.youtube.com/watch?v=6plkkvYGW74&)
-
-## Versions
-
-- 1.0.0
 
 ## See also
 —

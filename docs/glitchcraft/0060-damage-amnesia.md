@@ -3,6 +3,7 @@ title: "Damage Amnesia"
 ---
 
 # Damage Amnesia
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Allows Link to negate sources of damage.
@@ -23,15 +24,6 @@ May 27, 2023
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1112163785461997609)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1112163785461997609)
 - [YouTube](https://www.youtube.com/watch?v=P0IjC2E64MY)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
-- 1.2.1
 
 ## See also
 - Memory Buffering

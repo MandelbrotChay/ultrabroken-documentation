@@ -3,6 +3,7 @@ title: "Ocklusion Hovering"
 ---
 
 # Ocklusion Hovering
+`1.0.0` `1.1.0` `1.1.1` `1.1.1` `1.1.2` `1.2.0` `1.2.1` `1.3.0` `1.4.0` `1.4.1` `1.4.2`
 
 ## Overview
 Triggering an ocklusion load while pickup smuggling certain objects pushes Link around, sometimes causing him to hover or levitate upwards
@@ -23,20 +24,6 @@ October 12, 2025
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1427080389972856862)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.1
-- 1.1.2
-- 1.2.0
-- 1.2.1
-- 1.3.0
-- 1.4.0
-- 1.4.1
-- 1.4.2
 
 ## See also
 - OcklusionPickup Smuggling

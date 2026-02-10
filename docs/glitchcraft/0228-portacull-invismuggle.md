@@ -3,6 +3,7 @@ title: "Portacull Invismuggle"
 ---
 
 # Portacull Invismuggle
+`1.2.0` `1.2.1+`
 
 ## Overview
 Using portable culling equipment it's possible to get a culled smuggle (invismuggle).
@@ -28,11 +29,6 @@ February 29, 2024
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1212758084980572270)
-
-## Versions
-
-- 1.2.0
-- 1.2.1+
 
 ## See also
 - PSLOT

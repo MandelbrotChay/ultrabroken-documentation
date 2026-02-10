@@ -3,6 +3,7 @@ title: "Recall Locking"
 ---
 
 # Recall Locking
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Completely locks objects in place by recalling it before zlotting it
@@ -25,15 +26,6 @@ June 11, 2023
 
 ## Resources
 [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1194982242565496895)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
-- 1.2.1
 
 ## See also
 - 1.2+ zuggle methods

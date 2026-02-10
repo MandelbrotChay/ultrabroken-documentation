@@ -3,6 +3,7 @@ title: "MNF Zuggle Fuse"
 ---
 
 # MNF Zuggle Fuse
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Allows to fuse to the MNF
@@ -29,15 +30,6 @@ May 18, 2023
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1108141837954330686/1108621041527427144)
 - [Discord](https://discord.com/channels/1086729144307564648/1108141837954330686/1108622215672496138)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
-- 1.2.1
 
 ## See also
 —

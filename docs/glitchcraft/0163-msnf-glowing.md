@@ -3,6 +3,7 @@ title: "MSNF glowing"
 ---
 
 # MSNF glowing
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 The msnf starts glowing at gloom hand coordinates and near phantom ganon
@@ -24,15 +25,6 @@ August 2, 2023
 ## Resources
 - [Youtube](https://youtu.be/x71Zp-zBbEE)
 - [YouTube](https://youtu.be/x71Zp-zBbEE)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
-- 1.2.1
 
 ## See also
 —

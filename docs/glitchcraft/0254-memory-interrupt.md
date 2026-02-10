@@ -3,6 +3,7 @@ title: "Memory Interrupt"
 ---
 
 # Memory Interrupt
+`1.0.0`
 
 ## Overview
 Interrupting a memory causes a forced pause after a dialogue
@@ -28,10 +29,6 @@ October 1st, 2024
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1110956205624532993/1290665812855885846)
 - [YouTube](https://www.youtube.com/watch?v=RmjZKVGvstE)
-
-## Versions
-
-- 1.0.0
 
 ## See also
 —

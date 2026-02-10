@@ -3,6 +3,7 @@ title: "Quick Drop Smuggle"
 ---
 
 # Quick Drop Smuggle `QDS`
+`1.0.0`
 
 ## Overview
 Dropping and equipping weapons in a specific way causes drop smuggle.
@@ -46,10 +47,6 @@ March 16, 2024
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1218608839121698838)
-
-## Versions
-
-- 1.0.0
 
 ## See also
 - Dynamic ZuggleHand Locked Equipment Smuggling

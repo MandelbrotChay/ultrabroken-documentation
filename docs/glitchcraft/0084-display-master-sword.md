@@ -3,6 +3,7 @@ title: "Display Master Sword"
 ---
 
 # Display Master Sword
+`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Overview
 Allows you to display the master sword, damaged master sword or MsgNotFound in a weapon display
@@ -26,13 +27,6 @@ June 8, 2023
 ## Resources
 - [Twitter](https://twitter.com/zasbotw/status/1666751564743315456)
 - [Twitter](https://twitter.com/zasbotw/status/1666751564743315456)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
 
 ## See also
 —

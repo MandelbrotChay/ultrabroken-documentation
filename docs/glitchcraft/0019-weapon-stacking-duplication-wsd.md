@@ -3,6 +3,7 @@ title: "Weapon Stacking Duplication"
 ---
 
 # Weapon Stacking Duplication `WSD`
+`1.0.0` `1.1.0` `1.1.1`
 
 ## Overview
 Allows for a quick dupe of any weapon, bow or shield
@@ -23,12 +24,6 @@ May 16, 2023
 
 ## Resources
 - [Bilibili](http://www.bilibili.com/video/BV1qT411t7Kv/)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
 
 ## See also
 —

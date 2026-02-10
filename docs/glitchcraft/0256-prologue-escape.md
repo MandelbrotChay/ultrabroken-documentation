@@ -3,6 +3,7 @@ title: "Prologue Escape"
 ---
 
 # Prologue Escape
+`1.0.0`
 
 ## Overview
 Using Banc Storage, it's possible to get Link out of the prologue, allowing for a lot of side effects.
@@ -39,10 +40,6 @@ October 1st, 2024
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1110956205624532993/1290703223467937898)
 - [YouTube](https://www.youtube.com/watch?v=RmjZKVGvstE)
-
-## Versions
-
-- 1.0.0
 
 ## See also
 —

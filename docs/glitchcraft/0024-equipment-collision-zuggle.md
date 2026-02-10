@@ -3,6 +3,7 @@ title: "Equipment Collision Zuggle"
 ---
 
 # Equipment Collision Zuggle
+`1.0.0` `1.1.0` `1.1.1`
 
 ## Overview
 The original zuggle method discovered by Zvleon.
@@ -30,12 +31,6 @@ May 16, 2023
 
 ## Resources
 —
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
 
 ## See also
 - Zuggle

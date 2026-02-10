@@ -3,6 +3,7 @@ title: "Ghost Stick Clipping"
 ---
 
 # Ghost Stick Clipping
+`1.0.0` `1.1.0` `1.1.1`
 
 ## Overview
 Allows Link to clip through walls by stepping onto a steering stick during ABCS.
@@ -25,12 +26,6 @@ May 28, 2023
 ## Resources
 - [Youtube](https://www.youtube.com/watch?v=CfIe3QO5fXA)
 - [YouTube](https://youtu.be/_Zaqnosyymw)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
 
 ## See also
 - AutoBuild Cancel

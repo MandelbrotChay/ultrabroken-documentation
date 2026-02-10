@@ -3,6 +3,7 @@ title: "Prevent Weapon Despawn"
 ---
 
 # Prevent Weapon Despawn
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Prevents equipment from despawning after certain NPC interactions and quests (Does not work in Pirate Ship quest, different flags, currently testing)
@@ -24,15 +25,6 @@ June 28, 2023
 
 ## Resources
 - [Twitter](https://twitter.com/NX721_/status/1674217769267781633?s=20)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
-- 1.2.1
 
 ## See also
 - Zuggling

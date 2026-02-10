@@ -3,6 +3,7 @@ title: "Fuse Entanglement Desync"
 ---
 
 # Fuse Entanglement Desync `FED`
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Allows you to transfer the fuse and durability from one weapon to another. You can also decide to dupe the weapon or the fused material.
@@ -39,15 +40,6 @@ May 26, 2023
 - [Youtube](https://youtu.be/E3nDTPL6IdU)
 - [YouTube](https://youtu.be/E3nDTPL6IdU)
 - [YouTube](https://youtu.be/E3nDTPL6IdU)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
-- 1.2.1
 
 ## See also
 - Fuse Entanglement

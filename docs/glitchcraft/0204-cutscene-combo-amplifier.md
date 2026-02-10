@@ -3,6 +3,7 @@ title: "Cutscene Combo Amplifier"
 ---
 
 # Cutscene Combo Amplifier
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Extends and stacks the damage frames of an attack with memory buffering, causing huge damage.
@@ -28,15 +29,6 @@ December 22, 2023
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1187809236718207068)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1187789030037926000)
 - [YouTube](https://www.youtube.com/watch?v=I9HZDkiArJc)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
-- 1.2.1
 
 ## See also
 - Memory Buffering

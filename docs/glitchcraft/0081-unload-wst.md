@@ -3,6 +3,7 @@ title: "Unload WST"
 ---
 
 # Unload WST
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Allows you to transfer modifiers and materials to any weapon. This method is unique as it allows for the modifiers to be tranfered to the master sword as well.
@@ -29,15 +30,6 @@ Resync your inventory by re-equipping
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1116378940546748416)
 - [YouTube](https://www.youtube.com/watch?v=pMsoToqT52g)
 - [YouTube](https://youtu.be/ycKeFgsb7gs)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
-- 1.2.1
 
 ## See also
 - Invizuggle overload for 1.2+ methods

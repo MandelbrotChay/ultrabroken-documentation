@@ -3,6 +3,7 @@ title: "Springdolling"
 ---
 
 # Springdolling
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 allows you to launch a large horizontal distance using springs
@@ -25,15 +26,6 @@ May 15, 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1107794101111377920)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
-- 1.2.1
 
 ## See also
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1112137651743637584)

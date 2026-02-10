@@ -3,6 +3,7 @@ title: "Swap Resync Zuggle"
 ---
 
 # Swap Resync Zuggle `SRZ`
+`1.2.0` `1.2.1+`
 
 ## Overview
 Using Swap Resync, it's possible to zuggle anywhere simply using portacull equipment.
@@ -43,11 +44,6 @@ August 11, 2025
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1404450104525459546)
 - [Zuggling portacullequipment](https://discord.com/channels/1086729144307564648/1113557914444111873/1404506627091988552)
-
-## Versions
-
-- 1.2.0
-- 1.2.1+
 
 ## See also
 - Portable CullingZuggle

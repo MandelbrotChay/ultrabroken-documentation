@@ -3,6 +3,7 @@ title: "Equipped Throken"
 ---
 
 # Equipped Throken
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Allows throken weapons to be equipped
@@ -34,15 +35,6 @@ May 20, 2025
 ## Resources
 - [Discord](https://discordapp.com/channels/1086729144307564648/1110956205624532993/1374335275064623104)
 - [Discord](https://discordapp.com/channels/1086729144307564648/1113557914444111873/1377437735224086608)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
-- 1.2.1
 
 ## See also
 - Throken

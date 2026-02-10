@@ -3,6 +3,7 @@ title: "Recall Drop Stacking"
 ---
 
 # Recall Drop Stacking
+`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Overview
 Dropping many zonai devices in recall causes intense frame drops
@@ -28,13 +29,6 @@ January 4, 2025
 - [Discord](https://discord.com/channels/1086729144307564648/1110956205624532993/1325262259152486432)
 - [Discord](https://discord.com/channels/1086729144307564648/1110956205624532993/1325264364013355152)
 - [Discord](https://discord.com/channels/1086729144307564648/1110956205624532993/1325266809590517782)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
 
 ## See also
 —

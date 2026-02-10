@@ -3,6 +3,7 @@ title: "Zonai Sort Duplication"
 ---
 
 # Zonai Sort Duplication `ZSD`
+`1.0.0` `1.1.0` `1.1.1`
 
 ## Overview
 Allows you to dupe zonai parts back into your inventory.
@@ -27,12 +28,6 @@ May 22, 2023
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1110075304338260059)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1110075304338260059)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
 
 ## See also
 —

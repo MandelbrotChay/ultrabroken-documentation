@@ -3,6 +3,7 @@ title: "Hold Storage"
 ---
 
 # Hold Storage
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Allows Link to remain in a object holding state when not normally possible, as well as desync the hold state.
@@ -27,15 +28,6 @@ July 2, 2023
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1125218530766377042)
 - [Twitter](https://vxtwitter.com/goghnan/status/1675895184637276161?s=46)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1125225951710691338)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
-- 1.2.1
 
 ## See also
 - Memory Buffering

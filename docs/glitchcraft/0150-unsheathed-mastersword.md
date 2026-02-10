@@ -3,6 +3,7 @@ title: "Unsheathed Mastersword"
 ---
 
 # Unsheathed Mastersword
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0`
 
 ## Overview
 Puts the master sword in a visual state where it is outside of it's sheath.
@@ -26,14 +27,6 @@ July 11, 2023
 ## Resources
 - [Twitter](https://twitter.com/NX721_/status/1678921120102371328)
 - [Twitter](https://twitter.com/NX721_/status/1678921120102371328)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
 
 ## See also
 - Hold Smuggling

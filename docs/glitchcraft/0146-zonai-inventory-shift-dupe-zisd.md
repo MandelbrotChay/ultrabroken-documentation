@@ -3,6 +3,7 @@ title: "Zonai Inventory Shift Dupe"
 ---
 
 # Zonai Inventory Shift Dupe `ZISD`
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Uses Memory Buffering and MTD to duplicate Zonai Devices
@@ -30,15 +31,6 @@ July 10, 2023
 
 ## Resources
 - [Twitter](https://twitter.com/quantim/status/1678509305044115458?s=46)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
-- 1.2.1
 
 ## See also
 —

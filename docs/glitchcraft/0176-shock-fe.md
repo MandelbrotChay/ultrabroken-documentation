@@ -3,6 +3,7 @@ title: "Shock FE"
 ---
 
 # Shock FE
+`1.0.0`
 
 ## Overview
 Interrupting a fuse to a zuggled item causes FE
@@ -25,10 +26,6 @@ September 12, 2023
 
 ## Resources
 - [Twitter](https://vxtwitter.com/zasbotw/status/1701713294464364573)
-
-## Versions
-
-- 1.0.0
 
 ## See also
 - ZugglingFuse Entanglment

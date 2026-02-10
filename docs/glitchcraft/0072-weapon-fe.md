@@ -3,6 +3,7 @@ title: "Weapon FE"
 ---
 
 # Weapon FE
+`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Overview
 Allows for FE to weapons
@@ -26,13 +27,6 @@ June 1, 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1170407312054300713)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
 
 ## See also
 - Fuse Entanglement

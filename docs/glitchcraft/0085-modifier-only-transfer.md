@@ -3,6 +3,7 @@ title: "Modifier ONLY Transfer"
 ---
 
 # Modifier ONLY Transfer
+`1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Allows you to transfer only the modifier, but only works on weapons.
@@ -26,14 +27,6 @@ June 9, 2023
 
 ## Resources
 - [YouTube](https://youtu.be/ycKeFgsb7gs)
-
-## Versions
-
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
-- 1.2.1
 
 ## See also
 —

@@ -3,6 +3,7 @@ title: "Wireless Energy"
 ---
 
 # Wireless Energy
+`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Overview
 Creates a wireless connection to a culled battery. By attaching a dragon part to the battery shield, you can increase the range up to 2000m.
@@ -23,13 +24,6 @@ July 11, 2023
 
 ## Resources
 - [Twitter](https://vxtwitter.com/_nan_gogh/status/1678848829259382786?s=46)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
 
 ## See also
 - Fuse Entanglement

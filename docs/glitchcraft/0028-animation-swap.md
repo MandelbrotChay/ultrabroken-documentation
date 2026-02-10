@@ -3,6 +3,7 @@ title: "Animation Swap"
 ---
 
 # Animation Swap
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Combine animation sets when zuggle overloaded.
@@ -25,15 +26,6 @@ May 17, 2023
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1108569825606897705)
 - [Youtube](https://youtu.be/ZbaN8Ljj4NE)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
-- 1.2.1
 
 ## See also
 - Zuggle Overload

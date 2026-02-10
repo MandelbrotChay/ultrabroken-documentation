@@ -3,6 +3,7 @@ title: "Hold Smuggling"
 ---
 
 # Hold Smuggling
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Enables full control of Link while holding objects in the menu.
@@ -28,15 +29,6 @@ July 4, 2023
 
 ## Resources
 - [Twitter](https://twitter.com/_nan_gogh/status/1676384792818995200)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
-- 1.2.1
 
 ## See also
 —

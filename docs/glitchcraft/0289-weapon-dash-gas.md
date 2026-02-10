@@ -3,6 +3,7 @@ title: "Weapon Dash GAS"
 ---
 
 # Weapon Dash GAS
+`1.2.0` `1.2.1` `1.3.0` `1.4.0` `1.4.1` `1.4.2` `Switch 2`
 
 ## Overview
 Allows for easy weapon GAS by performing a dash attack while its fused zonai device is culled
@@ -27,16 +28,6 @@ November 28, 2025
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1443887058153373729)
-
-## Versions
-
-- 1.2.0
-- 1.2.1
-- 1.3.0
-- 1.4.0
-- 1.4.1
-- 1.4.2
-- Switch 2
 
 ## See also
 - Guard-less Active Shield (GAS)

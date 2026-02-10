@@ -3,6 +3,7 @@ title: "Recall Launch"
 ---
 
 # Recall Launch
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Allows you to launch yourself very far
@@ -26,15 +27,6 @@ May 17, 2023
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1108497033951719517)
 - [Twitter](https://twitter.com/iLegendofLinkk/status/1659100053535965185?t=tWBb41YeFveu5NycFpue5w&s=19)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
-- 1.2.1
 
 ## See also
 —

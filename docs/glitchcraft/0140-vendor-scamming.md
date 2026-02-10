@@ -3,6 +3,7 @@ title: "Vendor Scamming"
 ---
 
 # Vendor Scamming
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0`
 
 ## Overview
 Allows you to infinitely sell items to (steal from) a vendor using Hold Storage/Smuggling.
@@ -24,14 +25,6 @@ July 3, 2023
 
 ## Resources
 - [Twitter](https://twitter.com/NX721_/status/1675983600263778305)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
 
 ## See also
 - Hold Storage

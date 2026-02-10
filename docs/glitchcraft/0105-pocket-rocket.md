@@ -3,6 +3,7 @@ title: "Pocket Rocket"
 ---
 
 # Pocket Rocket
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Allows for repeated boost from a midair rocket shield surf, making it a very good movement option.
@@ -25,15 +26,6 @@ June 15, 2023
 ## Resources
 - [YouTube](https://youtu.be/10PdzT0eEl0)
 - [YouTube](https://youtu.be/OmuWEI46dXo?t=163)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
-- 1.2.1
 
 ## See also
 - Fuse Entanglement

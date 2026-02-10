@@ -3,6 +3,7 @@ title: "Anti-Gravity Objects"
 ---
 
 # Anti-Gravity Objects
+`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Overview
 Allows objects to lose their gravity.
@@ -24,12 +25,5 @@ Allows objects to lose their gravity.
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1113306645854945303)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
 
 ## See also—

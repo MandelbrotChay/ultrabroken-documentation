@@ -3,6 +3,7 @@ title: "Zoggle"
 ---
 
 # Zoggle
+`1.2.0` `1.2.1`
 
 ## Overview
 Using deentenglement to untie the wuggled equippment from their fe parent
@@ -31,11 +32,6 @@ January 4, 2024
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1192597934181720197)
-
-## Versions
-
-- 1.2.0
-- 1.2.1
 
 ## See also
 - Mineru Fuse Entanglement

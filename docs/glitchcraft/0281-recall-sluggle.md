@@ -3,6 +3,7 @@ title: "Recall Sluggle"
 ---
 
 # Recall Sluggle
+`1.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Overview
 Using recall it's possible to sluggle a weapon by having access to it in the menu before it's properly equipped
@@ -28,13 +29,6 @@ July 12, 2025
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1110956205624532993/1393348393329365042)
-
-## Versions
-
-- 1.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
 
 ## See also
 - Slugging

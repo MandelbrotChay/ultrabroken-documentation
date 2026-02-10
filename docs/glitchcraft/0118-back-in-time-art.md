@@ -3,6 +3,7 @@ title: "Back-in-Time Art"
 ---
 
 # Back-in-Time Art
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Transfers the picture in Link's House to a previous save. Is also capable of transferring compendium pictures.
@@ -36,15 +37,6 @@ June 18, 2023
 ## Resources
 - [Youtube](https://www.youtube.com/watch?v=DWA_cTNykyo)
 - [Twitter](https://vxtwitter.com/zasbotw/status/1692295854173167930)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
-- 1.2.1
 
 ## See also
 —

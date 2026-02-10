@@ -3,6 +3,7 @@ title: "Resync Fuse Entanglement"
 ---
 
 # Resync Fuse Entanglement `RFE`
+`1.0.0`
 
 ## Overview
 "Fe'ing" with a drop swap drop and then pausing to mess with the fuse prevents a full fuse and causes FE
@@ -50,10 +51,6 @@ December 18, 2023
 
 ## Resources
 - [Twitter](https://vxtwitter.com/zasbotw/status/1736818709677977998)
-
-## Versions
-
-- 1.0.0
 
 ## See also
 —

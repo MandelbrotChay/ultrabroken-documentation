@@ -3,6 +3,7 @@ title: "Wuggle"
 ---
 
 # Wuggle
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 By dropping and equipping equipment in a specific way during a cull causes a glitch similar to zuggle.
@@ -29,15 +30,6 @@ December 29, 2023
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1190371844142928002)
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1190371844142928002)
 - [YouTube](https://www.youtube.com/watch?v=gO6cB5cSQTY&t)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
-- 1.2.1
 
 ## See also
 - Fuse EntanglementObject Culling

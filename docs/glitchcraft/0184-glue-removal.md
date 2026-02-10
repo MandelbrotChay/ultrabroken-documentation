@@ -3,6 +3,7 @@ title: "Glue Removal"
 ---
 
 # Glue Removal
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 lets you break apart things that have been ultrahanded together
@@ -26,15 +27,6 @@ October 5, 2023
 ## Resources
 - [Google Drive](https://drive.google.com/file/d/1XP7dg6aCd-34AH5v-_AsbVoz2oDoo5vJ/view?usp=drive_link)
 - [Google Drive](https://drive.google.com/drive/folders/15l1DDx1-64bO43FeUr2-2NtpeY58a79A?usp=sharing)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
-- 1.2.1
 
 ## See also
 —

@@ -3,6 +3,7 @@ title: "Save Load Zuggling"
 ---
 
 # Save Load Zuggling `SLZ`
+`1.0.0` `1.1.0` `1.1.1`
 
 ## Overview
 Allows you to zuggle anywhere as no wall is required. It is extremely similar to MZ, with only one aditional step of reloading at the end
@@ -31,12 +32,6 @@ May 23, 2023
 - [Youtube](https://www.youtube.com/watch?v=vIxk3xam-BE)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1110795274953166939)
 - [Youtube](https://www.youtube.com/watch?v=pgtlFSLzU8Y)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
 
 ## See also
 - Zuggling

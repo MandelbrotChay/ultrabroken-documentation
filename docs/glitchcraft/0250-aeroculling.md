@@ -3,6 +3,7 @@ title: "Aeroculling"
 ---
 
 # Aeroculling
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Putting a perma-culled fan equipment's wind in a culling area prevents objects in it from getting culled, except if Link stands on most objects (including Zonai devices).
@@ -40,15 +41,6 @@ August 11, 2024
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1283455775976718346)
 - [YouTube](https://www.youtube.com/watch?v=o-9HO3NbfPU)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
-- 1.2.1
 
 ## See also
 —

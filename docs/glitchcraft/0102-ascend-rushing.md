@@ -3,6 +3,7 @@ title: "Ascend Rushing"
 ---
 
 # Ascend Rushing
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Allows you to flury rush after ascending
@@ -23,15 +24,6 @@ June 15, 2023
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1119057121611362317)
 - [YouTube](https://youtu.be/jEkCy9NzbBk)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
-- 1.2.1
 
 ## See also
 —

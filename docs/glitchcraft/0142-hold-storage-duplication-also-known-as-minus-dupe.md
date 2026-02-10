@@ -3,6 +3,7 @@ title: "Hold Storage Duplication"
 ---
 
 # Hold Storage Duplication
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Allows you to dupe items via hold storage.
@@ -25,15 +26,6 @@ July 3, 2023
 ## Resources
 - [Twitter](https://vxtwitter.com/goghnan/status/1675972013096161280?s=46)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1125533417413541938)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
-- 1.2.1
 
 ## See also
 - Hold Storage

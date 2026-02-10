@@ -3,6 +3,7 @@ title: "Ascend Storage"
 ---
 
 # Ascend Storage
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Misplaces the point where Link goes after using Ascend.
@@ -28,15 +29,6 @@ May 19, 2023
 
 ## Resources
 - [Twitter](https://twitter.com/reaperhide/status/1659593296774299648)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
-- 1.2.1
 
 ## See also
 —

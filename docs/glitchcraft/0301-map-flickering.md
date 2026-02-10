@@ -3,6 +3,7 @@ title: "Map Flickering"
 ---
 
 # Map Flickering
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0`
 
 ## Overview
 EPILEPSY WARNING
@@ -22,13 +23,5 @@ Do not do this if you suffer from epilepsy, or are prone to seizures
 
 ## Resources
 - [Youtube](https://www.youtube.com/watch?v=RjSKbESuVHo)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
 
 ## See also—

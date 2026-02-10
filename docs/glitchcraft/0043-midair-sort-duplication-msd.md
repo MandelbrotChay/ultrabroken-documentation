@@ -3,6 +3,7 @@ title: "Midair Sort Duplication"
 ---
 
 # Midair Sort Duplication `MSD`
+`1.0.0` `1.1.0` `1.1.1`
 
 ## Overview
 Allows duplication of materials while midair.
@@ -26,12 +27,6 @@ May 21, 2023
 
 ## Resources
 - [Twitter](https://twitter.com/zasoot/status/1660458317934915584)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
 
 ## See also
 —

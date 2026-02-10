@@ -3,6 +3,7 @@ title: "Mozdor jumping/slashing"
 ---
 
 # Mozdor jumping/slashing
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Allows you to jump very far (can be chained infinitly)
@@ -24,15 +25,6 @@ May 20, 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1106412847359082506/1109296265847640094)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
-- 1.2.1
 
 ## See also
 —

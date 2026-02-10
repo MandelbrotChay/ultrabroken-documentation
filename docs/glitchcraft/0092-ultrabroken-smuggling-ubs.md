@@ -3,6 +3,7 @@ title: "Ultrabroken Smuggling"
 ---
 
 # Ultrabroken Smuggling `UBS`
+`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Overview
 Makes an FE'd object follow the shield.
@@ -34,13 +35,6 @@ June 13, 2023
 - [Twitter](https://twitter.com/goghnan/status/1668693248913580049?s=46)
 - [Twitter](https://twitter.com/goghnan/status/1668671033874821139?s=46)
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1118059019974737922)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
 
 ## See also
 - Ultrabroken

@@ -3,6 +3,7 @@ title: "Zapshield"
 ---
 
 # Zapshield
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Fuse entangling a shock emitter to two shields and permaculling one of its FE bases results in a permanently electrified shield which makes applications involving shock more portable
@@ -33,15 +34,6 @@ September 16, 2024
 - [Discord](https://discord.com/channels/1086729144307564648/1110956205624532993/1328470713497288845)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1328523158856405014)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1328854135495200778)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
-- 1.2.1
 
 ## See also
 - Fuse Entanglement

@@ -3,6 +3,7 @@ title: "Time Bomb cancel"
 ---
 
 # Time Bomb cancel
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 By putting away your shield during a specific moment while a time bomb fused to the mastersword is going off, it will explode without any damage to the environment.
@@ -22,15 +23,6 @@ November 4, 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1170334121910882366)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
-- 1.2.1
 
 ## See also
 —

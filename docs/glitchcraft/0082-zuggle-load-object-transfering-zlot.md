@@ -3,6 +3,7 @@ title: "Zuggle Load Object Transfering"
 ---
 
 # Zuggle Load Object Transfering `ZLOT`
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Allows you to transfer objects through loads while maintaining their coordinates.
@@ -22,15 +23,6 @@ June 7, 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1116159439855169606)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
-- 1.2.1
 
 ## See also
 - Zuggling

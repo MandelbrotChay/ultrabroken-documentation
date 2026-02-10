@@ -3,6 +3,7 @@ title: "Model Teleport Desync"
 ---
 
 # Model Teleport Desync
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 This allows for invisibility, model desyncing when gliding, staggering when getting hit to prevent ragdoll, without the previous method that required you to overload.
@@ -25,15 +26,6 @@ July 29, 2023
 ## Resources
 - [Twitter](https://twitter.com/NX721_/status/1685368247145615360?s=20)
 - [Twitter](https://twitter.com/NX721_/status/1685479076482764801?s=20)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
-- 1.2.1
 
 ## See also
 - Object Culling

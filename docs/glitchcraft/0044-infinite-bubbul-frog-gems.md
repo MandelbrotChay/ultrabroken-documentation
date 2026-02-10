@@ -3,6 +3,7 @@ title: "Infinite Bubbul Frog Gems"
 ---
 
 # Infinite Bubbul Frog Gems
+`1.0.0` `1.1.0` `1.1.1`
 
 ## Overview
 Allows you to get infinite bubbul gems
@@ -31,12 +32,6 @@ May 21, 2023
 
 ## Resources
 - [YouTube](https://youtu.be/c9TDP4qdAUY)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
 
 ## See also
 —

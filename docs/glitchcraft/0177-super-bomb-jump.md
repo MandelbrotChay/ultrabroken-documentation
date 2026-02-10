@@ -3,6 +3,7 @@ title: "Super Bomb Jump"
 ---
 
 # Super Bomb Jump
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Jumping on a specific frame allows you to get a much higher bomb jump than usual
@@ -33,15 +34,6 @@ September 14, 2023
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1155451908530647064)
 - [YouTube](https://www.youtube.com/watch?v=NP-owf2XiVM&t)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
-- 1.2.1
 
 ## See also
 - Modifier Deletion WST

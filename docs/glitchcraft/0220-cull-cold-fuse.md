@@ -3,6 +3,7 @@ title: "Cull Cold Fuse"
 ---
 
 # Cull Cold Fuse
+`?`
 
 ## Overview
 —
@@ -31,10 +32,6 @@ February 1, 2024
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1202784179574677554)
-
-## Versions
-
-—
 
 ## See also
 - Fuse Storage

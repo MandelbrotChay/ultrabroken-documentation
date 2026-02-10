@@ -3,6 +3,7 @@ title: "Chasm Device Dupe"
 ---
 
 # Chasm Device Dupe
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1` `1.3.0` `1.4.0` `1.4.1` `1.4.2` `Switch 2`
 
 ## Overview
 Unloads throwable items in a way that allows them to be duped by picking them up from Link's hand, most notably zonai capsules
@@ -26,20 +27,6 @@ October 12, 2025
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1427101045816823809)
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1427320782274691073)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
-- 1.2.1
-- 1.3.0
-- 1.4.0
-- 1.4.1
-- 1.4.2
-- Switch 2
 
 ## See also
 - Portable Culling
