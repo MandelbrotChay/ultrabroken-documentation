@@ -10,7 +10,7 @@ A method for object culling.
 
 ## Instructions
 1. Fuse entangle any object to a piece of equipment (weapon/shield)
-2. Drop the entangled equipment in a culling zone (SEE RESOURCES)
+2. Drop the entangled equipment in a culling zone
 3. Get distance from the cull zone until the entangled object culls
 
 ## Notes
