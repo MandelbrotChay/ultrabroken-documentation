@@ -8,7 +8,7 @@ use_directory_urls: true
 theme:
   name: material
   logo: assets/images/ultrabroken_rune.svg
-  favicon: assets/images/ultrabroken_favicon.ico
+  favicon: assets/images/ultrabroken_rune.ico
   features:
     - navigation.instant
     - navigation.tracking
