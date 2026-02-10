@@ -21,6 +21,7 @@ Similarily to FEWZ, this is not a real drop zuggle, but rather a shield zuggle
 11. Zuggle the shield.
 
 For multiple FEDZ, you must do it in this order:
+
 - Step 1 for each weapon + shield 
 - Step 2
 - Steps 3-8 for each weapon + shield
