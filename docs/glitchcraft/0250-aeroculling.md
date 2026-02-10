@@ -28,10 +28,10 @@ Method 2 (1.2.0-1.2.1) (PetitFrapo, mulberry):
 4. Position yourself so the full cylinder of wind is above the ground, and a good amount of the wind is in the culling area, but that there is still distance with the culling area (I recommend pulling out your weapon to get a horizontal gust, and adjusting Link) , and invizuggle the weapon.
 5. Detangle from Mineru, and warp
 
-Once AC is set up, in order to Physical AC, put a SDC in the wind and the base outside of the culling area, and for Intangible AC do the opposite, so base in wind and SDC outside of culling area. The video in Examples shows them being performed.
-
 ## Notes
 Method 1 technically works in 1.2.x, but Method 2 is preferred.
+
+Once AC is set up, in order to Physical AC, put a SDC in the wind and the base outside of the culling area, and for Intangible AC do the opposite, so base in wind and SDC outside of culling area. The video in Examples shows them being performed.
 
 ## Credit
 Discovered by Aergyl, developed by Aergyl, mulberry

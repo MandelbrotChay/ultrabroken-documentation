@@ -1,0 +1,301 @@
+{"file": "docs/glitchcraft/0001-l-sprinting.md", "title": "L Sprinting", "abbrev": "LS"}
+{"file": "docs/glitchcraft/0002-new-item-desync-equipment-duping.md", "title": "New Item Desync", "abbrev": "NID"}
+{"file": "docs/glitchcraft/0003-extended-throw-sprinting-ets.md", "title": "Extended Throw Sprinting", "abbrev": "ETS"}
+{"file": "docs/glitchcraft/0004-no-bow-sprinting-nbs.md", "title": "No Bow Sprinting", "abbrev": "NBS"}
+{"file": "docs/glitchcraft/0005-bthrow-sprinting.md", "title": "BThrow Sprinting", "abbrev": "BBTS"}
+{"file": "docs/glitchcraft/0006-infinite-damage.md", "title": "Infinite Damage", "abbrev": "ID"}
+{"file": "docs/glitchcraft/0007-anti-gravity-glitch.md", "title": "Anti-Gravity Glitch", "abbrev": "AG"}
+{"file": "docs/glitchcraft/0008-laser-oob.md", "title": "Laser-OOB", "abbrev": "LOOB"}
+{"file": "docs/glitchcraft/0009-crouch-sprinting.md", "title": "Crouch Sprinting", "abbrev": "CS"}
+{"file": "docs/glitchcraft/0010-throw-tap-sprinting-tts.md", "title": "Throw Tap Sprinting", "abbrev": "TTS"}
+{"file": "docs/glitchcraft/0011-bow-sprinting.md", "title": "Bow Sprinting", "abbrev": "BS"}
+{"file": "docs/glitchcraft/0012-tulin-pumping.md", "title": "Tulin Pumping", "abbrev": "TP"}
+{"file": "docs/glitchcraft/0013-dive-cancel-glide-boost.md", "title": "Dive Cancel Glide Boost", "abbrev": "DCGB"}
+{"file": "docs/glitchcraft/0014-spring-fall-damage-cancel.md", "title": "Spring Fall Damage Cancel", "abbrev": "SFDC"}
+{"file": "docs/glitchcraft/0015-springdolling.md", "title": "Springdolling", "abbrev": "SP"}
+{"file": "docs/glitchcraft/0016-spring-strangeness.md", "title": "Spring Strangeness", "abbrev": "SS"}
+{"file": "docs/glitchcraft/0017-crouch-throw-tap-sprinting-ctts.md", "title": "Crouch Throw Tap Sprinting", "abbrev": "CTTS"}
+{"file": "docs/glitchcraft/0018-double-unfuse-duplicashen-dud.md", "title": "Double Unfuse Duplicashen", "abbrev": "DUD"}
+{"file": "docs/glitchcraft/0019-weapon-stacking-duplication-wsd.md", "title": "Weapon Stacking Duplication", "abbrev": "WSD"}
+{"file": "docs/glitchcraft/0020-food-ability-buff-swap-fabs.md", "title": "Food Ability Buff Swap", "abbrev": "FABS"}
+{"file": "docs/glitchcraft/0021-save-load-dupe-sld.md", "title": "Save Load Dupe", "abbrev": "SLD"}
+{"file": "docs/glitchcraft/0022-recall-clip.md", "title": "Recall Clip", "abbrev": "RC"}
+{"file": "docs/glitchcraft/0023-zuggle.md", "title": "Zuggle", "abbrev": "ZU"}
+{"file": "docs/glitchcraft/0024-equipment-collision-zuggle.md", "title": "Equipment Collision Zuggle", "abbrev": "ECZ"}
+{"file": "docs/glitchcraft/0025-double-tulin-boost.md", "title": "Double Tulin Boost", "abbrev": "DTB"}
+{"file": "docs/glitchcraft/0026-back-to-back-bloodmoon.md", "title": "Back to Back Bloodmoon", "abbrev": "BTBB"}
+{"file": "docs/glitchcraft/0027-recall-launch.md", "title": "Recall Launch", "abbrev": "RL"}
+{"file": "docs/glitchcraft/0028-animation-swap.md", "title": "Animation Swap", "abbrev": "AS"}
+{"file": "docs/glitchcraft/0029-message-not-found-mnf.md", "title": "Message Not Found", "abbrev": "MNF"}
+{"file": "docs/glitchcraft/0030-zuggle-overload.md", "title": "Zuggle Overload", "abbrev": "ZO"}
+{"file": "docs/glitchcraft/0031-mnf-zuggle-fuse.md", "title": "MNF Zuggle Fuse", "abbrev": "MNFZF"}
+{"file": "docs/glitchcraft/0032-zuggle-overload-oob.md", "title": "Zuggle Overload OOB", "abbrev": "ZOOOB"}
+{"file": "docs/glitchcraft/0033-autobuild-cancel-slide-abcs.md", "title": "Autobuild Cancel Slide", "abbrev": "ABCS"}
+{"file": "docs/glitchcraft/0034-minecart-rail-collision-launching-mrcl.md", "title": "Minecart Rail Collision Launching", "abbrev": "MRCL"}
+{"file": "docs/glitchcraft/0035-long-jump.md", "title": "Long Jump", "abbrev": "LJ"}
+{"file": "docs/glitchcraft/0036-weapon-state-transfer-wst.md", "title": "Weapon State Transfer", "abbrev": "WST"}
+{"file": "docs/glitchcraft/0037-ascend-storage.md", "title": "Ascend Storage", "abbrev": "AS"}
+{"file": "docs/glitchcraft/0038-scope-render-cancel.md", "title": "Scope Render Cancel", "abbrev": "SRC"}
+{"file": "docs/glitchcraft/0039-midair-item-transmutation-mit.md", "title": "Midair Item Transmutation", "abbrev": "MIT"}
+{"file": "docs/glitchcraft/0040-mozdor-jumping-slashing.md", "title": "Mozdor jumping/slashing", "abbrev": "MJ"}
+{"file": "docs/glitchcraft/0041-stamina-depletion-freeze-sdf.md", "title": "Stamina Depletion Freeze", "abbrev": "SDF"}
+{"file": "docs/glitchcraft/0042-jumpslash-canceling.md", "title": "Jumpslash Canceling", "abbrev": "JC"}
+{"file": "docs/glitchcraft/0043-midair-sort-duplication-msd.md", "title": "Midair Sort Duplication", "abbrev": "MSD"}
+{"file": "docs/glitchcraft/0044-infinite-bubbul-frog-gems.md", "title": "Infinite Bubbul Frog Gems", "abbrev": "IBFG"}
+{"file": "docs/glitchcraft/0045-mount-lock.md", "title": "Mount Lock", "abbrev": "ML"}
+{"file": "docs/glitchcraft/0046-infinite-height.md", "title": "Infinite Height", "abbrev": "IH"}
+{"file": "docs/glitchcraft/0047-zonai-sort-duplication-zsd.md", "title": "Zonai Sort Duplication", "abbrev": "ZSD"}
+{"file": "docs/glitchcraft/0048-fall-damage-cancel-fdc.md", "title": "Fall Damage Cancel", "abbrev": "FDC"}
+{"file": "docs/glitchcraft/0049-map-zuggling-mz.md", "title": "Map Zuggling", "abbrev": "MZ"}
+{"file": "docs/glitchcraft/0050-save-load-zuggling-slz.md", "title": "Save Load Zuggling", "abbrev": "SLZ"}
+{"file": "docs/glitchcraft/0051-fuse-entanglement.md", "title": "Fuse Entanglement", "abbrev": "FE"}
+{"file": "docs/glitchcraft/0052-springboarding.md", "title": "Springboarding", "abbrev": "SP"}
+{"file": "docs/glitchcraft/0053-entanglement-height-glitch.md", "title": "Entanglement Height Glitch", "abbrev": "EHG"}
+{"file": "docs/glitchcraft/0054-pelison-duping.md", "title": "Pelison Duping", "abbrev": "PD"}
+{"file": "docs/glitchcraft/0055-buoy-bouncing.md", "title": "Buoy Bouncing", "abbrev": "BB"}
+{"file": "docs/glitchcraft/0056-fuse-entanglement-desync-fed.md", "title": "Fuse Entanglement Desync", "abbrev": "FED"}
+{"file": "docs/glitchcraft/0057-octodupe.md", "title": "Octodupe", "abbrev": "OC"}
+{"file": "docs/glitchcraft/0058-display-duping.md", "title": "Display Duping", "abbrev": "DD"}
+{"file": "docs/glitchcraft/0059-springboard-clipping.md", "title": "Springboard Clipping", "abbrev": "SC"}
+{"file": "docs/glitchcraft/0060-damage-amnesia.md", "title": "Damage Amnesia", "abbrev": "DA"}
+{"file": "docs/glitchcraft/0061-pickup-smuggling.md", "title": "Pickup Smuggling", "abbrev": "PS"}
+{"file": "docs/glitchcraft/0062-ghost-stick-clipping.md", "title": "Ghost Stick Clipping", "abbrev": "GSC"}
+{"file": "docs/glitchcraft/0063-sage-recycling.md", "title": "Sage Recycling", "abbrev": "SR"}
+{"file": "docs/glitchcraft/0064-forced-blood-moon.md", "title": "Forced Blood Moon", "abbrev": "FBM"}
+{"file": "docs/glitchcraft/0065-antigrav-weapons.md", "title": "AntiGrav Weapons", "abbrev": "AW"}
+{"file": "docs/glitchcraft/0066-map-storage.md", "title": "Map Storage", "abbrev": "MS"}
+{"file": "docs/glitchcraft/0067-ultrabroken.md", "title": "Ultrabroken", "abbrev": "UL"}
+{"file": "docs/glitchcraft/0068-memory-buffering.md", "title": "Memory Buffering", "abbrev": "MB"}
+{"file": "docs/glitchcraft/0069-mineru-ability-desync.md", "title": "Mineru Ability Desync", "abbrev": "MAD"}
+{"file": "docs/glitchcraft/0070-drop-smuggling.md", "title": "Drop Smuggling", "abbrev": "DS"}
+{"file": "docs/glitchcraft/0071-unload-duping.md", "title": "Unload Duping", "abbrev": "UD"}
+{"file": "docs/glitchcraft/0072-weapon-fe.md", "title": "Weapon FE", "abbrev": "WFE"}
+{"file": "docs/glitchcraft/0073-equipment-smuggle.md", "title": "Equipment Smuggle", "abbrev": "ES"}
+{"file": "docs/glitchcraft/0074-shock-smuggle.md", "title": "Shock Smuggle", "abbrev": "SS"}
+{"file": "docs/glitchcraft/0075-remote-arrow-trap.md", "title": "Remote Arrow", "abbrev": "RA"}
+{"file": "docs/glitchcraft/0076-arrow-smuggling.md", "title": "Arrow Smuggling", "abbrev": "AS"}
+{"file": "docs/glitchcraft/0077-mnf-fusing.md", "title": "MNF Fusing", "abbrev": "MNFF"}
+{"file": "docs/glitchcraft/0078-smuggle-stacking-zuggle-ssz.md", "title": "Smuggle Stacking Zuggle", "abbrev": "SSZ"}
+{"file": "docs/glitchcraft/0079-drop-delay-zuggle-ddz.md", "title": "Drop Delay Zuggle", "abbrev": "DDZ"}
+{"file": "docs/glitchcraft/0080-force-equip-zuggling-fez.md", "title": "Force Equip Zuggling", "abbrev": "FEZ"}
+{"file": "docs/glitchcraft/0081-unload-wst.md", "title": "Unload WST", "abbrev": "UWST"}
+{"file": "docs/glitchcraft/0082-zuggle-load-object-transfering-zlot.md", "title": "Zuggle Load Object Transfering", "abbrev": "ZLOT"}
+{"file": "docs/glitchcraft/0083-warp-bumping.md", "title": "Warp Bumping", "abbrev": "WB"}
+{"file": "docs/glitchcraft/0084-display-master-sword.md", "title": "Display Master Sword", "abbrev": "DMS"}
+{"file": "docs/glitchcraft/0085-modifier-only-transfer.md", "title": "Modifier ONLY Transfer", "abbrev": "MONLYT"}
+{"file": "docs/glitchcraft/0086-fuse-entangle-weapon-zuggle-fewz.md", "title": "Fuse Entangle Weapon Zuggle", "abbrev": "FEWZ"}
+{"file": "docs/glitchcraft/0087-void-holding.md", "title": "Void Holding", "abbrev": "VH"}
+{"file": "docs/glitchcraft/0088-autobuild-duplication-abd.md", "title": "Autobuild Duplication", "abbrev": "ABD"}
+{"file": "docs/glitchcraft/0089-recall-locking.md", "title": "Recall Locking", "abbrev": "RL"}
+{"file": "docs/glitchcraft/0090-overload-drop-smuggling.md", "title": "Overload Drop Smuggling", "abbrev": "ODS"}
+{"file": "docs/glitchcraft/0091-guard-less-active-shield-gas.md", "title": "Guard-less Active Shield", "abbrev": "GAS"}
+{"file": "docs/glitchcraft/0092-ultrabroken-smuggling-ubs.md", "title": "Ultrabroken Smuggling", "abbrev": "UBS"}
+{"file": "docs/glitchcraft/0093-like-like-culling.md", "title": "Like-Like Culling", "abbrev": "LC"}
+{"file": "docs/glitchcraft/0094-slugging.md", "title": "Slugging", "abbrev": "SL"}
+{"file": "docs/glitchcraft/0095-like-like-smuggling.md", "title": "Like-Like Smuggling", "abbrev": "LS"}
+{"file": "docs/glitchcraft/0096-like-like-drop-smuggling.md", "title": "Like-Like Drop Smuggling", "abbrev": "LDS"}
+{"file": "docs/glitchcraft/0097-like-like-zuggling.md", "title": "Like-Like Zuggling", "abbrev": "LZ"}
+{"file": "docs/glitchcraft/0098-like-like-smuggle-desync-lsd.md", "title": "Like-Like Smuggle Desync", "abbrev": "LSD"}
+{"file": "docs/glitchcraft/0099-drop-zuggle.md", "title": "Drop Zuggle", "abbrev": "DZ"}
+{"file": "docs/glitchcraft/0100-hydro-clipping.md", "title": "Hydro Clipping", "abbrev": "HC"}
+{"file": "docs/glitchcraft/0101-detached-rangeless-active-zonai-draz.md", "title": "Detached Rangeless Active Zonai", "abbrev": "DRAZ"}
+{"file": "docs/glitchcraft/0102-ascend-rushing.md", "title": "Ascend Rushing", "abbrev": "AR"}
+{"file": "docs/glitchcraft/0103-lift-warping.md", "title": "Lift Warping", "abbrev": "LW"}
+{"file": "docs/glitchcraft/0104-like-like-warping.md", "title": "Like-Like Warping", "abbrev": "LW"}
+{"file": "docs/glitchcraft/0105-pocket-rocket.md", "title": "Pocket Rocket", "abbrev": "PR"}
+{"file": "docs/glitchcraft/0106-jumpslash-cancel-clipping-jcc.md", "title": "Jumpslash Cancel Clipping", "abbrev": "JCC"}
+{"file": "docs/glitchcraft/0107-travel-medallion-storage-tms.md", "title": "Travel Medallion storage", "abbrev": "TMS"}
+{"file": "docs/glitchcraft/0108-fuse-entanglement-clipping-fec.md", "title": "Fuse Entanglement Clipping", "abbrev": "FEC"}
+{"file": "docs/glitchcraft/0109-like-like-new-textbox-softlock.md", "title": "Like Like New Textbox Softlock", "abbrev": "LLNTS"}
+{"file": "docs/glitchcraft/0110-attached-rangeless-active-zonai-araz.md", "title": "Attached Rangeless Active Zonai", "abbrev": "ARAZ"}
+{"file": "docs/glitchcraft/0111-fuse-entangle-drop-zuggle-fedz.md", "title": "Fuse Entangle Drop Zuggle", "abbrev": "FEDZ"}
+{"file": "docs/glitchcraft/0112-fuse-storage-fs.md", "title": "Fuse Storage", "abbrev": "FS"}
+{"file": "docs/glitchcraft/0113-like-like-fuse-storage.md", "title": "Like-Like Fuse Storage", "abbrev": "LFS"}
+{"file": "docs/glitchcraft/0114-fuse-storage-fuse-entanglement-fsfe.md", "title": "Fuse Storage Fuse Entanglement", "abbrev": "FSFE"}
+{"file": "docs/glitchcraft/0115-like-like-fsfe.md", "title": "Like-Like FSFE", "abbrev": "LFSFE"}
+{"file": "docs/glitchcraft/0116-wheel-warping.md", "title": "Wheel Warping", "abbrev": "WW"}
+{"file": "docs/glitchcraft/0117-item-throw-hitbox-disable.md", "title": "Item Throw Hitbox Disable", "abbrev": "ITHD"}
+{"file": "docs/glitchcraft/0118-back-in-time-art.md", "title": "Back-in-Time Art", "abbrev": "BA"}
+{"file": "docs/glitchcraft/0119-arrow-unloading.md", "title": "Arrow Unloading", "abbrev": "AU"}
+{"file": "docs/glitchcraft/0120-drop-restriction.md", "title": "Drop Restriction", "abbrev": "DR"}
+{"file": "docs/glitchcraft/0121-throwless-storage-previously-known-as-beam-storage.md", "title": "Throwless Storage", "abbrev": "TS"}
+{"file": "docs/glitchcraft/0122-hero-path-link-storage-hpls.md", "title": "Hero Path Link Storage", "abbrev": "HPLS"}
+{"file": "docs/glitchcraft/0123-weapon-extensions.md", "title": "Weapon Extensions", "abbrev": "WE"}
+{"file": "docs/glitchcraft/0124-inventory-shift-duplication-isd.md", "title": "Inventory Shift Duplication", "abbrev": "ISD"}
+{"file": "docs/glitchcraft/0125-gas-launching-previously-known-as-ascend-launching.md", "title": "GAS Launching", "abbrev": "GASL"}
+{"file": "docs/glitchcraft/0126-weapon-sheath-offset-wso.md", "title": "Weapon Sheath Offset", "abbrev": "WSO"}
+{"file": "docs/glitchcraft/0127-weather-amnesia-wa.md", "title": "Weather Amnesia", "abbrev": "WA"}
+{"file": "docs/glitchcraft/0128-gas-warping.md", "title": "GAS Warping", "abbrev": "GASW"}
+{"file": "docs/glitchcraft/0129-object-culling.md", "title": "Object Culling", "abbrev": "OC"}
+{"file": "docs/glitchcraft/0130-cull-zone-culling.md", "title": "Cull Zone Culling", "abbrev": "CZC"}
+{"file": "docs/glitchcraft/0131-cull-smuggle.md", "title": "Cull Smuggle", "abbrev": "CS"}
+{"file": "docs/glitchcraft/0132-disabled-enemy.md", "title": "Disabled Enemy", "abbrev": "DE"}
+{"file": "docs/glitchcraft/0133-prevent-weapon-despawn.md", "title": "Prevent Weapon Despawn", "abbrev": "PWD"}
+{"file": "docs/glitchcraft/0134-culling-area-fuse-storage.md", "title": "Culling Area Fuse Storage", "abbrev": "CAFS"}
+{"file": "docs/glitchcraft/0135-cull-launching.md", "title": "Cull Launching", "abbrev": "CL"}
+{"file": "docs/glitchcraft/0136-stick-desync-clip-sdc.md", "title": "Stick Desync Clip", "abbrev": "SDC"}
+{"file": "docs/glitchcraft/0137-dispenser-storage.md", "title": "Dispenser Storage", "abbrev": "DS"}
+{"file": "docs/glitchcraft/0138-midair-throw-duplication-mtd.md", "title": "Midair Throw Duplication", "abbrev": "MTD"}
+{"file": "docs/glitchcraft/0139-hold-storage.md", "title": "Hold Storage", "abbrev": "HS"}
+{"file": "docs/glitchcraft/0140-vendor-scamming.md", "title": "Vendor Scamming", "abbrev": "VS"}
+{"file": "docs/glitchcraft/0141-clear-camera-scope.md", "title": "Clear Camera/Scope", "abbrev": "CC"}
+{"file": "docs/glitchcraft/0142-hold-storage-duplication-also-known-as-minus-dupe.md", "title": "Hold Storage Duplication", "abbrev": "HSD"}
+{"file": "docs/glitchcraft/0143-hold-smuggling.md", "title": "Hold Smuggling", "abbrev": "HS"}
+{"file": "docs/glitchcraft/0144-reball.md", "title": "Reball", "abbrev": "RE"}
+{"file": "docs/glitchcraft/0145-quick-smuggling.md", "title": "Quick Smuggling", "abbrev": "QS"}
+{"file": "docs/glitchcraft/0146-zonai-inventory-shift-dupe-zisd.md", "title": "Zonai Inventory Shift Dupe", "abbrev": "ZISD"}
+{"file": "docs/glitchcraft/0147-camera-cfw.md", "title": "Camera CFW", "abbrev": "CCFW"}
+{"file": "docs/glitchcraft/0148-wireless-energy.md", "title": "Wireless Energy", "abbrev": "WE"}
+{"file": "docs/glitchcraft/0149-bow-attachment-desync-bad-arrows.md", "title": "Bow Attachment Desync", "abbrev": "BAD"}
+{"file": "docs/glitchcraft/0150-unsheathed-mastersword.md", "title": "Unsheathed Mastersword", "abbrev": "UM"}
+{"file": "docs/glitchcraft/0151-hand-locked-equipment-smuggling-hles.md", "title": "Hand Locked Equipment Smuggling", "abbrev": "HLES"}
+{"file": "docs/glitchcraft/0152-wheel-zoomy-also-known-as-wheel-wacko-boingo.md", "title": "Wheel Zoomy", "abbrev": "WZ"}
+{"file": "docs/glitchcraft/0153-sage-madness.md", "title": "Sage Madness", "abbrev": "SM"}
+{"file": "docs/glitchcraft/0154-recall-cancel.md", "title": "Recall Cancel", "abbrev": "RC"}
+{"file": "docs/glitchcraft/0155-void-hold-storage.md", "title": "Void Hold Storage", "abbrev": "VHS"}
+{"file": "docs/glitchcraft/0156-cold-fuse.md", "title": "Cold Fuse", "abbrev": "CF"}
+{"file": "docs/glitchcraft/0157-overload-cold-fuse.md", "title": "Overload Cold Fuse", "abbrev": "OCF"}
+{"file": "docs/glitchcraft/0158-cucco-warping.md", "title": "Cucco Warping", "abbrev": "CW"}
+{"file": "docs/glitchcraft/0159-shock-effect-overload-seo.md", "title": "Shock Effect Overload", "abbrev": "SEO"}
+{"file": "docs/glitchcraft/0160-model-teleport-desync.md", "title": "Model Teleport Desync", "abbrev": "MTD"}
+{"file": "docs/glitchcraft/0161-mineru-culling.md", "title": "Mineru Culling", "abbrev": "MC"}
+{"file": "docs/glitchcraft/0162-mass-amnesia.md", "title": "Mass Amnesia", "abbrev": "MA"}
+{"file": "docs/glitchcraft/0163-msnf-glowing.md", "title": "MSNF glowing", "abbrev": "MSNFG"}
+{"file": "docs/glitchcraft/0164-zonai-storage.md", "title": "Zonai Storage", "abbrev": "ZS"}
+{"file": "docs/glitchcraft/0165-fuse-entanglement-drop-smuggling.md", "title": "Fuse Entanglement Drop Smuggling", "abbrev": "FEDS"}
+{"file": "docs/glitchcraft/0166-two-handed-with-shield.md", "title": "Two Handed With Shield", "abbrev": "THWS"}
+{"file": "docs/glitchcraft/0167-autobuild-storage.md", "title": "Autobuild Storage", "abbrev": "AS"}
+{"file": "docs/glitchcraft/0168-quantum-linking-ql.md", "title": "Quantum Linking", "abbrev": "QL"}
+{"file": "docs/glitchcraft/0169-awakened-master-sword-ams.md", "title": "Awakened Master Sword", "abbrev": "AMS"}
+{"file": "docs/glitchcraft/0170-equipment-mitosis.md", "title": "Equipment Mitosis", "abbrev": "EM"}
+{"file": "docs/glitchcraft/0171-dynamic-zuggle.md", "title": "Dynamic Zuggle", "abbrev": "DZ"}
+{"file": "docs/glitchcraft/0172-detanglement.md", "title": "Detanglement", "abbrev": "DE"}
+{"file": "docs/glitchcraft/0173-ultrabrokenless-freecall-ufc.md", "title": "Ultrabrokenless Freecall", "abbrev": "UFC"}
+{"file": "docs/glitchcraft/0174-durability.md", "title": "Durability-", "abbrev": "DU"}
+{"file": "docs/glitchcraft/0175-shock-cold-fuse.md", "title": "Shock Cold Fuse", "abbrev": "SCF"}
+{"file": "docs/glitchcraft/0176-shock-fe.md", "title": "Shock FE", "abbrev": "SFE"}
+{"file": "docs/glitchcraft/0177-super-bomb-jump.md", "title": "Super Bomb Jump", "abbrev": "SBJ"}
+{"file": "docs/glitchcraft/0178-enemy-pickpocketing.md", "title": "Enemy Pickpocketing", "abbrev": "EP"}
+{"file": "docs/glitchcraft/0179-bomb-skew.md", "title": "Bomb Skew", "abbrev": "BS"}
+{"file": "docs/glitchcraft/0180-cull-fuse-entanglement-cull-fe.md", "title": "Cull Fuse Entanglement", "abbrev": "CFE"}
+{"file": "docs/glitchcraft/0181-surf-storage.md", "title": "Surf storage", "abbrev": "SS"}
+{"file": "docs/glitchcraft/0182-arrow-prompt-storage-aps.md", "title": "Arrow Prompt Storage", "abbrev": "APS"}
+{"file": "docs/glitchcraft/0183-lag-machines.md", "title": "Lag Machines", "abbrev": "LM"}
+{"file": "docs/glitchcraft/0184-glue-removal.md", "title": "Glue Removal", "abbrev": "GR"}
+{"file": "docs/glitchcraft/0185-likelike-stick-smuggling.md", "title": "LikeLike Stick Smuggling", "abbrev": "LSS"}
+{"file": "docs/glitchcraft/0186-cull-equipment-desync.md", "title": "Cull Equipment Desync", "abbrev": "CED"}
+{"file": "docs/glitchcraft/0187-mineru-fuse-entanglement-mineru-fe.md", "title": "Mineru Fuse Entanglement", "abbrev": "MFE"}
+{"file": "docs/glitchcraft/0188-arrow-unlink.md", "title": "Arrow Unlink", "abbrev": "AU"}
+{"file": "docs/glitchcraft/0189-fuse-overload-fo.md", "title": "Fuse Overload", "abbrev": "FO"}
+{"file": "docs/glitchcraft/0190-time-bomb-cancel.md", "title": "Time Bomb cancel", "abbrev": "TBC"}
+{"file": "docs/glitchcraft/0191-master-sword-zuggling-decayed-master-sword-zuggling.md", "title": "Master Sword Zuggling/ Decayed Master Sword Zuggling", "abbrev": "MSZDMSZ"}
+{"file": "docs/glitchcraft/0192-master-sword-liberation.md", "title": "Master Sword Liberation", "abbrev": "MSL"}
+{"file": "docs/glitchcraft/0193-pyroculling.md", "title": "Pyroculling", "abbrev": "PY"}
+{"file": "docs/glitchcraft/0194-handy-job.md", "title": "Handy Job", "abbrev": "HJ"}
+{"file": "docs/glitchcraft/0195-cave-flag-culling.md", "title": "Cave Flag Culling", "abbrev": "CFC"}
+{"file": "docs/glitchcraft/0196-breaking-ams.md", "title": "Breaking AMS", "abbrev": "BAMS"}
+{"file": "docs/glitchcraft/0197-reverse-ascend-storage.md", "title": "Reverse Ascend Storage", "abbrev": "RAS"}
+{"file": "docs/glitchcraft/0198-bow-attachment-storage.md", "title": "Bow Attachment Storage", "abbrev": "BAS"}
+{"file": "docs/glitchcraft/0199-capsule-cel-shader-removal.md", "title": "Capsule Cel Shader Removal", "abbrev": "CCSR"}
+{"file": "docs/glitchcraft/0200-equipment-shock-duping.md", "title": "Equipment Shock Duping", "abbrev": "ESD"}
+{"file": "docs/glitchcraft/0201-bundled-item-duplication-bid.md", "title": "Bundled Item Duplication", "abbrev": "BID"}
+{"file": "docs/glitchcraft/0202-resync-fuse-entanglement-resync-fe.md", "title": "Resync Fuse Entanglement", "abbrev": "RFE"}
+{"file": "docs/glitchcraft/0203-mineru-hold-smuggle-mhs.md", "title": "Mineru Hold Smuggle", "abbrev": "MHS"}
+{"file": "docs/glitchcraft/0204-cutscene-combo-amplifier.md", "title": "Cutscene Combo Amplifier", "abbrev": "CCA"}
+{"file": "docs/glitchcraft/0205-item-save-load-transfer-islt.md", "title": "Item Save Load Transfer", "abbrev": "ISLT"}
+{"file": "docs/glitchcraft/0206-wuggle-weird-zuggle.md", "title": "Wuggle", "abbrev": "WU"}
+{"file": "docs/glitchcraft/0207-floorping.md", "title": "Floorping", "abbrev": "FL"}
+{"file": "docs/glitchcraft/0208-invizuggle.md", "title": "Invizuggle", "abbrev": "IN"}
+{"file": "docs/glitchcraft/0209-zoggle.md", "title": "Zoggle", "abbrev": "ZO"}
+{"file": "docs/glitchcraft/0210-mulberry-s-out-of-body-experience-moobe.md", "title": "Mulberry's Out of Body Experience", "abbrev": "MOOBE"}
+{"file": "docs/glitchcraft/0211-lift-storage-warping-lsw.md", "title": "Lift Storage Warping", "abbrev": "LSW"}
+{"file": "docs/glitchcraft/0212-menu-overload.md", "title": "Menu Overload", "abbrev": "MO"}
+{"file": "docs/glitchcraft/0213-moobe-warping.md", "title": "Moobe Warping", "abbrev": "MW"}
+{"file": "docs/glitchcraft/0214-texture-tearing.md", "title": "Texture Tearing", "abbrev": "TT"}
+{"file": "docs/glitchcraft/0215-cull-storage.md", "title": "Cull Storage", "abbrev": "CS"}
+{"file": "docs/glitchcraft/0216-zl-animation-reset-zlar.md", "title": "ZL Animation Reset", "abbrev": "ZLAR"}
+{"file": "docs/glitchcraft/0217-wacko-attacko.md", "title": "Wacko Attacko", "abbrev": "WA"}
+{"file": "docs/glitchcraft/0218-infinite-damage-2-0.md", "title": "Infinite Damage 2.0", "abbrev": "ID2"}
+{"file": "docs/glitchcraft/0219-persistent-save-load-object-transfer-pslot.md", "title": "Persistent Save Load Object Transfer", "abbrev": "PSLOT"}
+{"file": "docs/glitchcraft/0220-cull-cold-fuse.md", "title": "Cull Cold Fuse", "abbrev": "CCF"}
+{"file": "docs/glitchcraft/0221-lift-smuggle.md", "title": "Lift Smuggle", "abbrev": "LS"}
+{"file": "docs/glitchcraft/0222-purgatory-sld.md", "title": "Purgatory SLD", "abbrev": "PSLD"}
+{"file": "docs/glitchcraft/0223-ultraslot.md", "title": "UltraSLOT", "abbrev": "USLOT"}
+{"file": "docs/glitchcraft/0224-yeefe.md", "title": "YeeFE", "abbrev": "YFE"}
+{"file": "docs/glitchcraft/0225-kilovictor-s-quicksmuggle.md", "title": "Kilovictor's quicksmuggle", "abbrev": "KQ"}
+{"file": "docs/glitchcraft/0226-culling-area-fsfe.md", "title": "Culling Area FSFE", "abbrev": "CAFSFE"}
+{"file": "docs/glitchcraft/0227-portable-culling.md", "title": "Portable Culling", "abbrev": "PC"}
+{"file": "docs/glitchcraft/0228-portacull-invismuggle.md", "title": "Portacull Invismuggle", "abbrev": "PI"}
+{"file": "docs/glitchcraft/0229-ghost-slot.md", "title": "Ghost SLOT", "abbrev": "GSLOT"}
+{"file": "docs/glitchcraft/0230-ability-wheel-loop.md", "title": "Ability Wheel Loop", "abbrev": "AWL"}
+{"file": "docs/glitchcraft/0231-weapon-stand-dynamic-zuggle.md", "title": "Weapon Stand Dynamic Zuggle", "abbrev": "WSDZ"}
+{"file": "docs/glitchcraft/0232-null-dropping.md", "title": "Null Dropping", "abbrev": "ND"}
+{"file": "docs/glitchcraft/0233-quick-drop-smuggle-qds.md", "title": "Quick Drop Smuggle", "abbrev": "QDS"}
+{"file": "docs/glitchcraft/0234-overload-at-home-aka-pickup-overload.md", "title": "Overload at Home", "abbrev": "OAH"}
+{"file": "docs/glitchcraft/0235-horse-duping.md", "title": "Horse Duping", "abbrev": "HD"}
+{"file": "docs/glitchcraft/0236-hestu-scamming.md", "title": "Hestu Scamming", "abbrev": "HS"}
+{"file": "docs/glitchcraft/0237-ocklusion.md", "title": "Ocklusion", "abbrev": "OC"}
+{"file": "docs/glitchcraft/0238-chasm-delay-zuggle-cdz.md", "title": "Chasm Delay Zuggle", "abbrev": "CDZ"}
+{"file": "docs/glitchcraft/0239-cold-fuse-stick-desync-clip-cold-fuse-sdc.md", "title": "Cold Fuse Stick Desync Clip", "abbrev": "CSSDC"}
+{"file": "docs/glitchcraft/0240-double-shield-desync-clip-fuse-entanglement-double-sdc-fe.md", "title": "Double Shield Desync Clip Fuse Entanglement", "abbrev": "DSDCFE"}
+{"file": "docs/glitchcraft/0241-infinite-balloon.md", "title": "Infinite Balloon", "abbrev": "IB"}
+{"file": "docs/glitchcraft/0242-construct-fuse-entanglement.md", "title": "Construct Fuse Entanglement", "abbrev": "CFE"}
+{"file": "docs/glitchcraft/0243-mineru-text-storage.md", "title": "Mineru Text Storage", "abbrev": "MTS"}
+{"file": "docs/glitchcraft/0244-portable-cull-save-load-dupe-portacull-sld.md", "title": "Portable Cull Save Load Dupe", "abbrev": "PSLD"}
+{"file": "docs/glitchcraft/0245-dpadlock-less-invizuggle.md", "title": "Dpadlock-less Invizuggle", "abbrev": "DI"}
+{"file": "docs/glitchcraft/0246-cull-storage-zuggle-csz.md", "title": "Cull Storage Zuggle", "abbrev": "CSZ"}
+{"file": "docs/glitchcraft/0247-overload-fuse-entanglement.md", "title": "Overload Fuse Entanglement", "abbrev": "OFE"}
+{"file": "docs/glitchcraft/0248-overload-pslot.md", "title": "Overload PSLOT", "abbrev": "OPSLOT"}
+{"file": "docs/glitchcraft/0249-mineru-pslot.md", "title": "Mineru PSLOT", "abbrev": "MPSLOT"}
+{"file": "docs/glitchcraft/0250-aeroculling.md", "title": "Aeroculling", "abbrev": "AE"}
+{"file": "docs/glitchcraft/0251-toti-saucery.md", "title": "Toti Saucery", "abbrev": "TS"}
+{"file": "docs/glitchcraft/0252-zapshield.md", "title": "Zapshield", "abbrev": "ZA"}
+{"file": "docs/glitchcraft/0253-slate-storage.md", "title": "Slate Storage", "abbrev": "SS"}
+{"file": "docs/glitchcraft/0254-memory-interrupt.md", "title": "Memory Interrupt", "abbrev": "MI"}
+{"file": "docs/glitchcraft/0255-banc-storage.md", "title": "Banc Storage", "abbrev": "BS"}
+{"file": "docs/glitchcraft/0256-prologue-escape.md", "title": "Prologue Escape", "abbrev": "PE"}
+{"file": "docs/glitchcraft/0257-shadow-void-icons.md", "title": "Shadow/Void Icons", "abbrev": "SI"}
+{"file": "docs/glitchcraft/0258-object-moe-enlargement.md", "title": "Object Enlargement", "abbrev": "MOE"}
+{"file": "docs/glitchcraft/0259-replacement-actor-fuse-entanglement.md", "title": "Replacement Actor Fuse Entanglement", "abbrev": "RAFE"}
+{"file": "docs/glitchcraft/0260-temporary-devices.md", "title": "Temporary Devices", "abbrev": "TD"}
+{"file": "docs/glitchcraft/0261-recipe-storage.md", "title": "Recipe Storage", "abbrev": "RS"}
+{"file": "docs/glitchcraft/0262-smuggle-retrieval.md", "title": "Smuggle Retrieval", "abbrev": "SR"}
+{"file": "docs/glitchcraft/0263-stack-splitting.md", "title": "Stack Splitting", "abbrev": "SS"}
+{"file": "docs/glitchcraft/0264-mnf-glow-overload.md", "title": "MNF Glow Overload", "abbrev": "MNFGO"}
+{"file": "docs/glitchcraft/0265-recall-drop-stacking.md", "title": "Recall Drop Stacking", "abbrev": "RDS"}
+{"file": "docs/glitchcraft/0266-anti-gravity-gas.md", "title": "Anti-gravity GAS", "abbrev": "AGAS"}
+{"file": "docs/glitchcraft/0267-corrupt-meal.md", "title": "Corrupt Meal", "abbrev": "CM"}
+{"file": "docs/glitchcraft/0268-dynamic-purgatory-zuggle.md", "title": "Dynamic Purgatory Zuggle", "abbrev": "DPZ"}
+{"file": "docs/glitchcraft/0269-sticky-dynamic-purgatory.md", "title": "Sticky Dynamic Purgatory", "abbrev": "SDP"}
+{"file": "docs/glitchcraft/0270-balloon-overload.md", "title": "Balloon Overload", "abbrev": "BO"}
+{"file": "docs/glitchcraft/0271-lift-fuse-interrupt.md", "title": "Lift Fuse Interrupt", "abbrev": "LFI"}
+{"file": "docs/glitchcraft/0272-throken.md", "title": "Throken", "abbrev": "TH"}
+{"file": "docs/glitchcraft/0273-cull-pickup-dynamic-zuggle.md", "title": "Cull Pickup Dynamic Zuggle", "abbrev": "CPDZ"}
+{"file": "docs/glitchcraft/0274-overload-dynamic-zuggle.md", "title": "Overload Dynamic Zuggle", "abbrev": "ODZ"}
+{"file": "docs/glitchcraft/0275-equipped-throken.md", "title": "Equipped Throken", "abbrev": "ET"}
+{"file": "docs/glitchcraft/0276-ultimate-pocket-rocket.md", "title": "Ultimate Pocket Rocket", "abbrev": "UPR"}
+{"file": "docs/glitchcraft/0277-fuse-overload-fuse-entanglement-fofe.md", "title": "Fuse Overload Fuse Entanglement", "abbrev": "FOFE"}
+{"file": "docs/glitchcraft/0278-double-bypass-zuggle-dbz.md", "title": "Double Bypass Zuggle", "abbrev": "DBZ"}
+{"file": "docs/glitchcraft/0279-split-item-duplication-sid.md", "title": "Split Item Duplication", "abbrev": "SID"}
+{"file": "docs/glitchcraft/0280-death-pslot.md", "title": "Death PSLOT", "abbrev": "DPSLOT"}
+{"file": "docs/glitchcraft/0281-recall-sluggle.md", "title": "Recall Sluggle", "abbrev": "RS"}
+{"file": "docs/glitchcraft/0282-swap-resync.md", "title": "Swap Resync", "abbrev": "SR"}
+{"file": "docs/glitchcraft/0283-swap-resync-zuggle-srz.md", "title": "Swap Resync Zuggle", "abbrev": "SRZ"}
+{"file": "docs/glitchcraft/0284-ocklusion-hovering.md", "title": "Ocklusion Hovering", "abbrev": "OH"}
+{"file": "docs/glitchcraft/0285-chasm-device-dupe.md", "title": "Chasm Device Dupe", "abbrev": "CDD"}
+{"file": "docs/glitchcraft/0286-shrunken-actors.md", "title": "Shrunken Actors", "abbrev": "SA"}
+{"file": "docs/glitchcraft/0287-mineru-cull-storage.md", "title": "Mineru Cull Storage", "abbrev": "MCS"}
+{"file": "docs/glitchcraft/0288-octo-balloon-detanglement.md", "title": "Octo-balloon Detanglement", "abbrev": "OD"}
+{"file": "docs/glitchcraft/0289-weapon-dash-gas.md", "title": "Weapon Dash GAS", "abbrev": "WDGAS"}
+{"file": "docs/glitchcraft/0290-dialog-permacull.md", "title": "Dialog Permacull", "abbrev": "DP"}
+{"file": "docs/glitchcraft/0291-void-dipping.md", "title": "Void Dipping", "abbrev": "VD"}
+{"file": "docs/glitchcraft/0293-proxy-glitches.md", "title": "Proxy Glitches", "abbrev": "PG"}
+{"file": "docs/glitchcraft/0294-zuggle-overload-desync.md", "title": "Zuggle Overload Desync", "abbrev": "ZOD"}
+{"file": "docs/glitchcraft/0295-anti-gravity-objects.md", "title": "Anti-Gravity Objects", "abbrev": "AO"}
+{"file": "docs/glitchcraft/0296-throw-cancelling.md", "title": "Throw Cancelling", "abbrev": "TC"}
+{"file": "docs/glitchcraft/0297-camera-pose-glitch.md", "title": "Camera Pose Glitch", "abbrev": "CPG"}
+{"file": "docs/glitchcraft/0298-ascend-camera-glitch.md", "title": "Ascend Camera Glitch", "abbrev": "ACG"}
+{"file": "docs/glitchcraft/0299-modifier-deletion-weapon-state-transfer-modifier-deletion-wst.md", "title": "Modifier Deletion Weapon State Transfer", "abbrev": "MDWST"}
+{"file": "docs/glitchcraft/0300-mineru-aim-permanence.md", "title": "Mineru Aim Permanence", "abbrev": "MAP"}
+{"file": "docs/glitchcraft/0301-map-flickering.md", "title": "Map Flickering", "abbrev": "MF"}
+{"file": "docs/glitchcraft/glitchcraft-grimoire.md", "title": "Glitchcraft", "abbrev": "GL"}

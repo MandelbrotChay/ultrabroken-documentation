@@ -2,7 +2,7 @@
 title: "Mineru PSLOT"
 ---
 
-# Mineru PSLOT
+# Mineru PSLOT `MPSLOT`
 `1.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1+`
 
 ## Overview
