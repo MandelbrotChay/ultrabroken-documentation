@@ -9,10 +9,13 @@ Removes scope HUD and reveals two borders that show an overlay that renders flam
 
 ## Instructions
 Wide Border Version:
+
 1. Open Camera rune and take a picture
 2. Delete this picture
 3. Quickly Press B + R3 (Scope) in quick succession twice
+
 Small Border Version:
+
 1. Use the telescope at Lookout Landing
 2. Press B + R3 (Scope) 
 3. Shortly after, press L (Camera) twice in quick succession to open and close the Camera

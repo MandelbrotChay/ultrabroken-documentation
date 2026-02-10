@@ -9,6 +9,7 @@ Allows you to get infinite bubbul gems
 
 ## Instructions
 Only works in some caves!
+
 1. Shoot the bubbul frog
 2. Ascend during it's death
 3. Cancel the ascend

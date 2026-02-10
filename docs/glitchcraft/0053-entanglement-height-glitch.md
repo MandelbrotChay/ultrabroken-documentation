@@ -12,6 +12,7 @@ Fuse entangle a spring to a shield and start a shield surf within its activation
 
 ## Notes
 Only lasts while shield surfing, but is infintely active.
+
 Only deactivates upon shield unequip.
 
 ## Credit

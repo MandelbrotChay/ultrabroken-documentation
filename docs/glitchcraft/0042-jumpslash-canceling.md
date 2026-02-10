@@ -8,6 +8,7 @@ title: "Jumpslash Canceling"
 Interrupt jumpslashes by swapping a shield mid-animation
 
 ## Instructions
+
 1. Jump off edge 
 2. Jumpslash 
 4. Switch shield in quick menu

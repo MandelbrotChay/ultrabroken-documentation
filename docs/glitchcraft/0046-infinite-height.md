@@ -8,14 +8,11 @@ title: "Infinite Height"
 Allows you chain jump attacks to jump infinitly.
 
 ## Instructions
+
 1. Jump attack
-
 2. Open the ability menu and close it
-
 3. Switch shields using d-pad
-
 4. Tap ZR to draw your bow
-
 5. Repeat
 
 ## Notes

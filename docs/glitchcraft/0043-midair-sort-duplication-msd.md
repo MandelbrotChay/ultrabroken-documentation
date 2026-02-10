@@ -8,6 +8,7 @@ title: "Midair Sort Duplication"
 Allows duplication of materials while midair.
 
 ## Instructions
+
 1. Be airborne (shield jumping, paragliding or on Mineru)
 2. Open pause menu and hold items
 3. Press Y to sort menu and close the menu simultaneously

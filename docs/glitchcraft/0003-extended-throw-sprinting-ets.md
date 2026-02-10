@@ -8,7 +8,7 @@ title: "Extended Throw Sprinting"
 —
 
 ## Instructions
-hold B, tap R, repeat
+Hold B, tap R, repeat
 
 ## Notes
 —

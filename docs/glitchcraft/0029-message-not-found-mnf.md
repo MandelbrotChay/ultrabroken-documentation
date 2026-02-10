@@ -11,6 +11,7 @@ Allows you to obtain the prologue master sword (named MsgNotFound or MNF), whose
 There are 2 methods to obtain the MNF: (Watch videos for more info) 
 
 SLD Method (recommended):
+
 1. Go to the In-Isa shrine (Fuse shrine) 
 2. Bring one of the boulders over to the entrance with the fire fruit trees and jump on it (see video for precise location)
 3. Do all the steps for SLD without the final load
@@ -21,6 +22,7 @@ SLD Method (recommended):
 8. Go back to the place in step 2 and pick up the MNF
 
 Zuggle Overload Method:
+
 1. Zuggle overload
 2. Start new game 
 3. Load autosave during prolouge 

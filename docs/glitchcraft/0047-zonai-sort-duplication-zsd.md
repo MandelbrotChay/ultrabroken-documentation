@@ -8,6 +8,7 @@ title: "Zonai Sort Duplication"
 Allows you to dupe zonai parts back into your inventory.
 
 ## Instructions
+
 1. Position Link close enough to a wall or a cliff but not too close, facing towards it.
 2. Take out as many Zonai devices as you want.
 3. Sort the menu inventory and close out of it at the same time, like you would with MSD.

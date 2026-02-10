@@ -5,7 +5,7 @@ title: "Weapon Stacking Duplication"
 # Weapon Stacking Duplication `WSD`
 
 ## Overview
-allows for a quick dupe of any weapon, bow or shield
+Allows for a quick dupe of any weapon, bow or shield
 
 ## Instructions
 INEFFICIENT METHOD, SEE NEXT COLUMN

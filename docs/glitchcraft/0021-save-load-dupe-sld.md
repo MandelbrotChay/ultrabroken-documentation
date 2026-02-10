@@ -8,6 +8,7 @@ title: "Save Load Dupe"
 Allows easy duplication of your weapons, bows, and shields
 
 ## Instructions
+
 0. Have a save prepared nearby (makes it convenient for later).
 1. Equip the weapon/bow/shield you want to duplicate and make sure it appears on Link's back.
 2. Open the menu and drop your current equipment and equip another.

@@ -8,6 +8,7 @@ title: "Springboarding"
 Spring jump across terrain for as long as shield durability lasts.
 
 ## Instructions
+
 1. Fuse entangle a spring to a shield. 
 2. Move outside the springs activation radius (defined by the point where a battery powered Zonai device turns off).
 3. Start a shield surf.

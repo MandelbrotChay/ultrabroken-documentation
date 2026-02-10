@@ -8,6 +8,7 @@ title: "Dive Cancel Glide Boost"
 Allows you to preserve the increased speed from diving with the Glide Suit into paragliding
 
 ## Instructions
+
 1. Skydive with the Glide Suit and get up to speed
 2. Cancel the dive with B, then immediately pull out the paraglider
 3. You should now be paragliding at increased speeds

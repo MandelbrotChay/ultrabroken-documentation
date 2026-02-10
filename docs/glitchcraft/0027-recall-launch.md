@@ -5,15 +5,13 @@ title: "Recall Launch"
 # Recall Launch
 
 ## Overview
-allows you to launch yourself very far
+Allows you to launch yourself very far
 
 ## Instructions
+
 1. Get a plank or wing or something like that
-
 2. Throw a weapon
-
 3. Recall that weapon and quickly ultrahand it to your plank or wing
-
 4. Stand on your plank or wing and recall the weapon
 
 ## Notes

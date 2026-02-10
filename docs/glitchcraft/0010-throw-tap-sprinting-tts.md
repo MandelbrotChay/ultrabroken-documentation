@@ -8,7 +8,7 @@ title: "Throw Tap Sprinting"
 —
 
 ## Instructions
-tap B - R - B, repeat
+Tap B - R - B, repeat
 
 ## Notes
 Currently infinite

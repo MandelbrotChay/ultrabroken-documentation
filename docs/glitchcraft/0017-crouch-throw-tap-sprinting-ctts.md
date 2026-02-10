@@ -5,7 +5,7 @@ title: "Crouch Throw Tap Sprinting"
 # Crouch Throw Tap Sprinting `CTTS`
 
 ## Overview
-infinite and fastest way of sprinting
+Infinite and fastest way of sprinting
 
 ## Instructions
 Press Crouch - B - R - B and repeat (B should be pressed direcly after crouch)

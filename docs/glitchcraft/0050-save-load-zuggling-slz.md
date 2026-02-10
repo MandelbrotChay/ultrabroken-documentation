@@ -8,12 +8,13 @@ title: "Save Load Zuggling"
 Allows you to zuggle anywhere as no wall is required. It is extremely similar to MZ, with only one aditional step of reloading at the end
 
 ## Instructions
-1). Open the rune menu by holding L, select the map rune and open the quickmenu for the desired equipment type (weapon/bow/shield) by spamming the d-pad
-2). Drop item by pressing X, then spam right on the d-pad to re-open the quickmenu before the map opens
-3). Equip another weapon and let go of the d-pad
-4). Wait for map to open and press + to open menu
-5). Drop equipped equipment
-6). Load from any save you currently have.
+
+1. Open the rune menu by holding L, select the map rune and open the quickmenu for the desired equipment type (weapon/bow/shield) by spamming the d-pad
+2. Drop item by pressing X, then spam right on the d-pad to re-open the quickmenu before the map opens
+3. Equip another weapon and let go of the d-pad
+4. Wait for map to open and press + to open menu
+5. Drop equipped equipment
+6. Load from any save you currently have.
 
 ## Notes
 It's also possible to perform Wall-less Zuggling without the map, by performing the same steps and pausing the game 1 frame (frame perfect pause) after exiting the quickswap menu.

@@ -14,6 +14,7 @@ then you do the glitch to get more bananas, what's happening is the game is taki
 ## Instructions
 This glitch has been made redundant by MSD, see that for a better method
 With this glitch you "lose" items! First you need to organize your inventory. You need 1 item in a slot BEFORE (not directly before) the slot of the item you want to transmutate. The items you are transmutating from will be directly after the items you are transmuting to.
+
 1. Be mid-air (shield jump or paraglide or sit in mineru)
 2. Open the menu mid-air.
 3. Hold one item you only have once (so after you hold it you have zero).

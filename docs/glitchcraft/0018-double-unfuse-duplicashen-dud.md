@@ -9,6 +9,7 @@ allows you to duplicate any material that can be fused to an arrow
 
 ## Instructions
 Required: 2 bows, 1 arrow, material to dupe, melee weapon
+
 1. Make sure you have a melee weapon equiped.
 2. Tap ZR to draw bow
 3. Fuse an item to the bow

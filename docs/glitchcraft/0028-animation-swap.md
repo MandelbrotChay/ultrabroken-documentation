@@ -8,6 +8,7 @@ title: "Animation Swap"
 Combine animation sets when zuggle overloaded.
 
 ## Instructions
+
 1. Zuggle overload
 2. Swap weapon types
 3. Swap weapon again to restore normal animations

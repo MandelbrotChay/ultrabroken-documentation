@@ -8,14 +8,15 @@ title: "Map Zuggling"
 Allows you to zuggle much faster than older versions
 
 ## Instructions
-1). Stand next to a wall facing away from it
-2). Unsheathe equipment to stack the weapon in link's hand (optional for duping)
-3). Open the rune menu by holding L, select the map rune and open the quickmenu for the desired equipment type (weapon/bow/shield) by spamming the d-pad
-4). Drop item by pressing X, then spam right on the d-pad to re-open the quickmenu before the map opens
-5). Equip another weapon and let go of the d-pad
-6). Wait for map to open and press + to open menu
-7). Drop equipped equipment
-8). Close menu
+
+1. Stand next to a wall facing away from it
+2. Unsheathe equipment to stack the weapon in link's hand (optional for duping)
+3. Open the rune menu by holding L, select the map rune and open the quickmenu for the desired equipment type (weapon/bow/shield) by spamming the d-pad
+4. Drop item by pressing X, then spam right on the d-pad to re-open the quickmenu before the map opens
+5. Equip another weapon and let go of the d-pad
+6. Wait for map to open and press + to open menu
+7. Drop equipped equipment
+8. Close menu
 Credit to ChargeVolt for writing the setup!
 
 ## Notes

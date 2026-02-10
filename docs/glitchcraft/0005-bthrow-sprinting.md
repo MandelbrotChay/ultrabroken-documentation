@@ -8,7 +8,7 @@ title: "BThrow Sprinting"
 —
 
 ## Instructions
-press B - ZR - R - B (or B - R - ZR - B) and repeat
+Press B - ZR - R - B (or B - R - ZR - B) and repeat
 
 ## Notes
 —

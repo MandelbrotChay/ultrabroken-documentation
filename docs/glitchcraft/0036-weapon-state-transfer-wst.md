@@ -9,6 +9,7 @@ allows you to transfer the durability, fused material, and modifier of a weapon
 
 ## Instructions
 Required:
+
 - 2 long sticks (can be found on an enemy southeast of Fuse shrine)
 - A target item (weapon/bow/shield)
     - For weapons, you'll need an extra long stick.
@@ -18,6 +19,7 @@ Required:
 - Any shield (if not using shields)
 
 Setup:
+
 0. SAVE FIRST, this glitch might delete the target item if done improperly.
 1. Drop the donor item nearby
 2. Equip the target item and line Link up with a large enough flat wall (ex.: Interior Shrine walls) 
@@ -25,6 +27,7 @@ Setup:
 3. Scope, aim with bow, use camera, or face Link away from the wall.
 4. Parry once for weapons, twice for bows/shields .
 5. Open inventory, equip:
+
     - The long stick, if target is a weapon
     - The old wooden bow,  if target is a bow
     - The other shield, if target is a shield
