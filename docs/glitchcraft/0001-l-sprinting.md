@@ -3,6 +3,7 @@ title: "L Sprinting"
 ---
 
 # L Sprinting
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 This is an infinite stamina sprinting method. It is not the fastest one and the timing is very hard.
@@ -22,16 +23,6 @@ May 12, 2023
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1106669953786064946)
 - [Youtube](https://youtu.be/mQrmDMh1Cfs)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
-- 1.2.1
-
 ## See also
 
 - Totk Sprint Methods
