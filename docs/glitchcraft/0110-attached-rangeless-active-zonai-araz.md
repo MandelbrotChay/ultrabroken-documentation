@@ -12,10 +12,9 @@ Is very similar to DRAZ but differs slightly.
 2. FE shield 1 onto shield 2. 
 3. Drop shield 2 (shield-shield) and equip shield 1.  
 4. Perform FE with a zonai device and your shield with the following adjustments:
-    
-    -Instead of selecting a second shield, drop your equipped shield. 
-    -Without letting the d-pad menu close (spam left), equip another shield. 
-    -Close the d-pad. 
+    - Instead of selecting a second shield, drop your equipped shield. 
+    - Without letting the d-pad menu close (spam left), equip another shield. 
+    - Close the d-pad. 
 Checkpoint: A shield with your zonai device fused should drop, and you should have the FE’d shield equipped. You can now remotely activate the zonai device if you’re within range. 
 To remove the range constraints, you must ZLOT both the zonai device and the shield it’s actually fused to. 
 
