@@ -12,10 +12,6 @@ Fusing an item on the same frame that it culls interrupts the fuse. It will cont
 —
 
 ## Notes
-Fuse Entanglement
-
-Cold Fuse
-
 The most important thing for weapon FE is having something fused to an arrow while the delayed fuse is triggered.
 In all cases, you can get the like to drop it'"s stored fuse (or other objects) by stunning it and hitting it'"s weak spot.
 
@@ -32,5 +28,7 @@ June 18, 2023
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1202899097921658940)
 
 ## See also
+- Fuse Entanglement
+- Cold Fuse
 - Like-Like Fuse Storage
 - Culling Area Fuse Storage
