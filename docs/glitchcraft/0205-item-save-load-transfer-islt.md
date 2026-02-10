@@ -3,6 +3,7 @@ title: "Item Save Load Transfer"
 ---
 
 # Item Save Load Transfer `ISLT`
+Luckstyle - 22 December 2023
 
 ## Overview
 Allows transferring held items through saves.
@@ -16,14 +17,6 @@ Allows transferring held items through saves.
 
 ## Notes
 Fairies on GSI
-
-## Credit
-Luckstyle
-
-## Date
-22 December 2023
-
-## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1187786562293997598)
 - [YouTube](https://youtu.be/Gu_zlst9T0w?si=x6FNI5zIrRNrQLh-)
 

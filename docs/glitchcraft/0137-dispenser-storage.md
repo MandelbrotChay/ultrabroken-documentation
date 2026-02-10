@@ -3,6 +3,7 @@ title: "Dispenser Storage"
 ---
 
 # Dispenser Storage
+Mozz - 2 July 2023
 
 ## Overview
 Allows you to use zonai device dispensers as a temporary means to store items and bypass the 21 ground items limit.
@@ -22,14 +23,6 @@ Can be combined with ISD or MTD to reach max items.
 A Fan or Stabilizer placed next the hatch will stop it from closing when opened next.
 
 Two Fans fused at a 45 degree angle can be used to block the Dispenser, avoiding the time limit of an active Stabilizer (top fan can also be replaced with a small rock)
-
-## Credit
-Mozz
-
-## Date
-2 July 2023
-
-## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1125043115397484596)
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1125069475541164032)
 

@@ -17,13 +17,6 @@ Allows objects to lose their gravity.
 ## Notes
 —
 
-## Credit
-
-—
-
-## Date
-—
-
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1113306645854945303)
 

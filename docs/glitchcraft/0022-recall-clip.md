@@ -3,6 +3,7 @@ title: "Recall Clip"
 ---
 
 # Recall Clip
+こんそめ - 16 May 2023
 
 ## Overview
 Allows you to clip through things using a large object and recall
@@ -17,14 +18,6 @@ Set a block next to the door you want to clip through using ultrahand.
 
 ## Notes
 This can be done with a spring, making the entire trick much more portable
-
-## Credit
-こんそめ
-
-## Date
-16 May 2023
-
-## Resources
 - [Twitter](https://vxtwitter.com/tsu509359170830/status/1657767717796208640?s=20)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1108100337254023168)
 

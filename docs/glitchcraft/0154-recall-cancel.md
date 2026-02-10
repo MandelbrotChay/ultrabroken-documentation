@@ -3,6 +3,7 @@ title: "Recall Cancel"
 ---
 
 # Recall Cancel
+R4000 - 20 July 2023
 
 ## Overview
 Lets you delay the dropping of weapon and items
@@ -15,14 +16,6 @@ Lets you delay the dropping of weapon and items
 
 ## Notes
 Jumpslash cancel
-
-## Credit
-R4000
-
-## Date
-20 July 2023
-
-## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1131627625991905432)
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1153447778240974908)
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1153822693880238171)

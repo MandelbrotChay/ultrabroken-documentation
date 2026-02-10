@@ -3,6 +3,7 @@ title: "Awakened Master Sword"
 ---
 
 # Awakened Master Sword `AMS`
+tahatanogame - 4 September 2023
 
 ## Overview
 You can use gas to leave a minigame and wrong warp into the phantom ganon fight, which makes it possible to escape the fight. 
@@ -20,14 +21,6 @@ Watch Blize's guide for more info!
 ## Notes
 After a game close and reopen, you will respawn at the phantom ganon fight, just reload a file to fix this
 Requires the crisis at Hyrule castle quest to be unfinished
-
-## Credit
-tahatanogame
-
-## Date
-4 September 2023
-
-## Resources
 - [Youtube](https://www.youtube.com/watch?v=HfvNF_1lZW0&t)
 - [YouTube](https://www.youtube.com/watch?v=50RRbWV-d-A&t)
 

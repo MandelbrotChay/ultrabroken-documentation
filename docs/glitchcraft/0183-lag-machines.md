@@ -3,6 +3,7 @@ title: "Lag Machines"
 ---
 
 # Lag Machines
+Mozz - 5 October 2023
 
 ## Overview
 Filling up small areas with many objects causes a lot of lag and strange effects
@@ -19,14 +20,6 @@ One method to perform this glitch would be:
 1. Lag
 2. The game thinks link is not standing on ground
 Still being researched
-
-## Credit
-Mozz
-
-## Date
-5 October 2023
-
-## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1159689904763179069)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1190155134051819580)
 

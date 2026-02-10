@@ -3,6 +3,7 @@ title: "Bundled Item Duplication"
 ---
 
 # Bundled Item Duplication `BID`
+Ock - 12 December 2023
 
 ## Overview
 Culling dropping an item in a specific way and unloading it causes it to get put into a state of constantly respawning when holding another item, allowing for massive duping.
@@ -27,14 +28,6 @@ Discord (Lightos_)
 
 ## Notes
 —
-
-## Credit
-Ock
-
-## Date
-12 December 2023
-
-## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1184150352174514308)
 - [YouTube](https://www.youtube.com/watch?v=WNnnI13a954&t)
 

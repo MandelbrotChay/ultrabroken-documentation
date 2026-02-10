@@ -3,6 +3,7 @@ title: "Weapon Stacking Duplication"
 ---
 
 # Weapon Stacking Duplication `WSD`
+Erling附身 - 16 May 2023
 
 ## Overview
 Allows for a quick dupe of any weapon, bow or shield
@@ -16,14 +17,6 @@ Additionally, weapon smuggling can be performed and stored through saves by mash
 
 ## Notes
 This is just zuggling, but you drop your equipped weapon at the end, that being said, any zuggle method should work (map zuggle is reccomended)
-
-## Credit
-Erling附身
-
-## Date
-16 May 2023
-
-## Resources
 - [Bilibili](http://www.bilibili.com/video/BV1qT411t7Kv/)
 
 ## See also

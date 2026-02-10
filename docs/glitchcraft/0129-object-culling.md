@@ -3,6 +3,7 @@ title: "Object Culling"
 ---
 
 # Object Culling
+Mozz, tori - 27 June 2023
 
 ## Overview
 Places an object in a half-unloaded, limbo like state. Leading to unintended interactions such as Zonai devices occupying the same space, remote control, and more.
@@ -19,14 +20,6 @@ With the help of chain FE, it is possible to make an infinitely large cull radiu
 (discovered by Mulberry and Timber)
 Discord
 YouTube
-
-## Credit
-Mozz, tori
-
-## Date
-27 June 2023
-
-## Resources
 —
 
 ## See also

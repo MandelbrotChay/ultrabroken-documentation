@@ -3,6 +3,7 @@ title: "Lift Fuse Interrupt"
 ---
 
 # Lift Fuse Interrupt
+Yee - 22 April 2025
 
 ## Overview
 Puts liftable objects in a strange state where fusing to them causes a null fuse and cancels the state.
@@ -16,14 +17,6 @@ Lift an object on the same frame that a construct fuses it.
 Fusing an object in this state to a zuggle causes the object to be fuse entangled to the zuggle
 Can also be caused by fusing an object just as a moblin picks it up to throw.
 It is not yet understood what causes this glitch.
-
-## Credit
-Yee
-
-## Date
-22 April 2025
-
-## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1109838351596527726/1364232293140402196)
 - [Discord](https://discord.com/channels/1086729144307564648/1109838351596527726/1364240647736791071)
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1367499196676051034)

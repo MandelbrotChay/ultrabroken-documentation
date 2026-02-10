@@ -3,6 +3,7 @@ title: "Double Unfuse Duplicashen"
 ---
 
 # Double Unfuse Duplicashen `DUD`
+Li Shen (鯉神) - 15 May 2023
 
 ## Overview
 allows you to duplicate any material that can be fused to an arrow
@@ -22,14 +23,6 @@ Required: 2 bows, 1 arrow, material to dupe, melee weapon
 
 ## Notes
 Stops working if cooked meals page is full
-
-## Credit
-Li Shen (鯉神)
-
-## Date
-15 May 2023
-
-## Resources
 - [Bilibili](https://www.bilibili.com/video/BV19h4y147iR/)
 - [YouTube](https://www.youtube.com/watch?v=0sRvQzU2j5w)
 

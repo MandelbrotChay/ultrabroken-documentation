@@ -3,6 +3,7 @@ title: "Springdolling"
 ---
 
 # Springdolling
+Mozz - 15 May 2023
 
 ## Overview
 allows you to launch a large horizontal distance using springs
@@ -17,14 +18,6 @@ allows you to launch a large horizontal distance using springs
 ## Notes
 Can be used to clip back inbounds from the depths ceiling. (See Also)
 Can chain more springs to make the horizontal launch more powerful
-
-## Credit
-Mozz
-
-## Date
-15 May 2023
-
-## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1107794101111377920)
 
 ## See also

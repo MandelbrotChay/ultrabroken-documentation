@@ -3,6 +3,7 @@ title: "Dynamic Zuggle"
 ---
 
 # Dynamic Zuggle
+Originally discovered by Lightos, _Steps later recovered by Lightos, Zasoptimized by Zas, Mulberry, Winnerboi and Ryan?researched for other versions by Winnerboi and CS16 - 6 September 2023
 
 ## Overview
 Dropping equippment in a specific way causes it to be put into a linked state between drop smuggled and zuggled, while the dynamic zuggled item is alternating between sheathed and unsheated together with your equippment. It can only be canceled by throwing the dynamic zuggled weapon, shocking or closing the game.
@@ -49,14 +50,6 @@ Method 3 (Winnerboi & Ryan):
 - You can replace the wall and turning by dropping two buffer weapons (small hitbox is recommended) before starting step 3
 
 - You may need to sprint away from the wall to avoid clipping during step 7
-
-## Credit
-Originally discovered by Lightos, _Steps later recovered by Lightos, Zasoptimized by Zas, Mulberry, Winnerboi and Ryan?researched for other versions by Winnerboi and CS16
-
-## Date
-6 September 2023
-
-## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1149037981181689936)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1218667308671832134)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1218672345749913642)

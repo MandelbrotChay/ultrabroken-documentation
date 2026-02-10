@@ -3,6 +3,7 @@ title: "Void Hold Storage"
 ---
 
 # Void Hold Storage
+Lightos_, NX721 - 22 July 2023
 
 ## Overview
 Causes a menu softlock that revokes certain actions but allows for Link's model in the control panel, softlocks when attempting exiting any menu, and Link can be moved freely before opening the menu.
@@ -17,14 +18,6 @@ Causes a menu softlock that revokes certain actions but allows for Link's model 
 
 ## Notes
 —
-
-## Credit
-Lightos_, NX721
-
-## Date
-22 July 2023
-
-## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1132405949424996475)
 
 ## See also

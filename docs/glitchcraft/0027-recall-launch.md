@@ -3,6 +3,7 @@ title: "Recall Launch"
 ---
 
 # Recall Launch
+Deep - 17 May 2023
 
 ## Overview
 Allows you to launch yourself very far
@@ -17,14 +18,6 @@ Allows you to launch yourself very far
 
 ## Notes
 This works very good with boomerangs. It also works with anything Link can pick up. In this case you can use the momentum from rotating or picking up the object to perform the launch.
-
-## Credit
-Deep
-
-## Date
-17 May 2023
-
-## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1108497033951719517)
 - [Twitter](https://twitter.com/iLegendofLinkk/status/1659100053535965185?t=tWBb41YeFveu5NycFpue5w&s=19)
 

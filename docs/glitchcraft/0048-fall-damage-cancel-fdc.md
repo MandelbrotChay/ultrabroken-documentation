@@ -3,6 +3,7 @@ title: "Fall Damage Cancel"
 ---
 
 # Fall Damage Cancel `FDC`
+simonfirefighter - 23 May 2023
 
 ## Overview
 Allows you to cancel fall damage from any height
@@ -17,14 +18,6 @@ Allows you to cancel fall damage from any height
 
 ## Notes
 It's possible to Fall Damage Cancel by performing multiple frame perfect inputs without using the runes menu or a shield (D-PAD Right + ZR on same frame, unequip bow, press Y one frame later, then dive).
-
-## Credit
-simonfirefighter
-
-## Date
-23 May 2023
-
-## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1110634140803551445)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1110642449954639932)
 

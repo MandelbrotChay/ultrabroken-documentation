@@ -3,6 +3,7 @@ title: "Like-Like Smuggling"
 ---
 
 # Like-Like Smuggling
+Mozz, mulberry - 15 June 2023
 
 ## Overview
 Allows for Equipment Smuggling via slugging.
@@ -23,14 +24,6 @@ Method 2 (works 1.0.0-1.2.1):
 
 ## Notes
 Method 2 can also be executed with a chest if you open it right before Link gets eaten by the like like
-
-## Credit
-Mozz, mulberry
-
-## Date
-15 June 2023
-
-## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1118505594215743501)
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1118690695910273074)
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1250839219329302679)

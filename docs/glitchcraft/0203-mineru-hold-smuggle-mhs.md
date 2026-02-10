@@ -3,6 +3,7 @@ title: "Mineru Hold Smuggle"
 ---
 
 # Mineru Hold Smuggle `MHS`
+Winnerboi77 - 20 December 2023
 
 ## Overview
 Allows holding items in inventory but not in overworld.
@@ -16,14 +17,6 @@ Allows holding items in inventory but not in overworld.
 
 ## Notes
 Can duplicate items. Also see ISLT, 218 on how to transfer items through saves.
-
-## Credit
-Winnerboi77
-
-## Date
-20 December 2023
-
-## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1187101909446832190)
 - [YouTube](https://youtu.be/mHC8BJpDxGE?si=-KT6KxiVW-O_PDto)
 

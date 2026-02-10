@@ -3,6 +3,7 @@ title: "Detached Rangeless Active Zonai"
 ---
 
 # Detached Rangeless Active Zonai `DRAZ`
+Venaticus - 15 June 2023
 
 ## Overview
 Allows you to leave a Zonai device stuck a single place and activate it remotely from anywhere.
@@ -15,14 +16,6 @@ Allows you to leave a Zonai device stuck a single place and activate it remotely
 
 ## Notes
 Can be kept permanently active via GAS and can be zuggled for transferring/other zuggle-related things
-
-## Credit
-Venaticus
-
-## Date
-15 June 2023
-
-## Resources
 —
 
 ## See also

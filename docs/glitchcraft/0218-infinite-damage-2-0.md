@@ -3,6 +3,7 @@ title: "Infinite Damage 2.0"
 ---
 
 # Infinite Damage 2.0
+NghtmaR3 - 21 January 2024
 
 ## Overview
 Use new prompt to do infinite damage without using durability.
@@ -16,14 +17,6 @@ Use new prompt to do infinite damage without using durability.
 
 ## Notes
 Can use 1 time use fuse material infinitely.
-
-## Credit
-NghtmaR3
-
-## Date
-21 January 2024
-
-## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1198804902961479691)
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1198807476305412188)
 

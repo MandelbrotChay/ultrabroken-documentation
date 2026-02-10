@@ -3,6 +3,7 @@ title: "Attached Rangeless Active Zonai"
 ---
 
 # Attached Rangeless Active Zonai `ARAZ`
+Ryan?, NX721 - 16 June 2023; 15 July 2023
 
 ## Overview
 Is very similar to DRAZ but differs slightly.
@@ -37,14 +38,6 @@ ARAZ (Second Method)
 Can use certain Zonai devices that DRAZ cannot
 
 Can be kept permanently active via GAS and can be zuggled for transferring/other zuggle-related things
-
-## Credit
-Ryan?, NX721
-
-## Date
-16 June 2023; 15 July 2023
-
-## Resources
 —
 
 ## See also

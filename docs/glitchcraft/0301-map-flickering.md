@@ -16,12 +16,6 @@ Place hundreds of pins on the map in close proximity, so they look like they're 
 ## Notes
 Do not do this if you suffer from epilepsy, or are prone to seizures
 
-## Credit
-—
-
-## Date
-—
-
 ## Resources
 - [Youtube](https://www.youtube.com/watch?v=RjSKbESuVHo)
 

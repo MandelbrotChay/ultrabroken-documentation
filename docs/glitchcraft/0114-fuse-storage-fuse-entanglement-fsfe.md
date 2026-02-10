@@ -3,6 +3,7 @@ title: "Fuse Storage Fuse Entanglement"
 ---
 
 # Fuse Storage Fuse Entanglement `FSFE`
+Ryan?, Mozz - 18 June 2023
 
 ## Overview
 Unique methods of achieving Fuse Entanglement through Fuse Storage.
@@ -13,15 +14,6 @@ Unique methods of achieving Fuse Entanglement through Fuse Storage.
 —
 
 ## Notes
-—
-
-## Credit
-Ryan?, Mozz
-
-## Date
-18 June 2023
-
-## Resources
 —
 
 ## See also

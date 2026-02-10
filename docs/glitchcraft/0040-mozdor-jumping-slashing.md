@@ -3,6 +3,7 @@ title: "Mozdor jumping/slashing"
 ---
 
 # Mozdor jumping/slashing
+Mozz, AgdoR - 20 May 2023
 
 ## Overview
 Allows you to jump very far (can be chained infinitly)
@@ -16,14 +17,6 @@ Allows you to jump very far (can be chained infinitly)
 
 ## Notes
 —
-
-## Credit
-Mozz, AgdoR
-
-## Date
-20 May 2023
-
-## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1106412847359082506/1109296265847640094)
 
 ## See also

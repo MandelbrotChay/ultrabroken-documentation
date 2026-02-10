@@ -3,6 +3,7 @@ title: "Memory Buffering"
 ---
 
 # Memory Buffering
+Mozz - 29 May 2023
 
 ## Overview
 Advances Links current animation by 1 frame while keeping the menu open. Links coordinates will not change.
@@ -13,15 +14,6 @@ Advances Links current animation by 1 frame while keeping the menu open. Links c
 Skip a playing memory during an animation.
 
 ## Notes
-—
-
-## Credit
-Mozz
-
-## Date
-29 May 2023
-
-## Resources
 —
 
 ## See also

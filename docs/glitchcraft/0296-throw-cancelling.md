@@ -3,6 +3,7 @@ title: "Throw Cancelling"
 ---
 
 # Throw Cancelling
+Quelfth
 
 ## Overview
 Allows you to cancel the ending animation of throwing via Runes, allowing you to throw faster
@@ -15,16 +16,6 @@ Allows you to cancel the ending animation of throwing via Runes, allowing you to
 3. Tap R, then hold d-pad up
 
 ## Notes
-—
-
-## Credit
-Quelfth
-
-## Date
-
-—
-
-## Resources
 —
 
 ## See also

@@ -3,6 +3,7 @@ title: "Like-Like Zuggling"
 ---
 
 # Like-Like Zuggling
+NaN Gogh, Ryan?, Blackmars - 15 June 2023
 
 ## Overview
 Allows for zuggling via slugging
@@ -42,14 +43,6 @@ For zuggling weapons on 1.1.2:
 2. Pick up the weapon on the ground
 
 3. Open the chest and drop your equipped weapon with Link's back against a wall
-
-## Credit
-NaN Gogh, Ryan?, Blackmars
-
-## Date
-15 June 2023
-
-## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1118709904614629427)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1126132309687537705)
 

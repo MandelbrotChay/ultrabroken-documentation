@@ -3,6 +3,7 @@ title: "Master Sword Zuggling/ Decayed Master Sword Zuggling"
 ---
 
 # Master Sword Zuggling/ Decayed Master Sword Zuggling
+Zas - 6 November 2023
 
 ## Overview
 Allows you to zuggle the master sword or decayed master sword by desyncing it
@@ -37,14 +38,6 @@ An alternative much easier method of getting the desync and transfering it:
 Altenative method (mulbery)
 https://discord.com/channels/1086729144307564648/1105598687167664239/1178791475216134194
 This can be combined with mastersword liberation to drop the dms/ms
-
-## Credit
-Zas
-
-## Date
-6 November 2023
-
-## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1171061365667020821)
 
 ## See also

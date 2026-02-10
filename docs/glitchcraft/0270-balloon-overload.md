@@ -3,6 +3,7 @@ title: "Balloon Overload"
 ---
 
 # Balloon Overload
+Jordan, mulberry, ofstrings2 - 8 March 2025
 
 ## Overview
 Equipping and unfusing a shield with Robbie's infinite balloon fused to it does not remove the balloon in the character preview in the inventory. This can be stacked to lag out the inventory, and has the potential to crash the game
@@ -18,14 +19,6 @@ Equipping and unfusing a shield with Robbie's infinite balloon fused to it does 
 
 ## Notes
 —
-
-## Credit
-Jordan, mulberry, ofstrings2
-
-## Date
-8 March 2025
-
-## Resources
 - [Discord](https://discordapp.com/channels/1086729144307564648/1113557914444111873/1348152808108458056)
 - [Discord](https://discordapp.com/channels/1086729144307564648/1113557914444111873/1348452605411463221)
 

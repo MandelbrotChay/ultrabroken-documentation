@@ -3,6 +3,7 @@ title: "Shadow/Void Icons"
 ---
 
 # Shadow/Void Icons
+Consistent method discovered by PetitFrapoOriginal accidental discovery by Lightos - 16 October 2024
 
 ## Overview
 Using the camera it's possible to make equipment icons black, leaving only the equipment's shadow and some other eventual colors coming from the fuse. It's also possible to get fully empty icons.
@@ -22,14 +23,6 @@ icon, except if you instantly
 pick it back up.
 Timing on Switch 2 may be
 tighter.
-
-## Credit
-Consistent method discovered by PetitFrapoOriginal accidental discovery by Lightos
-
-## Date
-16 October 2024
-
-## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1296080453413109830)
 
 ## See also

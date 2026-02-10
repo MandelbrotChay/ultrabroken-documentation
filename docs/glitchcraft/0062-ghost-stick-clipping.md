@@ -3,6 +3,7 @@ title: "Ghost Stick Clipping"
 ---
 
 # Ghost Stick Clipping
+rocomox - 28 May 2023
 
 ## Overview
 Allows Link to clip through walls by stepping onto a steering stick during ABCS.
@@ -16,14 +17,6 @@ Allows Link to clip through walls by stepping onto a steering stick during ABCS.
 
 ## Notes
 Has a very good chance of crashing the game in certain areas. Depths are usually stable, but can still crash there too.
-
-## Credit
-rocomox
-
-## Date
-28 May 2023
-
-## Resources
 - [Youtube](https://www.youtube.com/watch?v=CfIe3QO5fXA)
 - [YouTube](https://youtu.be/_Zaqnosyymw)
 

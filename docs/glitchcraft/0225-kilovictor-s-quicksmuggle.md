@@ -3,6 +3,7 @@ title: "Kilovictor's quicksmuggle"
 ---
 
 # Kilovictor's quicksmuggle
+Kilovictor - 23 February 2024
 
 ## Overview
 fusing an sdc stick to equipment allows for a different, stronger cull, which can be used to cull equipment.
@@ -23,14 +24,6 @@ Link should cull and uncull for a few frames, then fully cull
 
 ## Notes
 it's very likely to cull lock, especially if you don't mount a steering stick, looking up seems to slightly reduce the chance of this happening
-
-## Credit
-Kilovictor
-
-## Date
-23 February 2024
-
-## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1210488053769175040)
 
 ## See also

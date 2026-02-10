@@ -3,6 +3,7 @@ title: "Cull Fuse Entanglement"
 ---
 
 # Cull Fuse Entanglement `CFE`
+ultrababouin, susannediazz, Ock, SteFen45 - 21 September 2023; 10 October 2023
 
 ## Overview
 Allows you to Fuse Entangle objects by culling Link the same frame the fuse is applied.
@@ -23,14 +24,6 @@ Allows you to Fuse Entangle objects by culling Link the same frame the fuse is a
 
 ## Notes
 Save your progress! This can lead to softlocking your game!
-
-## Credit
-ultrababouin, susannediazz, Ock, SteFen45
-
-## Date
-21 September 2023; 10 October 2023
-
-## Resources
 - [Discord](https://discord.com/channels/1111875355758837830/1128775917376897145/1154541201765183558)
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1161329928172748961)
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1161329928172748961)

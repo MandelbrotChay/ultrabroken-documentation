@@ -3,6 +3,7 @@ title: "Display Duping"
 ---
 
 # Display Duping
+Pistonight - 27 May 2023
 
 ## Overview
 Allows you to dupe equipment that can be put into displays.
@@ -14,14 +15,6 @@ Place a shock emitter next to weapon/bow/shield display, take out weapon/bow (ne
 
 ## Notes
 Since this deletes the last equipment, consider placing the desired equipment last
-
-## Credit
-Pistonight
-
-## Date
-27 May 2023
-
-## Resources
 - [Twitter](https://twitter.com/i_piston/status/1662365886525870080)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1112078050000117900)
 

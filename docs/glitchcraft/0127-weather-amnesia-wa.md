@@ -3,6 +3,7 @@ title: "Weather Amnesia"
 ---
 
 # Weather Amnesia `WA`
+pyuk - 25 June 2023
 
 ## Overview
 Viewing a memory near a cave will overwrite its local weather with the overworld's weather.
@@ -15,14 +16,6 @@ Viewing a memory near a cave will overwrite its local weather with the overworld
 
 ## Notes
 Certain triggers, such as text boxes, will restore the caves' local weather.
-
-## Credit
-pyuk
-
-## Date
-25 June 2023
-
-## Resources
 —
 
 ## See also

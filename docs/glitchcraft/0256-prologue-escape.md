@@ -3,6 +3,7 @@ title: "Prologue Escape"
 ---
 
 # Prologue Escape
+mulberry, Aergyl, Lightos, LegendOfLinkk (initial discovery with memory editing)The entire glitch hunting community! - October 1st, 2024
 
 ## Overview
 Using Banc Storage, it's possible to get Link out of the prologue, allowing for a lot of side effects.
@@ -31,14 +32,6 @@ It's possible to get access to the Awakened Master Sword flag. Instead of making
 Now, perform Banc Storage, and load this save. You now have access to the AMS, without drawbacks. It goes away after beating Phantom Ganon at the castle, so avoid doing this to keep it.
 
 This glitch also allows for a setup to have infinite durability on any weapon, however due to its complexity this entry will not cover the steps. Feel free to ask glitch hunters in the speedrunning Discord about it.
-
-## Credit
-mulberry, Aergyl, Lightos, LegendOfLinkk (initial discovery with memory editing)The entire glitch hunting community!
-
-## Date
-October 1st, 2024
-
-## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1110956205624532993/1290703223467937898)
 - [YouTube](https://www.youtube.com/watch?v=RmjZKVGvstE)
 

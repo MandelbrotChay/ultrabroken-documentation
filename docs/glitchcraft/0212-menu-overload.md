@@ -3,6 +3,7 @@ title: "Menu Overload"
 ---
 
 # Menu Overload
+Mozz - 11 January 2024
 
 ## Overview
 Overloads the item menu via Moobe, acting similarly to menu overload in BOTW
@@ -17,14 +18,6 @@ Overloads the item menu via Moobe, acting similarly to menu overload in BOTW
 WST
 Transmutation
 Texture Tearing
-
-## Credit
-Mozz
-
-## Date
-11 January 2024
-
-## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1194033039123165215/1195129250265694289)
 - [Discord](https://discord.com/channels/1086729144307564648/1194033039123165215/1196033176183779430)
 

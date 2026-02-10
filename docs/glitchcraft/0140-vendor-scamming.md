@@ -3,6 +3,7 @@ title: "Vendor Scamming"
 ---
 
 # Vendor Scamming
+NX721, Mozz, NaN Gogh - 3 July 2023
 
 ## Overview
 Allows you to infinitely sell items to (steal from) a vendor using Hold Storage/Smuggling.
@@ -17,14 +18,6 @@ Allows you to infinitely sell items to (steal from) a vendor using Hold Storage/
 
 ## Notes
 Easiest method of reaching max rupees.
-
-## Credit
-NX721, Mozz, NaN Gogh
-
-## Date
-3 July 2023
-
-## Resources
 - [Twitter](https://twitter.com/NX721_/status/1675983600263778305)
 
 ## See also

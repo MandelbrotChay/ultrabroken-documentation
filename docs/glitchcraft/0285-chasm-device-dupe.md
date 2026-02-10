@@ -3,6 +3,7 @@ title: "Chasm Device Dupe"
 ---
 
 # Chasm Device Dupe
+Telkic, mulberry - 12 October 2025
 
 ## Overview
 Unloads throwable items in a way that allows them to be duped by picking them up from Link's hand, most notably zonai capsules
@@ -18,14 +19,6 @@ Unloads throwable items in a way that allows them to be duped by picking them up
 
 ## Notes
 Can be performed without portacull by positioning Link underneath the chasm boundary (see example clip), or with ocklusion
-
-## Credit
-Telkic, mulberry
-
-## Date
-12 October 2025
-
-## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1427101045816823809)
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1427320782274691073)
 

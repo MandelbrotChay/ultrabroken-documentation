@@ -3,6 +3,7 @@ title: "Save Load Dupe"
 ---
 
 # Save Load Dupe `SLD`
+ZombieBoy225, ness, ElDuende - 16 May 2023
 
 ## Overview
 Allows easy duplication of your weapons, bows, and shields
@@ -25,14 +26,6 @@ Throwing the weapon, pausing on the first frame it leaves Link and loading achie
 Update to include the easier, old, drop swap drop method.
 
 Requires Portable culling to be performed on 1.2.0/1.2.1
-
-## Credit
-ZombieBoy225, ness, ElDuende
-
-## Date
-16 May 2023
-
-## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1108041163170128022)
 
 ## See also

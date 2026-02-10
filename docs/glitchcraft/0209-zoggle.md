@@ -3,6 +3,7 @@ title: "Zoggle"
 ---
 
 # Zoggle
+Ryan?, ock - 4 January 2024
 
 ## Overview
 Using deentenglement to untie the wuggled equippment from their fe parent
@@ -24,14 +25,6 @@ Using deentenglement to untie the wuggled equippment from their fe parent
 ## Notes
 Mineru Fuse Entanglement can be used instead to zoggle. Just FE to her and drop swap as she culls. Fail drop and fuse over the equipment attached to Mineru.
 Test on previous versions
-
-## Credit
-Ryan?, ock
-
-## Date
-4 January 2024
-
-## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1192597934181720197)
 
 ## See also

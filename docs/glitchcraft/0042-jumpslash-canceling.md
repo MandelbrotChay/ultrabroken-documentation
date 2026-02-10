@@ -3,6 +3,7 @@ title: "Jumpslash Canceling"
 ---
 
 # Jumpslash Canceling
+LegendOfLink, Mozz - 21 May 2023
 
 ## Overview
 Interrupt jumpslashes by swapping a shield mid-animation
@@ -17,14 +18,6 @@ Interrupt jumpslashes by swapping a shield mid-animation
 ## Notes
 Infinite Height
 Jumpslash Cancel Clipping
-
-## Credit
-LegendOfLink, Mozz
-
-## Date
-21 May 2023
-
-## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1110002512074907740)
 
 ## See also

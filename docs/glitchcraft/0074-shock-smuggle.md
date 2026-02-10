@@ -3,6 +3,7 @@ title: "Shock Smuggle"
 ---
 
 # Shock Smuggle
+sleepyppls - 1 June 2023
 
 ## Overview
 Dropping an unsheathed equipment just before getting shocked causes equipment smuggle.
@@ -15,14 +16,6 @@ Dropping an unsheathed equipment just before getting shocked causes equipment sm
 
 ## Notes
 Can be done much more consistently by equipping the Thunder Helm before walking into the shock emitter, unequipping the helmet and watching two memories, dropping the item you want to smuggle, and watching another memory before unpausing.
-
-## Credit
-sleepyppls
-
-## Date
-1 June 2023
-
-## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1113917918422511776)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1114328222365130844)
 

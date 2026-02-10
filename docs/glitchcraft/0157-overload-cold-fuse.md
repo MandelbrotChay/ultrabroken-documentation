@@ -3,6 +3,7 @@ title: "Overload Cold Fuse"
 ---
 
 # Overload Cold Fuse
+F. Buffalo - 23 July 2023
 
 ## Overview
 Fusing to an overload dropped item causes cold fuse
@@ -17,14 +18,6 @@ Fusing to an overload dropped item causes cold fuse
 
 ## Notes
 —
-
-## Credit
-F. Buffalo
-
-## Date
-23 July 2023
-
-## Resources
 - [Twitter](https://fxtwitter.com/FBuffalo3/status/1683255977758584832)
 
 ## See also

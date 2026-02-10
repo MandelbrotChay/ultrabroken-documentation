@@ -3,6 +3,7 @@ title: "Weapon FE"
 ---
 
 # Weapon FE
+Rediscovered by robuxy2nd and originally found by Physioninja - 1 June 2023
 
 ## Overview
 Allows for FE to weapons
@@ -18,14 +19,6 @@ Allows for FE to weapons
 
 ## Notes
 September 12, 2023; June 1, 2023
-
-## Credit
-Rediscovered by robuxy2nd and originally found by Physioninja
-
-## Date
-1 June 2023
-
-## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1170407312054300713)
 
 ## See also

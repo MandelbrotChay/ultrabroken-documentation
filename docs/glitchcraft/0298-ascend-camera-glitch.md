@@ -17,12 +17,6 @@ Keeps the camera far away from link after a file load for a short period of time
 ## Notes
 —
 
-## Credit
-—
-
-## Date
-—
-
 ## Resources
 —
 

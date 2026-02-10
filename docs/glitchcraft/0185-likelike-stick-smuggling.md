@@ -22,13 +22,6 @@ Allows you to cull Link via a LikeLike in a culling area. Can be used for Equipm
 ## Notes
 —
 
-## Credit
-
-—
-
-## Date
-—
-
 ## Resources
 —
 

@@ -3,6 +3,7 @@ title: "Cutscene Combo Amplifier"
 ---
 
 # Cutscene Combo Amplifier
+Lightos_ - 22 December 2023
 
 ## Overview
 Extends and stacks the damage frames of an attack with memory buffering, causing huge damage.
@@ -18,14 +19,6 @@ Extends and stacks the damage frames of an attack with memory buffering, causing
 ## Notes
 1. this can be combined with zuggle for even higher damage
 2. performing this with a cucco gives you a (insert odds later) chance of optaining an egg for every memory you watch
-
-## Credit
-Lightos_
-
-## Date
-22 December 2023
-
-## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1187789030037926000)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1187809236718207068)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1187789030037926000)

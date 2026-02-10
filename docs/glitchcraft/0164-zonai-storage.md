@@ -3,6 +3,7 @@ title: "Zonai Storage"
 ---
 
 # Zonai Storage
+bebu0815 - 13 August 2023
 
 ## Overview
 Allows Zonai devices to be stored and taken into shrines
@@ -17,14 +18,6 @@ If you enter a shrine you may chose 1 to 10 zonai devices to spawn
 
 ## Notes
 Activating zonai storage, dying and opening the inventory may crash the game
-
-## Credit
-bebu0815
-
-## Date
-13 August 2023
-
-## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1140347990368854047)
 - [YouTube](https://www.youtube.com/watch?v=6plkkvYGW74&)
 

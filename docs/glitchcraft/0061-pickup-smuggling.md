@@ -3,6 +3,7 @@ title: "Pickup Smuggling"
 ---
 
 # Pickup Smuggling
+Ame - 28 May 2023
 
 ## Overview
 Allows Link to pick up an object as if he were holding it like an item.
@@ -16,14 +17,6 @@ Allows Link to pick up an object as if he were holding it like an item.
 
 ## Notes
 —
-
-## Credit
-Ame
-
-## Date
-28 May 2023
-
-## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1112560911522222192)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1112562187857297480)
 

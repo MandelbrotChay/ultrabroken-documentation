@@ -3,6 +3,7 @@ title: "Cold Fuse Stick Desync Clip"
 ---
 
 # Cold Fuse Stick Desync Clip `CSSDC`
+mulberry, KiloVictor - 4 June 2024
 
 ## Overview
 An easier way to perform stick desync clip using cold fuse that allows for an almost immediate dismount, making it useful for stick desync without clipping
@@ -20,14 +21,6 @@ An easier way to perform stick desync clip using cold fuse that allows for an al
 
 ## Notes
 —
-
-## Credit
-mulberry, KiloVictor
-
-## Date
-4 June 2024
-
-## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1247625177785831556)
 - [Discord](https://discord.com/channels/1086729144307564648/1109838351596527726/1267029375925096489)
 

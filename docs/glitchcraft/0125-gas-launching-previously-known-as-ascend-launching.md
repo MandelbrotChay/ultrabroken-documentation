@@ -3,6 +3,7 @@ title: "GAS Launching"
 ---
 
 # GAS Launching
+NX721, pyuk, Flash, Mozz, Blize - 25 June 2023
 
 ## Overview
 Causes the object to fling Link great distances with relative ease.
@@ -27,14 +28,6 @@ Recall Method: Stand on a Battery and use Recall and stay as you would for Hydro
 Can also be done with cooking pots and rocks too, but they don't give a lot of vertical height.
 
 Uses Recall, but anything that freezes time works too.
-
-## Credit
-NX721, pyuk, Flash, Mozz, Blize
-
-## Date
-25 June 2023
-
-## Resources
 - [Youtube](https://www.youtube.com/watch?v=y_N5LEYQGfc)
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1123282233248194660)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1122982965459288084)

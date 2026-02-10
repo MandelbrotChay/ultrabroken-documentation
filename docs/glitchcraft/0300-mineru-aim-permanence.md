@@ -21,12 +21,6 @@ The Construct will stick around despite the other sage avatars going away
 ## Notes
 —
 
-## Credit
-—
-
-## Date
-—
-
 ## Resources
 - [Youtube](https://www.youtube.com/shorts/LnB58_FgDFM)
 

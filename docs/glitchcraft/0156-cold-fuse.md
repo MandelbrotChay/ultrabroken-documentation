@@ -3,6 +3,7 @@ title: "Cold Fuse"
 ---
 
 # Cold Fuse
+pyuk, Ryan?, Zas - 23 July 2023
 
 ## Overview
 Interrupting a fuse causes null fe without destroying the connection to the weapon/shield.
@@ -29,14 +30,6 @@ Cold fusing a fuse entangled object causes it to be visually fused in the overwo
 Shield packing:
 Combining pseudo fuse with purgatory items allows you to store multiple objects in a single weapon or shield and spawn them into the overworld by using detenglement.
 Discord (mulberry)
-
-## Credit
-pyuk, Ryan?, Zas
-
-## Date
-23 July 2023
-
-## Resources
 - [Twitter](https://fxtwitter.com/FBuffalo3/status/1683255977758584832)
 
 ## See also

@@ -3,6 +3,7 @@ title: "Like-Like Smuggle Desync"
 ---
 
 # Like-Like Smuggle Desync `LSD`
+Mozz - 15 June 2023
 
 ## Overview
 Allows for desync and consequently, WST via slugging.
@@ -15,14 +16,6 @@ Allows for desync and consequently, WST via slugging.
 
 ## Notes
 —
-
-## Credit
-Mozz
-
-## Date
-15 June 2023
-
-## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1118373368115232788)
 
 ## See also

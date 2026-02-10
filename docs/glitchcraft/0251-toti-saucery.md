@@ -3,6 +3,7 @@ title: "Toti Saucery"
 ---
 
 # Toti Saucery
+Toti Sauce, Anti-grav discovered by Toti Sauce and Telkic - 17 August 2024
 
 ## Overview
 FSFEing an undiscovered item can cause several effects
@@ -23,14 +24,6 @@ For more details, check the next row (not done yet, work in progress).
 
 ## Notes
 —
-
-## Credit
-Toti Sauce, Anti-grav discovered by Toti Sauce and Telkic
-
-## Date
-17 August 2024
-
-## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1274344241845375078)
 
 ## See also

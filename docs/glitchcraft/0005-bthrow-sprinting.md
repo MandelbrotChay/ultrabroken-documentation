@@ -3,6 +3,7 @@ title: "BThrow Sprinting"
 ---
 
 # BThrow Sprinting
+12 May 2023
 
 ## Overview
 —
@@ -13,15 +14,6 @@ Press B - ZR - R - B (or B - R - ZR - B) and repeat
 
 ## Notes
 —
-
-## Credit
-
-—
-
-## Date
-12 May 2023
-
-## Resources
 - [Youtube](https://youtu.be/Mb8rgAwELYY)
 
 ## See also

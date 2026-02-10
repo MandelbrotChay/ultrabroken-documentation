@@ -22,13 +22,6 @@ Can also be performed using the steps in "Unload WST", a better method
 ## Notes
 Causes WST. Only transfers durability and fused material on 1.0.0, same as WST.
 
-## Credit
-
-—
-
-## Date
-—
-
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1108141837954330686/1108826680052686989)
 - [Discord](https://discord.com/channels/1086729144307564648/1108141837954330686/1109068615724048444)

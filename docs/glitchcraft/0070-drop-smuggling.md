@@ -3,6 +3,7 @@ title: "Drop Smuggling"
 ---
 
 # Drop Smuggling
+LegendofLinkk - 31 May 2023
 
 ## Overview
 Trick the game into thinking a weapon is both dropped and equiped at the same time, leading to strange behaviors.
@@ -17,14 +18,6 @@ Trick the game into thinking a weapon is both dropped and equiped at the same ti
 
 ## Notes
 The weapons hitbox remains constantly active, while being maintained at Links feet. This allows for the overlapping of the weapons hitbox with an objects, and propels the object in strange ways.
-
-## Credit
-LegendofLinkk
-
-## Date
-31 May 2023
-
-## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1113354666961535007)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1113456847668645968)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1113469513011310716)
