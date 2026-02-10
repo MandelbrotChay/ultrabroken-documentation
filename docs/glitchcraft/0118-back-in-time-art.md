@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Back-in-Time Art"
 ---
 
@@ -9,30 +9,24 @@ title: "Back-in-Time Art"
 Transfers the picture in Link's House to a previous save. Is also capable of transferring compendium pictures.
 
 ## Instructions
-Picture in Link's house:
+Picture in Link's house (R4000):
+
 1. Change the painting in Link's house to a different painting
 2. Load a file with a different painting
 
-Compendium pictures:
+Compendium pictures (Zas):
+
 1. Take a picture of an existing compendium entry
 2. Load your destination file
 
 ## Notes
-Picture in Link's house
-
-June 18, 2023
-
-Compendium pictures
-
-Zas
-
-August 16, 2023
+—
 
 ## Credit
-Picture in Link's house R4000, Compendium pictures Zas
+R4000, Zas
 
 ## Date
-June 18, 2023
+June 18, 2023; August 16, 2023
 
 ## Resources
 - [Youtube](https://www.youtube.com/watch?v=DWA_cTNykyo)
