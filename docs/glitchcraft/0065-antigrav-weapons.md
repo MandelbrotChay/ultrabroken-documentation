@@ -9,9 +9,11 @@ Puts weapons in an "Anti Gravity" state.
 
 ## Instructions
 1.0.0-1.1.2 Setup:
+
 1. Throw a weapon at the same time Link drops it.
 
 1.2 - 1.2.1 Setup:
+
 1. Equip the Lightning Helm
 2. Stand next to an active shock emitter
 3. Hold R to prepare a throwable weapon for throwing

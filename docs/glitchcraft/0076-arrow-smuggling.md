@@ -8,6 +8,7 @@ title: "Arrow Smuggling"
 A type of equipment smuggle that makes Link hold an arrow without pulling out his bow.
 
 ## Instructions
+
 1. Keep your bow sheathed and go through the steps of shock smuggling.
 2. Press ZR (to begin pulling out your bow) and + just before getting shocked. 
 3. Drop your equipped bow from the pause menu, and unpause.

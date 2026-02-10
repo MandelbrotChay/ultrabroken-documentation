@@ -8,6 +8,7 @@ title: "Display Master Sword"
 Allows you to display the master sword, damaged master sword or MsgNotFound in a weapon display
 
 ## Instructions
+
 1. Zuggle Overload.
 2. Recall in front of a weapon display.
 3. Equip the master sword or MsgNotFound.

@@ -9,19 +9,23 @@ Using  guardless active shield or throwless storage on a hydrant shield (FED to 
 
 ## Instructions
 Method 1:  
+
 1. FE a hydrant
 2. Fuse hydrant to a weapon (or shield, it's slower)
 3. Perform guardless active shield
 
 Method 2:
+
 1. Perform throwless storage
 2. Equip a weapon with a hydrant fused to it
 
 Method 3:
+
 1. Throw a hydro weapon and activate recall before it hits something (must be equipped fresh from the inventory)
 2. wait 15-20 seconds
 
 There are a couple of ways to clip with hydro clipping, the most practial methods are:
+
 1. Activate recall
 2. Wait 15 seconds
 3. Shieldjump against a wall
@@ -31,6 +35,7 @@ There are a couple of ways to clip with hydro clipping, the most practial method
 3. Mount a steering stick (this clips you through the floor instead through walls)
 
 There are other ways of clipping with hydro:
+
 - Flurry rushes 
 - Mounting a horse
 - Crouching (only works inside shrines)

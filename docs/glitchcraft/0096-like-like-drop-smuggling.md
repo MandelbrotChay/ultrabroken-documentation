@@ -10,10 +10,12 @@ Allows for Drop Smuggling via slugging
 ## Instructions
 Method 1 (works 1.0.0-1.1.2):
 Note: This method only works with weapons
+
 1. Sluggle and drop the equipped sluggled weapon, then equip another weapon
 2. Throw the weapon
 
 Method 2 (works 1.0.0-1.2.1):
+
 1. Stand near a shock emitter or an ice chuchu jelly in front of a like like
 2. Pause a few frames before Link gets eaten by a like like
 3. Drop an item and swap to the target item of the same type, then unpause

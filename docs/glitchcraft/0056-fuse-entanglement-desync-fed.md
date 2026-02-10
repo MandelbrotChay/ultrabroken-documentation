@@ -9,6 +9,7 @@ Allows you to transfer the fuse and durability from one weapon to another. You c
 
 ## Instructions
 Needed: Target item, donor item and extra shield (2 extras if weapon/bow).
+
 1. Drop donor and target items on ground
 2. Equip unfused shield
 3. Fuse entangle target item to shield
@@ -21,7 +22,8 @@ Needed: Target item, donor item and extra shield (2 extras if weapon/bow).
    - Shields: Pickup fuse entangled shield.
 7. Pickup donor item (WST)
 8. Drop equipped item to transmute / dupe the donor item OR Resync to keep the WST item
-(9. Unfuse your shield at Tarrey Town to get a modifier-less copy of the target)
+
+Unfuse your shield at Tarrey Town to get a modifier-less copy of the target
 
 ## Notes
 Weapon State Transfer

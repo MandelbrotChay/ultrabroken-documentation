@@ -8,6 +8,7 @@ title: "Like-Like Smuggle Desync"
 Allows for desync and consequently, WST via slugging.
 
 ## Instructions
+
 1. Sluggle the target item
 2. Unload the like like by warping or by going far enough away
 

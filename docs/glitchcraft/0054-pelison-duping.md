@@ -8,6 +8,7 @@ title: "Pelison Duping"
 Duplicate weapons using Pelison to remove them from an entangled shield.
 
 ## Instructions
+
 0. For duping bows and swords, have nothing equipped there.
 1. FE the target item onto a shield.
 2. If the target is a shield drop the fused shield.

@@ -8,6 +8,7 @@ title: "Smuggle Stacking Zuggle"
 Allows to zuggle bows and shields in version 1.1.2. Weapon zuggle on 1.1.2 is a little bit more complicated. Check the next glitch (FEZ) for that.
 
 ## Instructions
+
 1. Perform an equipment smuggle with either a bow or shield.
 2. Hold L to open the rune menu and upon letting go of L, hold either D-Pad Left (for shields) or D-Pad Right + ZR (for bows), to open the quick menu.
 3. Equip another shield or bow from the quick menu.

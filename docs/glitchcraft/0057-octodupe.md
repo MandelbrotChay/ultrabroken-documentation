@@ -8,6 +8,7 @@ title: "Octodupe"
 Allows for the duplication of items sucked up by a rock octorok.
 
 ## Instructions
+
 1. Drop an item on the ground for it to be sucked up by an octorok.
 2. When it is almost swallowed up by the octorok, use recall on the item.
 3. Pick up the item before the octorok shoots it out.

@@ -8,6 +8,7 @@ title: "Ghost Stick Clipping"
 Allows Link to clip through walls by stepping onto a steering stick during ABCS.
 
 ## Instructions
+
 1. Create an autobuild of two steering sticks (one in front of the other diagonally, rotated 45 degrees). 
 2. Make sure the steering sticks don't pick up the real objects and perform ABCS.
 3. Hop onto the steering sticks near a wall while walking towards them.

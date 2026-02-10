@@ -9,11 +9,13 @@ Allows for zuggling via slugging
 
 ## Instructions
 Method 1 (works 1.0.0-1.1.2):
+
 1. Sluggle and drop the equipped sluggled item, then equip another item of the same type
 2. Zuggle by dropping the item you swapped to (see notes for 1.1.2)
 3. Retrieve the item from the like like
 
 Method 2 (works 1.2.0-1.2.1)
+
 1. Prepare a portacull shield/weapon
 2. Sluggle the target item
 3. Put Link's back against a wall and drop the item while unsheathed (do this twice if slugging with zuggle overload)

@@ -9,10 +9,12 @@ Allows for Equipment Smuggling via slugging.
 
 ## Instructions
 Method 1 (works 1.0.0-1.1.2):
+
 1. Sluggle and drop the equipped sluggled item
 2. Retrieve the equipment from the like like
 
 Method 2 (works 1.0.0-1.2.1):
+
 1. Stand near a shock emitter or an ice chuchu jelly in front of a like like
 2. Unsheathe the target item
 3. Drop the target item a few frames before Link gets eaten by the like like

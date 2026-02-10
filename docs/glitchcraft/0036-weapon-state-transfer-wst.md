@@ -27,7 +27,6 @@ Setup:
 3. Scope, aim with bow, use camera, or face Link away from the wall.
 4. Parry once for weapons, twice for bows/shields .
 5. Open inventory, equip:
-
     - The long stick, if target is a weapon
     - The old wooden bow,  if target is a bow
     - The other shield, if target is a shield
@@ -60,7 +59,7 @@ May 19, 2023
 
 ## Examples
 
-- [this outlines the old method. new method works better, but has the same results.](https://www.youtube.com/watch?v=NRZpPp1vVsQ.)
+- [Youtube](https://www.youtube.com/watch?v=NRZpPp1vVsQ.)
 
 ## Resources
 

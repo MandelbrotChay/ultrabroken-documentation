@@ -8,6 +8,7 @@ title: "Modifier ONLY Transfer"
 Allows you to transfer only the modifier, but only works on weapons.
 
 ## Instructions
+
 1. Unload WST and make a Master Sword with the desired modifier, do NOT resync
 2. Mount the held weapon, save and reload, you will see a new Master Sword in your inventory
 3. Make an empty space in your weapons tab and pick up the modified Master Sword from the mount

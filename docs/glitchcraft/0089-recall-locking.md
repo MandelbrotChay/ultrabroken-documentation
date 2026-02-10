@@ -8,6 +8,7 @@ title: "Recall Locking"
 Completely locks objects in place by recalling it before zlotting it
 
 ## Instructions
+
 1. Fuse entangle the target object
 2. Zuggle the shield/weapon you fed it to
 3. recall the object
@@ -15,7 +16,6 @@ Completely locks objects in place by recalling it before zlotting it
 
 ## Notes
 Recall locking a thrown sword and fusing it to a shield causes it to do permanent damage.
-https://discord.com/channels/1086729144307564648/1113557914444111873/1194982242565496895 (ock)
 
 ## Credit
 Ryan?
@@ -29,7 +29,7 @@ June 11, 2023
 
 ## Examples
 
-—
+[Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1194982242565496895)
 
 ## Resources
 
