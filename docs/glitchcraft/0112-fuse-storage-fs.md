@@ -6,7 +6,7 @@ title: "Fuse Storage"
 `1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
-Fusing an item on the same frame that it culls interrupts the fuse. It will continue as soon as the item unculls, but can lead to FE or cold fuse by interrupting the fusion process in a specific way
+Fusing an item on the same frame that it culls interrupts the fuse. It will continue as soon as the item unculls, but can lead to FE or cold fuse by interrupting the fusion process in a specific way.
 
 ## Instructions
 —
