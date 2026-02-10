@@ -1,4 +1,4 @@
-﻿---
+---
 title: "GAS Launching"
 ---
 
@@ -9,22 +9,23 @@ title: "GAS Launching"
 Causes the object to fling Link great distances with relative ease.
 
 ## Instructions
-(Uses Recall, but anything that freezes time works too.)
 1. Spawn in a fan and fuse it to your shield.
 2. Perform GAS using any method available.
 3. Either spawn in a small Zonai device or use any relatively small object that Link can stand on top of.
 4. Use Recall and wait for a period of time (10 seconds or so).
 5. Exit recall.
 
-If done properly, Link will be sent flying off in the opposite direction of wherever the fan was pushing the object to.
-
 ## Notes
 Previously known as Ascend Launching.
 
-Ascending also works if Link picks up a Big Battery or Rock and Ascends into it. The trajectory of where Link launches depends on how long the user waits to exit ascend. It's also possible to continue launching further into the air if a Hover Stone is activated in midair to keep yourself grounded to perform it again (refer to 2nd example video).
+If done correctly, Link will be sent flying off in the opposite direction of wherever the fan was pushing the object to.
 
-Recall Method: Stand on a Battery (example) and use Recall and stay as you would for Hydro Clipping for a boost. Batteries work best. Please see Blize's video for more info.
+Ascending also works if Link picks up a Big Battery or Rock and Ascends into it. The trajectory of where Link launches depends on how long the user waits to exit ascend. It's also possible to continue launching further into the air if a Hover Stone is activated in midair to keep yourself grounded to perform it again.
+
+Recall Method: Stand on a Battery and use Recall and stay as you would for Hydro Clipping for a boost. Batteries work best. Please see Blize's video for more info.
 Can also be done with cooking pots and rocks too, but they don't give a lot of vertical height.
+
+Uses Recall, but anything that freezes time works too.
 
 ## Credit
 NX721, pyuk, Flash, Mozz, Blize
@@ -39,7 +40,7 @@ June 25, 2023
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1122726452702494790)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1122714860199870506)
 - [Discord](https://discordapp.com/channels/1086729144307564648/1105598687167664239/1149978844573487156)
-- [Tutorial by Blize (ty)](https://www.youtube.com/watch?v=4oxjOE0onxI)
+- [Tutorial by Blize](https://www.youtube.com/watch?v=4oxjOE0onxI)
 
 ## See also
 - Guardless Active Shield
