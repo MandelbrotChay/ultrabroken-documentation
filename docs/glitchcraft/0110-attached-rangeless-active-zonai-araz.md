@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Attached Rangeless Active Zonai"
 ---
 
@@ -24,6 +24,7 @@ To remove the range constraints, you must ZLOT both the zonai device and the shi
 9. Now you can activate the zonai device from any distance.
 
 ARAZ (Second Method)
+
 1. Zuggle a shield onto your back and fuse a Zonai Device on it
 2. Drop the shields and pickup the shield with no fused visible item on it
 3. Activate GAS
