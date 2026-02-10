@@ -30,7 +30,7 @@ Having a like like steal the throken weapon from Link allows it to be picked up 
 Aergyl, mulberry
 
 ## Date
-May 20, 2025
+20 May 2025
 
 ## Resources
 - [Discord](https://discordapp.com/channels/1086729144307564648/1110956205624532993/1374335275064623104)

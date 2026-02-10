@@ -22,7 +22,7 @@ DO NOT UNLOCK THE WHEEL
 mulberry, Yee
 
 ## Date
-June 6, 2024
+6 June 2024
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1248306185472442480)

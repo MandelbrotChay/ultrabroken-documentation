@@ -29,7 +29,7 @@ By going into the room of the secret stone in Lightning Temple, going up and dow
 ock, mulberry for the 1.0-1.1.2 method
 
 ## Date
-May 29, 2024
+29 May 2024
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1245447960658051184)

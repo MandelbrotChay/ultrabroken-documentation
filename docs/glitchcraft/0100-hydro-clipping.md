@@ -48,7 +48,7 @@ There are other ways of clipping with hydro:
 Simonfirefighter, Maxmasher (Flurry rush method), KnightPohtaytoh (Crouch method), pyuk (throw method)
 
 ## Date
-June 15, 2023
+15 June 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1119154364251131924)

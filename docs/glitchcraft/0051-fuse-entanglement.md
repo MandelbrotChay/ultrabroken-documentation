@@ -45,7 +45,7 @@ Recall a thrown object (needs to by thrown by an enemy), then fuse it
 Physioninja
 
 ## Date
-May 24, 2023
+24 May 2023
 
 ## Resources
 - [Youtube](https://www.youtube.com/watch?v=NdNGn2JYLrI)

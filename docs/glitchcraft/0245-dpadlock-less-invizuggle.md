@@ -40,7 +40,7 @@ If you want to zlot an item with invizuggle, you can do the following:
 Discovered by mulberry, optimized by blackmars, mulberry, NghtmaR3 (order is alphabetically)
 
 ## Date
-July 17, 2024
+17 July 2024
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1262927638683582505)

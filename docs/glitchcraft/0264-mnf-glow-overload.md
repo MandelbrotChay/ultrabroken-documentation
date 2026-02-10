@@ -21,7 +21,7 @@ Also works in other locations with gloom hands nearby
 Toti Sauce
 
 ## Date
-January 3, 2025
+3 January 2025
 
 ## Resources
 - [Discord](https://discordapp.com/channels/1086729144307564648/1105598687167664239/1324766216266453096)

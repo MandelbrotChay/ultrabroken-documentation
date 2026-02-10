@@ -19,7 +19,7 @@ Allows you to flury rush after ascending
 R4000
 
 ## Date
-June 15, 2023
+15 June 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1119057121611362317)

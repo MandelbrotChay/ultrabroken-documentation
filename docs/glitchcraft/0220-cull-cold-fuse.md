@@ -28,7 +28,7 @@ steps 8-9 are not required on 1.0.0
 mulberry
 
 ## Date
-February 1, 2024
+1 February 2024
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1202784179574677554)

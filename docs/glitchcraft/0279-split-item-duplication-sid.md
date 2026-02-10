@@ -23,7 +23,7 @@ Allows you to dupe materials through Stack Splitting
 Telkic, mulberry, Winnerboi77
 
 ## Date
-June 19, 2025
+19 June 2025
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1221545645844725760/1385097896575373412)

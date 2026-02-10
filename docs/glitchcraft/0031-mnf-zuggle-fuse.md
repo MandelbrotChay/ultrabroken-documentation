@@ -25,7 +25,7 @@ Can also be done with other weapons and already fused weapons. This just replace
 Zvleon
 
 ## Date
-May 18, 2023
+18 May 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1108141837954330686/1108621041527427144)

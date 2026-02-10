@@ -19,7 +19,7 @@ Shield surf against a slope
 Mozz
 
 ## Date
-September 22, 2023
+22 September 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598254198050947/1154554443644293171)

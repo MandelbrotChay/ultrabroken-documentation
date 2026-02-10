@@ -22,7 +22,7 @@ Dropping an unloaded piece of equipment drops a smuggle instead (if Link has one
 PetitFrapo
 
 ## Date
-December 18, 2024
+18 December 2024
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1318712104361922664)

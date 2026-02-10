@@ -35,7 +35,7 @@ You know you get regular FE if Recall is auto-cancelled when you Recall the FE c
 mulberry
 
 ## Date
-May 26, 2025
+26 May 2025
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1376489712146976839)

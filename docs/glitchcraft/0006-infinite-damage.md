@@ -18,7 +18,7 @@ Todo: Replicate in TotK, test in BotW.
 [GamSla341](https://www.youtube.com/@gamsla3413)
 
 ## Date
-May 13, 2023
+13 May 2023
 
 ## Resources
 - [Youtube](https://youtu.be/Q1aWa0Kg-8Y)

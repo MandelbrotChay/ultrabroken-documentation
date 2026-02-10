@@ -24,7 +24,7 @@ On 1.2.0 and 1.2.1, equipping an item of the same type as a smuggle causes the s
 sleepyppls, Mozz, mulberry, NaN Gogh
 
 ## Date
-June 1, 2023
+1 June 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1113917918422511776)

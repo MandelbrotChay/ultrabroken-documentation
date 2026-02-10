@@ -18,7 +18,7 @@ Impact triggered items can still go off if hit by an explosion. For Bomb Flowers
 Arfix, brought up by Moonrise
 
 ## Date
-June 18, 2023; August 8, 2023
+18 June 2023; 8 August 2023
 
 ## Resources
 —

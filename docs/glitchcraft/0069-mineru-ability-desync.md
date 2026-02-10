@@ -21,7 +21,7 @@ To do: test on other versions and with more emitters Seems similar to ARAZ
 Sillicat
 
 ## Date
-May 30, 2023
+30 May 2023
 
 ## Resources
 - [Twitter](https://twitter.com/SilicatYT/status/1663658677302353920)

@@ -21,7 +21,7 @@ And one black layer that shows the base model
 NX721
 
 ## Date
-December 4, 2023
+4 December 2023
 
 ## Resources
 - [Twitter](https://x.com/NX721_/status/1731784487636443229?s=20)

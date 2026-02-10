@@ -19,7 +19,7 @@ TODO: Test other forms of culling
 mulberry
 
 ## Date
-February 15, 2024
+15 February 2024
 
 ## Resources
 - [Discord](https://discordapp.com/channels/1086729144307564648/1105598687167664239/1340344666331021322)

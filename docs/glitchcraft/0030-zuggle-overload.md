@@ -23,7 +23,7 @@ Sizes:
 Zvleon
 
 ## Date
-May 17, 2023
+17 May 2023
 
 ## Resources
 —

@@ -41,7 +41,7 @@ Can be kept permanently active via GAS and can be zuggled for transferring/other
 Ryan?, NX721
 
 ## Date
-June 16, 2023; July 15, 2023
+16 June 2023; 15 July 2023
 
 ## Resources
 —

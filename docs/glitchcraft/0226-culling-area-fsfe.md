@@ -34,7 +34,7 @@ https://discord.com/channels/1086729144307564648/1113557914444111873/12176889338
 mulberry, Yee, Zas
 
 ## Date
-February 25, 2024
+25 February 2024
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1211151054633172993)

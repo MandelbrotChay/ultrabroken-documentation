@@ -21,7 +21,7 @@ how was this not found
 NX721
 
 ## Date
-July 3, 2023
+3 July 2023
 
 ## Resources
 - [Twitter](https://twitter.com/NX721_/status/1681732748476596344)

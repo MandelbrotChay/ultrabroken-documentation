@@ -30,7 +30,7 @@ Can be achieved via Fuse Entanglement Drop Smuggling either a shield or a weapon
 venaticus
 
 ## Date
-June 12, 2023
+12 June 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1110956205624532993/1118279347325894746)

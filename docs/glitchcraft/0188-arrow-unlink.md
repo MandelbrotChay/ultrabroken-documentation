@@ -21,7 +21,7 @@ it is very inconsistent and is still being tested
 R4000
 
 ## Date
-October 26, 2023
+26 October 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1167228288834486362)

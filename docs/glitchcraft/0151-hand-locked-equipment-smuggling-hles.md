@@ -23,7 +23,7 @@ Hand locked smuggling can also be performed using runes, two handed weapon and h
 Aeolian
 
 ## Date
-July 11, 2023
+11 July 2023
 
 ## Resources
 —

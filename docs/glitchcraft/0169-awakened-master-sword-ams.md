@@ -24,7 +24,7 @@ Requires the crisis at Hyrule castle quest to be unfinished
 tahatanogame
 
 ## Date
-September 4, 2023
+4 September 2023
 
 ## Resources
 - [Youtube](https://www.youtube.com/watch?v=HfvNF_1lZW0&t)

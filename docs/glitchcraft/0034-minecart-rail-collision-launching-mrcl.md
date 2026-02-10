@@ -18,7 +18,7 @@ Still needs to be experimented with more.
 そら-さん
 
 ## Date
-May 18, 2023
+18 May 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1108547906698485852)

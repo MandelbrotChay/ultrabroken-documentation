@@ -28,7 +28,7 @@ Update this entry
 Mozz
 
 ## Date
-June 4, 2023
+4 June 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1114958560430919830)

@@ -41,7 +41,7 @@ This can be combined with mastersword liberation to drop the dms/ms
 Zas
 
 ## Date
-November 6, 2023
+6 November 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1171061365667020821)

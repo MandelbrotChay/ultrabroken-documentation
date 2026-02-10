@@ -20,7 +20,7 @@ Can do launches with Octo Balloons and pulling items towards the Like Like's loc
 Blackmars, R4000
 
 ## Date
-August 28, 2023
+28 August 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1145897049963892797)

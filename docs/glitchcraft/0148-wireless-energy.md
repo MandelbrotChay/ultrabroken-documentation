@@ -20,7 +20,7 @@ Creates a wireless connection to a culled battery. By attaching a dragon part to
 NaN Gogh
 
 ## Date
-July 11, 2023
+11 July 2023
 
 ## Resources
 - [Twitter](https://vxtwitter.com/_nan_gogh/status/1678848829259382786?s=46)

@@ -23,7 +23,7 @@ Y and exit must be pressed on the same frame.
 Zas, kurocat471
 
 ## Date
-May 21, 2023
+21 May 2023
 
 ## Resources
 - [Twitter](https://twitter.com/zasoot/status/1660458317934915584)

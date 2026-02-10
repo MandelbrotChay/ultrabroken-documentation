@@ -28,7 +28,7 @@ May 21, 2023(?)
 —
 
 ## Date
-May 21, 2023
+21 May 2023
 
 ## Resources
 - [YouTube](https://youtu.be/c9TDP4qdAUY)

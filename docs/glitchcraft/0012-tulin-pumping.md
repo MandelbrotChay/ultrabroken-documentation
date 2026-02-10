@@ -18,7 +18,7 @@ Jump off a ledge and activate Tulin's ability, then close glider and reopen it f
 Ikkitrix
 
 ## Date
-May 14, 2023
+14 May 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1107527341971886230)

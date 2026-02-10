@@ -39,7 +39,7 @@ There is a different setup for zuggling portacull equipment:
 mulberry, MandelbrotChaylay
 
 ## Date
-August 11, 2025
+11 August 2025
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1404450104525459546)

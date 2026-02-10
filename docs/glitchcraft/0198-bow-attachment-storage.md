@@ -34,7 +34,7 @@ A variant of this glitch can be done using zuggle overload (has been known for a
 WinnerBoi77
 
 ## Date
-December 3, 2023
+3 December 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1109838351596527726/1180879489094393866)

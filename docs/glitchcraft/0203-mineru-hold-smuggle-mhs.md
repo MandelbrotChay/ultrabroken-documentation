@@ -20,7 +20,7 @@ Can duplicate items. Also see ISLT, 218 on how to transfer items through saves.
 Winnerboi77
 
 ## Date
-December 20, 2023
+20 December 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1187101909446832190)

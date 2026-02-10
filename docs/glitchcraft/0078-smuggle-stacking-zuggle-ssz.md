@@ -24,7 +24,7 @@ Loading a previous save will transfer a stacked bow/shield to that save. Effecti
 BigDUCCO, LegendofLink, Mozz
 
 ## Date
-June 6, 2023
+6 June 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1115360099981086743)

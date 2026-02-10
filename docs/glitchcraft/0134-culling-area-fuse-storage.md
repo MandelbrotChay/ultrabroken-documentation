@@ -18,7 +18,7 @@ A method of Fuse Storage using Area Culling
 Mozz, pyuk
 
 ## Date
-June 30, 2023
+30 June 2023
 
 ## Resources
 —

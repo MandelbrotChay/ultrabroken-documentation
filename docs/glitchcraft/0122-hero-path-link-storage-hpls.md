@@ -20,7 +20,7 @@ Persists through file loads and warps but opening the hero path or return to tit
 Lightos_
 
 ## Date
-June 20, 2023
+20 June 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1120781144976261210)

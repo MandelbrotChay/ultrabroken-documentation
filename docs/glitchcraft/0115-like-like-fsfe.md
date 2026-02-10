@@ -21,7 +21,7 @@ For performing this on 1.2.1, you will need to have your target item auto FE'd t
 Ryan?, Mozz
 
 ## Date
-June 18, 2023
+18 June 2023
 
 ## Resources
 —

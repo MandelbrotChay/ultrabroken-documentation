@@ -20,7 +20,7 @@ It is not yet understood what causes this glitch.
 Yee
 
 ## Date
-April 22, 2025
+22 April 2025
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1109838351596527726/1364232293140402196)

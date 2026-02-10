@@ -21,7 +21,7 @@ This can be done with a spring, making the entire trick much more portable
 こんそめ
 
 ## Date
-May 16, 2023
+16 May 2023
 
 ## Resources
 - [Twitter](https://vxtwitter.com/tsu509359170830/status/1657767717796208640?s=20)

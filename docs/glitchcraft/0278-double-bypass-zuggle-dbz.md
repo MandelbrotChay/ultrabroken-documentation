@@ -29,7 +29,7 @@ There are variations of this setup that don't require a load, using a specific w
 mulberry, dt13269 for making the culling logger which allowed for the discovery of the drop swap culling bypass frame in the menu
 
 ## Date
-June 16, 2025
+16 June 2025
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1110956205624532993/1383991495123796030)

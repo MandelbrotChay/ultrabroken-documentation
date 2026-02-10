@@ -62,7 +62,7 @@ Add Method 5
 ock, Yee
 
 ## Date
-January 3, 2024
+3 January 2024
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1192403098753310770)

@@ -24,7 +24,7 @@ Allows for full fuse entanglement by combining portable culling with the mechani
 mulberry
 
 ## Date
-July 23, 2024
+23 July 2024
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1265367839997693993)

@@ -24,7 +24,7 @@ It's also possible to perform Wall-less Zuggling without the map, by performing 
 NicNac, Flash, BigDUCCO, Wip long sticks enjoyer
 
 ## Date
-May 23, 2023
+23 May 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1110699150602928209)

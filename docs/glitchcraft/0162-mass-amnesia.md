@@ -31,7 +31,7 @@ Known means to revert object with Mass Amnesia back to normal:
 NaN Gogh
 
 ## Date
-August 2, 2023
+2 August 2023
 
 ## Resources
 - [Twitter](https://twitter.com/_nan_gogh/status/1686427149786370055?s=20)

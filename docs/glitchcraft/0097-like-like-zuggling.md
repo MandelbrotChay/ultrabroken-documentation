@@ -46,7 +46,7 @@ For zuggling weapons on 1.1.2:
 NaN Gogh, Ryan?, Blackmars
 
 ## Date
-June 15, 2023
+15 June 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1118709904614629427)

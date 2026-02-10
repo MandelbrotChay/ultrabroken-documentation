@@ -24,7 +24,7 @@ Possible to perform on 1.1.2 with force swap on step 5
 mulberry
 
 ## Date
-May 19, 2025
+19 May 2025
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1110956205624532993/1374059568686174219)

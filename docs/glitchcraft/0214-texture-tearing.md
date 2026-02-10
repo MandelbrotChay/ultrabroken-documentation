@@ -22,7 +22,7 @@ The exact cause of texture tearing remains unknown and there are no well defined
 ock
 
 ## Date
-January 13, 2024
+13 January 2024
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1194033039123165215/1195690499852480544)

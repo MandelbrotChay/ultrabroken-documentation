@@ -37,7 +37,7 @@ For dynamic purgatory without zuggling, omit step 5 for the first method and ste
 mulberry
 
 ## Date
-February 14, 2025
+14 February 2025
 
 ## Resources
 - [Discord](https://discordapp.com/channels/1086729144307564648/1105598687167664239/1340135268706942986)

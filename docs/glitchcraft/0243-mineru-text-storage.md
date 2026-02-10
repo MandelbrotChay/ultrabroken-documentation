@@ -22,7 +22,7 @@ Only tested on 1.0.0, probably works on all versions
 CM30
 
 ## Date
-July 11, 2024
+11 July 2024
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1128894970653327401/1261062222306869268)

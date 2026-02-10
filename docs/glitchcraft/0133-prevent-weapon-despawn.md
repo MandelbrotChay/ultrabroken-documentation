@@ -22,7 +22,7 @@ Best used in Eldin Cave Quest, experiment with different despawn flags.
 NX721
 
 ## Date
-June 28, 2023
+28 June 2023
 
 ## Resources
 - [Twitter](https://twitter.com/NX721_/status/1674217769267781633?s=20)

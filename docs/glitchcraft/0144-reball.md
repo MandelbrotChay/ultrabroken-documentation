@@ -20,7 +20,7 @@ Can be combined with arrow smuggle for momentum preservation.
 Mozz
 
 ## Date
-July 6, 2023
+6 July 2023
 
 ## Resources
 —

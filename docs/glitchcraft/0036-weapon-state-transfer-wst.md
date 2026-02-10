@@ -52,7 +52,7 @@ Depending on the bow you use (ex. Phrenic Bow), you'll still be able to perform 
 BigDUCCO, kurocat471, ElDuende, Mentor_Kurt
 
 ## Date
-May 19, 2023
+19 May 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1109319667673223189)

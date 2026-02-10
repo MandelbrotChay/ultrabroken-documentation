@@ -27,7 +27,7 @@ Allows you to do most things that zuggle overload can do, including mass equipme
 ock
 
 ## Date
-March 20, 2024
+20 March 2024
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1220145782162985000)

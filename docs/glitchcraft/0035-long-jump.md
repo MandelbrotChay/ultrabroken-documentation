@@ -18,7 +18,7 @@ While facing sideways (any angle that is more than or equal to 90 degrees from t
 Mozz
 
 ## Date
-May 18, 2023
+18 May 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1108911864710185041)

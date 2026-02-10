@@ -20,7 +20,7 @@ Gloom hands only work on 1.0.0 while phantom ganon works on all versions
 evilgabe
 
 ## Date
-August 2, 2023
+2 August 2023
 
 ## Resources
 - [Youtube](https://youtu.be/x71Zp-zBbEE)

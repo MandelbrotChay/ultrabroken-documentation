@@ -26,7 +26,7 @@ Two Fans fused at a 45 degree angle can be used to block the Dispenser, avoiding
 Mozz
 
 ## Date
-July 2, 2023
+2 July 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1125043115397484596)

@@ -27,7 +27,7 @@ May 28, 2023, June 16, 2023, & June 27, 2023
 1789(@W0ERYySQgZyGOY3), simonfirefighter, Maxmasher, Flash, acaepius
 
 ## Date
-May 28, 2023
+28 May 2023
 
 ## Resources
 - [Twitter](https://twitter.com/W0ERYySQgZyGOY3/status/1663062133939253250)

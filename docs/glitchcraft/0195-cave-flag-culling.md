@@ -29,7 +29,7 @@ Dropping from higher up makes the cull more consistent
 Ock, Aergyl
 
 ## Date
-November 24, 2023
+24 November 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1177719304347734027)

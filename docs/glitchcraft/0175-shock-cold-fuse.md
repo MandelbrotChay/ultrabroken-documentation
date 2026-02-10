@@ -20,7 +20,7 @@ Interrupting a fuse on the first possible frame with shock causes cold fusion
 Zas
 
 ## Date
-September 11, 2023
+11 September 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1150759871520710666)

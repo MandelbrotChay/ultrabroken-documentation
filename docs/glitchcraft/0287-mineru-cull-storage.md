@@ -19,7 +19,7 @@ Mineru Cull Storage SRZ neither requires frame–perfect pausing (like Mineru Di
 ofstrings2
 
 ## Date
-November 9, 2025
+9 November 2025
 
 ## Resources
 - [Discord](https://discord.com/channels/1111875355758837830/1247621060657025197/1438180015635304529)

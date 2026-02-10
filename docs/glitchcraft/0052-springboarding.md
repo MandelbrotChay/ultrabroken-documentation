@@ -21,7 +21,7 @@ Springboard Clipping
 Mozz
 
 ## Date
-May 24, 2023
+24 May 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1111100603683323964)

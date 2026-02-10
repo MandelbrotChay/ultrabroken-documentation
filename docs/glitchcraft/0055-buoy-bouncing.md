@@ -18,7 +18,7 @@ Initial velocity seems to play an effect when buoy bouncing, such as when fallin
 InAMuffinCup
 
 ## Date
-May 25, 2023
+25 May 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1106412847359082506/1111400160879194165)

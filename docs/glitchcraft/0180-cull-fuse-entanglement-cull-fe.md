@@ -27,7 +27,7 @@ Save your progress! This can lead to softlocking your game!
 ultrababouin, susannediazz, Ock, SteFen45
 
 ## Date
-September 21, 2023; October 10, 2023
+21 September 2023; 10 October 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1111875355758837830/1128775917376897145/1154541201765183558)

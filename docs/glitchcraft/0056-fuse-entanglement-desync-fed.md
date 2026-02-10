@@ -34,7 +34,7 @@ this does not wst on 1.0.0
 Physioninja
 
 ## Date
-May 26, 2023
+26 May 2023
 
 ## Resources
 - [Youtube](https://youtu.be/E3nDTPL6IdU)

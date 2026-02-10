@@ -30,7 +30,7 @@ By combining ghost SLOT with moobe and pseudo fuse, its possible to send fuse gh
 Aergyl
 
 ## Date
-March 8, 2024
+8 March 2024
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1215659672510668820)

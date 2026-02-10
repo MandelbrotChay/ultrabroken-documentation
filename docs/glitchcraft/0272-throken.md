@@ -20,7 +20,7 @@ Throken weapons have no despawn radius, and can never be unloaded from distance
 Ikaboze
 
 ## Date
-May 17, 2025
+17 May 2025
 
 ## Resources
 - [Discord](https://discordapp.com/channels/1086729144307564648/1113557914444111873/1373320909842288870)

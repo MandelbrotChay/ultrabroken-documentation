@@ -21,7 +21,7 @@ Allows for repeated boost from a midair rocket shield surf, making it a very goo
 Mozz, SmallAnt
 
 ## Date
-June 15, 2023
+15 June 2023
 
 ## Resources
 - [YouTube](https://youtu.be/10PdzT0eEl0)

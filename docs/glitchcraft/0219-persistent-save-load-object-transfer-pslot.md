@@ -25,7 +25,7 @@ PSLOT has a very long history of setups, some much more complex than others. The
 mulberry
 
 ## Date
-January 25, 2024
+25 January 2024
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1196561445031252051)

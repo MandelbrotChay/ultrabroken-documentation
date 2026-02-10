@@ -31,7 +31,7 @@ Uses Recall, but anything that freezes time works too.
 NX721, pyuk, Flash, Mozz, Blize
 
 ## Date
-June 25, 2023
+25 June 2023
 
 ## Resources
 - [Youtube](https://www.youtube.com/watch?v=y_N5LEYQGfc)

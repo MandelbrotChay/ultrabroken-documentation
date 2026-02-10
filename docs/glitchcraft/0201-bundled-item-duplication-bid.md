@@ -31,7 +31,7 @@ Discord (Lightos_)
 Ock
 
 ## Date
-December 12, 2023
+12 December 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1184150352174514308)

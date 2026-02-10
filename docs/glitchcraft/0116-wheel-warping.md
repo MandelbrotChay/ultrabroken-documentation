@@ -22,7 +22,7 @@ Shooting the arrows in the right angle and terrain, can cause the small wheel to
 Mozz, pyuk
 
 ## Date
-June 18, 2023
+18 June 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1110956205624532993/1119903350255796265)

@@ -20,7 +20,7 @@ SRC with tulin might be frame perfect
 Knight7108 and Candlelor
 
 ## Date
-May 28, 2023
+28 May 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1128385969620533329)

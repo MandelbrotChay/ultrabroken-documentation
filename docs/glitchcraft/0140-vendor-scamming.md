@@ -21,7 +21,7 @@ Easiest method of reaching max rupees.
 NX721, Mozz, NaN Gogh
 
 ## Date
-July 3, 2023
+3 July 2023
 
 ## Resources
 - [Twitter](https://twitter.com/NX721_/status/1675983600263778305)

@@ -37,7 +37,7 @@ Mastersword zuggle (Ock)
 Discovered by ock, optimized by mulberry, winnerboi
 
 ## Date
-May 31, 2024
+31 May 2024
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1246004390062587944)

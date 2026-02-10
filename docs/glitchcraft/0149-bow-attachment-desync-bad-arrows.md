@@ -30,7 +30,7 @@ On 1.1.0-1.1.2 only the last material is consumed.
 Zas, Aeolian
 
 ## Date
-July 11, 2023
+11 July 2023
 
 ## Resources
 - [Twitter](https://twitter.com/zasoot/status/1678779155310338053)

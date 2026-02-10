@@ -18,7 +18,7 @@ Tap B - ZR, repeat. Additional info: alternate tapping B then ZR. With a tempo o
 Steel
 
 ## Date
-May 14, 2023
+14 May 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1107529272500965406)

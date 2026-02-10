@@ -39,7 +39,7 @@ This MNF can be powered up further! See WST or Unload WST for the method
 LegendofLinkk (Zuggle Method), Abahbob (SLD Method)
 
 ## Date
-May 17, 2023
+17 May 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1108369158237859902)

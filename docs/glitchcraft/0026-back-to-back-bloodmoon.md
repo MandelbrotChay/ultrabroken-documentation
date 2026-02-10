@@ -18,7 +18,7 @@ A strange phenominon where blood moons occured back to back. Nothing has come of
 Lopitty
 
 ## Date
-May 17, 2023
+17 May 2023
 
 ## Resources
 - [YouTube](https://youtu.be/60mI9DLo_vw)

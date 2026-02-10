@@ -25,7 +25,7 @@ May 14, 2023; June 9, 2023
 kurocat471, Mety333
 
 ## Date
-May 14, 2023
+14 May 2023
 
 ## Resources
 - [YouTube](https://youtu.be/oIzJKQAWPdI)

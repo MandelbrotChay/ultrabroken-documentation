@@ -21,7 +21,7 @@ Texture Tearing
 Mozz
 
 ## Date
-January 11, 2024
+11 January 2024
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1194033039123165215/1195129250265694289)

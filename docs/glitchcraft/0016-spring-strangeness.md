@@ -23,7 +23,7 @@ Method 1 is reliablely strange, while Method 2 has only been performed once thus
 Orionsayshi (Method 1), Owen (Method 2)
 
 ## Date
-May 15, 2023
+15 May 2023
 
 ## Resources
 —

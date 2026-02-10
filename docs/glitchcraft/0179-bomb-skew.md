@@ -19,7 +19,7 @@ In similar fashion to skew from BOTW, this affects the direction a shield surf s
 Aergyl, FerrusCube, Mozz
 
 ## Date
-September 21, 2023
+21 September 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598254198050947/1154554443644293171)

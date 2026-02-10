@@ -27,7 +27,7 @@ Rockets can be used, however they will simply become deactivated and will have n
 evilgabe, NX721
 
 ## Date
-June 19, 2023
+19 June 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1120815854729306223)

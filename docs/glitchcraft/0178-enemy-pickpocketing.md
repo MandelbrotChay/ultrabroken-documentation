@@ -21,7 +21,7 @@ Lets you take weapons out of enemy's hands
 KAIDUDE64
 
 ## Date
-September 16, 2023
+16 September 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1152798657419157626)

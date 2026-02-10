@@ -18,7 +18,7 @@ Skip a playing memory during an animation.
 Mozz
 
 ## Date
-May 29, 2023
+29 May 2023
 
 ## Resources
 —

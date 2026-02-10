@@ -22,7 +22,7 @@ Can only be done with new items once. Must meet sorting requirements listed unde
 [Modoki_returns](https://twitter.com/Modoki_returns)
 
 ## Date
-May 12, 2023
+12 May 2023
 
 ## Resources
 - [Youtube](https://youtu.be/7_1fwTUz0A4)

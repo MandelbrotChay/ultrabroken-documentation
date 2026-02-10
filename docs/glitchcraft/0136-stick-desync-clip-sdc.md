@@ -31,7 +31,7 @@ Link can't cull if the base is equipped.
 NaN Gogh, DisguisedMoth
 
 ## Date
-July 1, 2023
+1 July 2023
 
 ## Resources
 - [Twitter](https://twitter.com/_nan_gogh/status/1675121229462642689?s=20)

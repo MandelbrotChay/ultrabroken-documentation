@@ -30,7 +30,7 @@ Test on more versions
 Yee, mulberry
 
 ## Date
-February 20, 2024
+20 February 2024
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1112801830821449798/1209443743581736980)

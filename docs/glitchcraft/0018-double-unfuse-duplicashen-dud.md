@@ -26,7 +26,7 @@ Stops working if cooked meals page is full
 Li Shen (鯉神)
 
 ## Date
-May 15, 2023
+15 May 2023
 
 ## Resources
 - [Bilibili](https://www.bilibili.com/video/BV19h4y147iR/)

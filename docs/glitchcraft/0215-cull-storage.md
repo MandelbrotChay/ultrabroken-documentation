@@ -31,7 +31,7 @@ Can also be done by recalling the SDC stick while standing outside of the cullin
 mulberry
 
 ## Date
-January 20, 2024
+20 January 2024
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1198393841464651807)

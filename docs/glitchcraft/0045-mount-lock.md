@@ -21,7 +21,7 @@ Grabbing the steering stick with Ultrahand after mount lock causes Link to disco
 Physioninja
 
 ## Date
-May 21, 2023
+21 May 2023
 
 ## Resources
 - [YouTube](https://youtu.be/_wEn2s1cD1M?si=hrw7SdJ8RT8TpZOh)

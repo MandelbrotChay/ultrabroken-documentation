@@ -20,7 +20,7 @@ Using the object clipping properties of Fuse Entanglement with a steering-stick 
 circyit
 
 ## Date
-June 16, 2023
+16 June 2023
 
 ## Resources
 - [Youtube](https://www.youtube.com/watch?v=WhKBIKQwZzc)

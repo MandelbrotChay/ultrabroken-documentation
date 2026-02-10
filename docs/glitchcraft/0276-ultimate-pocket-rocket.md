@@ -46,7 +46,7 @@ A pocket rocket which does not break on warps or drain energy cells, and has unl
 Aergyl, mulberry, Ikaboze, Jordan
 
 ## Date
-May 20, 2025
+20 May 2025
 
 ## Resources
 - [Discord](https://discordapp.com/channels/1086729144307564648/1110956205624532993/1374486971551973386)

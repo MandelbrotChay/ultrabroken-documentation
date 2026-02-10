@@ -22,7 +22,7 @@ For MsgNotFound you don't need to drop it out of recall
 Zas
 
 ## Date
-June 8, 2023
+8 June 2023
 
 ## Resources
 - [Twitter](https://twitter.com/zasbotw/status/1666751564743315456)

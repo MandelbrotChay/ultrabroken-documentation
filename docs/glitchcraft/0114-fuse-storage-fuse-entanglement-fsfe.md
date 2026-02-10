@@ -18,7 +18,7 @@ Unique methods of achieving Fuse Entanglement through Fuse Storage.
 Ryan?, Mozz
 
 ## Date
-June 18, 2023
+18 June 2023
 
 ## Resources
 —

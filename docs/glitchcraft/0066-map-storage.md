@@ -22,7 +22,7 @@ effects can range from softlocks to crashes
 blueberryoats
 
 ## Date
-May 29, 2023
+29 May 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1112660897891102740)

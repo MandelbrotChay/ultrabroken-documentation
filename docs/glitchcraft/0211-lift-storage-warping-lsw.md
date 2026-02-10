@@ -23,7 +23,7 @@ Test with like like stick culling
 mulberry
 
 ## Date
-January 8, 2024
+8 January 2024
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1194030076233257020)

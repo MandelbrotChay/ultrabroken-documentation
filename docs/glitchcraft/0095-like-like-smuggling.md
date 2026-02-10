@@ -27,7 +27,7 @@ Method 2 can also be executed with a chest if you open it right before Link gets
 Mozz, mulberry
 
 ## Date
-June 15, 2023
+15 June 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1118505594215743501)

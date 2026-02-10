@@ -20,7 +20,7 @@ This is just zuggling, but you drop your equipped weapon at the end, that being 
 Erling附身
 
 ## Date
-May 16, 2023
+16 May 2023
 
 ## Resources
 - [Bilibili](http://www.bilibili.com/video/BV1qT411t7Kv/)

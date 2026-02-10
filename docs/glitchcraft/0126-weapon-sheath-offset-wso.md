@@ -24,7 +24,7 @@ This works for ALL weapons not just the .
 circyit, dash
 
 ## Date
-June 25, 2023
+25 June 2023
 
 ## Resources
 - [Youtube](https://www.youtube.com/watch?v=E9yKzddgre4)

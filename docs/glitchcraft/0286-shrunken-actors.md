@@ -18,7 +18,7 @@ Possible on 1.2.0+ with a different method
 mulberry
 
 ## Date
-October 26, 2025
+26 October 2025
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1432134866060710072)

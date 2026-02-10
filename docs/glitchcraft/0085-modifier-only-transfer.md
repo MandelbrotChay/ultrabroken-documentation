@@ -23,7 +23,7 @@ Allows you to transfer only the modifier, but only works on weapons.
 kurocat471, BigDUCCO
 
 ## Date
-June 9, 2023
+9 June 2023
 
 ## Resources
 - [YouTube](https://youtu.be/ycKeFgsb7gs)

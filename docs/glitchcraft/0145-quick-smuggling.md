@@ -21,7 +21,7 @@ Allows for infinite springboarding if you quick smuggle with a spring shield. Th
 Suishi
 
 ## Date
-July 10, 2023
+10 July 2023
 
 ## Resources
 - [Youtube](https://youtu.be/emvoQHVRaCE)

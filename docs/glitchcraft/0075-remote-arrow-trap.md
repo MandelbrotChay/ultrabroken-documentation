@@ -23,7 +23,7 @@ Firing from any other bow with this glitch active, will allow it to shoot from t
 Flash, ElDuende, kirigaya
 
 ## Date
-June 2, 2023
+2 June 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1114292162268499979)

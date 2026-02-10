@@ -19,7 +19,7 @@ With current testing, this is the fastest sprinting method
 Deystroyer
 
 ## Date
-May 15, 2023
+15 May 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1107874408938348614)

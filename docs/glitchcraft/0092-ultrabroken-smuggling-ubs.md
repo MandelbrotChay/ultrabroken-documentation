@@ -28,7 +28,7 @@ Makes an FE'd object follow the shield.
 The_Andromeda
 
 ## Date
-June 13, 2023
+13 June 2023
 
 ## Resources
 - [Twitter](https://twitter.com/goghnan/status/1668671033874821139?s=46)

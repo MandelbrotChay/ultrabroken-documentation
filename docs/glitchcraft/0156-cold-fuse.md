@@ -33,7 +33,7 @@ Discord (mulberry)
 pyuk, Ryan?, Zas
 
 ## Date
-July 23, 2023
+23 July 2023
 
 ## Resources
 - [Twitter](https://fxtwitter.com/FBuffalo3/status/1683255977758584832)

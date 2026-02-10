@@ -53,7 +53,7 @@ Method 3 (Winnerboi & Ryan):
 Originally discovered by Lightos, _Steps later recovered by Lightos, Zasoptimized by Zas, Mulberry, Winnerboi and Ryan?researched for other versions by Winnerboi and CS16
 
 ## Date
-September 6, 2023
+6 September 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1149037981181689936)

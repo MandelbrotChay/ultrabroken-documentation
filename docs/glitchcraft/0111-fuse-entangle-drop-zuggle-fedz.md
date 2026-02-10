@@ -36,7 +36,7 @@ For multiple FEDZ, you must do it in this order:
 Ryan?
 
 ## Date
-June 17, 2023
+17 June 2023
 
 ## Resources
 —

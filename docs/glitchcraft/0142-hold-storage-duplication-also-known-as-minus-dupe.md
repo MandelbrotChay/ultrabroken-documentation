@@ -21,7 +21,7 @@ Also known as Minus Dupe.
 NaN Gogh, Mozz
 
 ## Date
-July 3, 2023
+3 July 2023
 
 ## Resources
 - [Twitter](https://vxtwitter.com/goghnan/status/1675972013096161280?s=46)

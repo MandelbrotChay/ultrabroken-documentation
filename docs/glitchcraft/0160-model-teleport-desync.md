@@ -21,7 +21,7 @@ This works because the Steering Stick is on the surface, while Link is stuck in 
 NX721
 
 ## Date
-July 29, 2023
+29 July 2023
 
 ## Resources
 - [Twitter](https://twitter.com/NX721_/status/1685368247145615360?s=20)

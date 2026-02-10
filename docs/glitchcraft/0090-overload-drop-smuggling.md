@@ -24,7 +24,7 @@ May 12, 2023; June 12, 2023
 ChargeVolt, Windocks
 
 ## Date
-June 12, 2023
+12 June 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1118058095734685766)

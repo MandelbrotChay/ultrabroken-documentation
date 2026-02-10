@@ -23,7 +23,7 @@ This also works in any other chasm in which you have enough room to shoot your a
 魔法本就不科学 (magic is not science), 千年茶饼 (Thousand Year Tea)
 
 ## Date
-May 31, 2023
+31 May 2023
 
 ## Resources
 - [Bilibili](https://www.bilibili.com/video/BV1QL411q742)

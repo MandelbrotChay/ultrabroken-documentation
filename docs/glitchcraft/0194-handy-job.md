@@ -20,7 +20,7 @@ Does not repair a weapon's fuse durability if an item has been fused to it previ
 Ock
 
 ## Date
-November 20, 2023
+20 November 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1176267847220076595)

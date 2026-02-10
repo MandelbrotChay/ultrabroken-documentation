@@ -35,7 +35,7 @@ Quantum Anchor 7/23/2023
 NaN Gogh, pyuk
 
 ## Date
-August 30, 2023
+30 August 2023
 
 ## Resources
 - [Twitter](https://fxtwitter.com/goghnan/status/1674596305698471936?s=46)

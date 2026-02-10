@@ -27,7 +27,7 @@ While zapshield itself can be created on all versions, it's applications are ver
 Aergyl
 
 ## Date
-September 16, 2024
+16 September 2024
 
 ## Resources
 - [Discord](https://discordapp.com/channels/1086729144307564648/1105598687167664239/1285243376844800062)

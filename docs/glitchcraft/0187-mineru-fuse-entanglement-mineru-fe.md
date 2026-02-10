@@ -41,7 +41,7 @@ For method 1, any method of culling Link can work in place of like like stick cu
 ock (Method 1 & 3), WinnerBoi77 (Method 2)
 
 ## Date
-October 18, 2023
+18 October 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1164195341491515432)

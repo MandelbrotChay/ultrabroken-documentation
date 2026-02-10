@@ -18,7 +18,7 @@ Ascending through water under a plattform allows link to ascend up into the sky,
 Redrooey
 
 ## Date
-November 27, 2023
+27 November 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1128894970653327401/1178472338778493029)

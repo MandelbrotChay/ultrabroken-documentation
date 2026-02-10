@@ -18,7 +18,7 @@ Test for 1.2.0/1.2.1
 Ryan?
 
 ## Date
-June 16, 2023
+16 June 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1110956205624532993/1119086382565048421)

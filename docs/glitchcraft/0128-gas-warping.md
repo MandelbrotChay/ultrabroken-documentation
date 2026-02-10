@@ -23,7 +23,7 @@ Does not persist through map changes, or through previous saves that were made b
 Flash, pyuk
 
 ## Date
-June 26, 2023
+26 June 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1122888390371704872)

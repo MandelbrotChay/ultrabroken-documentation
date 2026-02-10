@@ -20,7 +20,7 @@ UltraSLOT objects can be continuously transferred between files as long as the o
 mulberry
 
 ## Date
-February 15, 2024
+15 February 2024
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1207707842325258340)

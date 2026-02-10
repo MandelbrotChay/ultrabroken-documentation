@@ -30,7 +30,7 @@ You can chain this many times during 1 shield jump by repeating steps 2-5. It do
 eXe
 
 ## Date
-May 20, 2023
+20 May 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1109456967480647710)

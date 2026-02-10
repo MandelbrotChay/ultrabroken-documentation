@@ -19,7 +19,7 @@ Press B - ZR - R - B (or B - R - ZR - B) and repeat
 —
 
 ## Date
-May 12, 2023
+12 May 2023
 
 ## Resources
 - [Youtube](https://youtu.be/Mb8rgAwELYY)

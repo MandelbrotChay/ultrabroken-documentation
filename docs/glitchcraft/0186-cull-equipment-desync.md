@@ -23,7 +23,7 @@ Arrow Smuggle
 Blize, ock (Cull Arrow Smuggle), Blize
 
 ## Date
-October 10, 2023
+10 October 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1161316800911376414)

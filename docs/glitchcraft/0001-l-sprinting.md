@@ -20,7 +20,7 @@ This works best on fuse and ultrahand. Hold B and tap L twice (one time to activ
 Tauktes
 
 ## Date
-May 12, 2023
+12 May 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1106669953786064946)

@@ -20,7 +20,7 @@ A method for object culling
 Mozz
 
 ## Date
-June 13, 2023
+13 June 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1118369148439904276)

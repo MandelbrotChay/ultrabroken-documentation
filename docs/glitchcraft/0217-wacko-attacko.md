@@ -20,7 +20,7 @@ Continue attack animation onto another weapon.
 NghtmaR3, WinnerBoi77
 
 ## Date
-January 21, 2024
+21 January 2024
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1198765751578939482)

@@ -25,7 +25,7 @@ Misplaces the point where Link goes after using Ascend.
 Saria
 
 ## Date
-May 19, 2023
+19 May 2023
 
 ## Resources
 - [Twitter](https://twitter.com/reaperhide/status/1659593296774299648)

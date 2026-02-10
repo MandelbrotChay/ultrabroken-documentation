@@ -28,7 +28,7 @@ The item that gets dropped enters purgatory, making FEWZ more accessible on newe
 Mozz, mulberry
 
 ## Date
-June 15, 2023
+15 June 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1118370139897876570)

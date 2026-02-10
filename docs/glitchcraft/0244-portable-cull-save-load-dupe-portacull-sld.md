@@ -24,7 +24,7 @@ Allows for Save Load Duplication on v1.2.0-1.2.1 by culling Link on the same fra
 NghtmaR3
 
 ## Date
-July 17, 2024
+17 July 2024
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1263286685198712883)

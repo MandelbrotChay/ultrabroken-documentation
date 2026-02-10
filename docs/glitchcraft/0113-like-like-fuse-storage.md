@@ -24,7 +24,7 @@ Only works with equipment and materials. Zonai devices cannot be culled by like 
 Mozz
 
 ## Date
-June 18, 2023
+18 June 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1119880715832676423)

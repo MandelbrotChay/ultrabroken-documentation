@@ -22,7 +22,7 @@ Also possible with two wheels.
 Solo_Turtle
 
 ## Date
-July 12, 2023
+12 July 2023
 
 ## Resources
 - [Twitter](https://twitter.com/NX721_/status/1679259808757870592?t=O2gULUcC_CmV0isS44RMEg&s=19)

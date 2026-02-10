@@ -27,7 +27,7 @@ It's possible to perform Map Zuggling without a wall by standing away from a hig
 BigDUCCO
 
 ## Date
-May 23, 2023
+23 May 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1110698250618552370)

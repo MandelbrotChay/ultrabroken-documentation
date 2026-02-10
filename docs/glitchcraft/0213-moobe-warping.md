@@ -21,7 +21,7 @@ Using Moobe and a horse, it's possible to fully warp (opposed to only temporaril
 Ryan?
 
 ## Date
-January 12, 2024
+12 January 2024
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1194033039123165215/1195511230660616355)

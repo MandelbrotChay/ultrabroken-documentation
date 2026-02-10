@@ -25,7 +25,7 @@ Majora's Mask and Bullet Time are not required.
 shio_0725, ralseidewitt
 
 ## Date
-June 27, 2023; November 19, 2023
+27 June 2023; 19 November 2023
 
 ## Resources
 - [Twitter](https://twitter.com/shio_0725_4040/status/1684764043708678144)

@@ -43,7 +43,7 @@ Discord
 Zas, mulberry, Aeolian
 
 ## Date
-March 16, 2024
+16 March 2024
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1218608839121698838)

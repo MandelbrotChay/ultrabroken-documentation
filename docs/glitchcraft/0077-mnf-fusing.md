@@ -23,7 +23,7 @@ Allows you to fuse to the MNF
 LegendofLinkk
 
 ## Date
-June 5, 2023
+5 June 2023
 
 ## Resources
 - [YouTube](https://youtu.be/n2nP6FNjEPI)

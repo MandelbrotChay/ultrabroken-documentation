@@ -22,7 +22,7 @@ Dropped equipment goes zoomy into the sky based on timing.
 NX721, DanielNeia
 
 ## Date
-July 11, 2023
+11 July 2023
 
 ## Resources
 - [Twitter](https://twitter.com/NX721_/status/1678921120102371328)

@@ -22,7 +22,7 @@ Pickup overload can also be used in place of zuggle overload
 ultrababouin, NghtmaR3
 
 ## Date
-November 3, 2023
+3 November 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1111875355758837830/1128775917376897145/1170074200627740803)

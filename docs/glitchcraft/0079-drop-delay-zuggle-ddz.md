@@ -24,7 +24,7 @@ You dont need a wall, if you load a file after going into the map.
 LegendofLinkk
 
 ## Date
-June 6, 2023
+6 June 2023
 
 ## Resources
 - [Twitter](https://twitter.com/iLegendofLinkk/status/1669042156324139008?t=t_Gk24Nr3ezqvCx5djFffA&s=19)

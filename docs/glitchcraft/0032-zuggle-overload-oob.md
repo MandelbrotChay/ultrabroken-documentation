@@ -21,7 +21,7 @@ Allows you to clip OOB using zuggle overload
 AngryEgg
 
 ## Date
-May 18, 2023
+18 May 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1108780208137437314)

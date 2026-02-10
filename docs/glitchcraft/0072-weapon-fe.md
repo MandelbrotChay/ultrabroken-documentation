@@ -23,7 +23,7 @@ September 12, 2023; June 1, 2023
 Rediscovered by robuxy2nd and originally found by Physioninja
 
 ## Date
-June 1, 2023
+1 June 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1170407312054300713)

@@ -31,7 +31,7 @@ this was a pain to write, still experimenting, if you have any discoveries pleas
 NX721, R4000
 
 ## Date
-July 26, 2023
+26 July 2023
 
 ## Resources
 - [Youtube](https://youtu.be/zurfHBHlLBY)

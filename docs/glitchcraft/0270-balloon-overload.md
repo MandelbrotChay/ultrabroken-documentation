@@ -22,7 +22,7 @@ Equipping and unfusing a shield with Robbie's infinite balloon fused to it does 
 Jordan, mulberry, ofstrings2
 
 ## Date
-March 8, 2025
+8 March 2025
 
 ## Resources
 - [Discord](https://discordapp.com/channels/1086729144307564648/1113557914444111873/1348152808108458056)

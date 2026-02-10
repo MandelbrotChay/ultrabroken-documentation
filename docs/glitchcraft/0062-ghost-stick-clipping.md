@@ -21,7 +21,7 @@ Has a very good chance of crashing the game in certain areas. Depths are usually
 rocomox
 
 ## Date
-May 28, 2023
+28 May 2023
 
 ## Resources
 - [Youtube](https://www.youtube.com/watch?v=CfIe3QO5fXA)

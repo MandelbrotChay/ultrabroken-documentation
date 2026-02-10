@@ -22,7 +22,7 @@ Recall locking a thrown sword and fusing it to a shield causes it to do permanen
 Ryan?
 
 ## Date
-June 11, 2023
+11 June 2023
 
 ## Resources
 [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1194982242565496895)

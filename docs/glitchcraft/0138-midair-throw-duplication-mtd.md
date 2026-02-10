@@ -21,7 +21,7 @@ Allows you to dupe any item that can be thrown, including Zonai capsules.
 quantim
 
 ## Date
-July 2, 2023
+2 July 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1125201209310068766)

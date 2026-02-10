@@ -47,7 +47,7 @@ This method uses recall for a makeshift wall:
 Zas
 
 ## Date
-December 18, 2023
+18 December 2023
 
 ## Resources
 - [Twitter](https://vxtwitter.com/zasbotw/status/1736818709677977998)

@@ -23,7 +23,7 @@ Only way to cancel it is by closing the game.
 SCFD-GK2, Nicnac
 
 ## Date
-June 19, 2023
+19 June 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1120378339442556990)

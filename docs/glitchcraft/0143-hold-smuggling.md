@@ -25,7 +25,7 @@ Also removes HUD from Sheikah Scope
 Mozz, NaN Gogh
 
 ## Date
-July 4, 2023
+4 July 2023
 
 ## Resources
 - [Twitter](https://twitter.com/_nan_gogh/status/1676384792818995200)

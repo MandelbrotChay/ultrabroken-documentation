@@ -23,7 +23,7 @@ YouTube
 Mozz, tori
 
 ## Date
-June 27, 2023
+27 June 2023
 
 ## Resources
 —

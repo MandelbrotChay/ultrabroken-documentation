@@ -21,7 +21,7 @@ Objects fuse entangled to Mineru can be detangled by fusing another object over 
 Zas
 
 ## Date
-September 9, 2023
+9 September 2023
 
 ## Resources
 - [Twitter](https://vxtwitter.com/zasbotw/status/1700578075816403202)

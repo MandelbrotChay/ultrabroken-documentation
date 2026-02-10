@@ -19,7 +19,7 @@ Certain triggers, such as text boxes, will restore the caves' local weather.
 pyuk
 
 ## Date
-June 25, 2023
+25 June 2023
 
 ## Resources
 —

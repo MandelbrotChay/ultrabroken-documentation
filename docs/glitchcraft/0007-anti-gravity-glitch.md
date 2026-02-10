@@ -18,7 +18,7 @@ Todo: Find other places where this glitch could be replicated (maybe on the Grea
 [Kaldemar](https://www.youtube.com/@Kaldemar)
 
 ## Date
-May 13, 2023
+13 May 2023
 
 ## Resources
 - [Youtube](https://www.youtube.com/watch?v=109kaxFj8FQ)

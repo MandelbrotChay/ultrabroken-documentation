@@ -21,7 +21,7 @@ The item that gets duplicated will always be to the right of the item you are ho
 Blizzard Blanc, BigDUCCO, Maxmasher, Pyuk, Zas
 
 ## Date
-June 25, 2023
+25 June 2023
 
 ## Resources
 - [Twitter](https://vxtwitter.com/zb_yuhudaddy/status/1673184858628296704?s=20)

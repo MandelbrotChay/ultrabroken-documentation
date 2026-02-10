@@ -21,7 +21,7 @@ Allows Link to pick up an object as if he were holding it like an item.
 Ame
 
 ## Date
-May 28, 2023
+28 May 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1112560911522222192)

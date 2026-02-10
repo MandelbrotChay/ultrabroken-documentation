@@ -28,7 +28,7 @@ Test on previous versions
 Ryan?, ock
 
 ## Date
-January 4, 2024
+4 January 2024
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1192597934181720197)

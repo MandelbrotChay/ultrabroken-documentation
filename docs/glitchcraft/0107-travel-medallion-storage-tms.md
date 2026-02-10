@@ -23,7 +23,7 @@ Places the travel medallion at links feet after loading a file.
 kirigaya
 
 ## Date
-June 16, 2023
+16 June 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1110956205624532993/1119636429933387826)

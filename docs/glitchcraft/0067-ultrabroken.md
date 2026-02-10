@@ -23,7 +23,7 @@ During flying with Ultrabroken, it can be very easily for the game to cancel out
 Duncan
 
 ## Date
-May 29, 2023
+29 May 2023
 
 ## Resources
 

@@ -24,7 +24,7 @@ For multiple weapons, drop the shield at the end of step 2 and repeat steps 1-2 
 Ryan?
 
 ## Date
-June 10, 2023
+10 June 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1116941948746465410)

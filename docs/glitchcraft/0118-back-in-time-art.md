@@ -26,7 +26,7 @@ Compendium pictures (Zas):
 R4000, Zas
 
 ## Date
-June 18, 2023; August 16, 2023
+18 June 2023; 16 August 2023
 
 ## Resources
 - [Youtube](https://www.youtube.com/watch?v=DWA_cTNykyo)

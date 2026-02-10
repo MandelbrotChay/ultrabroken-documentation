@@ -23,7 +23,7 @@ Allows you chain jump attacks to jump infinitly.
 Mozz, Physioninja
 
 ## Date
-May 22, 2023
+22 May 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1110204708360036424)

@@ -26,7 +26,7 @@ The target item remains in desync in the inventory until the duplicate is picked
 AngryEgg, BigDUCCO (setup for current method)
 
 ## Date
-May 25, 2023
+25 May 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1110956205624532993/1111280709542359191)

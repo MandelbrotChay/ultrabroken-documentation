@@ -18,7 +18,7 @@ Since this deletes the last equipment, consider placing the desired equipment la
 Pistonight
 
 ## Date
-May 27, 2023
+27 May 2023
 
 ## Resources
 - [Twitter](https://twitter.com/i_piston/status/1662365886525870080)

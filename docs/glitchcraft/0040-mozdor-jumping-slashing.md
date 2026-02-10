@@ -21,7 +21,7 @@ Allows you to jump very far (can be chained infinitly)
 Mozz, AgdoR
 
 ## Date
-May 20, 2023
+20 May 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1106412847359082506/1109296265847640094)

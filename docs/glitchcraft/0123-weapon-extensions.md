@@ -23,7 +23,7 @@ Has yet to be seen if this can work on 2H weapons. Also works on fused 1H/Spear 
 Deltenic, Flash, Zas
 
 ## Date
-June 20, 2023; June 23, 2023
+20 June 2023; 23 June 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1121798115595403375)

@@ -20,7 +20,7 @@ Allows for easy detanglement of any shield using octoballoons
 mulberry
 
 ## Date
-November 16, 2025
+16 November 2025
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1439763376753344604)

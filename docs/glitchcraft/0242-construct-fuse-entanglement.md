@@ -23,7 +23,7 @@ Is particularly useful for early game or runeless setups, as this FE method does
 mulberry
 
 ## Date
-June 30, 2024
+30 June 2024
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1257088890926399529)

@@ -22,7 +22,7 @@ performing this twice with the same smuggle and fuse will pseudo fuse it to the 
 Zas
 
 ## Date
-September 12, 2023
+12 September 2023
 
 ## Resources
 - [Twitter](https://vxtwitter.com/zasbotw/status/1701713294464364573)

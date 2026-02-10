@@ -36,7 +36,7 @@ no camera ui
 NaN Gogh
 
 ## Date
-July 11, 2023
+11 July 2023
 
 ## Resources
 - [Twitter](https://vxtwitter.com/_nan_gogh/status/1678749376833781763?s=46)

@@ -22,7 +22,7 @@ There are many NPCs that can be put into this weird rolling state.
 kurone_yuu
 
 ## Date
-June 13, 2024
+13 June 2024
 
 ## Resources
 - [Twitter](https://x.com/kurone_yuu/status/1801239224378900947?s=46&t=DdtmlnCQqIbD5irw-jnKbQ)

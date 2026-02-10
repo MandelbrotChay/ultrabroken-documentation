@@ -20,7 +20,7 @@ Can be kept permanently active via GAS and can be zuggled for transferring/other
 Venaticus
 
 ## Date
-June 15, 2023
+15 June 2023
 
 ## Resources
 —

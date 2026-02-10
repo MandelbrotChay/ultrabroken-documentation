@@ -18,7 +18,7 @@ Place the object(s) in a culling area, then activate a fire emitter and place it
 Robuxy2nd
 
 ## Date
-November 17, 2023
+17 November 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1111875355758837830/1128775917376897145/1175099874174320761)

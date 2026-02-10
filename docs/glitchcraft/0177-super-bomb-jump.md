@@ -29,7 +29,7 @@ Method 2 in 1.0.0 will allow you to reuse your bomb flower infinitely, but also 
 ferruscube, Aergyl
 
 ## Date
-September 14, 2023
+14 September 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1155451908530647064)

@@ -29,7 +29,7 @@ Prerequisites:
 Blackmars, Tahata, EM
 
 ## Date
-April 19, 2024
+19 April 2024
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1230669568066846741)

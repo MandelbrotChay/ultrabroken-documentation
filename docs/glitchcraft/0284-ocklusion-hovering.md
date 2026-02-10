@@ -20,7 +20,7 @@ TODO: Test other objects
 Telkic
 
 ## Date
-October 12, 2025
+12 October 2025
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1427080389972856862)

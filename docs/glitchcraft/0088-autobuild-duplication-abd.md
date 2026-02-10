@@ -25,7 +25,7 @@ This only works with items that change into other items in another temperature.
 {Unknown}
 
 ## Date
-June 11, 2023
+11 June 2023
 
 ## Resources
 - [YouTube](https://youtu.be/IfRlldenZNc)

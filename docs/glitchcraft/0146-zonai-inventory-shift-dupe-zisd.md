@@ -27,7 +27,7 @@ Steps:
 Ryan?, Quantim
 
 ## Date
-July 10, 2023
+10 July 2023
 
 ## Resources
 - [Twitter](https://twitter.com/quantim/status/1678509305044115458?s=46)

@@ -25,7 +25,7 @@ By combining zuggle overload with 1.0 modifier deletion, it is possible to mass 
 Mozz
 
 ## Date
-September 5, 2023
+5 September 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1148383082601259069)

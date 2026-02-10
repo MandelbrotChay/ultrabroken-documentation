@@ -21,7 +21,7 @@ Grabbing a purgatory SLD object with ultrahand causes UltraSLOT.
 mulberry
 
 ## Date
-February 11, 2024
+11 February 2024
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1206398133408505927)

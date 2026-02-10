@@ -19,7 +19,7 @@ In all cases, you can get the like to drop it'"s stored fuse (or other objects) 
 Mozz
 
 ## Date
-June 18, 2023
+18 June 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1119880715832676423)

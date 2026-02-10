@@ -22,7 +22,7 @@ Using Overload it's possible to fully portably PSLOT on current versions
 mulberry
 
 ## Date
-July 26, 2024
+26 July 2024
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1266400937778610206)

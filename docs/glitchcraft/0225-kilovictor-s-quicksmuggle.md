@@ -27,7 +27,7 @@ it's very likely to cull lock, especially if you don't mount a steering stick, l
 Kilovictor
 
 ## Date
-February 23, 2024
+23 February 2024
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1210488053769175040)

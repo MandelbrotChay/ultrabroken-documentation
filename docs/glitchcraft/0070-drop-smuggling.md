@@ -22,7 +22,7 @@ The weapons hitbox remains constantly active, while being maintained at Links fe
 LegendofLinkk
 
 ## Date
-May 31, 2023
+31 May 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1113354666961535007)

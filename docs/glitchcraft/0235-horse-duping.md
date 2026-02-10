@@ -29,7 +29,7 @@ the horse should still be alive, but no longer on the map
 ock
 
 ## Date
-March 22, 2024
+22 March 2024
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1220805468746940586)

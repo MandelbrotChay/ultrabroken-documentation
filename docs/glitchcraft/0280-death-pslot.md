@@ -23,7 +23,7 @@ When reloading, you should see your target PSLOTed on the ground.
 mulberry
 
 ## Date
-June 26, 2025
+26 June 2025
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1387597717529821225)

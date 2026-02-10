@@ -25,7 +25,7 @@ Performing Invismuggle while having a (drop) zuggle sends the equipment to culle
 mulberry
 
 ## Date
-February 29, 2024
+29 February 2024
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1212758084980572270)

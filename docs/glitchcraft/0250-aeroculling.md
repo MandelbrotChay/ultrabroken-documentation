@@ -37,7 +37,7 @@ Once AC is set up, in order to Physical AC, put a SDC in the wind and the base o
 Discovered by Aergyl, developed by Aergyl, mulberry
 
 ## Date
-August 11, 2024
+11 August 2024
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1283455775976718346)

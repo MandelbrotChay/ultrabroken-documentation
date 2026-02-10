@@ -20,7 +20,7 @@ Can be done much more consistently by equipping the Thunder Helm before walking 
 sleepyppls
 
 ## Date
-June 1, 2023
+1 June 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1113917918422511776)

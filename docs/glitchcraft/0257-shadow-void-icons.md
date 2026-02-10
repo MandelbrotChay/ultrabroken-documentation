@@ -26,7 +26,7 @@ tighter.
 Consistent method discovered by PetitFrapoOriginal accidental discovery by Lightos
 
 ## Date
-October 16, 2024
+16 October 2024
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1296080453413109830)

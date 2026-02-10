@@ -22,7 +22,7 @@ It's possible to Fall Damage Cancel by performing multiple frame perfect inputs 
 simonfirefighter
 
 ## Date
-May 23, 2023
+23 May 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1110634140803551445)

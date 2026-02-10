@@ -18,7 +18,7 @@ Currently infinite
 Deystroyer, Tauktes
 
 ## Date
-May 14, 2023
+14 May 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1107413221545087028)
