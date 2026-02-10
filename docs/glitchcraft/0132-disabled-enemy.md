@@ -19,7 +19,7 @@ Alternative method for all versions (ralseidewitt):
 3. Hit the monster with a fireball
 
 ## Notes
-Majora's Mask and Bullet Time are not required like in the Example video.
+Majora's Mask and Bullet Time are not required.
 
 ## Credit
 shio_0725, ralseidewitt
