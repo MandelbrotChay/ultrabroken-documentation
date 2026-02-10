@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Object Culling"
 ---
 
@@ -11,8 +11,7 @@ Places an object in a half-unloaded, limbo like state. Leading to unintended int
 Object culling in this instance refers to an optimization trick in which actors within a certain area will be unloaded for the purposes of saving memory.
 
 ## Instructions
-Like-Like Culling
-Cull Zone Culling
+—
 
 ## Notes
 With the help of chain FE, it is possible to make an infinitely large cull radius
@@ -21,7 +20,7 @@ Discord
 YouTube
 
 ## Credit
-Mozz, researched by tori
+Mozz, tori
 
 ## Date
 June 27, 2023
@@ -30,4 +29,5 @@ June 27, 2023
 —
 
 ## See also
-—
+- Like-Like Culling
+- Cull Zone Culling
