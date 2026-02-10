@@ -47,17 +47,9 @@ Aergyl, mulberry, Ikaboze, Jordan
 ## Date
 May 20, 2025
 
-## Source
-
-- [Discord](https://discordapp.com/channels/1086729144307564648/1110956205624532993/1374486971551973386)
-
-## Examples
-
-- [YouTube](https://www.youtube.com/watch?v=PPyR-ipbhbE)
-
 ## Resources
-
-—
+- [Discord](https://discordapp.com/channels/1086729144307564648/1110956205624532993/1374486971551973386)
+- [YouTube](https://www.youtube.com/watch?v=PPyR-ipbhbE)
 
 ## Versions
 

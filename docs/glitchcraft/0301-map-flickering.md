@@ -20,17 +20,8 @@ Do not do this if you suffer from epilepsy, or are prone to seizures
 ## Date
 —
 
-## Source
-
-—
-
-## Examples
-
-- [Youtube](https://www.youtube.com/watch?v=RjSKbESuVHo)
-
 ## Resources
-
-—
+- [Youtube](https://www.youtube.com/watch?v=RjSKbESuVHo)
 
 ## Versions
 

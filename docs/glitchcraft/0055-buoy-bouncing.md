@@ -19,17 +19,9 @@ InAMuffinCup
 ## Date
 May 25, 2023
 
-## Source
-
-- [Discord](https://discord.com/channels/1086729144307564648/1106412847359082506/1111400160879194165)
-
-## Examples
-
-- [Discord](https://discord.com/channels/1086729144307564648/1106412847359082506/1111400160879194165)
-
 ## Resources
-
-—
+- [Discord](https://discord.com/channels/1086729144307564648/1106412847359082506/1111400160879194165)
+- [Discord](https://discord.com/channels/1086729144307564648/1106412847359082506/1111400160879194165)
 
 ## Versions
 

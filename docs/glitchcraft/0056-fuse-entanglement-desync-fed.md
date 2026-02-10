@@ -35,16 +35,9 @@ Physioninja
 ## Date
 May 26, 2023
 
-## Source
-
-- [Youtube](https://youtu.be/E3nDTPL6IdU)
-
-## Examples
-
-- [YouTube](https://youtu.be/E3nDTPL6IdU)
-
 ## Resources
-
+- [Youtube](https://youtu.be/E3nDTPL6IdU)
+- [YouTube](https://youtu.be/E3nDTPL6IdU)
 - [YouTube](https://youtu.be/E3nDTPL6IdU)
 
 ## Versions

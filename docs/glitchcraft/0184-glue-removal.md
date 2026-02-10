@@ -23,17 +23,9 @@ R4000
 ## Date
 October 5, 2023
 
-## Source
-
-- [Google Drive](https://drive.google.com/file/d/1XP7dg6aCd-34AH5v-_AsbVoz2oDoo5vJ/view?usp=drive_link)
-
-## Examples
-
-- [Google Drive](https://drive.google.com/drive/folders/15l1DDx1-64bO43FeUr2-2NtpeY58a79A?usp=sharing)
-
 ## Resources
-
-—
+- [Google Drive](https://drive.google.com/file/d/1XP7dg6aCd-34AH5v-_AsbVoz2oDoo5vJ/view?usp=drive_link)
+- [Google Drive](https://drive.google.com/drive/folders/15l1DDx1-64bO43FeUr2-2NtpeY58a79A?usp=sharing)
 
 ## Versions
 

@@ -32,18 +32,10 @@ NX721, R4000
 ## Date
 July 26, 2023
 
-## Source
-
+## Resources
 - [Youtube](https://youtu.be/zurfHBHlLBY)
 - [Youtube](https://www.youtube.com/watch?v=JMEgDwXienA)
-
-## Examples
-
 - [Twitter](https://twitter.com/NX721_/status/1684303947224473602?s=20)
-
-## Resources
-
-—
 
 ## Versions
 

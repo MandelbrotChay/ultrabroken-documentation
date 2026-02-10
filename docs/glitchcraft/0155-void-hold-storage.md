@@ -22,17 +22,8 @@ Lightos_, NX721
 ## Date
 July 22, 2023
 
-## Source
-
-- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1132405949424996475)
-
-## Examples
-
-—
-
 ## Resources
-
-—
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1132405949424996475)
 
 ## Versions
 

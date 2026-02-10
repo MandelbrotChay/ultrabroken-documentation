@@ -19,16 +19,7 @@ Aci
 ## Date
 July 18, 2023
 
-## Source
-
-—
-
-## Examples
-
-—
-
 ## Resources
-
 —
 
 ## Versions

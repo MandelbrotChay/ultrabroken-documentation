@@ -19,19 +19,11 @@ Todo: Replicate in TotK, test in BotW.
 ## Date
 May 13, 2023
 
-## Source
-
+## Resources
 - [Youtube](https://youtu.be/Q1aWa0Kg-8Y)
-
-## Examples
-
 - [Youtube](https://youtu.be/Q1aWa0Kg-8Y)
 - [Reddit](https://www.reddit.com/r/TOTK/comments/13tho3e)
 - [Twitter](https://twitter.com/ThatOneNerd0329/status/1662590423582535680)
-
-## Resources
-
-—
 
 ## Versions
 

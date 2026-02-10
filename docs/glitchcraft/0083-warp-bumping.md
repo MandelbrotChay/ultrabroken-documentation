@@ -22,17 +22,9 @@ Mozz, InAMuffinCup
 ## Date
 June 7, 2023
 
-## Source
-
-- [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1116180070063677440)
-
-## Examples
-
-- [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1116180070063677440)
-
 ## Resources
-
-—
+- [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1116180070063677440)
+- [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1116180070063677440)
 
 ## Versions
 

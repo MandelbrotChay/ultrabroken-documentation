@@ -23,17 +23,9 @@ Telkic, mulberry
 ## Date
 October 12, 2025
 
-## Source
-
-- [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1427101045816823809)
-
-## Examples
-
-- [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1427320782274691073)
-
 ## Resources
-
-—
+- [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1427101045816823809)
+- [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1427320782274691073)
 
 ## Versions
 

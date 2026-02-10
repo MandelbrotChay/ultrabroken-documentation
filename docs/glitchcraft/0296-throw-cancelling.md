@@ -22,16 +22,7 @@ Quelfth
 
 —
 
-## Source
-
-—
-
-## Examples
-
-—
-
 ## Resources
-
 —
 
 ## Versions

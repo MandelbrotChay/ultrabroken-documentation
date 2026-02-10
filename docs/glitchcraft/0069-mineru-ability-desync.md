@@ -22,17 +22,9 @@ Sillicat
 ## Date
 May 30, 2023
 
-## Source
-
-- [Twitter](https://twitter.com/SilicatYT/status/1663658677302353920)
-
-## Examples
-
-- [Twitter](https://twitter.com/SilicatYT/status/1663846017060700161)
-
 ## Resources
-
-—
+- [Twitter](https://twitter.com/SilicatYT/status/1663658677302353920)
+- [Twitter](https://twitter.com/SilicatYT/status/1663846017060700161)
 
 ## Versions
 

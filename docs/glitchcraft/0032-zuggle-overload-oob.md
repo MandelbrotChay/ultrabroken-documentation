@@ -22,17 +22,9 @@ AngryEgg
 ## Date
 May 18, 2023
 
-## Source
-
-- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1108780208137437314)
-
-## Examples
-
-- [Youtube](https://youtu.be/w1fI3QYrerQ)
-
 ## Resources
-
-—
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1108780208137437314)
+- [Youtube](https://youtu.be/w1fI3QYrerQ)
 
 ## Versions
 

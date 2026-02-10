@@ -19,17 +19,9 @@ Steel
 ## Date
 May 14, 2023
 
-## Source
-
-- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1107529272500965406)
-
-## Examples
-
-- [Youtube](https://youtu.be/o_3Dkjkcyww)
-
 ## Resources
-
-—
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1107529272500965406)
+- [Youtube](https://youtu.be/o_3Dkjkcyww)
 
 ## Versions
 

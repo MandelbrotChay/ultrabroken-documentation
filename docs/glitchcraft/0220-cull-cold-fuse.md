@@ -29,17 +29,8 @@ mulberry
 ## Date
 February 1, 2024
 
-## Source
-
-- [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1202784179574677554)
-
-## Examples
-
-—
-
 ## Resources
-
-—
+- [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1202784179574677554)
 
 ## Versions
 

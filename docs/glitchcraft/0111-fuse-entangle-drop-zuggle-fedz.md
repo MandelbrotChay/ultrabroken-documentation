@@ -37,16 +37,7 @@ Ryan?
 ## Date
 June 17, 2023
 
-## Source
-
-—
-
-## Examples
-
-—
-
 ## Resources
-
 —
 
 ## Versions

@@ -24,18 +24,10 @@ This also works in any other chasm in which you have enough room to shoot your a
 ## Date
 May 31, 2023
 
-## Source
-
+## Resources
 - [Bilibili](https://www.bilibili.com/video/BV1QL411q742)
-
-## Examples
-
 - [YouTube](https://www.youtube.com/watch?v=69IW7x_JFeU)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1113480578583511122)
-
-## Resources
-
-—
 
 ## Versions
 

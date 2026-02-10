@@ -30,17 +30,9 @@ ock, mulberry for the 1.0-1.1.2 method
 ## Date
 May 29, 2024
 
-## Source
-
-- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1245447960658051184)
-
-## Examples
-
-- [YouTube](https://youtu.be/krR0oUnjauw?si=wONqdugV6JZbda4s)
-
 ## Resources
-
-—
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1245447960658051184)
+- [YouTube](https://youtu.be/krR0oUnjauw?si=wONqdugV6JZbda4s)
 
 ## Versions
 

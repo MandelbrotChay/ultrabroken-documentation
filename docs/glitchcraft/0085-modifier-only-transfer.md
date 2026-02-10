@@ -24,16 +24,7 @@ kurocat471, BigDUCCO
 ## Date
 June 9, 2023
 
-## Source
-
-—
-
-## Examples
-
-—
-
 ## Resources
-
 - [YouTube](https://youtu.be/ycKeFgsb7gs)
 
 ## Versions

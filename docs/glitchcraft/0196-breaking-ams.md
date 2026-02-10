@@ -30,17 +30,8 @@ Infrasolid
 ## Date
 November 26, 2023
 
-## Source
-
-- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1178449991786827928)
-
-## Examples
-
-—
-
 ## Resources
-
-—
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1178449991786827928)
 
 ## Versions
 

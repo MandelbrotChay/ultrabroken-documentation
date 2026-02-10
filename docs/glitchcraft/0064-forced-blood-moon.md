@@ -28,19 +28,11 @@ May 28, 2023, June 16, 2023, & June 27, 2023
 ## Date
 May 28, 2023
 
-## Source
-
+## Resources
 - [Twitter](https://twitter.com/W0ERYySQgZyGOY3/status/1663062133939253250)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1134025370279104532)
-
-## Examples
-
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1119272037215649872)
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1119307782433280110)
-
-## Resources
-
-—
 
 ## Versions
 

@@ -19,17 +19,9 @@ Deystroyer, Tauktes
 ## Date
 May 14, 2023
 
-## Source
-
-- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1107413221545087028)
-
-## Examples
-
-- [Youtube](https://youtu.be/2HAEDydIqr8)
-
 ## Resources
-
-—
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1107413221545087028)
+- [Youtube](https://youtu.be/2HAEDydIqr8)
 
 ## Versions
 

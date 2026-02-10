@@ -19,17 +19,9 @@ Xeryph
 ## Date
 May 13, 2023
 
-## Source
-
-- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1107045488454279188)
-
-## Examples
-
-- [Youtube](https://youtu.be/oBYBi8dqflI)
-
 ## Resources
-
-—
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1107045488454279188)
+- [Youtube](https://youtu.be/oBYBi8dqflI)
 
 ## Versions
 

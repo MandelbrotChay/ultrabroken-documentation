@@ -22,17 +22,8 @@ Link keeps walking while frozen in the camera animation.
 ## Date
 —
 
-## Source
-
-—
-
-## Examples
-
-- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1196121825160212571)
-
 ## Resources
-
-—
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1196121825160212571)
 
 ## Versions
 

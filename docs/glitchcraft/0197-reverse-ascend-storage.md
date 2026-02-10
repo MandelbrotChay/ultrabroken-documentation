@@ -19,18 +19,10 @@ Redrooey
 ## Date
 November 27, 2023
 
-## Source
-
+## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1128894970653327401/1178472338778493029)
-
-## Examples
-
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1178478433160929301)
 - [Discord](https://discord.com/channels/1086729144307564648/1128894970653327401/1178476023818494044)
-
-## Resources
-
-—
 
 ## Versions
 

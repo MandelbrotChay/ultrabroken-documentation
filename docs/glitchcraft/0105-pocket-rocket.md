@@ -22,16 +22,8 @@ Mozz, SmallAnt
 ## Date
 June 15, 2023
 
-## Source
-
-—
-
-## Examples
-
-- [YouTube](https://youtu.be/10PdzT0eEl0)
-
 ## Resources
-
+- [YouTube](https://youtu.be/10PdzT0eEl0)
 - [YouTube](https://youtu.be/OmuWEI46dXo?t=163)
 
 ## Versions

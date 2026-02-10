@@ -31,18 +31,10 @@ eXe
 ## Date
 May 20, 2023
 
-## Source
-
+## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1109456967480647710)
-
-## Examples
-
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1109460329966092319)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1109456967480647710)
-
-## Resources
-
-—
 
 ## Versions
 

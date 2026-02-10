@@ -22,16 +22,7 @@ susannediazz, ROBUXY2nd
 ## Date
 September 9, 2023
 
-## Source
-
-—
-
-## Examples
-
-—
-
 ## Resources
-
 —
 
 ## Versions

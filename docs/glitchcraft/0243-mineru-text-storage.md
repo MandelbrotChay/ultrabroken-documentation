@@ -23,17 +23,9 @@ CM30
 ## Date
 July 11, 2024
 
-## Source
-
-- [Discord](https://discord.com/channels/1086729144307564648/1128894970653327401/1261062222306869268)
-
-## Examples
-
-- [Youtube](https://www.youtube.com/watch?v=W0bNi0q7A6Q)
-
 ## Resources
-
-—
+- [Discord](https://discord.com/channels/1086729144307564648/1128894970653327401/1261062222306869268)
+- [Youtube](https://www.youtube.com/watch?v=W0bNi0q7A6Q)
 
 ## Versions
 

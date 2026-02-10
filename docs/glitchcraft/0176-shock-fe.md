@@ -23,17 +23,8 @@ Zas
 ## Date
 September 12, 2023
 
-## Source
-
-- [Twitter](https://vxtwitter.com/zasbotw/status/1701713294464364573)
-
-## Examples
-
-—
-
 ## Resources
-
-—
+- [Twitter](https://vxtwitter.com/zasbotw/status/1701713294464364573)
 
 ## Versions
 

@@ -24,16 +24,7 @@ Aeolian
 ## Date
 July 11, 2023
 
-## Source
-
-—
-
-## Examples
-
-—
-
 ## Resources
-
 —
 
 ## Versions

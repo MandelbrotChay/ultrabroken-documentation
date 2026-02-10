@@ -20,21 +20,13 @@ Testing is still being done. As more is discovered, this section will be updated
 ## Date
 —
 
-## Source
-
+## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1108538888600961044)
-
-## Examples
-
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1108538888600961044)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1108276544385859645)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1107369279747260666)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1107214237174071347)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1112189474911297668)
-
-## Resources
-
-—
 
 ## Versions
 

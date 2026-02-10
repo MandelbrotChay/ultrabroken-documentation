@@ -28,17 +28,9 @@ evilgabe (original glitch)nx (side effects)
 ## Date
 June 19, 2023
 
-## Source
-
-- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1120815854729306223)
-
-## Examples
-
-- [Twitter](https://twitter.com/NX721_/status/1673788354805243904)
-
 ## Resources
-
-—
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1120815854729306223)
+- [Twitter](https://twitter.com/NX721_/status/1673788354805243904)
 
 ## Versions
 

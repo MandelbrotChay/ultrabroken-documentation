@@ -24,17 +24,8 @@ Zas, kurocat471
 ## Date
 May 21, 2023
 
-## Source
-
-—
-
-## Examples
-
-- [Twitter](https://twitter.com/zasoot/status/1660458317934915584)
-
 ## Resources
-
-—
+- [Twitter](https://twitter.com/zasoot/status/1660458317934915584)
 
 ## Versions
 

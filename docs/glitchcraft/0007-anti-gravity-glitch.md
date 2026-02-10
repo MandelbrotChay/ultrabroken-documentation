@@ -19,17 +19,9 @@ Todo: Find other places where this glitch could be replicated (maybe on the Grea
 ## Date
 May 13, 2023
 
-## Source
-
-- [Youtube](https://www.youtube.com/watch?v=109kaxFj8FQ)
-
-## Examples
-
-- [Youtube](https://www.youtube.com/watch?v=109kaxFj8FQ)
-
 ## Resources
-
-—
+- [Youtube](https://www.youtube.com/watch?v=109kaxFj8FQ)
+- [Youtube](https://www.youtube.com/watch?v=109kaxFj8FQ)
 
 ## Versions
 

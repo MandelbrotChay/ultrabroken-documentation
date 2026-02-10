@@ -32,17 +32,9 @@ NaN Gogh
 ## Date
 August 2, 2023
 
-## Source
-
-- [Twitter](https://twitter.com/_nan_gogh/status/1686427149786370055?s=20)
-
-## Examples
-
-- [Twitter](https://twitter.com/_nan_gogh/status/1686427149786370055?s=20)
-
 ## Resources
-
-—
+- [Twitter](https://twitter.com/_nan_gogh/status/1686427149786370055?s=20)
+- [Twitter](https://twitter.com/_nan_gogh/status/1686427149786370055?s=20)
 
 ## Versions
 

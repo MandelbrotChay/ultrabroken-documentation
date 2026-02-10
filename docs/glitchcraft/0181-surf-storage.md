@@ -20,17 +20,9 @@ Mozz
 ## Date
 September 22, 2023
 
-## Source
-
-- [Discord](https://discord.com/channels/1086729144307564648/1105598254198050947/1154554443644293171)
-
-## Examples
-
-- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1155495303642882099)
-
 ## Resources
-
-—
+- [Discord](https://discord.com/channels/1086729144307564648/1105598254198050947/1154554443644293171)
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1155495303642882099)
 
 ## Versions
 

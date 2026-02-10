@@ -25,17 +25,9 @@ sleepyppls, Mozz, mulberry, NaN Gogh
 ## Date
 June 1, 2023
 
-## Source
-
-- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1113917918422511776)
-
-## Examples
-
-- [Twitter](https://twitter.com/goghnan/status/1664921192527020033?s=46)
-
 ## Resources
-
-—
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1113917918422511776)
+- [Twitter](https://twitter.com/goghnan/status/1664921192527020033?s=46)
 
 ## Versions
 

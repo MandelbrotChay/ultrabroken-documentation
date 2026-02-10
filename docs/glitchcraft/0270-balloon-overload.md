@@ -23,17 +23,9 @@ Jordan, mulberry, ofstrings2
 ## Date
 March 8, 2025
 
-## Source
-
-- [Discord](https://discordapp.com/channels/1086729144307564648/1113557914444111873/1348152808108458056)
-
-## Examples
-
-- [Discord](https://discordapp.com/channels/1086729144307564648/1113557914444111873/1348452605411463221)
-
 ## Resources
-
-—
+- [Discord](https://discordapp.com/channels/1086729144307564648/1113557914444111873/1348152808108458056)
+- [Discord](https://discordapp.com/channels/1086729144307564648/1113557914444111873/1348452605411463221)
 
 ## Versions
 

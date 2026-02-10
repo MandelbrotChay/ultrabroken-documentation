@@ -21,17 +21,9 @@ evilgabe
 ## Date
 August 2, 2023
 
-## Source
-
-- [Youtube](https://youtu.be/x71Zp-zBbEE)
-
-## Examples
-
-- [YouTube](https://youtu.be/x71Zp-zBbEE)
-
 ## Resources
-
-—
+- [Youtube](https://youtu.be/x71Zp-zBbEE)
+- [YouTube](https://youtu.be/x71Zp-zBbEE)
 
 ## Versions
 

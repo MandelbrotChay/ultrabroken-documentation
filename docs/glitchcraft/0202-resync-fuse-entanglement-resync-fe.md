@@ -48,17 +48,8 @@ Zas
 ## Date
 December 18, 2023
 
-## Source
-
-- [Twitter](https://vxtwitter.com/zasbotw/status/1736818709677977998)
-
-## Examples
-
-—
-
 ## Resources
-
-—
+- [Twitter](https://vxtwitter.com/zasbotw/status/1736818709677977998)
 
 ## Versions
 

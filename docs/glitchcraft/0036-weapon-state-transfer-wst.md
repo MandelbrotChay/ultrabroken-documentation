@@ -53,16 +53,9 @@ BigDUCCO, kurocat471, ElDuende, Mentor_Kurt
 ## Date
 May 19, 2023
 
-## Source
-
-- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1109319667673223189)
-
-## Examples
-
-- [Youtube](https://www.youtube.com/watch?v=NRZpPp1vVsQ.)
-
 ## Resources
-
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1109319667673223189)
+- [Youtube](https://www.youtube.com/watch?v=NRZpPp1vVsQ.)
 - [YouTube](https://youtu.be/Kzf_uJBvRjI)
 - [YouTube](https://www.youtube.com/watch?v=1gWV6p814F8)
 

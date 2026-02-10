@@ -24,18 +24,10 @@ Flash, ElDuende, kirigaya
 ## Date
 June 2, 2023
 
-## Source
-
+## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1114292162268499979)
-
-## Examples
-
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1114294468363960490)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1114313664535732315)
-
-## Resources
-
-—
 
 ## Versions
 

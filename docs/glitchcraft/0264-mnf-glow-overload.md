@@ -22,17 +22,9 @@ Toti Sauce
 ## Date
 January 3, 2025
 
-## Source
-
-- [Discord](https://discordapp.com/channels/1086729144307564648/1105598687167664239/1324766216266453096)
-
-## Examples
-
-- [Discord](https://discordapp.com/channels/1086729144307564648/1105598687167664239/1324769679495139420)
-
 ## Resources
-
-—
+- [Discord](https://discordapp.com/channels/1086729144307564648/1105598687167664239/1324766216266453096)
+- [Discord](https://discordapp.com/channels/1086729144307564648/1105598687167664239/1324769679495139420)
 
 ## Versions
 

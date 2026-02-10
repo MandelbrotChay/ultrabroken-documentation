@@ -30,18 +30,9 @@ Ock, Aergyl
 ## Date
 November 24, 2023
 
-## Source
-
+## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1177719304347734027)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1206395537193173012)
-
-## Examples
-
-—
-
-## Resources
-
-—
 
 ## Versions
 

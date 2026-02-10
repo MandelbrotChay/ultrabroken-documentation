@@ -27,17 +27,8 @@ mulberry
 ## Date
 May 18, 2025
 
-## Source
-
-- [Discord](https://discordapp.com/channels/1086729144307564648/1113557914444111873/1373670648777277510)
-
-## Examples
-
-—
-
 ## Resources
-
-—
+- [Discord](https://discordapp.com/channels/1086729144307564648/1113557914444111873/1373670648777277510)
 
 ## Versions
 

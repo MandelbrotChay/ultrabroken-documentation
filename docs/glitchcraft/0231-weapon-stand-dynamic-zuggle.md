@@ -22,17 +22,8 @@ Winnerboi77
 ## Date
 March 14, 2024
 
-## Source
-
-- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1217864399855943740)
-
-## Examples
-
-—
-
 ## Resources
-
-—
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1217864399855943740)
 
 ## Versions
 

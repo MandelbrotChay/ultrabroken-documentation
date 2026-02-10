@@ -21,17 +21,8 @@ R4000, Bucket_Sloe
 ## Date
 August 21, 2023
 
-## Source
-
-- [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1143287784589770933)
-
-## Examples
-
-—
-
 ## Resources
-
-—
+- [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1143287784589770933)
 
 ## Versions
 

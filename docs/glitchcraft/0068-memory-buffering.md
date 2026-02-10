@@ -19,16 +19,7 @@ Mozz
 ## Date
 May 29, 2023
 
-## Source
-
-—
-
-## Examples
-
-—
-
 ## Resources
-
 —
 
 ## Versions

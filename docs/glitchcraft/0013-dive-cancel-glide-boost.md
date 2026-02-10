@@ -26,17 +26,8 @@ kurocat471, Mety333
 ## Date
 May 14, 2023
 
-## Source
-
-—
-
-## Examples
-
-- [YouTube](https://youtu.be/oIzJKQAWPdI)
-
 ## Resources
-
-—
+- [YouTube](https://youtu.be/oIzJKQAWPdI)
 
 ## Versions
 

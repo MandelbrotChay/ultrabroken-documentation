@@ -21,17 +21,8 @@ Knight7108 and Candlelor
 ## Date
 May 28, 2023
 
-## Source
-
-—
-
-## Examples
-
-- [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1128385969620533329)
-
 ## Resources
-
-—
+- [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1128385969620533329)
 
 ## Versions
 

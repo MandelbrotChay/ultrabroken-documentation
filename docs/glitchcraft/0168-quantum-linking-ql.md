@@ -36,19 +36,12 @@ NaN Gogh, pyuk
 ## Date
 August 30, 2023
 
-## Source
-
+## Resources
 - [Twitter](https://fxtwitter.com/goghnan/status/1674596305698471936?s=46)
 - [Twitter](https://twitter.com/_nan_gogh/status/1676914554956132352)
 - [Twitter](https://fxtwitter.com/FBuffalo3/status/1682898128368963584)
-
-## Examples
-
 - [Twitter](https://twitter.com/_nan_gogh/status/1676914554956132352)
 - [Twitter](https://vxtwitter.com/_nan_gogh/status/1678205905869889536?s=46)
-
-## Resources
-
 - [YouTube](https://www.youtube.com/watch?v=dxJru92WVtI)
 
 ## Versions

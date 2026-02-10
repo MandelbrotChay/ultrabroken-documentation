@@ -25,16 +25,7 @@ Mozz, researched by tori
 ## Date
 June 27, 2023
 
-## Source
-
-—
-
-## Examples
-
-—
-
 ## Resources
-
 —
 
 ## Versions

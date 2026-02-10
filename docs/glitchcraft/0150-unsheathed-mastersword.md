@@ -23,17 +23,9 @@ NX721, DanielNeia
 ## Date
 July 11, 2023
 
-## Source
-
-- [Twitter](https://twitter.com/NX721_/status/1678921120102371328)
-
-## Examples
-
-- [Twitter](https://twitter.com/NX721_/status/1678921120102371328)
-
 ## Resources
-
-—
+- [Twitter](https://twitter.com/NX721_/status/1678921120102371328)
+- [Twitter](https://twitter.com/NX721_/status/1678921120102371328)
 
 ## Versions
 

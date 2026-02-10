@@ -19,16 +19,7 @@ Mozz, pyuk
 ## Date
 June 30, 2023
 
-## Source
-
-—
-
-## Examples
-
-—
-
 ## Resources
-
 —
 
 ## Versions

@@ -19,17 +19,8 @@ Lopitty
 ## Date
 May 17, 2023
 
-## Source
-
-—
-
-## Examples
-
-- [YouTube](https://youtu.be/60mI9DLo_vw)
-
 ## Resources
-
-—
+- [YouTube](https://youtu.be/60mI9DLo_vw)
 
 ## Versions
 

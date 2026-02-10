@@ -32,16 +32,8 @@ Ock
 ## Date
 December 12, 2023
 
-## Source
-
-- [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1184150352174514308)
-
-## Examples
-
-—
-
 ## Resources
-
+- [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1184150352174514308)
 - [YouTube](https://www.youtube.com/watch?v=WNnnI13a954&t)
 
 ## Versions

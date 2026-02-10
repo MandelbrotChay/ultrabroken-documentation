@@ -29,17 +29,9 @@ shio_0725, altenative method by ralseidewitt
 ## Date
 June 27, 2023
 
-## Source
-
-- [Twitter](https://twitter.com/shio_0725_4040/status/1684509550026924032?s=20)
-
-## Examples
-
-- [Twitter](https://twitter.com/shio_0725_4040/status/1685176978742403072?t=m0yFnWCFAxKgkgQHeoYGAQ&s=19)
-
 ## Resources
-
-—
+- [Twitter](https://twitter.com/shio_0725_4040/status/1684509550026924032?s=20)
+- [Twitter](https://twitter.com/shio_0725_4040/status/1685176978742403072?t=m0yFnWCFAxKgkgQHeoYGAQ&s=19)
 
 ## Versions
 

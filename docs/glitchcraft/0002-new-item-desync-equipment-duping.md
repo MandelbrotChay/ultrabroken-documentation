@@ -23,16 +23,9 @@ Can only be done with new items once. Must meet sorting requirements listed unde
 ## Date
 May 12, 2023
 
-## Source
-
-- [Youtube](https://youtu.be/7_1fwTUz0A4)
-
-## Examples
-
-- [Youtube](https://youtu.be/7_1fwTUz0A4)
-
 ## Resources
-
+- [Youtube](https://youtu.be/7_1fwTUz0A4)
+- [Youtube](https://youtu.be/7_1fwTUz0A4)
 - [Youtube](https://youtu.be/7_1fwTUz0A4)
 
 ## Versions

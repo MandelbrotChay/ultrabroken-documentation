@@ -26,17 +26,8 @@ Saria
 ## Date
 May 19, 2023
 
-## Source
-
-- [Twitter](https://twitter.com/reaperhide/status/1659593296774299648)
-
-## Examples
-
-—
-
 ## Resources
-
-—
+- [Twitter](https://twitter.com/reaperhide/status/1659593296774299648)
 
 ## Versions
 

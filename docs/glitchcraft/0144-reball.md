@@ -21,16 +21,7 @@ Mozz
 ## Date
 July 6, 2023
 
-## Source
-
-—
-
-## Examples
-
-—
-
 ## Resources
-
 —
 
 ## Versions

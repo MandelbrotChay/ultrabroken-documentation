@@ -25,17 +25,8 @@ LegendofLinkk
 ## Date
 June 6, 2023
 
-## Source
-
-- [Twitter](https://twitter.com/iLegendofLinkk/status/1669042156324139008?t=t_Gk24Nr3ezqvCx5djFffA&s=19)
-
-## Examples
-
-—
-
 ## Resources
-
-—
+- [Twitter](https://twitter.com/iLegendofLinkk/status/1669042156324139008?t=t_Gk24Nr3ezqvCx5djFffA&s=19)
 
 ## Versions
 

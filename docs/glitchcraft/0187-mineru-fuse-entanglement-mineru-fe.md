@@ -42,18 +42,10 @@ ock (Method 1 & 3), WinnerBoi77 (Method 2)
 ## Date
 October 18, 2023
 
-## Source
-
+## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1164195341491515432)
-
-## Examples
-
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1216477146978193530)
 - [Discord](https://discord.com/channels/1086729144307564648/1109838351596527726/1235768638796071013)
-
-## Resources
-
-—
 
 ## Versions
 

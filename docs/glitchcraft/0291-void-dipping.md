@@ -35,17 +35,9 @@ Squidwest, mulberry, Aergyl
 ## Date
 December 29, 2025
 
-## Source
-
-- [Discord](https://discord.com/channels/1111875355758837830/1128775917376897145/1455340505096261796)
-
-## Examples
-
-- [DiscordDiscordDiscord](https://discord.com/channels/1086729144307564648/1113557914444111873/1456747616430850126)
-
 ## Resources
-
-—
+- [Discord](https://discord.com/channels/1111875355758837830/1128775917376897145/1455340505096261796)
+- [DiscordDiscordDiscord](https://discord.com/channels/1086729144307564648/1113557914444111873/1456747616430850126)
 
 ## Versions
 

@@ -25,17 +25,9 @@ mulberry, KiloVictor
 ## Date
 June 4, 2024
 
-## Source
-
-- [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1247625177785831556)
-
-## Examples
-
-- [Discord](https://discord.com/channels/1086729144307564648/1109838351596527726/1267029375925096489)
-
 ## Resources
-
-—
+- [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1247625177785831556)
+- [Discord](https://discord.com/channels/1086729144307564648/1109838351596527726/1267029375925096489)
 
 ## Versions
 

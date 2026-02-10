@@ -21,16 +21,8 @@ Luckstyle
 ## Date
 December 22, 2023
 
-## Source
-
-- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1187786562293997598)
-
-## Examples
-
-—
-
 ## Resources
-
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1187786562293997598)
 - [YouTube](https://youtu.be/Gu_zlst9T0w?si=x6FNI5zIrRNrQLh-)
 
 ## Versions

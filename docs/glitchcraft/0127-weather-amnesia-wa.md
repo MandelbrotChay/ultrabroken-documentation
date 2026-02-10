@@ -20,16 +20,7 @@ pyuk
 ## Date
 June 25, 2023
 
-## Source
-
-—
-
-## Examples
-
-—
-
 ## Resources
-
 —
 
 ## Versions

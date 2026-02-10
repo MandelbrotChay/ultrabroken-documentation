@@ -31,19 +31,10 @@ Zas, Aeolian
 ## Date
 July 11, 2023
 
-## Source
-
+## Resources
 - [Twitter](https://twitter.com/zasoot/status/1678779155310338053)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1128344687825133649)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1128344687825133649%20(Aeolian%20with%201.0.0%20item%20drop))
-
-## Examples
-
-—
-
-## Resources
-
-—
 
 ## Versions
 

@@ -41,18 +41,9 @@ Discovered by mulberry, optimized by blackmars, mulberry, NghtmaR3 (order is alp
 ## Date
 July 17, 2024
 
-## Source
-
+## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1262927638683582505)
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1263286685198712883)
-
-## Examples
-
-—
-
-## Resources
-
-—
 
 ## Versions
 

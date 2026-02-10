@@ -28,18 +28,10 @@ Mozz, mulberry
 ## Date
 June 15, 2023
 
-## Source
-
+## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1118505594215743501)
-
-## Examples
-
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1118690695910273074)
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1250839219329302679)
-
-## Resources
-
-—
 
 ## Versions
 

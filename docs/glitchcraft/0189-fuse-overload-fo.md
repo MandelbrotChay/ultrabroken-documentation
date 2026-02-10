@@ -23,17 +23,9 @@ ultrababouin, NghtmaR3
 ## Date
 November 3, 2023
 
-## Source
-
-- [Discord](https://discord.com/channels/1111875355758837830/1128775917376897145/1170074200627740803)
-
-## Examples
-
-- [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1201964183516876800)
-
 ## Resources
-
-—
+- [Discord](https://discord.com/channels/1111875355758837830/1128775917376897145/1170074200627740803)
+- [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1201964183516876800)
 
 ## Versions
 

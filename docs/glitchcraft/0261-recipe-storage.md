@@ -40,19 +40,11 @@ mulberry (1.0 method), ock (original discovery with Ocklusion)
 ## Date
 September 14th, 2024 (Ocklusion method) November 10th, 2024 (1.0 method)
 
-## Source
-
+## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1284563089873965121)
 - [Discord](https://discord.com/channels/1086729144307564648/1110956205624532993/1305180152325738589)
-
-## Examples
-
 - [Discord](https://discord.com/channels/1086729144307564648/1110956205624532993/1305204895602704534)
 - [Discord](https://discord.com/channels/1086729144307564648/1110956205624532993/1305205208665821186)
-
-## Resources
-
-—
 
 ## Versions
 

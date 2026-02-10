@@ -30,16 +30,9 @@ Blackmars, Tahata, EM
 ## Date
 April 19, 2024
 
-## Source
-
-- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1230669568066846741)
-
-## Examples
-
-- [YouTube](https://youtu.be/oRo_1R9d_-w?si=WmCCE8sas7r1DuoZ)
-
 ## Resources
-
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1230669568066846741)
+- [YouTube](https://youtu.be/oRo_1R9d_-w?si=WmCCE8sas7r1DuoZ)
 - [YouTube](https://youtu.be/sJdmYu9j1FI?si=vVZEzINRlSywPMqD)
 
 ## Versions

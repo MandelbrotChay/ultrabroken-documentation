@@ -34,18 +34,10 @@ NX721,  eXe
 ## Date
 May 19, 2023
 
-## Source
-
+## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1109188178008621147)
 - [Twitter](https://twitter.com/NX721_/status/1678077674349121536)
-
-## Examples
-
 - [Twitter](https://twitter.com/NX721_/status/1678114915293491200?s=20)
-
-## Resources
-
-—
 
 ## Versions
 

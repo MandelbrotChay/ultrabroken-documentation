@@ -27,17 +27,9 @@ Li Shen (鯉神)
 ## Date
 May 15, 2023
 
-## Source
-
-- [Bilibili](https://www.bilibili.com/video/BV19h4y147iR/)
-
-## Examples
-
-- [YouTube](https://www.youtube.com/watch?v=0sRvQzU2j5w)
-
 ## Resources
-
-—
+- [Bilibili](https://www.bilibili.com/video/BV19h4y147iR/)
+- [YouTube](https://www.youtube.com/watch?v=0sRvQzU2j5w)
 
 ## Versions
 

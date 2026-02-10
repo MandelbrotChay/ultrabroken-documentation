@@ -32,17 +32,9 @@ mulberry, Blackmars
 ## Date
 July 18, 2024
 
-## Source
-
-- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1263545835019309137)
-
-## Examples
-
-- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1287526225585373248)
-
 ## Resources
-
-—
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1263545835019309137)
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1287526225585373248)
 
 ## Versions
 

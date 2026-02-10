@@ -22,19 +22,10 @@ KAIDUDE64
 ## Date
 September 16, 2023
 
-## Source
-
-—
-
-## Examples
-
+## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1152798657419157626)
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1152799909666377808)
 - [Youtube](https://youtu.be/nmFfZ_MZ34M)
-
-## Resources
-
-—
 
 ## Versions
 

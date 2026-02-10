@@ -22,17 +22,9 @@ This can be done with a spring, making the entire trick much more portable
 ## Date
 May 16, 2023
 
-## Source
-
-- [Twitter](https://vxtwitter.com/tsu509359170830/status/1657767717796208640?s=20)
-
-## Examples
-
-- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1108100337254023168)
-
 ## Resources
-
-—
+- [Twitter](https://vxtwitter.com/tsu509359170830/status/1657767717796208640?s=20)
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1108100337254023168)
 
 ## Versions
 

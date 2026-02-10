@@ -22,17 +22,9 @@ rocomox
 ## Date
 May 28, 2023
 
-## Source
-
-- [Youtube](https://www.youtube.com/watch?v=CfIe3QO5fXA)
-
-## Examples
-
-- [YouTube](https://youtu.be/_Zaqnosyymw)
-
 ## Resources
-
-—
+- [Youtube](https://www.youtube.com/watch?v=CfIe3QO5fXA)
+- [YouTube](https://youtu.be/_Zaqnosyymw)
 
 ## Versions
 

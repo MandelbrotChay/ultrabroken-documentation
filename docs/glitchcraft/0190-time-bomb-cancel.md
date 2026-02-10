@@ -20,17 +20,8 @@ tzakazuki
 ## Date
 November 4, 2023
 
-## Source
-
-- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1170334121910882366)
-
-## Examples
-
-—
-
 ## Resources
-
-—
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1170334121910882366)
 
 ## Versions
 

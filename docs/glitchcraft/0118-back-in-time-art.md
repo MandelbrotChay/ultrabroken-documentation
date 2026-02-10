@@ -33,18 +33,9 @@ Picture in Link's house R4000, Compendium pictures Zas
 ## Date
 June 18, 2023
 
-## Source
-
+## Resources
 - [Youtube](https://www.youtube.com/watch?v=DWA_cTNykyo)
 - [Twitter](https://vxtwitter.com/zasbotw/status/1692295854173167930)
-
-## Examples
-
-—
-
-## Resources
-
-—
 
 ## Versions
 

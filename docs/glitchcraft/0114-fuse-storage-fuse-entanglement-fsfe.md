@@ -20,16 +20,7 @@ Ryan?, Mozz
 ## Date
 June 18, 2023
 
-## Source
-
-—
-
-## Examples
-
-—
-
 ## Resources
-
 —
 
 ## Versions

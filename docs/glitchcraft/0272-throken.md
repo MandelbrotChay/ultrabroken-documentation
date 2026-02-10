@@ -21,17 +21,9 @@ Ikaboze
 ## Date
 May 17, 2025
 
-## Source
-
-- [Discord](https://discordapp.com/channels/1086729144307564648/1113557914444111873/1373320909842288870)
-
-## Examples
-
-- [Discord](https://discordapp.com/channels/1086729144307564648/1113557914444111873/1373347636647825481)
-
 ## Resources
-
-—
+- [Discord](https://discordapp.com/channels/1086729144307564648/1113557914444111873/1373320909842288870)
+- [Discord](https://discordapp.com/channels/1086729144307564648/1113557914444111873/1373347636647825481)
 
 ## Versions
 

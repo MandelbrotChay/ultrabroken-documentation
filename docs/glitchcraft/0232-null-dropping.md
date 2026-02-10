@@ -20,17 +20,8 @@ Aergyl
 ## Date
 March 16, 2024
 
-## Source
-
-- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1218578523690897458)
-
-## Examples
-
-—
-
 ## Resources
-
-—
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1218578523690897458)
 
 ## Versions
 

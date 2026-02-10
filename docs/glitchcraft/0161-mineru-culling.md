@@ -25,17 +25,8 @@ Lightos_
 ## Date
 July 31, 2023
 
-## Source
-
-- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1135462408756936704)
-
-## Examples
-
-—
-
 ## Resources
-
-—
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1135462408756936704)
 
 ## Versions
 

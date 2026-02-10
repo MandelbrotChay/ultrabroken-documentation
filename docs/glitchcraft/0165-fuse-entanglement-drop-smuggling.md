@@ -25,17 +25,8 @@ Blize, Blackmars
 ## Date
 August 15, 2023
 
-## Source
-
-—
-
-## Examples
-
-- [Link](https://discordapp.com/channels/1086729144307564648/1113557914444111873/1140772467707760750)
-
 ## Resources
-
-—
+- [Link](https://discordapp.com/channels/1086729144307564648/1113557914444111873/1140772467707760750)
 
 ## Versions
 

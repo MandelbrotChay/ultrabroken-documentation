@@ -22,16 +22,8 @@ bebu0815
 ## Date
 August 13, 2023
 
-## Source
-
-- [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1140347990368854047)
-
-## Examples
-
-—
-
 ## Resources
-
+- [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1140347990368854047)
 - [YouTube](https://www.youtube.com/watch?v=6plkkvYGW74&)
 
 ## Versions

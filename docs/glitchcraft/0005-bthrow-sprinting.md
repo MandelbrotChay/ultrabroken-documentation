@@ -20,15 +20,8 @@ Press B - ZR - R - B (or B - R - ZR - B) and repeat
 ## Date
 May 12, 2023
 
-## Source
-—
-
-## Examples
-
-- [Youtube](https://youtu.be/Mb8rgAwELYY)
-
 ## Resources
-—
+- [Youtube](https://youtu.be/Mb8rgAwELYY)
 
 ## Versions
 

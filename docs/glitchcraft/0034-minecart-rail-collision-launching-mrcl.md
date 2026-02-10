@@ -19,18 +19,10 @@ Still needs to be experimented with more.
 ## Date
 May 18, 2023
 
-## Source
-
+## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1108547906698485852)
-
-## Examples
-
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1108547906698485852)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1112410236356145182)
-
-## Resources
-
-—
 
 ## Versions
 

@@ -22,17 +22,8 @@ NX721
 ## Date
 June 28, 2023
 
-## Source
-
-- [Twitter](https://twitter.com/NX721_/status/1674217769267781633?s=20)
-
-## Examples
-
-—
-
 ## Resources
-
-—
+- [Twitter](https://twitter.com/NX721_/status/1674217769267781633?s=20)
 
 ## Versions
 

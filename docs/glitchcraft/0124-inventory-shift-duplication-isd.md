@@ -22,18 +22,9 @@ Blizzard Blanc, BigDUCCO, Maxmasher, Pyuk, Zas
 ## Date
 June 25, 2023
 
-## Source
-
-—
-
-## Examples
-
+## Resources
 - [Twitter](https://vxtwitter.com/zb_yuhudaddy/status/1673184858628296704?s=20)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1122835952423944282)
-
-## Resources
-
-—
 
 ## Versions
 

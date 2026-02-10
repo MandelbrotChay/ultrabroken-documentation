@@ -30,17 +30,8 @@ mulberry, dt13269 for making the culling logger which allowed for the discovery 
 ## Date
 June 16, 2025
 
-## Source
-
-- [Discord](https://discord.com/channels/1086729144307564648/1110956205624532993/1383991495123796030)
-
-## Examples
-
-—
-
 ## Resources
-
-—
+- [Discord](https://discord.com/channels/1086729144307564648/1110956205624532993/1383991495123796030)
 
 ## Versions
 

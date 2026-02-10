@@ -20,17 +20,9 @@ Aergyl, FerrusCube, Mozz
 ## Date
 September 21, 2023
 
-## Source
-
-- [Discord](https://discord.com/channels/1086729144307564648/1105598254198050947/1154554443644293171)
-
-## Examples
-
-- [Discord](https://discord.com/channels/1086729144307564648/1105598254198050947/1154555245830086706)
-
 ## Resources
-
-—
+- [Discord](https://discord.com/channels/1086729144307564648/1105598254198050947/1154554443644293171)
+- [Discord](https://discord.com/channels/1086729144307564648/1105598254198050947/1154555245830086706)
 
 ## Versions
 

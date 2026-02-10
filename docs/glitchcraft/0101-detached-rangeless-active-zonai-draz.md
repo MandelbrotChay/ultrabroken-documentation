@@ -21,16 +21,7 @@ Venaticus
 ## Date
 June 15, 2023
 
-## Source
-
-—
-
-## Examples
-
-—
-
 ## Resources
-
 —
 
 ## Versions

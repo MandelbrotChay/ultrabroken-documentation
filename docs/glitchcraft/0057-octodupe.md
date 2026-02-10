@@ -27,20 +27,11 @@ This does not work on items that cannot be modified or octoroks that have alread
 ## Date
 May 26, 2023
 
-## Source
-
-—
-
-## Examples
-
+## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1111734670204358726)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1111702277451960370)
 - [YouTube](https://www.youtube.com/watch?v=oXzMRPK2sRM)
 - [YouTube](https://www.youtube.com/watch?v=FSxiPP-SDtM)
-
-## Resources
-
-—
 
 ## Versions
 

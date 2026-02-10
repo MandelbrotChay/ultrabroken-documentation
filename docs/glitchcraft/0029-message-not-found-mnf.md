@@ -40,20 +40,12 @@ LegendofLinkk (Zuggle Method), Abahbob (SLD Method)
 ## Date
 May 17, 2023
 
-## Source
-
+## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1108369158237859902)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1108527513203912794)
-
-## Examples
-
 - [Youtube](https://youtu.be/8mEBVQNCkns)
 - [Youtube](https://youtu.be/EAthghngbKs)
 - [Youtube](https://www.youtube.com/watch?v=TKSQJ23ES_c)
-
-## Resources
-
-—
 
 ## Versions
 

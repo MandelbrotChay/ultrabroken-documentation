@@ -31,20 +31,13 @@ NX721, pyuk, Flash, Mozz, Blize
 ## Date
 June 25, 2023
 
-## Source
-
+## Resources
 - [Youtube](https://www.youtube.com/watch?v=y_N5LEYQGfc)
-
-## Examples
-
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1123282233248194660)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1122982965459288084)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1122726452702494790)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1122714860199870506)
 - [Discord](https://discordapp.com/channels/1086729144307564648/1105598687167664239/1149978844573487156)
-
-## Resources
-
 - [Tutorial by Blize (ty)](https://www.youtube.com/watch?v=4oxjOE0onxI)
 
 ## Versions

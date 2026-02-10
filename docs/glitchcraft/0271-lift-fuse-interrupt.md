@@ -21,19 +21,11 @@ Yee
 ## Date
 April 22, 2025
 
-## Source
-
+## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1109838351596527726/1364232293140402196)
-
-## Examples
-
 - [Discord](https://discord.com/channels/1086729144307564648/1109838351596527726/1364240647736791071)
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1367499196676051034)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1366561351069077616)
-
-## Resources
-
-—
 
 ## Versions
 

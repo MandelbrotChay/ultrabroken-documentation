@@ -29,17 +29,8 @@ May 21, 2023(?)
 ## Date
 May 21, 2023
 
-## Source
-
-—
-
-## Examples
-
-- [YouTube](https://youtu.be/c9TDP4qdAUY)
-
 ## Resources
-
-—
+- [YouTube](https://youtu.be/c9TDP4qdAUY)
 
 ## Versions
 

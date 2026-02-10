@@ -32,18 +32,10 @@ Takosensai1
 ## Date
 May 18, 2023
 
-## Source
-
+## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1108851384239009912)
-
-## Examples
-
 - [YouTube](https://youtu.be/3DHEaqoDl1M)
 - [Twitter](https://twitter.com/PowerGaymerKai/status/1659292261572829184)
-
-## Resources
-
-—
 
 ## Versions
 

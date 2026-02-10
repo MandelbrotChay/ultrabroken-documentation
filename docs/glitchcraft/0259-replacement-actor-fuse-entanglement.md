@@ -27,17 +27,9 @@ dt13269, mulberry
 ## Date
 November 9, 2024
 
-## Source
-
-- [Discord](https://discord.com/channels/1086729144307564648/1110956205624532993/1304881550130937906)
-
-## Examples
-
-- [YouTube](https://youtu.be/WR_ByU-_0ic?si=YvWX-4ufWhpiS0nt)
-
 ## Resources
-
-—
+- [Discord](https://discord.com/channels/1086729144307564648/1110956205624532993/1304881550130937906)
+- [YouTube](https://youtu.be/WR_ByU-_0ic?si=YvWX-4ufWhpiS0nt)
 
 ## Versions
 

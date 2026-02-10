@@ -58,18 +58,10 @@ ock, Mulbery
 ## Date
 November 11, 2023
 
-## Source
-
+## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1173082845854584872)
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1191987058412101725)
-
-## Examples
-
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1191987058412101725)
-
-## Resources
-
-—
 
 ## Versions
 

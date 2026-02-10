@@ -21,17 +21,8 @@ circyit
 ## Date
 June 16, 2023
 
-## Source
-
-- [Youtube](https://www.youtube.com/watch?v=WhKBIKQwZzc)
-
-## Examples
-
-—
-
 ## Resources
-
-—
+- [Youtube](https://www.youtube.com/watch?v=WhKBIKQwZzc)
 
 ## Versions
 

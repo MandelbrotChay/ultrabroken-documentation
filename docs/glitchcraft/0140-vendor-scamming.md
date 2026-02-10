@@ -22,17 +22,8 @@ NX721, Mozz, NaN Gogh
 ## Date
 July 3, 2023
 
-## Source
-
-—
-
-## Examples
-
-- [Twitter](https://twitter.com/NX721_/status/1675983600263778305)
-
 ## Resources
-
-—
+- [Twitter](https://twitter.com/NX721_/status/1675983600263778305)
 
 ## Versions
 

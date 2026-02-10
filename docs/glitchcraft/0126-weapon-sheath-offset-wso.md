@@ -25,17 +25,8 @@ circyit, dash
 ## Date
 June 25, 2023
 
-## Source
-
-- [Youtube](https://www.youtube.com/watch?v=E9yKzddgre4)
-
-## Examples
-
-—
-
 ## Resources
-
-—
+- [Youtube](https://www.youtube.com/watch?v=E9yKzddgre4)
 
 ## Versions
 

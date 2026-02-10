@@ -24,17 +24,8 @@ kirigaya
 ## Date
 June 16, 2023
 
-## Source
-
-- [Discord](https://discord.com/channels/1086729144307564648/1110956205624532993/1119636429933387826)
-
-## Examples
-
-—
-
 ## Resources
-
-—
+- [Discord](https://discord.com/channels/1086729144307564648/1110956205624532993/1119636429933387826)
 
 ## Versions
 

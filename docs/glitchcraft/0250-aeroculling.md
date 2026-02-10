@@ -37,17 +37,9 @@ Discovered by Aergyl, developed by Aergyl, mulberry
 ## Date
 August 11, 2024
 
-## Source
-
-- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1283455775976718346)
-
-## Examples
-
-- [YouTube](https://www.youtube.com/watch?v=o-9HO3NbfPU)
-
 ## Resources
-
-—
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1283455775976718346)
+- [YouTube](https://www.youtube.com/watch?v=o-9HO3NbfPU)
 
 ## Versions
 

@@ -21,17 +21,8 @@ nghtmar31
 ## Date
 January 21, 2024
 
-## Source
-
-- [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1198446880288428224)
-
-## Examples
-
-—
-
 ## Resources
-
-—
+- [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1198446880288428224)
 
 ## Versions
 

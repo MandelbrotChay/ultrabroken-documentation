@@ -21,17 +21,9 @@ sleepyppls
 ## Date
 June 1, 2023
 
-## Source
-
-- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1113917918422511776)
-
-## Examples
-
-- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1114328222365130844)
-
 ## Resources
-
-—
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1113917918422511776)
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1114328222365130844)
 
 ## Versions
 

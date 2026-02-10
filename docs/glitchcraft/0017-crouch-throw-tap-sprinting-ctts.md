@@ -20,17 +20,9 @@ Deystroyer
 ## Date
 May 15, 2023
 
-## Source
-
-- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1107874408938348614)
-
-## Examples
-
-- [YouTube](https://youtu.be/eea66BoVhcQ)
-
 ## Resources
-
-—
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1107874408938348614)
+- [YouTube](https://youtu.be/eea66BoVhcQ)
 
 ## Versions
 

@@ -19,17 +19,9 @@ koreth
 ## Date
 January 2, 2024
 
-## Source
-
-- [Discord](https://discord.com/channels/1086729144307564648/1110956205624532993/1191838704646488145)
-
-## Examples
-
-- [Discord](https://discord.com/channels/1086729144307564648/1110956205624532993/1193252888064040981)
-
 ## Resources
-
-—
+- [Discord](https://discord.com/channels/1086729144307564648/1110956205624532993/1191838704646488145)
+- [Discord](https://discord.com/channels/1086729144307564648/1110956205624532993/1193252888064040981)
 
 ## Versions
 

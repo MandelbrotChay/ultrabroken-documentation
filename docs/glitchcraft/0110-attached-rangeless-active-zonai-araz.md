@@ -43,16 +43,7 @@ Ryan?, NX721
 ## Date
 June 16, 2023
 
-## Source
-
-—
-
-## Examples
-
-—
-
 ## Resources
-
 —
 
 ## Versions

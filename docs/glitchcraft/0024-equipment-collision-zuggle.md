@@ -28,16 +28,7 @@ Zvleon
 ## Date
 May 16, 2023
 
-## Source
-
-—
-
-## Examples
-
-—
-
 ## Resources
-
 —
 
 ## Versions

@@ -23,17 +23,8 @@ kurone_yuu
 ## Date
 June 13, 2024
 
-## Source
-
-- [Twitter](https://x.com/kurone_yuu/status/1801239224378900947?s=46&t=DdtmlnCQqIbD5irw-jnKbQ)
-
-## Examples
-
-—
-
 ## Resources
-
-—
+- [Twitter](https://x.com/kurone_yuu/status/1801239224378900947?s=46&t=DdtmlnCQqIbD5irw-jnKbQ)
 
 ## Versions
 

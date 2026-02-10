@@ -30,16 +30,8 @@ ferruscube, Aergyl
 ## Date
 September 14, 2023
 
-## Source
-
-- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1155451908530647064)
-
-## Examples
-
-—
-
 ## Resources
-
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1155451908530647064)
 - [YouTube](https://www.youtube.com/watch?v=NP-owf2XiVM&t)
 
 ## Versions

@@ -32,17 +32,10 @@ NaN Gogh, DisguisedMoth
 ## Date
 July 1, 2023
 
-## Source
-
+## Resources
 - [Twitter](https://twitter.com/_nan_gogh/status/1675121229462642689?s=20)
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1134569862497304629)
-
-## Examples
-
 - [Twitter](https://twitter.com/_nan_gogh/status/1675121229462642689?s=20)
-
-## Resources
-
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1134569862497304629)
 
 ## Versions

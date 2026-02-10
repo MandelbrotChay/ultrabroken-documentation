@@ -21,17 +21,8 @@ Erling附身
 ## Date
 May 16, 2023
 
-## Source
-
-- [Bilibili](http://www.bilibili.com/video/BV1qT411t7Kv/)
-
-## Examples
-
-—
-
 ## Resources
-
-—
+- [Bilibili](http://www.bilibili.com/video/BV1qT411t7Kv/)
 
 ## Versions
 

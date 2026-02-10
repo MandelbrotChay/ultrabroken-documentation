@@ -35,17 +35,8 @@ BigDUCCO
 ## Date
 June 15, 2023
 
-## Source
-
-- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1118960982505574460)
-
-## Examples
-
-—
-
 ## Resources
-
-—
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1118960982505574460)
 
 ## Versions
 

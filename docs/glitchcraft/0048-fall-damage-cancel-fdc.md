@@ -23,17 +23,9 @@ simonfirefighter
 ## Date
 May 23, 2023
 
-## Source
-
-- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1110634140803551445)
-
-## Examples
-
-- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1110642449954639932)
-
 ## Resources
-
-—
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1110634140803551445)
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1110642449954639932)
 
 ## Versions
 

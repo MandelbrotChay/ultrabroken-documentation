@@ -24,17 +24,8 @@ Telkic, mulberry, Winnerboi77
 ## Date
 June 19, 2025
 
-## Source
-
-- [Discord](https://discord.com/channels/1086729144307564648/1221545645844725760/1385097896575373412)
-
-## Examples
-
-—
-
 ## Resources
-
-—
+- [Discord](https://discord.com/channels/1086729144307564648/1221545645844725760/1385097896575373412)
 
 ## Versions
 

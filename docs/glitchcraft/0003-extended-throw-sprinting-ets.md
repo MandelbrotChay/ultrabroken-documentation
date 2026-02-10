@@ -19,17 +19,9 @@ briochoc
 ## Date
 May 12, 2023
 
-## Source
-
-- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1106610982379323492)
-
-## Examples
-
-- [Youtube](https://youtu.be/uM4o7rmSbwc)
-
 ## Resources
-
-—
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1106610982379323492)
+- [Youtube](https://youtu.be/uM4o7rmSbwc)
 
 ## Versions
 

@@ -23,17 +23,9 @@ Zas
 ## Date
 June 8, 2023
 
-## Source
-
-- [Twitter](https://twitter.com/zasbotw/status/1666751564743315456)
-
-## Examples
-
-- [Twitter](https://twitter.com/zasbotw/status/1666751564743315456)
-
 ## Resources
-
-—
+- [Twitter](https://twitter.com/zasbotw/status/1666751564743315456)
+- [Twitter](https://twitter.com/zasbotw/status/1666751564743315456)
 
 ## Versions
 

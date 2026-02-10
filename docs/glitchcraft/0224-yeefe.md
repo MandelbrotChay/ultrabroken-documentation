@@ -31,17 +31,8 @@ Yee, mulberry
 ## Date
 February 20, 2024
 
-## Source
-
-- [Discord](https://discord.com/channels/1086729144307564648/1112801830821449798/1209443743581736980)
-
-## Examples
-
-—
-
 ## Resources
-
-—
+- [Discord](https://discord.com/channels/1086729144307564648/1112801830821449798/1209443743581736980)
 
 ## Versions
 

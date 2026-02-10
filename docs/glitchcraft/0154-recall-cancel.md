@@ -20,18 +20,10 @@ R4000
 ## Date
 July 20, 2023
 
-## Source
-
+## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1131627625991905432)
-
-## Examples
-
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1153447778240974908)
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1153822693880238171)
-
-## Resources
-
-—
 
 ## Versions
 

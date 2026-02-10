@@ -20,15 +20,8 @@ InAMuffinCup, ChargeVolt (SLD transfer method)
 ## Date
 June 7, 2023
 
-## Source
-—
-
-## Examples
-
-- [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1116159439855169606)
-
 ## Resources
-—
+- [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1116159439855169606)
 
 ## Versions
 

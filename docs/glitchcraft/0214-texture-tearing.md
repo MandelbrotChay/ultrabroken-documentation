@@ -23,17 +23,8 @@ ock
 ## Date
 January 13, 2024
 
-## Source
-
-—
-
-## Examples
-
-- [Discord](https://discord.com/channels/1086729144307564648/1194033039123165215/1195690499852480544)
-
 ## Resources
-
-—
+- [Discord](https://discord.com/channels/1086729144307564648/1194033039123165215/1195690499852480544)
 
 ## Versions
 

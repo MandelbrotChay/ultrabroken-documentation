@@ -24,17 +24,9 @@ SCFD-GK2 and Nicnac
 ## Date
 June 19, 2023
 
-## Source
-
-- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1120378339442556990)
-
-## Examples
-
-- [YouTube](https://youtu.be/V6ZeZmfpvEI)
-
 ## Resources
-
-—
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1120378339442556990)
+- [YouTube](https://youtu.be/V6ZeZmfpvEI)
 
 ## Versions
 

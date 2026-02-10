@@ -23,18 +23,10 @@ Mozz, pyuk
 ## Date
 June 18, 2023
 
-## Source
-
+## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1110956205624532993/1119903350255796265)
-
-## Examples
-
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1138481656093749359)
 - [YouTube](https://youtu.be/NU0jvd-S9rQ)
-
-## Resources
-
-—
 
 ## Versions
 

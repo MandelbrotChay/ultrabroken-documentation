@@ -42,17 +42,8 @@ Zas
 ## Date
 November 6, 2023
 
-## Source
-
-- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1171061365667020821)
-
-## Examples
-
-—
-
 ## Resources
-
-—
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1171061365667020821)
 
 ## Versions
 

@@ -24,16 +24,7 @@ Orionsayshi (Method 1), Owen (Method 2)
 ## Date
 May 15, 2023
 
-## Source
-
-—
-
-## Examples
-
-—
-
 ## Resources
-
 —
 
 ## Versions

@@ -22,16 +22,9 @@ Suishi
 ## Date
 July 10, 2023
 
-## Source
-
-- [Youtube](https://youtu.be/emvoQHVRaCE)
-
-## Examples
-
-- [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1128052108109811784)
-
 ## Resources
-
+- [Youtube](https://youtu.be/emvoQHVRaCE)
+- [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1128052108109811784)
 - [YouTube](https://youtu.be/Tw3sjs0ftyk?si=R6hf6xgIuHwTYv_k)
 
 ## Versions

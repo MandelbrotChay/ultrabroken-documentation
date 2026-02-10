@@ -24,17 +24,8 @@ LegendofLinkk
 ## Date
 June 5, 2023
 
-## Source
-
-—
-
-## Examples
-
-- [YouTube](https://youtu.be/n2nP6FNjEPI)
-
 ## Resources
-
-—
+- [YouTube](https://youtu.be/n2nP6FNjEPI)
 
 ## Versions
 

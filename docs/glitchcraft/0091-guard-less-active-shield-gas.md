@@ -29,18 +29,9 @@ venaticus
 ## Date
 June 12, 2023
 
-## Source
-
+## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1110956205624532993/1118279347325894746)
 - [Discord](https://discordapp.com/channels/1086729144307564648/1105598687167664239/1149978844573487156)
-
-## Examples
-
-—
-
-## Resources
-
-—
 
 ## Versions
 

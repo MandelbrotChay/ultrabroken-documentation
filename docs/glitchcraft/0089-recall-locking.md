@@ -23,17 +23,8 @@ Ryan?
 ## Date
 June 11, 2023
 
-## Source
-
-—
-
-## Examples
-
-[Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1194982242565496895)
-
 ## Resources
-
-—
+[Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1194982242565496895)
 
 ## Versions
 

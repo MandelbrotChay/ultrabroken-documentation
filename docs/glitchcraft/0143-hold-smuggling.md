@@ -26,17 +26,8 @@ Mozz, NaN Gogh
 ## Date
 July 4, 2023
 
-## Source
-
-—
-
-## Examples
-
-- [Twitter](https://twitter.com/_nan_gogh/status/1676384792818995200)
-
 ## Resources
-
-—
+- [Twitter](https://twitter.com/_nan_gogh/status/1676384792818995200)
 
 ## Versions
 

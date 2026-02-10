@@ -23,17 +23,8 @@ LegendOfLink, Mozz
 ## Date
 May 21, 2023
 
-## Source
-
-—
-
-## Examples
-
-- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1110002512074907740)
-
 ## Resources
-
-—
+- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1110002512074907740)
 
 ## Versions
 

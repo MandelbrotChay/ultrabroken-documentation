@@ -22,18 +22,9 @@ NaN Gogh, Mozz
 ## Date
 July 3, 2023
 
-## Source
-
+## Resources
 - [Twitter](https://vxtwitter.com/goghnan/status/1675972013096161280?s=46)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1125533417413541938)
-
-## Examples
-
-—
-
-## Resources
-
-—
 
 ## Versions
 
