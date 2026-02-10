@@ -9,12 +9,12 @@ title: "Hero Path Link Storage"
 Visual glitch with the hero path.
 
 ## Instructions
-Press X, then close the hero path and the map quickly
+Press X, then close the hero path and the map quickly.
 
 ## Notes
 Translates with map storage and can cause a shiekah symbol (map storage related).
 
-Persists through file loads and warps but opening the hero path or return to title cancels it
+Persists through file loads and warps but opening the hero path or return to title cancels it.
 
 ## Credit
 Lightos_
