@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Fuse Storage Fuse Entanglement"
 ---
 
@@ -9,8 +9,7 @@ title: "Fuse Storage Fuse Entanglement"
 Unique methods of achieving Fuse Entanglement through Fuse Storage.
 
 ## Instructions
-Like-Like FSFE
-Culling Area FSFE
+—
 
 ## Notes
 Fuse Entanglement
@@ -26,3 +25,5 @@ June 18, 2023
 
 ## See also
 - Fuse Storage
+- Like-Like FSFE
+- Culling Area FSFE
