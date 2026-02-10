@@ -10,8 +10,8 @@ Filling up small areas with many objects causes a lot of lag and strange effects
 ## Instructions
 One method to perform this glitch would be:
 
-1. activate arrow unload
-2. fill up a small area like those stone boxes near look out landing with springs
+1. Activate arrow unload
+2. Fill up a small area like those stone boxes near look out landing with springs
 
 ## Notes
 1. Lag
