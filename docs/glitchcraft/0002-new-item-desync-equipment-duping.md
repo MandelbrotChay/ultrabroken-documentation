@@ -3,6 +3,7 @@ title: "New Item Desync"
 ---
 
 # New Item Desync
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Desyncs equipment after sorting a new item pickup, allowing for single use duplication, durability transfer, and transfering fused items.
@@ -27,15 +28,6 @@ May 12, 2023
 - [Youtube](https://youtu.be/7_1fwTUz0A4)
 - [Youtube](https://youtu.be/7_1fwTUz0A4)
 - [Youtube](https://youtu.be/7_1fwTUz0A4)
-
-## Versions
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
-- 1.1.2
-- 1.2.0
-- 1.2.1
 
 ## See also
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1107447184745582662)
