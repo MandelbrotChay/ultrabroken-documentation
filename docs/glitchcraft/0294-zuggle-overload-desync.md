@@ -41,5 +41,4 @@ Causes WST. Only transfers durability and fused material on 1.0.0, same as WST.
 - 1.2.1
 
 ## See also
-
 - Zuggle Overload

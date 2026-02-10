@@ -45,5 +45,4 @@ October 1st, 2024
 - 1.0.0
 
 ## See also
-
 —

@@ -46,6 +46,5 @@ March 8, 2024
 - 1.2.1
 
 ## See also
-
 - Fuse Entanglement
 - Detanglement

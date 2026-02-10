@@ -44,7 +44,6 @@ August 2, 2023
 - 1.1.2
 
 ## See also
-
 - Fuse Entanglement (FE)
 - Zuggle Load Object Transfer (ZLOT)
 - Recall Locking (RL)

@@ -41,7 +41,6 @@ February 23, 2024
 - 1.2.1
 
 ## See also
-
 - Memory Buffering
 - Object Culling
 - Stick Desync

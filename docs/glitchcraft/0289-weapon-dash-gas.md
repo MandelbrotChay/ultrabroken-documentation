@@ -39,6 +39,5 @@ November 28, 2025
 - Switch 2
 
 ## See also
-
 - Guard-less Active Shield (GAS)
 - Fuse Entanglement

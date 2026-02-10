@@ -40,5 +40,4 @@ Resync your inventory by re-equipping
 - 1.2.1
 
 ## See also
-
 - Invizuggle overload for 1.2+ methods

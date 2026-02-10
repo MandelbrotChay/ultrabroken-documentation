@@ -35,6 +35,5 @@ May 19, 2025
 - 1.1.1
 
 ## See also
-
 - Dynamic Zuggle
 - Zuggle Overload

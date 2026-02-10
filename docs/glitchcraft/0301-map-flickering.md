@@ -31,5 +31,4 @@ Do not do this if you suffer from epilepsy, or are prone to seizures
 - 1.1.2
 - 1.2.0
 
-## See also
-—
+## See also—

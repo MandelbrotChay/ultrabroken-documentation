@@ -49,7 +49,6 @@ May 26, 2025
 - 1.2.1+
 
 ## See also
-
 - Overload Cold Fuse
 - Fuse Overload
 - Fuse Entanglement

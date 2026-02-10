@@ -47,5 +47,4 @@ December 31, 2024
 - 1.2.1+
 
 ## See also
-
 —

@@ -37,7 +37,6 @@ May 18, 2025
 - 1.1.1
 
 ## See also
-
 - Dynamic Zuggle
 - Fuse Entanglement
 - Object Culling

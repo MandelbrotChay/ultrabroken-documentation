@@ -52,5 +52,4 @@ March 16, 2024
 - 1.0.0
 
 ## See also
-
 - Dynamic ZuggleHand Locked Equipment Smuggling

@@ -30,7 +30,6 @@ October 26, 2025
 - 1.1.2
 
 ## See also
-
 - Fuse Overload (FO)
 - Fuse Storage Fuse Entanglement (FSFE)
 - Ultrabroken

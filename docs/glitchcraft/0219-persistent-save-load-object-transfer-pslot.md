@@ -39,7 +39,6 @@ January 25, 2024
 - 1.2.1
 
 ## See also
-
 - Fuse Entanglement
 - Zuggle
 - Stick Desync Clip

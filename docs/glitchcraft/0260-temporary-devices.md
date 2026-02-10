@@ -40,5 +40,4 @@ November 30th, 2024
 - 1.2.1
 
 ## See also
-
 —

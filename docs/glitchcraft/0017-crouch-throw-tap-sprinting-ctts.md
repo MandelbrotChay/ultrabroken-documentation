@@ -34,5 +34,4 @@ May 15, 2023
 - 1.2.1
 
 ## See also
-
 - [Totk Sprinting Methods](https://docs.google.com/spreadsheets/d/1aXefsoOStTvzwOAzFIaofCtjMf1l6XXbEP5pp_iepzw/edit?usp=sharing)

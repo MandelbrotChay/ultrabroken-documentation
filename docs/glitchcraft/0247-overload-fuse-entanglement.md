@@ -34,6 +34,5 @@ July 23, 2024
 - 1.2.1
 
 ## See also
-
 - Zuggle Overload
 - Portable Culling

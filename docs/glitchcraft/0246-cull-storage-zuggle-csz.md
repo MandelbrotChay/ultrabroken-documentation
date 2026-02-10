@@ -46,6 +46,5 @@ July 18, 2024
 - 1.2.1
 
 ## See also
-
 - Map Zuggling
 - Cull Storage

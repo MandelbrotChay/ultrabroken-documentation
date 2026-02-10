@@ -43,5 +43,4 @@ June 27, 2023
 - 1.2.1
 
 ## See also
-
 - BAD Arrows (Bow Attachment Desync)

@@ -37,5 +37,4 @@ July 12, 2025
 - 1.1.2
 
 ## See also
-
 - Slugging

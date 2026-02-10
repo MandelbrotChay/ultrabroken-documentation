@@ -50,5 +50,4 @@ Credit is almost impossible to pinpoint. Many people have found this, but most o
 
 - 1.0.0
 
-## See also
-—
+## See also—

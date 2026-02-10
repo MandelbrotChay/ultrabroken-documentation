@@ -36,5 +36,4 @@ January 11, 2024
 - 1.2.1
 
 ## See also
-
 - Mulberry's Out of Body Experience

@@ -47,5 +47,4 @@ July 26, 2023
 - 1.2.1
 
 ## See also
-
 - Midair Throw Duplication

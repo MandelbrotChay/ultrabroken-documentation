@@ -35,5 +35,4 @@ December 22, 2023
 - 1.2.1
 
 ## See also
-
 - Mineru Hold Smuggle

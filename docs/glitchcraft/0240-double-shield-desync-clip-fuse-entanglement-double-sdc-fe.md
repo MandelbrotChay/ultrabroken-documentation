@@ -36,5 +36,4 @@ June 6, 2024
 - 1.2.1
 
 ## See also
-
 - Stick Desync Clipping

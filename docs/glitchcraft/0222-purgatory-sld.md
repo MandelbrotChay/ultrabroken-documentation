@@ -36,7 +36,6 @@ February 11, 2024
 - 1.2.1
 
 ## See also
-
 - Fuse Entanglement
 - Cold Fuse
 - Drop Smuggle

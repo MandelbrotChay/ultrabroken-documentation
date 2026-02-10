@@ -37,5 +37,4 @@ The Construct will stick around despite the other sage avatars going away
 - 1.2.0
 - 1.2.1
 
-## See also
-—
+## See also—

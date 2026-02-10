@@ -38,5 +38,4 @@ January 4, 2024
 - 1.2.1
 
 ## See also
-
 - Mineru Fuse Entanglement

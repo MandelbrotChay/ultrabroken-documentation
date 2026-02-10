@@ -36,6 +36,5 @@ January 22, 2025
 - 1.1.2
 
 ## See also
-
 - AntiGrav Weapons
 - Zuggle

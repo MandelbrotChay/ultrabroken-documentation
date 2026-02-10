@@ -34,5 +34,4 @@ Link keeps walking while frozen in the camera animation.
 - 1.2.0
 - 1.2.1
 
-## See also
-—
+## See also—
