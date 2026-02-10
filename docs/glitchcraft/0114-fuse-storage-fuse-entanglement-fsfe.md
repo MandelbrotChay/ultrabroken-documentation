@@ -12,7 +12,7 @@ Unique methods of achieving Fuse Entanglement through Fuse Storage.
 —
 
 ## Notes
-Fuse Entanglement
+—
 
 ## Credit
 Ryan?, Mozz
@@ -24,6 +24,7 @@ June 18, 2023
 —
 
 ## See also
+- Fuse Entanglement
 - Fuse Storage
 - Like-Like FSFE
 - Culling Area FSFE
