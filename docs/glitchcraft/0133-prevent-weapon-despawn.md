@@ -1,12 +1,12 @@
-﻿---
-title: "Prevent Weapon Despawn"
+---
+title: "Weapon Despawn Prevention"
 ---
 
-# Prevent Weapon Despawn
+# Weapon Despawn Prevention
 `1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
-Prevents equipment from despawning after certain NPC interactions and quests (Does not work in Pirate Ship quest, different flags, currently testing)
+Prevents equipment from despawning after certain NPC interactions and quests (Does not work in Pirate Ship quest, different flags).
 
 ## Instructions
 1. Zuggle the desired equipment on Link 
@@ -14,8 +14,9 @@ Prevents equipment from despawning after certain NPC interactions and quests (Do
 3. Start whatever quest that despawns all equipment on the ground and use Ultrahand to bring your desired weapon towards you
 
 ## Notes
-You can bring back the weapon by zuggling before quest ends
-Best used in Eldin Cave Quest, experimenting with different despawn flags atm
+You can bring back the weapon by zuggling before quest ends.
+
+Best used in Eldin Cave Quest, experiment with different despawn flags.
 
 ## Credit
 NX721
