@@ -3,10 +3,11 @@ title: "Recall Sluggle"
 ---
 
 # Recall Sluggle
-`1.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Overview
 Using recall it's possible to sluggle a weapon by having access to it in the menu before it's properly equipped
+
+`1.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Instructions
 0. With your target unequipped, drop your target on the ground (won't work if the equipment was equipped before dropping). 

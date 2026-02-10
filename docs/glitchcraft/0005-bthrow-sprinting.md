@@ -3,10 +3,10 @@ title: "BThrow Sprinting"
 ---
 
 # BThrow Sprinting
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 —
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Instructions
 Press B - ZR - R - B (or B - R - ZR - B) and repeat

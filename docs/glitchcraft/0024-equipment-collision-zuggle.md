@@ -3,13 +3,13 @@ title: "Equipment Collision Zuggle"
 ---
 
 # Equipment Collision Zuggle
-`1.0.0` `1.1.0` `1.1.1`
 
 ## Overview
 The original zuggle method discovered by Zvleon.
 
-## Instructions
+`1.0.0` `1.1.0` `1.1.1`
 
+## Instructions
 1) Stand infront of a wall. (about 1 link away from it) (facing away from it)
 2) Equip a weapon, ideally two-handed. Seems to be more consistent and press y to hold your weapon.
 3) Drop 6 weapond or shields (including the equiped one)

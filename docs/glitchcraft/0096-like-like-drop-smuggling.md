@@ -3,10 +3,11 @@ title: "Like-Like Drop Smuggling"
 ---
 
 # Like-Like Drop Smuggling
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Allows for Drop Smuggling via slugging
+
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Instructions
 Method 1 (works 1.0.0-1.1.2):

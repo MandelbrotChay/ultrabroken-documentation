@@ -3,13 +3,13 @@ title: "Food Ability Buff Swap"
 ---
 
 # Food Ability Buff Swap `FABS`
-`1.0.0` `1.1.0` `1.1.1`
 
 ## Overview
 Allows you to get roasted food (stackable) with a food effect
 
-## Instructions
+`1.0.0` `1.1.0` `1.1.1`
 
+## Instructions
 1. Cook a meal with the desired effect
 2. Go to a NPC who sells/gives roasted food DO NOT SORT (see notes for all locations)
 3. Eat the food 

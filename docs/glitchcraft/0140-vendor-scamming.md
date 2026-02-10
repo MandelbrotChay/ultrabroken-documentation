@@ -3,10 +3,11 @@ title: "Vendor Scamming"
 ---
 
 # Vendor Scamming
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0`
 
 ## Overview
 Allows you to infinitely sell items to (steal from) a vendor using Hold Storage/Smuggling.
+
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0`
 
 ## Instructions
 1. Activate hold storage onto a horse.

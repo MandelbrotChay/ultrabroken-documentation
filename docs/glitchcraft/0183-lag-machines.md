@@ -3,10 +3,11 @@ title: "Lag Machines"
 ---
 
 # Lag Machines
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Filling up small areas with many objects causes a lot of lag and strange effects
+
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Instructions
 One method to perform this glitch would be:

@@ -3,10 +3,11 @@ title: "Stamina Depletion Freeze"
 ---
 
 # Stamina Depletion Freeze `SDF`
-`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Overview
 Certain actions can cause the stamina depletion to glitch out.
+
+`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Instructions
 There are several ways of activating it, most are currently unexplained, but this is the most consistent setup:

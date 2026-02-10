@@ -3,10 +3,11 @@ title: "MSNF glowing"
 ---
 
 # MSNF glowing
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 The msnf starts glowing at gloom hand coordinates and near phantom ganon
+
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Instructions
 Be near a gloom hand spawn, then cross a specific coordinate while the mnf is unsheathed. Note that this can be effected by RNG. (Only works on 1.0.0)

@@ -3,10 +3,11 @@ title: "Resync Fuse Entanglement"
 ---
 
 # Resync Fuse Entanglement `RFE`
-`1.0.0`
 
 ## Overview
 "Fe'ing" with a drop swap drop and then pausing to mess with the fuse prevents a full fuse and causes FE
+
+`1.0.0`
 
 ## Instructions
 Method 1:

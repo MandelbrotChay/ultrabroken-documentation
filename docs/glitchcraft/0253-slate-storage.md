@@ -3,10 +3,11 @@ title: "Slate Storage"
 ---
 
 # Slate Storage
-`1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Storing the opening animation of the Purah Pad allows for Fall Damage Cancel
+
+`1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Instructions
 Please note that this does not work on 1.0.

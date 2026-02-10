@@ -3,13 +3,13 @@ title: "Map Zuggling"
 ---
 
 # Map Zuggling `MZ`
-`1.0.0` `1.1.0` `1.1.1`
 
 ## Overview
 Allows you to zuggle much faster than older versions
 
-## Instructions
+`1.0.0` `1.1.0` `1.1.1`
 
+## Instructions
 1. Stand next to a wall facing away from it
 2. Unsheathe equipment to stack the weapon in link's hand (optional for duping)
 3. Open the rune menu by holding L, select the map rune and open the quickmenu for the desired equipment type (weapon/bow/shield) by spamming the d-pad

@@ -3,10 +3,11 @@ title: "Quantum Linking"
 ---
 
 # Quantum Linking `QL`
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Uses culling to separate glued objects in space, while still retaining a coherent construction
+
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Instructions
 Requirements:

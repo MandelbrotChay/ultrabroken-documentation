@@ -3,13 +3,13 @@ title: "Recall Launch"
 ---
 
 # Recall Launch
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Allows you to launch yourself very far
 
-## Instructions
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
+## Instructions
 1. Get a plank or wing or something like that
 2. Throw a weapon
 3. Recall that weapon and quickly ultrahand it to your plank or wing

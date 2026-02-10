@@ -3,10 +3,11 @@ title: "Fuse Overload Fuse Entanglement"
 ---
 
 # Fuse Overload Fuse Entanglement `FOFE`
-`1.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1+`
 
 ## Overview
 Using Fuse Overload it's possible to portably and quickly Fuse Entangle
+
+`1.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1+`
 
 ## Instructions
 Fuse Overload:

@@ -3,13 +3,13 @@ title: "Weapon FE"
 ---
 
 # Weapon FE
-`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Overview
 Allows for FE to weapons
 
-## Instructions
+`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
+## Instructions
 1. Fuse entangle weapon to shield 
 2. Zuggle a different weapon
 3. Pick up fe weapon

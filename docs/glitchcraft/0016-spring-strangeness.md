@@ -3,10 +3,11 @@ title: "Spring Strangeness"
 ---
 
 # Spring Strangeness
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 really strange things start happening both with collision and the camera when springs are used in different ways
+
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Instructions
 Currently 2 methods:

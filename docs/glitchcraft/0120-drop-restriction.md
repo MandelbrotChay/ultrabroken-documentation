@@ -3,10 +3,11 @@ title: "Drop Restriction"
 ---
 
 # Drop Restriction
-`1.0.0` `1.1.0` `1.1.1`
 
 ## Overview
 Prevents zonai devices from spawning out of the inventory.
+
+`1.0.0` `1.1.0` `1.1.1`
 
 ## Instructions
 1. Hold L

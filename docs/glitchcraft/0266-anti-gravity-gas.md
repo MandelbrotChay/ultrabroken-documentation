@@ -3,10 +3,11 @@ title: "Anti-gravity GAS"
 ---
 
 # Anti-gravity GAS
-`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Overview
 Allows for weapon GAS by throwing the base of an ARAZ connection just as Link gets shocked
+
+`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Instructions
 1. Zuggle a weapon and equip a different weapon over it

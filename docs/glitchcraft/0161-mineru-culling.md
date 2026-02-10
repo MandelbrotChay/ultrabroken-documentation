@@ -3,10 +3,11 @@ title: "Mineru Culling"
 ---
 
 # Mineru Culling
-`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Overview
 Allows for Link's model to be operated from Mineru, by unloading Mineru, Link can be culled at will.
+
+`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Instructions
 1. Zuggle overload

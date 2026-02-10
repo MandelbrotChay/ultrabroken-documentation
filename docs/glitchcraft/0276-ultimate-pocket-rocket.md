@@ -3,10 +3,11 @@ title: "Ultimate Pocket Rocket"
 ---
 
 # Ultimate Pocket Rocket
-`1.0.0`
 
 ## Overview
 A pocket rocket which does not break on warps or drain energy cells, and has unlimited usage and range
+
+`1.0.0`
 
 ## Instructions
 1. Fuse entangle a weapon on one durability (with no remaining fuse durability), to a shield

@@ -3,10 +3,11 @@ title: "Unsheathed Mastersword"
 ---
 
 # Unsheathed Mastersword
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0`
 
 ## Overview
 Puts the master sword in a visual state where it is outside of it's sheath.
+
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0`
 
 ## Instructions
 1. Hold out a single handed sword and hold R and jump over your horse as you would for Hold Smuggling

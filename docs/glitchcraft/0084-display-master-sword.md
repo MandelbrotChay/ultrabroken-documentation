@@ -3,13 +3,13 @@ title: "Display Master Sword"
 ---
 
 # Display Master Sword
-`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Overview
 Allows you to display the master sword, damaged master sword or MsgNotFound in a weapon display
 
-## Instructions
+`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
+## Instructions
 1. Zuggle Overload.
 2. Recall in front of a weapon display.
 3. Equip the master sword or MsgNotFound.

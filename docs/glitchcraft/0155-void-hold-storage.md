@@ -3,10 +3,11 @@ title: "Void Hold Storage"
 ---
 
 # Void Hold Storage
-`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Overview
 Causes a menu softlock that revokes certain actions but allows for Link's model in the control panel, softlocks when attempting exiting any menu, and Link can be moved freely before opening the menu.
+
+`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Instructions
 1. Save, and clip under the depths at Y -4000.

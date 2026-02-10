@@ -3,10 +3,11 @@ title: "Ability Wheel Loop"
 ---
 
 # Ability Wheel Loop
-`1.0.0`
 
 ## Overview
 Gets you stuck in the ability wheel indefinitely opening and closing.
+
+`1.0.0`
 
 ## Instructions
 1. Begin holding L

@@ -3,10 +3,11 @@ title: "Weapon Dash GAS"
 ---
 
 # Weapon Dash GAS
-`1.2.0` `1.2.1` `1.3.0` `1.4.0` `1.4.1` `1.4.2` `Switch 2`
 
 ## Overview
 Allows for easy weapon GAS by performing a dash attack while its fused zonai device is culled
+
+`1.2.0` `1.2.1` `1.3.0` `1.4.0` `1.4.1` `1.4.2` `Switch 2`
 
 ## Instructions
 1. Fuse entangle a battery-consuming zonai device to your equipped shield

@@ -3,10 +3,11 @@ title: "Equipment Smuggle"
 ---
 
 # Equipment Smuggle
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 An equipment state where items remain equipped in Link's hands after being removed from the inventory
+
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Instructions
 Shock Smuggle

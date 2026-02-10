@@ -3,13 +3,13 @@ title: "Shock Smuggle"
 ---
 
 # Shock Smuggle
-`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Overview
 Dropping an unsheathed equipment just before getting shocked causes equipment smuggle.
 
-## Instructions
+`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
+## Instructions
 1. Hold a weapon, bow, or shield and pause exactly 5 frames before getting shocked
 2. Drop the currently held item and exit the inventory
 

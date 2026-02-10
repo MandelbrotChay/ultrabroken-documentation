@@ -3,10 +3,11 @@ title: "Weapon Despawn Prevention"
 ---
 
 # Weapon Despawn Prevention
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Prevents equipment from despawning after certain NPC interactions and quests (Does not work in Pirate Ship quest, different flags).
+
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Instructions
 1. Zuggle the desired equipment on Link 

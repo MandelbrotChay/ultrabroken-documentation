@@ -3,10 +3,11 @@ title: "Shock Cold Fuse"
 ---
 
 # Shock Cold Fuse
-`1.0.0`
 
 ## Overview
 Interrupting a fuse on the first possible frame with shock causes cold fusion
+
+`1.0.0`
 
 ## Instructions
 1. Use a shock emitter with the Thunder Helm equipped and electrify the weapon/shield while fuse is active with an object in range

@@ -3,10 +3,11 @@ title: "Laser-OOB"
 ---
 
 # Laser-OOB
-`1.0.0` `1.1.0` `1.1.1`
 
 ## Overview
 The game puts a floor inside Link
+
+`1.0.0` `1.1.0` `1.1.1`
 
 ## Instructions
 Go into a laser, slowly glide down, when the floor flips back up you are out of bounds

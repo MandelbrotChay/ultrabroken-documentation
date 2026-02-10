@@ -3,10 +3,11 @@ title: "Overload Fuse Entanglement"
 ---
 
 # Overload Fuse Entanglement
-`1.2.0` `1.2.1`
 
 ## Overview
 Allows for full fuse entanglement by combining portable culling with the mechanics of zuggle overload.
+
+`1.2.0` `1.2.1`
 
 ## Instructions
 1. Perform Zuggle Overload

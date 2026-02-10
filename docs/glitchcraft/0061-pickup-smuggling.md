@@ -3,13 +3,13 @@ title: "Pickup Smuggling"
 ---
 
 # Pickup Smuggling
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Allows Link to pick up an object as if he were holding it like an item.
 
-## Instructions
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
+## Instructions
 1. Hit A to pickup the object and immediately pause with -
 2. View a memory twice and then go to the item menu and hold something.
 3. Unpause.

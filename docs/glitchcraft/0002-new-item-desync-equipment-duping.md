@@ -3,10 +3,11 @@ title: "New Item Desync"
 ---
 
 # New Item Desync
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Desyncs equipment after sorting a new item pickup, allowing for single use duplication, durability transfer, and transfering fused items.
+
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Instructions
 Pick up NEW item (displays ???) then in the text popup press + , sort inventory, equip something else, close inventory. Now Link should be holding the new item in the overworld but has something else selected in your inventory menu.

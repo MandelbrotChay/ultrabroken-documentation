@@ -3,13 +3,13 @@ title: "Overload Drop Smuggling"
 ---
 
 # Overload Drop Smuggling
-`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Overview
 Allows you to drop smuggle via overload
 
-## Instructions
+`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
+## Instructions
 1. Zuggle Overload to the point that every weapon swap drops it on the ground.
 2. Swap to the target weapon such that it drops on the ground
 3. Pause, drop the equipped weapon and equip any other weapon

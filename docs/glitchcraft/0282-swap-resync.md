@@ -3,10 +3,11 @@ title: "Swap Resync"
 ---
 
 # Swap Resync
-`1.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1+`
 
 ## Overview
 Swapping any piece of equipment/armor attempts to sync any swaps that may have failed to register. The main use of this is to properly register swaps while Link is culled, allowing for various easier setups.
+
+`1.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1+`
 
 ## Instructions
 See the Effects/Extensions column for uses.

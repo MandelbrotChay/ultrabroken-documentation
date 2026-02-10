@@ -3,13 +3,13 @@ title: "Animation Swap"
 ---
 
 # Animation Swap
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Combine animation sets when zuggle overloaded.
 
-## Instructions
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
+## Instructions
 1. Zuggle overload
 2. Swap weapon types
 3. Swap weapon again to restore normal animations

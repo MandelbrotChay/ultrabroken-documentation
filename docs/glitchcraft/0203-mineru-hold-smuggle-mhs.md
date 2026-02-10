@@ -3,10 +3,11 @@ title: "Mineru Hold Smuggle"
 ---
 
 # Mineru Hold Smuggle `MHS`
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Allows holding items in inventory but not in overworld.
+
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Instructions
 1. Get on Mineru

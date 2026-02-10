@@ -3,13 +3,13 @@ title: "Zonai Sort Duplication"
 ---
 
 # Zonai Sort Duplication `ZSD`
-`1.0.0` `1.1.0` `1.1.1`
 
 ## Overview
 Allows you to dupe zonai parts back into your inventory.
 
-## Instructions
+`1.0.0` `1.1.0` `1.1.1`
 
+## Instructions
 1. Position Link close enough to a wall or a cliff but not too close, facing towards it.
 2. Take out as many Zonai devices as you want.
 3. Sort the menu inventory and close out of it at the same time, like you would with MSD.

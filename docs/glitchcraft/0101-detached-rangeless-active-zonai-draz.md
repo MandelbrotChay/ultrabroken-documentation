@@ -3,13 +3,13 @@ title: "Detached Rangeless Active Zonai"
 ---
 
 # Detached Rangeless Active Zonai `DRAZ`
-`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Overview
 Allows you to leave a Zonai device stuck a single place and activate it remotely from anywhere.
 
-## Instructions
+`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
+## Instructions
 1. FE a Zonai device to a shield
 2. Fuse that Zonai device to Mineru, then fuse something else onto that same slot, overriding it
 

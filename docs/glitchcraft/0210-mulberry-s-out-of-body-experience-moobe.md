@@ -3,10 +3,11 @@ title: "Mulberry's Out of Body Experience"
 ---
 
 # Mulberry's Out of Body Experience `MOOBE`
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 (Temporarily) Warps Link to a previous climbing position from anywhere in the world, only while the game is paused.
+
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Instructions
 1. Set a climbing position, simply done by climbing on a wall.

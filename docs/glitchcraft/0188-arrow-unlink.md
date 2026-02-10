@@ -3,10 +3,11 @@ title: "Arrow Unlink"
 ---
 
 # Arrow Unlink
-`1.0.0`
 
 ## Overview
 makes arrow float away allowing you to spawn fused stuff in other loactions
+
+`1.0.0`
 
 ## Instructions
 1.Zuggle until your bow drops 

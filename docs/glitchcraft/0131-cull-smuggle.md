@@ -3,10 +3,11 @@ title: "Cull Smuggle"
 ---
 
 # Cull Smuggle
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Allows any equipment that can be fuse entangled to be smuggled using margin culling.
+
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Instructions
 1. Find any area that can cause object culling

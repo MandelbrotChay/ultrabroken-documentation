@@ -3,10 +3,11 @@ title: "Weapon State Transfer"
 ---
 
 # Weapon State Transfer `WST`
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 allows you to transfer the durability, fused material, and modifier of a weapon
+
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Instructions
 Required:

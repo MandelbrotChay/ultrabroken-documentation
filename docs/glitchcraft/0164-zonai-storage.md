@@ -3,10 +3,11 @@ title: "Zonai Storage"
 ---
 
 # Zonai Storage
-`1.0.0`
 
 ## Overview
 Allows Zonai devices to be stored and taken into shrines
+
+`1.0.0`
 
 ## Instructions
 1. Select any Zonai device 

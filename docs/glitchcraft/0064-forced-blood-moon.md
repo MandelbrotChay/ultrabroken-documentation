@@ -3,13 +3,13 @@ title: "Forced Blood Moon"
 ---
 
 # Forced Blood Moon
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Allows you to force a blood moon whenever you want
 
-## Instructions
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
+## Instructions
 1. Find a wall that is made of destroyable material. Something that you would be able to bomb to destroy
 2. Get into bullet time. This can be done by jumping off from above the wall, fan, or bomb (Note: Any method to get into bullet time will work)
 3. Use a multishot bow (3x or 5x will work) and shoot the wall with opals until the game become incredibly laggy

@@ -3,10 +3,11 @@ title: "Mineru Text Storage"
 ---
 
 # Mineru Text Storage
-`1.0.0`
 
 ## Overview
 Lets you move while text is on screen
+
+`1.0.0`
 
 ## Instructions
 1. Escape the last battle, to get the real sages to follow Link

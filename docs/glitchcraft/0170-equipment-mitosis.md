@@ -3,10 +3,11 @@ title: "Equipment Mitosis"
 ---
 
 # Equipment Mitosis
-`1.0.0`
 
 ## Overview
 By combining zuggle overload with 1.0 modifier deletion, it is possible to mass dupe equipment
+
+`1.0.0`
 
 ## Instructions
 1. Zuggle overload

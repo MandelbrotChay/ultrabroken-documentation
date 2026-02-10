@@ -3,10 +3,11 @@ title: "Reverse Ascend Storage"
 ---
 
 # Reverse Ascend Storage
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Ascending through water under a plattform allows link to ascend up into the sky, provided that there is ground above him. The limit for this seems to be around 700 meters.
+
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Instructions
 <Self explaining

@@ -3,10 +3,11 @@ title: "Camera Pose Glitch"
 ---
 
 # Camera Pose Glitch
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Link keeps walking while frozen in the camera animation.
+
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Instructions
 1. Activate the camera rune
@@ -26,4 +27,5 @@ Link keeps walking while frozen in the camera animation.
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1196121825160212571)
 
-## See also—
+## See also
+—

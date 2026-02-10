@@ -3,13 +3,13 @@ title: "Remote Arrow"
 ---
 
 # Remote Arrow
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0`
 
 ## Overview
 Allows you to fire arrows remotely from the location the glitch was set up in.
 
-## Instructions
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0`
 
+## Instructions
 1. Perform WST (or any other method that can desync your bows) with a Duplex Bow and put Five-Shot Burst on it.
 2. Shoot the Duplex Bow from any location.
 

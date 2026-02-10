@@ -3,10 +3,11 @@ title: "Shock FE"
 ---
 
 # Shock FE
-`1.0.0`
 
 ## Overview
 Interrupting a fuse to a zuggled item causes FE
+
+`1.0.0`
 
 ## Instructions
 1. zuggle a shield or a weapon

@@ -3,10 +3,11 @@ title: "Persistent Save Load Object Transfer"
 ---
 
 # Persistent Save Load Object Transfer `PSLOT`
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Allows objects to go through saves by permanently culling their FE bases (parents). Unlike ZLOT, PSLOT can only be cancelled by destroying the object being transferred or closing the game.
+
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Instructions
 1. Fuse entangle a steering stick to a shield, place the steering stick in a culling area, and perform Stick Desync Clip with it

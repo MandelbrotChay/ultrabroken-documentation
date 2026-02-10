@@ -3,10 +3,11 @@ title: "Pocket Rocket"
 ---
 
 # Pocket Rocket
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Allows for repeated boost from a midair rocket shield surf, making it a very good movement option.
+
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Instructions
 1. Fuse entangle a rocket to your shield

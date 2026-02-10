@@ -3,10 +3,11 @@ title: "Item Save Load Transfer"
 ---
 
 # Item Save Load Transfer `ISLT`
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Allows transferring held items through saves.
+
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Instructions
 1. Preform Mineru Hold Smuggle. (Hold up to 4 items you don't have on another file).

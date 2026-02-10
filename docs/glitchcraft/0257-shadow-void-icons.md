@@ -3,10 +3,11 @@ title: "Shadow/Void Icons"
 ---
 
 # Shadow/Void Icons
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1+`
 
 ## Overview
 Using the camera it's possible to make equipment icons black, leaving only the equipment's shadow and some other eventual colors coming from the fuse. It's also possible to get fully empty icons.
+
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1+`
 
 ## Instructions
 1. Drop your target equipment on the ground. Its icon needs to be dynamically generated, therefore it needs to have a fuse.

@@ -3,10 +3,11 @@ title: "Hold Storage"
 ---
 
 # Hold Storage
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Allows Link to remain in a object holding state when not normally possible, as well as desync the hold state.
+
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Instructions
 1. Find a decently high ledge and stand on it, hold R and select an item to hold in Links so he prepares to throw it.

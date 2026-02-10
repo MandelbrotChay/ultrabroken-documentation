@@ -3,10 +3,11 @@ title: "Master Sword Liberation"
 ---
 
 # Master Sword Liberation
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Allows you to dupe the master sword/decayed master sword
+
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Instructions
 Method 1 (ock):

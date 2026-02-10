@@ -3,10 +3,11 @@ title: "Death PSLOT"
 ---
 
 # Death PSLOT
-`1.2.0` `1.2.1+`
 
 ## Overview
 Death dropping is equivalent to shock dropping. It's therefore possible to use death dropping as a way to send to culled purgatory, effectively resulting in PSLOT
+
+`1.2.0` `1.2.1+`
 
 ## Instructions
 1. FE your target equipment to something of the opposite type, equip both

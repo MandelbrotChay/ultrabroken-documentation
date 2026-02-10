@@ -3,10 +3,11 @@ title: "LikeLike Stick Smuggling"
 ---
 
 # LikeLike Stick Smuggling
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Allows you to cull Link via a LikeLike in a culling area. Can be used for Equipment Transmutation, Fuse Entanglement, WST, Drop Smuggle.
+
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Instructions
 1. Find a LikeLike in a culling area (Hateno well for example)

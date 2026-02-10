@@ -3,10 +3,11 @@ title: "Memory Interrupt"
 ---
 
 # Memory Interrupt
-`1.0.0`
 
 ## Overview
 Interrupting a memory causes a forced pause after a dialogue
+
+`1.0.0`
 
 ## Instructions
 1. Select a memory

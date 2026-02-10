@@ -3,10 +3,11 @@ title: "Attached Rangeless Active Zonai"
 ---
 
 # Attached Rangeless Active Zonai `ARAZ`
-`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Overview
 Is very similar to DRAZ but differs slightly.
+
+`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Instructions
 1. Drop a shield and equip another shield.

@@ -3,10 +3,10 @@ title: "Item Throw Hitbox Disable"
 ---
 
 # Item Throw Hitbox Disable
-`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Overview
 —
+`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Instructions
 Throw an item, then recall it.

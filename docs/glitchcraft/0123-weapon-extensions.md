@@ -3,10 +3,11 @@ title: "Weapon Extensions"
 ---
 
 # Weapon Extensions
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Allows the weapon to hit other entites from further away (excluding two hand weapons).
+
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Instructions
 1. Use any one hand or spear weapon.

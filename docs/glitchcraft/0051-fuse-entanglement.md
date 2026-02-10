@@ -3,13 +3,13 @@ title: "Fuse Entanglement"
 ---
 
 # Fuse Entanglement
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Allows your shield to have an effect on an object as though it is fused to the shield, despite the object existing in the world and not being tethered to your shield.
 
-## Instructions
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
+## Instructions
 1. Activate the fuse rune.
 2. Whilst looking at your target, hold L until the rune selection menu almost appears, then press ZL, and let go of both buttons.
 3. Instantly after this, open the shield swap menu (d-pad left), and equip a different shield, this will override its fuse. (You can also achieve FE by zuggling a shield, fusing to it and then dropping the zuggled shield and pick up the shield with no fused item)

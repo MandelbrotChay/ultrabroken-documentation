@@ -3,10 +3,11 @@ title: "Portacull Invismuggle"
 ---
 
 # Portacull Invismuggle
-`1.2.0` `1.2.1+`
 
 ## Overview
 Using portable culling equipment it's possible to get a culled smuggle (invismuggle).
+
+`1.2.0` `1.2.1+`
 
 ## Instructions
 1. Prepare a SDC equipment of the opposite type of your target

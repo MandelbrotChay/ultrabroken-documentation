@@ -3,10 +3,11 @@ title: "Dpadlock-less Invizuggle"
 ---
 
 # Dpadlock-less Invizuggle
-`1.2.0` `1.2.1`
 
 ## Overview
 The first frame of a cull does not dpadlock, so it can be used for invizuggle
+
+`1.2.0` `1.2.1`
 
 ## Instructions
 The easiest way:

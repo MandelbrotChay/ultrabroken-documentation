@@ -3,13 +3,13 @@ title: "Save Load Dupe"
 ---
 
 # Save Load Dupe `SLD`
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Allows easy duplication of your weapons, bows, and shields
 
-## Instructions
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
+## Instructions
 0. Have a save prepared nearby (makes it convenient for later).
 1. Equip the weapon/bow/shield you want to duplicate and make sure it appears on Link's back.
 2. Open the menu and drop your current equipment and equip another.

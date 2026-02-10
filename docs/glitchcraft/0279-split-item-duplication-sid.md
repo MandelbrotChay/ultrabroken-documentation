@@ -3,13 +3,13 @@ title: "Split Item Duplication"
 ---
 
 # Split Item Duplication `SID`
-`1.2.0` `1.2.1+`
 
 ## Overview
 Allows you to dupe materials through Stack Splitting
 
-## Instructions
+`1.2.0` `1.2.1+`
 
+## Instructions
 1. Perform Stack Splitting on your target, to have a stack of 1 and then a stack of at least 2 or more.
 2. Get into any midair state (shield surf, paraglide, Mineru, ...), then pause.
 3. Hold as many items as you can from the second of the split stacks.

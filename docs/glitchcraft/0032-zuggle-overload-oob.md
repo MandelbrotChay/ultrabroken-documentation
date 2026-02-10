@@ -3,13 +3,13 @@ title: "Zuggle Overload OOB"
 ---
 
 # Zuggle Overload OOB
-`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Overview
 Allows you to clip OOB using zuggle overload
 
-## Instructions
+`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
+## Instructions
 1. Zuggle Overload
 2. Mount anything (Zonai control stick, Lynel, horse)
 3. You now clip into the floor!

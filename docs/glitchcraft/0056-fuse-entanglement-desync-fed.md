@@ -3,10 +3,11 @@ title: "Fuse Entanglement Desync"
 ---
 
 # Fuse Entanglement Desync `FED`
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Allows you to transfer the fuse and durability from one weapon to another. You can also decide to dupe the weapon or the fused material.
+
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Instructions
 Needed: Target item, donor item and extra shield (2 extras if weapon/bow).

@@ -3,10 +3,11 @@ title: "Recall Cancel"
 ---
 
 # Recall Cancel
-`1.2.0` `1.2.1`
 
 ## Overview
 Lets you delay the dropping of weapon and items
+
+`1.2.0` `1.2.1`
 
 ## Instructions
 1. Hold L and go to recall

@@ -3,10 +3,11 @@ title: "Texture Tearing"
 ---
 
 # Texture Tearing
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 During Menu Overload via Moobe, textures can be loaded incorrectly, broken, or even adopted from the enviroment/other equipment. Resulting in interesting visual effects and unique appearences of hair, armor, and equipment.
+
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Instructions
 CURRENT METHODS ARE INCONSITENT

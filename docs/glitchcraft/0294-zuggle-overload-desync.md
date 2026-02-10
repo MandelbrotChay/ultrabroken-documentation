@@ -3,10 +3,11 @@ title: "Zuggle Overload Desync"
 ---
 
 # Zuggle Overload Desync
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Allows you to transfer with menu desync from zuggle overload.
+
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Instructions
 Can also be performed using the steps in "Unload WST", a better method

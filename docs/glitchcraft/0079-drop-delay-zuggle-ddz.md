@@ -3,13 +3,13 @@ title: "Drop Delay Zuggle"
 ---
 
 # Drop Delay Zuggle `DDZ`
-`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Overview
 Dropping a large amount of equipment causes a delay in equipment spawning, enabling zuggling.
 
-## Instructions
+`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
+## Instructions
 1. Face a wall
 2. Drop 15-20 weapons/bows/shields
 3. Drop equiped equipment and equip something new

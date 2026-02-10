@@ -3,13 +3,13 @@ title: "Ascend Storage"
 ---
 
 # Ascend Storage
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Misplaces the point where Link goes after using Ascend.
 
-## Instructions
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
+## Instructions
 1. Find a slope where Link would slide off of and set up a hoverstone (not needed) at the very top. 
 2. Climb up the slope, and use Ascend on the last possible frame on the hoverstone to slide off while still being in the Ascend action. Link should then be ascending when he reaches flat ground.
 

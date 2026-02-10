@@ -3,10 +3,11 @@ title: "Like-Like FSFE"
 ---
 
 # Like-Like FSFE
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 A method of Fuse Storage Fuse Entanglement.
+
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Instructions
 1. Drop target item in front of a like-like

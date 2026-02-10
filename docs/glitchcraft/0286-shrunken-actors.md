@@ -3,10 +3,11 @@ title: "Shrunken Actors"
 ---
 
 # Shrunken Actors
-`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Overview
 Permanently shrink any ultrahandable object (ultrabroken method)
+
+`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Instructions
 Discord

@@ -3,10 +3,11 @@ title: "Swap Resync Zuggle"
 ---
 
 # Swap Resync Zuggle `SRZ`
-`1.2.0` `1.2.1+`
 
 ## Overview
 Using Swap Resync, it's possible to zuggle anywhere simply using portacull equipment.
+
+`1.2.0` `1.2.1+`
 
 ## Instructions
 0. Go in a position where you can drop a shield + a portacull but not your target type.

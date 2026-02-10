@@ -3,10 +3,11 @@ title: "Cutscene Combo Amplifier"
 ---
 
 # Cutscene Combo Amplifier
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Extends and stacks the damage frames of an attack with memory buffering, causing huge damage.
+
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Instructions
 1. attack something with a weapon or shield

@@ -3,13 +3,13 @@ title: "Sage Recycling"
 ---
 
 # Sage Recycling
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Resets the cooldown of tulin or sidon.
 
-## Instructions
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
+## Instructions
 1. Shield surf 
 2. Use the ability mid surf
 

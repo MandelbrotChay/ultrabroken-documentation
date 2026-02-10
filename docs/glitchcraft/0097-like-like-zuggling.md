@@ -3,10 +3,11 @@ title: "Like-Like Zuggling"
 ---
 
 # Like-Like Zuggling
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Allows for zuggling via slugging
+
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Instructions
 Method 1 (works 1.0.0-1.1.2):

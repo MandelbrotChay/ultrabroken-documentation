@@ -3,10 +3,11 @@ title: "Cold Fuse"
 ---
 
 # Cold Fuse
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Interrupting a fuse causes null fe without destroying the connection to the weapon/shield.
+
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Instructions
 Overload Cold Fuse

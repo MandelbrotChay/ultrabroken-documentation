@@ -3,13 +3,13 @@ title: "Mineru Ability Desync"
 ---
 
 # Mineru Ability Desync
-`1.1.0` `1.1.1`
 
 ## Overview
 Desyncs Flame Emitters attached to Mineru
 
-## Instructions
+`1.1.0` `1.1.1`
 
+## Instructions
 1. Wait for Mineru to use a Flame Emitter
 2. Use ascend while the Flame Emitter is active
 3. Look up with the camera and exit

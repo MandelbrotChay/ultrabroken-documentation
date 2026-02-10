@@ -3,10 +3,11 @@ title: "Stack Splitting"
 ---
 
 # Stack Splitting
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1+`
 
 ## Overview
 Using an arrow fuse returning, it's possible to get two slots for one item
+
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1+`
 
 ## Instructions
 Requirements for 1.1+: 

@@ -3,13 +3,13 @@ title: "Midair Sort Duplication"
 ---
 
 # Midair Sort Duplication `MSD`
-`1.0.0` `1.1.0` `1.1.1`
 
 ## Overview
 Allows duplication of materials while midair.
 
-## Instructions
+`1.0.0` `1.1.0` `1.1.1`
 
+## Instructions
 1. Be airborne (shield jumping, paragliding or on Mineru)
 2. Open pause menu and hold items
 3. Press Y to sort menu and close the menu simultaneously

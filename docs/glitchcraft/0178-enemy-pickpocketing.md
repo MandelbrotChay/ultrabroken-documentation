@@ -3,10 +3,11 @@ title: "Enemy Pickpocketing"
 ---
 
 # Enemy Pickpocketing
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Lets you take weapons out of enemy's hands
+
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Instructions
 1.Have a full inventory and have a weapon on the ground

@@ -3,10 +3,11 @@ title: "Mass Amnesia"
 ---
 
 # Mass Amnesia
-`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Overview
 Freezes objects in a state where gravity does not affect them, as long as they are not messed with by any means.
+
+`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Instructions
 General setup:

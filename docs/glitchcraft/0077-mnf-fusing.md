@@ -3,13 +3,13 @@ title: "MNF Fusing"
 ---
 
 # MNF Fusing
-`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Overview
 Allows you to fuse to the MNF
 
-## Instructions
+`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
+## Instructions
 1. Equip your unfused MNF and drop the desired fuse in front of Link
 2. Activate Fuse and open the inventory
 3. Drop the MNF and equip any other unfused weapon

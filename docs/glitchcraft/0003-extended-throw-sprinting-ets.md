@@ -3,10 +3,10 @@ title: "Extended Throw Sprinting"
 ---
 
 # Extended Throw Sprinting `ETS`
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 —
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Instructions
 Hold B, tap R, repeat

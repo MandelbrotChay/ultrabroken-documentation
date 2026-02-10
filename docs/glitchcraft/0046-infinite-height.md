@@ -3,13 +3,13 @@ title: "Infinite Height"
 ---
 
 # Infinite Height
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Allows you chain jump attacks to jump infinitly.
 
-## Instructions
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
+## Instructions
 1. Jump attack
 2. Open the ability menu and close it
 3. Switch shields using d-pad

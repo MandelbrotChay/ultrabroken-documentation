@@ -3,10 +3,11 @@ title: "Lift Warping"
 ---
 
 # Lift Warping
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Links position is tied to any object he can lift over his head, should the position of the object change, Link will warp to it's new position. This can be achieved in a number of ways.
+
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Instructions
 Like-Like Warping

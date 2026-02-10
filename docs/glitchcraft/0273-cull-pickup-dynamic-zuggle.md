@@ -3,10 +3,11 @@ title: "Cull Pickup Dynamic Zuggle"
 ---
 
 # Cull Pickup Dynamic Zuggle
-`1.0.0` `1.1.0` `1.1.1`
 
 ## Overview
 Picking up a thrown boomerang on the same frame that it culls can lead to dynamic zuggle
+
+`1.0.0` `1.1.0` `1.1.1`
 
 ## Instructions
 1. Fuse entangle a boomerang to a shield

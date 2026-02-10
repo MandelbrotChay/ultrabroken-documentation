@@ -3,10 +3,11 @@ title: "Quick Drop Smuggle"
 ---
 
 # Quick Drop Smuggle `QDS`
-`1.0.0`
 
 ## Overview
 Dropping and equipping weapons in a specific way causes drop smuggle.
+
+`1.0.0`
 
 ## Instructions
 1. Face links back against a wall

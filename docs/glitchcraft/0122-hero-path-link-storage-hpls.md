@@ -3,10 +3,11 @@ title: "Hero Path Link Storage"
 ---
 
 # Hero Path Link Storage `HPLS`
-`1.1.0` `1.1.1` `1.1.2`
 
 ## Overview
 Visual glitch with the hero path.
+
+`1.1.0` `1.1.1` `1.1.2`
 
 ## Instructions
 Press X, then close the hero path and the map quickly.

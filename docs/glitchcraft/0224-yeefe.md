@@ -3,10 +3,11 @@ title: "YeeFE"
 ---
 
 # YeeFE
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Uses culling with mineru and an sdc stick to fuse entangle
+
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Instructions
 1. Perform sdc with the cold fuse base (for 1.2.0-1.2.1), overload, or fe base 

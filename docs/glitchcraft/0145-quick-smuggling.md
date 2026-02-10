@@ -3,10 +3,11 @@ title: "Quick Smuggling"
 ---
 
 # Quick Smuggling
-`1.2.0`
 
 ## Overview
 Allows for easy and quick smuggling of any equipment, including arrow smuggle.
+
+`1.2.0`
 
 ## Instructions
 1. Open a menu (d-pad or inventory)

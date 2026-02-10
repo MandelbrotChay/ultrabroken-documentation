@@ -3,10 +3,11 @@ title: "Equipped Throken"
 ---
 
 # Equipped Throken
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Allows throken weapons to be equipped
+
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Instructions
 For 1.0.0-1.1.2:

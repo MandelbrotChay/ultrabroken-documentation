@@ -3,13 +3,13 @@ title: "MNF Zuggle Fuse"
 ---
 
 # MNF Zuggle Fuse
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Allows to fuse to the MNF
 
-## Instructions
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
+## Instructions
 1. You need to have MNF and a not fused weapon.
 2. Zuggle MNF and equip the weapon.
 3. Drop the material you want to have on your MNF

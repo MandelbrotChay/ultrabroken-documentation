@@ -3,10 +3,11 @@ title: "Ocklusion"
 ---
 
 # Ocklusion
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Portaculling at the top of a chasm box unloads the surface
+
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Instructions
 0. For 1.2.0/1.2.1, prepare portacull equipment. It will make the process far easier compared to other versions.

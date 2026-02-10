@@ -3,10 +3,10 @@ title: "No Bow Sprinting"
 ---
 
 # No Bow Sprinting `NBS`
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 —
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Instructions
 Unequip bow, hold ZL, and mash R, ZR, and B

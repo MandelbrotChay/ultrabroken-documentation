@@ -3,13 +3,13 @@ title: "Recall Locking"
 ---
 
 # Recall Locking
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Completely locks objects in place by recalling it before zlotting it
 
-## Instructions
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
+## Instructions
 1. Fuse entangle the target object
 2. Zuggle the shield/weapon you fed it to
 3. recall the object

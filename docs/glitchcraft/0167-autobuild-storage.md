@@ -3,10 +3,11 @@ title: "Autobuild Storage"
 ---
 
 # Autobuild Storage
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Allows you to manually delay the instance of items being attached with Autobuild
+
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Instructions
 1. Attach 2 items a Like Like can eat together and save it within your Autobuild history.

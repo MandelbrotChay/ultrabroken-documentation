@@ -6,7 +6,6 @@ title: "Stick Desync Clip"
 
 ## Overview
 By dropping a shield just before mounting a steering stick that is fuse entangled to it, we can clip through floors easily.
-This also has a side effect of culling link if the sdc stick is in a culling area and the base is not equipped. This happens because link is still tied to the sdc stick.
 
 `1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
@@ -16,17 +15,20 @@ This also has a side effect of culling link if the sdc stick is in a culling are
 3. Drop the base and immediately mount the steering stick
 4. Press B to cancel the clip
 
-After an sdc, you will experience an ability menu lock, fix it by mounting anything
-After an sdc, the stick will be locked, you can unlock it by warping if you prevent the stick from unloading, this can be done for short distances by equipping the base before warping
-To activate sdc culling, put the sdc stick inside a culling area and drop the base to cull.
-Watching memories allows link to uncull for roughly half a second.
-Dropping the base in the culling area can lead to a cull lock.
-To stop the culling, you can mount a steering stick or lift an item.
-Link can't cull if the base is equipped.
-
 ## Notes
-- The glitch will not work if you do get on the steering stick immediately after dropping
-- You will lose the shield so it is best to entangle the stick to a low level/non important shield
+This also has a side effect of culling link if the sdc stick is in a culling area and the base is not equipped. This happens because link is still tied to the sdc stick.
+
+Remarks:
+
+- After an sdc, you will experience an ability menu lock, fix it by mounting anything
+- After an sdc, the stick will be locked, you can unlock it by warping if you prevent the stick from unloading, this can be done for short distances by equipping the base before warping
+- To activate sdc culling, put the sdc stick inside a culling area and drop the base to cull.
+- Watching memories allows link to uncull for roughly half a second.
+- Dropping the base in the culling area can lead to a cull lock.
+- To stop the culling, you can mount a steering stick or lift an item.
+- Link can't cull if the base is equipped.
+- The glitch will not work if you do get on the steering stick immediately after dropping.
+- You will lose the shield so it is best to entangle the stick to a low level/non important shield.
 
 ## Credit
 NaN Gogh, DisguisedMoth

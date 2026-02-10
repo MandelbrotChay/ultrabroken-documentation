@@ -3,10 +3,11 @@ title: "UltraSLOT"
 ---
 
 # UltraSLOT
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Uses purgatory to transfer ultrahanded objects through file loads.
+
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Instructions
 1. Fuse entangle the target object to a weapon or shield

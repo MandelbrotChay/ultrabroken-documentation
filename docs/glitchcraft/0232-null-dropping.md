@@ -3,10 +3,11 @@ title: "Null Dropping"
 ---
 
 # Null Dropping
-`1.0.0`
 
 ## Overview
 Displays a glitched and empty chest quickmenu.
+
+`1.0.0`
 
 ## Instructions
 1. Empty your inventory in front of a chest, containing the same type as you are dropping

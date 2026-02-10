@@ -3,13 +3,13 @@ title: "Guard-less Active Shield"
 ---
 
 # Guard-less Active Shield `GAS`
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Makes the fuse of a shield constantly active
 
-## Instructions
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
+## Instructions
 1. Tap ZL as you get shocked, the shield should drop.
 2. Pick up the shield and it should be on Link's back while still being active.
 

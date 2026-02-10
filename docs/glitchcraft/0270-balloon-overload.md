@@ -3,10 +3,11 @@ title: "Balloon Overload"
 ---
 
 # Balloon Overload
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Equipping and unfusing a shield with Robbie's infinite balloon fused to it does not remove the balloon in the character preview in the inventory. This can be stacked to lag out the inventory, and has the potential to crash the game
+
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Instructions
 1. Steal Robbie's infinite balloon and fuse it to a shield

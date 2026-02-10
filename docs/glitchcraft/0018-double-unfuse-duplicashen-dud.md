@@ -3,10 +3,11 @@ title: "Double Unfuse Duplicashen"
 ---
 
 # Double Unfuse Duplicashen `DUD`
-`1.0.0` `1.1.0` `1.1.1`
 
 ## Overview
 allows you to duplicate any material that can be fused to an arrow
+
+`1.0.0` `1.1.0` `1.1.1`
 
 ## Instructions
 Required: 2 bows, 1 arrow, material to dupe, melee weapon

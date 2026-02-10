@@ -3,10 +3,11 @@ title: "GAS Launching"
 ---
 
 # GAS Launching
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Causes the object to fling Link great distances with relative ease.
+
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Instructions
 1. Spawn in a fan and fuse it to your shield.

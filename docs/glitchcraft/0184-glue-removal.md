@@ -3,10 +3,11 @@ title: "Glue Removal"
 ---
 
 # Glue Removal
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 lets you break apart things that have been ultrahanded together
+
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Instructions
 1. Have 2 attached objects 

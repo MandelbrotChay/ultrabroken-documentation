@@ -3,10 +3,11 @@ title: "Wheel Zoomy"
 ---
 
 # Wheel Zoomy
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Uses a formation of wheels to gain momentum on land, similar speeds to Wacko Boingo
+
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Instructions
 1. Attach three wheels, attach two wheels with the center wheel, attaching it in the same direction right to the side of the center wheel's axis. (Check example for a visual)

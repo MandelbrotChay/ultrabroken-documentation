@@ -3,10 +3,11 @@ title: "Object (Moe) Enlargement"
 ---
 
 # Object Enlargement `MOE`
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Using a moblin, it's possible to enlarge objects
+
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Instructions
 1. Get an equipped ghost, there are 2 methods:
