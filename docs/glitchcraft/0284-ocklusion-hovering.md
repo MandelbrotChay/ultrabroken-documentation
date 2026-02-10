@@ -3,6 +3,7 @@ title: "Ocklusion Hovering"
 ---
 
 # Ocklusion Hovering
+Telkic - 12 October 2025
 
 ## Overview
 Triggering an ocklusion load while pickup smuggling certain objects pushes Link around, sometimes causing him to hover or levitate upwards
@@ -16,12 +17,6 @@ Triggering an ocklusion load while pickup smuggling certain objects pushes Link 
 
 ## Notes
 TODO: Test other objects
-
-## Credit
-Telkic
-
-## Date
-12 October 2025
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1427080389972856862)

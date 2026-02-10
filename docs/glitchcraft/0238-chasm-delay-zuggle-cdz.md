@@ -3,6 +3,7 @@ title: "Chasm Delay Zuggle"
 ---
 
 # Chasm Delay Zuggle `CDZ`
+Discovered by ock, optimized by mulberry, winnerboi - 31 May 2024
 
 ## Overview
 Every chasm has an "unload box" that unloads the overworld if passed through. By positioning link inside the box, with the help of portable culling it's possible to infinitely delay a drop, causing a zuggle.
@@ -33,12 +34,6 @@ Mastersword zuggle (Ock)
  -  pause buffer
  -  fail drop weapon
 2. do regular chasm delay zuggle inputs
-
-## Credit
-Discovered by ock, optimized by mulberry, winnerboi
-
-## Date
-31 May 2024
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1246004390062587944)

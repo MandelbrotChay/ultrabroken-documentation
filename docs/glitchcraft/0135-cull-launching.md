@@ -3,6 +3,7 @@ title: "Cull Launching"
 ---
 
 # Cull Launching
+Asgorne - 1 July 2023
 
 ## Overview
 By culling as object while its glued to another object, the unculled object will be sent towards the position of the culled object when it is unculled, creating a large amount of speed that can be transfered to Link.
@@ -17,12 +18,6 @@ By culling as object while its glued to another object, the unculled object will
 
 ## Notes
 The position of the culled object relative to the regular object determines the speed and direction of the launch.
-
-## Credit
-Asgorne
-
-## Date
-1 July 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1124489063227998298)

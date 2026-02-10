@@ -3,6 +3,7 @@ title: "Jumpslash Cancel Clipping"
 ---
 
 # Jumpslash Cancel Clipping `JCC`
+Mozz - 16 June 2023
 
 ## Overview
 Allows for clipping through thin ceilings.
@@ -20,12 +21,6 @@ Note: Arrow Smuggle IH or its alternatives makes this glitch much easier to exec
 
 ## Notes
 Highly less likely to work with flat ceilings.
-
-## Credit
-Mozz
-
-## Date
-16 June 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1119436112964890735)

@@ -3,6 +3,7 @@ title: "Mass Amnesia"
 ---
 
 # Mass Amnesia
+NaN Gogh - 2 August 2023
 
 ## Overview
 Freezes objects in a state where gravity does not affect them, as long as they are not messed with by any means.
@@ -27,12 +28,6 @@ Known means to revert object with Mass Amnesia back to normal:
 - Get too close to the objects
 - Shoot with arrows at the objects
 - Try to glue something to the objects
-
-## Credit
-NaN Gogh
-
-## Date
-2 August 2023
 
 ## Resources
 - [Twitter](https://twitter.com/_nan_gogh/status/1686427149786370055?s=20)

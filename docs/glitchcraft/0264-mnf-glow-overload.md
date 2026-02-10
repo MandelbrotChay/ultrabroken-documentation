@@ -3,6 +3,7 @@ title: "MNF Glow Overload"
 ---
 
 # MNF Glow Overload
+Toti Sauce - 3 January 2025
 
 ## Overview
 Stacking the glow from the MsgNotFound sword to extreme lengths causes many visual effects to stop rendering correctly
@@ -17,12 +18,6 @@ You can continue to stack the glow by zuggling more MNFs and/or jumping for long
 ## Notes
 Extreme overload can sometimes unload specific actors
 Also works in other locations with gloom hands nearby
-
-## Credit
-Toti Sauce
-
-## Date
-3 January 2025
 
 ## Resources
 - [Discord](https://discordapp.com/channels/1086729144307564648/1105598687167664239/1324766216266453096)

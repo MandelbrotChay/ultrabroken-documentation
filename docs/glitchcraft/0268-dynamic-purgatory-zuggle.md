@@ -3,6 +3,7 @@ title: "Dynamic Purgatory Zuggle"
 ---
 
 # Dynamic Purgatory Zuggle
+mulberry - 14 February 2025
 
 ## Overview
 It's possible to send a dynamic smuggle to purgatory, keeping it connected to Link by equipping (and zuggling) its FE base in a similar fashion to FEWZ. While not a true dynamic zuggle, it is generally considered to be the most convenient method for dynamic zuggle on v1.2.0+
@@ -33,12 +34,6 @@ Equipment order can be reversed to dynamic zuggle shields or bows.
 The FE connection between the zuggled base shield and the dynamic purgatory weapon can be substituted for Cold Fuse.
 
 For dynamic purgatory without zuggling, omit step 5 for the first method and steps 2-4 for the second method
-
-## Credit
-mulberry
-
-## Date
-14 February 2025
 
 ## Resources
 - [Discord](https://discordapp.com/channels/1086729144307564648/1105598687167664239/1340135268706942986)

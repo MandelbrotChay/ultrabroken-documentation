@@ -3,6 +3,7 @@ title: "Guard-less Active Shield"
 ---
 
 # Guard-less Active Shield `GAS`
+venaticus - 12 June 2023
 
 ## Overview
 Makes the fuse of a shield constantly active
@@ -25,12 +26,6 @@ This keeps the shield in an "on" state, many things will turn it off:
 For 1.2.0:
 
 Can be achieved via Fuse Entanglement Drop Smuggling either a shield or a weapon and Double Fuse Entangling a Zonai Device to both drop smuggled and actually equipped equipment. See "Link to Source(s)" for more.
-
-## Credit
-venaticus
-
-## Date
-12 June 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1110956205624532993/1118279347325894746)

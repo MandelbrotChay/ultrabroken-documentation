@@ -3,6 +3,7 @@ title: "Octo-balloon Detanglement"
 ---
 
 # Octo-balloon Detanglement
+mulberry - 16 November 2025
 
 ## Overview
 Allows for easy detanglement of any shield using octoballoons
@@ -16,12 +17,6 @@ Allows for easy detanglement of any shield using octoballoons
 
 ## Notes
 —
-
-## Credit
-mulberry
-
-## Date
-16 November 2025
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1439763376753344604)

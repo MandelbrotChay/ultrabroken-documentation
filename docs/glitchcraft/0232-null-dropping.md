@@ -3,6 +3,7 @@ title: "Null Dropping"
 ---
 
 # Null Dropping
+Aergyl - 16 March 2024
 
 ## Overview
 Displays a glitched and empty chest quickmenu.
@@ -15,12 +16,6 @@ Displays a glitched and empty chest quickmenu.
 
 ## Notes
 —
-
-## Credit
-Aergyl
-
-## Date
-16 March 2024
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1218578523690897458)

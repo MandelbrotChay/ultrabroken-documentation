@@ -3,6 +3,7 @@ title: "Fuse Entanglement Desync"
 ---
 
 # Fuse Entanglement Desync `FED`
+Physioninja - 26 May 2023
 
 ## Overview
 Allows you to transfer the fuse and durability from one weapon to another. You can also decide to dupe the weapon or the fused material.
@@ -30,12 +31,6 @@ Unfuse your shield at Tarrey Town to get a modifier-less copy of the target
 ## Notes
 Weapon State Transfer
 this does not wst on 1.0.0
-
-## Credit
-Physioninja
-
-## Date
-26 May 2023
 
 ## Resources
 - [Youtube](https://youtu.be/E3nDTPL6IdU)

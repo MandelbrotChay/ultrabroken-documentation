@@ -3,6 +3,7 @@ title: "Model Teleport Desync"
 ---
 
 # Model Teleport Desync
+NX721 - 29 July 2023
 
 ## Overview
 This allows for invisibility, model desyncing when gliding, staggering when getting hit to prevent ragdoll, without the previous method that required you to overload.
@@ -17,12 +18,6 @@ This allows for invisibility, model desyncing when gliding, staggering when gett
 - Slight Invisibilty (Disables Gloom Hands)
 - Glitched Models
 This works because the Steering Stick is on the surface, while Link is stuck in the animation of controlling the Steering Stick, causing a hitbox displacement. You are able to travel and load saves, and it does not need any overloading at all, unlike previous methods.
-
-## Credit
-NX721
-
-## Date
-29 July 2023
 
 ## Resources
 - [Twitter](https://twitter.com/NX721_/status/1685368247145615360?s=20)

@@ -3,6 +3,7 @@ title: "Ultimate Pocket Rocket"
 ---
 
 # Ultimate Pocket Rocket
+Aergyl, mulberry, Ikaboze, Jordan - 20 May 2025
 
 ## Overview
 A pocket rocket which does not break on warps or drain energy cells, and has unlimited usage and range
@@ -42,12 +43,6 @@ A pocket rocket which does not break on warps or drain energy cells, and has unl
 
 ## Notes
 —
-
-## Credit
-Aergyl, mulberry, Ikaboze, Jordan
-
-## Date
-20 May 2025
 
 ## Resources
 - [Discord](https://discordapp.com/channels/1086729144307564648/1110956205624532993/1374486971551973386)

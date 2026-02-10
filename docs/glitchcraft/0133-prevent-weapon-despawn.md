@@ -3,6 +3,7 @@ title: "Weapon Despawn Prevention"
 ---
 
 # Weapon Despawn Prevention
+NX721 - 28 June 2023
 
 ## Overview
 Prevents equipment from despawning after certain NPC interactions and quests (Does not work in Pirate Ship quest, different flags).
@@ -18,12 +19,6 @@ Prevents equipment from despawning after certain NPC interactions and quests (Do
 You can bring back the weapon by zuggling before quest ends.
 
 Best used in Eldin Cave Quest, experiment with different despawn flags.
-
-## Credit
-NX721
-
-## Date
-28 June 2023
 
 ## Resources
 - [Twitter](https://twitter.com/NX721_/status/1674217769267781633?s=20)

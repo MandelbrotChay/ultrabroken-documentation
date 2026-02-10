@@ -4,6 +4,7 @@ title: "Ascend Camera Glitch"
 
 # Ascend Camera Glitch
 
+
 ## Overview
 Keeps the camera far away from link after a file load for a short period of time.
 
@@ -15,12 +16,6 @@ Keeps the camera far away from link after a file load for a short period of time
 3. Activate ascend and load the file while the camera is going up.
 
 ## Notes
-—
-
-## Credit
-—
-
-## Date
 —
 
 ## Resources

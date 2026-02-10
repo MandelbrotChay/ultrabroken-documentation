@@ -3,6 +3,7 @@ title: "Weapon State Transfer"
 ---
 
 # Weapon State Transfer `WST`
+BigDUCCO, kurocat471, ElDuende, Mentor_Kurt - 19 May 2023
 
 ## Overview
 allows you to transfer the durability, fused material, and modifier of a weapon
@@ -48,12 +49,6 @@ Similarily, the shield fuse is not always necessary, as some shields are natural
 In 1.0.0, performing WST this way can allow you to delete the modifier completely.
 
 Depending on the bow you use (ex. Phrenic Bow), you'll still be able to perform WST, but the Old Wooden Bow has very good consistency.
-
-## Credit
-BigDUCCO, kurocat471, ElDuende, Mentor_Kurt
-
-## Date
-19 May 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1109319667673223189)

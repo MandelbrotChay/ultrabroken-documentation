@@ -3,6 +3,7 @@ title: "Reball"
 ---
 
 # Reball
+Mozz - 6 July 2023
 
 ## Overview
 By combining recall with throwing a Zonai device capsule, you can jump onto and transfer momentum from the capsule into Link, providing significant speed.
@@ -16,12 +17,6 @@ By combining recall with throwing a Zonai device capsule, you can jump onto and 
 
 ## Notes
 Can be combined with arrow smuggle for momentum preservation.
-
-## Credit
-Mozz
-
-## Date
-6 July 2023
 
 ## Resources
 —

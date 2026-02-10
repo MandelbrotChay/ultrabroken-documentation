@@ -3,6 +3,7 @@ title: "Stick Desync Clip"
 ---
 
 # Stick Desync Clip `SDC`
+NaN Gogh, DisguisedMoth - 1 July 2023
 
 ## Overview
 By dropping a shield just before mounting a steering stick that is fuse entangled to it, we can clip through floors easily.
@@ -29,12 +30,6 @@ Remarks:
 - Link can't cull if the base is equipped.
 - The glitch will not work if you do get on the steering stick immediately after dropping.
 - You will lose the shield so it is best to entangle the stick to a low level/non important shield.
-
-## Credit
-NaN Gogh, DisguisedMoth
-
-## Date
-1 July 2023
 
 ## Resources
 - [Twitter](https://twitter.com/_nan_gogh/status/1675121229462642689?s=20)

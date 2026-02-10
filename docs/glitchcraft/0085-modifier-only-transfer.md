@@ -3,6 +3,7 @@ title: "Modifier ONLY Transfer"
 ---
 
 # Modifier ONLY Transfer
+kurocat471, BigDUCCO - 9 June 2023
 
 ## Overview
 Allows you to transfer only the modifier, but only works on weapons.
@@ -18,12 +19,6 @@ Allows you to transfer only the modifier, but only works on weapons.
 
 ## Notes
 1.2.0-1.2.1 need an altenative method
-
-## Credit
-kurocat471, BigDUCCO
-
-## Date
-9 June 2023
 
 ## Resources
 - [YouTube](https://youtu.be/ycKeFgsb7gs)

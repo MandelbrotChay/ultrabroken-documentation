@@ -3,6 +3,7 @@ title: "Cull Pickup Dynamic Zuggle"
 ---
 
 # Cull Pickup Dynamic Zuggle
+mulberry - 18 May 2025
 
 ## Overview
 Picking up a thrown boomerang on the same frame that it culls can lead to dynamic zuggle
@@ -22,12 +23,6 @@ Picking up a thrown boomerang on the same frame that it culls can lead to dynami
 ## Notes
 Works with any weapon that can be thrown instead of only boomerangs if combined with fail drop smuggle
 Possible to perform on 1.1.2+ with force swap on step 6. 1.2.0+ requires manual unculling of the dynamic smuggle after force swap
-
-## Credit
-mulberry
-
-## Date
-18 May 2025
 
 ## Resources
 - [Discord](https://discordapp.com/channels/1086729144307564648/1113557914444111873/1373670648777277510)

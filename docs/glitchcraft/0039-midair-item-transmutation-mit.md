@@ -3,6 +3,7 @@ title: "Midair Item Transmutation"
 ---
 
 # Midair Item Transmutation `MIT`
+eXe - 20 May 2023
 
 ## Overview
 Allows you to transmutate any material very fast. Technical explanation: let's say you have
@@ -26,12 +27,6 @@ With this glitch you "lose" items! First you need to organize your inventory. Yo
 
 ## Notes
 You can chain this many times during 1 shield jump by repeating steps 2-5. It does not take any items if the items are in the last slot.
-
-## Credit
-eXe
-
-## Date
-20 May 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1109456967480647710)

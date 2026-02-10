@@ -3,6 +3,7 @@ title: "Ultrabrokenless Freecall"
 ---
 
 # Ultrabrokenless Freecall `UFC`
+susannediazz, ROBUXY2nd - 9 September 2023
 
 ## Overview
 Breaks the lock on a recall lock, allowing the object to be in freecall without ub
@@ -17,12 +18,6 @@ Breaks the lock on a recall lock, allowing the object to be in freecall without 
 
 ## Notes
 —
-
-## Credit
-susannediazz, ROBUXY2nd
-
-## Date
-9 September 2023
 
 ## Resources
 —

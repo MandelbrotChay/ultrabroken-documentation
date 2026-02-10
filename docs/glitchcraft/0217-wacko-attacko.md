@@ -3,6 +3,7 @@ title: "Wacko Attacko"
 ---
 
 # Wacko Attacko
+NghtmaR3, WinnerBoi77 - 21 January 2024
 
 ## Overview
 Continue attack animation onto another weapon.
@@ -16,12 +17,6 @@ Continue attack animation onto another weapon.
 
 ## Notes
 —
-
-## Credit
-NghtmaR3, WinnerBoi77
-
-## Date
-21 January 2024
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1198765751578939482)

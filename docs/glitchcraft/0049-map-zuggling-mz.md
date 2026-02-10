@@ -3,6 +3,7 @@ title: "Map Zuggling"
 ---
 
 # Map Zuggling `MZ`
+BigDUCCO - 23 May 2023
 
 ## Overview
 Allows you to zuggle much faster than older versions
@@ -22,12 +23,6 @@ Credit to ChargeVolt for writing the setup!
 
 ## Notes
 It's possible to perform Map Zuggling without a wall by standing away from a high ledge (2 springs count as long as you position Link properly) and performing it that way.
-
-## Credit
-BigDUCCO
-
-## Date
-23 May 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1110698250618552370)

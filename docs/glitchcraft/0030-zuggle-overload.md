@@ -3,6 +3,7 @@ title: "Zuggle Overload"
 ---
 
 # Zuggle Overload
+Zvleon - 17 May 2023
 
 ## Overview
 Allows you to overload your game, causing many other glitches
@@ -19,12 +20,6 @@ This glitch overloads an actors "Relation Array"
 Sizes:
 29 Actors on 1.0
 33 Actors on 1.1.0+
-
-## Credit
-Zvleon
-
-## Date
-17 May 2023
 
 ## Resources
 —

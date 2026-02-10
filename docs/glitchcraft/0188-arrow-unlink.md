@@ -3,6 +3,7 @@ title: "Arrow Unlink"
 ---
 
 # Arrow Unlink
+R4000 - 26 October 2023
 
 ## Overview
 makes arrow float away allowing you to spawn fused stuff in other loactions
@@ -17,12 +18,6 @@ makes arrow float away allowing you to spawn fused stuff in other loactions
 ## Notes
 Can cause some form of warping with wings, springs and big wheels
 it is very inconsistent and is still being tested
-
-## Credit
-R4000
-
-## Date
-26 October 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1167228288834486362)

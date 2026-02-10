@@ -3,6 +3,7 @@ title: "Cull Zone Culling"
 ---
 
 # Cull Zone Culling
+Mozz - 27 June 2023
 
 ## Overview
 A method for object culling.
@@ -18,12 +19,6 @@ A method for object culling.
 Cull zones can be viewed on the TOTK Object Map.
 
 Certain sub-areas such as caves can also act as cull zones.
-
-## Credit
-Mozz
-
-## Date
-27 June 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1123379490408636507)

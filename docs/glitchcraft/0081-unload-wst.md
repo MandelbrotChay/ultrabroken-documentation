@@ -3,6 +3,7 @@ title: "Unload WST"
 ---
 
 # Unload WST
+BigDUCCO,  Vee.Might.Exist, syb - Resync your inventory by re-equipping
 
 ## Overview
 Allows you to transfer modifiers and materials to any weapon. This method is unique as it allows for the modifiers to be tranfered to the master sword as well.
@@ -20,12 +21,6 @@ Resync your inventory by re-equipping
 
 ## Notes
 —
-
-## Credit
-BigDUCCO,  Vee.Might.Exist, syb
-
-## Date
-Resync your inventory by re-equipping
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1116378940546748416)

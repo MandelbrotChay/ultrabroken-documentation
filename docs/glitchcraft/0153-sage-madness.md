@@ -3,6 +3,7 @@ title: "Sage Madness"
 ---
 
 # Sage Madness
+Aci - 18 July 2023
 
 ## Overview
 The camera follows a sage falling down a chasm.
@@ -14,12 +15,6 @@ Activate the text box you get after obtaining a sage while the sage falls down a
 
 ## Notes
 —
-
-## Credit
-Aci
-
-## Date
-18 July 2023
 
 ## Resources
 —

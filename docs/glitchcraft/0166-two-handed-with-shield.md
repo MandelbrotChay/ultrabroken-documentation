@@ -3,6 +3,7 @@ title: "Two Handed With Shield"
 ---
 
 # Two Handed With Shield
+R4000, Bucket_Sloe - 21 August 2023
 
 ## Overview
 Allows you to use a shield and a two handed weapon at the same time
@@ -16,12 +17,6 @@ Allows you to use a shield and a two handed weapon at the same time
 ## Notes
 You can do the glitch with a one handed and then switch to a two handed one, canceled by many animations.
 Disable the earthwake ability or press "R" instead of "Y".
-
-## Credit
-R4000, Bucket_Sloe
-
-## Date
-21 August 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1143287784589770933)

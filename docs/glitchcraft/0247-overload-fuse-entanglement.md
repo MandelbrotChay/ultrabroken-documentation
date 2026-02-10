@@ -3,6 +3,7 @@ title: "Overload Fuse Entanglement"
 ---
 
 # Overload Fuse Entanglement
+mulberry - 23 July 2024
 
 ## Overview
 Allows for full fuse entanglement by combining portable culling with the mechanics of zuggle overload.
@@ -20,12 +21,6 @@ Allows for full fuse entanglement by combining portable culling with the mechani
 
 ## Notes
 —
-
-## Credit
-mulberry
-
-## Date
-23 July 2024
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1265367839997693993)

@@ -3,6 +3,7 @@ title: "Recall Drop Stacking"
 ---
 
 # Recall Drop Stacking
+Telkic, mulberry - 4 January 2025
 
 ## Overview
 Dropping many zonai devices in recall causes intense frame drops
@@ -19,12 +20,6 @@ Dropping many zonai devices in recall causes intense frame drops
 With enough lag, it's possible to clip objects through the ground similar to hydroclip
 The amount of lag generated is heavily dependent on the zonai device being dropped and the quantity.
 Can be done on 1.2.0+ with materials only
-
-## Credit
-Telkic, mulberry
-
-## Date
-4 January 2025
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1110956205624532993/1325262259152486432)

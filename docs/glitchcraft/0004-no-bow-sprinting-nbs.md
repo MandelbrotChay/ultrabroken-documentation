@@ -3,6 +3,7 @@ title: "No Bow Sprinting"
 ---
 
 # No Bow Sprinting `NBS`
+Steel - 12 May 2023
 
 ## Overview
 —
@@ -13,12 +14,6 @@ Unequip bow, hold ZL, and mash R, ZR, and B
 
 ## Notes
 —
-
-## Credit
-Steel
-
-## Date
-12 May 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1106661379450077235)

@@ -3,6 +3,7 @@ title: "Pelison Duping"
 ---
 
 # Pelison Duping
+AngryEgg, BigDUCCO (setup for current method) - 25 May 2023
 
 ## Overview
 Duplicate weapons using Pelison to remove them from an entangled shield.
@@ -21,12 +22,6 @@ Duplicate weapons using Pelison to remove them from an entangled shield.
 Costs 20 rupees. Also completely removes the modifier on the duped item.
 
 The target item remains in desync in the inventory until the duplicate is picked up, or the target is unequipped from inventory.
-
-## Credit
-AngryEgg, BigDUCCO (setup for current method)
-
-## Date
-25 May 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1110956205624532993/1111280709542359191)

@@ -3,6 +3,7 @@ title: "Mineru Ability Desync"
 ---
 
 # Mineru Ability Desync
+Sillicat - 30 May 2023
 
 ## Overview
 Desyncs Flame Emitters attached to Mineru
@@ -16,12 +17,6 @@ Desyncs Flame Emitters attached to Mineru
 
 ## Notes
 To do: test on other versions and with more emitters Seems similar to ARAZ
-
-## Credit
-Sillicat
-
-## Date
-30 May 2023
 
 ## Resources
 - [Twitter](https://twitter.com/SilicatYT/status/1663658677302353920)

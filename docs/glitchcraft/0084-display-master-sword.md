@@ -3,6 +3,7 @@ title: "Display Master Sword"
 ---
 
 # Display Master Sword
+Zas - 8 June 2023
 
 ## Overview
 Allows you to display the master sword, damaged master sword or MsgNotFound in a weapon display
@@ -17,12 +18,6 @@ Allows you to display the master sword, damaged master sword or MsgNotFound in a
 
 ## Notes
 For MsgNotFound you don't need to drop it out of recall
-
-## Credit
-Zas
-
-## Date
-8 June 2023
 
 ## Resources
 - [Twitter](https://twitter.com/zasbotw/status/1666751564743315456)

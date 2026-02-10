@@ -3,6 +3,7 @@ title: "Quantum Linking"
 ---
 
 # Quantum Linking `QL`
+NaN Gogh, pyuk - 30 August 2023
 
 ## Overview
 Uses culling to separate glued objects in space, while still retaining a coherent construction
@@ -31,12 +32,6 @@ The results, including the empty spaces in between objects, can be saved to Auto
 Quantum Link 6/30/2023
 
 Quantum Anchor 7/23/2023
-
-## Credit
-NaN Gogh, pyuk
-
-## Date
-30 August 2023
 
 ## Resources
 - [Twitter](https://fxtwitter.com/goghnan/status/1674596305698471936?s=46)

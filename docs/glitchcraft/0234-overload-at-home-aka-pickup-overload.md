@@ -3,6 +3,7 @@ title: "Overload at Home"
 ---
 
 # Overload at Home
+ock - 20 March 2024
 
 ## Overview
 By repeatedly culling Link while lifting an object during house building, it's possible to achieve an effect similar to zuggle overload
@@ -23,12 +24,6 @@ By repeatedly culling Link while lifting an object during house building, it's p
 Also know as Pickup Overload.
 
 Allows you to do most things that zuggle overload can do, including mass equipment duping and drop smuggling equipment. Unlike zuggle overload, pickup overload does not persist through saves. It can also end by going too far away from the area in which the glitch was performed.
-
-## Credit
-ock
-
-## Date
-20 March 2024
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1220145782162985000)

@@ -3,6 +3,7 @@ title: "Recall Sluggle"
 ---
 
 # Recall Sluggle
+Winnerboi77 - 12 July 2025
 
 ## Overview
 Using recall it's possible to sluggle a weapon by having access to it in the menu before it's properly equipped
@@ -21,12 +22,6 @@ To get a Drop Smuggle: drop swap unequip the equipment, then pick it up.
 ## Notes
 Dropped Purgatory (by dropping during Sluggle)
 Drop Smuggle (by drop swapping during Sluggle)
-
-## Credit
-Winnerboi77
-
-## Date
-12 July 2025
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1110956205624532993/1393348393329365042)

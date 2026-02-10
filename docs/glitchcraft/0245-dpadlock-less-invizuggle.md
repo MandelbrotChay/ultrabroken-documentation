@@ -3,6 +3,7 @@ title: "Dpadlock-less Invizuggle"
 ---
 
 # Dpadlock-less Invizuggle
+Discovered by mulberry, optimized by blackmars, mulberry, NghtmaR3 (order is alphabetically) - 17 July 2024
 
 ## Overview
 The first frame of a cull does not dpadlock, so it can be used for invizuggle
@@ -36,12 +37,6 @@ If you want to zlot an item with invizuggle, you can do the following:
 
 ## Notes
 —
-
-## Credit
-Discovered by mulberry, optimized by blackmars, mulberry, NghtmaR3 (order is alphabetically)
-
-## Date
-17 July 2024
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1262927638683582505)

@@ -3,6 +3,7 @@ title: "Quick Drop Smuggle"
 ---
 
 # Quick Drop Smuggle `QDS`
+Zas, mulberry, Aeolian - 16 March 2024
 
 ## Overview
 Dropping and equipping weapons in a specific way causes drop smuggle.
@@ -39,12 +40,6 @@ Instant drop zuggle (Mulberry)
 Discord
 Mulberries drop input cheat sheet:
 Discord
-
-## Credit
-Zas, mulberry, Aeolian
-
-## Date
-16 March 2024
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1218608839121698838)

@@ -4,6 +4,7 @@ title: "Camera Pose Glitch"
 
 # Camera Pose Glitch
 
+
 ## Overview
 Link keeps walking while frozen in the camera animation.
 
@@ -16,12 +17,6 @@ Link keeps walking while frozen in the camera animation.
 4.  Press B (Keep holding ZL and Left Stick in any direction)
 
 ## Notes
-—
-
-## Credit
-—
-
-## Date
 —
 
 ## Resources

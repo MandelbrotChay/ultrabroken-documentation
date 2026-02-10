@@ -3,6 +3,7 @@ title: "Ascend Storage"
 ---
 
 # Ascend Storage
+Saria - 19 May 2023
 
 ## Overview
 Misplaces the point where Link goes after using Ascend.
@@ -20,12 +21,6 @@ Misplaces the point where Link goes after using Ascend.
 - It also accepts no inputs at all
 - You can't mount Horses when doing the glitch
 - Immediately upon hitting A Recall gets cancelled
-
-## Credit
-Saria
-
-## Date
-19 May 2023
 
 ## Resources
 - [Twitter](https://twitter.com/reaperhide/status/1659593296774299648)

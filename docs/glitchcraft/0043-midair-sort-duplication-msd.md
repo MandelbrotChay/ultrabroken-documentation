@@ -3,6 +3,7 @@ title: "Midair Sort Duplication"
 ---
 
 # Midair Sort Duplication `MSD`
+Zas, kurocat471 - 21 May 2023
 
 ## Overview
 Allows duplication of materials while midair.
@@ -18,12 +19,6 @@ Allows duplication of materials while midair.
 ## Notes
 Can also be used with Zonai devices to take them out without diminishing the actual total in inventory. (see ZSD for duping zonai devices)
 Y and exit must be pressed on the same frame.
-
-## Credit
-Zas, kurocat471
-
-## Date
-21 May 2023
 
 ## Resources
 - [Twitter](https://twitter.com/zasoot/status/1660458317934915584)

@@ -3,6 +3,7 @@ title: "Cull Smuggle"
 ---
 
 # Cull Smuggle
+Mozz, ROBUXY2ND, ock - 27 June 2023
 
 ## Overview
 Allows any equipment that can be fuse entangled to be smuggled using margin culling.
@@ -19,12 +20,6 @@ Allows any equipment that can be fuse entangled to be smuggled using margin cull
 Cull smuggling equipment with another equipment of the same type zuggled causes the smuggle to enter purgatory upon unculling.
 
 On 1.2.0 and 1.2.1, dropping culled equipment results in the item unculling and dropping normally. To counteract this, you must drop the equipment exactly 5 frames before it unloads (ROBUXY2ND, ock)
-
-## Credit
-Mozz, ROBUXY2ND, ock
-
-## Date
-27 June 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1123379490408636507)

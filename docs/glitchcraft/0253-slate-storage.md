@@ -3,6 +3,7 @@ title: "Slate Storage"
 ---
 
 # Slate Storage
+LegendOfLinkk - September 21st, 2024
 
 ## Overview
 Storing the opening animation of the Purah Pad allows for Fall Damage Cancel
@@ -30,12 +31,6 @@ The Fall Damage should be cancelled if you dived quick enough
 
 ## Notes
 —
-
-## Credit
-LegendOfLinkk
-
-## Date
-September 21st, 2024
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1287107041877299374)

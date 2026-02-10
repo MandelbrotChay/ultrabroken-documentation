@@ -3,6 +3,7 @@ title: "Purgatory SLD"
 ---
 
 # Purgatory SLD
+mulberry - 11 February 2024
 
 ## Overview
 Allows equipment and objects to go through saves by sending its FE base to purgatory in a specific way.
@@ -17,12 +18,6 @@ Allows equipment and objects to go through saves by sending its FE base to purga
 
 ## Notes
 Grabbing a purgatory SLD object with ultrahand causes UltraSLOT.
-
-## Credit
-mulberry
-
-## Date
-11 February 2024
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1206398133408505927)

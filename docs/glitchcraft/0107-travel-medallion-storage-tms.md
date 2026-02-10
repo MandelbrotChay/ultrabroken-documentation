@@ -3,6 +3,7 @@ title: "Travel Medallion storage"
 ---
 
 # Travel Medallion storage `TMS`
+kirigaya - 16 June 2023
 
 ## Overview
 Places the travel medallion at links feet after loading a file.
@@ -19,12 +20,6 @@ Places the travel medallion at links feet after loading a file.
 
 ## Notes
 —
-
-## Credit
-kirigaya
-
-## Date
-16 June 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1110956205624532993/1119636429933387826)

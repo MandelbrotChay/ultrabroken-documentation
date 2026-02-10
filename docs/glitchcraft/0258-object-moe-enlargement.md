@@ -3,6 +3,7 @@ title: "Object (Moe) Enlargement"
 ---
 
 # Object Enlargement `MOE`
+Discovered by Toti Sauce, developed by PetitFrapo, Jordan - October 30th, 2024
 
 ## Overview
 Using a moblin, it's possible to enlarge objects
@@ -36,12 +37,6 @@ In order to make it rangeless, you need to PSLOT the target.
 
 ## Notes
 —
-
-## Credit
-Discovered by Toti Sauce, developed by PetitFrapo, Jordan
-
-## Date
-October 30th, 2024
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1301144333499760670)

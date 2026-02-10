@@ -3,6 +3,7 @@ title: "Temporary Devices"
 ---
 
 # Temporary Devices
+mulberry - November 30th, 2024
 
 ## Overview
 Fusing during the unsheathe animation of a bow causes the fuse to appear for a few frames
@@ -22,12 +23,6 @@ It's possible to FDC with it, either by chaining it (it emulates ground, so we c
 With a Quick Smuggled bomb shield, it's possible to get a lot of height by spawning a temporary wing, as this allows for another bomb jump.
 
 On 1.0, Link can stand on it, allowing to jump off it, and get more height off the ground for some easier glitch setups.
-
-## Credit
-mulberry
-
-## Date
-November 30th, 2024
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1312200159345643722)

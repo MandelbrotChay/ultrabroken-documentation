@@ -3,6 +3,7 @@ title: "Clear Camera/Scope"
 ---
 
 # Clear Camera/Scope
+NX721 - 3 July 2023
 
 ## Overview
 Allows for First Person Gameplay, removing the HUD from the camera and scope.
@@ -17,12 +18,6 @@ Allows for First Person Gameplay, removing the HUD from the camera and scope.
 Also works on Lookout Landing Telescope.
 Any loading screen will cancel the glitch, you can switch tabs in the inventory but you must rehold the items after changes without leaving the inventory.
 how was this not found
-
-## Credit
-NX721
-
-## Date
-3 July 2023
 
 ## Resources
 - [Twitter](https://twitter.com/NX721_/status/1681732748476596344)

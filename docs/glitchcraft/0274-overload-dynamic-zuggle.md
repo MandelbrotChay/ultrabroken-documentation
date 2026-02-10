@@ -3,6 +3,7 @@ title: "Overload Dynamic Zuggle"
 ---
 
 # Overload Dynamic Zuggle
+mulberry - 19 May 2025
 
 ## Overview
 Picking up a thrown boomerang while zuggle overloaded can cause dynamic zuggle
@@ -20,12 +21,6 @@ Picking up a thrown boomerang while zuggle overloaded can cause dynamic zuggle
 ## Notes
 Works with any weapon that can be thrown instead of only boomerangs if combined with fail drop smuggle
 Possible to perform on 1.1.2 with force swap on step 5
-
-## Credit
-mulberry
-
-## Date
-19 May 2025
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1110956205624532993/1374059568686174219)

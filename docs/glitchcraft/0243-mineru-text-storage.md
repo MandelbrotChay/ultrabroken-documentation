@@ -3,6 +3,7 @@ title: "Mineru Text Storage"
 ---
 
 # Mineru Text Storage
+CM30 - 11 July 2024
 
 ## Overview
 Lets you move while text is on screen
@@ -18,12 +19,6 @@ Lets you move while text is on screen
 
 ## Notes
 Only tested on 1.0.0, probably works on all versions
-
-## Credit
-CM30
-
-## Date
-11 July 2024
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1128894970653327401/1261062222306869268)

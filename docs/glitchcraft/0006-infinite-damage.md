@@ -3,6 +3,7 @@ title: "Infinite Damage"
 ---
 
 # Infinite Damage
+[GamSla341](https://www.youtube.com/@gamsla3413) - 13 May 2023
 
 ## Overview
 Damage repeats infinitely during spin attack.
@@ -14,12 +15,6 @@ Mid-charge of a spin with a two-handed weapon, obtain a new item at the exact mo
 
 ## Notes
 Todo: Replicate in TotK, test in BotW.
-
-## Credit
-[GamSla341](https://www.youtube.com/@gamsla3413)
-
-## Date
-13 May 2023
 
 ## Resources
 - [Youtube](https://youtu.be/Q1aWa0Kg-8Y)

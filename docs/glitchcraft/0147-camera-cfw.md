@@ -3,6 +3,7 @@ title: "Camera CFW"
 ---
 
 # Camera CFW
+NaN Gogh - 11 July 2023
 
 ## Overview
 Glitches out the camera rune and can remove the waymarkers and the camera UI
@@ -32,12 +33,6 @@ no camera ui
 
 ## Notes
 —
-
-## Credit
-NaN Gogh
-
-## Date
-11 July 2023
 
 ## Resources
 - [Twitter](https://vxtwitter.com/_nan_gogh/status/1678749376833781763?s=46)

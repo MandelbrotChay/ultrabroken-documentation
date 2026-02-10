@@ -3,6 +3,7 @@ title: "Dive Cancel Glide Boost"
 ---
 
 # Dive Cancel Glide Boost
+kurocat471, Mety333 - 14 May 2023
 
 ## Overview
 Allows you to preserve the increased speed from diving with the Glide Suit into paragliding
@@ -20,12 +21,6 @@ Note: You will slowly slow back down to regular paragliding speed if you don't r
 Doesn't stack well with Tulin's ability. Can be maintained with Infinite Height.
 
 May 14, 2023; June 9, 2023
-
-## Credit
-kurocat471, Mety333
-
-## Date
-14 May 2023
 
 ## Resources
 - [YouTube](https://youtu.be/oIzJKQAWPdI)

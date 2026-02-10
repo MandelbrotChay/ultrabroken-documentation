@@ -3,6 +3,7 @@ title: "Back to Back Bloodmoon"
 ---
 
 # Back to Back Bloodmoon
+Lopitty - 17 May 2023
 
 ## Overview
 A strange phenominon where blood moons occured back to back. Nothing has come of this glitch so far, though not much testing has been done. It is unknown what exactly caused it.
@@ -14,12 +15,6 @@ A strange phenominon where blood moons occured back to back. Nothing has come of
 
 ## Notes
 —
-
-## Credit
-Lopitty
-
-## Date
-17 May 2023
 
 ## Resources
 - [YouTube](https://youtu.be/60mI9DLo_vw)

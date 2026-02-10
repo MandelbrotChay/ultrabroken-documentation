@@ -3,6 +3,7 @@ title: "Fuse Overload"
 ---
 
 # Fuse Overload `FO`
+ultrababouin, NghtmaR3 - 3 November 2023
 
 ## Overview
 By repeatedly cold fusing objects to the same weapon, it's possible to reach a limit that causes any additional cold fused objects to lose their collision. This can lead to strange behavior
@@ -18,12 +19,6 @@ By repeatedly cold fusing objects to the same weapon, it's possible to reach a l
 ## Notes
 Fuse overloaded zonai devices can never expire, allowing for things like rockets to run indefinitely
 Pickup overload can also be used in place of zuggle overload
-
-## Credit
-ultrababouin, NghtmaR3
-
-## Date
-3 November 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1111875355758837830/1128775917376897145/1170074200627740803)

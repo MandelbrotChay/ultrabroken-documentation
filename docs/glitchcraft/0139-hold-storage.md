@@ -3,6 +3,7 @@ title: "Hold Storage"
 ---
 
 # Hold Storage
+Ryan?, NaN Gogh, Mozz - 2 July 2023
 
 ## Overview
 Allows Link to remain in a object holding state when not normally possible, as well as desync the hold state.
@@ -18,12 +19,6 @@ Allows Link to remain in a object holding state when not normally possible, as w
 ## Notes
 Unless Link is put into a specific state while the held items are disconnected (I.e. swimming/horse riding), they will teleport back into Links hands, canceling the storage.
 Also possible by culling Link.
-
-## Credit
-Ryan?, NaN Gogh, Mozz
-
-## Date
-2 July 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1125218530766377042)

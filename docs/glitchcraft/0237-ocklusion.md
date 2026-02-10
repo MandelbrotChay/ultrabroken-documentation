@@ -3,6 +3,7 @@ title: "Ocklusion"
 ---
 
 # Ocklusion
+ock, mulberry for the 1.0-1.1.2 method - 29 May 2024
 
 ## Overview
 Portaculling at the top of a chasm box unloads the surface
@@ -25,12 +26,6 @@ When successful, go back up with a rocket. Step on the edge of a chasm and build
 ## Notes
 Ocklusion Stutter:
 By going into the room of the secret stone in Lightning Temple, going up and down the stairs of the secret stone pedestal causes a strong load called Ocklusion Stutter. By opening menu a bit before it can lead to some menu weirdness.
-
-## Credit
-ock, mulberry for the 1.0-1.1.2 method
-
-## Date
-29 May 2024
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1245447960658051184)

@@ -3,6 +3,7 @@ title: "Mineru Fuse Entanglement"
 ---
 
 # Mineru Fuse Entanglement `MFE`
+ock (Method 1 & 3), WinnerBoi77 (Method 2) - 18 October 2023
 
 ## Overview
 Fusing to Mineru and then pausing the game or culling Link while riding Mineru on a specific frame causes objects to FE to Mineru
@@ -37,12 +38,6 @@ Note: This method ONLY works with bows, shields, and weapons
 
 - Fusing something to Mineru on the same slot as an FE'd object will detangle that object from Mineru. Discovered by Mullberry.
 For method 1, any method of culling Link can work in place of like like stick culling
-
-## Credit
-ock (Method 1 & 3), WinnerBoi77 (Method 2)
-
-## Date
-18 October 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1164195341491515432)

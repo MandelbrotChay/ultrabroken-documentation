@@ -3,6 +3,7 @@ title: "Culling Area FSFE"
 ---
 
 # Culling Area FSFE
+mulberry, Yee, Zas - 25 February 2024
 
 ## Overview
 A method for FSFE using AreaCulling
@@ -30,12 +31,6 @@ Alternatively:
 ## Notes
 Chain FSFE (Mulberry)
 https://discord.com/channels/1086729144307564648/1113557914444111873/1217688933807296593
-
-## Credit
-mulberry, Yee, Zas
-
-## Date
-25 February 2024
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1211151054633172993)

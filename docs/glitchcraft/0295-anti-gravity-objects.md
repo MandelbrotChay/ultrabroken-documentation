@@ -4,6 +4,7 @@ title: "Anti-Gravity Objects"
 
 # Anti-Gravity Objects
 
+
 ## Overview
 Allows objects to lose their gravity.
 
@@ -15,13 +16,6 @@ Allows objects to lose their gravity.
 3. Use autobuild on the invisible item and object.
 
 ## Notes
-—
-
-## Credit
-
-—
-
-## Date
 —
 
 ## Resources

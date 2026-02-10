@@ -3,6 +3,7 @@ title: "Unsheathed Mastersword"
 ---
 
 # Unsheathed Mastersword
+NX721, DanielNeia - 11 July 2023
 
 ## Overview
 Puts the master sword in a visual state where it is outside of it's sheath.
@@ -18,12 +19,6 @@ Puts the master sword in a visual state where it is outside of it's sheath.
 Also known as NX Method.
 
 Dropped equipment goes zoomy into the sky based on timing.
-
-## Credit
-NX721, DanielNeia
-
-## Date
-11 July 2023
 
 ## Resources
 - [Twitter](https://twitter.com/NX721_/status/1678921120102371328)

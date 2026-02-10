@@ -3,6 +3,7 @@ title: "Throwless Storage"
 ---
 
 # Throwless Storage
+evilgabe, NX721 - 19 June 2023
 
 ## Overview
 Makes it so that Link puts the weapon in an active state (allows for activation of Zonai Devices at all times).
@@ -23,12 +24,6 @@ If done correctly, any Zonai devices fused to your weapon will become permanetly
 
 Zonai Devices active during this glitch will take more energy when being used.
 Rockets can be used, however they will simply become deactivated and will have no usage. To deactiavate a Zonai Weapon during Throwless Storage, simply drop and pick up the weapon.
-
-## Credit
-evilgabe, NX721
-
-## Date
-19 June 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1120815854729306223)

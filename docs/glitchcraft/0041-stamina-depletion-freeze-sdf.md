@@ -3,6 +3,7 @@ title: "Stamina Depletion Freeze"
 ---
 
 # Stamina Depletion Freeze `SDF`
+Lightos_ - 20 May 2023
 
 ## Overview
 Certain actions can cause the stamina depletion to glitch out.
@@ -19,12 +20,6 @@ Letting go of B or stopping running cancels it
 
 ## Notes
 —
-
-## Credit
-Lightos_
-
-## Date
-20 May 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1109478155409965076)

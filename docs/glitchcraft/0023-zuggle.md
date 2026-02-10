@@ -3,6 +3,7 @@ title: "Zuggle"
 ---
 
 # Zuggle
+Zvleon - 16 May 2023
 
 ## Overview
 Read the zuggle document for more info! 
@@ -25,12 +26,6 @@ Cull Storage Zuggle (CSZ)
 ## Notes
 Zuggled equipment persists through file loads and map changes, making it very useful when combined with other glitches
 zuggle discussion in the zuggle- thread on the discord please
-
-## Credit
-Zvleon
-
-## Date
-16 May 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1108035223993729044)

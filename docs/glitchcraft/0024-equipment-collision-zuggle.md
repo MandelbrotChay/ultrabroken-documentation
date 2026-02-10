@@ -3,6 +3,7 @@ title: "Equipment Collision Zuggle"
 ---
 
 # Equipment Collision Zuggle
+Zvleon - 16 May 2023
 
 ## Overview
 The original zuggle method discovered by Zvleon.
@@ -22,12 +23,6 @@ The original zuggle method discovered by Zvleon.
 ## Notes
 Zuggle has many ways of being executed, this is the oldest one. Map Zuggling is the most reccomended method for pre-1.1.2
 For 1.1.2, see FEZ and smuggle stacking zuggling (and FEWZ)
-
-## Credit
-Zvleon
-
-## Date
-16 May 2023
 
 ## Resources
 —

@@ -3,6 +3,7 @@ title: "Reverse Ascend Storage"
 ---
 
 # Reverse Ascend Storage
+Redrooey - 27 November 2023
 
 ## Overview
 Ascending through water under a plattform allows link to ascend up into the sky, provided that there is ground above him. The limit for this seems to be around 700 meters.
@@ -14,12 +15,6 @@ Ascending through water under a plattform allows link to ascend up into the sky,
 
 ## Notes
 —
-
-## Credit
-Redrooey
-
-## Date
-27 November 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1128894970653327401/1178472338778493029)

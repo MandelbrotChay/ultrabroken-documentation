@@ -3,6 +3,7 @@ title: "Portable Culling"
 ---
 
 # Portable Culling
+Mulberry - 27 February 2024
 
 ## Overview
 Fusing a cold fused sdc stick makes it possible to cull link anywhere, empty slot smuggle (smuggle item without them being equipped), desync, invizuggle any equipment and more.
@@ -17,12 +18,6 @@ Fusing a cold fused sdc stick makes it possible to cull link anywhere, empty slo
 
 ## Notes
 doing a drop swap drop softlocks
-
-## Credit
-Mulberry
-
-## Date
-27 February 2024
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1212132735020310590)

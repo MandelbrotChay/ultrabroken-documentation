@@ -3,6 +3,7 @@ title: "Arrow Smuggling"
 ---
 
 # Arrow Smuggling
+Mozz - 4 June 2023
 
 ## Overview
 A type of equipment smuggle that makes Link hold an arrow without pulling out his bow.
@@ -23,12 +24,6 @@ Differs from Equipment Smuggling due to the fact that you must pull out the bow 
 
 To do:
 Update this entry
-
-## Credit
-Mozz
-
-## Date
-4 June 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1114958560430919830)

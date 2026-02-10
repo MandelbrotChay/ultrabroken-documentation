@@ -3,6 +3,7 @@ title: "Item Throw Hitbox Disable"
 ---
 
 # Item Throw Hitbox Disable
+Arfix, brought up by Moonrise - 18 June 2023; 8 August 2023
 
 ## Overview
 —
@@ -13,12 +14,6 @@ Throw an item, then recall it.
 
 ## Notes
 Impact triggered items can still go off if hit by an explosion. For Bomb Flowers, fire and gravity is enough to explode them.
-
-## Credit
-Arfix, brought up by Moonrise
-
-## Date
-18 June 2023; 8 August 2023
 
 ## Resources
 —

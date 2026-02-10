@@ -3,6 +3,7 @@ title: "YeeFE"
 ---
 
 # YeeFE
+Yee, mulberry - 20 February 2024
 
 ## Overview
 Uses culling with mineru and an sdc stick to fuse entangle
@@ -26,12 +27,6 @@ This equipment can be used as a portacull, but also as a way to cull Link.
 Spears can be used to yeefe hoverstones, they cause the hoverstone to fe next to link (normally they fe on top of link and softlock)
 https://discord.com/channels/1086729144307564648/1113557914444111873/1224074388983250975 (ofstrings2)
 Test on more versions
-
-## Credit
-Yee, mulberry
-
-## Date
-20 February 2024
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1112801830821449798/1209443743581736980)

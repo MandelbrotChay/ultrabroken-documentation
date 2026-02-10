@@ -3,6 +3,7 @@ title: "Crouch Sprinting"
 ---
 
 # Crouch Sprinting
+Mozz - 14 May 2023
 
 ## Overview
 —
@@ -13,12 +14,6 @@ Press b, tap crouch right after, wait a little bit for the stamina to regen, rep
 
 ## Notes
 Currently infinite
-
-## Credit
-Mozz
-
-## Date
-14 May 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1107351279312830505)

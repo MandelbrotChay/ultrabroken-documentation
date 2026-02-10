@@ -3,6 +3,7 @@ title: "Zapshield"
 ---
 
 # Zapshield
+Aergyl - 16 September 2024
 
 ## Overview
 Fuse entangling a shock emitter to two shields and permaculling one of its FE bases results in a permanently electrified shield which makes applications involving shock more portable
@@ -23,12 +24,6 @@ Equipment Smuggle: Unsheathing the zapshield, dropping it and the equipped weapo
 Shock Cold Fuse: Unsheathing the zapshield and pressing ZL + Y while the fuse rune is active can be used to cold fuse objects to the equipped weapon.
 Zuggling the zapshield allows it to persist through loads.
 While zapshield itself can be created on all versions, it's applications are version dependent. Check the spreadsheet entry for a respective application to see which versions it works on.
-
-## Credit
-Aergyl
-
-## Date
-16 September 2024
 
 ## Resources
 - [Discord](https://discordapp.com/channels/1086729144307564648/1105598687167664239/1285243376844800062)

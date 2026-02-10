@@ -3,6 +3,7 @@ title: "Laser-OOB"
 ---
 
 # Laser-OOB
+Xeryph - 13 May 2023
 
 ## Overview
 The game puts a floor inside Link
@@ -14,12 +15,6 @@ Go into a laser, slowly glide down, when the floor flips back up you are out of 
 
 ## Notes
 You need a laser nearby.
-
-## Credit
-Xeryph
-
-## Date
-13 May 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1107045488454279188)

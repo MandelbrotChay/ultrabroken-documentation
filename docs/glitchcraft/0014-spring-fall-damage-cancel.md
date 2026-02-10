@@ -3,6 +3,7 @@ title: "Spring Fall Damage Cancel"
 ---
 
 # Spring Fall Damage Cancel
+Mozz - 15 May 2023
 
 ## Overview
 Currently allows you to fall from certian heights without taking fall damage
@@ -16,12 +17,6 @@ Currently allows you to fall from certian heights without taking fall damage
 
 ## Notes
 Glitchless Fall Damage Cancel
-
-## Credit
-Mozz
-
-## Date
-15 May 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1107739989544009828)

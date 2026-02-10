@@ -3,6 +3,7 @@ title: "Throw Tap Sprinting"
 ---
 
 # Throw Tap Sprinting `TTS`
+Deystroyer, Tauktes - 14 May 2023
 
 ## Overview
 —
@@ -13,12 +14,6 @@ Tap B - R - B, repeat
 
 ## Notes
 Currently infinite
-
-## Credit
-Deystroyer, Tauktes
-
-## Date
-14 May 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1107413221545087028)
