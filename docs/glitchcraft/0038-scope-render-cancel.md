@@ -27,13 +27,11 @@ With the wide border, it will flash black for a frame or two when you enter a ne
 You are sometimes able to take pictures with the scope pins in the picture.
 This glitch cancels any time you open any type of menu, any NPC or prompt interaction, etc.
 
-May 19, 2023, June 2, 2023 and July 9, 2023
-
 ## Credit
 NX721,  eXe
 
 ## Date
-May 19, 2023
+May 19, 2023; June 2, 2023; July 9, 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1109188178008621147)

@@ -6,7 +6,7 @@ title: "Culling Area Fuse Storage"
 `?`
 
 ## Overview
-A method of Fuse Storage using AreaCulling
+A method of Fuse Storage using Area Culling
 
 ## Instructions
 —
@@ -24,4 +24,5 @@ June 30, 2023
 —
 
 ## See also
-- Fuse StorageObject Culling
+- Fuse Storage
+- Object Culling

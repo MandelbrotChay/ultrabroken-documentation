@@ -36,13 +36,12 @@ ARAZ (Second Method)
 Can use certain Zonai devices that DRAZ cannot
 
 Can be kept permanently active via GAS and can be zuggled for transferring/other zuggle-related things
-June 16, 2023 and July 15, 2023
 
 ## Credit
 Ryan?, NX721
 
 ## Date
-June 16, 2023
+June 16, 2023; July 15, 2023
 
 ## Resources
 —

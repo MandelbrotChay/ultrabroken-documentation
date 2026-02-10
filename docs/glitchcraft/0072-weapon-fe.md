@@ -17,7 +17,7 @@ Allows for FE to weapons
 5. Swap off shield with weapon
 
 ## Notes
-September 12, 2023 and June 1, 2023
+September 12, 2023; June 1, 2023
 
 ## Credit
 Rediscovered by robuxy2nd and originally found by Physioninja

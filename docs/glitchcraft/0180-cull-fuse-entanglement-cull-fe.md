@@ -22,14 +22,12 @@ Allows you to Fuse Entangle objects by culling Link the same frame the fuse is a
 
 ## Notes
 Save your progress! This can lead to softlocking your game!
-September 21, 2023 (Original)
-October 10, 2023 (Ock)
 
 ## Credit
-ultrababouin, susannediazz (original), Ock, SteFen45 (Recall FE method)
+ultrababouin, susannediazz, Ock, SteFen45
 
 ## Date
-September 21, 2023
+September 21, 2023; October 10, 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1111875355758837830/1128775917376897145/1154541201765183558)

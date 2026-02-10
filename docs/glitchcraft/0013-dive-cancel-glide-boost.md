@@ -19,7 +19,7 @@ Note: You will slowly slow back down to regular paragliding speed if you don't r
 ## Notes
 Doesn't stack well with Tulin's ability. Can be maintained with Infinite Height.
 
-May 14, 2023 & June 9, 2023
+May 14, 2023; June 9, 2023
 
 ## Credit
 kurocat471, Mety333
