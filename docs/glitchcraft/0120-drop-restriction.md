@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Drop Restriction"
 ---
 
@@ -17,10 +17,10 @@ Prevents zonai devices from spawning out of the inventory.
 6. load a file
 
 ## Notes
-Only way to cancel it is by closing the game
+Only way to cancel it is by closing the game.
 
 ## Credit
-SCFD-GK2 and Nicnac
+SCFD-GK2, Nicnac
 
 ## Date
 June 19, 2023
