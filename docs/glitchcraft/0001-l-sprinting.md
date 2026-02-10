@@ -3,9 +3,9 @@ title: "L Sprinting"
 ---
 
 # L Sprinting
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 This is an infinite stamina sprinting method. It is not the fastest one and the timing is very hard.
 
 ## Instructions
