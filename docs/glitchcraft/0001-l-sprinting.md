@@ -3,13 +3,15 @@ title: "L Sprinting"
 ---
 
 # L Sprinting
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
-This is an infinite stamina sprinting method. It is not the fastest one and the timing is very hard.
+—
 
 ## Instructions
-This works best on fuse and ultrahand. Hold B and tap L twice (one time to activate it and one time to cancel it)
+This is an infinite stamina sprinting method. It is not the fastest one and the timing is very hard.
+
+This works best on fuse and ultrahand. Hold B and tap L twice (one time to activate it and one time to cancel it).
 
 ## Notes
 —
