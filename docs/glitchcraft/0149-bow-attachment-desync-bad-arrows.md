@@ -6,11 +6,13 @@ title: "Bow Attachment Desync"
 `1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
+---
 Allows you to attach different materials to multishot arrows.
 
 _Zas, Aeolian - 11 July 2023_
 
 ## Instructions
+---
 1. Stand next to a wall facing away from it
 2. Equip a multishot bow
 3. Attach a material to your bow and open a menu (d-pad or inventory)
@@ -23,12 +25,14 @@ Repeat steps 4-6 for as many times as you want
 9. Fire the bow without removing it from Link's hand
 
 ## Notes
+---
 1.0.0 can perform single material Bad Arrows by first fusing a material, then equipping a multishot and immediately dropping it, this drops the material on the ground for infinite uses but also deletes bow modifiers.
 On 1.0.0/1.2.0 using single shot bows does not add a fuse into the mix.
 
 On 1.1.0-1.1.2 only the last material is consumed.
 
 ## Resources
+---
 - [Twitter](https://twitter.com/zasoot/status/1678779155310338053)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1128344687825133649)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1128344687825133649%20(Aeolian%20with%201.0.0%20item%20drop))

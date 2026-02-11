@@ -6,11 +6,13 @@ title: "Chasm Delay Zuggle"
 `1.2.0` `1.2.1`
 
 ## Overview
+---
 Every chasm has an "unload box" that unloads the overworld if passed through. By positioning link inside the box, with the help of portable culling it's possible to infinitely delay a drop, causing a zuggle.
 
 _Discovered by ock, optimized by mulberry, winnerboi - 31 May 2024_
 
 ## Instructions
+---
 1. setup portable culling using the opposite equipment type of your target
 2. position yourself anywhere inside a chasm box, for instance, the akkala citadel chasm box starts at y-coordinate 179
 3. equip target 
@@ -26,6 +28,7 @@ _Discovered by ock, optimized by mulberry, winnerboi - 31 May 2024_
 13. unlock dpad using a chest
 
 ## Notes
+---
 Extensions:
 Mastersword zuggle (Ock)
 1. Desync the mastersword:
@@ -36,4 +39,5 @@ Mastersword zuggle (Ock)
 2. do regular chasm delay zuggle inputs
 
 ## Resources
+---
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1246004390062587944)

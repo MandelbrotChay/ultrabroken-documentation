@@ -6,17 +6,20 @@ title: "Stick Desync Clip"
 `1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
+---
 By dropping a shield just before mounting a steering stick that is fuse entangled to it, we can clip through floors easily.
 
 _NaN Gogh, DisguisedMoth - 1 July 2023_
 
 ## Instructions
+---
 1. Fuse entangle a steering stick
 2. Get close to a steering stick so you can see the mount button
 3. Drop the base and immediately mount the steering stick
 4. Press B to cancel the clip
 
 ## Notes
+---
 This also has a side effect of culling link if the sdc stick is in a culling area and the base is not equipped. This happens because link is still tied to the sdc stick.
 
 Remarks:
@@ -32,6 +35,7 @@ Remarks:
 - You will lose the shield so it is best to entangle the stick to a low level/non important shield.
 
 ## Resources
+---
 - [Twitter](https://twitter.com/_nan_gogh/status/1675121229462642689?s=20)
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1134569862497304629)
 - [Twitter](https://twitter.com/_nan_gogh/status/1675121229462642689?s=20)

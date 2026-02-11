@@ -6,11 +6,13 @@ title: "Wuggle"
 `1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
+---
 By dropping and equipping equipment in a specific way during a cull causes a glitch similar to zuggle.
 
 _ock, robuxy2nd - 29 December 2023_
 
 ## Instructions
+---
 1. Fe your target equipment
 2. leave the shield or weapon it is fed to in a culling area
 3. pick up the fe item
@@ -20,9 +22,11 @@ _ock, robuxy2nd - 29 December 2023_
 7. open the quickmenu during the chest opening and attempt to drop the currently equipped shield/bow/weapon to unlock the dpad
 
 ## Notes
+---
 Also known as Weird Zuggle.
 
 ## Resources
+---
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1190371844142928002)
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1190371844142928002)
 - [YouTube](https://www.youtube.com/watch?v=gO6cB5cSQTY&t)

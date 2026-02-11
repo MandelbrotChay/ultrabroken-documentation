@@ -6,11 +6,13 @@ title: "Swap Resync Zuggle"
 `1.2.0` `1.2.1+`
 
 ## Overview
+---
 Using Swap Resync, it's possible to zuggle anywhere simply using portacull equipment.
 
 _mulberry, MandelbrotChaylay - 11 August 2025_
 
 ## Instructions
+---
 0. Go in a position where you can drop a shield + a portacull but not your target type.
 1. Drop an unequipped piece of equipment.
 2. Drop swap portacull equipment.
@@ -35,9 +37,11 @@ There is a different setup for zuggling portacull equipment:
 5. Dismiss Mineru (will act as a fail drop).
 
 ## Notes
+---
 You can also fully skip the need for a wall by loading a save at the end of the setup before unpausing.
 
 ## Resources
+---
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1404450104525459546)
 - [Zuggling Portacull equipment](https://discord.com/channels/1086729144307564648/1113557914444111873/1404506627091988552)
 - [Zuggle](search:Zuggle)

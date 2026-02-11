@@ -6,12 +6,14 @@ title: "Awakened Master Sword"
 `1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
+---
 You can use gas to leave a minigame and wrong warp into the phantom ganon fight, which makes it possible to escape the fight. 
 The result is that you get to play the game with a special flag that causes the master sword to be unbreakable and do 30 extra damage.
 
 _tahatanogame - 4 September 2023_
 
 ## Instructions
+---
 1. setup GAS and lock your coordinates at the phantom ganon fight
 2. play a certain type of minigame
 3. drown to wrong warp
@@ -19,10 +21,12 @@ _tahatanogame - 4 September 2023_
 Watch Blize's guide for more info!
 
 ## Notes
+---
 After a game close and reopen, you will respawn at the phantom ganon fight, just reload a file to fix this
 Requires the crisis at Hyrule castle quest to be unfinished
 
 ## Resources
+---
 - [Youtube](https://www.youtube.com/watch?v=HfvNF_1lZW0&t)
 - [YouTube](https://www.youtube.com/watch?v=50RRbWV-d-A&t)
 - [Guard-less Active Shield](search:Guard-less Active Shield)

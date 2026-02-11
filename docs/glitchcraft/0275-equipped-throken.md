@@ -6,11 +6,13 @@ title: "Equipped Throken"
 `1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
+---
 Allows throken weapons to be equipped
 
 _Aergyl, mulberry - 20 May 2025_
 
 ## Instructions
+---
 For 1.0.0-1.1.2:
 1. Fuse a bomb to a two-handed weapon on one durability (including its fuse durability)
 2. Equip a different weapon and smuggle it in any form
@@ -26,9 +28,11 @@ For 1.0.0-1.2.1:
 5. Drop the boomerang with Link's back to a wall
 
 ## Notes
+---
 Having a like like steal the throken weapon from Link allows it to be picked up once again
 
 ## Resources
+---
 - [Discord](https://discordapp.com/channels/1086729144307564648/1110956205624532993/1374335275064623104)
 - [Discord](https://discordapp.com/channels/1086729144307564648/1113557914444111873/1377437735224086608)
 - [Throken](search:Throken)

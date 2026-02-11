@@ -6,6 +6,7 @@ title: "Object Culling"
 `1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
+---
 Places an object in a half-unloaded, limbo like state. Leading to unintended interactions such as Zonai devices occupying the same space, remote control, and more.
 
 Object culling in this instance refers to an optimization trick in which actors within a certain area will be unloaded for the purposes of saving memory.
@@ -13,15 +14,18 @@ Object culling in this instance refers to an optimization trick in which actors 
 _Mozz, tori - 27 June 2023_
 
 ## Instructions
+---
 —
 
 ## Notes
+---
 With the help of chain FE, it is possible to make an infinitely large cull radius
 (discovered by Mulberry and Timber)
 Discord
 YouTube
 
 ## Resources
+---
 —
 - [Like-Like Culling](search:Like-Like Culling)
 - [Cull Zone Culling](search:Cull Zone Culling)

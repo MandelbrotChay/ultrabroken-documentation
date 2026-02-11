@@ -6,11 +6,13 @@ title: "Attached Rangeless Active Zonai"
 `1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Overview
+---
 Is very similar to DRAZ but differs slightly.
 
 _Ryan?, NX721 - 16 June 2023; 15 July 2023_
 
 ## Instructions
+---
 1. Drop a shield and equip another shield.
 2. FE shield 1 onto shield 2. 
 3. Drop shield 2 (shield-shield) and equip shield 1.  
@@ -35,11 +37,13 @@ ARAZ (Second Method)
 4. Either be close towards the shield (So it doesn't despawn), or simply use Autobuild Slide Cancel to keep it near you
 
 ## Notes
+---
 Can use certain Zonai devices that DRAZ cannot
 
 Can be kept permanently active via GAS and can be zuggled for transferring/other zuggle-related things
 
 ## Resources
+---
 —
 - [Fuse Entanglement](search:Fuse Entanglement)
 - [Zuggling](search:Zuggling)

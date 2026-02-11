@@ -6,11 +6,13 @@ title: "Hold Smuggling"
 `1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
+---
 Enables full control of Link while holding objects in the menu.
 
 _Mozz, NaN Gogh - 4 July 2023_
 
 ## Instructions
+---
 1. Activate hold storage onto a horse.
 2. Throw all of the hold stored item until none are left in inventory.
 3. Jump off the horse, Link should start holding the stored items, then open the menu and hit X to stop holding them.
@@ -20,8 +22,10 @@ _Mozz, NaN Gogh - 4 July 2023_
 7. Unpause and ensure you can run around while the items are still held in inventory.
 
 ## Notes
+---
 Much more portable version of hold storage.
 Also removes HUD from Sheikah Scope
 
 ## Resources
+---
 - [Twitter](https://twitter.com/_nan_gogh/status/1676384792818995200)

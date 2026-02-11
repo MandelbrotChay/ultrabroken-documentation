@@ -6,11 +6,13 @@ title: "Invizuggle"
 `1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
+---
 Dropping equipment in a specific way during a cull causes an indestructable and invisible zuggle.
 
 _ock, Yee - 3 January 2024_
 
 ## Instructions
+---
 There are multiple methods:
 
 Method 1 and 2 don't work on versions 1.0.0-1.1.2
@@ -57,9 +59,11 @@ Method 4 (Discord) (Mulberry):
 9. warp away
 
 ## Notes
+---
 Todo:
 Add Method 5
 
 ## Resources
+---
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1192403098753310770)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1195821216326488264)

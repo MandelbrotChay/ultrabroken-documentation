@@ -6,11 +6,13 @@ title: "Aeroculling"
 `1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
+---
 Putting a perma-culled fan equipment's wind in a culling area prevents objects in it from getting culled, except if Link stands on most objects (including Zonai devices).
 
 _Discovered by Aergyl, developed by Aergyl, mulberry - 11 August 2024_
 
 ## Instructions
+---
 Method 1 (1.0-1.1.2) (Aergyl, mulberry):
 
 1. Do the regular FE setup, but drop swap your shield instead of simply swapping
@@ -31,10 +33,12 @@ Method 2 (1.2.0-1.2.1) (PetitFrapo, mulberry):
 5. Detangle from Mineru, and warp
 
 ## Notes
+---
 Method 1 technically works in 1.2.x, but Method 2 is preferred.
 
 Once AC is set up, in order to Physical AC, put a SDC in the wind and the base outside of the culling area, and for Intangible AC do the opposite, so base in wind and SDC outside of culling area. The video in Examples shows them being performed.
 
 ## Resources
+---
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1283455775976718346)
 - [YouTube](https://www.youtube.com/watch?v=o-9HO3NbfPU)

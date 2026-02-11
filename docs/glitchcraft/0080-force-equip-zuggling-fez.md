@@ -6,11 +6,13 @@ title: "Force Equip Zuggling"
 `1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Overview
+---
 Allows Link to zuggle weapons using any interaction that forcefully equips a weapon. Best achieved by shrines or quests.
 
 _BigDUCCO, Mozz, Rhkellz, Syb, NaN Gogh - 7 June 2023_
 
 ## Instructions
+---
 This is best achieved at, althought isn't specific too, Mayachideg Shrine.
 
 1. Before entering the shrine, make sure you have a WEAPON EQUIPPED, and a FULL WEAPON INVENTORY and then enter the shrine.
@@ -23,8 +25,10 @@ This is best achieved at, althought isn't specific too, Mayachideg Shrine.
 8. Load any save.
 
 ## Notes
+---
 Can be repeated multiple times to zuggle multiple weapons.
 
 ## Resources
+---
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1116094902795780096)
 - [Zuggling](search:Zuggling)

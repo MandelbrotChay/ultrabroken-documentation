@@ -6,11 +6,13 @@ title: "GAS Launching"
 `1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
+---
 Causes the object to fling Link great distances with relative ease.
 
 _NX721, pyuk, Flash, Mozz, Blize - 25 June 2023_
 
 ## Instructions
+---
 1. Spawn in a fan and fuse it to your shield.
 2. Perform GAS using any method available.
 3. Either spawn in a small Zonai device or use any relatively small object that Link can stand on top of.
@@ -18,6 +20,7 @@ _NX721, pyuk, Flash, Mozz, Blize - 25 June 2023_
 5. Exit recall.
 
 ## Notes
+---
 Previously known as Ascend Launching.
 
 If done correctly, Link will be sent flying off in the opposite direction of wherever the fan was pushing the object to.
@@ -30,6 +33,7 @@ Can also be done with cooking pots and rocks too, but they don't give a lot of v
 Uses Recall, but anything that freezes time works too.
 
 ## Resources
+---
 - [Youtube](https://www.youtube.com/watch?v=y_N5LEYQGfc)
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1123282233248194660)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1122982965459288084)

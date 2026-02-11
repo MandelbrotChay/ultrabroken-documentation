@@ -6,10 +6,12 @@ title: "Cull Cold Fuse"
 _mulberry - 1 February 2024_
 
 ## Overview
+---
 —
 `?`
 
 ## Instructions
+---
 1. place object in tarrey town culling area
 2. move outside culling area while having the object in ultrahand focus
 3. select fuse and pause
@@ -23,8 +25,10 @@ if done correctly, the object will teleport to Link
 steps 8-9 are not required on 1.0.0
 
 ## Notes
+---
 —
 
 ## Resources
+---
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1202784179574677554)
 - [Fuse Storage](search:Fuse Storage)

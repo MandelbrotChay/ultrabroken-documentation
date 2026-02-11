@@ -6,11 +6,13 @@ title: "Void Dipping"
 `1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1` `1.3.0` `1.4.0` `1.4.1` `1.4.2` `Switch 2`
 
 ## Overview
+---
 An extremely powerful equipment state caused by interrupting and retrieving an equipment item that has been destroyed by the void.
 
 _Squidwest, mulberry, Aergyl - 29 December 2025_
 
 ## Instructions
+---
 Perform one of the following dipping methods:
 - Pick up the target item the frame it is destroyed by the void
 - Ultrahand the overload-dropped target item into the void, recall it, and watch a memory
@@ -22,6 +24,7 @@ Then retrieve the item with one of the following methods:
 - Pick up the target item from the void
 
 ## Notes
+---
 Void dipped equipment have the following properties:
 - Uninteractable by runes
 - Cannot lose durability
@@ -33,6 +36,7 @@ Void dipped equipment have the following properties:
 - Culling-related dipping methods are also possible with phase culling
 
 ## Resources
+---
 - [Discord](https://discord.com/channels/1111875355758837830/1128775917376897145/1455340505096261796)
 - [DiscordDiscordDiscord](https://discord.com/channels/1086729144307564648/1113557914444111873/1456747616430850126)
 - [Portable Culling](search:Portable Culling)

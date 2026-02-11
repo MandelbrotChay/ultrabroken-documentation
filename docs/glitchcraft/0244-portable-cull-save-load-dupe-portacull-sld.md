@@ -6,11 +6,13 @@ title: "Portable Cull Save Load Dupe"
 `1.2.0` `1.2.1`
 
 ## Overview
+---
 Allows for Save Load Duplication on v1.2.0-1.2.1 by culling Link on the same frame that the process is performed
 
 _NghtmaR3 - 17 July 2024_
 
 ## Instructions
+---
 1. Setup Portable Culling
 2. Save your game
 3. Pause, drop the target item, and swap to a different item of the same type (target item cannot be the same type as your portacull item)
@@ -20,9 +22,11 @@ _NghtmaR3 - 17 July 2024_
 7. Pickup the item dropped on the ground
 
 ## Notes
+---
 —
 
 ## Resources
+---
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1263286685198712883)
 - [Save Load Dupe](search:Save Load Dupe)
 - [Portable Culling](search:Portable Culling)

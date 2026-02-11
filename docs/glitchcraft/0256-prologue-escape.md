@@ -6,11 +6,13 @@ title: "Prologue Escape"
 `1.0.0`
 
 ## Overview
+---
 Using Banc Storage, it's possible to get Link out of the prologue, allowing for a lot of side effects.
 
 _LegendOfLinkk, mulberry, Aergyl, Lightos, The entire glitch hunting community! - October 1st, 2024_
 
 ## Instructions
+---
 Perform Banc Storage. The banc change you use matters. You will need to use either a warp to the Nachoyah (Recall) shrine, or a shrine entry/exit of that same shrine.
 
 You want to create a new game while in the infinite loading screen, so go to the main menu, and create a new game.
@@ -18,6 +20,7 @@ Link from the new game should get warped, with a weird cutscene after that happe
 You now have access to Prologue Link!
 
 ## Notes
+---
 The main effects are:
 
 - 30 hearts in rows of 15, cannot be changed
@@ -36,6 +39,7 @@ This glitch also allows for a setup to have infinite durability on any weapon, h
 Check the Resources section for more specific effects, such as Awakened Master Sword
 
 ## Resources
+---
 - [Discord](https://discord.com/channels/1086729144307564648/1110956205624532993/1290703223467937898)
 - [YouTube](https://www.youtube.com/watch?v=RmjZKVGvstE)
 — [Banc Storage](./0255-banc-storage.md)

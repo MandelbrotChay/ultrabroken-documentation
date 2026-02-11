@@ -6,11 +6,13 @@ title: "Camera CFW"
 `1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
+---
 Glitches out the camera rune and can remove the waymarkers and the camera UI
 
 _NaN Gogh - 11 July 2023_
 
 ## Instructions
+---
 1. Open camera rune
 2. Take a photograph
 3. Delete the snapshot
@@ -32,7 +34,9 @@ same as mode 1
 no camera ui
 
 ## Notes
+---
 —
 
 ## Resources
+---
 - [Twitter](https://vxtwitter.com/_nan_gogh/status/1678749376833781763?s=46)

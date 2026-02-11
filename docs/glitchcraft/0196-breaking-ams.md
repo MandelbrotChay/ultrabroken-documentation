@@ -6,11 +6,13 @@ title: "Breaking AMS"
 `1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
+---
 By using certain setups, it is possible to ignore the no durability use.
 
 _Infrasolid - 26 November 2023_
 
 ## Instructions
+---
 Method 1:
 1. Activate arrow smuggle
 2. activate sidons ability
@@ -25,8 +27,10 @@ Method 2:
 4. press Y
 
 ## Notes
+---
 —
 
 ## Resources
+---
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1178449991786827928)
 - [Awakened Master Sword](search:Awakened Master Sword)

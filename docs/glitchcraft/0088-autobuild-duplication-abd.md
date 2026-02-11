@@ -6,11 +6,13 @@ title: "Autobuild Duplication"
 `1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Overview
+---
 Allows you to dupe materials that change into other materials in other temperature. (For example raw meat.)
 
 _{Unknown} - 11 June 2023_
 
 ## Instructions
+---
 This only works with items that change into other items in another temperature.
 
 1. Fuse the material to a weapon or shield. (twice or more)
@@ -21,7 +23,9 @@ This only works with items that change into other items in another temperature.
 6. Wait a few seconds and pick up your duped items.
 
 ## Notes
+---
 —
 
 ## Resources
+---
 - [YouTube](https://youtu.be/IfRlldenZNc)

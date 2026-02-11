@@ -6,11 +6,13 @@ title: "Weapon State Transfer"
 `1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
+---
 allows you to transfer the durability, fused material, and modifier of a weapon
 
 _BigDUCCO, kurocat471, ElDuende, Mentor_Kurt - 19 May 2023_
 
 ## Instructions
+---
 Required:
 
 - 2 long sticks (can be found on an enemy southeast of Fuse shrine)
@@ -41,6 +43,7 @@ Setup:
 If done correctly, the target item should have everything the donor item has.
 
 ## Notes
+---
 The weapons, shields and bows aren't the only ones that work, it all depends on their hitboxes
 You might find equal success using other thin bows, thin spears with other targets
 Similarily, the shield fuse is not always necessary, as some shields are naturally bigger than others
@@ -51,6 +54,7 @@ In 1.0.0, performing WST this way can allow you to delete the modifier completel
 Depending on the bow you use (ex. Phrenic Bow), you'll still be able to perform WST, but the Old Wooden Bow has very good consistency.
 
 ## Resources
+---
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1109319667673223189)
 - [Youtube](https://www.youtube.com/watch?v=NRZpPp1vVsQ.)
 - [YouTube](https://youtu.be/Kzf_uJBvRjI)

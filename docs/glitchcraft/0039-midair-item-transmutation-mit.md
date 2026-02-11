@@ -6,6 +6,7 @@ title: "Midair Item Transmutation"
 `1.1.0` `1.1.1`
 
 ## Overview
+---
 Allows you to transmutate any material very fast. Technical explanation: let's say you have
 Slot A: [1x Apple]
 Slot B: [8x Banana]
@@ -15,6 +16,7 @@ then you do the glitch to get more bananas, what's happening is the game is taki
 _eXe - 20 May 2023_
 
 ## Instructions
+---
 This glitch has been made redundant by MSD, see that for a better method
 With this glitch you "lose" items! First you need to organize your inventory. You need 1 item in a slot BEFORE (not directly before) the slot of the item you want to transmutate. The items you are transmutating from will be directly after the items you are transmuting to.
 
@@ -26,9 +28,11 @@ With this glitch you "lose" items! First you need to organize your inventory. Yo
 6. Pick up your items
 
 ## Notes
+---
 You can chain this many times during 1 shield jump by repeating steps 2-5. It does not take any items if the items are in the last slot.
 
 ## Resources
+---
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1109456967480647710)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1109460329966092319)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1109456967480647710)

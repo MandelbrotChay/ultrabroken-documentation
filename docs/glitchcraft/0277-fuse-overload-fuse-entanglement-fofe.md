@@ -6,11 +6,13 @@ title: "Fuse Overload Fuse Entanglement"
 `1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1+`
 
 ## Overview
+---
 Using Fuse Overload it's possible to portably and quickly Fuse Entangle
 
 _mulberry - 26 May 2025_
 
 ## Instructions
+---
 Fuse Overload:
 
 1. Overload drop A and fuse A to B of opposite type.
@@ -31,9 +33,11 @@ It's crucial that you get that cancel on that frame otherwise you will get Refer
 You know you get regular FE if Recall is auto-cancelled when you Recall the FE child and ascend/use a cooking pot.
 
 ## Notes
+---
 —
 
 ## Resources
+---
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1376489712146976839)
 - [Overload Cold Fuse](search:Overload Cold Fuse)
 - [Fuse Overload](search:Fuse Overload)

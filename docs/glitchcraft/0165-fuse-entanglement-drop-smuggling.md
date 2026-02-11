@@ -6,11 +6,13 @@ title: "Fuse Entanglement Drop Smuggling"
 `1.2.0`
 
 ## Overview
+---
 Allows for Drop Smuggling of Fuse Entangled Equipment. Can be used for GAS and Double-FE on 1.2.0
 
 _Blize, Blackmars - 15 August 2023_
 
 ## Instructions
+---
 1. Go to a Like Like.
 2. Fuse Entangle either a weapon to a shield, or a shield to a weapon via Fuse Storage
 3. While having the FE base equipped, pick up the FE'd equipment on the last possible frame the like eats it. (The weapon should stay invisible the whole time, bigger weapons might show a displaced model on Link's back)
@@ -20,8 +22,10 @@ _Blize, Blackmars - 15 August 2023_
 If the weapon falls behind Link during Step 4, retrieve the weapon from the Like by interrupting it's chewing animation and repeat from step 4.
 
 ## Notes
+---
 Retrieving collision results in a purgatory equipment in the overworld, picking this equipment up will result in a crash of the game
 
 ## Resources
+---
 - [Link](https://discordapp.com/channels/1086729144307564648/1113557914444111873/1140772467707760750)
 - [Fuse Entanglement](search:Fuse Entanglement)

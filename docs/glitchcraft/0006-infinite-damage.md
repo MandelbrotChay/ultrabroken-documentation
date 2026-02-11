@@ -6,17 +6,21 @@ title: "Infinite Damage"
 `1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Overview
+---
 Damage repeats infinitely during spin attack.
 
 _[GamSla341](https://www.youtube.com/@gamsla3413) - 13 May 2023_
 
 ## Instructions
+---
 Mid-charge of a spin with a two-handed weapon, obtain a new item at the exact moment it hits an enemy.
 
 ## Notes
+---
 Todo: Replicate in TotK, test in BotW.
 
 ## Resources
+---
 - [Youtube](https://youtu.be/Q1aWa0Kg-8Y)
 - [Youtube](https://youtu.be/Q1aWa0Kg-8Y)
 - [Reddit](https://www.reddit.com/r/TOTK/comments/13tho3e)

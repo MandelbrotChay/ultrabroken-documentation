@@ -6,11 +6,13 @@ title: "Object (Moe) Enlargement"
 `1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
+---
 Using a moblin, it's possible to enlarge objects
 
 _Discovered by Toti Sauce, developed by PetitFrapo, Jordan - October 30th, 2024_
 
 ## Instructions
+---
 1. Get an equipped ghost, there are 2 methods:
 - Method 1 (All Versions):
    - Overload drop/pickup a weapon/shield
@@ -36,7 +38,9 @@ In order to make it rangeless, you need to PSLOT the target.
 ! For liftable objects, while doing the culled purgatory, lift it, it will uncull with Link, you can now fuse or cold fuse to another piece of equipment. For other objects, you will need a second parent for the FE at first, it needs to be a shield, use it to uncull after culled purgatory. You then need to detangle it by zuggling it and using a rocket shield.
 
 ## Notes
+---
 —
 
 ## Resources
+---
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1301144333499760670)

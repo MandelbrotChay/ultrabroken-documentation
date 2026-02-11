@@ -6,11 +6,13 @@ title: "Drop Zuggle"
 `1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
+---
 Allows for a drop smuggled item to have the same transfer properties as zuggle
 
 _BigDUCCO - 15 June 2023_
 
 ## Instructions
+---
 1. Drop smuggle your target weapon
 2. Let the Like Like eat you
 3. Drop the equipped item, then equip another item of the same category
@@ -29,8 +31,10 @@ For weapons:
 3. Kill the Like Like
 
 ## Notes
+---
 —
 
 ## Resources
+---
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1118960982505574460)
 - [Zuggle](search:Zuggle)

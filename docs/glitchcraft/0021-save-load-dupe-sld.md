@@ -6,11 +6,13 @@ title: "Save Load Dupe"
 `1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
+---
 Allows easy duplication of your weapons, bows, and shields
 
 _ZombieBoy225, ness, ElDuende - 16 May 2023_
 
 ## Instructions
+---
 0. Have a save prepared nearby (makes it convenient for later).
 1. Equip the weapon/bow/shield you want to duplicate and make sure it appears on Link's back.
 2. Open the menu and drop your current equipment and equip another.
@@ -18,6 +20,7 @@ _ZombieBoy225, ness, ElDuende - 16 May 2023_
 4. Load your save and pick up the item that's on the ground.
 
 ## Notes
+---
 This effectively transfers the equipment to the dropped location, in the save that's loaded
 
 It's also possible to duplicate your item without needing a 2nd one by pausing on the first frame the item drops from Link (either by map buffering the drop and watching a memory, or the first frame Link gets shocked and drops it) and loading the save (tested for 1.0.0 - 1.1.1).
@@ -28,4 +31,5 @@ Update to include the easier, old, drop swap drop method.
 Requires Portable culling to be performed on 1.2.0/1.2.1
 
 ## Resources
+---
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1108041163170128022)

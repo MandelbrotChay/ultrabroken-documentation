@@ -6,11 +6,13 @@ title: "Drop Restriction"
 `1.0.0` `1.1.0` `1.1.1`
 
 ## Overview
+---
 Prevents zonai devices from spawning out of the inventory.
 
 _SCFD-GK2, Nicnac - 19 June 2023_
 
 ## Instructions
+---
 1. Hold L
 2. Select the map ability
 3. Let go of L and open the material"quick"menu before the game advances a frame
@@ -19,8 +21,10 @@ _SCFD-GK2, Nicnac - 19 June 2023_
 6. load a file
 
 ## Notes
+---
 Only way to cancel it is by closing the game.
 
 ## Resources
+---
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1120378339442556990)
 - [YouTube](https://youtu.be/V6ZeZmfpvEI)

@@ -6,11 +6,13 @@ title: "Recipe Storage"
 `1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
+---
 Delaying the recipe menu by a few frames allow for some holding shenanigans
 
 _ock, mulberry - September 14th, 2024; November 10th, 2024_
 
 ## Instructions
+---
 Method 1 (1.0.0) (mulberry):
 1. Select a meal
 2. Hold up, press B then A a frame later, then X in the next 2 frames
@@ -35,9 +37,11 @@ Recipe Hold Storage:
 3. Holding anything will pull out the hold stored objects (the recipe ingredients)
 
 ## Notes
+---
 —
 
 ## Resources
+---
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1284563089873965121)
 - [Discord](https://discord.com/channels/1086729144307564648/1110956205624532993/1305180152325738589)
 - [Discord](https://discord.com/channels/1086729144307564648/1110956205624532993/1305204895602704534)

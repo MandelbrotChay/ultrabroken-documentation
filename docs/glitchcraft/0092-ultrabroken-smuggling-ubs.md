@@ -6,11 +6,13 @@ title: "Ultrabroken Smuggling"
 `1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Overview
+---
 Makes an FE'd object follow the shield.
 
 _The_Andromeda - 13 June 2023_
 
 ## Instructions
+---
 1. FE an object to a shield
 2. Drop your FE shield and Ultrahand it to the object 
 3. Perform Ultrabroken with that object
@@ -23,9 +25,11 @@ _The_Andromeda - 13 June 2023_
 10. Pick up the shield again
 
 ## Notes
+---
 —
 
 ## Resources
+---
 - [Twitter](https://twitter.com/goghnan/status/1668671033874821139?s=46)
 - [Twitter](https://twitter.com/goghnan/status/1668693248913580049?s=46)
 - [Twitter](https://twitter.com/goghnan/status/1668671033874821139?s=46)

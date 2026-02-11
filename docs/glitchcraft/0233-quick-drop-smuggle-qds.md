@@ -6,11 +6,13 @@ title: "Quick Drop Smuggle"
 `1.0.0`
 
 ## Overview
+---
 Dropping and equipping weapons in a specific way causes drop smuggle.
 
 _mulberry, Zas, Aeolian, Winnerboi, Ryan? - 16 March 2024_
 
 ## Instructions
+---
 1. Face links back against a wall
 2. pause
 3. drop equipped item
@@ -28,9 +30,11 @@ _mulberry, Zas, Aeolian, Winnerboi, Ryan? - 16 March 2024_
 15. pickup dropped equipment to turn it into a full zuggle, swap equipment and faildrop
 
 ## Notes
+---
 Can cause dynamic zuggle.
 
 ## Resources
+---
 - [Crash weapon from menu on 1.0](https://discord.com/channels/1086729144307564648/1105598687167664239/1218608839121698838)
 - [Step by step guide](https://discord.com/channels/1086729144307564648/1105598687167664239/1221209979877330955)
 - [Video guide](https://discord.com/channels/1086729144307564648/1105598687167664239/1221226146885271652)

@@ -6,11 +6,13 @@ title: "Mineru Fuse Entanglement"
 `1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
+---
 Fusing to Mineru and then pausing the game or culling Link while riding Mineru on a specific frame causes objects to FE to Mineru
 
 _ock (Method 1 & 3), WinnerBoi77 (Method 2) - 18 October 2023_
 
 ## Instructions
+---
 Method 1:
 1. Perform like like stick culling in an area where Mineru can be summoned
 2. Quickly mount Mineru and take out the target item
@@ -32,6 +34,7 @@ Note: This method ONLY works with bows, shields, and weapons
 4. Close the menu/unpause
 
 ## Notes
+---
 - Dismissing Mineru removes any objects FE'd to her from the world, allowing for equipment desync and, consequently, WST for equipment
 
 - Certain actions like paragliding, climbing, entering a town/stable, and walking around with fuse or ultrahand active can cull Mineru, consequently culling anything FE'd to her. This can be used for all sorts of things, including zuggling equipment and cold fusing almost anywhere.
@@ -40,6 +43,7 @@ Note: This method ONLY works with bows, shields, and weapons
 For method 1, any method of culling Link can work in place of like like stick culling
 
 ## Resources
+---
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1164195341491515432)
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1216477146978193530)
 - [Discord](https://discord.com/channels/1086729144307564648/1109838351596527726/1235768638796071013)

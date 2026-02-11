@@ -6,11 +6,13 @@ title: "Equipment Collision Zuggle"
 `1.0.0` `1.1.0` `1.1.1`
 
 ## Overview
+---
 The original zuggle method discovered by Zvleon.
 
 _Zvleon - 16 May 2023_
 
 ## Instructions
+---
 1) Stand infront of a wall. (about 1 link away from it) (facing away from it)
 2) Equip a weapon, ideally two-handed. Seems to be more consistent and press y to hold your weapon.
 3) Drop 6 weapond or shields (including the equiped one)
@@ -21,9 +23,11 @@ _Zvleon - 16 May 2023_
 8) Unpause and switch weapons
 
 ## Notes
+---
 Zuggle has many ways of being executed, this is the oldest one. Map Zuggling is the most reccomended method for pre-1.1.2
 For 1.1.2, see FEZ and smuggle stacking zuggling (and FEWZ)
 
 ## Resources
+---
 —
 - [Zuggle](search:Zuggle)

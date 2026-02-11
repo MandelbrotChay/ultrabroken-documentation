@@ -6,11 +6,13 @@ title: "Like-Like Zuggling"
 `1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
+---
 Allows for zuggling via slugging
 
 _NaN Gogh, Ryan?, Blackmars - 15 June 2023_
 
 ## Instructions
+---
 Method 1 (works 1.0.0-1.1.2):
 
 1. Sluggle and drop the equipped sluggled item, then equip another item of the same type
@@ -29,6 +31,7 @@ Method 2 (works 1.2.0-1.2.1)
 8. Retrieve the item from the like like
 
 ## Notes
+---
 Both methods can be used to zuggle multiple items at once. Simply repeat the steps for each subsequent zuggle except for the last step, which should be skipped until you have zuggled the desired amount of items (limit of 6 items per like like)
 For zuggling bows/shields on 1.1.2:
 
@@ -45,6 +48,7 @@ For zuggling weapons on 1.1.2:
 3. Open the chest and drop your equipped weapon with Link's back against a wall
 
 ## Resources
+---
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1118709904614629427)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1126132309687537705)
 - [Slugging](search:Slugging)
