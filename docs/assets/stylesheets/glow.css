@@ -674,4 +674,14 @@ html, body, .md-content, .md-nav, .md-sidebar {
   transform: translateY(0) scale(1);
 }
 
+/* Show pointing cursor when hovering tasklist items so they feel clickable */
+li.task-list-item, li.task-list {
+  cursor: pointer;
+}
+
+/* Ensure links inside tasklist keep pointer cursor (explicit) */
+li.task-list-item a, li.task-list a {
+  cursor: pointer;
+}
+
 
