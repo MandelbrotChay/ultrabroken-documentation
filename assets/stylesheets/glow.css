@@ -703,26 +703,28 @@ li.task-list-item a, li.task-list a {
 .ub-toast {
   /* Lower-right, light panel matching the searchbar toast appearance */
   position: fixed;
-  right: 1rem;
-  bottom: 1.25rem;
+  right: 1.25rem;
+  bottom: 1.5rem;
   left: auto;
   top: auto;
   z-index: 9999;
-  background: #e6e9ea; /* light grey panel */
-  color: rgba(10,10,10,0.95);
-  padding: 0.6rem 1rem;
-  border-radius: 6px;
-  font-size: 1rem;
+  background: #e9ecec; /* slightly desaturated light grey */
+  color: rgba(15,15,15,0.95);
+  padding: 0.65rem 1.25rem;
+  border-radius: 8px;
+  font-size: 1.05rem; /* slightly larger to match screenshot */
   line-height: 1.15;
   min-width: 220px;
-  text-align: left;
+  text-align: center; /* matches centered message */
   opacity: 0;
-  transform: translateY(6px);
-  transition: opacity .18s ease, transform .18s ease;
+  transform: translateY(8px);
+  transition: opacity .2s cubic-bezier(.2,.9,.2,1), transform .2s cubic-bezier(.2,.9,.2,1);
   pointer-events: none;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.32);
-  border: 1px solid rgba(0,0,0,0.06);
-  font-family: inherit;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.32);
+  border: 1px solid rgba(0,0,0,0.08);
+  font-family: 'New Rocker', 'Texturina', Georgia, serif; /* match heading styling */
+  font-weight: 600;
+  letter-spacing: 0.2px;
 }
 .ub-toast--visible {
   opacity: 1;
