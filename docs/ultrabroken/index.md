@@ -2,12 +2,10 @@
 
 ## Introduction
 ---
-
 Enter **Ultrabroken**, the most broken glitch in The Legend of Zelda: Tears of the Kingdom. This is a revered gem among all glitches—a true holy grail and a developer oversight!
 
 ## Quick Navigation
 ---
-
 - **[Ultrabroken Basics](basics/)** - Learn what Ultrabroken is and how to trigger it
 - **[Effects](effects/)** - Explore all known Ultrabroken effects
 - **[Zonai Device Hacks](devices/)** - Individual device breakdowns

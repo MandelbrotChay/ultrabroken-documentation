@@ -3,8 +3,7 @@ title: "Glitchcraft"
 ---
 
 # Glitchcraft
-_?_
-This page lists generated glitch stubs created from the community CSV.
+This page lists generated glitch stubs created from the community spreadsheet.
 
 ## Entries
 

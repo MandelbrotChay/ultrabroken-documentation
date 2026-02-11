@@ -1,13 +1,13 @@
-# Fuse Entanglement
+# Overload
 _Basic stub_
 
 ## Introduction
 ---
-Fuse Entanglement refers to situations where two or more objects become bound so that actions on one affect the other. These behaviors are often central to advanced glitch setups and can enable or disable specific effects depending on the entangled pair producing persistent or shared behavior between entities.
+Overload covers techniques that intentionally push UI, item, effect, or rendering subsystems beyond their normal limits — for example by stacking items, repeatedly zuggling, triggering menu/MNF overloads, or flooding effects (shock emitters, fences). Overload outcomes include visual/texture glitches, persistent glow or animation amplification, menu corruption, overloaded memory (lag/crashes), and interactions that enable other glitches (OOB, desync, duplication). These methods are powerful for exploration and glitch chaining.
 
 ## Quick Navigation
 ---
-- **[Fuse Entanglement](search: Fuse Entanglement)** Basic setups for Fuse Entanglement
+- **[Overload](search: Overload)** Basic setups for Overload
 
 ## What to expect in each writeup
 ---

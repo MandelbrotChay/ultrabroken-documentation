@@ -1,13 +1,13 @@
-# Fuse Entanglement
+# Message Not Found
 _Basic stub_
 
 ## Introduction
 ---
-Fuse Entanglement refers to situations where two or more objects become bound so that actions on one affect the other. These behaviors are often central to advanced glitch setups and can enable or disable specific effects depending on the entangled pair producing persistent or shared behavior between entities.
+Message Not Found (MNF) is a placeholder/ghost object state exploited in several glitches where an item or UI message is missing or replaced by a stub. MNF is commonly used in zuggling and fusing setups to produce stacked effects, glow/overload behavior, menu overloads, and other anomalous world states. MNF interactions often combine with desync, fuse entanglement, and OOB techniques to enable duplication, visual glitches, and movement anomalies.
 
 ## Quick Navigation
 ---
-- **[Fuse Entanglement](search: Fuse Entanglement)** Basic setups for Fuse Entanglement
+- **[Message Not Found](search: MNF)** Basic setups for Message Not Found
 
 ## What to expect in each writeup
 ---

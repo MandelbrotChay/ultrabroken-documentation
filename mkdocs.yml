@@ -79,63 +79,63 @@ nav:
      - Credits: ultrabroken/credits.md
   - Entanglement:
     - Introduction: entanglement/index.md
-    - Fuse Entanglement: glitchcraft/0051-fuse-entanglement.md
-    - Fuse Storage Fuse Entanglement: glitchcraft/0114-fuse-storage-fuse-entanglement-fsfe.md
-    - Cull Fuse Entanglement: glitchcraft/0180-cull-fuse-entanglement-cull-fe.md
-    - Mineru Fuse Entanglement: glitchcraft/0187-mineru-fuse-entanglement-mineru-fe.md
-    - Resync Fuse Entanglement: glitchcraft/0202-resync-fuse-entanglement-resync-fe.md
-    - Double Shield Desync Clip Fuse Entanglement: glitchcraft/0240-double-shield-desync-clip-fuse-entanglement-double-sdc-fe.md
-    - Construct Fuse Entanglement: glitchcraft/0242-construct-fuse-entanglement.md
-    - Overload Fuse Entanglement: glitchcraft/0247-overload-fuse-entanglement.md
-    - Replacement Actor Fuse Entanglement: glitchcraft/0259-replacement-actor-fuse-entanglement.md
-    - Fuse Overload Fuse Entanglement: glitchcraft/0277-fuse-overload-fuse-entanglement-fofe.md
-    - Detanglement: glitchcraft/0172-detanglement.md
-    - Collection: entanglement/entanglement-collection.md
+    # - Fuse Entanglement: glitchcraft/0051-fuse-entanglement.md
+    # - Fuse Storage Fuse Entanglement: glitchcraft/0114-fuse-storage-fuse-entanglement-fsfe.md
+    # - Cull Fuse Entanglement: glitchcraft/0180-cull-fuse-entanglement-cull-fe.md
+    # - Mineru Fuse Entanglement: glitchcraft/0187-mineru-fuse-entanglement-mineru-fe.md
+    # - Resync Fuse Entanglement: glitchcraft/0202-resync-fuse-entanglement-resync-fe.md
+    # - Double Shield Desync Clip Fuse Entanglement: glitchcraft/0240-double-shield-desync-clip-fuse-entanglement-double-sdc-fe.md
+    # - Construct Fuse Entanglement: glitchcraft/0242-construct-fuse-entanglement.md
+    # - Overload Fuse Entanglement: glitchcraft/0247-overload-fuse-entanglement.md
+    # - Replacement Actor Fuse Entanglement: glitchcraft/0259-replacement-actor-fuse-entanglement.md
+    # - Fuse Overload Fuse Entanglement: glitchcraft/0277-fuse-overload-fuse-entanglement-fofe.md
+    # - Detanglement: glitchcraft/0172-detanglement.md
+    # - Collection: entanglement/entanglement-collection.md
   - Zuggling:
     - Introduction: zuggling/index.md
-    - Zuggle: glitchcraft/0023-zuggle.md
-    - Equipment Collision Zuggle: glitchcraft/0024-equipment-collision-zuggle.md
-    - Map Zuggling: glitchcraft/0049-map-zuggling-mz.md
-    - Save Load Zuggling: glitchcraft/0050-save-load-zuggling-slz.md
-    - Pickup Smuggling: glitchcraft/0061-pickup-smuggling.md
-    - Drop Smuggling: glitchcraft/0070-drop-smuggling.md
-    - Equipment Smuggle: glitchcraft/0073-equipment-smuggle.md
-    - Shock Smuggle: glitchcraft/0074-shock-smuggle.md
-    - Arrow Smuggling: glitchcraft/0076-arrow-smuggling.md
-    - Smuggle Stacking Zuggle: glitchcraft/0078-smuggle-stacking-zuggle-ssz.md
-    - Drop Delay Zuggle: glitchcraft/0079-drop-delay-zuggle-ddz.md
-    - Force Equip Zuggling: glitchcraft/0080-force-equip-zuggling-fez.md
-    - Zuggle Load Object Transfering: glitchcraft/0082-zuggle-load-object-transfering-zlot.md
-    - Overload Drop Smuggling: glitchcraft/0090-overload-drop-smuggling.md
-    - Like-Like Smuggling: glitchcraft/0095-like-like-smuggling.md
-    - Like-Like Drop Smuggling: glitchcraft/0096-like-like-drop-smuggling.md
-    - Like-Like Zuggling: glitchcraft/0097-like-like-zuggling.md
-    - Drop Zuggle: glitchcraft/0099-drop-zuggle.md
-    - Cull Smuggle: glitchcraft/0131-cull-smuggle.md
-    - Hold Smuggling: glitchcraft/0143-hold-smuggling.md
-    - Quick Smuggling: glitchcraft/0145-quick-smuggling.md
-    - Hand Locked Equipment Smuggling: glitchcraft/0151-hand-locked-equipment-smuggling-hles.md
-    - Dynamic Zuggle: glitchcraft/0171-dynamic-zuggle.md
-    - LikeLike Stick Smuggling: glitchcraft/0185-likelike-stick-smuggling.md
-    - Master Sword Zuggling: glitchcraft/0191-master-sword-zuggling-decayed-master-sword-zuggling.md
-    - Mineru Hold Smuggle: glitchcraft/0203-mineru-hold-smuggle-mhs.md
-    - Wuggle: glitchcraft/0206-wuggle-weird-zuggle.md
-    - Invizuggle: glitchcraft/0208-invizuggle.md
-    - Lift Smuggle: glitchcraft/0221-lift-smuggle.md
-    - Kilovictor's Quicksmuggle: glitchcraft/0225-kilovictor-s-quicksmuggle.md
-    - Portacull Invismuggle: glitchcraft/0228-portacull-invismuggle.md
-    - Weapon Stand Dynamic Zuggle: glitchcraft/0231-weapon-stand-dynamic-zuggle.md
-    - Quick Drop Smuggle: glitchcraft/0233-quick-drop-smuggle-qds.md
-    - Chasm Delay Zuggle: glitchcraft/0238-chasm-delay-zuggle-cdz.md
-    - Dpadlock-less Invizuggle: glitchcraft/0245-dpadlock-less-invizuggle.md
-    - Cull Storage Zuggle: glitchcraft/0246-cull-storage-zuggle-csz.md
-    - Smuggle Retrieval: glitchcraft/0262-smuggle-retrieval.md
-    - Dynamic Purgatory Zuggle: glitchcraft/0268-dynamic-purgatory-zuggle.md
-    - Cull Pickup Dynamic Zuggle: glitchcraft/0273-cull-pickup-dynamic-zuggle.md
-    - Overload Dynamic Zuggle: glitchcraft/0274-overload-dynamic-zuggle.md
-    - Double Bypass Zuggle: glitchcraft/0278-double-bypass-zuggle-dbz.md
-    - Zuggle Overload Desync: glitchcraft/0294-zuggle-overload-desync.md
-    - Collection: zuggling/zuggle-collection.md
+    # - Zuggle: glitchcraft/0023-zuggle.md
+    # - Equipment Collision Zuggle: glitchcraft/0024-equipment-collision-zuggle.md
+    # - Map Zuggling: glitchcraft/0049-map-zuggling-mz.md
+    # - Save Load Zuggling: glitchcraft/0050-save-load-zuggling-slz.md
+    # - Pickup Smuggling: glitchcraft/0061-pickup-smuggling.md
+    # - Drop Smuggling: glitchcraft/0070-drop-smuggling.md
+    # - Equipment Smuggle: glitchcraft/0073-equipment-smuggle.md
+    # - Shock Smuggle: glitchcraft/0074-shock-smuggle.md
+    # - Arrow Smuggling: glitchcraft/0076-arrow-smuggling.md
+    # - Smuggle Stacking Zuggle: glitchcraft/0078-smuggle-stacking-zuggle-ssz.md
+    # - Drop Delay Zuggle: glitchcraft/0079-drop-delay-zuggle-ddz.md
+    # - Force Equip Zuggling: glitchcraft/0080-force-equip-zuggling-fez.md
+    # - Zuggle Load Object Transfering: glitchcraft/0082-zuggle-load-object-transfering-zlot.md
+    # - Overload Drop Smuggling: glitchcraft/0090-overload-drop-smuggling.md
+    # - Like-Like Smuggling: glitchcraft/0095-like-like-smuggling.md
+    # - Like-Like Drop Smuggling: glitchcraft/0096-like-like-drop-smuggling.md
+    # - Like-Like Zuggling: glitchcraft/0097-like-like-zuggling.md
+    # - Drop Zuggle: glitchcraft/0099-drop-zuggle.md
+    # - Cull Smuggle: glitchcraft/0131-cull-smuggle.md
+    # - Hold Smuggling: glitchcraft/0143-hold-smuggling.md
+    # - Quick Smuggling: glitchcraft/0145-quick-smuggling.md
+    # - Hand Locked Equipment Smuggling: glitchcraft/0151-hand-locked-equipment-smuggling-hles.md
+    # - Dynamic Zuggle: glitchcraft/0171-dynamic-zuggle.md
+    # - LikeLike Stick Smuggling: glitchcraft/0185-likelike-stick-smuggling.md
+    # - Master Sword Zuggling: glitchcraft/0191-master-sword-zuggling-decayed-master-sword-zuggling.md
+    # - Mineru Hold Smuggle: glitchcraft/0203-mineru-hold-smuggle-mhs.md
+    # - Wuggle: glitchcraft/0206-wuggle-weird-zuggle.md
+    # - Invizuggle: glitchcraft/0208-invizuggle.md
+    # - Lift Smuggle: glitchcraft/0221-lift-smuggle.md
+    # - Kilovictor's Quicksmuggle: glitchcraft/0225-kilovictor-s-quicksmuggle.md
+    # - Portacull Invismuggle: glitchcraft/0228-portacull-invismuggle.md
+    # - Weapon Stand Dynamic Zuggle: glitchcraft/0231-weapon-stand-dynamic-zuggle.md
+    # - Quick Drop Smuggle: glitchcraft/0233-quick-drop-smuggle-qds.md
+    # - Chasm Delay Zuggle: glitchcraft/0238-chasm-delay-zuggle-cdz.md
+    # - Dpadlock-less Invizuggle: glitchcraft/0245-dpadlock-less-invizuggle.md
+    # - Cull Storage Zuggle: glitchcraft/0246-cull-storage-zuggle-csz.md
+    # - Smuggle Retrieval: glitchcraft/0262-smuggle-retrieval.md
+    # - Dynamic Purgatory Zuggle: glitchcraft/0268-dynamic-purgatory-zuggle.md
+    # - Cull Pickup Dynamic Zuggle: glitchcraft/0273-cull-pickup-dynamic-zuggle.md
+    # - Overload Dynamic Zuggle: glitchcraft/0274-overload-dynamic-zuggle.md
+    # - Double Bypass Zuggle: glitchcraft/0278-double-bypass-zuggle-dbz.md
+    # - Zuggle Overload Desync: glitchcraft/0294-zuggle-overload-desync.md
+    # - Collection: zuggling/zuggle-collection.md
   - Desync: desync/index.md
   - OOB: oob/index.md
   - MNF: mnf/index.md

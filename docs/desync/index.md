@@ -1,13 +1,13 @@
-# Smuggling and Zuggling 
+# Desync
 _Basic stub_
 
 ## Introduction
 ---
-Smuggling and Zuggling are object-transfer and placement glitches. They let players move, hide, duplicate, or desynchronize equipment between zones and saves by abusing item pickup/drop/swap, general equipment handling, and engine state transitions.
+Desync is a state where the game's internal representation (menu/inventory) and the world state disagree — for example, an item appears in your inventory while the world treats it as dropped or vice versa. Common causes include timing of pickups/drops, equipment swaps, sorting actions, map transitions, and fuse entanglement interactions. Desyncs enable many advanced techniques (duplication, zuggling/smuggling, persistent fused behavior).
 
 ## Quick Navigation
 ---
-- **[Smuggling and Zuggling](search: Smuggling Smuggle Zuggling Zuggle)** Basic setups Smuggling and Zuggling
+- **[Fuse Entanglement](search: Fuse Entanglement)** Basic setups for Desync
 
 ## What to expect in each writeup
 ---
