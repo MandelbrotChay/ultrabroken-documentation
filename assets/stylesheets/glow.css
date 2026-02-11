@@ -701,14 +701,15 @@ li.task-list-item a, li.task-list a {
 
 /* Global toast used for copy feedback (bottom-right) */
 .ub-toast {
-  /* Top-centered, subtle light panel matching the searchbar toast */
+  /* Lower-right, light panel matching the searchbar toast appearance */
   position: fixed;
-  top: 3rem;
-  left: 50%;
-  transform: translate(-50%, 6px);
+  right: 1rem;
+  bottom: 1.25rem;
+  left: auto;
+  top: auto;
   z-index: 9999;
   background: #e6e9ea; /* light grey panel */
-  color: rgba(10,10,10,0.9);
+  color: rgba(10,10,10,0.95);
   padding: 0.6rem 1rem;
   border-radius: 6px;
   font-size: 1rem;
@@ -716,6 +717,7 @@ li.task-list-item a, li.task-list a {
   min-width: 220px;
   text-align: left;
   opacity: 0;
+  transform: translateY(6px);
   transition: opacity .18s ease, transform .18s ease;
   pointer-events: none;
   box-shadow: 0 8px 20px rgba(0,0,0,0.32);
@@ -724,7 +726,7 @@ li.task-list-item a, li.task-list a {
 }
 .ub-toast--visible {
   opacity: 1;
-  transform: translate(-50%, 0);
+  transform: translateY(0);
 }
 
 
