@@ -5,66 +5,70 @@
  */
 
 (function() {
-  // Insert a persistent, hidden copy icon span into each heading so it can
-  // be shown on hover and toggled visible after copy. Run on DOMContentLoaded
-  // to avoid racing with instant navigation DOM updates.
-  function ensureHeadingIcons() {
-    const sel = '.md-content h1[id], .md-content h2[id], .md-content h3[id], .md-content h4[id], .md-content h5[id], .md-content h6[id]';
-    const headings = document.querySelectorAll(sel);
-    const SVG_NS = 'http://www.w3.org/2000/svg';
-    headings.forEach(heading => {
-      if (!heading.querySelector('.ub-copy-check')) {
-        const check = document.createElement('span');
-        check.className = 'ub-copy-check';
-        check.setAttribute('aria-hidden', 'true');
-        const svg = document.createElementNS(SVG_NS, 'svg');
-        svg.setAttribute('viewBox', '0 0 24 24');
-        svg.setAttribute('role', 'img');
-        svg.setAttribute('aria-hidden', 'true');
-        svg.style.width = '1em';
-        svg.style.height = '1em';
-        svg.style.display = 'inline-block';
-        svg.style.verticalAlign = 'text-bottom';
-        const path = document.createElementNS(SVG_NS, 'path');
-        path.setAttribute('d', 'M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08');
-        path.setAttribute('fill', 'currentColor');
-        svg.appendChild(path);
-        check.appendChild(svg);
-        heading.appendChild(check);
-      }
-    });
-  }
-
-  // Ensure icons exist initially and also when DOM updates may add headings
-  document.addEventListener('DOMContentLoaded', ensureHeadingIcons);
-  // Some instant-navigation setups mutate the DOM; attempt a short re-run
-  setTimeout(ensureHeadingIcons, 300);
-
-  // Use event delegation for clicks to copy permalink and show the icon persistently
+  // Use event delegation - attach ONE listener that works for all headings, 
+  // present and future (handles instant navigation automatically)
   document.addEventListener('click', function(e) {
+    // Check if the clicked element is a heading within .md-content
     const heading = e.target.closest('.md-content h1, .md-content h2, .md-content h3, .md-content h4, .md-content h5, .md-content h6');
-    if (!heading || !heading.id) return;
-    const id = heading.id;
-    const permalink = window.location.href.split('#')[0] + '#' + id;
+    
+    if (heading && heading.id) {
+      const id = heading.id;
+      const permalink = window.location.href.split('#')[0] + '#' + id;
+      
+      navigator.clipboard.writeText(permalink).then(() => {
+          // Show a transient checkmark next to the heading instead of replacing text
+        try {
+          // If a previous check exists, clear its timeout and remove it first
+          const prev = heading.querySelector('.ub-copy-check');
+          if (prev) {
+            if (prev._ubTimeout) clearTimeout(prev._ubTimeout);
+            prev.remove();
+          }
 
-    navigator.clipboard.writeText(permalink).then(() => {
-      try {
-        const check = heading.querySelector('.ub-copy-check');
-        if (check) {
-          // Clear any previous timer and ensure visible class is set so it stays
-          if (check._ubTimeout) clearTimeout(check._ubTimeout);
-          check.classList.add('ub-copy-check--visible');
-          // After delay, remove visible class so hover behavior resumes control
-          check._ubTimeout = setTimeout(() => {
+          const check = document.createElement('span');
+          check.className = 'ub-copy-check';
+          check.setAttribute('aria-hidden', 'true');
+          // Use the local share SVG instead of a plain checkmark character
+            // Insert the SVG inline so it inherits `color` and scales with the
+            // heading's font-size. Use DOM creation with the same path data
+            // as `share-local.svg`.
+            const SVG_NS = 'http://www.w3.org/2000/svg';
+            const svg = document.createElementNS(SVG_NS, 'svg');
+            svg.setAttribute('viewBox', '0 0 24 24');
+            svg.setAttribute('role', 'img');
+            svg.setAttribute('aria-hidden', 'true');
+            svg.style.width = '1em';
+            svg.style.height = '1em';
+            svg.style.display = 'inline-block';
+            svg.style.verticalAlign = 'text-bottom';
+            const path = document.createElementNS(SVG_NS, 'path');
+            path.setAttribute('d', 'M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08');
+            path.setAttribute('fill', 'currentColor');
+            svg.appendChild(path);
+            check.appendChild(svg);
+          heading.appendChild(check);
+
+          // Trigger visible state for CSS transition
+          requestAnimationFrame(() => check.classList.add('ub-copy-check--visible'));
+
+          // Remove after short delay
+          const t = setTimeout(() => {
             check.classList.remove('ub-copy-check--visible');
-            check._ubTimeout = null;
+            setTimeout(() => { if (check.parentNode) check.parentNode.removeChild(check); }, 180);
           }, 1400);
+          // store timeout so we can clear if another copy happens quickly
+          check._ubTimeout = t;
+        } catch (err) {
+          console.error('Clipboard feedback error:', err);
         }
-      } catch (err) { console.error('Clipboard feedback error:', err); }
-      try { showCopiedToast && showCopiedToast('Copied to clipboard'); } catch (e) {}
-    }).catch(err => {
-      console.error('Failed to copy permalink:', err);
-    });
+        // Also show global copied-to-clipboard toast to match search share UI
+        try {
+          showCopiedToast && showCopiedToast('Copied to clipboard');
+        } catch (e) {}
+      }).catch(err => {
+        console.error('Failed to copy permalink:', err);
+      });
+    }
   });
 })();
 

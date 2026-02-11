@@ -674,17 +674,6 @@ html, body, .md-content, .md-nav, .md-sidebar {
   transform: translateY(0) scale(1);
 }
 
-/* Show the share icon when hovering the heading; when .ub-copy-check--visible
-   is present (after copy) it will remain visible until cleared by script. */
-.md-content h1:hover .ub-copy-check,
-.md-content h2:hover .ub-copy-check,
-.md-content h3:hover .ub-copy-check,
-.md-content h4:hover .ub-copy-check,
-.md-content h5:hover .ub-copy-check,
-.md-content h6:hover .ub-copy-check {
-  opacity: 1;
-  transform: translateY(0) scale(1);
-}
 /* Ensure inline SVG inside the copy check inherits color and matches heading size */
 .ub-copy-check svg {
   display: inline-block;
