@@ -7,7 +7,7 @@ Out-of-bounds (OOB) refers to techniques that deliberately move the player or ob
 
 ## Quick Navigation
 ---
-- **[DOut of Boundsc](search: Out of Bounds)** Basic setups for Out of Bounds
+- **[Out of Boundsc](search: Out of Bounds)** Basic setups for Out of Bounds
 
 ## What to expect in each writeup
 ---

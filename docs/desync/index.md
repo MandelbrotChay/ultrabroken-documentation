@@ -7,7 +7,7 @@ Desync is a state where the game's internal representation (menu/inventory) and 
 
 ## Quick Navigation
 ---
-- **[Fuse Entanglement](search: Fuse Entanglement)** Basic setups for Desync
+- **[Desync](search: Desync)** Basic setups for Desync
 
 ## What to expect in each writeup
 ---
