@@ -703,32 +703,45 @@ li.task-list-item a, li.task-list a {
 .ub-toast {
   /* Lower-right, light panel matching the searchbar toast appearance */
   position: fixed;
-  right: 1.25rem;
-  bottom: 1.5rem;
+  right: 0.6rem; /* push tighter into the corner */
+  bottom: 0.8rem;
   left: auto;
   top: auto;
   z-index: 9999;
   background: #e9ecec; /* slightly desaturated light grey */
   color: rgba(15,15,15,0.95);
-  padding: 0.65rem 1.25rem;
-  border-radius: 8px;
+  padding: 0.55rem 1rem;
+  border-radius: 0; /* remove rounded corners */
   font-size: 1.05rem; /* slightly larger to match screenshot */
   line-height: 1.15;
   min-width: 220px;
   text-align: center; /* matches centered message */
   opacity: 0;
-  transform: translateY(8px);
-  transition: opacity .2s cubic-bezier(.2,.9,.2,1), transform .2s cubic-bezier(.2,.9,.2,1);
   pointer-events: none;
   box-shadow: 0 12px 28px rgba(0,0,0,0.32);
-  border: 1px solid rgba(0,0,0,0.08);
-  font-family: 'New Rocker', 'Texturina', Georgia, serif; /* match heading styling */
+  border-top: 1px solid rgba(0,0,0,0.06);
+  border-bottom: 1px solid rgba(255,255,255,0.02);
+  font-family: 'New Rocker', 'Texturina', Georgia, serif; /* header font */
   font-weight: 600;
   letter-spacing: 0.2px;
 }
+
+@keyframes ub-toast-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes ub-toast-out {
+  from { opacity: 1; }
+  to   { opacity: 0; }
+}
+
 .ub-toast--visible {
-  opacity: 1;
-  transform: translateY(0);
+  animation: ub-toast-in 220ms cubic-bezier(.2,.9,.2,1) forwards;
+}
+
+.ub-toast--hiding {
+  animation: ub-toast-out 160ms ease forwards;
 }
 
 
