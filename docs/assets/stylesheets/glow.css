@@ -194,7 +194,7 @@ a:hover {
    Intercepted by `search-link.js`. Styled to match other inline links but without
    an underline in idle state to match the search-link button style. */
 a[href^="search:"] {
-  color: var(--teal-dark);
+  color: var(--teal-glow);
   text-decoration: none;
   transition: color .18s ease, text-shadow .18s ease;
 }
