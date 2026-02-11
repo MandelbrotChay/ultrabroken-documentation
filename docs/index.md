@@ -3,7 +3,7 @@ title: Glitch Encyclopedia
 ---
 
 # The Legend of Zelda: Tears of the Kingdom
-## Glitch Encyclopedia
+# Glitch Encyclopedia
 
 ## Introduction
 Welcome — this site is a community-driven encyclopedia documenting glitches, techniques and investigations for The Legend of Zelda: Tears of the Kingdom.
