@@ -703,8 +703,8 @@ li.task-list-item a, li.task-list a {
 .ub-toast {
   /* Lower-right, light panel matching the searchbar toast appearance */
   position: fixed;
-  right: 0.6rem; /* push tighter into the corner */
-  bottom: 0.8rem;
+  right: 1rem; /* align closer to reference searchbar toast */
+  bottom: 0.85rem;
   left: auto;
   top: auto;
   z-index: 9999;
@@ -712,12 +712,12 @@ li.task-list-item a, li.task-list a {
   background: #e6e9ea; /* exact matching light grey */
   color: rgba(12,12,12,0.88);
   /* Keep the visual box size stable while using a slightly smaller font: */
-  padding: 0.45rem 1rem; /* slightly larger vertical padding to preserve box height */
+  padding: 0.32rem 1rem; /* reduce vertical padding slightly */
   border-radius: 0; /* remove rounded corners */
-  font-size: 0.88rem; /* smaller text while box remains same size */
+  font-size: 0.82rem; /* slightly smaller to match reference */
   line-height: 1.15;
-  min-width: 220px;
-  min-height: 44px; /* ensure box doesn't visually shrink when font is smaller */
+  min-width: 240px; /* slightly wider to the right like the reference */
+  min-height: 40px; /* reduce height by a couple pixels to match reference */
   text-align: left; /* left-align the message */
   opacity: 0;
   pointer-events: none;
@@ -726,7 +726,7 @@ li.task-list-item a, li.task-list a {
   border-bottom: 1px solid rgba(255,255,255,0.02);
     /* Prefer Texturina for the toast; force with !important to override theme */
     font-family: 'Texturina', 'New Rocker', Georgia, serif !important;
-    font-weight: 600 !important; /* slightly lighter weight to match searchbar toast */
+    font-weight: 400 !important; /* use regular weight for thinner appearance */
   letter-spacing: 0.2px;
 }
 
