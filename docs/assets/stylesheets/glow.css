@@ -712,12 +712,12 @@ li.task-list-item a, li.task-list a {
   background: #e6e9ea; /* exact matching light grey */
   color: rgba(12,12,12,0.88);
   /* Keep the visual box size stable while using a slightly smaller font: */
-  padding: 0.32rem 1rem; /* reduce vertical padding slightly */
+  padding: 0.45rem 1.1rem; /* increase padding so box appears bigger */
   border-radius: 0; /* remove rounded corners */
-  font-size: 0.82rem; /* slightly smaller to match reference */
+  font-size: 0.88rem; /* slightly larger for better legibility */
   line-height: 1.15;
-  min-width: 240px; /* slightly wider to the right like the reference */
-  min-height: 40px; /* reduce height by a couple pixels to match reference */
+  min-width: 260px; /* slightly wider to the right like the reference */
+  min-height: 46px; /* increase height to better match reference box */
   text-align: left; /* left-align the message */
   opacity: 0;
   pointer-events: none;
@@ -726,7 +726,7 @@ li.task-list-item a, li.task-list a {
   border-bottom: 1px solid rgba(255,255,255,0.02);
     /* Prefer Texturina for the toast; force with !important to override theme */
     font-family: 'Texturina', 'New Rocker', Georgia, serif !important;
-    font-weight: 400 !important; /* use regular weight for thinner appearance */
+    font-weight: 600 !important; /* use a slightly bolder weight for parity */
   letter-spacing: 0.2px;
 }
 
@@ -746,7 +746,7 @@ li.task-list-item a, li.task-list a {
 }
 
 .ub-toast--hiding {
-  animation: ub-toast-out 300ms ease forwards;
+  animation: ub-toast-out 600ms ease forwards;
 }
 
 
