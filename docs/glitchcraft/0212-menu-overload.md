@@ -3,12 +3,12 @@ title: "Menu Overload"
 ---
 
 # Menu Overload
-_Mozz - 11 January 2024_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Overloads the item menu via Moobe, acting similarly to menu overload in BOTW
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_Mozz - 11 January 2024_
 
 ## Instructions
 1. Perform Moobe with a climb position at Lookout Landing and a trigger position at a distant sky shrine. (Igoshon shrine gives good results)

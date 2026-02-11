@@ -3,12 +3,12 @@ title: "Pelison Duping"
 ---
 
 # Pelison Duping
-_AngryEgg, BigDUCCO (setup for current method) - 25 May 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Duplicate weapons using Pelison to remove them from an entangled shield.
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_AngryEgg, BigDUCCO (setup for current method) - 25 May 2023_
 
 ## Instructions
 0. For duping bows and swords, have nothing equipped there.

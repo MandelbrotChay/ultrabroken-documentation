@@ -3,12 +3,12 @@ title: "MNF Glow Overload"
 ---
 
 # MNF Glow Overload
-_Toti Sauce - 3 January 2025_
+`1.0.0`
 
 ## Overview
 Stacking the glow from the MsgNotFound sword to extreme lengths causes many visual effects to stop rendering correctly
 
-`1.0.0`
+_Toti Sauce - 3 January 2025_
 
 ## Instructions
 1. Zuggle at least one MNF and equip a different one

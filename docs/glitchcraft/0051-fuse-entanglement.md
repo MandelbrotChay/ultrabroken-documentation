@@ -3,12 +3,12 @@ title: "Fuse Entanglement"
 ---
 
 # Fuse Entanglement
-_Physioninja - 24 May 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Allows your shield to have an effect on an object as though it is fused to the shield, despite the object existing in the world and not being tethered to your shield.
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_Physioninja - 24 May 2023_
 
 ## Instructions
 1. Activate the fuse rune.

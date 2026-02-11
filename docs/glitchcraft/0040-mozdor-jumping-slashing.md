@@ -3,12 +3,12 @@ title: "Mozdor jumping/slashing"
 ---
 
 # Mozdor jumping/slashing
-_Mozz, AgdoR - 20 May 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Allows you to jump very far (can be chained infinitly)
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_Mozz, AgdoR - 20 May 2023_
 
 ## Instructions
 1. Jump in any direction that is not forward (can be done mid air but it is slower)

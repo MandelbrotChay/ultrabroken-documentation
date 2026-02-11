@@ -3,12 +3,12 @@ title: "Ultrabroken"
 ---
 
 # Ultrabroken
-_Duncan - 29 May 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Overview
 Allows you to pull the object with another glued material while Link stands on top of it, sending it flying forwards from the pull itself.
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2`
+_Duncan - 29 May 2023_
 
 ## Instructions
 1. Take out an object and set it beside Zorona and Kairo near Riverside Stable, and talk to them while standing on top of it.

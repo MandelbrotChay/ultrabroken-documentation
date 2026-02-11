@@ -3,12 +3,12 @@ title: "Like-Like Culling"
 ---
 
 # Like-Like Culling
-_Mozz - 13 June 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 A method for object culling
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_Mozz - 13 June 2023_
 
 ## Instructions
 1. Fuse entangle any object to a shield, and drop the shield next to a Like-Like.

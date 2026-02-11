@@ -3,12 +3,12 @@ title: "Fuse Storage Fuse Entanglement"
 ---
 
 # Fuse Storage Fuse Entanglement `FSFE`
-_Ryan?, Mozz - 18 June 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Unique methods of achieving Fuse Entanglement through Fuse Storage.
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_Ryan?, Mozz - 18 June 2023_
 
 ## Instructions
 —

@@ -3,12 +3,12 @@ title: "Unload Duping"
 ---
 
 # Unload Duping
-_魔法本就不科学 (magic is not science), 千年茶饼 (Thousand Year Tea) - 31 May 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Overview
 By firing arrows between load triggers, items fused to the arrows get dropped. Allowing you to dupe items with multi-shot bows.
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2`
+_魔法本就不科学 (magic is not science), 千年茶饼 (Thousand Year Tea) - 31 May 2023_
 
 ## Instructions
 1. Head to Tobio's Hollow Chasm and stand at around these exact coordinates: "1021, -2261, -0156"

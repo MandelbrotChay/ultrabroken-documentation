@@ -3,12 +3,12 @@ title: "Long Jump"
 ---
 
 # Long Jump
-_Mozz - 18 May 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Jump farther
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_Mozz - 18 May 2023_
 
 ## Instructions
 While facing sideways (any angle that is more than or equal to 90 degrees from the direction Link is moving in), either by starting so or pivoting mid air, jump momentum can be carried into a jumpslash, significantly extending the length of the jump.

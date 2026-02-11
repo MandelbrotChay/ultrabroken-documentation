@@ -3,12 +3,12 @@ title: "Fuse Overload"
 ---
 
 # Fuse Overload `FO`
-_ultrababouin, NghtmaR3 - 3 November 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 By repeatedly cold fusing objects to the same weapon, it's possible to reach a limit that causes any additional cold fused objects to lose their collision. This can lead to strange behavior
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_ultrababouin, NghtmaR3 - 3 November 2023_
 
 ## Instructions
 1. Zuggle overload

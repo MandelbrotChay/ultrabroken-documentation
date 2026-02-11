@@ -3,12 +3,12 @@ title: "Anti-Gravity Objects"
 ---
 
 # Anti-Gravity Objects
-_?_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Overview
 Allows objects to lose their gravity.
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2`
+_?_
 
 ## Instructions
 1. Create an invisible item.

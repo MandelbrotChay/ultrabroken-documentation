@@ -3,12 +3,12 @@ title: "Zonai Sort Duplication"
 ---
 
 # Zonai Sort Duplication `ZSD`
-_Quelfth, Flash - 22 May 2023_
+`1.0.0` `1.1.0` `1.1.1`
 
 ## Overview
 Allows you to dupe zonai parts back into your inventory.
 
-`1.0.0` `1.1.0` `1.1.1`
+_Quelfth, Flash - 22 May 2023_
 
 ## Instructions
 1. Position Link close enough to a wall or a cliff but not too close, facing towards it.

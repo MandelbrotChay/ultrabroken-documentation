@@ -3,12 +3,12 @@ title: "Resync Fuse Entanglement"
 ---
 
 # Resync Fuse Entanglement `RFE`
-_Zas - 18 December 2023_
+`1.0.0`
 
 ## Overview
 "Fe'ing" with a drop swap drop and then pausing to mess with the fuse prevents a full fuse and causes FE
 
-`1.0.0`
+_Zas - 18 December 2023_
 
 ## Instructions
 Method 1:

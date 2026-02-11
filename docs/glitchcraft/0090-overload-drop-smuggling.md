@@ -3,12 +3,12 @@ title: "Overload Drop Smuggling"
 ---
 
 # Overload Drop Smuggling
-_ChargeVolt, Windocks - 12 June 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Overview
 Allows you to drop smuggle via overload
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2`
+_ChargeVolt, Windocks - 12 June 2023_
 
 ## Instructions
 1. Zuggle Overload to the point that every weapon swap drops it on the ground.

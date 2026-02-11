@@ -3,12 +3,12 @@ title: "Unload WST"
 ---
 
 # Unload WST
-_BigDUCCO,  Vee.Might.Exist, syb - Resync your inventory by re-equipping_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Allows you to transfer modifiers and materials to any weapon. This method is unique as it allows for the modifiers to be tranfered to the master sword as well.
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_BigDUCCO,  Vee.Might.Exist, syb - Resync your inventory by re-equipping_
 
 ## Instructions
 0. Make two empty slots in the weapon/bow/shield tab.

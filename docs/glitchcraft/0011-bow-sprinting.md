@@ -3,11 +3,11 @@ title: "Bow Sprinting"
 ---
 
 # Bow Sprinting
-_Steel - 14 May 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 —
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_Steel - 14 May 2023_
 
 ## Instructions
 Tap B - ZR, repeat. Additional info: alternate tapping B then ZR. With a tempo of about 130-160 bpm (B being on the beat, ZR being the up beat)

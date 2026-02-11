@@ -3,12 +3,12 @@ title: "Mass Amnesia"
 ---
 
 # Mass Amnesia
-_NaN Gogh - 2 August 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Overview
 Freezes objects in a state where gravity does not affect them, as long as they are not messed with by any means.
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2`
+_NaN Gogh - 2 August 2023_
 
 ## Instructions
 General setup:

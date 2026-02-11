@@ -3,12 +3,12 @@ title: "Weapon Stacking Duplication"
 ---
 
 # Weapon Stacking Duplication `WSD`
-_Erling附身 - 16 May 2023_
+`1.0.0` `1.1.0` `1.1.1`
 
 ## Overview
 Allows for a quick dupe of any weapon, bow or shield
 
-`1.0.0` `1.1.0` `1.1.1`
+_Erling附身 - 16 May 2023_
 
 ## Instructions
 INEFFICIENT METHOD, SEE NEXT COLUMN

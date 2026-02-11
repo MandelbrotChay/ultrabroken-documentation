@@ -3,12 +3,12 @@ title: "Mineru Culling"
 ---
 
 # Mineru Culling
-_Lightos_ - 31 July 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Overview
 Allows for Link's model to be operated from Mineru, by unloading Mineru, Link can be culled at will.
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2`
+_Lightos_ - 31 July 2023_
 
 ## Instructions
 1. Zuggle overload

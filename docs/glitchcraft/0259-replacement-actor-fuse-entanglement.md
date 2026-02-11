@@ -3,12 +3,12 @@ title: "Replacement Actor Fuse Entanglement"
 ---
 
 # Replacement Actor Fuse Entanglement
-_dt13269, mulberry - 9 November 2024_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Allows objects that have fuse replacement actors to be fuse entangled. Objects that have replacement actors set to themselves, such as bomb flowers, cannot be fuse entangled
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_dt13269, mulberry - 9 November 2024_
 
 ## Instructions
 1. Cold fuse shield A to shield B

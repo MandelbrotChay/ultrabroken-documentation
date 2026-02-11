@@ -3,12 +3,12 @@ title: "Map Storage"
 ---
 
 # Map Storage
-_blueberryoats - 29 May 2023_
+`1.1.0` `1.1.1`
 
 ## Overview
 Allows you to have control over Link while the map is open.
 
-`1.1.0` `1.1.1`
+_blueberryoats - 29 May 2023_
 
 ## Instructions
 1. Open the camera.

@@ -3,12 +3,12 @@ title: "Cull Equipment Desync"
 ---
 
 # Cull Equipment Desync
-_Blize, ock (Cull Arrow Smuggle), Blize - 10 October 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Allows to have a weapon equipped that is not in the inventory.
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_Blize, ock (Cull Arrow Smuggle), Blize - 10 October 2023_
 
 ## Instructions
 1. Cull 

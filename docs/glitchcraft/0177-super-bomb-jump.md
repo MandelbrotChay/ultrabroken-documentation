@@ -3,12 +3,12 @@ title: "Super Bomb Jump"
 ---
 
 # Super Bomb Jump
-_ferruscube, Aergyl - 14 September 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Jumping on a specific frame allows you to get a much higher bomb jump than usual
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_ferruscube, Aergyl - 14 September 2023_
 
 ## Instructions
 Method 1:

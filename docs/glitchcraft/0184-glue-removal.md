@@ -3,12 +3,12 @@ title: "Glue Removal"
 ---
 
 # Glue Removal
-_R4000 - 5 October 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 lets you break apart things that have been ultrahanded together
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_R4000 - 5 October 2023_
 
 ## Instructions
 1. Have 2 attached objects 

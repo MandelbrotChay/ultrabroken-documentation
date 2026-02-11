@@ -3,12 +3,12 @@ title: "Drop Restriction"
 ---
 
 # Drop Restriction
-_SCFD-GK2, Nicnac - 19 June 2023_
+`1.0.0` `1.1.0` `1.1.1`
 
 ## Overview
 Prevents zonai devices from spawning out of the inventory.
 
-`1.0.0` `1.1.0` `1.1.1`
+_SCFD-GK2, Nicnac - 19 June 2023_
 
 ## Instructions
 1. Hold L

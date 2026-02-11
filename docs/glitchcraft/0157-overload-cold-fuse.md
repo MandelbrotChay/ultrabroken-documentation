@@ -3,12 +3,12 @@ title: "Overload Cold Fuse"
 ---
 
 # Overload Cold Fuse
-_F. Buffalo - 23 July 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Fusing to an overload dropped item causes cold fuse
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_F. Buffalo - 23 July 2023_
 
 ## Instructions
 1. Zuggle Overload

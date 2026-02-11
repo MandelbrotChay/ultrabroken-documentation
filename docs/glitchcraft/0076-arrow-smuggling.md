@@ -3,12 +3,12 @@ title: "Arrow Smuggling"
 ---
 
 # Arrow Smuggling
-_Mozz - 4 June 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 A type of equipment smuggle that makes Link hold an arrow without pulling out his bow.
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_Mozz - 4 June 2023_
 
 ## Instructions
 1. Keep your bow sheathed and go through the steps of shock smuggling.

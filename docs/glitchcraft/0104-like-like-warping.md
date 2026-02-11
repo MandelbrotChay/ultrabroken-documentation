@@ -3,11 +3,11 @@ title: "Like-Like Warping"
 ---
 
 # Like-Like Warping
-_Mozz - 15 June 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 —
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_Mozz - 15 June 2023_
 
 ## Instructions
 1. Fuse Entangle a (preferably timed) bomb to a shield.

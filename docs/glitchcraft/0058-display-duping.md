@@ -3,12 +3,12 @@ title: "Display Duping"
 ---
 
 # Display Duping
-_Pistonight - 27 May 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Overview
 Allows you to dupe equipment that can be put into displays.
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2`
+_Pistonight - 27 May 2023_
 
 ## Instructions
 Place a shock emitter next to weapon/bow/shield display, take out weapon/bow (need single hand sword for shield, don't hold ZL). Walk toward the display frame, get zapped and display the equipment at the same time, the held equipment will both be displayed and dropped, the equipment after the held one will be deleted

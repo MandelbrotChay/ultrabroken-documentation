@@ -3,12 +3,12 @@ title: "Hand Locked Equipment Smuggling"
 ---
 
 # Hand Locked Equipment Smuggling `HLES`
-_Aeolian - 11 July 2023_
+`1.0.0`
 
 ## Overview
 Allows you to smuggle equipment only when your hands are busy.
 
-`1.0.0`
+_Aeolian - 11 July 2023_
 
 ## Instructions
 Stand next to a wall facing away from it

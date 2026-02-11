@@ -3,12 +3,12 @@ title: "Master Sword Liberation"
 ---
 
 # Master Sword Liberation
-_ock, mulbery - Nov 11, 2023; Nov 27, 2023; Dec 2, 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Allows you to dupe the master sword/decayed master sword
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_ock, mulbery - Nov 11, 2023; Nov 27, 2023; Dec 2, 2023_
 
 ## Instructions
 Method 1 (ock):

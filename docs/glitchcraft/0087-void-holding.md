@@ -3,12 +3,12 @@ title: "Void Holding"
 ---
 
 # Void Holding
-_Lightos_ - 10 June 2023_
+`1.0.0` `1.1.0` `1.1.1`
 
 ## Overview
 Allows you to hold materials "whenever you want" as long as you are at a low enough Y coordinate
 
-`1.0.0` `1.1.0` `1.1.1`
+_Lightos_ - 10 June 2023_
 
 ## Instructions
 Clip below roughly Y -4000 and hold any stack of items

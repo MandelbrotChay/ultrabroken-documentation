@@ -3,12 +3,12 @@ title: "Detanglement"
 ---
 
 # Detanglement
-_Zas - 9 September 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Using a rocket shield disconnects fuse-entangled objects from their source equipment without destroying the object.
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_Zas - 9 September 2023_
 
 ## Instructions
 1. Zuggle a shield that has something fuse entangled to it

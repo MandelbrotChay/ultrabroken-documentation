@@ -3,12 +3,12 @@ title: "Save Load Dupe"
 ---
 
 # Save Load Dupe `SLD`
-_ZombieBoy225, ness, ElDuende - 16 May 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Allows easy duplication of your weapons, bows, and shields
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_ZombieBoy225, ness, ElDuende - 16 May 2023_
 
 ## Instructions
 0. Have a save prepared nearby (makes it convenient for later).

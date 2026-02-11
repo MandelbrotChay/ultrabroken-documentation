@@ -3,12 +3,12 @@ title: "Autobuild Duplication"
 ---
 
 # Autobuild Duplication `ABD`
-_{Unknown} - 11 June 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Overview
 Allows you to dupe materials that change into other materials in other temperature. (For example raw meat.)
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2`
+_{Unknown} - 11 June 2023_
 
 ## Instructions
 This only works with items that change into other items in another temperature.

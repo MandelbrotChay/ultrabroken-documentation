@@ -3,12 +3,12 @@ title: "Smuggle Retrieval"
 ---
 
 # Smuggle Retrieval
-_PetitFrapo - 18 December 2024_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1+`
 
 ## Overview
 Dropping an unloaded piece of equipment drops a smuggle instead (if Link has one). Fail dropping equips it back.
 
-`1.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1+`
+_PetitFrapo - 18 December 2024_
 
 ## Instructions
 1. Get any kind of smuggle, unculled or culled (regular smuggle, smuggled drop smuggle, invismuggle, dynamic smuggle etc).

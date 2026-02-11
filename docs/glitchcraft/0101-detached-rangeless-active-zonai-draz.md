@@ -3,12 +3,12 @@ title: "Detached Rangeless Active Zonai"
 ---
 
 # Detached Rangeless Active Zonai `DRAZ`
-_Venaticus - 15 June 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Overview
 Allows you to leave a Zonai device stuck a single place and activate it remotely from anywhere.
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2`
+_Venaticus - 15 June 2023_
 
 ## Instructions
 1. FE a Zonai device to a shield

@@ -3,12 +3,12 @@ title: "Inventory Shift Duplication"
 ---
 
 # Inventory Shift Duplication `ISD`
-_Blizzard Blanc, BigDUCCO, Maxmasher, Pyuk, Zas - 25 June 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Overview
 Exploits inventory shift after creating an empty inventory slot to duplicate items.
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2`
+_Blizzard Blanc, BigDUCCO, Maxmasher, Pyuk, Zas - 25 June 2023_
 
 ## Instructions
 1. Have one of any type of edible or consumable item in the item menu. Aswell as less than 5 of the item you're trying to duplicate.

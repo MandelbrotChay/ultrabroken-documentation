@@ -3,12 +3,12 @@ title: "Fuse Entangle Weapon Zuggle"
 ---
 
 # Fuse Entangle Weapon Zuggle `FEWZ`
-_Ryan? - 10 June 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Overview
 Allows you got zuggle each weapon you carry one time. This stacks the damage similar to the original version of zuggling
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2`
+_Ryan? - 10 June 2023_
 
 ## Instructions
 1. Fuse entangle the target weapon to a shield and pick up the target

@@ -3,12 +3,12 @@ title: "Invizuggle"
 ---
 
 # Invizuggle
-_ock, Yee - 3 January 2024_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Dropping equipment in a specific way during a cull causes an indestructable and invisible zuggle.
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_ock, Yee - 3 January 2024_
 
 ## Instructions
 There are multiple methods:

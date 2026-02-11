@@ -3,12 +3,12 @@ title: "Cull Fuse Entanglement"
 ---
 
 # Cull Fuse Entanglement `CFE`
-_ultrababouin, susannediazz, Ock, SteFen45 - 21 September 2023; 10 October 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Allows you to Fuse Entangle objects by culling Link the same frame the fuse is applied.
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_ultrababouin, susannediazz, Ock, SteFen45 - 21 September 2023; 10 October 2023_
 
 ## Instructions
 1. Set up a way to cull Link (LikeLike Stick Smuggling or SDC in a culling area)

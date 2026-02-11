@@ -3,12 +3,12 @@ title: "Ultimate Pocket Rocket"
 ---
 
 # Ultimate Pocket Rocket
-_Aergyl, mulberry, Ikaboze, Jordan - 20 May 2025_
+`1.0.0`
 
 ## Overview
 A pocket rocket which does not break on warps or drain energy cells, and has unlimited usage and range
 
-`1.0.0`
+_Aergyl, mulberry, Ikaboze, Jordan - 20 May 2025_
 
 ## Instructions
 1. Fuse entangle a weapon on one durability (with no remaining fuse durability), to a shield

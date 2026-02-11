@@ -3,12 +3,12 @@ title: "Autobuild Storage"
 ---
 
 # Autobuild Storage
-_Blackmars, R4000 - 28 August 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Allows you to manually delay the instance of items being attached with Autobuild
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_Blackmars, R4000 - 28 August 2023_
 
 ## Instructions
 1. Attach 2 items a Like Like can eat together and save it within your Autobuild history.

@@ -3,12 +3,12 @@ title: "Crouch Throw Tap Sprinting"
 ---
 
 # Crouch Throw Tap Sprinting `CTTS`
-_Deystroyer - 15 May 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Infinite and fastest way of sprinting
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_Deystroyer - 15 May 2023_
 
 ## Instructions
 Press Crouch - B - R - B and repeat (B should be pressed direcly after crouch)

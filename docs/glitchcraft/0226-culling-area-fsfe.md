@@ -3,12 +3,12 @@ title: "Culling Area FSFE"
 ---
 
 # Culling Area FSFE
-_mulberry, Yee, Zas - 25 February 2024_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 A method for FSFE using AreaCulling
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_mulberry, Yee, Zas - 25 February 2024_
 
 ## Instructions
 1. Position the target object at the edge of a culling area with a small margin (like the tarry town culling area)

@@ -3,12 +3,12 @@ title: "Void Dipping"
 ---
 
 # Void Dipping
-_Squidwest, mulberry, Aergyl - 29 December 2025_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1` `1.3.0` `1.4.0` `1.4.1` `1.4.2` `Switch 2`
 
 ## Overview
 An extremely powerful equipment state caused by interrupting and retrieving an equipment item that has been destroyed by the void.
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1` `1.3.0` `1.4.0` `1.4.1` `1.4.2` `Switch 2`
+_Squidwest, mulberry, Aergyl - 29 December 2025_
 
 ## Instructions
 Perform one of the following dipping methods:

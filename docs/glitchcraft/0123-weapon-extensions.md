@@ -3,12 +3,12 @@ title: "Weapon Extensions"
 ---
 
 # Weapon Extensions
-_Deltenic, Flash, Zas - 20 June 2023; 23 June 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Allows the weapon to hit other entites from further away (excluding two hand weapons).
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_Deltenic, Flash, Zas - 20 June 2023; 23 June 2023_
 
 ## Instructions
 1. Use any one hand or spear weapon.

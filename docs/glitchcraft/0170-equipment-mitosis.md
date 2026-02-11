@@ -3,12 +3,12 @@ title: "Equipment Mitosis"
 ---
 
 # Equipment Mitosis
-_Mozz - 5 September 2023_
+`1.0.0`
 
 ## Overview
 By combining zuggle overload with 1.0 modifier deletion, it is possible to mass dupe equipment
 
-`1.0.0`
+_Mozz - 5 September 2023_
 
 ## Instructions
 1. Zuggle overload

@@ -3,12 +3,12 @@ title: "Attached Rangeless Active Zonai"
 ---
 
 # Attached Rangeless Active Zonai `ARAZ`
-_Ryan?, NX721 - 16 June 2023; 15 July 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Overview
 Is very similar to DRAZ but differs slightly.
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2`
+_Ryan?, NX721 - 16 June 2023; 15 July 2023_
 
 ## Instructions
 1. Drop a shield and equip another shield.

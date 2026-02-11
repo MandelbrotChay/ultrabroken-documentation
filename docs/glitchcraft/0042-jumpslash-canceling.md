@@ -3,12 +3,12 @@ title: "Jumpslash Canceling"
 ---
 
 # Jumpslash Canceling
-_LegendOfLink, Mozz - 21 May 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Interrupt jumpslashes by swapping a shield mid-animation
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_LegendOfLink, Mozz - 21 May 2023_
 
 ## Instructions
 1. Jump off edge 

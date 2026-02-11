@@ -3,11 +3,11 @@ title: "Crouch Sprinting"
 ---
 
 # Crouch Sprinting
-_Mozz - 14 May 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 —
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_Mozz - 14 May 2023_
 
 ## Instructions
 Press b, tap crouch right after, wait a little bit for the stamina to regen, repeat (84 bpm is the perfect tempo, so on every beat tap crouch and tap b right after)

@@ -3,12 +3,12 @@ title: "Camera CFW"
 ---
 
 # Camera CFW
-_NaN Gogh - 11 July 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Glitches out the camera rune and can remove the waymarkers and the camera UI
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_NaN Gogh - 11 July 2023_
 
 ## Instructions
 1. Open camera rune

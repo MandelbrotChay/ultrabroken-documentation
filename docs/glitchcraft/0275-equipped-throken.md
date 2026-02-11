@@ -3,12 +3,12 @@ title: "Equipped Throken"
 ---
 
 # Equipped Throken
-_Aergyl, mulberry - 20 May 2025_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Allows throken weapons to be equipped
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_Aergyl, mulberry - 20 May 2025_
 
 ## Instructions
 For 1.0.0-1.1.2:

@@ -3,12 +3,12 @@ title: "Double Tulin Boost"
 ---
 
 # Double Tulin Boost
-_17 May 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Overview
 Allows you to get more speed with tulin than just normal tulin (isnt' as effective as tulin pumping)
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2`
+_17 May 2023_
 
 ## Instructions
 Activate bullet time 2 times during the tulin wind

@@ -3,11 +3,11 @@ title: "No Bow Sprinting"
 ---
 
 # No Bow Sprinting `NBS`
-_Steel - 12 May 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 —
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_Steel - 12 May 2023_
 
 ## Instructions
 Unequip bow, hold ZL, and mash R, ZR, and B

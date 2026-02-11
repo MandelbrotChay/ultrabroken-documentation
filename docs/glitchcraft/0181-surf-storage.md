@@ -3,13 +3,13 @@ title: "Surf storage"
 ---
 
 # Surf storage
-_Mozz - 22 September 2023_
+`1.0.0`
 
 ## Overview
 Discord
 When Link surfes onto a slope and his surfing state gets canceled with in a single frame, the game stores his coordinates and the angle that he was surfing.
 
-`1.0.0`
+_Mozz - 22 September 2023_
 
 ## Instructions
 Shield surf against a slope

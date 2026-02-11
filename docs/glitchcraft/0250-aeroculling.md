@@ -3,12 +3,12 @@ title: "Aeroculling"
 ---
 
 # Aeroculling
-_Discovered by Aergyl, developed by Aergyl, mulberry - 11 August 2024_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Putting a perma-culled fan equipment's wind in a culling area prevents objects in it from getting culled, except if Link stands on most objects (including Zonai devices).
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_Discovered by Aergyl, developed by Aergyl, mulberry - 11 August 2024_
 
 ## Instructions
 Method 1 (1.0-1.1.2) (Aergyl, mulberry):

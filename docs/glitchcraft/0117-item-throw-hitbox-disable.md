@@ -3,11 +3,11 @@ title: "Item Throw Hitbox Disable"
 ---
 
 # Item Throw Hitbox Disable
-_Arfix, brought up by Moonrise - 18 June 2023; 8 August 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Overview
 —
-`1.0.0` `1.1.0` `1.1.1` `1.1.2`
+_Arfix, brought up by Moonrise - 18 June 2023; 8 August 2023_
 
 ## Instructions
 Throw an item, then recall it.

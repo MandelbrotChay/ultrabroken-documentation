@@ -3,12 +3,12 @@ title: "Recall Locking"
 ---
 
 # Recall Locking
-_Ryan? - 11 June 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Completely locks objects in place by recalling it before zlotting it
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_Ryan? - 11 June 2023_
 
 ## Instructions
 1. Fuse entangle the target object

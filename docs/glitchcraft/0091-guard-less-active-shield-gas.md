@@ -3,12 +3,12 @@ title: "Guard-less Active Shield"
 ---
 
 # Guard-less Active Shield `GAS`
-_venaticus - 12 June 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Makes the fuse of a shield constantly active
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_venaticus - 12 June 2023_
 
 ## Instructions
 1. Tap ZL as you get shocked, the shield should drop.

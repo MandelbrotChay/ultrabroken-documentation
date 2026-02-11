@@ -3,12 +3,12 @@ title: "Modifier ONLY Transfer"
 ---
 
 # Modifier ONLY Transfer
-_kurocat471, BigDUCCO - 9 June 2023_
+`1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Allows you to transfer only the modifier, but only works on weapons.
 
-`1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_kurocat471, BigDUCCO - 9 June 2023_
 
 ## Instructions
 1. Unload WST and make a Master Sword with the desired modifier, do NOT resync

@@ -3,12 +3,12 @@ title: "Dpadlock-less Invizuggle"
 ---
 
 # Dpadlock-less Invizuggle
-_Discovered by mulberry, optimized by blackmars, mulberry, NghtmaR3 (order is alphabetically) - 17 July 2024_
+`1.2.0` `1.2.1`
 
 ## Overview
 The first frame of a cull does not dpadlock, so it can be used for invizuggle
 
-`1.2.0` `1.2.1`
+_Discovered by mulberry, optimized by blackmars, mulberry, NghtmaR3 (order is alphabetically) - 17 July 2024_
 
 ## Instructions
 The easiest way:

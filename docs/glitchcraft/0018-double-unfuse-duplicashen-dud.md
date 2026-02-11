@@ -3,12 +3,12 @@ title: "Double Unfuse Duplicashen"
 ---
 
 # Double Unfuse Duplicashen `DUD`
-_Li Shen (鯉神) - 15 May 2023_
+`1.0.0` `1.1.0` `1.1.1`
 
 ## Overview
 allows you to duplicate any material that can be fused to an arrow
 
-`1.0.0` `1.1.0` `1.1.1`
+_Li Shen (鯉神) - 15 May 2023_
 
 ## Instructions
 Required: 2 bows, 1 arrow, material to dupe, melee weapon

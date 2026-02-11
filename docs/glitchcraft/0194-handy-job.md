@@ -3,12 +3,12 @@ title: "Handy Job"
 ---
 
 # Handy Job
-_Ock - 20 November 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Gloom hands reset the durability of enemy equipment.
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_Ock - 20 November 2023_
 
 ## Instructions
 1. Give an enemy the equipment to repair

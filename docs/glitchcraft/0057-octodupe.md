@@ -3,12 +3,12 @@ title: "Octodupe"
 ---
 
 # Octodupe
-_26 May 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Overview
 Allows for the duplication of items sucked up by a rock octorok.
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2`
+_26 May 2023_
 
 ## Instructions
 1. Drop an item on the ground for it to be sucked up by an octorok.

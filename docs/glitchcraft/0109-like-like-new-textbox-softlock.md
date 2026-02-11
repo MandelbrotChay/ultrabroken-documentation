@@ -3,12 +3,12 @@ title: "Like Like New Textbox Softlock"
 ---
 
 # Like Like New Textbox Softlock
-_Ryan? - 16 June 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Overview
 Picking up a new item while it gets eaten by a like like softlocks the game
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2`
+_Ryan? - 16 June 2023_
 
 ## Instructions
 —

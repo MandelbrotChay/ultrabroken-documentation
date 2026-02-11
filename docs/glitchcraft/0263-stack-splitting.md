@@ -3,12 +3,12 @@ title: "Stack Splitting"
 ---
 
 # Stack Splitting
-_s0ft, Telkic, mulberry - 31 December 2024_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1+`
 
 ## Overview
 Using an arrow fuse returning, it's possible to get two slots for one item
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1+`
+_s0ft, Telkic, mulberry - 31 December 2024_
 
 ## Instructions
 Requirements for 1.1+: 

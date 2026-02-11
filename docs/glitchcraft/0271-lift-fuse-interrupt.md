@@ -3,12 +3,12 @@ title: "Lift Fuse Interrupt"
 ---
 
 # Lift Fuse Interrupt
-_Yee - 22 April 2025_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Puts liftable objects in a strange state where fusing to them causes a null fuse and cancels the state.
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_Yee - 22 April 2025_
 
 ## Instructions
 Lift an object on the same frame that a construct fuses it.

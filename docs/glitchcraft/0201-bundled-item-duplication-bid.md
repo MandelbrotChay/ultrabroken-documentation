@@ -3,12 +3,12 @@ title: "Bundled Item Duplication"
 ---
 
 # Bundled Item Duplication `BID`
-_Ock - 12 December 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Culling dropping an item in a specific way and unloading it causes it to get put into a state of constantly respawning when holding another item, allowing for massive duping.
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_Ock - 12 December 2023_
 
 ## Instructions
 1. Setup sdc culling or like like stick culling (some locations are more consistent than others(look-out landing like likes are terrible))

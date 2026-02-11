@@ -3,12 +3,12 @@ title: "Drop Delay Zuggle"
 ---
 
 # Drop Delay Zuggle `DDZ`
-_LegendofLinkk - 6 June 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Overview
 Dropping a large amount of equipment causes a delay in equipment spawning, enabling zuggling.
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2`
+_LegendofLinkk - 6 June 2023_
 
 ## Instructions
 1. Face a wall

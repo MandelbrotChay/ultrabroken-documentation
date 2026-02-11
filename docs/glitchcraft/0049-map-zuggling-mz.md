@@ -3,12 +3,12 @@ title: "Map Zuggling"
 ---
 
 # Map Zuggling `MZ`
-_BigDUCCO - 23 May 2023_
+`1.0.0` `1.1.0` `1.1.1`
 
 ## Overview
 Allows you to zuggle much faster than older versions
 
-`1.0.0` `1.1.0` `1.1.1`
+_BigDUCCO - 23 May 2023_
 
 ## Instructions
 1. Stand next to a wall facing away from it

@@ -3,12 +3,12 @@ title: "Prologue Escape"
 ---
 
 # Prologue Escape
-_LegendOfLinkk, mulberry, Aergyl, Lightos, The entire glitch hunting community! - October 1st, 2024_
+`1.0.0`
 
 ## Overview
 Using Banc Storage, it's possible to get Link out of the prologue, allowing for a lot of side effects.
 
-`1.0.0`
+_LegendOfLinkk, mulberry, Aergyl, Lightos, The entire glitch hunting community! - October 1st, 2024_
 
 ## Instructions
 Perform Banc Storage. The banc change you use matters. You will need to use either a warp to the Nachoyah (Recall) shrine, or a shrine entry/exit of that same shrine.

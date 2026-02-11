@@ -3,12 +3,12 @@ title: "Enemy Pickpocketing"
 ---
 
 # Enemy Pickpocketing
-_KAIDUDE64 - 16 September 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Lets you take weapons out of enemy's hands
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_KAIDUDE64 - 16 September 2023_
 
 ## Instructions
 1.Have a full inventory and have a weapon on the ground

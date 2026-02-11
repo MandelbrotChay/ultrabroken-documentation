@@ -3,12 +3,12 @@ title: "Capsule Cel Shader Removal"
 ---
 
 # Capsule Cel Shader Removal
-_NX721 - 4 December 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Enables the inside of capsules to remove the cel shader and other shaders
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_NX721 - 4 December 2023_
 
 ## Instructions
 Throw out a Zonai Capsule, put a stake, Ultrahand the capsule to remove collision and attach to the stake, now go in the capsule to remove shaders.

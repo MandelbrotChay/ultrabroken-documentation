@@ -3,12 +3,12 @@ title: "Infinite Damage"
 ---
 
 # Infinite Damage
-_[GamSla341](https://www.youtube.com/@gamsla3413) - 13 May 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Overview
 Damage repeats infinitely during spin attack.
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2`
+_[GamSla341](https://www.youtube.com/@gamsla3413) - 13 May 2023_
 
 ## Instructions
 Mid-charge of a spin with a two-handed weapon, obtain a new item at the exact moment it hits an enemy.

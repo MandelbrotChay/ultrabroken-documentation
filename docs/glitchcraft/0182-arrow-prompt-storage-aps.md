@@ -3,12 +3,12 @@ title: "Arrow Prompt Storage"
 ---
 
 # Arrow Prompt Storage `APS`
-_Ryan?, NghtmaR3 - 4 October 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Allows storage of the arrow prompt and can be given multiple times via an enemy shooting their unloaded arrow.
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_Ryan?, NghtmaR3 - 4 October 2023_
 
 ## Instructions
 1. Have an enemy shoot an arrow to your wooden shield without ever obtaining arrows before.

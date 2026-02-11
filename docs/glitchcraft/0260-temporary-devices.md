@@ -3,12 +3,12 @@ title: "Temporary Devices"
 ---
 
 # Temporary Devices
-_mulberry - November 30th, 2024_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Fusing during the unsheathe animation of a bow causes the fuse to appear for a few frames
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_mulberry - November 30th, 2024_
 
 ## Instructions
 1. Pull out bow

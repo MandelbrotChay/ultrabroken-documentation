@@ -3,12 +3,12 @@ title: "Cull Launching"
 ---
 
 # Cull Launching
-_Asgorne - 1 July 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Overview
 By culling as object while its glued to another object, the unculled object will be sent towards the position of the culled object when it is unculled, creating a large amount of speed that can be transfered to Link.
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2`
+_Asgorne - 1 July 2023_
 
 ## Instructions
 1. Fuse entangle an object and leave the shield in a culling area, staying close enough to prevent culling yet.

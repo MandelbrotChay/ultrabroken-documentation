@@ -3,12 +3,12 @@ title: "Weapon FE"
 ---
 
 # Weapon FE
-_Rediscovered by robuxy2nd and originally found by Physioninja - 1 June 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Overview
 Allows for FE to weapons
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2`
+_Rediscovered by robuxy2nd and originally found by Physioninja - 1 June 2023_
 
 ## Instructions
 1. Fuse entangle weapon to shield 

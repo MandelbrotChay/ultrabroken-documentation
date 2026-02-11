@@ -3,12 +3,12 @@ title: "Save Load Zuggling"
 ---
 
 # Save Load Zuggling `SLZ`
-_NicNac, Flash, BigDUCCO, Wip long sticks enjoyer - 23 May 2023_
+`1.0.0` `1.1.0` `1.1.1`
 
 ## Overview
 Allows you to zuggle anywhere as no wall is required. It is extremely similar to MZ, with only one aditional step of reloading at the end
 
-`1.0.0` `1.1.0` `1.1.1`
+_NicNac, Flash, BigDUCCO, Wip long sticks enjoyer - 23 May 2023_
 
 ## Instructions
 1. Open the rune menu by holding L, select the map rune and open the quickmenu for the desired equipment type (weapon/bow/shield) by spamming the d-pad

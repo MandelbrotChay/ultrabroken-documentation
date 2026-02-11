@@ -3,12 +3,12 @@ title: "Null Dropping"
 ---
 
 # Null Dropping
-_Aergyl - 16 March 2024_
+`1.0.0`
 
 ## Overview
 Displays a glitched and empty chest quickmenu.
 
-`1.0.0`
+_Aergyl - 16 March 2024_
 
 ## Instructions
 1. Empty your inventory in front of a chest, containing the same type as you are dropping

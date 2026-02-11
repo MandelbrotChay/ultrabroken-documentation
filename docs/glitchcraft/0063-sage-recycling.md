@@ -3,12 +3,12 @@ title: "Sage Recycling"
 ---
 
 # Sage Recycling
-_Knight7108 and Candlelor - 28 May 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Resets the cooldown of tulin or sidon.
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_Knight7108 and Candlelor - 28 May 2023_
 
 ## Instructions
 1. Shield surf 

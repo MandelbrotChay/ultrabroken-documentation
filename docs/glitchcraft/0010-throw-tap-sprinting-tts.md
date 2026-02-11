@@ -3,11 +3,11 @@ title: "Throw Tap Sprinting"
 ---
 
 # Throw Tap Sprinting `TTS`
-_Deystroyer, Tauktes - 14 May 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 —
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_Deystroyer, Tauktes - 14 May 2023_
 
 ## Instructions
 Tap B - R - B, repeat

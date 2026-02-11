@@ -3,12 +3,12 @@ title: "Disabled Enemy"
 ---
 
 # Disabled Enemy
-_shio_0725, ralseidewitt - 27 June 2023; 19 November 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Puts the enemy into a doll-like state similar to the glitch back in Breath of the Wild, disabling the enemy's movement.
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_shio_0725, ralseidewitt - 27 June 2023; 19 November 2023_
 
 ## Instructions
 1. Equip Majora's Mask (prefferably) and use BAD (Bow Attachment Desync), and attach a Fire Chuchu, Ice Chuchu and Electric Chuchu jellies, but when switching back to your 5-Shot Bow (Wide Shot does not work), the jellies should not be visible on the tip of the arrow.

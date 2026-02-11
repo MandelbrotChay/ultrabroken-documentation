@@ -3,12 +3,12 @@ title: "Overload Dynamic Zuggle"
 ---
 
 # Overload Dynamic Zuggle
-_mulberry - 19 May 2025_
+`1.0.0` `1.1.0` `1.1.1`
 
 ## Overview
 Picking up a thrown boomerang while zuggle overloaded can cause dynamic zuggle
 
-`1.0.0` `1.1.0` `1.1.1`
+_mulberry - 19 May 2025_
 
 ## Instructions
 1. Zuggle overload

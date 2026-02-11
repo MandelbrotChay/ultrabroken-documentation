@@ -3,12 +3,12 @@ title: "Tulin Pumping"
 ---
 
 # Tulin Pumping
-_Ikkitrix - 14 May 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Preserves the initial boost of tulin
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_Ikkitrix - 14 May 2023_
 
 ## Instructions
 Jump off a ledge and activate Tulin's ability, then close glider and reopen it for a boost, the closing and reopening can be repeated multiple times

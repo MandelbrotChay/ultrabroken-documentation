@@ -3,12 +3,12 @@ title: "Portable Cull Save Load Dupe"
 ---
 
 # Portable Cull Save Load Dupe `PSLD`
-_NghtmaR3 - 17 July 2024_
+`1.2.0` `1.2.1`
 
 ## Overview
 Allows for Save Load Duplication on v1.2.0-1.2.1 by culling Link on the same frame that the process is performed
 
-`1.2.0` `1.2.1`
+_NghtmaR3 - 17 July 2024_
 
 ## Instructions
 1. Setup Portable Culling

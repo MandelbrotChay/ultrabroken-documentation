@@ -3,12 +3,12 @@ title: "Zuggle Overload"
 ---
 
 # Zuggle Overload
-_Zvleon - 17 May 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Allows you to overload your game, causing many other glitches
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_Zvleon - 17 May 2023_
 
 ## Instructions
 Zuggle or Invizuggle 9-10 (1.0.0) / 13-14 (1.1.0-1.2.1) weapons/shields/bows, and optionally load a save

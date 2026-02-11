@@ -3,12 +3,12 @@ title: "Zapshield"
 ---
 
 # Zapshield
-_Aergyl - 16 September 2024_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Fuse entangling a shock emitter to two shields and permaculling one of its FE bases results in a permanently electrified shield which makes applications involving shock more portable
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_Aergyl - 16 September 2024_
 
 ## Instructions
 1. Fuse Entangle a steering stick to a shield and perform Stick Desync Clip with it

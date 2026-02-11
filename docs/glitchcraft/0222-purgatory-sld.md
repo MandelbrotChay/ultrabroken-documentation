@@ -3,12 +3,12 @@ title: "Purgatory SLD"
 ---
 
 # Purgatory SLD
-_mulberry - 11 February 2024_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Allows equipment and objects to go through saves by sending its FE base to purgatory in a specific way.
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_mulberry - 11 February 2024_
 
 ## Instructions
 1. Cold fuse shield A to shield B

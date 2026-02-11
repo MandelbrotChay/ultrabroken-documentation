@@ -3,12 +3,12 @@ title: "Moobe Warping"
 ---
 
 # Moobe Warping
-_Ryan? - 12 January 2024_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Using Moobe and a horse, it's possible to fully warp (opposed to only temporarily) to a preset climbing position.
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_Ryan? - 12 January 2024_
 
 ## Instructions
 1. Set climb coodinates in preperation for Moobe.

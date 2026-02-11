@@ -3,12 +3,12 @@ title: "Infinite Balloon"
 ---
 
 # Infinite Balloon
-_kurone_yuu - 13 June 2024_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Steal Robbie's balloon which has will never deplete.
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_kurone_yuu - 13 June 2024_
 
 ## Instructions
 1. Get far enough into Joshua's quest "Camera Work in the Depths" to be able to auto build the balloon.

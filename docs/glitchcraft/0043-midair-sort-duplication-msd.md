@@ -3,12 +3,12 @@ title: "Midair Sort Duplication"
 ---
 
 # Midair Sort Duplication `MSD`
-_Zas, kurocat471 - 21 May 2023_
+`1.0.0` `1.1.0` `1.1.1`
 
 ## Overview
 Allows duplication of materials while midair.
 
-`1.0.0` `1.1.0` `1.1.1`
+_Zas, kurocat471 - 21 May 2023_
 
 ## Instructions
 1. Be airborne (shield jumping, paragliding or on Mineru)

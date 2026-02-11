@@ -3,12 +3,12 @@ title: "Ascend Rushing"
 ---
 
 # Ascend Rushing
-_R4000 - 15 June 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Allows you to flury rush after ascending
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_R4000 - 15 June 2023_
 
 ## Instructions
 1. Ascend up a platform before being attacked

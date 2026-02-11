@@ -3,12 +3,12 @@ title: "Slugging"
 ---
 
 # Slugging
-_Mozz - 15 June 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Allows Link to hold an unloaded piece of equipment using a like like. This also causes the item to share a relation with the like like, allowing for many glitches
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_Mozz - 15 June 2023_
 
 ## Instructions
 There are 4 methods for this:

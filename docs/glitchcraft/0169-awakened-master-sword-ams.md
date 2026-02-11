@@ -3,13 +3,13 @@ title: "Awakened Master Sword"
 ---
 
 # Awakened Master Sword `AMS`
-_tahatanogame - 4 September 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 You can use gas to leave a minigame and wrong warp into the phantom ganon fight, which makes it possible to escape the fight. 
 The result is that you get to play the game with a special flag that causes the master sword to be unbreakable and do 30 extra damage.
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_tahatanogame - 4 September 2023_
 
 ## Instructions
 1. setup GAS and lock your coordinates at the phantom ganon fight

@@ -3,12 +3,12 @@ title: "Stamina Depletion Freeze"
 ---
 
 # Stamina Depletion Freeze `SDF`
-_Lightos_ - 20 May 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Overview
 Certain actions can cause the stamina depletion to glitch out.
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2`
+_Lightos_ - 20 May 2023_
 
 ## Instructions
 There are several ways of activating it, most are currently unexplained, but this is the most consistent setup:

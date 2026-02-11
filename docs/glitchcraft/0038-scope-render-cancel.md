@@ -3,12 +3,12 @@ title: "Scope Render Cancel"
 ---
 
 # Scope Render Cancel
-_NX721,  eXe - 19 May 2023; 2 June 2023; 9 July 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Removes scope HUD and reveals two borders that show an overlay that renders flames, visual effects, etc. Another version of this glitch can be used to reduce the size of the borders for the camera filter for cinematic shots.
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_NX721,  eXe - 19 May 2023; 2 June 2023; 9 July 2023_
 
 ## Instructions
 Wide Border Version:

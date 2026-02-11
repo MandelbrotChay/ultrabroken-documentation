@@ -3,12 +3,12 @@ title: "Dynamic Zuggle"
 ---
 
 # Dynamic Zuggle
-_Lightos_, Zas, Mulberry, Winnerboi, Ryan?, CS16 - 6 September 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Overview
 Dropping equippment in a specific way causes it to be put into a linked state between drop smuggled and zuggled, while the dynamic zuggled item is alternating between sheathed and unsheated together with your equippment. It can only be canceled by throwing the dynamic zuggled weapon, shocking or closing the game.
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2`
+_Lightos_, Zas, Mulberry, Winnerboi, Ryan?, CS16 - 6 September 2023_
 
 ## Instructions
 Method 1 (1.0.0(Zas & Lightos_)):

@@ -3,12 +3,12 @@ title: "Ascend Storage"
 ---
 
 # Ascend Storage
-_Saria - 19 May 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Misplaces the point where Link goes after using Ascend.
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_Saria - 19 May 2023_
 
 ## Instructions
 1. Find a slope where Link would slide off of and set up a hoverstone (not needed) at the very top. 

@@ -3,12 +3,12 @@ title: "Throwless Storage"
 ---
 
 # Throwless Storage
-_evilgabe, NX721 - 19 June 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0`
 
 ## Overview
 Makes it so that Link puts the weapon in an active state (allows for activation of Zonai Devices at all times).
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0`
+_evilgabe, NX721 - 19 June 2023_
 
 ## Instructions
 1. Fuse any Zonai Device to a weapon (that is not a rocket).

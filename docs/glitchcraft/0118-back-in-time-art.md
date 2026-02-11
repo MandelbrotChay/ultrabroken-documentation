@@ -3,12 +3,12 @@ title: "Back-in-Time Art"
 ---
 
 # Back-in-Time Art
-_R4000, Zas - 18 June 2023; 16 August 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Transfers the picture in Link's House to a previous save. Is also capable of transferring compendium pictures.
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_R4000, Zas - 18 June 2023; 16 August 2023_
 
 ## Instructions
 Picture in Link's house (R4000):

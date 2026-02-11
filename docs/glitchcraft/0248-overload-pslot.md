@@ -3,12 +3,12 @@ title: "Overload PSLOT"
 ---
 
 # Overload PSLOT
-_mulberry - 26 July 2024_
+`1.2.0` `1.2.1+`
 
 ## Overview
 Using Overload it's possible to fully portably PSLOT on current versions
 
-`1.2.0` `1.2.1+`
+_mulberry - 26 July 2024_
 
 ## Instructions
 1. Drop Zuggle 2 shields with overload and portacull.

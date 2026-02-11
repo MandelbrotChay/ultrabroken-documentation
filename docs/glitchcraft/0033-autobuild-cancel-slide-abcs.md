@@ -3,12 +3,12 @@ title: "Autobuild Cancel Slide"
 ---
 
 # Autobuild Cancel Slide `ABCS`
-_Takosensai1 - 18 May 2023_
+`1.0.0` `1.1.0` `1.1.1`
 
 ## Overview
 Allows you to slide on top of the blueprint build over the map at insane speeds, or gain immense amounts of height.
 
-`1.0.0` `1.1.0` `1.1.1`
+_Takosensai1 - 18 May 2023_
 
 ## Instructions
 1. Get some physical materials to create your blueprint autobuild (doesn't require all of them, just the needed ones for flooring).

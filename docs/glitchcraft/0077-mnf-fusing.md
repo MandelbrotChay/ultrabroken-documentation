@@ -3,12 +3,12 @@ title: "MNF Fusing"
 ---
 
 # MNF Fusing
-_LegendofLinkk - 5 June 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Overview
 Allows you to fuse to the MNF
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2`
+_LegendofLinkk - 5 June 2023_
 
 ## Instructions
 1. Equip your unfused MNF and drop the desired fuse in front of Link

@@ -3,12 +3,12 @@ title: "Equipment Collision Zuggle"
 ---
 
 # Equipment Collision Zuggle
-_Zvleon - 16 May 2023_
+`1.0.0` `1.1.0` `1.1.1`
 
 ## Overview
 The original zuggle method discovered by Zvleon.
 
-`1.0.0` `1.1.0` `1.1.1`
+_Zvleon - 16 May 2023_
 
 ## Instructions
 1) Stand infront of a wall. (about 1 link away from it) (facing away from it)

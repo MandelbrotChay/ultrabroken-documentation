@@ -3,12 +3,12 @@ title: "AntiGrav Weapons"
 ---
 
 # AntiGrav Weapons
-_1.0.0-1.1.2 Setup Zas, 1.2 Setup Blize - 28 May 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Puts weapons in an "Anti Gravity" state.
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_1.0.0-1.1.2 Setup Zas, 1.2 Setup Blize - 28 May 2023_
 
 ## Instructions
 1.0.0-1.1.2 Setup:

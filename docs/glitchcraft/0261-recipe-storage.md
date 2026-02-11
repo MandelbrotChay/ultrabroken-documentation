@@ -3,12 +3,12 @@ title: "Recipe Storage"
 ---
 
 # Recipe Storage
-_ock, mulberry - September 14th, 2024; November 10th, 2024_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Delaying the recipe menu by a few frames allow for some holding shenanigans
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_ock, mulberry - September 14th, 2024; November 10th, 2024_
 
 ## Instructions
 Method 1 (1.0.0) (mulberry):

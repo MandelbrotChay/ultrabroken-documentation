@@ -3,12 +3,12 @@ title: "Remote Arrow"
 ---
 
 # Remote Arrow
-_Flash, ElDuende, kirigaya - 2 June 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0`
 
 ## Overview
 Allows you to fire arrows remotely from the location the glitch was set up in.
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0`
+_Flash, ElDuende, kirigaya - 2 June 2023_
 
 ## Instructions
 1. Perform WST (or any other method that can desync your bows) with a Duplex Bow and put Five-Shot Burst on it.

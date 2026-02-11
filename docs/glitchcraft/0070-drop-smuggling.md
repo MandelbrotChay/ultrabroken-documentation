@@ -3,12 +3,12 @@ title: "Drop Smuggling"
 ---
 
 # Drop Smuggling
-_LegendofLinkk - 31 May 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Overview
 Trick the game into thinking a weapon is both dropped and equiped at the same time, leading to strange behaviors.
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2`
+_LegendofLinkk - 31 May 2023_
 
 ## Instructions
 1. Find a shock source and hold a weapon (works with bows and shields too) in Links hand.

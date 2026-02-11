@@ -3,12 +3,12 @@ title: "Zoggle"
 ---
 
 # Zoggle
-_Ryan?, ock - 4 January 2024_
+`1.2.0` `1.2.1`
 
 ## Overview
 Using deentenglement to untie the wuggled equippment from their fe parent
 
-`1.2.0` `1.2.1`
+_Ryan?, ock - 4 January 2024_
 
 ## Instructions
 1. Make a rocket shield and Like like stick cull

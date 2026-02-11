@@ -3,12 +3,12 @@ title: "New Item Desync"
 ---
 
 # New Item Desync
-_[Modoki_returns](https://twitter.com/Modoki_returns) - 12 May 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Desyncs equipment after sorting a new item pickup, allowing for single use duplication, durability transfer, and transfering fused items.
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_[Modoki_returns](https://twitter.com/Modoki_returns) - 12 May 2023_
 
 ## Instructions
 - [ ] The new item must change positions when you sort your inventory. So for shields & bows, the new item must have higher strength than the lowest strength shield/bow currently in your inventory. Weapons are slightly more complicated because they can only be sorted by type.

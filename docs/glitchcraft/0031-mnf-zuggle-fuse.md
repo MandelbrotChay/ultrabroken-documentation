@@ -3,12 +3,12 @@ title: "MNF Zuggle Fuse"
 ---
 
 # MNF Zuggle Fuse
-_Zvleon - 18 May 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Allows to fuse to the MNF
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_Zvleon - 18 May 2023_
 
 ## Instructions
 1. You need to have MNF and a not fused weapon.

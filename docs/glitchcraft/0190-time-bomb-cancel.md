@@ -3,12 +3,12 @@ title: "Time Bomb cancel"
 ---
 
 # Time Bomb cancel
-_tzakazuki - 4 November 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 By putting away your shield during a specific moment while a time bomb fused to the mastersword is going off, it will explode without any damage to the environment.
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_tzakazuki - 4 November 2023_
 
 ## Instructions
 1. Attack with a time-bomb mastersword

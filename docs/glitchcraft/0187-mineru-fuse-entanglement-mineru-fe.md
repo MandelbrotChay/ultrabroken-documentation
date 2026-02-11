@@ -3,12 +3,12 @@ title: "Mineru Fuse Entanglement"
 ---
 
 # Mineru Fuse Entanglement `MFE`
-_ock (Method 1 & 3), WinnerBoi77 (Method 2) - 18 October 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Fusing to Mineru and then pausing the game or culling Link while riding Mineru on a specific frame causes objects to FE to Mineru
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_ock (Method 1 & 3), WinnerBoi77 (Method 2) - 18 October 2023_
 
 ## Instructions
 Method 1:

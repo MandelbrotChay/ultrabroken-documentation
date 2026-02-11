@@ -3,12 +3,12 @@ title: "Buoy Bouncing"
 ---
 
 # Buoy Bouncing
-_InAMuffinCup - 25 May 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Get an abnormaly large shield jump boost when coming into contact with water.
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_InAMuffinCup - 25 May 2023_
 
 ## Instructions
 Time a shield surf to be at the moment before Link starts swimming in water.

@@ -3,12 +3,12 @@ title: "Wireless Energy"
 ---
 
 # Wireless Energy
-_NaN Gogh - 11 July 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Overview
 Creates a wireless connection to a culled battery. By attaching a dragon part to the battery shield, you can increase the range up to 2000m.
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2`
+_NaN Gogh - 11 July 2023_
 
 ## Instructions
 1. Ultrahand a fuse entangled battery to a zonai device

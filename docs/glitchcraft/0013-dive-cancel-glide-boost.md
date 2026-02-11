@@ -3,12 +3,12 @@ title: "Dive Cancel Glide Boost"
 ---
 
 # Dive Cancel Glide Boost
-_kurocat471, Mety333 - 14 May 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Allows you to preserve the increased speed from diving with the Glide Suit into paragliding
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_kurocat471, Mety333 - 14 May 2023_
 
 ## Instructions
 1. Skydive with the Glide Suit and get up to speed

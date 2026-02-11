@@ -3,12 +3,12 @@ title: "Spring Fall Damage Cancel"
 ---
 
 # Spring Fall Damage Cancel
-_Mozz - 15 May 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Currently allows you to fall from certian heights without taking fall damage
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_Mozz - 15 May 2023_
 
 ## Instructions
 1. Jump or shield surf off a ledge. (Note: if you shield surfed you'll need to pause and unequip the shield before entering bullet time). 

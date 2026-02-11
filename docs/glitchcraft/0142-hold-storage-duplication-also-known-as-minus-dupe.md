@@ -3,12 +3,12 @@ title: "Hold Storage Duplication"
 ---
 
 # Hold Storage Duplication
-_NaN Gogh, Mozz - 3 July 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Allows you to dupe items via hold storage.
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_NaN Gogh, Mozz - 3 July 2023_
 
 ## Instructions
 1. Activate hold storage onto a horse.

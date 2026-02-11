@@ -3,12 +3,12 @@ title: "Mineru Aim Permanence"
 ---
 
 # Mineru Aim Permanence
-_?_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Lets you bring Mineru's Construct into towns and stables
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_?_
 
 ## Instructions
 1. While outside the town or stable, get on Mineru's Construct

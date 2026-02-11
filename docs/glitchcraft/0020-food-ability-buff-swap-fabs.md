@@ -3,12 +3,12 @@ title: "Food Ability Buff Swap"
 ---
 
 # Food Ability Buff Swap `FABS`
-_fabs - 16 May 2023_
+`1.0.0` `1.1.0` `1.1.1`
 
 ## Overview
 Allows you to get roasted food (stackable) with a food effect
 
-`1.0.0` `1.1.0` `1.1.1`
+_fabs - 16 May 2023_
 
 ## Instructions
 1. Cook a meal with the desired effect

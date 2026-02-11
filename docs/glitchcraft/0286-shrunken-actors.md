@@ -3,12 +3,12 @@ title: "Shrunken Actors"
 ---
 
 # Shrunken Actors
-_mulberry - 26 October 2025_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Overview
 Permanently shrink any ultrahandable object (ultrabroken method)
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2`
+_mulberry - 26 October 2025_
 
 ## Instructions
 Discord

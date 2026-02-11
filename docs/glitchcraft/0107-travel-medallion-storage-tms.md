@@ -3,12 +3,12 @@ title: "Travel Medallion storage"
 ---
 
 # Travel Medallion storage `TMS`
-_kirigaya - 16 June 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Places the travel medallion at links feet after loading a file.
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_kirigaya - 16 June 2023_
 
 ## Instructions
 1. Go to 0295 -1552 1364

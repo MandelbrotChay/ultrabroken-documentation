@@ -3,7 +3,7 @@ title: "Midair Item Transmutation"
 ---
 
 # Midair Item Transmutation `MIT`
-_eXe - 20 May 2023_
+`1.1.0` `1.1.1`
 
 ## Overview
 Allows you to transmutate any material very fast. Technical explanation: let's say you have
@@ -12,7 +12,7 @@ Slot B: [8x Banana]
 Slot C: [8x Fish]
 then you do the glitch to get more bananas, what's happening is the game is taking 1 item from slot A, and 4 items from slot B, but once you close your inventory, slot A is empty so then slot B becomes slot A, and slot C becomes slot B, so now it removes the items from the new slot B, which is now the fish, but it still drops bananas on the ground, so when you pick those up you then have more bananas
 
-`1.1.0` `1.1.1`
+_eXe - 20 May 2023_
 
 ## Instructions
 This glitch has been made redundant by MSD, see that for a better method

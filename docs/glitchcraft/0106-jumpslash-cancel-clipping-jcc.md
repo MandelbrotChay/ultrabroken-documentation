@@ -3,12 +3,12 @@ title: "Jumpslash Cancel Clipping"
 ---
 
 # Jumpslash Cancel Clipping `JCC`
-_Mozz - 16 June 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Allows for clipping through thin ceilings.
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_Mozz - 16 June 2023_
 
 ## Instructions
 Perform any jumpslash cancel Infinite Height variant against a ceiling until Links head clips through while in bullet time. 

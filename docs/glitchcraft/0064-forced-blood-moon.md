@@ -3,12 +3,12 @@ title: "Forced Blood Moon"
 ---
 
 # Forced Blood Moon
-_1789(@W0ERYySQgZyGOY3), simonfirefighter, Maxmasher, Flash, acaepius - 28 May 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Allows you to force a blood moon whenever you want
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_1789(@W0ERYySQgZyGOY3), simonfirefighter, Maxmasher, Flash, acaepius - 28 May 2023_
 
 ## Instructions
 1. Find a wall that is made of destroyable material. Something that you would be able to bomb to destroy

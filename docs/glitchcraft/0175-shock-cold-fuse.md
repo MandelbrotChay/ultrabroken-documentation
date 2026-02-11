@@ -3,12 +3,12 @@ title: "Shock Cold Fuse"
 ---
 
 # Shock Cold Fuse
-_Zas - 11 September 2023_
+`1.0.0`
 
 ## Overview
 Interrupting a fuse on the first possible frame with shock causes cold fusion
 
-`1.0.0`
+_Zas - 11 September 2023_
 
 ## Instructions
 1. Use a shock emitter with the Thunder Helm equipped and electrify the weapon/shield while fuse is active with an object in range

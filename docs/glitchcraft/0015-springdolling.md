@@ -3,12 +3,12 @@ title: "Springdolling"
 ---
 
 # Springdolling
-_Mozz - 15 May 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 allows you to launch a large horizontal distance using springs
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_Mozz - 15 May 2023_
 
 ## Instructions
 1. Set a spring facing in the dirrection you want to launch. From there, stand next to the spring. 

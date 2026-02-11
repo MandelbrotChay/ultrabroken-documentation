@@ -3,12 +3,12 @@ title: "Lift Smuggle"
 ---
 
 # Lift Smuggle
-_Blackmars - 3 February 2024_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 By picking up an item like a battery while a specific cutscene (e.g. korok) is playing, you can get into a state similar to lift smuggeling (botw glitch).
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_Blackmars - 3 February 2024_
 
 ## Instructions
 1. Perform shield smuggle culling or shock (can't be on links back)

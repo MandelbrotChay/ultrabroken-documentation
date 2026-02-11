@@ -3,12 +3,12 @@ title: "Fuse Entangle Drop Zuggle"
 ---
 
 # Fuse Entangle Drop Zuggle `FEDZ`
-_Ryan? - 17 June 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Overview
 Similarily to FEWZ, this is not a real drop zuggle, but rather a shield zuggle
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2`
+_Ryan? - 17 June 2023_
 
 ## Instructions
 1. FE a weapon to a shield and drop them both. (Optional: Fuse something to the weapon if needed)

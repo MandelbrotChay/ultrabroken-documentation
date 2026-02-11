@@ -3,12 +3,12 @@ title: "Drop Zuggle"
 ---
 
 # Drop Zuggle
-_BigDUCCO - 15 June 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Allows for a drop smuggled item to have the same transfer properties as zuggle
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_BigDUCCO - 15 June 2023_
 
 ## Instructions
 1. Drop smuggle your target weapon

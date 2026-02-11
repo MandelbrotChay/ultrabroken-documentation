@@ -3,12 +3,12 @@ title: "Animation Swap"
 ---
 
 # Animation Swap
-_Swinginman - 17 May 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Combine animation sets when zuggle overloaded.
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_Swinginman - 17 May 2023_
 
 ## Instructions
 1. Zuggle overload

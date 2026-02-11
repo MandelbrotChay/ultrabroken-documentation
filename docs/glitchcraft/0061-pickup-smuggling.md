@@ -3,12 +3,12 @@ title: "Pickup Smuggling"
 ---
 
 # Pickup Smuggling
-_Ame - 28 May 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Allows Link to pick up an object as if he were holding it like an item.
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_Ame - 28 May 2023_
 
 ## Instructions
 1. Hit A to pickup the object and immediately pause with -

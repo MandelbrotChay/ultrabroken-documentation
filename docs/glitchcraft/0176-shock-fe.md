@@ -3,12 +3,12 @@ title: "Shock FE"
 ---
 
 # Shock FE
-_Zas - 12 September 2023_
+`1.0.0`
 
 ## Overview
 Interrupting a fuse to a zuggled item causes FE
 
-`1.0.0`
+_Zas - 12 September 2023_
 
 ## Instructions
 1. zuggle a shield or a weapon

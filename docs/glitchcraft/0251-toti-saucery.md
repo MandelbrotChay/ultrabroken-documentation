@@ -3,12 +3,12 @@ title: "Toti Saucery"
 ---
 
 # Toti Saucery
-_Toti Sauce, Anti-grav discovered by Toti Sauce and Telkic - 17 August 2024_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 FSFEing an undiscovered item can cause several effects
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_Toti Sauce, Anti-grav discovered by Toti Sauce and Telkic - 17 August 2024_
 
 ## Instructions
 Perform FSFE on an undiscovered item/weapon to any type of equipment. This turns the undiscovered target invisible, creating what is called an "invisitem".

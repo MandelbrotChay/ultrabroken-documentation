@@ -3,12 +3,12 @@ title: "Ghost Stick Clipping"
 ---
 
 # Ghost Stick Clipping
-_rocomox - 28 May 2023_
+`1.0.0` `1.1.0` `1.1.1`
 
 ## Overview
 Allows Link to clip through walls by stepping onto a steering stick during ABCS.
 
-`1.0.0` `1.1.0` `1.1.1`
+_rocomox - 28 May 2023_
 
 ## Instructions
 1. Create an autobuild of two steering sticks (one in front of the other diagonally, rotated 45 degrees). 

@@ -3,12 +3,12 @@ title: "Minecart Rail Collision Launching"
 ---
 
 # Minecart Rail Collision Launching `MRCL`
-_そら-さん - 18 May 2023_
+`1.0.0` `1.1.0` `1.1.1`
 
 ## Overview
 Allows the usage of minecarts to be launched from awkward collision grabbing on rails.
 
-`1.0.0` `1.1.0` `1.1.1`
+_そら-さん - 18 May 2023_
 
 ## Instructions
 —

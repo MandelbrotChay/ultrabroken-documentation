@@ -3,12 +3,12 @@ title: "Kilovictor's quicksmuggle"
 ---
 
 # Kilovictor's quicksmuggle
-_Kilovictor - 23 February 2024_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 fusing an sdc stick to equipment allows for a different, stronger cull, which can be used to cull equipment.
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_Kilovictor - 23 February 2024_
 
 ## Instructions
 1. Perform sdc (you can use cold fuse to reduce the risk of cull locking)

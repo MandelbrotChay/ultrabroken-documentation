@@ -3,12 +3,12 @@ title: "Durability-"
 ---
 
 # Durability-
-_Zas - 11 September 2023_
+`1.0.0`
 
 ## Overview
 Dropping and picking up a bow with a durability modifier removes the extra durability.
 
-`1.0.0`
+_Zas - 11 September 2023_
 
 ## Instructions
 Drop a bow that has Durability (or D+) in your inventory without Link holding it.

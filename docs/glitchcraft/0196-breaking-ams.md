@@ -3,12 +3,12 @@ title: "Breaking AMS"
 ---
 
 # Breaking AMS
-_Infrasolid - 26 November 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 By using certain setups, it is possible to ignore the no durability use.
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_Infrasolid - 26 November 2023_
 
 ## Instructions
 Method 1:

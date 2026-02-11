@@ -3,12 +3,12 @@ title: "Zonai Inventory Shift Dupe"
 ---
 
 # Zonai Inventory Shift Dupe `ZISD`
-_Ryan?, Quantim - 10 July 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Uses Memory Buffering and MTD to duplicate Zonai Devices
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_Ryan?, Quantim - 10 July 2023_
 
 ## Instructions
 Requirements: Have 1 of a Zonai Device to throw Have 10 of another Zonai Device

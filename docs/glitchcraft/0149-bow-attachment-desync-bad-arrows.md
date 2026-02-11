@@ -3,12 +3,12 @@ title: "Bow Attachment Desync"
 ---
 
 # Bow Attachment Desync `BAD`
-_Zas, Aeolian - 11 July 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Allows you to attach different materials to multishot arrows.
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_Zas, Aeolian - 11 July 2023_
 
 ## Instructions
 1. Stand next to a wall facing away from it

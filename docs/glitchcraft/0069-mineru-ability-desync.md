@@ -3,12 +3,12 @@ title: "Mineru Ability Desync"
 ---
 
 # Mineru Ability Desync
-_Sillicat - 30 May 2023_
+`1.1.0` `1.1.1`
 
 ## Overview
 Desyncs Flame Emitters attached to Mineru
 
-`1.1.0` `1.1.1`
+_Sillicat - 30 May 2023_
 
 ## Instructions
 1. Wait for Mineru to use a Flame Emitter

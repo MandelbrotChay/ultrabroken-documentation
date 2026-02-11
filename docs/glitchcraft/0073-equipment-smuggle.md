@@ -3,12 +3,12 @@ title: "Equipment Smuggle"
 ---
 
 # Equipment Smuggle
-_sleepyppls, Mozz, mulberry, NaN Gogh - 1 June 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 An equipment state where items remain equipped in Link's hands after being removed from the inventory
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_sleepyppls, Mozz, mulberry, NaN Gogh - 1 June 2023_
 
 ## Instructions
 Shock Smuggle

@@ -3,12 +3,12 @@ title: "Cutscene Combo Amplifier"
 ---
 
 # Cutscene Combo Amplifier
-_Lightos_ - 22 December 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Extends and stacks the damage frames of an attack with memory buffering, causing huge damage.
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_Lightos_ - 22 December 2023_
 
 ## Instructions
 1. Attack something with a weapon or shield

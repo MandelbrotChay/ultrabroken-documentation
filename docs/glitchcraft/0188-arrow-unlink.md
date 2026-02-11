@@ -3,12 +3,12 @@ title: "Arrow Unlink"
 ---
 
 # Arrow Unlink
-_R4000 - 26 October 2023_
+`1.0.0`
 
 ## Overview
 makes arrow float away allowing you to spawn fused stuff in other loactions
 
-`1.0.0`
+_R4000 - 26 October 2023_
 
 ## Instructions
 1.Zuggle until your bow drops 

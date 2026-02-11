@@ -3,12 +3,12 @@ title: "Recall Drop Stacking"
 ---
 
 # Recall Drop Stacking
-_Telkic, mulberry - 4 January 2025_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Overview
 Dropping many zonai devices in recall causes intense frame drops
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2`
+_Telkic, mulberry - 4 January 2025_
 
 ## Instructions
 1. Select the recall rune from the L menu and enter the item quick menu before recall activates

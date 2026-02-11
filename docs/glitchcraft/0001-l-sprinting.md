@@ -3,11 +3,11 @@ title: "L Sprinting"
 ---
 
 # L Sprinting
-_Tauktes - 12 May 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 —
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_Tauktes - 12 May 2023_
 
 ## Instructions
 This is an infinite stamina sprinting method. It is not the fastest one and the timing is very hard.

@@ -3,12 +3,12 @@ title: "Recall Cancel"
 ---
 
 # Recall Cancel
-_R4000 - 20 July 2023_
+`1.2.0` `1.2.1`
 
 ## Overview
 Lets you delay the dropping of weapon and items
 
-`1.2.0` `1.2.1`
+_R4000 - 20 July 2023_
 
 ## Instructions
 1. Hold L and go to recall

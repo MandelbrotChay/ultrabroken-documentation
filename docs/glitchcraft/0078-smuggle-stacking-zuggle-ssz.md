@@ -3,12 +3,12 @@ title: "Smuggle Stacking Zuggle"
 ---
 
 # Smuggle Stacking Zuggle `SSZ`
-_BigDUCCO, LegendofLink, Mozz - 6 June 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Overview
 Allows to zuggle bows and shields in version 1.1.2. Weapon zuggle on 1.1.2 is a little bit more complicated. Check the next glitch (FEZ) for that.
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2`
+_BigDUCCO, LegendofLink, Mozz - 6 June 2023_
 
 ## Instructions
 1. Perform an equipment smuggle with either a bow or shield.

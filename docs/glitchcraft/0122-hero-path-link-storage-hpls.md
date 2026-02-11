@@ -3,12 +3,12 @@ title: "Hero Path Link Storage"
 ---
 
 # Hero Path Link Storage `HPLS`
-_Lightos_ - 20 June 2023_
+`1.1.0` `1.1.1` `1.1.2`
 
 ## Overview
 Visual glitch with the hero path.
 
-`1.1.0` `1.1.1` `1.1.2`
+_Lightos_ - 20 June 2023_
 
 ## Instructions
 Press X, then close the hero path and the map quickly.

@@ -3,12 +3,12 @@ title: "Midair Throw Duplication"
 ---
 
 # Midair Throw Duplication `MTD`
-_quantim - 2 July 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Allows you to dupe any item that can be thrown, including Zonai capsules.
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_quantim - 2 July 2023_
 
 ## Instructions
 1. Have only 1 of the item you're trying to dupe in inventory, and find a decently high ledge.

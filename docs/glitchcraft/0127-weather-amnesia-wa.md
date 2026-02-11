@@ -3,12 +3,12 @@ title: "Weather Amnesia"
 ---
 
 # Weather Amnesia `WA`
-_pyuk - 25 June 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Viewing a memory near a cave will overwrite its local weather with the overworld's weather.
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_pyuk - 25 June 2023_
 
 ## Instructions
 1. Position Link near a cave

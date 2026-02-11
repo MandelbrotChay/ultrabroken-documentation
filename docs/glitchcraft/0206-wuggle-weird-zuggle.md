@@ -3,12 +3,12 @@ title: "Wuggle"
 ---
 
 # Wuggle
-_ock, robuxy2nd - 29 December 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 By dropping and equipping equipment in a specific way during a cull causes a glitch similar to zuggle.
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_ock, robuxy2nd - 29 December 2023_
 
 ## Instructions
 1. Fe your target equipment

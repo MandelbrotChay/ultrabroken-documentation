@@ -3,12 +3,12 @@ title: "Clear Camera/Scope"
 ---
 
 # Clear Camera/Scope
-_NX721 - 3 July 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Allows for First Person Gameplay, removing the HUD from the camera and scope.
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_NX721 - 3 July 2023_
 
 ## Instructions
 1. Peform Hold Smuggling, but not Full Hold Smuggling.

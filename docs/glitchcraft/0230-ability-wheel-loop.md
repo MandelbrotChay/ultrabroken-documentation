@@ -3,12 +3,12 @@ title: "Ability Wheel Loop"
 ---
 
 # Ability Wheel Loop
-_Zas - 11 March 2024_
+`1.0.0`
 
 ## Overview
 Gets you stuck in the ability wheel indefinitely opening and closing.
 
-`1.0.0`
+_Zas - 11 March 2024_
 
 ## Instructions
 1. Begin holding L

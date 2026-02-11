@@ -3,13 +3,13 @@ title: "Modifier Deletion Weapon State Transfer"
 ---
 
 # Modifier Deletion Weapon State Transfer `MDWST`
-_?_
+`1.0.0`
 Credit is almost impossible to pinpoint. Many people have found this, but most of the research was done by Zas
 
 ## Overview
 Equipping and dropping items in a specific order causes wst with a sideeffect of deleting modifiers.
 
-`1.0.0`
+_?_
 
 ## Instructions
 There are a couple of variants:

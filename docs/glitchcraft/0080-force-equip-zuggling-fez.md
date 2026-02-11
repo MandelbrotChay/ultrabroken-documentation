@@ -3,12 +3,12 @@ title: "Force Equip Zuggling"
 ---
 
 # Force Equip Zuggling `FEZ`
-_BigDUCCO, Mozz, Rhkellz, Syb, NaN Gogh - 7 June 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Overview
 Allows Link to zuggle weapons using any interaction that forcefully equips a weapon. Best achieved by shrines or quests.
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2`
+_BigDUCCO, Mozz, Rhkellz, Syb, NaN Gogh - 7 June 2023_
 
 ## Instructions
 This is best achieved at, althought isn't specific too, Mayachideg Shrine.

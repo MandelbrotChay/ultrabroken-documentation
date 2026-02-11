@@ -3,12 +3,12 @@ title: "Like-Like Fuse Storage"
 ---
 
 # Like-Like Fuse Storage
-_Mozz - 18 June 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0`
 
 ## Overview
 Fusing to an item on the same frame that a like-like eats it causes fuse storage
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0`
+_Mozz - 18 June 2023_
 
 ## Instructions
 1. Equip helper weapon/shield. 

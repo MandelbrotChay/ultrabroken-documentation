@@ -3,12 +3,12 @@ title: "Octo-balloon Detanglement"
 ---
 
 # Octo-balloon Detanglement
-_mulberry - 16 November 2025_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1` `1.3.0` `1.4.0` `1.4.1` `1.4.2` `Switch 2`
 
 ## Overview
 Allows for easy detanglement of any shield using octoballoons
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1` `1.3.0` `1.4.0` `1.4.1` `1.4.2` `Switch 2`
+_mulberry - 16 November 2025_
 
 ## Instructions
 1. Fuse octoballoon to a shield and equip FE source shield

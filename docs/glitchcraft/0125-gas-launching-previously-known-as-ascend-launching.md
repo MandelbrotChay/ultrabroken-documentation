@@ -3,12 +3,12 @@ title: "GAS Launching"
 ---
 
 # GAS Launching
-_NX721, pyuk, Flash, Mozz, Blize - 25 June 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Causes the object to fling Link great distances with relative ease.
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_NX721, pyuk, Flash, Mozz, Blize - 25 June 2023_
 
 ## Instructions
 1. Spawn in a fan and fuse it to your shield.

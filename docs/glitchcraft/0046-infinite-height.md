@@ -3,12 +3,12 @@ title: "Infinite Height"
 ---
 
 # Infinite Height
-_Mozz, Physioninja - 22 May 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Allows you chain jump attacks to jump infinitly.
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_Mozz, Physioninja - 22 May 2023_
 
 ## Instructions
 1. Jump attack

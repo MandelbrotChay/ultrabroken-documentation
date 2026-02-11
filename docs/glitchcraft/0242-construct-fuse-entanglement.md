@@ -3,12 +3,12 @@ title: "Construct Fuse Entanglement"
 ---
 
 # Construct Fuse Entanglement
-_mulberry - 30 June 2024_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Allows equipment to be fuse entangled to captain constructs' weapons. This only works with bows, shields, and weapons.
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_mulberry - 30 June 2024_
 
 ## Instructions
 1. Equip the item you want to FE to a captain construct and drop it nearby

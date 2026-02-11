@@ -3,12 +3,12 @@ title: "Like-Like Zuggling"
 ---
 
 # Like-Like Zuggling
-_NaN Gogh, Ryan?, Blackmars - 15 June 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Allows for zuggling via slugging
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_NaN Gogh, Ryan?, Blackmars - 15 June 2023_
 
 ## Instructions
 Method 1 (works 1.0.0-1.1.2):

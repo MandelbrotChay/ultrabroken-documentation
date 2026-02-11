@@ -3,12 +3,12 @@ title: "Memory Interrupt"
 ---
 
 # Memory Interrupt
-_mulberry - October 1st, 2024_
+`1.0.0`
 
 ## Overview
 Interrupting a memory causes a forced pause after a dialogue
 
-`1.0.0`
+_mulberry - October 1st, 2024_
 
 ## Instructions
 1. Select a memory

@@ -3,12 +3,12 @@ title: "Mineru PSLOT"
 ---
 
 # Mineru PSLOT `MPSLOT`
-_Discovered by mulberry, setup by Armindo, Emiya - 27 July 2024_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1+`
 
 ## Overview
 Using Mineru Culling it's possible to send a piece of equipment to culled purgatory portably, allowing for PSLOT
 
-`1.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1+`
+_Discovered by mulberry, setup by Armindo, Emiya - 27 July 2024_
 
 ## Instructions
 Versions 1.2+:

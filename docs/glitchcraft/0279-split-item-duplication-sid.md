@@ -3,12 +3,12 @@ title: "Split Item Duplication"
 ---
 
 # Split Item Duplication `SID`
-_Telkic, mulberry, Winnerboi77 - 19 June 2025_
+`1.2.0` `1.2.1+`
 
 ## Overview
 Allows you to dupe materials through Stack Splitting
 
-`1.2.0` `1.2.1+`
+_Telkic, mulberry, Winnerboi77 - 19 June 2025_
 
 ## Instructions
 1. Perform Stack Splitting on your target, to have a stack of 1 and then a stack of at least 2 or more.

@@ -3,12 +3,12 @@ title: "Mineru Cull Storage"
 ---
 
 # Mineru Cull Storage
-_ofstrings2 - 9 November 2025_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1` `1.3.0` `1.4.0` `1.4.1` `1.4.2` `Switch 2`
 
 ## Overview
 Stores the callback of Mineru while mouted on her, useful for swap resync zuggle setups
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1` `1.3.0` `1.4.0` `1.4.1` `1.4.2` `Switch 2`
+_ofstrings2 - 9 November 2025_
 
 ## Instructions
 1. While riding Mineru, dismount and immediately take out a battery (or another zonai device of a similar size) and re-mount Mineru

@@ -3,12 +3,12 @@ title: "Horse Duping"
 ---
 
 # Horse Duping
-_ock - 22 March 2024_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Killing a horse while in a specific cull setup, sends it to the horse god without killing it.
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_ock - 22 March 2024_
 
 ## Instructions
 1. perform sdc

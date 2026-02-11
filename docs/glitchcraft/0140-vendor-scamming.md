@@ -3,12 +3,12 @@ title: "Vendor Scamming"
 ---
 
 # Vendor Scamming
-_NX721, Mozz, NaN Gogh - 3 July 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0`
 
 ## Overview
 Allows you to infinitely sell items to (steal from) a vendor using Hold Storage/Smuggling.
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0`
+_NX721, Mozz, NaN Gogh - 3 July 2023_
 
 ## Instructions
 1. Activate hold storage onto a horse.

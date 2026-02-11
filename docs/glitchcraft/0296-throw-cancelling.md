@@ -3,12 +3,12 @@ title: "Throw Cancelling"
 ---
 
 # Throw Cancelling
-_Quelfth_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Allows you to cancel the ending animation of throwing via Runes, allowing you to throw faster
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_Quelfth_
 
 ## Instructions
 1. Throw an item

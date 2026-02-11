@@ -3,12 +3,12 @@ title: "Display Master Sword"
 ---
 
 # Display Master Sword
-_Zas - 8 June 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
 ## Overview
 Allows you to display the master sword, damaged master sword or MsgNotFound in a weapon display
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2`
+_Zas - 8 June 2023_
 
 ## Instructions
 1. Zuggle Overload.

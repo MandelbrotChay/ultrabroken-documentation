@@ -3,11 +3,11 @@ title: "Extended Throw Sprinting"
 ---
 
 # Extended Throw Sprinting `ETS`
-_briochoc - 12 May 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 —
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_briochoc - 12 May 2023_
 
 ## Instructions
 Hold B, tap R, repeat

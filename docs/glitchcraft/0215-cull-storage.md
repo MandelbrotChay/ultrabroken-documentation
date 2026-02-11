@@ -3,12 +3,12 @@ title: "Cull Storage"
 ---
 
 # Cull Storage
-_mulberry - 20 January 2024_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Culling and unculling an sdc stick in a specific way allows you to store its cull.
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_mulberry - 20 January 2024_
 
 ## Instructions
 There exist a couple variations, this variation is the easiest: (Mulberry, Lightos_)

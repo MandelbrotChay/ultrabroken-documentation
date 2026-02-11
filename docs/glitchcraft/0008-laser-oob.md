@@ -3,12 +3,12 @@ title: "Laser-OOB"
 ---
 
 # Laser-OOB
-_Xeryph - 13 May 2023_
+`1.0.0` `1.1.0` `1.1.1`
 
 ## Overview
 The game puts a floor inside Link
 
-`1.0.0` `1.1.0` `1.1.1`
+_Xeryph - 13 May 2023_
 
 ## Instructions
 Go into a laser, slowly glide down, when the floor flips back up you are out of bounds

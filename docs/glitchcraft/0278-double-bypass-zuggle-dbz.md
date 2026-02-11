@@ -3,12 +3,12 @@ title: "Double Bypass Zuggle"
 ---
 
 # Double Bypass Zuggle `DBZ`
-_mulberry, dt13269 for making the culling logger which allowed for the discovery of the drop swap culling bypass frame in the menu - 16 June 2025_
+`1.2.0` `1.2.1+`
 
 ## Overview
 Using a very specific and complex setup, it's possible to bypass dpad lock as well as drop swap culling, effectively giving parentless unculled zuggle on 1.2+
 
-`1.2.0` `1.2.1+`
+_mulberry, dt13269 for making the culling logger which allowed for the discovery of the drop swap culling bypass frame in the menu - 16 June 2025_
 
 ## Instructions
 1. Prepare a way of intangibly culling Link (SDC parent in culling area works great), as well as portacull equipment (you may use the same SDC stick for both the SDC parent and the portacull). Also prepare a topaz longblade if possible. Equip your target.

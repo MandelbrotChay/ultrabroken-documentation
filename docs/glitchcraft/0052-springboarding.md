@@ -3,12 +3,12 @@ title: "Springboarding"
 ---
 
 # Springboarding
-_Mozz - 24 May 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Spring jump across terrain for as long as shield durability lasts.
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_Mozz - 24 May 2023_
 
 ## Instructions
 1. Fuse entangle a spring to a shield. 

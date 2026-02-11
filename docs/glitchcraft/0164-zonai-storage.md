@@ -3,12 +3,12 @@ title: "Zonai Storage"
 ---
 
 # Zonai Storage
-_bebu0815 - 13 August 2023_
+`1.0.0`
 
 ## Overview
 Allows Zonai devices to be stored and taken into shrines
 
-`1.0.0`
+_bebu0815 - 13 August 2023_
 
 ## Instructions
 1. Select any Zonai device 

@@ -3,12 +3,12 @@ title: "Cull Storage Zuggle"
 ---
 
 # Cull Storage Zuggle `CSZ`
-_mulberry, Blackmars - 18 July 2024_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Uses cull storage to temporarily bypass the equipment swap and drop restrictions on newer versions, allowing for weapons to be zuggled easily on v1.1.2
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_mulberry, Blackmars - 18 July 2024_
 
 ## Instructions
 1. FE a steering stick to a shield and perform SDC

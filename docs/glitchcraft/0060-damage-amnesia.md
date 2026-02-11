@@ -3,12 +3,12 @@ title: "Damage Amnesia"
 ---
 
 # Damage Amnesia
-_Mozz - 27 May 2023_
+`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Overview
 Allows Link to negate sources of damage.
 
-`1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
+_Mozz - 27 May 2023_
 
 ## Instructions
 Pause at the moment before taking damage and view a memory in the menu (for longer duration sources of damage, multiple memories may be required). Then unpause.

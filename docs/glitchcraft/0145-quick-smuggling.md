@@ -3,12 +3,12 @@ title: "Quick Smuggling"
 ---
 
 # Quick Smuggling
-_Suishi - 10 July 2023_
+`1.2.0`
 
 ## Overview
 Allows for easy and quick smuggling of any equipment, including arrow smuggle.
 
-`1.2.0`
+_Suishi - 10 July 2023_
 
 ## Instructions
 1. Open a menu (d-pad or inventory)
