@@ -25,6 +25,24 @@ Quick tips for the GitHub web editor:
 - Prefer relative links for cross-references inside the docs (e.g. `../effects/index.md`).
 - For images, put files in `docs/assets/images/` and reference them with relative paths.
 
+Additional editor conveniences
+- Use editor-friendly search links: write Markdown links that start with `search:` to create an editor-only trigger for the site's search overlay. Example:
+
+```markdown
+[Slugging](search:Slugging)
+```
+
+    These links are intercepted client-side and open the Material theme search with the provided query instead of navigating away; they are safe to edit in GitHub and make finding related content easier.
+
+- Level-2 section separators: to keep `##` sections visually consistent, place a horizontal rule immediately after the H2 heading by adding a line with three dashes on the next line:
+
+```markdown
+## Instructions
+---
+```
+
+    The repository includes a small script that can add these `---` separators across `docs/glitchcraft` files automatically; editors can run or ask maintainers to run it if many files need updating.
+
 ## Markdown quick reference (expanded)
 
 Headings:
