@@ -549,6 +549,27 @@ body::after {
   box-shadow: 0 0 10px rgba(0,204,184,0.28);
 }
 
+/* When a tasklist checkbox is checked, visually mark the item's text as completed:
+   - strikethrough the text
+   - mute the text via reduced opacity so it reads as completed
+   This targets common tasklist markup patterns (checkbox + label/p sibling). */
+li.task-list-item input[type="checkbox"]:checked + label,
+li.task-list-item input[type="checkbox"]:checked ~ label,
+li.task-list-item input[type="checkbox"]:checked ~ p,
+li.task-list-item input[type="checkbox"]:checked ~ span,
+li.task-list-item input[type="checkbox"]:checked ~ * {
+  text-decoration: line-through;
+  opacity: 0.65;
+}
+
+/* Ensure links and inline code inside a completed task are also muted and struck-through */
+li.task-list-item input[type="checkbox"]:checked ~ a,
+li.task-list-item input[type="checkbox"]:checked ~ a *,
+li.task-list-item input[type="checkbox"]:checked ~ code {
+  text-decoration: line-through;
+  opacity: 0.65;
+}
+
 
 /* Pulsating bottom linear glow that adapts to viewport width */
 /* Simple linear glow band rising from the bottom */
