@@ -684,4 +684,9 @@ li.task-list-item a, li.task-list a {
   cursor: pointer;
 }
 
+/* Reduce vertical spacing for horizontal rules inside page content */
+.md-content hr {
+  margin: 0.25rem 0;
+}
+
 
