@@ -29,19 +29,25 @@
           check.className = 'ub-copy-check';
           check.setAttribute('aria-hidden', 'true');
           // Use the local share SVG instead of a plain checkmark character
-          try {
             const img = document.createElement('img');
             img.alt = '';
-            img.src = new URL('/assets/images/share-local.svg', location.origin).href;
+            // Resolve the SVG path relative to this script's URL so hosting under
+            // a subpath (site base) still resolves correctly. This avoids relying
+            // on the site root.
+            const scriptSrc = (document.currentScript && document.currentScript.src) || (function() {
+              const scripts = document.getElementsByTagName('script');
+              for (let i = scripts.length - 1; i >= 0; i--) {
+                const s = scripts[i];
+                if (s.src && s.src.indexOf('clipboard-permalink.js') !== -1) return s.src;
+              }
+              return location.href;
+            })();
+            img.src = new URL('../images/share-local.svg', scriptSrc).href;
             img.width = 16;
             img.height = 16;
             img.style.display = 'inline-block';
             img.style.verticalAlign = 'text-bottom';
             check.appendChild(img);
-          } catch (err) {
-            // Fallback to checkmark character if SVG cannot be loaded/constructed
-            check.textContent = '✓';
-          }
           heading.appendChild(check);
 
           // Trigger visible state for CSS transition
