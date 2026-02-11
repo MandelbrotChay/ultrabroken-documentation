@@ -3,12 +3,14 @@
 *Discovered by NaN Gogh*
 
 ## Description
+---
 
 There's a significant likelihood that you have encountered this rather disadvantageous Ultrabroken Effect. Lift Locks render entire Zonai Systems, containing Ultrabroken Objects, impossible to lift. The cause of this issue is remarkably easy to overlook and avoid, but rectifying it becomes considerably more challenging in intricate scenarios.
 
 **Key Information:** Lift Locks will occur every time Link steps on a regular object that is part of a Zonai System containing an Ultrabroken Object. Zonai Systems constructed with Ghost Glue, however, remain unaffected by this particular Ultrabroken Effect.
 
 ## Exemplary Setup
+---
 
 ### Requirements
 
@@ -32,6 +34,7 @@ There's a significant likelihood that you have encountered this rather disadvant
 12. Apply directional pull
 
 ## The Fix
+---
 
 If you encounter a Lift Lock:
 
@@ -41,6 +44,7 @@ If you encounter a Lift Lock:
 4. Apply directional pull
 
 ## Termination
+---
 
 - Exceed the Distance Unload Radius of the Ultrabroken Object
 - Trigger a dialogue or cutscene that deletes objects while an Ultrabroken Object is nearby

@@ -1,10 +1,12 @@
 # Ultrabroken - A Superglitch
 
 ## Introduction
+---
 
 Enter **Ultrabroken**, the most broken glitch in The Legend of Zelda: Tears of the Kingdom. This is a revered gem among all glitches—a true holy grail and a developer oversight!
 
 ## Quick Navigation
+---
 
 - **[Ultrabroken Basics](basics/)** - Learn what Ultrabroken is and how to trigger it
 - **[Effects](effects/)** - Explore all known Ultrabroken effects
@@ -14,6 +16,7 @@ Enter **Ultrabroken**, the most broken glitch in The Legend of Zelda: Tears of t
 - **[Credits](credits/)** - Thanks to all contributors
 
 ## What is Ultrabroken?
+---
 
 Ultrabroken unleashes a multitude of effects on the game, enhancing the already stellar gameplay and ultimately leading to the discovery of UltraFuses. However, it's important to note that this glitch only works on game versions **prior to 1.2** and comes with its own set of sacrifices.
 
@@ -22,6 +25,7 @@ Ultrabroken unleashes a multitude of effects on the game, enhancing the already 
 **DO NOT HARD SAVE** after performing Ultrabroken! There are ways to transfer your objects back in time (ZLOT, Zuggle), so preserve your work properly.
 
 ## The Basics
+---
 
 1. Meet **Zorona and Kairo** at Riverside Stable (The Riverside Trolls)
 2. Place an object you can stand on using Ultrahand

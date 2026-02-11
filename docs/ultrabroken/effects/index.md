@@ -3,10 +3,12 @@
 While Ultrabroken may seem as simple as a single dialogue, it actually opens up a profound rabbit hole. Within this realm, numerous mind-bending outcomes and effects can be achieved through specific, and at times rather intricate, configurations.
 
 ## Important Note
+---
 
 **Ultrabroken Effects are not limited to the objects used in the following setups and they can be stacked, so feel free to experiment with any kind or number of objects and combine effects at whim.**
 
 ## Available Effects
+---
 
 ### Core Effects
 

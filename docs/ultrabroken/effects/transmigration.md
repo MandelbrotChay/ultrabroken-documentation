@@ -3,12 +3,14 @@
 *Discovered by NaN Gogh*
 
 ## Description
+---
 
 As we approach the depths of our exploration, we encounter the Transmigration effect, which grants us the ability to temporarily remove the Item Soul from items, rendering them uncollectible. This ability proves to be a real lifesaver for UltraFuses that involve items or equipment.
 
 Various methods involving Antimass and the Quantum State Freeze Effect Consistency can trigger this Ultrabroken Effect. However, there is one specific case where Transmigration becomes particularly useful, though the specifics may vary.
 
 ## Exemplary Setup
+---
 
 ### Requirements
 
@@ -33,6 +35,7 @@ Various methods involving Antimass and the Quantum State Freeze Effect Consisten
 12. Press + again
 
 ## Termination
+---
 
 - Detach objects glued to the Ultrabroken Equipment to cancel Phantom Smuggle
 - Put Ultrabroken Equipment into the inventory without equipping it, put it on a mount or give it to the Break Apart shop to restore it

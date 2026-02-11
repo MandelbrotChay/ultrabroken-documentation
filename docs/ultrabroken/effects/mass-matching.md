@@ -3,12 +3,14 @@
 *Discovered by The_Andromeda, Lafoscony, optimized by NaN Gogh*
 
 ## Description
+---
 
 When attempting to establish a Ghost Glue connection between two objects, it is crucial to comprehend the mass properties of the objects involved and bear in mind a set of rules that determine whether the Ghost Glue connection will be loose or taut.
 
 Weaker Ghost Glue connections are commonly referred to as "Puppet Glue" and "Puppet Smuggle".
 
 ## General Rules
+---
 
 - Ultrabroken Objects with **low mass** have **low Attraction** to regular objects and Ultrabroken Objects with low mass
 - Ultrabroken Objects with **high mass** have **high Attraction** to regular objects and Ultrabroken Objects with high mass
@@ -16,17 +18,20 @@ Weaker Ghost Glue connections are commonly referred to as "Puppet Glue" and "Pup
 - **The total net mass of all parts** on each end of a Ghost Glue connection is crucial for its stability
 
 ## Ultrabroken-Regular Interactions
+---
 
 - Ultrabroken Objects with low mass have **low Attraction** to regular Objects with high mass
 - Ultrabroken Objects with low mass have **higher Attraction** to regular Objects with low mass if those are Ultrahanded directly or indirectly
 - Ultrabroken Objects with high mass have **very high Attraction** to regular Objects with low mass if those are Ultrahanded directly or indirectly
 
 ## Ultrabroken-Ultrabroken Interactions
+---
 
 - Ultrabroken Objects with low mass have **high Attraction** to Ultrabroken Objects with high mass
 - The Attraction between two Ultrabroken Objects is **higher when Ghost Glue comes from both sides**
 
 ## Exemplary Setup
+---
 
 ### Requirements
 
@@ -62,6 +67,7 @@ Weaker Ghost Glue connections are commonly referred to as "Puppet Glue" and "Pup
 22. Lift the whole thing up and rotate it quickly using Ultrahand on the regular Material
 
 ## Termination
+---
 
 - Put Ultrabroken Equipment into the inventory unequipped, on a mount or give it to the Break Apart shop to restore it
 - Put an object involved in a Spooky Interaction into the inventory to cancel it

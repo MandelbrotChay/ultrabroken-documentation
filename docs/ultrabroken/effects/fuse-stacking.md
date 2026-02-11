@@ -3,10 +3,12 @@
 *Discovered by Trli*
 
 ## Description
+---
 
 Fancy text coming soon.
 
 ## Exemplary Setup A
+---
 
 ### Requirements
 
@@ -43,6 +45,7 @@ Fancy text coming soon.
 - Load another save without performing Zuggle Load Object Transfer on the Ultrabroken Object
 
 ## Exemplary Setup B - Massive Autobuild
+---
 
 ### Requirements
 

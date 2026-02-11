@@ -1,6 +1,7 @@
 # The Ultrabroken Procedure
 
 ## Basic Setup (99% Success Rate)
+---
 
 The fundamental process of Ultrabroken is relatively straightforward and efficient. If you bear with me, we will encounter variations of this setup numerous times. The intricacies arise later on with UltraFuses. The following setup works in 99% of the time.
 

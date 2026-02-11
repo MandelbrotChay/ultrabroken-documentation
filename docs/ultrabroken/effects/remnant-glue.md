@@ -3,12 +3,14 @@
 *Discovered by Duncan*
 
 ## Description
+---
 
 A mysterious phenomenon known as a Spooky Interaction pops in and out of existence wherever Ghost Glue is tampered with. While it can often be disregarded, certain outcomes suggest that particular Remnant Glue arrangements are responsible for Glue Locks.
 
 Moreover, there is a belief that Remnant Glue from previous Ultrabroken sessions can unexpectedly reappear in future Ultrabroken sessions, adding complexity to the situation.
 
 ## Exemplary Setup
+---
 
 ### Requirements
 
@@ -31,6 +33,7 @@ Moreover, there is a belief that Remnant Glue from previous Ultrabroken sessions
 11. Detach the Ultrabroken Zonai Cart
 
 ## Termination
+---
 
 - Exceed the Distance Unload Radius of the Remnant Glue
 - Put Ultrabroken Equipment into the inventory without equipping it, put it on a mount or give it to the Break Apart shop to restore it

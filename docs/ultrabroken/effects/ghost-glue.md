@@ -3,6 +3,7 @@
 *Discovered by Duncan*
 
 ## Description
+---
 
 The Ghost Glue is an exceptionally potent Ultrabroken Effect and Spooky Interaction that enables us to establish connections between objects in unintended and eerie manners. It introduces the mechanics of Attraction, while simultaneously amplifying the significance of Zonai System Arrangement and Mass Matching.
 
@@ -17,6 +18,7 @@ The Ghost Glue is an exceptionally potent Ultrabroken Effect and Spooky Interact
 This effect is also known as "Duncan's Ghost Glue."
 
 ## Exemplary Setup
+---
 
 ### Requirements
 
@@ -37,6 +39,7 @@ This effect is also known as "Duncan's Ghost Glue."
 9. Ghost Glue the Ultrabroken Zonai Cart to the regular Zonai Cart
 
 ## Termination
+---
 
 - Put Ultrabroken Equipment into the inventory without equipping it, put it on a mount or give it to the Break Apart shop to restore it
 - Put an object involved in a Spooky Interaction into the inventory to cancel it

@@ -3,10 +3,12 @@
 *Discovered by Duncan, optimized by NaN Gogh*
 
 ## Description
+---
 
 Shortly after the discovery of Ultrabroken, a Semi-Ultrabroken Effect emerged, which involves overriding the friction properties of Cart wheels in particular. Often referred to as "Wacko Wheels," this effect operates independently of The Riverside Trolls, making it a suitable companion for Ultrabroken Equipment.
 
 ## Setup
+---
 
 ### Requirements
 
@@ -26,6 +28,7 @@ Shortly after the discovery of Ultrabroken, a Semi-Ultrabroken Effect emerged, w
 7. Quickly step on it
 
 ## Termination
+---
 
 - Exceed the Distance Unload Radius of the Semi-Ultrabroken Object
 - Trigger a dialogue or cutscene that deletes objects while a Semi-Ultrabroken Object is nearby

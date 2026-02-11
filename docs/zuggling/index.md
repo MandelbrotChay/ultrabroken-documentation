@@ -1,12 +1,14 @@
 # Zuggling & Smuggling
 
 ## Introduction
+---
 
 Zuggling and Smuggling are object-transfer and placement glitches. They let players move, hide, duplicate, or desynchronize equipment between zones and saves by abusing item pickup/drop/swap, general equipment handling, and engine state transitions.
 
 This index collects known Zuggle and Smuggle techniques, grouped and linked to individual writeups so you can quickly find triggers, requirements, and mitigations.
 
 ## Quick Navigation
+---
 
 - **[Zuggle (core concepts)](../glitchcraft/0023-zuggle.md)** - Overview of core zuggle mechanics and basic examples.
 - **[Equipment Collision Zuggle](../glitchcraft/0024-equipment-collision-zuggle.md)** - How equipment collisions can induce zuggles.
@@ -61,6 +63,7 @@ This index collects known Zuggle and Smuggle techniques, grouped and linked to i
 - **[Zuggle Overload Desync](../glitchcraft/0294-zuggle-overload-desync.md)** - Desync cases from overloads.
 
 ## What to expect in each writeup
+---
 
 - **Trigger:** how to reproduce (inputs, positions, equipment)
 - **Requirements:** game version, objects, NPCs, devices
@@ -69,11 +72,13 @@ This index collects known Zuggle and Smuggle techniques, grouped and linked to i
 - **Notes:** variations, related techniques, and links to follow-ups
 
 ## Safety & best practices
+---
 
 - Always test on throwaway saves or copies. These glitches can corrupt progress.
 - Prefer manual backups (copy / cloud-backup the save file) rather than relying on in-game saves.
 - Use the writeups in this index to compare variants before attempting advanced chains.
 
 ## Want more?
+---
 
 See the full set of Zuggling/Smuggling writeups in the sidebar for step-by-step guides, videos, and community notes.

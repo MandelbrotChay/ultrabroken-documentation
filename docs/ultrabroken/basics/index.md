@@ -3,6 +3,7 @@
 Welcome to the foundation of the Ultrabroken phenomenon. This section covers everything you need to understand the core mechanic before exploring its effects.
 
 ## Sections
+---
 
 - **[Introduction](introduction/)** - What is Ultrabroken?
 - **[Zorona & Kairo](introduction/#zorona-and-kairo)** - Meet the Riverside Trolls

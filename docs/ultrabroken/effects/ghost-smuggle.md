@@ -3,12 +3,14 @@
 *Discovered by The_Andromeda, Lafoscony*
 
 ## Description
+---
 
 If you've reached this point: Congratulations! You're halfway there, and now the fun part begins! Ghost Smuggling is an amusing technique that involves utilizing Ghost Glue between Ultrabroken Equipment and various objects that can be glued together. From this stage onward, it becomes crucial to consider Mass Matching.
 
 This technique is also commonly referred to as "Ghost Glue Smuggling".
 
 ## Exemplary Setup A
+---
 
 ### Requirements
 
@@ -34,6 +36,7 @@ This technique is also commonly referred to as "Ghost Glue Smuggling".
 14. Start moving
 
 ## Termination
+---
 
 - Drop the Ultrabroken Equipment to cancel the Ghost Smuggle
 - Put Ultrabroken Equipment into the inventory without equipping it, put it on a mount or give it to the Break Apart shop to restore it

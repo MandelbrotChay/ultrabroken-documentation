@@ -3,10 +3,12 @@
 *Discovered by NaN Gogh*
 
 ## Description
+---
 
 As the madness slowly reaches its crescendo, Ultrabroken unveils a highly intriguing effect on Autobuild Zonai Systems. These systems can now be detached into individual standalone objects, expanding our creative possibilities, especially regarding equipment and materials.
 
 ## Exemplary Setup
+---
 
 ### Requirements
 
@@ -25,6 +27,7 @@ As the madness slowly reaches its crescendo, Ultrabroken unveils a highly intrig
 8. Keep detaching
 
 ## Termination
+---
 
 - Exceed the Distance Unload Radius of the Semi-Ultrabroken Object
 - Trigger a dialogue or cutscene that deletes objects while a Semi-Ultrabroken Object is nearby

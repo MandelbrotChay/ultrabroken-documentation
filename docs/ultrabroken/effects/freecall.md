@@ -3,10 +3,12 @@
 *Discovered by susannediazz*
 
 ## Description
+---
 
 Fancy text coming soon.
 
 ## Exemplary Setup
+---
 
 ### Requirements
 

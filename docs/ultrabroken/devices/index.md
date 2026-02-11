@@ -4,10 +4,12 @@
 
 
 ## Overview
+---
 
 Congratulations on reaching the deepest depths of the Ultrabroken rabbit hole! Below is valuable information regarding individual Ultrabroken Effects for various Zonai Devices. While some effects prove to be more advantageous than others, here is a list of the currently known Ultrabroken Effects on individual Zonai Devices.
 
 ## Device List
+---
 
 ### Movement & Transport
 
@@ -54,6 +56,7 @@ Congratulations on reaching the deepest depths of the Ultrabroken rabbit hole! B
 - **Shrine Motor** - Consistency, Permanence, Self-Sufficiency, Active Autoflux(?), Disanimation, Antimass effects
 
 ## Example Setup
+---
 
 ### Requirements
 

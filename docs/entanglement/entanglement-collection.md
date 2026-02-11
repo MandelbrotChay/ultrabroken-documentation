@@ -7,6 +7,7 @@ title: "Entanglement"
 This page complies Fuse Entanglement related entries for quick reference.
 
 ## Entries
+---
 
 - [Fuse Entanglement](../glitchcraft/0051-fuse-entanglement.md)
 - [Entanglement Height Glitch](../glitchcraft/0053-entanglement-height-glitch.md)

@@ -7,6 +7,7 @@ title: "Zuggling"
 This page collects Glitchcraft entries related to Zuggling, Zuggle, Smuggling and Smuggle for quick reference.
 
 ## Entries
+---
 
 - [Zuggle](.../glitchcraft/glitchcraft/0023-zuggle.md)
 - [Equipment Collision Zuggle](../glitchcraft/0024-equipment-collision-zuggle.md)

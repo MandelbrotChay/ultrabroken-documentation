@@ -3,10 +3,12 @@
 *Discovered by NaN Gogh*
 
 ## Description
+---
 
 Quantum State Freeze encompasses a diverse range of chilling Ultrabroken Effects. Consequently, the individual effects it exerts on objects will be collectively known as Quantum State Freeze Effects.
 
 ## Core Effects
+---
 
 ### Consistency (Dura Freeze)
 
@@ -39,6 +41,7 @@ The activation state of Ultrabroken Zonai Devices becomes fixed and cannot be to
 Numerous Ultrabroken Zonai Devices exhibiting this effect remain locked in the animation they were in when Ultrabroken was performed on them. Some animations leave Zonai Devices not working properly after Ultrabroken has been performed on them while those animations were playing.
 
 ## Exemplary Setup A - Shock Emitter
+---
 
 ### Requirements
 
@@ -66,6 +69,7 @@ Numerous Ultrabroken Zonai Devices exhibiting this effect remain locked in the a
 - Load another save without performing Zuggle Load Object Transfer on the Ultrabroken Object
 
 ## Exemplary Setup B - Wooden Shield (Consistency)
+---
 
 ### Requirements
 
