@@ -76,35 +76,29 @@
 // Exposed at module level so other scripts can reuse it.
 function showCopiedToast(message) {
   try {
+    // Reuse Material's dialog markup so the theme's built-in styles apply.
     const id = 'ub-global-toast';
     let el = document.getElementById(id);
     if (!el) {
       el = document.createElement('div');
       el.id = id;
-      el.className = 'ub-toast';
-      // Accessibility: announce via polite live region
-      el.setAttribute('role', 'status');
-      el.setAttribute('aria-live', 'polite');
+      el.className = 'md-dialog';
+      el.setAttribute('data-md-component', 'dialog');
       document.body.appendChild(el);
     }
-    el.textContent = message || 'Copied to clipboard';
-    // trigger visible state; cancel any hide-in-progress
-    el.classList.remove('ub-toast--hiding');
-    requestAnimationFrame(() => el.classList.add('ub-toast--visible'));
-    // reset hide timer
+    // Use the theme dialog inner so fonts, sizing and shadow match exactly.
+    el.innerHTML = '<div class="md-dialog__inner md-typeset" role="status" aria-live="polite">' + (message || 'Copied to clipboard') + '</div>';
+    // Show by adding the active class the theme watches
+    el.classList.add('md-dialog--active');
+    // Clear any previous hide timer
     if (el._ubHideTimer) {
       clearTimeout(el._ubHideTimer);
       el._ubHideTimer = null;
     }
+    // Hide after a short delay, then remove element after the theme's hide animation
     el._ubHideTimer = setTimeout(() => {
-      // start fade-out animation (opacity only)
-      el.classList.remove('ub-toast--visible');
-      el.classList.add('ub-toast--hiding');
-      // remove hiding class after out-animation finishes
-      const OUT_MS = 180;
-      setTimeout(() => {
-        el.classList.remove('ub-toast--hiding');
-      }, OUT_MS);
-    }, 1600);
+      el.classList.remove('md-dialog--active');
+      setTimeout(() => { if (el.parentNode) el.parentNode.removeChild(el); }, 320);
+    }, 1400);
   } catch (e) { console.error('showCopiedToast error', e); }
 }
