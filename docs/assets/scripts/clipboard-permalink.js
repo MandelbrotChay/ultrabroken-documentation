@@ -82,6 +82,9 @@ function showCopiedToast(message) {
       el = document.createElement('div');
       el.id = id;
       el.className = 'ub-toast';
+      // Accessibility: announce via polite live region
+      el.setAttribute('role', 'status');
+      el.setAttribute('aria-live', 'polite');
       document.body.appendChild(el);
     }
     el.textContent = message || 'Copied to clipboard';
