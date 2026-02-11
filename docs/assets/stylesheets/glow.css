@@ -190,6 +190,23 @@ a:hover {
   text-shadow: 0 0 10px rgba(0,240,194,0.9);
 }
 
+/* Support editor-friendly `search:` links written as Markdown `[Label](search:Term)`.
+   Intercepted by `search-link.js`. Styled to match other inline links but without
+   an underline in idle state to match the search-link button style. */
+a[href^="search:"] {
+  color: rgba(0,240,194,0.75);
+  text-decoration: none;
+  transition: color .18s ease, text-shadow .18s ease;
+}
+a[href^="search:"]:hover {
+  color: var(--teal-glow) !important;
+  text-shadow: 0 0 10px rgba(0,240,194,0.9);
+}
+a[href^="search:"]:focus {
+  outline: 2px solid var(--teal-glow);
+  outline-offset: 2px;
+}
+
 /* Make editor search-link buttons look and behave visually like anchors.
    Keep them as buttons (accessible semantics) but remove button chrome so
    they match regular `a` links used across the site. */

@@ -145,7 +145,6 @@ nav:
 plugins:
   - search
   - minify
-  - macros
 
 markdown_extensions:
   - admonition
