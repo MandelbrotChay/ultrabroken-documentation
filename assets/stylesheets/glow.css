@@ -661,7 +661,7 @@ html, body, .md-content, .md-nav, .md-sidebar {
 .ub-copy-check {
   display: inline-block;
   margin-left: 0.5rem;
-  font-size: 0.95em;
+  font-size: 1em; /* match heading size by default (inherits from heading) */
   line-height: 1;
   color: var(--teal-glow);
   opacity: 0;
@@ -672,6 +672,15 @@ html, body, .md-content, .md-nav, .md-sidebar {
 .ub-copy-check--visible {
   opacity: 1;
   transform: translateY(0) scale(1);
+}
+
+/* Ensure inline SVG inside the copy check inherits color and matches heading size */
+.ub-copy-check svg {
+  display: inline-block;
+  vertical-align: text-bottom;
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
 }
 
 /* Show pointing cursor when hovering tasklist items so they feel clickable */
