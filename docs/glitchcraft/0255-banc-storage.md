@@ -9,7 +9,7 @@ title: "Banc Storage"
 ---
 Using memory interrupt, it's possible to store a banc change (shrine entry/exit, warp, panic blood moon, etc) to another save file.
 
-_Lightos_, mulberry, Aergyl - October 1st, 2024_
+_Lightos, mulberry, Aergyl - October 1st, 2024_
 
 ## Instructions
 ---

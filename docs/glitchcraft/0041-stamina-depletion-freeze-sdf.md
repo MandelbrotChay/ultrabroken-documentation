@@ -9,7 +9,7 @@ title: "Stamina Depletion Freeze"
 ---
 Certain actions can cause the stamina depletion to glitch out.
 
-_Lightos_ - 20 May 2023_
+_Lightos - 20 May 2023_
 
 ## Instructions
 ---

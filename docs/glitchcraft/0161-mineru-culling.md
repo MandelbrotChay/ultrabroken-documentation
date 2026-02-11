@@ -9,7 +9,7 @@ title: "Mineru Culling"
 ---
 Allows for Link's model to be operated from Mineru, by unloading Mineru, Link can be culled at will.
 
-_Lightos_ - 31 July 2023_
+_Lightos - 31 July 2023_
 
 ## Instructions
 ---
