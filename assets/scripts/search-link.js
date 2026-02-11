@@ -57,7 +57,12 @@ document.addEventListener('DOMContentLoaded', function () {
   document.body.addEventListener('click', function (ev) {
     const a = ev.target.closest && ev.target.closest('.search-link');
     if (!a) return;
+    // Prevent default navigation and stop other handlers that may close the search UI.
     ev.preventDefault();
+    try { ev.stopPropagation(); } catch (e) {}
+    try { ev.stopImmediatePropagation(); } catch (e) {}
+    try { a.blur(); } catch (e) {}
+    try { a.setAttribute('href', 'javascript:void(0)'); } catch (e) {}
     const q = (a.dataset && a.dataset.query) ? a.dataset.query : (a.textContent || '').trim();
     if (!q) return;
 
