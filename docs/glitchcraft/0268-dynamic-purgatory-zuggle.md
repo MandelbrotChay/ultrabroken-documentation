@@ -38,8 +38,8 @@ The FE connection between the zuggled base shield and the dynamic purgatory weap
 For dynamic purgatory without zuggling, omit step 5 for the first method and steps 2-4 for the second method
 
 ## Resources
-- [Discord](https://discordapp.com/channels/1086729144307564648/1105598687167664239/1340135268706942986)
-- [Discord](https://discordapp.com/channels/1086729144307564648/1105598687167664239/1340153028061429954)
+- [Source video](https://discordapp.com/channels/1086729144307564648/1105598687167664239/1340135268706942986)
+- [Video guide](https://discordapp.com/channels/1086729144307564648/1105598687167664239/1340153028061429954)
 - [Fuse Entanglement](search:Fuse Entanglement)
 - [Portable Culling](search:Portable Culling)
 - [Invizuggle](search:Invizuggle)
