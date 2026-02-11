@@ -3,7 +3,7 @@ title: "Dynamic Zuggle"
 ---
 
 # Dynamic Zuggle
-Originally discovered by Lightos, _Steps later recovered by Lightos, Zasoptimized by Zas, Mulberry, Winnerboi and Ryan?researched for other versions by Winnerboi and CS16 - 6 September 2023
+Lightos_, Zas, Mulberry, Winnerboi, Ryan?, CS16 - 6 September 2023
 
 ## Overview
 Dropping equippment in a specific way causes it to be put into a linked state between drop smuggled and zuggled, while the dynamic zuggled item is alternating between sheathed and unsheated together with your equippment. It can only be canceled by throwing the dynamic zuggled weapon, shocking or closing the game.

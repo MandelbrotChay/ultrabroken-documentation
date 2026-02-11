@@ -22,7 +22,7 @@ Ultrabroken has been researched and documented by many dedicated researchers. Th
 - Lafoscony
 - The_Andromeda
 - Blitze
-- Lightos
+- Lightos_
 - ROBUXY2nd
 - fuse_it_or_loose_it
 - susannediazz

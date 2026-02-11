@@ -3,7 +3,7 @@ title: "Shadow/Void Icons"
 ---
 
 # Shadow/Void Icons
-Consistent method discovered by PetitFrapoOriginal accidental discovery by Lightos - 16 October 2024
+Lightos_, PetitFrapoOriginal - 16 October 2024
 
 ## Overview
 Using the camera it's possible to make equipment icons black, leaving only the equipment's shadow and some other eventual colors coming from the fuse. It's also possible to get fully empty icons.
