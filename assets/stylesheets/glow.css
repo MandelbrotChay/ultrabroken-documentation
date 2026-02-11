@@ -686,7 +686,12 @@ li.task-list-item a, li.task-list a {
 
 /* Reduce vertical spacing for horizontal rules inside page content */
 .md-content hr {
-  margin: 0.1rem 0;
+  margin: 0.05rem 0 !important;
+  padding: 0 !important;
+  height: 1px !important;
+  border: none !important;
+  border-top: 1px solid rgba(0,0,0,0.06) !important;
+  background: transparent !important;
 }
 
 
