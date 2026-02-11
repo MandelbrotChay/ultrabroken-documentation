@@ -1,5 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=New+Rocker&family=Texturina:wght@400;700&display=swap');
 
+/* Global toast appear animation: match searchbar toast fade-up on show.
+   ONLY controls opacity/transform and respects reduced-motion. */
+#ub-global-toast .md-dialog__inner {
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 260ms cubic-bezier(.2,.9,.2,1), transform 260ms cubic-bezier(.2,.9,.2,1);
+  will-change: opacity, transform;
+}
+
+#ub-global-toast.md-dialog--active .md-dialog__inner {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #ub-global-toast .md-dialog__inner,
+  #ub-global-toast.md-dialog--active .md-dialog__inner {
+    transition: none !important;
+    transform: none !important;
+  }
+}
+
 /* Glowy teal theme tweaks for MkDocs Material */
 :root {
   --teal-glow: #00f0c2;
@@ -698,15 +720,3 @@ li.task-list-item a, li.task-list a {
 .md-content hr {
   margin: 0.25rem 0;
 }
-
-/* Removed: .ub-toast rules cleaned out to rely on theme dialog/toast */
-
-/* Theme dialog toast color overrides
-   Targets the dialog element created by `showCopiedToast()` (id `ub-global-toast`).
-   Only override background and text color to match project variables. */
-#ub-global-toast .md-dialog__inner {
-  background-color: var(--teal-dark) !important;
-  color: var(--teal-glow) !important;
-}
-
-
