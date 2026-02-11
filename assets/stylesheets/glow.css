@@ -709,12 +709,12 @@ li.task-list-item a, li.task-list a {
   top: auto;
   z-index: 9999;
   /* Match searchbar toast background and tone */
-  background: #e6e9ea; /* exact matching light grey */
+  background: #bec3c8; /* requested toast background */
   color: rgba(12,12,12,0.88);
   /* Keep the visual box size stable while using a slightly smaller font: */
   padding: 0.45rem 1.1rem; /* increase padding so box appears bigger */
-  border-radius: 0; /* remove rounded corners */
-  font-size: 0.88rem; /* slightly larger for better legibility */
+  border-radius: 6px; /* slight rounding to match reference */
+  font-size: 0.8irem; /* slightly larger for better legibility */
   line-height: 1.15;
   min-width: 260px; /* slightly wider to the right like the reference */
   min-height: 46px; /* increase height to better match reference box */
@@ -726,7 +726,7 @@ li.task-list-item a, li.task-list a {
   border-bottom: 1px solid rgba(255,255,255,0.02);
     /* Prefer Texturina for the toast; force with !important to override theme */
     font-family: 'Texturina', 'New Rocker', Georgia, serif !important;
-    font-weight: 600 !important; /* use a slightly bolder weight for parity */
+    font-weight: 400 !important; /* use a slightly bolder weight for parity */
   letter-spacing: 0.2px;
 }
 
