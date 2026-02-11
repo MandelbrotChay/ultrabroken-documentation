@@ -684,13 +684,15 @@ li.task-list-item a, li.task-list a {
   cursor: pointer;
 }
 
-/* Reduce vertical spacing for horizontal rules inside page content */
+/* Reduce vertical spacing for horizontal rules inside page content and ensure
+   they remain visible on dark backgrounds by using a subtle teal border. */
+.md-content .md-typeset hr,
 .md-content hr {
   margin: 0.05rem 0 !important;
   padding: 0 !important;
-  height: 1px !important;
+  height: 0 !important;
   border: none !important;
-  border-top: 1px solid rgba(0,0,0,0.06) !important;
+  border-top: 1px solid rgba(0,240,194,0.12) !important;
   background: transparent !important;
 }
 
