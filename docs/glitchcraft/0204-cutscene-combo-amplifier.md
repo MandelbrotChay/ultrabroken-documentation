@@ -11,10 +11,10 @@ Extends and stacks the damage frames of an attack with memory buffering, causing
 `1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Instructions
-- [ ] 1. Attack something with a weapon or shield
-- [ ] 2. Pause the game one frame before the attacks hits, if done correctly, you should not see it hitting the enemy and you should not be able to unequip your weapon/shield
-- [ ] 3. Watch and skip memories, for every memory buffer it will apply the damage of the attack (stacks with attack up!)
-- [ ] 4. Unpause
+- [ ] Attack something with a weapon or shield
+- [ ] Pause the game one frame before the attacks hits, if done correctly, you should not see it hitting the enemy and you should not be able to unequip your weapon/shield
+- [ ] Watch and skip memories, for every memory buffer it will apply the damage of the attack (stacks with attack up!)
+- [ ] Unpause
 
 ## Notes
 - This can be combined with zuggle for even higher damage
