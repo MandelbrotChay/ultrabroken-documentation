@@ -16,7 +16,7 @@ Welcome — this site is a community-driven encyclopedia documenting glitches, t
 
 ## Purpose 
 ---
-Concise, community-based documentation for Ultrabroken glitches and techniques — readable guides, glitch writeups, and practical how‑tos.
+Concise, community-based documentation for glitches and techniques — readable guides, glitch writeups, and practical how‑tos.
 
 ## Content
 ---
