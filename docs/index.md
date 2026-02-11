@@ -12,7 +12,7 @@ Welcome — this site is a community-driven encyclopedia documenting glitches, t
 ----
 - **[Ultrabroken section](ultrabroken/)** - In-depth investigations and documentation centered around the Ultrabroken phenomenon
 - **[Entanglement section](entanglement/)** - Compilation of glitches revolving around Fuse Entanglement
-- **[Glitchcraft library](glitchcraft/)** - A curated library of individual glitch reports and techniques
+- **[Glitchcraft library](glitchcraft/glitchcraft-grimoire.md)** - A curated library of individual glitch reports and techniques
 
 ## Purpose 
 ---
