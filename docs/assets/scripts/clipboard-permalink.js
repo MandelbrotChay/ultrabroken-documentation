@@ -88,12 +88,23 @@ function showCopiedToast(message) {
       document.body.appendChild(el);
     }
     el.textContent = message || 'Copied to clipboard';
-    // trigger visible state
+    // trigger visible state; cancel any hide-in-progress
+    el.classList.remove('ub-toast--hiding');
     requestAnimationFrame(() => el.classList.add('ub-toast--visible'));
     // reset hide timer
-    if (el._ubHideTimer) clearTimeout(el._ubHideTimer);
+    if (el._ubHideTimer) {
+      clearTimeout(el._ubHideTimer);
+      el._ubHideTimer = null;
+    }
     el._ubHideTimer = setTimeout(() => {
+      // start fade-out animation (opacity only)
       el.classList.remove('ub-toast--visible');
+      el.classList.add('ub-toast--hiding');
+      // remove hiding class after out-animation finishes
+      const OUT_MS = 180;
+      setTimeout(() => {
+        el.classList.remove('ub-toast--hiding');
+      }, OUT_MS);
     }, 1600);
   } catch (e) { console.error('showCopiedToast error', e); }
 }
