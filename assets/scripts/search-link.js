@@ -54,6 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
+  // Use capture phase so this handler runs before other click handlers that may close the search UI.
   document.body.addEventListener('click', function (ev) {
     const a = ev.target.closest && ev.target.closest('.search-link');
     if (!a) return;
