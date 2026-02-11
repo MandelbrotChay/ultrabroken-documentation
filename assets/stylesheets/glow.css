@@ -721,8 +721,9 @@ li.task-list-item a, li.task-list a {
   box-shadow: 0 12px 28px rgba(0,0,0,0.32);
   border-top: 1px solid rgba(0,0,0,0.06);
   border-bottom: 1px solid rgba(255,255,255,0.02);
-  font-family: 'Texturina', 'New Rocker', Georgia, serif;
-  font-weight: 600;
+    /* Prefer Texturina for the toast; force with !important to override theme */
+    font-family: 'Texturina', 'New Rocker', Georgia, serif !important;
+    font-weight: 700 !important; /* use a supported bold weight for Texturina */
   letter-spacing: 0.2px;
 }
 
@@ -738,11 +739,11 @@ li.task-list-item a, li.task-list a {
 
 .ub-toast--visible {
   transform-origin: bottom right; /* pivot from bottom edge */
-  animation: ub-toast-in 220ms cubic-bezier(.2,.9,.2,1) forwards;
+  animation: ub-toast-in 300ms cubic-bezier(.2,.9,.2,1) forwards;
 }
 
 .ub-toast--hiding {
-  animation: ub-toast-out 160ms ease forwards;
+  animation: ub-toast-out 300ms ease forwards;
 }
 
 
