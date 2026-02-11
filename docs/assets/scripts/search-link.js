@@ -32,6 +32,37 @@ document.addEventListener('DOMContentLoaded', function () {
     } catch (e) {}
   }
 
+  // Replace anchor .search-link elements with non-navigating buttons to fully avoid
+  // any browser navigation or other handlers attached to anchors.
+  function replaceAnchorsWithButtons() {
+    try {
+      document.querySelectorAll('a.search-link').forEach(a => {
+        try {
+          const btn = document.createElement('button');
+          btn.type = 'button';
+          // copy class
+          btn.className = a.className;
+          // copy dataset
+          for (const key in a.dataset) {
+            try { btn.dataset[key] = a.dataset[key]; } catch (e) {}
+          }
+          // copy innerHTML so markup is preserved
+          btn.innerHTML = a.innerHTML;
+          // preserve ARIA/title
+          try { if (a.title) btn.title = a.title; } catch (e) {}
+          try { if (a.getAttribute('aria-label')) btn.setAttribute('aria-label', a.getAttribute('aria-label')); } catch (e) {}
+          // set same styling cursor
+          btn.style.cursor = 'pointer';
+          a.replaceWith(btn);
+        } catch (e) {}
+      });
+    } catch (e) {}
+  }
+
+  // Neutralize and replace anchors immediately so they cannot navigate
+  try { neutralizeSearchLinkAnchors(); } catch (e) {}
+  try { replaceAnchorsWithButtons(); } catch (e) {}
+
   function openSearchUI() {
     // try common search buttons/selectors used by Material and other themes
     const btnSelectors = [
