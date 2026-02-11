@@ -16,6 +16,22 @@ document.addEventListener('DOMContentLoaded', function () {
     return null;
   }
 
+  // Immediately neutralize .search-link anchors so they can't trigger navigation
+  function neutralizeSearchLinkAnchors() {
+    try {
+      document.querySelectorAll('.search-link').forEach(a => {
+        try {
+          if (a.tagName && a.tagName.toLowerCase() === 'a') {
+            a.setAttribute('href', 'javascript:void(0)');
+            a.setAttribute('role', 'button');
+            if (!a.hasAttribute('tabindex')) a.setAttribute('tabindex', '0');
+            a.style.cursor = 'pointer';
+          }
+        } catch (e) {}
+      });
+    } catch (e) {}
+  }
+
   function openSearchUI() {
     // try common search buttons/selectors used by Material and other themes
     const btnSelectors = [
