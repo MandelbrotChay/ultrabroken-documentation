@@ -101,6 +101,52 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
+  // Intercept custom search: links like [Label](search:Term)
+  function interceptSearchHrefLinks() {
+    document.body.addEventListener('click', function (ev) {
+      const a = ev.target.closest && ev.target.closest('a[href^="search:"]');
+      if (!a) return;
+      ev.preventDefault();
+      try { ev.stopPropagation(); } catch (e) {}
+      try { ev.stopImmediatePropagation(); } catch (e) {}
+      try { a.blur(); } catch (e) {}
+      const raw = (a.getAttribute('href') || '').slice('search:'.length);
+      try { raw; } catch (e) {}
+      let q = '';
+      try { q = decodeURIComponent(raw).replace(/^\/+/, '').trim(); } catch (e) { q = raw.replace(/^\/+/, '').trim(); }
+      if (!q) return;
+
+      openSearchUI();
+
+      const start = Date.now();
+      const timeout = 1200; // ms
+      const interval = 40; // ms
+
+      const waiter = setInterval(function () {
+        const input = findSearchInput();
+        if (input) {
+          clearInterval(waiter);
+          setSearchQueryAndSubmit(input, q);
+          return;
+        }
+        if (Date.now() - start > timeout) {
+          clearInterval(waiter);
+          setSearchQuery(q);
+        }
+      }, interval);
+    }, true);
+
+    document.body.addEventListener('pointerdown', function (ev) {
+      const a = ev.target.closest && ev.target.closest('a[href^="search:"]');
+      if (!a) return;
+      try { ev.preventDefault(); } catch (e) {}
+      try { ev.stopPropagation(); } catch (e) {}
+      try { ev.stopImmediatePropagation(); } catch (e) {}
+    }, true);
+  }
+
+  try { interceptSearchHrefLinks(); } catch (e) {}
+
   // Use capture phase so this handler runs before other click handlers that may close the search UI.
   document.body.addEventListener('click', function (ev) {
     const a = ev.target.closest && ev.target.closest('.search-link');
