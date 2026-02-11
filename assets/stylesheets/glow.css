@@ -708,11 +708,12 @@ li.task-list-item a, li.task-list a {
   left: auto;
   top: auto;
   z-index: 9999;
-  background: #e9ecec; /* slightly desaturated light grey */
-  color: rgba(15,15,15,0.95);
-  padding: 0.35rem 0.9rem; /* reduce vertical padding to make box less tall */
+  /* Match searchbar toast background and tone */
+  background: #e6e9ea; /* exact matching light grey */
+  color: rgba(12,12,12,0.88);
+  padding: 0.28rem 0.9rem; /* slightly less vertical padding */
   border-radius: 0; /* remove rounded corners */
-  font-size: 0.95rem; /* slightly smaller font */
+  font-size: 0.88rem; /* slightly smaller to match searchbar toast */
   line-height: 1.15;
   min-width: 200px;
   text-align: left; /* left-align the message */
@@ -723,7 +724,7 @@ li.task-list-item a, li.task-list a {
   border-bottom: 1px solid rgba(255,255,255,0.02);
     /* Prefer Texturina for the toast; force with !important to override theme */
     font-family: 'Texturina', 'New Rocker', Georgia, serif !important;
-    font-weight: 700 !important; /* use a supported bold weight for Texturina */
+    font-weight: 600 !important; /* slightly lighter weight to match searchbar toast */
   letter-spacing: 0.2px;
 }
 
