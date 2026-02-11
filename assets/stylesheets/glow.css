@@ -1,3 +1,48 @@
+/* Global toast dialog styles */
+#ub-global-toast .md-dialog__inner {
+  background-color: var(--teal-dark) !important;
+  color: var(--teal-glow) !important;
+  /* Animate from slightly below + fade in to match searchbar toast */
+  transition: opacity 260ms cubic-bezier(.2,.9,.2,1), transform 260ms cubic-bezier(.2,.9,.2,1);
+  opacity: 0;
+  transform: translateY(8px);
+}
+
+/* When the theme activates the dialog, bring it into view */
+#ub-global-toast.md-dialog--active .md-dialog__inner {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #ub-global-toast .md-dialog__inner {
+    transition: none !important;
+    transform: none !important;
+  }
+}
+
+/* Also target common theme dialog locations used for toasts so the
+   searchbar's toast and other lightweight dialogs match our colors.
+   These selectors are intentionally specific and use !important only
+   for color/background to avoid changing other layout rules. */
+body > .md-dialog .md-dialog__inner,
+.md-header .md-dialog .md-dialog__inner,
+.md-search__dialog .md-dialog__inner,
+.md-search .md-dialog .md-dialog__inner {
+  background-color: var(--teal-dark) !important;
+  color: var(--teal-glow) !important;
+  transition: opacity 260ms cubic-bezier(.2,.9,.2,1), transform 260ms cubic-bezier(.2,.9,.2,1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body > .md-dialog .md-dialog__inner,
+  .md-header .md-dialog .md-dialog__inner,
+  .md-search__dialog .md-dialog__inner,
+  .md-search .md-dialog .md-dialog__inner {
+    transition: none !important;
+    transform: none !important;
+  }
+}
 @import url('https://fonts.googleapis.com/css2?family=New+Rocker&family=Texturina:wght@400;700&display=swap');
 
 /* Glowy teal theme tweaks for MkDocs Material */
@@ -697,16 +742,6 @@ li.task-list-item a, li.task-list a {
    them subtly visible on dark backgrounds */
 .md-content hr {
   margin: 0.25rem 0;
-}
-
-/* Removed: .ub-toast rules cleaned out to rely on theme dialog/toast */
-
-/* Theme dialog toast color overrides
-   Targets the dialog element created by `showCopiedToast()` (id `ub-global-toast`).
-   Only override background and text color to match project variables. */
-#ub-global-toast .md-dialog__inner {
-  background-color: var(--teal-dark) !important;
-  color: var(--teal-glow) !important;
 }
 
 
