@@ -3,21 +3,21 @@ title: "Dynamic Purgatory Zuggle"
 ---
 
 # Dynamic Purgatory Zuggle
-mulberry - 14 February 2025
+_mulberry - 14 February 2025_
 
 ## Overview
-It's possible to send a dynamic smuggle to purgatory, keeping it connected to Link by equipping (and zuggling) its FE base in a similar fashion to FEWZ. While not a true dynamic zuggle, it is generally considered to be the most convenient method for dynamic zuggle on v1.2.0+
+It's possible to send a dynamic smuggle to purgatory, keeping it connected to Link by equipping (and zuggling) its FE base in a similar fashion to FEWZ. While not a true dynamic zuggle, it is generally considered to be the most convenient method for dynamic zuggle on v1.2.0+.
 
 `1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
 ## Instructions
 For 1.0.0-1.1.2:
 
-1. Fuse entangle a weapon to a shield and drop both on the ground
-2. Smuggle a different weapon, then equip and unequip a third weapon from the inventory
-3. Pickup the weapon entangled to the shield and dynamic smuggle it
-4. Swap weapons and get eaten by a like like to send the dynamic smuggle to purgatory
-5. Zuggle the FE base shield
+- [ ] Fuse entangle a weapon to a shield and drop both on the ground
+- [ ] Smuggle a different weapon, then equip and unequip a third weapon from the inventory
+- [ ] Pickup the weapon entangled to the shield and dynamic smuggle it
+- [ ] Swap weapons and get eaten by a like like to send the dynamic smuggle to purgatory
+- [ ] Zuggle the FE base shield
 
 For 1.2.0-1.2.1:
 
