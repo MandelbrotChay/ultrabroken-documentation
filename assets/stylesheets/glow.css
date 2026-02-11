@@ -190,6 +190,31 @@ a:hover {
   text-shadow: 0 0 10px rgba(0,240,194,0.9);
 }
 
+/* Make editor search-link buttons look and behave visually like anchors.
+   Keep them as buttons (accessible semantics) but remove button chrome so
+   they match regular `a` links used across the site. */
+button.search-link,
+.link-button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  color: var(--teal-dark);
+  text-decoration: underline;
+  cursor: pointer;
+  font: inherit;
+}
+button.search-link:hover,
+.link-button:hover {
+  color: var(--teal-glow) !important;
+  text-shadow: 0 0 10px rgba(0,240,194,0.9);
+}
+button.search-link:focus,
+.link-button:focus {
+  outline: 2px solid var(--teal-glow);
+  outline-offset: 2px;
+}
+
 .md-content h1, .md-content h2, .md-content h3 {
   text-shadow: 0 0 6px rgba(0,240,194,0.06);
 }
