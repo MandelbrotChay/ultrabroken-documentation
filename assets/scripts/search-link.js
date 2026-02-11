@@ -114,6 +114,46 @@ document.addEventListener('DOMContentLoaded', function () {
     const q = (a.dataset && a.dataset.query) ? a.dataset.query : (a.textContent || '').trim();
     if (!q) return;
 
+    // Temporary diagnostic: install one-time navigation wrappers so if any script
+    // triggers navigation (pushState/replaceState/assign/replace) we get a stack trace.
+    (function installNavDiag() {
+      try {
+        if (window.__searchLinkNavDiagActive) return;
+        window.__searchLinkNavDiagActive = true;
+        const orig = {
+          pushState: history.pushState,
+          replaceState: history.replaceState,
+          assign: location.assign,
+          replace: location.replace
+        };
+        function wrap(name, obj) {
+          obj[name] = function() {
+            try {
+              console.groupCollapsed('[nav-diag] ' + name + ' called ->', arguments[0]);
+              console.trace();
+              console.groupEnd();
+            } catch (e) {}
+            return orig[name].apply(this, arguments);
+          };
+        }
+        wrap('pushState', history);
+        wrap('replaceState', history);
+        wrap('assign', location);
+        wrap('replace', location);
+        // restore after short delay
+        setTimeout(function () {
+          try {
+            history.pushState = orig.pushState;
+            history.replaceState = orig.replaceState;
+            location.assign = orig.assign;
+            location.replace = orig.replace;
+          } catch (e) {}
+          window.__searchLinkNavDiagActive = false;
+        }, 3000);
+        console.log('search-link: navigation diagnostic active for 3s (check console traces)');
+      } catch (e) {}
+    })();
+
     // Try to open search UI first (for Material modal/overlay)
     openSearchUI();
 
