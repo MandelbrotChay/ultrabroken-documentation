@@ -89,7 +89,16 @@ document.addEventListener('DOMContentLoaded', function () {
         setSearchQuery(q);
       }
     }, interval);
-  }, false);
+  }, true);
+
+  // Also intercept pointerdown (capture) to prevent other handlers that react on mousedown
+  document.body.addEventListener('pointerdown', function (ev) {
+    const a = ev.target.closest && ev.target.closest('.search-link');
+    if (!a) return;
+    try { ev.preventDefault(); } catch (e) {}
+    try { ev.stopPropagation(); } catch (e) {}
+    try { ev.stopImmediatePropagation(); } catch (e) {}
+  }, true);
 });
 
 function setSearchQueryAndSubmit(input, q) {
