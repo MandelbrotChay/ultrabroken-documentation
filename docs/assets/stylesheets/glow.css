@@ -704,7 +704,8 @@ li.task-list-item a, li.task-list a {
   /* Lower-right, light panel matching the searchbar toast appearance */
   position: fixed;
   right: 1rem; /* align closer to reference searchbar toast */
-  bottom: 0.85rem;
+  /*bottom: 0.85rem;*/
+  bottom: auto;
   left: auto;
   top: auto;
   z-index: 9999;
@@ -713,8 +714,8 @@ li.task-list-item a, li.task-list a {
   color: rgba(12,12,12,0.88);
   /* Keep the visual box size stable while using a slightly smaller font: */
   padding: 0.45rem 1.1rem; /* increase padding so box appears bigger */
-  border-radius: 6px; /* slight rounding to match reference */
-  font-size: 0.8irem; /* slightly larger for better legibility */
+  border-radius: 3px; /* slight rounding to match reference */
+  font-size: 0.81rem; /* slightly larger for better legibility */
   line-height: 1.15;
   min-width: 260px; /* slightly wider to the right like the reference */
   min-height: 46px; /* increase height to better match reference box */
@@ -731,7 +732,7 @@ li.task-list-item a, li.task-list a {
 }
 
 @keyframes ub-toast-in {
-  from { opacity: 0; transform: translateY(8px) scaleY(0.96); }
+  from { opacity: 0; transform: translateY(8px) scaleY(1); }
   to   { opacity: 1; transform: translateY(0) scaleY(1); }
 }
 
@@ -742,11 +743,11 @@ li.task-list-item a, li.task-list a {
 
 .ub-toast--visible {
   transform-origin: bottom right; /* pivot from bottom edge */
-  animation: ub-toast-in 300ms cubic-bezier(.2,.9,.2,1) forwards;
+  animation: ub-toast-in 600ms cubic-bezier(.2,.9,.2,1) forwards;
 }
 
 .ub-toast--hiding {
-  animation: ub-toast-out 600ms ease forwards;
+  animation: ub-toast-out 300ms ease forwards;
 }
 
 
