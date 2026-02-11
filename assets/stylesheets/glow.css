@@ -710,25 +710,25 @@ li.task-list-item a, li.task-list a {
   z-index: 9999;
   background: #e9ecec; /* slightly desaturated light grey */
   color: rgba(15,15,15,0.95);
-  padding: 0.55rem 1rem;
+  padding: 0.35rem 0.9rem; /* reduce vertical padding to make box less tall */
   border-radius: 0; /* remove rounded corners */
-  font-size: 1.05rem; /* slightly larger to match screenshot */
+  font-size: 0.95rem; /* slightly smaller font */
   line-height: 1.15;
-  min-width: 220px;
-  text-align: center; /* matches centered message */
+  min-width: 200px;
+  text-align: left; /* left-align the message */
   opacity: 0;
   pointer-events: none;
   box-shadow: 0 12px 28px rgba(0,0,0,0.32);
   border-top: 1px solid rgba(0,0,0,0.06);
   border-bottom: 1px solid rgba(255,255,255,0.02);
-  font-family: 'New Rocker', 'Texturina', Georgia, serif; /* header font */
+  font-family: 'Texturina', 'New Rocker', Georgia, serif;
   font-weight: 600;
   letter-spacing: 0.2px;
 }
 
 @keyframes ub-toast-in {
-  from { opacity: 0; transform: translateY(8px); }
-  to   { opacity: 1; transform: translateY(0); }
+  from { opacity: 0; transform: translateY(8px) scaleY(0.96); }
+  to   { opacity: 1; transform: translateY(0) scaleY(1); }
 }
 
 @keyframes ub-toast-out {
@@ -737,6 +737,7 @@ li.task-list-item a, li.task-list a {
 }
 
 .ub-toast--visible {
+  transform-origin: bottom right; /* pivot from bottom edge */
   animation: ub-toast-in 220ms cubic-bezier(.2,.9,.2,1) forwards;
 }
 
