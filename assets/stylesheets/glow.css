@@ -666,7 +666,7 @@ html, body, .md-content, .md-nav, .md-sidebar {
   color: var(--teal-glow);
   opacity: 0;
   transform: translateY(-2px) scale(0.92);
-  transition: opacity .18s ease, transform .18s ease;
+  transition: opacity .18s ease/*, transform .18s ease;*/;
   pointer-events: none;
 }
 .ub-copy-check--visible {
@@ -701,25 +701,30 @@ li.task-list-item a, li.task-list a {
 
 /* Global toast used for copy feedback (bottom-right) */
 .ub-toast {
+  /* Top-centered, subtle light panel matching the searchbar toast */
   position: fixed;
-  right: 1rem;
-  bottom: 1.25rem;
+  top: 3rem;
+  left: 50%;
+  transform: translate(-50%, 6px);
   z-index: 9999;
-  background: rgba(0,0,0,0.75);
-  color: #fff;
-  padding: 0.45rem 0.75rem;
+  background: #e6e9ea; /* light grey panel */
+  color: rgba(10,10,10,0.9);
+  padding: 0.6rem 1rem;
   border-radius: 6px;
-  font-size: 0.9rem;
-  line-height: 1;
+  font-size: 1rem;
+  line-height: 1.15;
+  min-width: 220px;
+  text-align: left;
   opacity: 0;
-  transform: translateY(6px);
   transition: opacity .18s ease, transform .18s ease;
   pointer-events: none;
-  box-shadow: 0 4px 14px rgba(0,0,0,0.45);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.32);
+  border: 1px solid rgba(0,0,0,0.06);
+  font-family: inherit;
 }
 .ub-toast--visible {
   opacity: 1;
-  transform: translateY(0);
+  transform: translate(-50%, 0);
 }
 
 
