@@ -525,6 +525,31 @@ body::after {
   font-size: 0.8em;
 }*/
 
+/* Tasklist checkbox styling - match project teal theme */
+.task-list-item input[type="checkbox"],
+.md-typeset li.task-list input[type="checkbox"],
+.md-content .task-list-item input[type="checkbox"] {
+  width: 1.15em;
+  height: 1.15em;
+  margin-right: 0.6rem;
+  vertical-align: middle;
+  accent-color: #00ccb8; /* modern browsers: sets check color */
+  background-color: transparent;
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 4px;
+  box-shadow: none;
+}
+.task-list-item input[type="checkbox"]:hover,
+.md-typeset li.task-list input[type="checkbox"]:hover {
+  filter: brightness(1.05);
+}
+.task-list-item input[type="checkbox"]:checked {
+  background-color: #00ccb8;
+  border-color: #00ccb8;
+  box-shadow: 0 0 10px rgba(0,204,184,0.28);
+}
+
+
 /* Pulsating bottom linear glow that adapts to viewport width */
 /* Simple linear glow band rising from the bottom */
 body::before {
