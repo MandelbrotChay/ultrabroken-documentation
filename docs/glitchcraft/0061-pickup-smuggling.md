@@ -23,4 +23,4 @@ Allows Link to pick up an object as if he were holding it like an item.
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1112562187857297480)
 
 ## See also
-- Memory Buffering
+- [Memory Buffering](search:Memory Buffering)

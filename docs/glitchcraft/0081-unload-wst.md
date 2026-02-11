@@ -28,4 +28,4 @@ Resync your inventory by re-equipping
 - [YouTube](https://youtu.be/ycKeFgsb7gs)
 
 ## See also
-- Invizuggle overload for 1.2+ methods
+- [Invizuggle  1.2](search:Invizuggle 1.2)

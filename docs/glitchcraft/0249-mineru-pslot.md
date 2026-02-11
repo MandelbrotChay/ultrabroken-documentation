@@ -31,4 +31,5 @@ Versions 1.0-1.1.2 have a slightly easier setup, they can use another zuggle met
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1266787525855547463)
 
 ## See also
-- PSLOTPortacull Invismuggle
+- [PSLOT](search:PSLOT)
+- [Portacull Invismuggle](search:Portacull Invismuggle)

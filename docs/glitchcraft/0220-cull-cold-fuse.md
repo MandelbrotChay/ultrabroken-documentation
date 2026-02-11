@@ -29,4 +29,4 @@ steps 8-9 are not required on 1.0.0
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1202784179574677554)
 
 ## See also
-- Fuse Storage
+- [Fuse Storage](search:Fuse Storage)

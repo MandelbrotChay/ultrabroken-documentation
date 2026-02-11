@@ -28,4 +28,4 @@ By combining zuggle overload with 1.0 modifier deletion, it is possible to mass 
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1170394698083479702)
 
 ## See also
-- Zuggle Overload
+- [Zuggle Overload](search:Zuggle Overload)

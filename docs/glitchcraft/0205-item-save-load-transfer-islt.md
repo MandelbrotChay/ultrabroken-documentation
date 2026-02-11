@@ -23,4 +23,4 @@ Fairies on GSI
 - [YouTube](https://youtu.be/Gu_zlst9T0w?si=x6FNI5zIrRNrQLh-)
 
 ## See also
-- Mineru Hold Smuggle
+- [Mineru Hold Smuggle](search:Mineru Hold Smuggle)

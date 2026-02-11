@@ -38,4 +38,4 @@ this does not wst on 1.0.0
 - [YouTube](https://youtu.be/E3nDTPL6IdU)
 
 ## See also
-- Fuse Entanglement
+- [Fuse Entanglement](search:Fuse Entanglement)

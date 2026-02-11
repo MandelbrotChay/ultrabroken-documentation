@@ -22,4 +22,4 @@ Allows for easy detanglement of any shield using octoballoons
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1439763376753344604)
 
 ## See also
-- Detanglement
+- [Detanglement](search:Detanglement)

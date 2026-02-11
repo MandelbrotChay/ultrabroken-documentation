@@ -30,5 +30,5 @@ Allows you to do most things that zuggle overload can do, including mass equipme
 - [YouTube](https://youtu.be/wpylJH-rejM?si=1WJA1gy2jIHIqG5s)
 
 ## See also
-- Portable Culling
-- Stick Desync
+- [Portable Culling](search:Portable Culling)
+- [Stick Desync](search:Stick Desync)

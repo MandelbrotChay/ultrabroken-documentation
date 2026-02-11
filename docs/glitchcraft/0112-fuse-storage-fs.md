@@ -24,7 +24,7 @@ In all cases, you can get the like to drop it'"s stored fuse (or other objects) 
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1202899097921658940)
 
 ## See also
-- Fuse Entanglement
-- Cold Fuse
-- Like-Like Fuse Storage
-- Culling Area Fuse Storage
+- [Fuse Entanglement](search:Fuse Entanglement)
+- [Cold Fuse](search:Cold Fuse)
+- [Like-Like Fuse Storage](search:Like-Like Fuse Storage)
+- [Culling Area Fuse Storage](search:Culling Area Fuse Storage)

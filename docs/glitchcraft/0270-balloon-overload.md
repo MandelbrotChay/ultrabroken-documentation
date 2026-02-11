@@ -25,4 +25,4 @@ Equipping and unfusing a shield with Robbie's infinite balloon fused to it does 
 - [Discord](https://discordapp.com/channels/1086729144307564648/1113557914444111873/1348452605411463221)
 
 ## See also
-- Infinite Balloon
+- [Infinite Balloon](search:Infinite Balloon)

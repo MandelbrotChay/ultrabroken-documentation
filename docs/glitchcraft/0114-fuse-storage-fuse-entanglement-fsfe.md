@@ -20,7 +20,7 @@ Unique methods of achieving Fuse Entanglement through Fuse Storage.
 —
 
 ## See also
-- Fuse Entanglement
-- Fuse Storage
-- Like-Like FSFE
-- Culling Area FSFE
+- [Fuse Entanglement](search:Fuse Entanglement)
+- [Fuse Storage](search:Fuse Storage)
+- [Like-Like FSFE](search:Like-Like FSFE)
+- [Culling Area FSFE](search:Culling Area FSFE)

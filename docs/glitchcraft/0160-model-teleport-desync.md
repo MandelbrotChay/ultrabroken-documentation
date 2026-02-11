@@ -24,5 +24,5 @@ This works because the Steering Stick is on the surface, while Link is stuck in 
 - [Twitter](https://twitter.com/NX721_/status/1685479076482764801?s=20)
 
 ## See also
-- Object Culling
-- SDC (Stick Desync Clip)
+- [Object Culling](search:Object Culling)
+- [Stick Desync Clip](search:Stick Desync Clip)

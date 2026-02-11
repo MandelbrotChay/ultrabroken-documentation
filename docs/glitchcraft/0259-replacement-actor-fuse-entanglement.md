@@ -12,13 +12,9 @@ Allows objects that have fuse replacement actors to be fuse entangled. Objects t
 
 ## Instructions
 1. Cold fuse shield A to shield B
-
 2. Zuggle shield B, equip shield A and fuse the target object to the shields
-
 3. Drop the equipped shield, place shield A in a culling area, zuggle shield B and detangle it outside of the culling area
-
 4. Place shield B in a culling area, zuggle shield A and detangle it outside of the culling area
-
 5. Fuse Entangle the target object
 
 ## Notes
@@ -29,4 +25,4 @@ Objects which do not have a replacement actor as listed on the AttachmentParam s
 - [YouTube](https://youtu.be/WR_ByU-_0ic?si=YvWX-4ufWhpiS0nt)
 
 ## See also
-- [AttachmentParam](https://docs.google.com/spreadsheets/d/13_I_wPuG6AvFm02qgtIBDamQrrb6x4a8--UouZYKOsc/)
+- [AttachmentParam list](https://docs.google.com/spreadsheets/d/13_I_wPuG6AvFm02qgtIBDamQrrb6x4a8--UouZYKOsc/)

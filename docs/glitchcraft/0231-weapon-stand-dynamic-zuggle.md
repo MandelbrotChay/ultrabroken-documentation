@@ -23,4 +23,4 @@ Although this was found 2 days before dynamic zuggle steps were recovered, it wa
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1217864399855943740)
 
 ## See also
-- Dynamic Zuggle
+- [Dynamic Zuggle](search:Dynamic Zuggle)

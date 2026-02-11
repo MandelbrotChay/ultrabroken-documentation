@@ -24,5 +24,5 @@ it is very inconsistent and is still being tested
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1167228288834486362)
 
 ## See also
-- Zuggle
-- Zuggle Overload
+- [Zuggle](search:Zuggle)
+- [Zuggle Overload](search:Zuggle Overload)

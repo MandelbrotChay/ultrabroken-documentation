@@ -24,4 +24,4 @@ Using Moobe and a horse, it's possible to fully warp (opposed to only temporaril
 - [Discord](https://discord.com/channels/1086729144307564648/1194033039123165215/1195529500558114876)
 
 ## See also
-- Mulberry's Out of Body Experience
+- [Mulberry's Out of Body Experience](search:Mulberry's Out of Body Experience)

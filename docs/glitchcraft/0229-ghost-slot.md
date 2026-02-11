@@ -34,5 +34,5 @@ By combining ghost SLOT with moobe and pseudo fuse, its possible to send fuse gh
 - [YouTube](https://youtu.be/z1A6YvLNH6Y?si=FLVNUzhHYOVaSSvM)
 
 ## See also
-- Fuse Entanglement
-- Detanglement
+- [Fuse Entanglement](search:Fuse Entanglement)
+- [Detanglement](search:Detanglement)

@@ -26,5 +26,5 @@ Allows for full fuse entanglement by combining portable culling with the mechani
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1265367839997693993)
 
 ## See also
-- Zuggle Overload
-- Portable Culling
+- [Zuggle Overload](search:Zuggle Overload)
+- [Portable Culling](search:Portable Culling)

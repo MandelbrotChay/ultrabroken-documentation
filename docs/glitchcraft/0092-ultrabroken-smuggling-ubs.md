@@ -32,4 +32,4 @@ Makes an FE'd object follow the shield.
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1118059019974737922)
 
 ## See also
-- Ultrabroken
+- [Ultrabroken](search:Ultrabroken)

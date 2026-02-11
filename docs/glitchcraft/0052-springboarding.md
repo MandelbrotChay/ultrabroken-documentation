@@ -23,4 +23,4 @@ Springboard Clipping
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1111100603683323964)
 
 ## See also
-- Fuse Entanglement
+- [Fuse Entanglement](search:Fuse Entanglement)

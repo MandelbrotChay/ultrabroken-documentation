@@ -18,16 +18,16 @@ Using Swap Resync, it's possible to zuggle anywhere simply using portacull equip
 4. Pause buffer.
 5. Swap any piece of equipment (except the target type), for example your armor or your bow. You may swap back if you want to.
 6. Drop the target's type you just swapped to.
-Your target equipment should be zuggled.
+7. Your target equipment should be zuggled.
 
 A consistent setup with any wall would be:
+
 1. Face 90 degrees away from a wall/hoverstone.
 2. Do the setup above but after drop swapping your target drop three buffer equipment.
 3. Hold your joystick away from the wall when unpausing.
 
-You can also fully skip the need for a wall by loading a save at the end of the setup before unpausing.
-
 There is a different setup for zuggling portacull equipment:
+
 1. Hop on Mineru.
 2. Drop swap your portacull through the quick menu.
 3. Pause right afterwards, you should see both Link and Mineru are culled in the menu. If they are not, try again.
@@ -35,11 +35,12 @@ There is a different setup for zuggling portacull equipment:
 5. Dismiss Mineru (will act as a fail drop).
 
 ## Notes
-—
+You can also fully skip the need for a wall by loading a save at the end of the setup before unpausing.
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1404450104525459546)
-- [Zuggling portacullequipment](https://discord.com/channels/1086729144307564648/1113557914444111873/1404506627091988552)
+- [Zuggling Portacull equipment](https://discord.com/channels/1086729144307564648/1113557914444111873/1404506627091988552)
 
 ## See also
-- Portable CullingZuggle
+- [Zuggle](search:Zuggle)
+- [Portable Culling](search:Portable Culling)

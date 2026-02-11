@@ -24,4 +24,4 @@ Best used in Eldin Cave Quest, experiment with different despawn flags.
 - [Twitter](https://twitter.com/NX721_/status/1674217769267781633?s=20)
 
 ## See also
-- Zuggling
+- [Zuggling](search:Zuggling)

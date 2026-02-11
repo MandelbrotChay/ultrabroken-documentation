@@ -12,6 +12,7 @@ It's possible to send a dynamic smuggle to purgatory, keeping it connected to Li
 
 ## Instructions
 For 1.0.0-1.1.2:
+
 1. Fuse entangle a weapon to a shield and drop both on the ground
 2. Smuggle a different weapon, then equip and unequip a third weapon from the inventory
 3. Pickup the weapon entangled to the shield and dynamic smuggle it
@@ -19,6 +20,7 @@ For 1.0.0-1.1.2:
 5. Zuggle the FE base shield
 
 For 1.2.0-1.2.1:
+
 1. Fuse entangle a weapon to a shield and drop both on the ground
 2. Feed the weapon entangled to the shield to a like like
 3. Invizuggle the FE base shield with portable culling
@@ -38,12 +40,10 @@ For dynamic purgatory without zuggling, omit step 5 for the first method and ste
 ## Resources
 - [Discord](https://discordapp.com/channels/1086729144307564648/1105598687167664239/1340135268706942986)
 - [Discord](https://discordapp.com/channels/1086729144307564648/1105598687167664239/1340153028061429954)
-
-## See also
-- Fuse Entanglement
-- Portable Culling
-- Invizuggle
-- Dpadlock-less Invizuggle
-- Slugging
-- Fuse Entangle Weapon Zuggle (FEWZ)
-- Dynamic Zuggle
+- [Fuse Entanglement](search:Fuse Entanglement)
+- [Portable Culling](search:Portable Culling)
+- [Invizuggle](search:Invizuggle)
+- [Dpadlock-less Invizuggle](search:Dpadlock-less Invizuggle)
+- [Slugging](search:Slugging)
+- [Fuse Entangle Weapon Zuggle](search:Fuse Entangle Weapon Zuggle)
+- [Dynamic Zuggle](search:Dynamic Zuggle)

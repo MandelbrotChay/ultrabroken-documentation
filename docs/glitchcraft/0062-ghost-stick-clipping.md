@@ -23,4 +23,4 @@ Has a very good chance of crashing the game in certain areas. Depths are usually
 - [YouTube](https://youtu.be/_Zaqnosyymw)
 
 ## See also
-- AutoBuild Cancel
+- [Autobuild Cancel](search:Autobuild Cancel)

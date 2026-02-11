@@ -24,4 +24,4 @@ Allows for repeated boost from a midair rocket shield surf, making it a very goo
 - [YouTube](https://youtu.be/OmuWEI46dXo?t=163)
 
 ## See also
-- Fuse Entanglement
+- [Fuse Entanglement](search:Fuse Entanglement)

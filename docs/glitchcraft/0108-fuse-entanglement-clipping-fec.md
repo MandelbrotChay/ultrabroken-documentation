@@ -22,4 +22,4 @@ Using the object clipping properties of Fuse Entanglement with a steering-stick 
 - [Youtube](https://www.youtube.com/watch?v=WhKBIKQwZzc)
 
 ## See also
-- Fuse Entanglement
+- [Fuse Entanglement](search:Fuse Entanglement)

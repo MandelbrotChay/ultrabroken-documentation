@@ -23,4 +23,4 @@ Can duplicate items. Also see ISLT, 218 on how to transfer items through saves.
 - [YouTube](https://youtu.be/mHC8BJpDxGE?si=-KT6KxiVW-O_PDto)
 
 ## See also
-- Memory Buffering
+- [Memory Buffering](search:Memory Buffering)

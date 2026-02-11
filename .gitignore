@@ -45,4 +45,4 @@ ENV/
 Thumbs.db
 
 # Local scripts used for repo maintenance
-resources/
+.resources/

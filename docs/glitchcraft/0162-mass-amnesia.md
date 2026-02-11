@@ -34,6 +34,6 @@ Known means to revert object with Mass Amnesia back to normal:
 - [Twitter](https://twitter.com/_nan_gogh/status/1686427149786370055?s=20)
 
 ## See also
-- Fuse Entanglement (FE)
-- Zuggle Load Object Transfer (ZLOT)
-- Recall Locking (RL)
+- [Fuse Entanglement](search:Fuse Entanglement)
+- [Zuggle Load Object Transfer](search:Zuggle Load Object Transfer)
+- [Recall Locking](search:Recall Locking )

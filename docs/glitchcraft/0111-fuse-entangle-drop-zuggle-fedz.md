@@ -38,6 +38,6 @@ For multiple FEDZ, you must do it in this order:
 —
 
 ## See also
-- Fuse Entanglement
-- Slugging
-- Zuggling
+- [Fuse Entanglement](search:Fuse Entanglement)
+- [Slugging](search:Slugging)
+- [Zuggling](search:Zuggling)

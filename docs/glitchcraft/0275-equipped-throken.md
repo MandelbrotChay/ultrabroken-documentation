@@ -33,6 +33,6 @@ Having a like like steal the throken weapon from Link allows it to be picked up 
 - [Discord](https://discordapp.com/channels/1086729144307564648/1113557914444111873/1377437735224086608)
 
 ## See also
-- Throken
-- Equipment Smuggle
-- Zuggle Overload
+- [Throken](search:Throken)
+- [Equipment Smuggle](search:Equipment Smuggle)
+- [Zuggle Overload](search:Zuggle Overload)

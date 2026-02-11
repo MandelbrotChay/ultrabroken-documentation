@@ -22,4 +22,4 @@ Test on more versions
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1182430416720908388)
 
 ## See also
-- Display duping
+- [Display Duping](search:Display Duping)

@@ -24,5 +24,5 @@ Also works in other locations with gloom hands nearby
 - [Discord](https://discordapp.com/channels/1086729144307564648/1105598687167664239/1324769679495139420)
 
 ## See also
-- Message Not Found (MNF)
-- Zuggle
+- [Message Not Found](search:Message Not Found)
+- [Zuggle](search:Zuggle)

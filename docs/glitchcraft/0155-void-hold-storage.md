@@ -23,4 +23,4 @@ Causes a menu softlock that revokes certain actions but allows for Link's model 
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1132405949424996475)
 
 ## See also
-- Void Holding
+- [Void Holding](search:Void Holding)

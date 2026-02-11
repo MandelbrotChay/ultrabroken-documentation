@@ -21,4 +21,4 @@ Certain triggers, such as text boxes, will restore the caves' local weather.
 —
 
 ## See also
-- Memory Buffering
+- [Memory Buffering](search:Memory Buffering)

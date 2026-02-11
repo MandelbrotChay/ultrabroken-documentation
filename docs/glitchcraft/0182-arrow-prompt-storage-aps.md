@@ -27,4 +27,4 @@ Allows storage of the arrow prompt and can be given multiple times via an enemy 
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1163996130699395144)
 
 ## See also
-- Memory Buffering
+- [Memory Buffering](search:Memory Buffering)

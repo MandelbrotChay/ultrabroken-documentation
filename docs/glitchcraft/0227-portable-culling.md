@@ -25,4 +25,4 @@ doing a drop swap drop softlocks
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1216477146978193530)
 
 ## See also
-- Stick Desync Clip (SDC)
+- [Stick Desync Clip](search:Stick Desync Clip)

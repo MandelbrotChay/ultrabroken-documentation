@@ -30,4 +30,4 @@ It's possible to perform Map Zuggling without a wall by standing away from a hig
 - [YouTube](https://www.youtube.com/watch?v=iYSTevbZgBA)
 
 ## See also
-- Zuggling
+- [Zuggling](search:Zuggling)

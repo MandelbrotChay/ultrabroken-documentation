@@ -22,5 +22,5 @@ Mineru Cull Storage SRZ neither requires frame–perfect pausing (like Mineru Di
 - [Discord](https://discord.com/channels/1086729144307564648/1110956205624532993/1439720452325900411)
 
 ## See also
-- Portable Culling
-- Swap Resync Zuggle (SRZ)
+- [Portable Culling](search:Portable Culling)
+- [Swap Resync Zuggle](search:Swap Resync Zuggle)

@@ -38,4 +38,4 @@ Remarks:
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1134569862497304629)
 
 ## See also
-- Fuse Entanglement
+- [Fuse Entanglement](search:Fuse Entanglement)

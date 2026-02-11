@@ -32,4 +32,4 @@ Method 2 in 1.0.0 will allow you to reuse your bomb flower infinitely, but also 
 - [YouTube](https://www.youtube.com/watch?v=NP-owf2XiVM&t)
 
 ## See also
-- Modifier Deletion WST
+- [Modifier Deletion Weapon State Transfer](search:Modifier Deletion Weapon State Transfer)

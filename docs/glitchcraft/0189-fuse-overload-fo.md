@@ -25,4 +25,4 @@ Pickup overload can also be used in place of zuggle overload
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1201964183516876800)
 
 ## See also
-- Zuggle Overload
+- [Zuggle Overload](search:Zuggle Overload)

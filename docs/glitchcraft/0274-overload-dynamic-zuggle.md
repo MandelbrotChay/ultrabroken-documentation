@@ -26,5 +26,5 @@ Possible to perform on 1.1.2 with force swap on step 5
 - [Discord](https://discord.com/channels/1086729144307564648/1110956205624532993/1374059568686174219)
 
 ## See also
-- Dynamic Zuggle
-- Zuggle Overload
+- [Dynamic Zuggle](search:Dynamic Zuggle)
+- [Zuggle Overload](search:Zuggle Overload)

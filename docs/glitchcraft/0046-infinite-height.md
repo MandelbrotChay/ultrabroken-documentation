@@ -26,4 +26,4 @@ Allows you chain jump attacks to jump infinitly.
 - [YouTube](https://youtu.be/Za722IEbaP8)
 
 ## See also
-- Jumpslash Cancel
+- [Jumpslash Cancel](search:Jumpslash Cancel)

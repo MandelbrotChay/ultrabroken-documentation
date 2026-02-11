@@ -24,4 +24,5 @@ Using Overload it's possible to fully portably PSLOT on current versions
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1266400937778610206)
 
 ## See also
-- PSLOTPortacull Invismuggle
+- [PSLOT](search:PSLOT)
+- [Portacull Invismuggle](search:Portacull Invismuggle)

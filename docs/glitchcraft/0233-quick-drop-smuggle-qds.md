@@ -3,7 +3,7 @@ title: "Quick Drop Smuggle"
 ---
 
 # Quick Drop Smuggle `QDS`
-Zas, mulberry, Aeolian - 16 March 2024
+mulberry, Zas, Aeolian, Winnerboi, Ryan? - 16 March 2024
 
 ## Overview
 Dropping and equipping weapons in a specific way causes drop smuggle.
@@ -25,24 +25,19 @@ Dropping and equipping weapons in a specific way causes drop smuggle.
 12. swap equipment
 13. unequip
 14. unpause
-15. pickup dropped equipment
-to turn it into a full zuggle, swap equipment and faildrop
+15. pickup dropped equipment to turn it into a full zuggle, swap equipment and faildrop
 
 ## Notes
-Can cause dynamic zuggle
-
-dynamic zuggle of equipped item (Winnerboi & Ryan?):
-Discord
-Discord
-Optimal drop zuggle inputs (Aergyl, based off Zas' inputs)
-Discord
-Instant drop zuggle (Mulberry)
-Discord
-Mulberries drop input cheat sheet:
-Discord
+Can cause dynamic zuggle.
 
 ## Resources
-- [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1218608839121698838)
+- [Crash weapon from menu on 1.0](https://discord.com/channels/1086729144307564648/1105598687167664239/1218608839121698838)
+- [Step by step guide](https://discord.com/channels/1086729144307564648/1105598687167664239/1221209979877330955)
+- [Video guide](https://discord.com/channels/1086729144307564648/1105598687167664239/1221226146885271652)
+- [Optimal Drop Zuggle inputs](https://discord.com/channels/1086729144307564648/1105598254198050947/1218801490336944169)
+- [Instant Drop zuggle](https://discord.com/channels/1086729144307564648/1105598687167664239/1220083199800246313)
+- [Drop input cheat sheet](https://discord.com/channels/1086729144307564648/1105598687167664239/1220429377364426773)
 
 ## See also
-- Dynamic ZuggleHand Locked Equipment Smuggling
+- [Dynamic Zuggle](search:Dynamic Zuggle)
+- [Hand Locked Equipment Smuggling](search:Hand Locked Equipment Smuggling)

@@ -23,4 +23,4 @@ Allows quick spin attacks with the spear charge animation, and many other combin
 - [Youtube](https://youtu.be/ZbaN8Ljj4NE)
 
 ## See also
-- Zuggle Overload
+- [Zuggle Overload](search:Zuggle Overload)

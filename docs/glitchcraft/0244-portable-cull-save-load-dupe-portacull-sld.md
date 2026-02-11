@@ -26,5 +26,5 @@ Allows for Save Load Duplication on v1.2.0-1.2.1 by culling Link on the same fra
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1263286685198712883)
 
 ## See also
-- Save Load Dupe
-- Portable Culling
+- [Save Load Dupe](search:Save Load Dupe)
+- [Portable Culling](search:Portable Culling)

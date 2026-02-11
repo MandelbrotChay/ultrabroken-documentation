@@ -34,4 +34,6 @@ Discord (Lightos_)
 - [YouTube](https://www.youtube.com/watch?v=WNnnI13a954&t)
 
 ## See also
-- Stick Desync ClippingObject CullingMemory Buffering
+- [Memory Buffering](search:Memory Buffering)
+- [Object Culling](search:Object Culling)
+- [Stick Desync Clip](search:Stick Desync Clip)

@@ -54,4 +54,4 @@ There are other ways of clipping with hydro:
 - [Twitter](https://fxtwitter.com/FBuffalo3/status/1681022210906152960)
 
 ## See also
-- Fuse Entanglement
+- [Fuse Entanglement](search:Fuse Entanglement)

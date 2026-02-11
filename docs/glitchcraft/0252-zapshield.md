@@ -32,5 +32,5 @@ While zapshield itself can be created on all versions, it's applications are ver
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1328854135495200778)
 
 ## See also
-- Fuse Entanglement
-- Stick Desync Clip (SDC)
+- [Fuse Entanglement](search:Fuse Entanglement)
+- [Stick Desync Clip](search:Stick Desync Clip)

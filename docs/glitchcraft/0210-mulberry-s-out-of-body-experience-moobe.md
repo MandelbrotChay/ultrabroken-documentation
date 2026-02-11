@@ -22,4 +22,4 @@ mulberry - 6 January 2024
 - [Discord](https://discord.com/channels/1086729144307564648/1110956205624532993/1193262026273861764)
 
 ## See also
-- Memory Buffering
+- [Memory Buffering](search:Memory Buffering)

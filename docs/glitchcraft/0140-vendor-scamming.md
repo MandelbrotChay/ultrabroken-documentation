@@ -23,4 +23,4 @@ Easiest method of reaching max rupees.
 - [Twitter](https://twitter.com/NX721_/status/1675983600263778305)
 
 ## See also
-- Hold Storage
+- [Hold Storage](search:Hold Storage)

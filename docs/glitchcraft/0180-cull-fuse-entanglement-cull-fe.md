@@ -31,4 +31,4 @@ Save your progress! This can lead to softlocking your game!
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1161329928172748961)
 
 ## See also
-- Stick Desync Clip
+- [Stick Desync Clip](search:Stick Desync Clip)

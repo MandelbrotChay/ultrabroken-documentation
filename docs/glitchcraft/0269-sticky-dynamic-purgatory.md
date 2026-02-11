@@ -23,5 +23,5 @@ TODO: Test other forms of culling
 - [Discord](https://discordapp.com/channels/1086729144307564648/1105598687167664239/1340352091310395404)
 
 ## See also
-- Dynamic Purgatory Zuggle
-- Cold Fuse
+- [Dynamic Purgatory Zuggle](search:Dynamic Purgatory Zuggle)
+- [Cold Fuse](search:Cold Fuse)

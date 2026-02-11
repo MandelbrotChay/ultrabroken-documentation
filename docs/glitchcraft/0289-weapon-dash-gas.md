@@ -26,5 +26,5 @@ Allows for easy weapon GAS by performing a dash attack while its fused zonai dev
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1443887058153373729)
 
 ## See also
-- Guard-less Active Shield (GAS)
-- Fuse Entanglement
+- [Guard-less Active Shield](search:Guard-less Active Shield)
+- [Fuse Entanglement](search:Fuse Entanglement)

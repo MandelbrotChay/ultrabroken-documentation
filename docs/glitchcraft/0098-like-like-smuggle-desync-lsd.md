@@ -21,4 +21,4 @@ Allows for desync and consequently, WST via slugging.
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1118373368115232788)
 
 ## See also
-- Slugging
+- [Slugging](search:Slugging)

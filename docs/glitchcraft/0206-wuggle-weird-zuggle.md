@@ -28,4 +28,5 @@ Also known as Weird Zuggle.
 - [YouTube](https://www.youtube.com/watch?v=gO6cB5cSQTY&t)
 
 ## See also
-- Fuse EntanglementObject Culling
+- [Fuse Entanglement](search:Fuse Entanglement)
+- [Object Culling](search:Object Culling)

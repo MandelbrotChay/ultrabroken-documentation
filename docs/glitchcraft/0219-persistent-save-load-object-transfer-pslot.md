@@ -27,6 +27,6 @@ PSLOT has a very long history of setups, some much more complex than others. The
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1196561445031252051)
 
 ## See also
-- Fuse Entanglement
-- Zuggle
-- Stick Desync Clip
+- [Fuse Entanglement](search:Fuse Entanglement)
+- [Zuggle](search:Zuggle)
+- [Stick Desync Clip](search:Stick Desync Clip)

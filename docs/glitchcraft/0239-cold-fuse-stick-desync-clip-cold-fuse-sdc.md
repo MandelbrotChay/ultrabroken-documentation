@@ -27,5 +27,5 @@ An easier way to perform stick desync clip using cold fuse that allows for an al
 - [Discord](https://discord.com/channels/1086729144307564648/1109838351596527726/1267029375925096489)
 
 ## See also
-- Stick Desync Clipping
-- Cold Fuse
+- [Stick Desync Clip](search:Stick Desync Clip)
+- [Cold Fuse](search:Cold Fuse)

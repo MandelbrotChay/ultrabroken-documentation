@@ -24,4 +24,4 @@ The exact cause of texture tearing remains unknown and there are no well defined
 - [Discord](https://discord.com/channels/1086729144307564648/1194033039123165215/1195690499852480544)
 
 ## See also
-- Mulberry's Out of Body Experience
+- [Mulberry's Out of Body Experience](search:Mulberry's Out of Body Experience)

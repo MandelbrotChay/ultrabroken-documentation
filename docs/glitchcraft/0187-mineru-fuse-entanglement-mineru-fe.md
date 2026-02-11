@@ -45,4 +45,4 @@ For method 1, any method of culling Link can work in place of like like stick cu
 - [Discord](https://discord.com/channels/1086729144307564648/1109838351596527726/1235768638796071013)
 
 ## See also
-- Fuse Entanglement
+- [Fuse Entanglement](search:Fuse Entanglement)

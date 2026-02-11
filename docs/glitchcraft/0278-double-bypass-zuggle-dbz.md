@@ -31,4 +31,5 @@ There are variations of this setup that don't require a load, using a specific w
 - [Discord](https://discord.com/channels/1086729144307564648/1110956205624532993/1383991495123796030)
 
 ## See also
-- ZugglePortable Culling
+- [Zuggle](search:Zuggle)
+- [Portable Culling](search:Portable Culling)

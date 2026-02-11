@@ -29,4 +29,4 @@ The target item remains in desync in the inventory until the duplicate is picked
 - [YouTube](https://www.youtube.com/watch?v=mfM41RB23pc)
 
 ## See also
-- Fuse Entanglement
+- [Fuse Entanglement](search:Fuse Entanglement)

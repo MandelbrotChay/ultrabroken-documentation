@@ -20,4 +20,4 @@ Currently infinite
 - [Youtube](https://youtu.be/4u20HcJcb9A)
 
 ## See also
-- [Totk Sprint Methods](https://docs.google.com/spreadsheets/d/1aXefsoOStTvzwOAzFIaofCtjMf1l6XXbEP5pp_iepzw/edit?usp=sharing)
+- [Sprint Methods](search:Sprint Methods)

@@ -23,4 +23,4 @@ Recall locking a thrown sword and fusing it to a shield causes it to do permanen
 [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1194982242565496895)
 
 ## See also
-- 1.2+ zuggle methods
+- [Zuggle 1.2](search:Zuggle 1.2)

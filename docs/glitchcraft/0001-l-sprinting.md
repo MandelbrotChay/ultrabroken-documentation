@@ -22,4 +22,4 @@ This works best on fuse and ultrahand. Hold B and tap L twice (one time to activ
 - [Youtube](https://youtu.be/mQrmDMh1Cfs)
 
 ## See also
-- Totk Sprint Methods
+- [Sprint Methods](search:Sprint Methods)

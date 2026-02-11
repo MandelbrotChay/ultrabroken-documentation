@@ -29,4 +29,4 @@ Loading a previous save will transfer a stacked bow/shield to that save. Effecti
 - [YouTube](https://www.youtube.com/watch?v=8lSRXOM1xMc)
 
 ## See also
-- Zuggling
+- [Zuggling](search:Zuggling)

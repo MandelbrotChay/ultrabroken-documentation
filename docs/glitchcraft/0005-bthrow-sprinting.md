@@ -19,4 +19,4 @@ Press B - ZR - R - B (or B - R - ZR - B) and repeat
 - [Youtube](https://youtu.be/Mb8rgAwELYY)
 
 ## See also
-- [Totk Sprint Methods](https://docs.google.com/spreadsheets/d/1aXefsoOStTvzwOAzFIaofCtjMf1l6XXbEP5pp_iepzw/edit?usp=sharing)
+- [Sprint Methods](search:Sprint Methods)

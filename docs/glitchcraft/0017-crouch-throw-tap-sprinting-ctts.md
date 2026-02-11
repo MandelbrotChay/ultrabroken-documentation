@@ -22,4 +22,4 @@ With current testing, this is the fastest sprinting method
 - [YouTube](https://youtu.be/eea66BoVhcQ)
 
 ## See also
-- [Totk Sprinting Methods](https://docs.google.com/spreadsheets/d/1aXefsoOStTvzwOAzFIaofCtjMf1l6XXbEP5pp_iepzw/edit?usp=sharing)
+- [Sprinting Methods](search:Sprinting Methods)

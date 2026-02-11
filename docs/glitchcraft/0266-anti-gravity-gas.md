@@ -26,5 +26,5 @@ Allows for weapon GAS by throwing the base of an ARAZ connection just as Link ge
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1331789466683052175)
 
 ## See also
-- AntiGrav Weapons
-- Zuggle
+- [AntiGrav Weapons](search:AntiGrav Weapons)
+- [Zuggle](search:Zuggle)

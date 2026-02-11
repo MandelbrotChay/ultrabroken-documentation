@@ -35,4 +35,4 @@ this was a pain to write, still experimenting, if you have any discoveries pleas
 - [Twitter](https://twitter.com/NX721_/status/1684303947224473602?s=20)
 
 ## See also
-- Midair Throw Duplication
+- [Midair Throw Duplication](search:Midair Throw Duplication)

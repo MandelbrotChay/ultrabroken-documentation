@@ -25,4 +25,4 @@ Dropped equipment goes zoomy into the sky based on timing.
 - [Twitter](https://twitter.com/NX721_/status/1678921120102371328)
 
 ## See also
-- Hold Smuggling
+- [Hold Smuggling](search:Hold Smuggling)

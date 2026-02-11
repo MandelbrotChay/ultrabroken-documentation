@@ -24,4 +24,4 @@ Allows you to dupe materials through Stack Splitting
 - [Discord](https://discord.com/channels/1086729144307564648/1221545645844725760/1385097896575373412)
 
 ## See also
-- Stack Splitting
+- [Stack Splitting](search:Stack Splitting)

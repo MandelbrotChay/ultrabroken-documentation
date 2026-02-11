@@ -26,4 +26,4 @@ Before being culled you can perform an action, culling it will pause it and then
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1135462408756936704)
 
 ## See also
-- Zuggle Overload
+- [Zuggle Overload](search:Zuggle Overload)

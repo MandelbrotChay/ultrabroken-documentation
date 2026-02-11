@@ -20,4 +20,4 @@ Unequip bow, hold ZL, and mash R, ZR, and B
 - [Youtube](https://youtu.be/ad9HCM39b8o)
 
 ## See also
-- [Totk Sprint Methods](https://docs.google.com/spreadsheets/d/1aXefsoOStTvzwOAzFIaofCtjMf1l6XXbEP5pp_iepzw/edit?usp=sharing)
+- [Sprint Methods](search:Sprint Methods)

@@ -23,5 +23,5 @@ UltraSLOT objects can be continuously transferred between files as long as the o
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1207707842325258340)
 
 ## See also
-- Fuse Entanglement
-- Drop Smuggle
+- [Fuse Entanglement](search:Fuse Entanglement)
+- [Drop Smuggle](search:Drop Smuggle)

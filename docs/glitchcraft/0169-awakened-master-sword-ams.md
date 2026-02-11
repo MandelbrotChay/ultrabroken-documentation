@@ -27,4 +27,4 @@ Requires the crisis at Hyrule castle quest to be unfinished
 - [YouTube](https://www.youtube.com/watch?v=50RRbWV-d-A&t)
 
 ## See also
-- GAS
+- [Guard-less Active Shield](search:Guard-less Active Shield)

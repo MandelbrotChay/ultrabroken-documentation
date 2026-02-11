@@ -24,4 +24,5 @@ Objects fuse entangled to Mineru can be detangled by fusing another object over 
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1150136975504982167)
 
 ## See also
-- ZugglingFuse Entanglement
+- [Zuggling](search:Zuggling)
+- [Fuse Entanglement](search:Fuse Entanglement)

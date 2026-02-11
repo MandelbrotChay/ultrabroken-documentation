@@ -27,4 +27,4 @@ Is particularly useful for early game or runeless setups, as this FE method does
 - [YouTube](https://youtu.be/5P6vfDaVYBQ?si=XsK0Zpsw_TmlmFKG)
 
 ## See also
-- Fuse Entanglement
+- [Fuse Entanglement](search:Fuse Entanglement)

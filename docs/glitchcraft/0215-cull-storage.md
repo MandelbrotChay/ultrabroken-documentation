@@ -34,4 +34,5 @@ Can also be done by recalling the SDC stick while standing outside of the cullin
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1249007861523283999)
 
 ## See also
-- Object CullingStick Desync Clipping
+- [Stick Desync Clip](search:Stick Desync Clip)
+- [Object Culling](search:Object Culling)

@@ -26,5 +26,5 @@ On 1.2.0 and 1.2.1, dropping culled equipment results in the item unculling and 
 - [YouTube](https://youtu.be/oRbvtjYZhOo)
 
 ## See also
-- Object Culling
-- Equipment Smuggle
+- [Object Culling](search:Object Culling)
+- [Equipment Smuggle](search:Equipment Smuggle)

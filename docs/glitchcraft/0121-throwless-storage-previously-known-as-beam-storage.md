@@ -31,4 +31,4 @@ Rockets can be used, however they will simply become deactivated and will have n
 - [Twitter](https://twitter.com/NX721_/status/1674530272199741440)
 
 ## See also
-- Memory Buffering
+- [Memory Buffering](search:Memory Buffering)

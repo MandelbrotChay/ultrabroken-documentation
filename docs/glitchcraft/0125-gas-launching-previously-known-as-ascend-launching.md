@@ -39,4 +39,4 @@ Uses Recall, but anything that freezes time works too.
 - [Tutorial by Blize](https://www.youtube.com/watch?v=4oxjOE0onxI)
 
 ## See also
-- Guardless Active Shield
+- [Guard-less Active Shield](search:Guard-less Active Shield)

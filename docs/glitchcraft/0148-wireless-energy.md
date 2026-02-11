@@ -22,4 +22,4 @@ Creates a wireless connection to a culled battery. By attaching a dragon part to
 - [Twitter](https://vxtwitter.com/_nan_gogh/status/1678848829259382786?s=46)
 
 ## See also
-- Fuse Entanglement
+- [Fuse Entanglement](search:Fuse Entanglement)

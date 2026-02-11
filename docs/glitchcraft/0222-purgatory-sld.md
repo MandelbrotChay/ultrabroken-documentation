@@ -24,6 +24,6 @@ Grabbing a purgatory SLD object with ultrahand causes UltraSLOT.
 - [Discord](https://discord.com/channels/1086729144307564648/1131261670975606916/1208044244766425168)
 
 ## See also
-- Fuse Entanglement
-- Cold Fuse
-- Drop Smuggle
+- [Fuse Entanglement](search:Fuse Entanglement)
+- [Cold Fuse](search:Cold Fuse)
+- [Drop Smuggle](search:Drop Smuggle)

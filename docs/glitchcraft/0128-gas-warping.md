@@ -26,4 +26,4 @@ Does not persist through map changes, or through previous saves that were made b
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1122897857779859577)
 
 ## See also
-- Guardless Active Shield
+- [Guard-less Active Shield](search:Guard-less Active Shield)

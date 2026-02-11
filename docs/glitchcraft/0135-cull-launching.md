@@ -24,4 +24,4 @@ The position of the culled object relative to the regular object determines the 
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1149779300283863073)
 
 ## See also
-- Object Culling
+- [Object Culling](search:Object Culling)

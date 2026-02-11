@@ -37,6 +37,6 @@ Void dipped equipment have the following properties:
 - [DiscordDiscordDiscord](https://discord.com/channels/1086729144307564648/1113557914444111873/1456747616430850126)
 
 ## See also
-- Portable Culling
-- Fuse Entanglement
-- Zuggle Overload
+- [Portable Culling](search:Portable Culling)
+- [Fuse Entanglement](search:Fuse Entanglement)
+- [Zuggle Overload](search:Zuggle Overload)

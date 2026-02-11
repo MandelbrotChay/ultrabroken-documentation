@@ -23,4 +23,4 @@ Fusing to an overload dropped item causes cold fuse
 - [Twitter](https://fxtwitter.com/FBuffalo3/status/1683255977758584832)
 
 ## See also
-- Zuggle Overload
+- [Zuggle Overload](search:Zuggle Overload)

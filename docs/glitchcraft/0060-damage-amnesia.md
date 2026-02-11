@@ -22,4 +22,4 @@ Can be combined with springbombing.
 - [YouTube](https://www.youtube.com/watch?v=P0IjC2E64MY)
 
 ## See also
-- Memory Buffering
+- [Memory Buffering](search:Memory Buffering)

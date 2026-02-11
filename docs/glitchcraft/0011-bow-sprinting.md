@@ -20,4 +20,4 @@ Tap B - ZR, repeat. Additional info: alternate tapping B then ZR. With a tempo o
 - [Youtube](https://youtu.be/o_3Dkjkcyww)
 
 ## See also
-- [Totk Sprint Methods](https://docs.google.com/spreadsheets/d/1aXefsoOStTvzwOAzFIaofCtjMf1l6XXbEP5pp_iepzw/edit?usp=sharing)
+- [Sprint Methods](search:Sprint Methods)
