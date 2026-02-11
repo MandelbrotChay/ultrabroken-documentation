@@ -93,17 +93,44 @@ function setSearchQueryAndSubmit(input, q) {
   input.value = q;
   input.dispatchEvent(new Event('input', { bubbles: true }));
   input.dispatchEvent(new Event('change', { bubbles: true }));
-
-  // Simulate a keyup for Enter so search UIs that listen for Enter will run
+  // Avoid simulating Enter: other scripts intentionally block Enter.
+  // Instead try to submit via form or click a submit button so the search UI handles it.
   try {
-    const down = new KeyboardEvent('keydown', { bubbles: true, cancelable: true, key: 'Enter', code: 'Enter', keyCode: 13 });
-    const up = new KeyboardEvent('keyup', { bubbles: true, cancelable: true, key: 'Enter', code: 'Enter', keyCode: 13 });
-    input.dispatchEvent(down);
-    input.dispatchEvent(up);
-  } catch (e) {}
+    const val = (input.value || '').trim();
+    if (!val) return;
 
-  // Also dispatch a synthetic input event after a short delay to cover some implementations
-  setTimeout(() => {
-    input.dispatchEvent(new Event('input', { bubbles: true }));
-  }, 50);
+    // 1) If input is inside a form, try to click a submit button or submit the form
+    const form = input.closest && input.closest('form');
+    if (form) {
+      const submit = form.querySelector('button[type="submit"], input[type="submit"], .md-search__submit, .md-search__button');
+      if (submit) {
+        try { submit.click(); return; } catch (e) {}
+      }
+      try {
+        form.dispatchEvent(new Event('submit', { bubbles: true, cancelable: true }));
+      } catch (e) {}
+      try { if (typeof form.submit === 'function') { form.submit(); return; } } catch (e) {}
+    }
+
+    // 2) Try global/nearby submit buttons that some themes expose
+    const globalSubmitSelectors = [
+      'button.md-search__button[type="submit"]',
+      '.md-search__submit',
+      'button[type="submit"]',
+      '.md-search--submit',
+      '.md-search__button',
+    ];
+    for (const s of globalSubmitSelectors) {
+      const btn = document.querySelector(s);
+      if (btn) {
+        try { btn.click(); return; } catch (e) {}
+      }
+    }
+
+    // 3) Dispatch a native 'search' event (some implementations listen for it)
+    try { input.dispatchEvent(new Event('search', { bubbles: true })); } catch (e) {}
+
+    // 4) As a final fallback, re-dispatch input after a short delay to encourage reactive listeners
+    setTimeout(() => { try { input.dispatchEvent(new Event('input', { bubbles: true })); } catch (e) {} }, 50);
+  } catch (e) {}
 }
