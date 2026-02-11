@@ -16,11 +16,11 @@ Welcome — this site is a community-driven encyclopedia documenting glitches, t
 
 ## Purpose 
 ---
-Concise, community-maintained documentation for Ultrabroken glitches and techniques — readable guides, glitch writeups, and practical how‑tos.
+Concise, community-based documentation for Ultrabroken glitches and techniques — readable guides, glitch writeups, and practical how‑tos.
 
 ## Content
 ---
-Detailed glitch reports, step‑by‑step instructions, examples, images, and small scripts; organized into the site's main sections (Ultrabroken, Entanglement, Glitchcraft, and related collections).
+Detailed glitch reports, step‑by‑step instructions and examples; organized into the site's main sections.
 
 ## Site experience
 ---
@@ -28,7 +28,7 @@ Built with MkDocs + Material for fast search, clear navigation, and readable typ
 
 ## Quick discovery
 ---
-Editor-friendly `search:` links and the integrated site search let you find related topics quickly.
+The integrated site search, searchbar- and permalinks let you find and share related topics quickly.
 
 ## Community
 ---
