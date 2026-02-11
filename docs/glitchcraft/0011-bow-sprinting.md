@@ -7,7 +7,6 @@ title: "Bow Sprinting"
 
 ## Overview
 ---
-—
 _Steel - 14 May 2023_
 
 ## Instructions

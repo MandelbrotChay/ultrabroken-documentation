@@ -7,7 +7,6 @@ title: "No Bow Sprinting"
 
 ## Overview
 ---
-—
 _Steel - 12 May 2023_
 
 ## Instructions

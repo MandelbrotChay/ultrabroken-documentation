@@ -7,7 +7,6 @@ title: "L Sprinting"
 
 ## Overview
 ---
-—
 _Tauktes - 12 May 2023_
 
 ## Instructions

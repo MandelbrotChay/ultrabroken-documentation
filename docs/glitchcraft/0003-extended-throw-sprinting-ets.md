@@ -7,7 +7,6 @@ title: "Extended Throw Sprinting"
 
 ## Overview
 ---
-—
 _briochoc - 12 May 2023_
 
 ## Instructions

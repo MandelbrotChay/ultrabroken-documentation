@@ -7,7 +7,6 @@ title: "Throw Tap Sprinting"
 
 ## Overview
 ---
-—
 _Deystroyer, Tauktes - 14 May 2023_
 
 ## Instructions

@@ -7,7 +7,6 @@ title: "Crouch Sprinting"
 
 ## Overview
 ---
-—
 _Mozz - 14 May 2023_
 
 ## Instructions

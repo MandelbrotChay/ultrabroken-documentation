@@ -7,7 +7,6 @@ title: "BThrow Sprinting"
 
 ## Overview
 ---
-—
 _12 May 2023_
 
 ## Instructions

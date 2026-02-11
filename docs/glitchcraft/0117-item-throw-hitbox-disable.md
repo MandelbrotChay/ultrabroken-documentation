@@ -7,7 +7,6 @@ title: "Item Throw Hitbox Disable"
 
 ## Overview
 ---
-—
 _Arfix, brought up by Moonrise - 18 June 2023; 8 August 2023_
 
 ## Instructions
