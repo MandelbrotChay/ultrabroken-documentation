@@ -32,6 +32,7 @@ extra_javascript:
   - assets/scripts/header-reserve.js
   - assets/scripts/header-marquee.js
   - assets/scripts/particles-constellations.js
+  - assets/scripts/search-link.js
   
 
 nav:

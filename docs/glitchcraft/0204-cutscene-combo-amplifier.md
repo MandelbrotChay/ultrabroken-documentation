@@ -27,5 +27,7 @@ Extends and stacks the damage frames of an attack with memory buffering, causing
 - [YouTube](https://www.youtube.com/watch?v=I9HZDkiArJc)
 
 ## See also
+- <a class="search-link" data-query="your search terms" href="#">Memory Buffering</a>
+- <a class="search-link" data-query="mult words">Infinite Damage</a>
 - Memory Buffering
 - Infinite Damage
