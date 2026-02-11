@@ -699,55 +699,14 @@ li.task-list-item a, li.task-list a {
   margin: 0.25rem 0;
 }
 
-/* Global toast used for copy feedback (bottom-right) */
-.ub-toast {
-  /* Lower-right, light panel matching the searchbar toast appearance */
-  position: fixed;
-  right: 1rem; /* align closer to reference searchbar toast */
-  /*bottom: 0.85rem;*/
-  bottom: auto;
-  left: auto;
-  top: auto;
-  z-index: 9999;
-  /* Match searchbar toast background and tone */
-  background: #bec3c8; /* requested toast background */
-  color: rgba(12,12,12,0.88);
-  /* Keep the visual box size stable while using a slightly smaller font: */
-  padding: 0.45rem 1.1rem; /* increase padding so box appears bigger */
-  border-radius: 3px; /* slight rounding to match reference */
-  font-size: 0.81rem; /* slightly larger for better legibility */
-  line-height: 1.15;
-  min-width: 260px; /* slightly wider to the right like the reference */
-  min-height: 46px; /* increase height to better match reference box */
-  text-align: left; /* left-align the message */
-  opacity: 0;
-  pointer-events: none;
-  box-shadow: 0 12px 28px rgba(0,0,0,0.32);
-  border-top: 1px solid rgba(0,0,0,0.06);
-  border-bottom: 1px solid rgba(255,255,255,0.02);
-    /* Prefer Texturina for the toast; force with !important to override theme */
-    font-family: 'Texturina', 'New Rocker', Georgia, serif !important;
-    font-weight: 400 !important; /* use a slightly bolder weight for parity */
-  letter-spacing: 0.2px;
-}
+/* Removed: .ub-toast rules cleaned out to rely on theme dialog/toast */
 
-@keyframes ub-toast-in {
-  from { opacity: 0; transform: translateY(8px) scaleY(1); }
-  to   { opacity: 1; transform: translateY(0) scaleY(1); }
-}
-
-@keyframes ub-toast-out {
-  from { opacity: 1; }
-  to   { opacity: 0; }
-}
-
-.ub-toast--visible {
-  transform-origin: bottom right; /* pivot from bottom edge */
-  animation: ub-toast-in 600ms cubic-bezier(.2,.9,.2,1) forwards;
-}
-
-.ub-toast--hiding {
-  animation: ub-toast-out 300ms ease forwards;
+/* Theme dialog toast color overrides
+   Targets the dialog element created by `showCopiedToast()` (id `ub-global-toast`).
+   Only override background and text color to match project variables. */
+#ub-global-toast .md-dialog__inner {
+  background-color: var(--teal-dark) !important;
+  color: var(--teal-glow) !important;
 }
 
 
