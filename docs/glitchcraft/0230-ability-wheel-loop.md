@@ -3,7 +3,7 @@ title: "Ability Wheel Loop"
 ---
 
 # Ability Wheel Loop
-Zas - 11 March 2024
+_Zas - 11 March 2024_
 
 ## Overview
 Gets you stuck in the ability wheel indefinitely opening and closing.
@@ -22,6 +22,3 @@ if the timing was right the ability wheel will come up right after the dpad menu
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1216873236248395896)
-
-## See also
-—

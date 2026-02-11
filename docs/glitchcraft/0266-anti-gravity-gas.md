@@ -3,7 +3,7 @@ title: "Anti-gravity GAS"
 ---
 
 # Anti-gravity GAS
-mulberry - 22 January 2025
+_mulberry - 22 January 2025_
 
 ## Overview
 Allows for weapon GAS by throwing the base of an ARAZ connection just as Link gets shocked
@@ -24,7 +24,5 @@ Allows for weapon GAS by throwing the base of an ARAZ connection just as Link ge
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1331788286011904123)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1331789466683052175)
-
-## See also
 - [AntiGrav Weapons](search:AntiGrav Weapons)
 - [Zuggle](search:Zuggle)

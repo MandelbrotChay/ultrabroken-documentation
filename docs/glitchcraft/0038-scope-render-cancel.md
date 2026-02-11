@@ -3,7 +3,7 @@ title: "Scope Render Cancel"
 ---
 
 # Scope Render Cancel
-NX721,  eXe - 19 May 2023; 2 June 2023; 9 July 2023
+_NX721,  eXe - 19 May 2023; 2 June 2023; 9 July 2023_
 
 ## Overview
 Removes scope HUD and reveals two borders that show an overlay that renders flames, visual effects, etc. Another version of this glitch can be used to reduce the size of the borders for the camera filter for cinematic shots.
@@ -33,6 +33,3 @@ This glitch cancels any time you open any type of menu, any NPC or prompt intera
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1109188178008621147)
 - [Twitter](https://twitter.com/NX721_/status/1678077674349121536)
 - [Twitter](https://twitter.com/NX721_/status/1678114915293491200?s=20)
-
-## See also
-—

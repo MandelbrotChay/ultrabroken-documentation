@@ -3,7 +3,7 @@ title: "Cold Fuse"
 ---
 
 # Cold Fuse
-pyuk, Ryan?, Zas - 23 July 2023
+_pyuk, Ryan?, Zas - 23 July 2023_
 
 ## Overview
 Interrupting a fuse causes null fe without destroying the connection to the weapon/shield.
@@ -33,8 +33,6 @@ Discord (mulberry)
 
 ## Resources
 - [Twitter](https://fxtwitter.com/FBuffalo3/status/1683255977758584832)
-
-## See also
 - [Zuggle Overload](search:Zuggle OverloadD)
 - [Drop Smuggling](search:Drop Smuggling)
 - [Object Culling](search:Object Culling)

@@ -3,7 +3,7 @@ title: "Master Sword Liberation"
 ---
 
 # Master Sword Liberation
-ock, mulbery - Nov 11, 2023; Nov 27, 2023; Dec 2, 2023
+_ock, mulbery - Nov 11, 2023; Nov 27, 2023; Dec 2, 2023_
 
 ## Overview
 Allows you to dupe the master sword/decayed master sword
@@ -56,6 +56,3 @@ This can be combined with decayed zuggle to transfer it through files.
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1191987058412101725)
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1191987058412101725)
 - [DIscord](https://discord.com/channels/1086729144307564648/1105598687167664239/1178791475216134194)
-
-## See also
-—

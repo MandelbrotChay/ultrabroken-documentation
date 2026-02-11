@@ -3,7 +3,7 @@ title: "Void Dipping"
 ---
 
 # Void Dipping
-Squidwest, mulberry, Aergyl - 29 December 2025
+_Squidwest, mulberry, Aergyl - 29 December 2025_
 
 ## Overview
 An extremely powerful equipment state caused by interrupting and retrieving an equipment item that has been destroyed by the void.
@@ -35,8 +35,6 @@ Void dipped equipment have the following properties:
 ## Resources
 - [Discord](https://discord.com/channels/1111875355758837830/1128775917376897145/1455340505096261796)
 - [DiscordDiscordDiscord](https://discord.com/channels/1086729144307564648/1113557914444111873/1456747616430850126)
-
-## See also
 - [Portable Culling](search:Portable Culling)
 - [Fuse Entanglement](search:Fuse Entanglement)
 - [Zuggle Overload](search:Zuggle Overload)

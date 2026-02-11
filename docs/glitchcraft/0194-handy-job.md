@@ -3,7 +3,7 @@ title: "Handy Job"
 ---
 
 # Handy Job
-Ock - 20 November 2023
+_Ock - 20 November 2023_
 
 ## Overview
 Gloom hands reset the durability of enemy equipment.
@@ -21,6 +21,3 @@ Does not repair a weapon's fuse durability if an item has been fused to it previ
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1176267847220076595)
 - [YouTube](https://www.youtube.com/watch?v=a0slhXe6jzU)
-
-## See also
-—

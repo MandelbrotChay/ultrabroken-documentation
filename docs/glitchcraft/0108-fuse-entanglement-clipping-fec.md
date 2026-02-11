@@ -3,7 +3,7 @@ title: "Fuse Entanglement Clipping"
 ---
 
 # Fuse Entanglement Clipping `FEC`
-circyit - 16 June 2023
+_circyit - 16 June 2023_
 
 ## Overview
 Using the object clipping properties of Fuse Entanglement with a steering-stick allows you to clip through certain walls, mostly invisble ones.
@@ -20,6 +20,4 @@ Using the object clipping properties of Fuse Entanglement with a steering-stick 
 
 ## Resources
 - [Youtube](https://www.youtube.com/watch?v=WhKBIKQwZzc)
-
-## See also
 - [Fuse Entanglement](search:Fuse Entanglement)

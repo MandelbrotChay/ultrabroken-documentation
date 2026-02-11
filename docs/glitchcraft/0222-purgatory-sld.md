@@ -3,7 +3,7 @@ title: "Purgatory SLD"
 ---
 
 # Purgatory SLD
-mulberry - 11 February 2024
+_mulberry - 11 February 2024_
 
 ## Overview
 Allows equipment and objects to go through saves by sending its FE base to purgatory in a specific way.
@@ -22,8 +22,6 @@ Grabbing a purgatory SLD object with ultrahand causes UltraSLOT.
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1206398133408505927)
 - [Discord](https://discord.com/channels/1086729144307564648/1131261670975606916/1208044244766425168)
-
-## See also
 - [Fuse Entanglement](search:Fuse Entanglement)
 - [Cold Fuse](search:Cold Fuse)
 - [Drop Smuggle](search:Drop Smuggle)

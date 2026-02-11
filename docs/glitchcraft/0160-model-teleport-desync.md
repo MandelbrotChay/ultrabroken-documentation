@@ -3,7 +3,7 @@ title: "Model Teleport Desync"
 ---
 
 # Model Teleport Desync
-NX721 - 29 July 2023
+_NX721 - 29 July 2023_
 
 ## Overview
 This allows for invisibility, model desyncing when gliding, staggering when getting hit to prevent ragdoll, without the previous method that required you to overload.
@@ -22,7 +22,5 @@ This works because the Steering Stick is on the surface, while Link is stuck in 
 ## Resources
 - [Twitter](https://twitter.com/NX721_/status/1685368247145615360?s=20)
 - [Twitter](https://twitter.com/NX721_/status/1685479076482764801?s=20)
-
-## See also
 - [Object Culling](search:Object Culling)
 - [Stick Desync Clip](search:Stick Desync Clip)

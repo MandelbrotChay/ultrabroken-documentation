@@ -3,7 +3,7 @@ title: "Infinite Damage"
 ---
 
 # Infinite Damage
-[GamSla341](https://www.youtube.com/@gamsla3413) - 13 May 2023
+_[GamSla341](https://www.youtube.com/@gamsla3413) - 13 May 2023_
 
 ## Overview
 Damage repeats infinitely during spin attack.
@@ -21,6 +21,3 @@ Todo: Replicate in TotK, test in BotW.
 - [Youtube](https://youtu.be/Q1aWa0Kg-8Y)
 - [Reddit](https://www.reddit.com/r/TOTK/comments/13tho3e)
 - [Twitter](https://twitter.com/ThatOneNerd0329/status/1662590423582535680)
-
-## See also
-—

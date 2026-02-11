@@ -3,7 +3,7 @@ title: "Ocklusion"
 ---
 
 # Ocklusion
-ock, mulberry for the 1.0-1.1.2 method - 29 May 2024
+_ock, mulberry for the 1.0-1.1.2 method - 29 May 2024_
 
 ## Overview
 Portaculling at the top of a chasm box unloads the surface
@@ -30,6 +30,3 @@ By going into the room of the secret stone in Lightning Temple, going up and dow
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1245447960658051184)
 - [YouTube](https://youtu.be/krR0oUnjauw?si=wONqdugV6JZbda4s)
-
-## See also
-—

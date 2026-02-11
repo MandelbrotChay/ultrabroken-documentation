@@ -3,7 +3,7 @@ title: "Mineru Fuse Entanglement"
 ---
 
 # Mineru Fuse Entanglement `MFE`
-ock (Method 1 & 3), WinnerBoi77 (Method 2) - 18 October 2023
+_ock (Method 1 & 3), WinnerBoi77 (Method 2) - 18 October 2023_
 
 ## Overview
 Fusing to Mineru and then pausing the game or culling Link while riding Mineru on a specific frame causes objects to FE to Mineru
@@ -43,6 +43,4 @@ For method 1, any method of culling Link can work in place of like like stick cu
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1164195341491515432)
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1216477146978193530)
 - [Discord](https://discord.com/channels/1086729144307564648/1109838351596527726/1235768638796071013)
-
-## See also
 - [Fuse Entanglement](search:Fuse Entanglement)

@@ -3,7 +3,7 @@ title: "Cull Pickup Dynamic Zuggle"
 ---
 
 # Cull Pickup Dynamic Zuggle
-mulberry - 18 May 2025
+_mulberry - 18 May 2025_
 
 ## Overview
 Picking up a thrown boomerang on the same frame that it culls can lead to dynamic zuggle
@@ -26,8 +26,6 @@ Possible to perform on 1.1.2+ with force swap on step 6. 1.2.0+ requires manual 
 
 ## Resources
 - [Discord](https://discordapp.com/channels/1086729144307564648/1113557914444111873/1373670648777277510)
-
-## See also
 - [Dynamic Zuggle](search:Dynamic Zuggle)
 - [Fuse Entanglement](search:Fuse Entanglement)
 - [Object Culling](search:Object Culling)

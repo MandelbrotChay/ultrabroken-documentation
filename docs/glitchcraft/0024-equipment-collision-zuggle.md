@@ -3,7 +3,7 @@ title: "Equipment Collision Zuggle"
 ---
 
 # Equipment Collision Zuggle
-Zvleon - 16 May 2023
+_Zvleon - 16 May 2023_
 
 ## Overview
 The original zuggle method discovered by Zvleon.
@@ -26,6 +26,4 @@ For 1.1.2, see FEZ and smuggle stacking zuggling (and FEWZ)
 
 ## Resources
 —
-
-## See also
 - [Zuggle](search:Zuggle)

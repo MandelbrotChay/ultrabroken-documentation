@@ -3,7 +3,7 @@ title: "Double Unfuse Duplicashen"
 ---
 
 # Double Unfuse Duplicashen `DUD`
-Li Shen (鯉神) - 15 May 2023
+_Li Shen (鯉神) - 15 May 2023_
 
 ## Overview
 allows you to duplicate any material that can be fused to an arrow
@@ -27,6 +27,3 @@ Stops working if cooked meals page is full
 ## Resources
 - [Bilibili](https://www.bilibili.com/video/BV19h4y147iR/)
 - [YouTube](https://www.youtube.com/watch?v=0sRvQzU2j5w)
-
-## See also
-—

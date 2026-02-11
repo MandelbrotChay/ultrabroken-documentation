@@ -3,7 +3,7 @@ title: "Bomb Skew"
 ---
 
 # Bomb Skew
-Aergyl, FerrusCube, Mozz - 21 September 2023
+_Aergyl, FerrusCube, Mozz - 21 September 2023_
 
 ## Overview
 In similar fashion to skew from BOTW, this affects the direction a shield surf spring jump will send you.
@@ -20,6 +20,3 @@ In similar fashion to skew from BOTW, this affects the direction a shield surf s
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598254198050947/1154554443644293171)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598254198050947/1154555245830086706)
-
-## See also
-—

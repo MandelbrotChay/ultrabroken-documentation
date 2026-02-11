@@ -3,7 +3,7 @@ title: "UltraSLOT"
 ---
 
 # UltraSLOT
-mulberry - 15 February 2024
+_mulberry - 15 February 2024_
 
 ## Overview
 Uses purgatory to transfer ultrahanded objects through file loads.
@@ -21,7 +21,5 @@ UltraSLOT objects can be continuously transferred between files as long as the o
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1207707842325258340)
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1207707842325258340)
-
-## See also
 - [Fuse Entanglement](search:Fuse Entanglement)
 - [Drop Smuggle](search:Drop Smuggle)

@@ -3,7 +3,7 @@ title: "Inventory Shift Duplication"
 ---
 
 # Inventory Shift Duplication `ISD`
-Blizzard Blanc, BigDUCCO, Maxmasher, Pyuk, Zas - 25 June 2023
+_Blizzard Blanc, BigDUCCO, Maxmasher, Pyuk, Zas - 25 June 2023_
 
 ## Overview
 Exploits inventory shift after creating an empty inventory slot to duplicate items.
@@ -22,6 +22,3 @@ The item that gets duplicated will always be to the right of the item you are ho
 ## Resources
 - [Twitter](https://vxtwitter.com/zb_yuhudaddy/status/1673184858628296704?s=20)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1122835952423944282)
-
-## See also
-—

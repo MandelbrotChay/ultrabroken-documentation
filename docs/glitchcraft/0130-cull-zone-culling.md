@@ -3,7 +3,7 @@ title: "Cull Zone Culling"
 ---
 
 # Cull Zone Culling
-Mozz - 27 June 2023
+_Mozz - 27 June 2023_
 
 ## Overview
 A method for object culling.
@@ -23,6 +23,3 @@ Certain sub-areas such as caves can also act as cull zones.
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1123379490408636507)
 - [TotK Object Map](https://objmap-totk.zeldamods.org/#/map/z3,0,0,Surface)
-
-## See also
-—

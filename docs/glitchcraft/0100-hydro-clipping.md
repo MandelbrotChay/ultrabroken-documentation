@@ -3,7 +3,7 @@ title: "Hydro Clipping"
 ---
 
 # Hydro Clipping
-Simonfirefighter, Maxmasher (Flurry rush method), KnightPohtaytoh (Crouch method), pyuk (throw method) - 15 June 2023
+_Simonfirefighter, Maxmasher (Flurry rush method), KnightPohtaytoh (Crouch method), pyuk (throw method) - 15 June 2023_
 
 ## Overview
 Using  guardless active shield or throwless storage on a hydrant shield (FED to a weapon) can cause link and enemies to clip through the ground. It can also force panic blood moons
@@ -52,6 +52,4 @@ There are other ways of clipping with hydro:
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1119350059633496107)
 - [Discord](https://discord.com/channels/1086729144307564648/1110956205624532993/1131300216562262047)
 - [Twitter](https://fxtwitter.com/FBuffalo3/status/1681022210906152960)
-
-## See also
 - [Fuse Entanglement](search:Fuse Entanglement)

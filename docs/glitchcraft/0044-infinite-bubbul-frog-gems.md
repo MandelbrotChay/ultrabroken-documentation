@@ -3,7 +3,7 @@ title: "Infinite Bubbul Frog Gems"
 ---
 
 # Infinite Bubbul Frog Gems
-21 May 2023
+_21 May 2023_
 
 ## Overview
 Allows you to get infinite bubbul gems
@@ -27,6 +27,3 @@ May 21, 2023(?)
 
 ## Resources
 - [YouTube](https://youtu.be/c9TDP4qdAUY)
-
-## See also
-—

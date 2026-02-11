@@ -3,7 +3,7 @@ title: "Zonai Inventory Shift Dupe"
 ---
 
 # Zonai Inventory Shift Dupe `ZISD`
-Ryan?, Quantim - 10 July 2023
+_Ryan?, Quantim - 10 July 2023_
 
 ## Overview
 Uses Memory Buffering and MTD to duplicate Zonai Devices
@@ -27,6 +27,3 @@ Steps:
 
 ## Resources
 - [Twitter](https://twitter.com/quantim/status/1678509305044115458?s=46)
-
-## See also
-—

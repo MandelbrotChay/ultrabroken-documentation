@@ -3,7 +3,7 @@ title: "Cull Smuggle"
 ---
 
 # Cull Smuggle
-Mozz, ROBUXY2ND, ock - 27 June 2023
+_Mozz, ROBUXY2ND, ock - 27 June 2023_
 
 ## Overview
 Allows any equipment that can be fuse entangled to be smuggled using margin culling.
@@ -24,7 +24,5 @@ On 1.2.0 and 1.2.1, dropping culled equipment results in the item unculling and 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1123379490408636507)
 - [YouTube](https://youtu.be/oRbvtjYZhOo)
-
-## See also
 - [Object Culling](search:Object Culling)
 - [Equipment Smuggle](search:Equipment Smuggle)

@@ -3,7 +3,7 @@ title: "Equipment Smuggle"
 ---
 
 # Equipment Smuggle
-sleepyppls, Mozz, mulberry, NaN Gogh - 1 June 2023
+_sleepyppls, Mozz, mulberry, NaN Gogh - 1 June 2023_
 
 ## Overview
 An equipment state where items remain equipped in Link's hands after being removed from the inventory
@@ -25,6 +25,3 @@ On 1.2.0 and 1.2.1, equipping an item of the same type as a smuggle causes the s
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1113917918422511776)
 - [Twitter](https://twitter.com/goghnan/status/1664921192527020033?s=46)
-
-## See also
-—

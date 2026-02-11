@@ -3,7 +3,7 @@ title: "Recipe Storage"
 ---
 
 # Recipe Storage
-ock, mulberry - September 14th, 2024; November 10th, 2024
+_ock, mulberry - September 14th, 2024; November 10th, 2024_
 
 ## Overview
 Delaying the recipe menu by a few frames allow for some holding shenanigans
@@ -42,6 +42,3 @@ Recipe Hold Storage:
 - [Discord](https://discord.com/channels/1086729144307564648/1110956205624532993/1305180152325738589)
 - [Discord](https://discord.com/channels/1086729144307564648/1110956205624532993/1305204895602704534)
 - [Discord](https://discord.com/channels/1086729144307564648/1110956205624532993/1305205208665821186)
-
-## See also
-—

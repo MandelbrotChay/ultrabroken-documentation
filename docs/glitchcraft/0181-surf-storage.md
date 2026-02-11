@@ -3,7 +3,7 @@ title: "Surf storage"
 ---
 
 # Surf storage
-Mozz - 22 September 2023
+_Mozz - 22 September 2023_
 
 ## Overview
 Discord
@@ -20,6 +20,3 @@ Shield surf against a slope
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598254198050947/1154554443644293171)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1155495303642882099)
-
-## See also
-—

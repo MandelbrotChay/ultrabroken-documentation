@@ -3,7 +3,7 @@ title: "Entanglement Height Glitch"
 ---
 
 # Entanglement Height Glitch
-Mozz - 24 May 2023
+_Mozz - 24 May 2023_
 
 ## Overview
 Suspends Link a certain distance off the ground while shield surfing.
@@ -21,6 +21,4 @@ Only deactivates upon shield unequip.
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1111097783445880885)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1111097783445880885)
-
-## See also
 - [Fuse Entanglement](search:Fuse Entanglement)

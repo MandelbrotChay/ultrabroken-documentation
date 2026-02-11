@@ -3,7 +3,7 @@ title: "Crouch Sprinting"
 ---
 
 # Crouch Sprinting
-Mozz - 14 May 2023
+_Mozz - 14 May 2023_
 
 ## Overview
 —
@@ -18,6 +18,4 @@ Currently infinite
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1107351279312830505)
 - [Youtube](https://youtu.be/4u20HcJcb9A)
-
-## See also
 - [Sprint Methods](search:Sprint Methods)

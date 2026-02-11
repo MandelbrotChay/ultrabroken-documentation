@@ -3,7 +3,7 @@ title: "Damage Amnesia"
 ---
 
 # Damage Amnesia
-Mozz - 27 May 2023
+_Mozz - 27 May 2023_
 
 ## Overview
 Allows Link to negate sources of damage.
@@ -20,6 +20,4 @@ Can be combined with springbombing.
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1112163785461997609)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1112163785461997609)
 - [YouTube](https://www.youtube.com/watch?v=P0IjC2E64MY)
-
-## See also
 - [Memory Buffering](search:Memory Buffering)

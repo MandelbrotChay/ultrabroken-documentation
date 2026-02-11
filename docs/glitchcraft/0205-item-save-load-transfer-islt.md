@@ -3,7 +3,7 @@ title: "Item Save Load Transfer"
 ---
 
 # Item Save Load Transfer `ISLT`
-Luckstyle - 22 December 2023
+_Luckstyle - 22 December 2023_
 
 ## Overview
 Allows transferring held items through saves.
@@ -21,6 +21,4 @@ Fairies on GSI
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1187786562293997598)
 - [YouTube](https://youtu.be/Gu_zlst9T0w?si=x6FNI5zIrRNrQLh-)
-
-## See also
 - [Mineru Hold Smuggle](search:Mineru Hold Smuggle)

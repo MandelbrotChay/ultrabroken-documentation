@@ -3,7 +3,7 @@ title: "Weapon Stacking Duplication"
 ---
 
 # Weapon Stacking Duplication `WSD`
-Erling附身 - 16 May 2023
+_Erling附身 - 16 May 2023_
 
 ## Overview
 Allows for a quick dupe of any weapon, bow or shield
@@ -20,6 +20,3 @@ This is just zuggling, but you drop your equipped weapon at the end, that being 
 
 ## Resources
 - [Bilibili](http://www.bilibili.com/video/BV1qT411t7Kv/)
-
-## See also
-—

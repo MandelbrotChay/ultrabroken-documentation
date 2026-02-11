@@ -3,7 +3,7 @@ title: "MNF Zuggle Fuse"
 ---
 
 # MNF Zuggle Fuse
-Zvleon - 18 May 2023
+_Zvleon - 18 May 2023_
 
 ## Overview
 Allows to fuse to the MNF
@@ -25,6 +25,3 @@ Can also be done with other weapons and already fused weapons. This just replace
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1108141837954330686/1108621041527427144)
 - [Discord](https://discord.com/channels/1086729144307564648/1108141837954330686/1108622215672496138)
-
-## See also
-—

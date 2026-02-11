@@ -3,7 +3,7 @@ title: "Shock Effect Overload"
 ---
 
 # Shock Effect Overload `SEO`
-NX721, R4000 - 26 July 2023
+_NX721, R4000 - 26 July 2023_
 
 ## Overview
 Uses many non-despawnable Shock Emitters and placing them into a Fairy Fountain, activating them to overload the game’s memory, which causes invincibility, heavy lag and frame rate drops, non-visible effects like explosions, similar to Fence Overloading, can also cause Blood Moons if you overload the memory enough.
@@ -33,6 +33,4 @@ this was a pain to write, still experimenting, if you have any discoveries pleas
 - [Youtube](https://youtu.be/zurfHBHlLBY)
 - [Youtube](https://www.youtube.com/watch?v=JMEgDwXienA)
 - [Twitter](https://twitter.com/NX721_/status/1684303947224473602?s=20)
-
-## See also
 - [Midair Throw Duplication](search:Midair Throw Duplication)

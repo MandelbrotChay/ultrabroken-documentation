@@ -3,7 +3,7 @@ title: "Smuggle Stacking Zuggle"
 ---
 
 # Smuggle Stacking Zuggle `SSZ`
-BigDUCCO, LegendofLink, Mozz - 6 June 2023
+_BigDUCCO, LegendofLink, Mozz - 6 June 2023_
 
 ## Overview
 Allows to zuggle bows and shields in version 1.1.2. Weapon zuggle on 1.1.2 is a little bit more complicated. Check the next glitch (FEZ) for that.
@@ -27,6 +27,4 @@ Loading a previous save will transfer a stacked bow/shield to that save. Effecti
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1115360099981086743)
 - [YouTube](https://www.youtube.com/watch?v=jrChkOtSc0A)
 - [YouTube](https://www.youtube.com/watch?v=8lSRXOM1xMc)
-
-## See also
 - [Zuggling](search:Zuggling)

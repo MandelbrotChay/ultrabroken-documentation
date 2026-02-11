@@ -3,7 +3,7 @@ title: "Mass Amnesia"
 ---
 
 # Mass Amnesia
-NaN Gogh - 2 August 2023
+_NaN Gogh - 2 August 2023_
 
 ## Overview
 Freezes objects in a state where gravity does not affect them, as long as they are not messed with by any means.
@@ -32,8 +32,6 @@ Known means to revert object with Mass Amnesia back to normal:
 ## Resources
 - [Twitter](https://twitter.com/_nan_gogh/status/1686427149786370055?s=20)
 - [Twitter](https://twitter.com/_nan_gogh/status/1686427149786370055?s=20)
-
-## See also
 - [Fuse Entanglement](search:Fuse Entanglement)
 - [Zuggle Load Object Transfer](search:Zuggle Load Object Transfer)
 - [Recall Locking](search:Recall Locking )

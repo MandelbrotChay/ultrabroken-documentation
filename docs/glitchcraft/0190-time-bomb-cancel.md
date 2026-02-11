@@ -3,7 +3,7 @@ title: "Time Bomb cancel"
 ---
 
 # Time Bomb cancel
-tzakazuki - 4 November 2023
+_tzakazuki - 4 November 2023_
 
 ## Overview
 By putting away your shield during a specific moment while a time bomb fused to the mastersword is going off, it will explode without any damage to the environment.
@@ -19,6 +19,3 @@ Also works with the msgnotfound
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1170334121910882366)
-
-## See also
-—

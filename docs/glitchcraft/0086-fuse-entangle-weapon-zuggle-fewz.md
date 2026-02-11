@@ -3,7 +3,7 @@ title: "Fuse Entangle Weapon Zuggle"
 ---
 
 # Fuse Entangle Weapon Zuggle `FEWZ`
-Ryan? - 10 June 2023
+_Ryan? - 10 June 2023_
 
 ## Overview
 Allows you got zuggle each weapon you carry one time. This stacks the damage similar to the original version of zuggling
@@ -24,6 +24,4 @@ For multiple weapons, drop the shield at the end of step 2 and repeat steps 1-2 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1116941948746465410)
 - [YouTube](https://www.youtube.com/watch?v=jdqn8qvNhuI)
-
-## See also
 - [Fuse Entanglement](search:Fuse Entanglement)

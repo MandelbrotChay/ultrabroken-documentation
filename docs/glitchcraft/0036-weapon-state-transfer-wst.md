@@ -3,7 +3,7 @@ title: "Weapon State Transfer"
 ---
 
 # Weapon State Transfer `WST`
-BigDUCCO, kurocat471, ElDuende, Mentor_Kurt - 19 May 2023
+_BigDUCCO, kurocat471, ElDuende, Mentor_Kurt - 19 May 2023_
 
 ## Overview
 allows you to transfer the durability, fused material, and modifier of a weapon
@@ -55,6 +55,3 @@ Depending on the bow you use (ex. Phrenic Bow), you'll still be able to perform 
 - [Youtube](https://www.youtube.com/watch?v=NRZpPp1vVsQ.)
 - [YouTube](https://youtu.be/Kzf_uJBvRjI)
 - [YouTube](https://www.youtube.com/watch?v=1gWV6p814F8)
-
-## See also
-—

@@ -3,7 +3,7 @@ title: "Texture Tearing"
 ---
 
 # Texture Tearing
-ock - 13 January 2024
+_ock - 13 January 2024_
 
 ## Overview
 During Menu Overload via Moobe, textures can be loaded incorrectly, broken, or even adopted from the enviroment/other equipment. Resulting in interesting visual effects and unique appearences of hair, armor, and equipment.
@@ -22,6 +22,4 @@ The exact cause of texture tearing remains unknown and there are no well defined
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1194033039123165215/1195690499852480544)
-
-## See also
 - [Mulberry's Out of Body Experience](search:Mulberry's Out of Body Experience)

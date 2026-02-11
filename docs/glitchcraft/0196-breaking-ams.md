@@ -3,7 +3,7 @@ title: "Breaking AMS"
 ---
 
 # Breaking AMS
-Infrasolid - 26 November 2023
+_Infrasolid - 26 November 2023_
 
 ## Overview
 By using certain setups, it is possible to ignore the no durability use.
@@ -29,6 +29,4 @@ Method 2:
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1178449991786827928)
-
-## See also
 - [Awakened Master Sword](search:Awakened Master Sword)

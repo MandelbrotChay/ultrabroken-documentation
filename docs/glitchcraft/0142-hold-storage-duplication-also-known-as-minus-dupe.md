@@ -3,7 +3,7 @@ title: "Hold Storage Duplication"
 ---
 
 # Hold Storage Duplication
-NaN Gogh, Mozz - 3 July 2023
+_NaN Gogh, Mozz - 3 July 2023_
 
 ## Overview
 Allows you to dupe items via hold storage.
@@ -22,6 +22,4 @@ Also known as Minus Dupe.
 ## Resources
 - [Twitter](https://vxtwitter.com/goghnan/status/1675972013096161280?s=46)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1125533417413541938)
-
-## See also
 - [Hold Storage](search:Hold Storage)

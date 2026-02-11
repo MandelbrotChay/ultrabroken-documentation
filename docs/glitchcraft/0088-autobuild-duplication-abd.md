@@ -3,7 +3,7 @@ title: "Autobuild Duplication"
 ---
 
 # Autobuild Duplication `ABD`
-{Unknown} - 11 June 2023
+_{Unknown} - 11 June 2023_
 
 ## Overview
 Allows you to dupe materials that change into other materials in other temperature. (For example raw meat.)
@@ -25,6 +25,3 @@ This only works with items that change into other items in another temperature.
 
 ## Resources
 - [YouTube](https://youtu.be/IfRlldenZNc)
-
-## See also
-—

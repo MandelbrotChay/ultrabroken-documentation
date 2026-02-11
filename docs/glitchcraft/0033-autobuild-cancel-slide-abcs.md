@@ -3,7 +3,7 @@ title: "Autobuild Cancel Slide"
 ---
 
 # Autobuild Cancel Slide `ABCS`
-Takosensai1 - 18 May 2023
+_Takosensai1 - 18 May 2023_
 
 ## Overview
 Allows you to slide on top of the blueprint build over the map at insane speeds, or gain immense amounts of height.
@@ -32,6 +32,3 @@ On 1.0.0, the speed that can be achieved is much slower than what is seen on 1.1
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1108851384239009912)
 - [YouTube](https://youtu.be/3DHEaqoDl1M)
 - [Twitter](https://twitter.com/PowerGaymerKai/status/1659292261572829184)
-
-## See also
-—

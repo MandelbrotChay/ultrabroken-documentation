@@ -3,7 +3,7 @@ title: "Spring Strangeness"
 ---
 
 # Spring Strangeness
-Orionsayshi (Method 1), Owen (Method 2) - 15 May 2023
+_Orionsayshi (Method 1), Owen (Method 2) - 15 May 2023_
 
 ## Overview
 really strange things start happening both with collision and the camera when springs are used in different ways
@@ -22,7 +22,4 @@ Might allow for some unloaded areas and/or clipping.
 Method 1 is reliablely strange, while Method 2 has only been performed once thus far
 
 ## Resources
-—
-
-## See also
 —

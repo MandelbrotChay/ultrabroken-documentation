@@ -3,7 +3,7 @@ title: "Mineru Aim Permanence"
 ---
 
 # Mineru Aim Permanence
-
+_?_
 
 ## Overview
 Lets you bring Mineru's Construct into towns and stables
@@ -24,6 +24,3 @@ The Construct will stick around despite the other sage avatars going away
 
 ## Resources
 - [Youtube](https://www.youtube.com/shorts/LnB58_FgDFM)
-
-## See also
-—

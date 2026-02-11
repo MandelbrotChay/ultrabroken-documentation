@@ -3,7 +3,7 @@ title: "Overload at Home"
 ---
 
 # Overload at Home
-ock - 20 March 2024
+_ock - 20 March 2024_
 
 ## Overview
 By repeatedly culling Link while lifting an object during house building, it's possible to achieve an effect similar to zuggle overload
@@ -28,7 +28,5 @@ Allows you to do most things that zuggle overload can do, including mass equipme
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1220145782162985000)
 - [YouTube](https://youtu.be/wpylJH-rejM?si=1WJA1gy2jIHIqG5s)
-
-## See also
 - [Portable Culling](search:Portable Culling)
 - [Stick Desync](search:Stick Desync)

@@ -3,7 +3,7 @@ title: "Zuggle Load Object Transfering"
 ---
 
 # Zuggle Load Object Transfering `ZLOT`
-InAMuffinCup, ChargeVolt (SLD transfer method) - 7 June 2023
+_InAMuffinCup, ChargeVolt (SLD transfer method) - 7 June 2023_
 
 ## Overview
 Allows you to transfer objects through loads while maintaining their coordinates.
@@ -19,7 +19,5 @@ Alternatively, you can do SLD instead of Zuggle to transfer over the shield, res
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1116159439855169606)
-
-## See also
 - [Zuggling](search:Zuggling)
 - [Fuse Entanglement](search:Fuse Entanglement)

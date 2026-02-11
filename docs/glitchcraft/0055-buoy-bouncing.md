@@ -3,7 +3,7 @@ title: "Buoy Bouncing"
 ---
 
 # Buoy Bouncing
-InAMuffinCup - 25 May 2023
+_InAMuffinCup - 25 May 2023_
 
 ## Overview
 Get an abnormaly large shield jump boost when coming into contact with water.
@@ -19,6 +19,3 @@ Initial velocity seems to play an effect when buoy bouncing, such as when fallin
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1106412847359082506/1111400160879194165)
 - [Discord](https://discord.com/channels/1086729144307564648/1106412847359082506/1111400160879194165)
-
-## See also
-—

@@ -3,7 +3,7 @@ title: "Throwless Storage"
 ---
 
 # Throwless Storage
-evilgabe, NX721 - 19 June 2023
+_evilgabe, NX721 - 19 June 2023_
 
 ## Overview
 Makes it so that Link puts the weapon in an active state (allows for activation of Zonai Devices at all times).
@@ -29,6 +29,4 @@ Rockets can be used, however they will simply become deactivated and will have n
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1120815854729306223)
 - [Twitter](https://twitter.com/NX721_/status/1673788354805243904)
 - [Twitter](https://twitter.com/NX721_/status/1674530272199741440)
-
-## See also
 - [Memory Buffering](search:Memory Buffering)

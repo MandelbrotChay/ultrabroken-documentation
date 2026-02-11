@@ -3,7 +3,7 @@ title: "Laser-OOB"
 ---
 
 # Laser-OOB
-Xeryph - 13 May 2023
+_Xeryph - 13 May 2023_
 
 ## Overview
 The game puts a floor inside Link
@@ -19,6 +19,3 @@ You need a laser nearby.
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1107045488454279188)
 - [Youtube](https://youtu.be/oBYBi8dqflI)
-
-## See also
-—

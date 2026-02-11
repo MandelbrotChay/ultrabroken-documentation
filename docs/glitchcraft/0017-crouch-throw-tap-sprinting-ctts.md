@@ -3,7 +3,7 @@ title: "Crouch Throw Tap Sprinting"
 ---
 
 # Crouch Throw Tap Sprinting `CTTS`
-Deystroyer - 15 May 2023
+_Deystroyer - 15 May 2023_
 
 ## Overview
 Infinite and fastest way of sprinting
@@ -20,6 +20,4 @@ With current testing, this is the fastest sprinting method
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1107874408938348614)
 - [YouTube](https://youtu.be/eea66BoVhcQ)
-
-## See also
 - [Sprinting Methods](search:Sprinting Methods)

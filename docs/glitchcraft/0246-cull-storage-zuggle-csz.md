@@ -3,7 +3,7 @@ title: "Cull Storage Zuggle"
 ---
 
 # Cull Storage Zuggle `CSZ`
-mulberry, Blackmars - 18 July 2024
+_mulberry, Blackmars - 18 July 2024_
 
 ## Overview
 Uses cull storage to temporarily bypass the equipment swap and drop restrictions on newer versions, allowing for weapons to be zuggled easily on v1.1.2
@@ -33,7 +33,5 @@ Results in invizuggle when performed on v1.2.0-1.2.1
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1263545835019309137)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1287526225585373248)
-
-## See also
 - [Map Zuggling](search:Map Zuggling)
 - [Cull Storage](search:Cull Storage)

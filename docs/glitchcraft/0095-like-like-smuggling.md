@@ -3,7 +3,7 @@ title: "Like-Like Smuggling"
 ---
 
 # Like-Like Smuggling
-Mozz, mulberry - 15 June 2023
+_Mozz, mulberry - 15 June 2023_
 
 ## Overview
 Allows for Equipment Smuggling via slugging.
@@ -29,6 +29,4 @@ Method 2 can also be executed with a chest if you open it right before Link gets
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1118505594215743501)
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1118690695910273074)
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1250839219329302679)
-
-## See also
 - [Slugging](search:Slugging)

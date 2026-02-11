@@ -3,7 +3,7 @@ title: "Split Item Duplication"
 ---
 
 # Split Item Duplication `SID`
-Telkic, mulberry, Winnerboi77 - 19 June 2025
+_Telkic, mulberry, Winnerboi77 - 19 June 2025_
 
 ## Overview
 Allows you to dupe materials through Stack Splitting
@@ -22,6 +22,4 @@ Allows you to dupe materials through Stack Splitting
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1221545645844725760/1385097896575373412)
-
-## See also
 - [Stack Splitting](search:Stack Splitting)

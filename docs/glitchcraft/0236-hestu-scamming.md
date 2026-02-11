@@ -3,7 +3,7 @@ title: "Hestu Scamming"
 ---
 
 # Hestu Scamming
-Blackmars, Tahata, EM - 19 April 2024
+_Blackmars, Tahata, EM - 19 April 2024_
 
 ## Overview
 Escaping the cave quest where Link's inventory gets removed allows you to buy inventory slots from Hestu with just 1 korok seed per slot and reach max inventory slots with significantly less korok seeds.
@@ -31,6 +31,3 @@ Prerequisites:
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1230669568066846741)
 - [YouTube](https://youtu.be/oRo_1R9d_-w?si=WmCCE8sas7r1DuoZ)
 - [YouTube](https://youtu.be/sJdmYu9j1FI?si=vVZEzINRlSywPMqD)
-
-## See also
-—

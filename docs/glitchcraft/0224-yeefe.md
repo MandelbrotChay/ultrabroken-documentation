@@ -3,7 +3,7 @@ title: "YeeFE"
 ---
 
 # YeeFE
-Yee, mulberry - 20 February 2024
+_Yee, mulberry - 20 February 2024_
 
 ## Overview
 Uses culling with mineru and an sdc stick to fuse entangle
@@ -30,7 +30,5 @@ Test on more versions
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1112801830821449798/1209443743581736980)
-
-## See also
 - [Fuse Entanglement](search:Fuse Entanglement)
 - [Stick Desync](search:Stick Desync)

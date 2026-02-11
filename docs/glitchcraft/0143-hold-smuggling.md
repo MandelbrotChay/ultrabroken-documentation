@@ -3,7 +3,7 @@ title: "Hold Smuggling"
 ---
 
 # Hold Smuggling
-Mozz, NaN Gogh - 4 July 2023
+_Mozz, NaN Gogh - 4 July 2023_
 
 ## Overview
 Enables full control of Link while holding objects in the menu.
@@ -25,6 +25,3 @@ Also removes HUD from Sheikah Scope
 
 ## Resources
 - [Twitter](https://twitter.com/_nan_gogh/status/1676384792818995200)
-
-## See also
-—

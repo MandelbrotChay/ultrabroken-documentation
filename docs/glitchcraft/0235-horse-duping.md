@@ -3,7 +3,7 @@ title: "Horse Duping"
 ---
 
 # Horse Duping
-ock - 22 March 2024
+_ock - 22 March 2024_
 
 ## Overview
 Killing a horse while in a specific cull setup, sends it to the horse god without killing it.
@@ -29,6 +29,4 @@ the horse should still be alive, but no longer on the map
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1220805468746940586)
-
-## See also
 - [Stick Desync](search:Stick Desync)

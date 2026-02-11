@@ -3,7 +3,7 @@ title: "Wuggle"
 ---
 
 # Wuggle
-ock, robuxy2nd - 29 December 2023
+_ock, robuxy2nd - 29 December 2023_
 
 ## Overview
 By dropping and equipping equipment in a specific way during a cull causes a glitch similar to zuggle.
@@ -26,7 +26,5 @@ Also known as Weird Zuggle.
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1190371844142928002)
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1190371844142928002)
 - [YouTube](https://www.youtube.com/watch?v=gO6cB5cSQTY&t)
-
-## See also
 - [Fuse Entanglement](search:Fuse Entanglement)
 - [Object Culling](search:Object Culling)

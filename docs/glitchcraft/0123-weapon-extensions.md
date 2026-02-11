@@ -3,7 +3,7 @@ title: "Weapon Extensions"
 ---
 
 # Weapon Extensions
-Deltenic, Flash, Zas - 20 June 2023; 23 June 2023
+_Deltenic, Flash, Zas - 20 June 2023; 23 June 2023_
 
 ## Overview
 Allows the weapon to hit other entites from further away (excluding two hand weapons).
@@ -24,6 +24,3 @@ Has yet to be seen if this can work on 2H weapons. Also works on fused 1H/Spear 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1121798115595403375)
 - [Twitter](https://vxtwitter.com/zasbotw/status/1672240465985323011)
-
-## See also
-—

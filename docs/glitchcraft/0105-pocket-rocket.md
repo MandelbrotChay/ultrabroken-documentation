@@ -3,7 +3,7 @@ title: "Pocket Rocket"
 ---
 
 # Pocket Rocket
-Mozz, SmallAnt - 15 June 2023
+_Mozz, SmallAnt - 15 June 2023_
 
 ## Overview
 Allows for repeated boost from a midair rocket shield surf, making it a very good movement option.
@@ -22,6 +22,4 @@ Allows for repeated boost from a midair rocket shield surf, making it a very goo
 ## Resources
 - [YouTube](https://youtu.be/10PdzT0eEl0)
 - [YouTube](https://youtu.be/OmuWEI46dXo?t=163)
-
-## See also
 - [Fuse Entanglement](search:Fuse Entanglement)

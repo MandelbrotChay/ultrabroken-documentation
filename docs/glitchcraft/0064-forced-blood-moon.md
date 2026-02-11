@@ -3,7 +3,7 @@ title: "Forced Blood Moon"
 ---
 
 # Forced Blood Moon
-1789(@W0ERYySQgZyGOY3), simonfirefighter, Maxmasher, Flash, acaepius - 28 May 2023
+_1789(@W0ERYySQgZyGOY3), simonfirefighter, Maxmasher, Flash, acaepius - 28 May 2023_
 
 ## Overview
 Allows you to force a blood moon whenever you want
@@ -29,6 +29,3 @@ May 28, 2023, June 16, 2023, & June 27, 2023
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1134025370279104532)
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1119272037215649872)
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1119307782433280110)
-
-## See also
-—

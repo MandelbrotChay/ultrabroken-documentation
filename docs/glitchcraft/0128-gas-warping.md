@@ -3,7 +3,7 @@ title: "GAS Warping"
 ---
 
 # GAS Warping
-Flash, pyuk - 26 June 2023
+_Flash, pyuk - 26 June 2023_
 
 ## Overview
 Makes it so the game never updates Link's last valid coordinates for as long as the GAS device is active (a temporary travel medallion).
@@ -24,6 +24,4 @@ Does not persist through map changes, or through previous saves that were made b
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1122888390371704872)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1122897857779859577)
-
-## See also
 - [Guard-less Active Shield](search:Guard-less Active Shield)

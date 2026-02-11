@@ -3,7 +3,7 @@ title: "Void Holding"
 ---
 
 # Void Holding
-Lightos_ - 10 June 2023
+_Lightos_ - 10 June 2023_
 
 ## Overview
 Allows you to hold materials "whenever you want" as long as you are at a low enough Y coordinate
@@ -20,6 +20,3 @@ Needs more testing
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1117164294505779244)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1117479024063684660)
-
-## See also
-—

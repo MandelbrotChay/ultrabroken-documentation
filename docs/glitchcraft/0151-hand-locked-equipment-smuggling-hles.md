@@ -3,7 +3,7 @@ title: "Hand Locked Equipment Smuggling"
 ---
 
 # Hand Locked Equipment Smuggling `HLES`
-Aeolian - 11 July 2023
+_Aeolian - 11 July 2023_
 
 ## Overview
 Allows you to smuggle equipment only when your hands are busy.
@@ -22,7 +22,4 @@ Hold any material
 Hand locked smuggling can also be performed using runes, two handed weapon and hold throw
 
 ## Resources
-—
-
-## See also
 —

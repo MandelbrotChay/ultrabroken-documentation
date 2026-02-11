@@ -3,7 +3,7 @@ title: "Enemy Pickpocketing"
 ---
 
 # Enemy Pickpocketing
-KAIDUDE64 - 16 September 2023
+_KAIDUDE64 - 16 September 2023_
 
 ## Overview
 Lets you take weapons out of enemy's hands
@@ -23,6 +23,3 @@ Lets you take weapons out of enemy's hands
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1152798657419157626)
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1152799909666377808)
 - [Youtube](https://youtu.be/nmFfZ_MZ34M)
-
-## See also
-—

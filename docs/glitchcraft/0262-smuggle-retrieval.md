@@ -3,7 +3,7 @@ title: "Smuggle Retrieval"
 ---
 
 # Smuggle Retrieval
-PetitFrapo - 18 December 2024
+_PetitFrapo - 18 December 2024_
 
 ## Overview
 Dropping an unloaded piece of equipment drops a smuggle instead (if Link has one). Fail dropping equips it back.
@@ -22,6 +22,4 @@ Dropping an unloaded piece of equipment drops a smuggle instead (if Link has one
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1318712104361922664)
-
-## See also
 - [Equipment Smuggle](search:Equipment Smuggle)

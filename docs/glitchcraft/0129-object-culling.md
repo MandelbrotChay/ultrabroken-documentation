@@ -3,7 +3,7 @@ title: "Object Culling"
 ---
 
 # Object Culling
-Mozz, tori - 27 June 2023
+_Mozz, tori - 27 June 2023_
 
 ## Overview
 Places an object in a half-unloaded, limbo like state. Leading to unintended interactions such as Zonai devices occupying the same space, remote control, and more.
@@ -23,7 +23,5 @@ YouTube
 
 ## Resources
 —
-
-## See also
 - [Like-Like Culling](search:Like-Like Culling)
 - [Cull Zone Culling](search:Cull Zone Culling)

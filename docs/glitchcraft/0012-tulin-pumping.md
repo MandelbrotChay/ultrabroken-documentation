@@ -3,7 +3,7 @@ title: "Tulin Pumping"
 ---
 
 # Tulin Pumping
-Ikkitrix - 14 May 2023
+_Ikkitrix - 14 May 2023_
 
 ## Overview
 Preserves the initial boost of tulin
@@ -18,6 +18,4 @@ Jump off a ledge and activate Tulin's ability, then close glider and reopen it f
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1107527341971886230)
-
-## See also
 - [Tulin Movement](search:Tulin Movement)

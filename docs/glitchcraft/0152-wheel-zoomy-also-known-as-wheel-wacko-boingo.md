@@ -3,7 +3,7 @@ title: "Wheel Zoomy"
 ---
 
 # Wheel Zoomy
-Solo_Turtle - 12 July 2023
+_Solo_Turtle - 12 July 2023_
 
 ## Overview
 Uses a formation of wheels to gain momentum on land, similar speeds to Wacko Boingo
@@ -22,6 +22,3 @@ Also possible with two wheels.
 
 ## Resources
 - [Twitter](https://twitter.com/NX721_/status/1679259808757870592?t=O2gULUcC_CmV0isS44RMEg&s=19)
-
-## See also
-—

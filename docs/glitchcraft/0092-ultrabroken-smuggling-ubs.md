@@ -3,7 +3,7 @@ title: "Ultrabroken Smuggling"
 ---
 
 # Ultrabroken Smuggling `UBS`
-The_Andromeda - 13 June 2023
+_The_Andromeda - 13 June 2023_
 
 ## Overview
 Makes an FE'd object follow the shield.
@@ -30,6 +30,4 @@ Makes an FE'd object follow the shield.
 - [Twitter](https://twitter.com/goghnan/status/1668693248913580049?s=46)
 - [Twitter](https://twitter.com/goghnan/status/1668671033874821139?s=46)
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1118059019974737922)
-
-## See also
 - [Ultrabroken](search:Ultrabroken)

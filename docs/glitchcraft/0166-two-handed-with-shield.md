@@ -3,7 +3,7 @@ title: "Two Handed With Shield"
 ---
 
 # Two Handed With Shield
-R4000, Bucket_Sloe - 21 August 2023
+_R4000, Bucket_Sloe - 21 August 2023_
 
 ## Overview
 Allows you to use a shield and a two handed weapon at the same time
@@ -20,6 +20,3 @@ Disable the earthwake ability or press "R" instead of "Y".
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1143287784589770933)
-
-## See also
-—

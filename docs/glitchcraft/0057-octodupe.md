@@ -3,7 +3,7 @@ title: "Octodupe"
 ---
 
 # Octodupe
-26 May 2023
+_26 May 2023_
 
 ## Overview
 Allows for the duplication of items sucked up by a rock octorok.
@@ -27,6 +27,3 @@ This does not work on items that cannot be modified or octoroks that have alread
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1111702277451960370)
 - [YouTube](https://www.youtube.com/watch?v=oXzMRPK2sRM)
 - [YouTube](https://www.youtube.com/watch?v=FSxiPP-SDtM)
-
-## See also
-—

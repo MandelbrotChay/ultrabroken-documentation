@@ -3,7 +3,7 @@ title: "Bow Attachment Storage"
 ---
 
 # Bow Attachment Storage
-WinnerBoi77 - 3 December 2023
+_WinnerBoi77 - 3 December 2023_
 
 ## Overview
 You can store the bow fuse by dropping the bow during the bow fuse and interupting it with throw aim or a jump slash.
@@ -37,6 +37,3 @@ A variant of this glitch can be done using zuggle overload (has been known for a
 - [Discord](https://discord.com/channels/1086729144307564648/1109838351596527726/1180885814230655017)
 - [Discord](https://discord.com/channels/1086729144307564648/1109838351596527726/1180883442636955718)
 - [Twitter](https://vxtwitter.com/zasbotw/status/1731339526008963191)
-
-## See also
-—

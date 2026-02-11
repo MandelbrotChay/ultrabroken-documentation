@@ -3,7 +3,7 @@ title: "Death PSLOT"
 ---
 
 # Death PSLOT
-mulberry - 26 June 2025
+_mulberry - 26 June 2025_
 
 ## Overview
 Death dropping is equivalent to shock dropping. It's therefore possible to use death dropping as a way to send to culled purgatory, effectively resulting in PSLOT
@@ -23,6 +23,4 @@ When reloading, you should see your target PSLOTed on the ground.
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1387597717529821225)
-
-## See also
 - [Persistent Save Load Object Transfer](search:Persistent Save Load Object Transfer)

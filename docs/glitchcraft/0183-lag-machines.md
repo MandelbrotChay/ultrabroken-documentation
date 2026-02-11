@@ -3,7 +3,7 @@ title: "Lag Machines"
 ---
 
 # Lag Machines
-Mozz - 5 October 2023
+_Mozz - 5 October 2023_
 
 ## Overview
 Filling up small areas with many objects causes a lot of lag and strange effects
@@ -24,6 +24,4 @@ Still being researched
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1159689904763179069)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1190155134051819580)
-
-## See also
 - [Arrow Unloading](search:Arrow Unloading)

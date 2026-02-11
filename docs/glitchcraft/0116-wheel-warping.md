@@ -3,7 +3,7 @@ title: "Wheel Warping"
 ---
 
 # Wheel Warping
-Mozz, pyuk - 18 June 2023
+_Mozz, pyuk - 18 June 2023_
 
 ## Overview
 Zips small wheels to certain coordinates extremely quickly and can be used to launch Link a good distance and even pass through objects.
@@ -24,6 +24,4 @@ Shooting the arrows in the right angle and terrain, can cause the small wheel to
 - [Discord](https://discord.com/channels/1086729144307564648/1110956205624532993/1119903350255796265)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1138481656093749359)
 - [YouTube](https://youtu.be/NU0jvd-S9rQ)
-
-## See also
 - [Arrow Unloading](search:Arrow Unloading)

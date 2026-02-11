@@ -13,11 +13,11 @@ It's possible to send a dynamic smuggle to purgatory, keeping it connected to Li
 ## Instructions
 For 1.0.0-1.1.2:
 
-- [ ] Fuse entangle a weapon to a shield and drop both on the ground
-- [ ] Smuggle a different weapon, then equip and unequip a third weapon from the inventory
-- [ ] Pickup the weapon entangled to the shield and dynamic smuggle it
-- [ ] Swap weapons and get eaten by a like like to send the dynamic smuggle to purgatory
-- [ ] Zuggle the FE base shield
+1. Fuse entangle a weapon to a shield and drop both on the ground
+2. Smuggle a different weapon, then equip and unequip a third weapon from the inventory
+3. Pickup the weapon entangled to the shield and dynamic smuggle it
+4. Swap weapons and get eaten by a like like to send the dynamic smuggle to purgatory
+5. Zuggle the FE base shield
 
 For 1.2.0-1.2.1:
 

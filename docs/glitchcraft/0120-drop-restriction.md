@@ -3,7 +3,7 @@ title: "Drop Restriction"
 ---
 
 # Drop Restriction
-SCFD-GK2, Nicnac - 19 June 2023
+_SCFD-GK2, Nicnac - 19 June 2023_
 
 ## Overview
 Prevents zonai devices from spawning out of the inventory.
@@ -24,6 +24,3 @@ Only way to cancel it is by closing the game.
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1120378339442556990)
 - [YouTube](https://youtu.be/V6ZeZmfpvEI)
-
-## See also
-—

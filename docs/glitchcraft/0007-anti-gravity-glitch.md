@@ -3,7 +3,7 @@ title: "Anti-Gravity Glitch"
 ---
 
 # Anti-Gravity Glitch
-[Kaldemar](https://www.youtube.com/@Kaldemar) - 13 May 2023
+_[Kaldemar](https://www.youtube.com/@Kaldemar) - 13 May 2023_
 
 ## Overview
 After a specific cutscene, Link is stuck airborne when attempting to descend
@@ -19,6 +19,3 @@ Todo: Find other places where this glitch could be replicated (maybe on the Grea
 ## Resources
 - [Youtube](https://www.youtube.com/watch?v=109kaxFj8FQ)
 - [Youtube](https://www.youtube.com/watch?v=109kaxFj8FQ)
-
-## See also
-—

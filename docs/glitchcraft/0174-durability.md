@@ -3,7 +3,7 @@ title: "Durability-"
 ---
 
 # Durability-
-Zas - 11 September 2023
+_Zas - 11 September 2023_
 
 ## Overview
 Dropping and picking up a bow with a durability modifier removes the extra durability.
@@ -18,6 +18,3 @@ For some reason, the game only removes durability if it's considered a cold drop
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1150849925140197517)
-
-## See also
-—

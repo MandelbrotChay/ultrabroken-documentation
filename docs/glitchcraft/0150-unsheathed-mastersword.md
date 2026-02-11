@@ -3,7 +3,7 @@ title: "Unsheathed Mastersword"
 ---
 
 # Unsheathed Mastersword
-NX721, DanielNeia - 11 July 2023
+_NX721, DanielNeia - 11 July 2023_
 
 ## Overview
 Puts the master sword in a visual state where it is outside of it's sheath.
@@ -23,6 +23,4 @@ Dropped equipment goes zoomy into the sky based on timing.
 ## Resources
 - [Twitter](https://twitter.com/NX721_/status/1678921120102371328)
 - [Twitter](https://twitter.com/NX721_/status/1678921120102371328)
-
-## See also
 - [Hold Smuggling](search:Hold Smuggling)

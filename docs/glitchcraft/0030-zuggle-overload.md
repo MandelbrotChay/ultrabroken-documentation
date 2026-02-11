@@ -3,7 +3,7 @@ title: "Zuggle Overload"
 ---
 
 # Zuggle Overload
-Zvleon - 17 May 2023
+_Zvleon - 17 May 2023_
 
 ## Overview
 Allows you to overload your game, causing many other glitches
@@ -23,7 +23,5 @@ Sizes:
 
 ## Resources
 —
-
-## See also
 - [Zocument](https://docs.google.com/document/d/1-BeufJtao2cG5ABG0ZDEUX1SbgQwc_89n7C0VZjPAdI/edit?usp=sharing)
 - [Zuggle](search:Zuggle)

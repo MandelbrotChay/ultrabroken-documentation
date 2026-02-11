@@ -3,7 +3,7 @@ title: "Recall Sluggle"
 ---
 
 # Recall Sluggle
-Winnerboi77 - 12 July 2025
+_Winnerboi77 - 12 July 2025_
 
 ## Overview
 Using recall it's possible to sluggle a weapon by having access to it in the menu before it's properly equipped
@@ -25,6 +25,4 @@ Drop Smuggle (by drop swapping during Sluggle)
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1110956205624532993/1393348393329365042)
-
-## See also
 - [Slugging](search:Slugging)

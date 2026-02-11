@@ -3,7 +3,7 @@ title: "Midair Sort Duplication"
 ---
 
 # Midair Sort Duplication `MSD`
-Zas, kurocat471 - 21 May 2023
+_Zas, kurocat471 - 21 May 2023_
 
 ## Overview
 Allows duplication of materials while midair.
@@ -22,6 +22,3 @@ Y and exit must be pressed on the same frame.
 
 ## Resources
 - [Twitter](https://twitter.com/zasoot/status/1660458317934915584)
-
-## See also
-—

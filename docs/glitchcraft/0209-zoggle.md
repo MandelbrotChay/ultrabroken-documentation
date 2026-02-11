@@ -3,7 +3,7 @@ title: "Zoggle"
 ---
 
 # Zoggle
-Ryan?, ock - 4 January 2024
+_Ryan?, ock - 4 January 2024_
 
 ## Overview
 Using deentenglement to untie the wuggled equippment from their fe parent
@@ -28,6 +28,4 @@ Test on previous versions
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1192597934181720197)
-
-## See also
 - [Mineru Fuse Entanglement](search:Mineru Fuse Entanglement)

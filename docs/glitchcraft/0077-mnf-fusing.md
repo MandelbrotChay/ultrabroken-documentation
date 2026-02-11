@@ -3,7 +3,7 @@ title: "MNF Fusing"
 ---
 
 # MNF Fusing
-LegendofLinkk - 5 June 2023
+_LegendofLinkk - 5 June 2023_
 
 ## Overview
 Allows you to fuse to the MNF
@@ -22,6 +22,3 @@ Allows you to fuse to the MNF
 
 ## Resources
 - [YouTube](https://youtu.be/n2nP6FNjEPI)
-
-## See also
-—

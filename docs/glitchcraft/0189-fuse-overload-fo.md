@@ -3,7 +3,7 @@ title: "Fuse Overload"
 ---
 
 # Fuse Overload `FO`
-ultrababouin, NghtmaR3 - 3 November 2023
+_ultrababouin, NghtmaR3 - 3 November 2023_
 
 ## Overview
 By repeatedly cold fusing objects to the same weapon, it's possible to reach a limit that causes any additional cold fused objects to lose their collision. This can lead to strange behavior
@@ -23,6 +23,4 @@ Pickup overload can also be used in place of zuggle overload
 ## Resources
 - [Discord](https://discord.com/channels/1111875355758837830/1128775917376897145/1170074200627740803)
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1201964183516876800)
-
-## See also
 - [Zuggle Overload](search:Zuggle Overload)

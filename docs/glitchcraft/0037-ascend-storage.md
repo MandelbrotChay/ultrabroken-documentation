@@ -3,7 +3,7 @@ title: "Ascend Storage"
 ---
 
 # Ascend Storage
-Saria - 19 May 2023
+_Saria - 19 May 2023_
 
 ## Overview
 Misplaces the point where Link goes after using Ascend.
@@ -24,6 +24,3 @@ Misplaces the point where Link goes after using Ascend.
 
 ## Resources
 - [Twitter](https://twitter.com/reaperhide/status/1659593296774299648)
-
-## See also
-—

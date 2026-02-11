@@ -3,7 +3,7 @@ title: "Stack Splitting"
 ---
 
 # Stack Splitting
-s0ft, Telkic, mulberry - 31 December 2024
+_s0ft, Telkic, mulberry - 31 December 2024_
 
 ## Overview
 Using an arrow fuse returning, it's possible to get two slots for one item
@@ -33,6 +33,3 @@ Can lead to Split Item Duplication, a material duplication glitch
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1110956205624532993/1323483601756622899)
-
-## See also
-—

@@ -3,7 +3,7 @@ title: "Menu Overload"
 ---
 
 # Menu Overload
-Mozz - 11 January 2024
+_Mozz - 11 January 2024_
 
 ## Overview
 Overloads the item menu via Moobe, acting similarly to menu overload in BOTW
@@ -22,6 +22,4 @@ Texture Tearing
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1194033039123165215/1195129250265694289)
 - [Discord](https://discord.com/channels/1086729144307564648/1194033039123165215/1196033176183779430)
-
-## See also
 - [Mulberry's Out of Body Experience](search:Mulberry's Out of Body Experience)

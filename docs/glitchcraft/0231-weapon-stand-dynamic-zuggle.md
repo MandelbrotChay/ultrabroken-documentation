@@ -3,7 +3,7 @@ title: "Weapon Stand Dynamic Zuggle"
 ---
 
 # Weapon Stand Dynamic Zuggle
-Winnerboi77 - 14 March 2024
+_Winnerboi77 - 14 March 2024_
 
 ## Overview
 Weapon stands force equip with a little delay on 1.0, making it possible to dynamic zuggle with them
@@ -21,6 +21,4 @@ Although this was found 2 days before dynamic zuggle steps were recovered, it wa
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1217864399855943740)
-
-## See also
 - [Dynamic Zuggle](search:Dynamic Zuggle)

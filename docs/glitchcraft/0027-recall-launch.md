@@ -3,7 +3,7 @@ title: "Recall Launch"
 ---
 
 # Recall Launch
-Deep - 17 May 2023
+_Deep - 17 May 2023_
 
 ## Overview
 Allows you to launch yourself very far
@@ -22,6 +22,3 @@ This works very good with boomerangs. It also works with anything Link can pick 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1108497033951719517)
 - [Twitter](https://twitter.com/iLegendofLinkk/status/1659100053535965185?t=tWBb41YeFveu5NycFpue5w&s=19)
-
-## See also
-—

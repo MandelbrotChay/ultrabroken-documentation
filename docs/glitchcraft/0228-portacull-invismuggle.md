@@ -3,7 +3,7 @@ title: "Portacull Invismuggle"
 ---
 
 # Portacull Invismuggle
-mulberry - 29 February 2024
+_mulberry - 29 February 2024_
 
 ## Overview
 Using portable culling equipment it's possible to get a culled smuggle (invismuggle).
@@ -25,6 +25,4 @@ Performing Invismuggle while having a (drop) zuggle sends the equipment to culle
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1212758084980572270)
-
-## See also
 - [Persistent Save Load Object Transfer](search:Persistent Save Load Object Transfer)

@@ -3,7 +3,7 @@ title: "Map Flickering"
 ---
 
 # Map Flickering
-
+_?_
 
 ## Overview
 EPILEPSY WARNING
@@ -19,6 +19,3 @@ Do not do this if you suffer from epilepsy, or are prone to seizures
 
 ## Resources
 - [Youtube](https://www.youtube.com/watch?v=RjSKbESuVHo)
-
-## See also
-—

@@ -3,7 +3,7 @@ title: "Bow Attachment Desync"
 ---
 
 # Bow Attachment Desync `BAD`
-Zas, Aeolian - 11 July 2023
+_Zas, Aeolian - 11 July 2023_
 
 ## Overview
 Allows you to attach different materials to multishot arrows.
@@ -32,6 +32,3 @@ On 1.1.0-1.1.2 only the last material is consumed.
 - [Twitter](https://twitter.com/zasoot/status/1678779155310338053)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1128344687825133649)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1128344687825133649%20(Aeolian%20with%201.0.0%20item%20drop))
-
-## See also
-—

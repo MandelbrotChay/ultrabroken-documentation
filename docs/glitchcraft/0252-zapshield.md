@@ -3,7 +3,7 @@ title: "Zapshield"
 ---
 
 # Zapshield
-Aergyl - 16 September 2024
+_Aergyl - 16 September 2024_
 
 ## Overview
 Fuse entangling a shock emitter to two shields and permaculling one of its FE bases results in a permanently electrified shield which makes applications involving shock more portable
@@ -30,7 +30,5 @@ While zapshield itself can be created on all versions, it's applications are ver
 - [Discord](https://discord.com/channels/1086729144307564648/1110956205624532993/1328470713497288845)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1328523158856405014)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1328854135495200778)
-
-## See also
 - [Fuse Entanglement](search:Fuse Entanglement)
 - [Stick Desync Clip](search:Stick Desync Clip)

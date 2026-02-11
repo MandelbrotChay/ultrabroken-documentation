@@ -3,7 +3,7 @@ title: "Arrow Unlink"
 ---
 
 # Arrow Unlink
-R4000 - 26 October 2023
+_R4000 - 26 October 2023_
 
 ## Overview
 makes arrow float away allowing you to spawn fused stuff in other loactions
@@ -22,7 +22,5 @@ it is very inconsistent and is still being tested
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1167228288834486362)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1167228288834486362)
-
-## See also
 - [Zuggle](search:Zuggle)
 - [Zuggle Overload](search:Zuggle Overload)

@@ -3,7 +3,7 @@ title: "Super Bomb Jump"
 ---
 
 # Super Bomb Jump
-ferruscube, Aergyl - 14 September 2023
+_ferruscube, Aergyl - 14 September 2023_
 
 ## Overview
 Jumping on a specific frame allows you to get a much higher bomb jump than usual
@@ -30,6 +30,4 @@ Method 2 in 1.0.0 will allow you to reuse your bomb flower infinitely, but also 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1155451908530647064)
 - [YouTube](https://www.youtube.com/watch?v=NP-owf2XiVM&t)
-
-## See also
 - [Modifier Deletion Weapon State Transfer](search:Modifier Deletion Weapon State Transfer)

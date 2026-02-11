@@ -3,7 +3,7 @@ title: "Fuse Entanglement Drop Smuggling"
 ---
 
 # Fuse Entanglement Drop Smuggling
-Blize, Blackmars - 15 August 2023
+_Blize, Blackmars - 15 August 2023_
 
 ## Overview
 Allows for Drop Smuggling of Fuse Entangled Equipment. Can be used for GAS and Double-FE on 1.2.0
@@ -24,6 +24,4 @@ Retrieving collision results in a purgatory equipment in the overworld, picking 
 
 ## Resources
 - [Link](https://discordapp.com/channels/1086729144307564648/1113557914444111873/1140772467707760750)
-
-## See also
 - [Fuse Entanglement](search:Fuse Entanglement)

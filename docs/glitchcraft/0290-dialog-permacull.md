@@ -3,7 +3,7 @@ title: "Dialog Permacull"
 ---
 
 # Dialog Permacull
-mulberry - 28 November 2025
+_mulberry - 28 November 2025_
 
 ## Overview
 Permanently culls any liftable object by triggering an NPC dialog while Link is culled
@@ -24,6 +24,4 @@ Not all NPC dialog interactions will work
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1444037681855070351)
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1444042968062496930)
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1444082029074583815)
-
-## See also
 - [Portable Culling](search:Portable Culling)

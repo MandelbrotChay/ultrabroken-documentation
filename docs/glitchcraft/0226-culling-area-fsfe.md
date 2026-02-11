@@ -3,7 +3,7 @@ title: "Culling Area FSFE"
 ---
 
 # Culling Area FSFE
-mulberry, Yee, Zas - 25 February 2024
+_mulberry, Yee, Zas - 25 February 2024_
 
 ## Overview
 A method for FSFE using AreaCulling
@@ -35,7 +35,5 @@ https://discord.com/channels/1086729144307564648/1113557914444111873/12176889338
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1211151054633172993)
 - [YouTube](https://youtu.be/Y8sOuZdQecU)
-
-## See also
 - [Object Culling](search:Object Culling)
 - [Fuse Storage](search:Fuse Storage)

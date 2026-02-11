@@ -3,7 +3,7 @@ title: "Zonai Sort Duplication"
 ---
 
 # Zonai Sort Duplication `ZSD`
-Quelfth, Flash - 22 May 2023
+_Quelfth, Flash - 22 May 2023_
 
 ## Overview
 Allows you to dupe zonai parts back into your inventory.
@@ -23,6 +23,3 @@ For a more consistent method, 3 shield parries away should work on most walls if
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1110075304338260059)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1110075304338260059)
-
-## See also
-—

@@ -3,7 +3,7 @@ title: "Detanglement"
 ---
 
 # Detanglement
-Zas - 9 September 2023
+_Zas - 9 September 2023_
 
 ## Overview
 Using a rocket shield disconnects fuse-entangled objects from their source equipment without destroying the object.
@@ -22,7 +22,5 @@ Objects fuse entangled to Mineru can be detangled by fusing another object over 
 ## Resources
 - [Twitter](https://vxtwitter.com/zasbotw/status/1700578075816403202)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1150136975504982167)
-
-## See also
 - [Zuggling](search:Zuggling)
 - [Fuse Entanglement](search:Fuse Entanglement)

@@ -3,7 +3,7 @@ title: "Memory Interrupt"
 ---
 
 # Memory Interrupt
-mulberry - October 1st, 2024
+_mulberry - October 1st, 2024_
 
 ## Overview
 Interrupting a memory causes a forced pause after a dialogue
@@ -25,6 +25,3 @@ The main use for this is Banc Storage, check the next row
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1110956205624532993/1290665812855885846)
 - [YouTube](https://www.youtube.com/watch?v=RmjZKVGvstE)
-
-## See also
-—

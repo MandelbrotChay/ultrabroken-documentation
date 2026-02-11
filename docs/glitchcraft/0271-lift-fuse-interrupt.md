@@ -3,7 +3,7 @@ title: "Lift Fuse Interrupt"
 ---
 
 # Lift Fuse Interrupt
-Yee - 22 April 2025
+_Yee - 22 April 2025_
 
 ## Overview
 Puts liftable objects in a strange state where fusing to them causes a null fuse and cancels the state.
@@ -23,6 +23,3 @@ It is not yet understood what causes this glitch.
 - [Discord](https://discord.com/channels/1086729144307564648/1109838351596527726/1364240647736791071)
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1367499196676051034)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1366561351069077616)
-
-## See also
-—

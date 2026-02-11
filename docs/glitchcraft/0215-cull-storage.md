@@ -3,7 +3,7 @@ title: "Cull Storage"
 ---
 
 # Cull Storage
-mulberry - 20 January 2024
+_mulberry - 20 January 2024_
 
 ## Overview
 Culling and unculling an sdc stick in a specific way allows you to store its cull.
@@ -32,7 +32,5 @@ Can also be done by recalling the SDC stick while standing outside of the cullin
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1198393841464651807)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1249007861523283999)
-
-## See also
 - [Stick Desync Clip](search:Stick Desync Clip)
 - [Object Culling](search:Object Culling)

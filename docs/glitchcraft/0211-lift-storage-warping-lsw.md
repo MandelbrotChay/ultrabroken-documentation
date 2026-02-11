@@ -3,7 +3,7 @@ title: "Lift Storage Warping"
 ---
 
 # Lift Storage Warping `LSW`
-mulberry - 8 January 2024
+_mulberry - 8 January 2024_
 
 ## Overview
 Culling link while holding a zlot'ed item puts link into a wrong warp state. After loading a file, he will get placed between his position before the file load and the position from the file loaded. Loading the same file again won't change his position though.
@@ -23,7 +23,5 @@ Test with like like stick culling
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1194030076233257020)
-
-## See also
 - [Stick Desync Clip](search:Stick Desync Clip)
 - [Object Culling](search:Object Culling)

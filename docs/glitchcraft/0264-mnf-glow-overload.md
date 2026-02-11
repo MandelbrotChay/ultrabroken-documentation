@@ -3,7 +3,7 @@ title: "MNF Glow Overload"
 ---
 
 # MNF Glow Overload
-Toti Sauce - 3 January 2025
+_Toti Sauce - 3 January 2025_
 
 ## Overview
 Stacking the glow from the MsgNotFound sword to extreme lengths causes many visual effects to stop rendering correctly
@@ -22,7 +22,5 @@ Also works in other locations with gloom hands nearby
 ## Resources
 - [Discord](https://discordapp.com/channels/1086729144307564648/1105598687167664239/1324766216266453096)
 - [Discord](https://discordapp.com/channels/1086729144307564648/1105598687167664239/1324769679495139420)
-
-## See also
 - [Message Not Found](search:Message Not Found)
 - [Zuggle](search:Zuggle)

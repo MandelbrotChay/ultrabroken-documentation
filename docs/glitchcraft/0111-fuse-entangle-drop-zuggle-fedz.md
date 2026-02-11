@@ -3,7 +3,7 @@ title: "Fuse Entangle Drop Zuggle"
 ---
 
 # Fuse Entangle Drop Zuggle `FEDZ`
-Ryan? - 17 June 2023
+_Ryan? - 17 June 2023_
 
 ## Overview
 Similarily to FEWZ, this is not a real drop zuggle, but rather a shield zuggle
@@ -36,8 +36,6 @@ For multiple FEDZ, you must do it in this order:
 
 ## Resources
 —
-
-## See also
 - [Fuse Entanglement](search:Fuse Entanglement)
 - [Slugging](search:Slugging)
 - [Zuggling](search:Zuggling)

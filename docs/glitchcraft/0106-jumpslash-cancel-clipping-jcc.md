@@ -3,7 +3,7 @@ title: "Jumpslash Cancel Clipping"
 ---
 
 # Jumpslash Cancel Clipping `JCC`
-Mozz - 16 June 2023
+_Mozz - 16 June 2023_
 
 ## Overview
 Allows for clipping through thin ceilings.
@@ -24,6 +24,4 @@ Highly less likely to work with flat ceilings.
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1119436112964890735)
-
-## See also
 - [Jumpslash Cancel](search:Jumpslash Cancel)

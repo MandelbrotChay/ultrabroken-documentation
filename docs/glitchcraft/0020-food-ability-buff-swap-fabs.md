@@ -3,7 +3,7 @@ title: "Food Ability Buff Swap"
 ---
 
 # Food Ability Buff Swap `FABS`
-fabs - 16 May 2023
+_fabs - 16 May 2023_
 
 ## Overview
 Allows you to get roasted food (stackable) with a food effect
@@ -29,6 +29,3 @@ These are all the places you can obtain cooked food to perform with FABS:
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1108032859811348631)
 - [YouTube](https://www.youtube.com/watch?v=UurzVka6G9M)
-
-## See also
-—

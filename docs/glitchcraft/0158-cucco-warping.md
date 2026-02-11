@@ -3,7 +3,7 @@ title: "Cucco Warping"
 ---
 
 # Cucco Warping
-onion - 23 July 2023
+_onion - 23 July 2023_
 
 ## Overview
 Picking up a cucco right as it voids out from entering water warps Link to its respawn location
@@ -20,6 +20,3 @@ Picking up a cucco right as it voids out from entering water warps Link to its r
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1132767408696852541)
-
-## See also
-—

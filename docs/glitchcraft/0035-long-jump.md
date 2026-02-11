@@ -3,7 +3,7 @@ title: "Long Jump"
 ---
 
 # Long Jump
-Mozz - 18 May 2023
+_Mozz - 18 May 2023_
 
 ## Overview
 Jump farther
@@ -20,6 +20,3 @@ While facing sideways (any angle that is more than or equal to 90 degrees from t
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1108911864710185041)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1108911864710185041)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1109098133100703774)
-
-## See also
-—

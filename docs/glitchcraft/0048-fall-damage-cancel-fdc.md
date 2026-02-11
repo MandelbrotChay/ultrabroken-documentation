@@ -3,7 +3,7 @@ title: "Fall Damage Cancel"
 ---
 
 # Fall Damage Cancel `FDC`
-simonfirefighter - 23 May 2023
+_simonfirefighter - 23 May 2023_
 
 ## Overview
 Allows you to cancel fall damage from any height
@@ -22,6 +22,4 @@ It's possible to Fall Damage Cancel by performing multiple frame perfect inputs 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1110634140803551445)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1110642449954639932)
-
-## See also
 - [Jumpslash Cancel](search:Jumpslash Cancel)

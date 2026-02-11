@@ -3,7 +3,7 @@ title: "Extended Throw Sprinting"
 ---
 
 # Extended Throw Sprinting `ETS`
-briochoc - 12 May 2023
+_briochoc - 12 May 2023_
 
 ## Overview
 —
@@ -18,6 +18,3 @@ Hold B, tap R, repeat
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1106610982379323492)
 - [Youtube](https://youtu.be/uM4o7rmSbwc)
-
-## See also
-—

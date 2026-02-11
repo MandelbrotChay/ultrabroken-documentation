@@ -3,7 +3,7 @@ title: "Mineru Culling"
 ---
 
 # Mineru Culling
-Lightos_ - 31 July 2023
+_Lightos_ - 31 July 2023_
 
 ## Overview
 Allows for Link's model to be operated from Mineru, by unloading Mineru, Link can be culled at will.
@@ -24,6 +24,4 @@ Before being culled you can perform an action, culling it will pause it and then
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1135462408756936704)
-
-## See also
 - [Zuggle Overload](search:Zuggle Overload)

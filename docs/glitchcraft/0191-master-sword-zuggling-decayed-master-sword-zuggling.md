@@ -3,7 +3,7 @@ title: "Master Sword Zuggling/ Decayed Master Sword Zuggling"
 ---
 
 # Master Sword Zuggling/ Decayed Master Sword Zuggling
-Zas - 6 November 2023
+_Zas - 6 November 2023_
 
 ## Overview
 Allows you to zuggle the master sword or decayed master sword by desyncing it
@@ -41,7 +41,5 @@ This can be combined with mastersword liberation to drop the dms/ms
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1171061365667020821)
-
-## See also
 - [Mineru Culling](search:Mineru Culling)
 - [Zuggling](search:Zuggling)

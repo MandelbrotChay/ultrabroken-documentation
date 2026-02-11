@@ -3,7 +3,7 @@ title: "L Sprinting"
 ---
 
 # L Sprinting
-Tauktes - 12 May 2023
+_Tauktes - 12 May 2023_
 
 ## Overview
 —
@@ -20,6 +20,4 @@ This works best on fuse and ultrahand. Hold B and tap L twice (one time to activ
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1106669953786064946)
 - [Youtube](https://youtu.be/mQrmDMh1Cfs)
-
-## See also
 - [Sprint Methods](search:Sprint Methods)

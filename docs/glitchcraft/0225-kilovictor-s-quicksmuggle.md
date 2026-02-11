@@ -3,7 +3,7 @@ title: "Kilovictor's quicksmuggle"
 ---
 
 # Kilovictor's quicksmuggle
-Kilovictor - 23 February 2024
+_Kilovictor - 23 February 2024_
 
 ## Overview
 fusing an sdc stick to equipment allows for a different, stronger cull, which can be used to cull equipment.
@@ -27,8 +27,6 @@ it's very likely to cull lock, especially if you don't mount a steering stick, l
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1210488053769175040)
-
-## See also
 - [Memory Buffering](search:Memory Buffering)
 - [Object Culling](search:Object Culling)
 - [Stick Desync](search:Stick Desync)

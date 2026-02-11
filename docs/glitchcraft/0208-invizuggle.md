@@ -3,7 +3,7 @@ title: "Invizuggle"
 ---
 
 # Invizuggle
-ock, Yee - 3 January 2024
+_ock, Yee - 3 January 2024_
 
 ## Overview
 Dropping equipment in a specific way during a cull causes an indestructable and invisible zuggle.
@@ -63,6 +63,3 @@ Add Method 5
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1192403098753310770)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1195821216326488264)
-
-## See also
-—

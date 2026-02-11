@@ -3,7 +3,7 @@ title: "Sage Recycling"
 ---
 
 # Sage Recycling
-Knight7108 and Candlelor - 28 May 2023
+_Knight7108 and Candlelor - 28 May 2023_
 
 ## Overview
 Resets the cooldown of tulin or sidon.
@@ -19,6 +19,3 @@ SRC with tulin might be frame perfect
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1128385969620533329)
-
-## See also
-—

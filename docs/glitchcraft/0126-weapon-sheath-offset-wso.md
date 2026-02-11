@@ -3,7 +3,7 @@ title: "Weapon Sheath Offset"
 ---
 
 # Weapon Sheath Offset `WSO`
-circyit, dash - 25 June 2023
+_circyit, dash - 25 June 2023_
 
 ## Overview
 Puts the weapon sheathe in an offset state, similar to the sheathe during Zuggle Overload
@@ -24,6 +24,3 @@ This works for ALL weapons not just the .
 
 ## Resources
 - [Youtube](https://www.youtube.com/watch?v=E9yKzddgre4)
-
-## See also
-—

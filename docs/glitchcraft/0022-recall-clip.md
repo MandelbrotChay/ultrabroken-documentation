@@ -3,7 +3,7 @@ title: "Recall Clip"
 ---
 
 # Recall Clip
-こんそめ - 16 May 2023
+_こんそめ - 16 May 2023_
 
 ## Overview
 Allows you to clip through things using a large object and recall
@@ -22,6 +22,3 @@ This can be done with a spring, making the entire trick much more portable
 ## Resources
 - [Twitter](https://vxtwitter.com/tsu509359170830/status/1657767717796208640?s=20)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1108100337254023168)
-
-## See also
-—

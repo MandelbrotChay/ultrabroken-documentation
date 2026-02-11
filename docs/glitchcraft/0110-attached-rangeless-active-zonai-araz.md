@@ -3,7 +3,7 @@ title: "Attached Rangeless Active Zonai"
 ---
 
 # Attached Rangeless Active Zonai `ARAZ`
-Ryan?, NX721 - 16 June 2023; 15 July 2023
+_Ryan?, NX721 - 16 June 2023; 15 July 2023_
 
 ## Overview
 Is very similar to DRAZ but differs slightly.
@@ -41,7 +41,5 @@ Can be kept permanently active via GAS and can be zuggled for transferring/other
 
 ## Resources
 —
-
-## See also
 - [Fuse Entanglement](search:Fuse Entanglement)
 - [Zuggling](search:Zuggling)

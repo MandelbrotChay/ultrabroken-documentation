@@ -3,7 +3,7 @@ title: "Mulberry's Out of Body Experience"
 ---
 
 # Mulberry's Out of Body Experience `MOOBE`
-mulberry - 6 January 2024
+_mulberry - 6 January 2024_
 
 ## Overview
 (Temporarily) Warps Link to a previous climbing position from anywhere in the world, only while the game is paused.
@@ -20,6 +20,4 @@ mulberry - 6 January 2024
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1110956205624532993/1193262026273861764)
-
-## See also
 - [Memory Buffering](search:Memory Buffering)

@@ -3,7 +3,7 @@ title: "Equipped Throken"
 ---
 
 # Equipped Throken
-Aergyl, mulberry - 20 May 2025
+_Aergyl, mulberry - 20 May 2025_
 
 ## Overview
 Allows throken weapons to be equipped
@@ -31,8 +31,6 @@ Having a like like steal the throken weapon from Link allows it to be picked up 
 ## Resources
 - [Discord](https://discordapp.com/channels/1086729144307564648/1110956205624532993/1374335275064623104)
 - [Discord](https://discordapp.com/channels/1086729144307564648/1113557914444111873/1377437735224086608)
-
-## See also
 - [Throken](search:Throken)
 - [Equipment Smuggle](search:Equipment Smuggle)
 - [Zuggle Overload](search:Zuggle Overload)

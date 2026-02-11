@@ -3,7 +3,7 @@ title: "Clear Camera/Scope"
 ---
 
 # Clear Camera/Scope
-NX721 - 3 July 2023
+_NX721 - 3 July 2023_
 
 ## Overview
 Allows for First Person Gameplay, removing the HUD from the camera and scope.
@@ -22,6 +22,3 @@ how was this not found
 ## Resources
 - [Twitter](https://twitter.com/NX721_/status/1681732748476596344)
 - [Twitter](https://twitter.com/NX721_/status/1681732748476596344)
-
-## See also
-—

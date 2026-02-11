@@ -3,7 +3,7 @@ title: "Floorping"
 ---
 
 # Floorping
-koreth - 2 January 2024
+_koreth - 2 January 2024_
 
 ## Overview
 When reloading a save, force Link to warp vertically on a floor he wasn't on previously.
@@ -19,6 +19,3 @@ Test on more versions
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1110956205624532993/1191838704646488145)
 - [Discord](https://discord.com/channels/1086729144307564648/1110956205624532993/1193252888064040981)
-
-## See also
-—

@@ -3,7 +3,7 @@ title: "Force Equip Zuggling"
 ---
 
 # Force Equip Zuggling `FEZ`
-BigDUCCO, Mozz, Rhkellz, Syb, NaN Gogh - 7 June 2023
+_BigDUCCO, Mozz, Rhkellz, Syb, NaN Gogh - 7 June 2023_
 
 ## Overview
 Allows Link to zuggle weapons using any interaction that forcefully equips a weapon. Best achieved by shrines or quests.
@@ -27,6 +27,4 @@ Can be repeated multiple times to zuggle multiple weapons.
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1116094902795780096)
-
-## See also
 - [Zuggling](search:Zuggling)

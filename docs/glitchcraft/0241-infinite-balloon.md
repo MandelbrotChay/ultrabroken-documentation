@@ -3,7 +3,7 @@ title: "Infinite Balloon"
 ---
 
 # Infinite Balloon
-kurone_yuu - 13 June 2024
+_kurone_yuu - 13 June 2024_
 
 ## Overview
 Steal Robbie's balloon which has will never deplete.
@@ -22,6 +22,3 @@ There are many NPCs that can be put into this weird rolling state.
 
 ## Resources
 - [Twitter](https://x.com/kurone_yuu/status/1801239224378900947?s=46&t=DdtmlnCQqIbD5irw-jnKbQ)
-
-## See also
-—

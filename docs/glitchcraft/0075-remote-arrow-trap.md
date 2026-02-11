@@ -3,7 +3,7 @@ title: "Remote Arrow"
 ---
 
 # Remote Arrow
-Flash, ElDuende, kirigaya - 2 June 2023
+_Flash, ElDuende, kirigaya - 2 June 2023_
 
 ## Overview
 Allows you to fire arrows remotely from the location the glitch was set up in.
@@ -24,6 +24,3 @@ Firing from any other bow with this glitch active, will allow it to shoot from t
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1114292162268499979)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1114294468363960490)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1114313664535732315)
-
-## See also
-—

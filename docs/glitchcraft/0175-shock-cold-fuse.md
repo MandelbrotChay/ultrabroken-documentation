@@ -3,7 +3,7 @@ title: "Shock Cold Fuse"
 ---
 
 # Shock Cold Fuse
-Zas - 11 September 2023
+_Zas - 11 September 2023_
 
 ## Overview
 Interrupting a fuse on the first possible frame with shock causes cold fusion
@@ -21,6 +21,3 @@ Interrupting a fuse on the first possible frame with shock causes cold fusion
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1150759871520710666)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1151265557295923220)
-
-## See also
-—

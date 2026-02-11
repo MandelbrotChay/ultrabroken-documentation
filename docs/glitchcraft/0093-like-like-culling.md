@@ -3,7 +3,7 @@ title: "Like-Like Culling"
 ---
 
 # Like-Like Culling
-Mozz - 13 June 2023
+_Mozz - 13 June 2023_
 
 ## Overview
 A method for object culling
@@ -19,6 +19,3 @@ A method for object culling
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1118369148439904276)
-
-## See also
-—

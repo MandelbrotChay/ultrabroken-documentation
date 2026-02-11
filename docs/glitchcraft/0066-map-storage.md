@@ -3,7 +3,7 @@ title: "Map Storage"
 ---
 
 # Map Storage
-blueberryoats - 29 May 2023
+_blueberryoats - 29 May 2023_
 
 ## Overview
 Allows you to have control over Link while the map is open.
@@ -22,6 +22,3 @@ effects can range from softlocks to crashes
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1112660897891102740)
 - [YouTube](https://youtu.be/cZZ-enDJ6jY)
-
-## See also
-—

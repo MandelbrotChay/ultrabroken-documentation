@@ -3,7 +3,7 @@ title: "Dive Cancel Glide Boost"
 ---
 
 # Dive Cancel Glide Boost
-kurocat471, Mety333 - 14 May 2023
+_kurocat471, Mety333 - 14 May 2023_
 
 ## Overview
 Allows you to preserve the increased speed from diving with the Glide Suit into paragliding
@@ -24,6 +24,3 @@ May 14, 2023; June 9, 2023
 
 ## Resources
 - [YouTube](https://youtu.be/oIzJKQAWPdI)
-
-## See also
-—

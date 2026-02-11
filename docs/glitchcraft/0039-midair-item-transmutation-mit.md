@@ -3,7 +3,7 @@ title: "Midair Item Transmutation"
 ---
 
 # Midair Item Transmutation `MIT`
-eXe - 20 May 2023
+_eXe - 20 May 2023_
 
 ## Overview
 Allows you to transmutate any material very fast. Technical explanation: let's say you have
@@ -32,6 +32,3 @@ You can chain this many times during 1 shield jump by repeating steps 2-5. It do
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1109456967480647710)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1109460329966092319)
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1109456967480647710)
-
-## See also
-—

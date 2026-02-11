@@ -3,7 +3,7 @@ title: "Springdolling"
 ---
 
 # Springdolling
-Mozz - 15 May 2023
+_Mozz - 15 May 2023_
 
 ## Overview
 allows you to launch a large horizontal distance using springs
@@ -21,6 +21,4 @@ Can chain more springs to make the horizontal launch more powerful
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1107794101111377920)
-
-## See also
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1112137651743637584)

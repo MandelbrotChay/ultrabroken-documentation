@@ -3,7 +3,7 @@ title: "Save Load Dupe"
 ---
 
 # Save Load Dupe `SLD`
-ZombieBoy225, ness, ElDuende - 16 May 2023
+_ZombieBoy225, ness, ElDuende - 16 May 2023_
 
 ## Overview
 Allows easy duplication of your weapons, bows, and shields
@@ -29,6 +29,3 @@ Requires Portable culling to be performed on 1.2.0/1.2.1
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1105598687167664239/1108041163170128022)
-
-## See also
-—

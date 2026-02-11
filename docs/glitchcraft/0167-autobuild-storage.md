@@ -3,7 +3,7 @@ title: "Autobuild Storage"
 ---
 
 # Autobuild Storage
-Blackmars, R4000 - 28 August 2023
+_Blackmars, R4000 - 28 August 2023_
 
 ## Overview
 Allows you to manually delay the instance of items being attached with Autobuild
@@ -23,6 +23,3 @@ Can do launches with Octo Balloons and pulling items towards the Like Like's loc
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1145897049963892797)
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1147602597168029728)
 - [YouTube](https://youtu.be/u3ke0m3VNFA)
-
-## See also
-—

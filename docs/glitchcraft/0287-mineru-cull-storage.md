@@ -3,7 +3,7 @@ title: "Mineru Cull Storage"
 ---
 
 # Mineru Cull Storage
-ofstrings2 - 9 November 2025
+_ofstrings2 - 9 November 2025_
 
 ## Overview
 Stores the callback of Mineru while mouted on her, useful for swap resync zuggle setups
@@ -20,7 +20,5 @@ Mineru Cull Storage SRZ neither requires frame–perfect pausing (like Mineru Di
 ## Resources
 - [Discord](https://discord.com/channels/1111875355758837830/1247621060657025197/1438180015635304529)
 - [Discord](https://discord.com/channels/1086729144307564648/1110956205624532993/1439720452325900411)
-
-## See also
 - [Portable Culling](search:Portable Culling)
 - [Swap Resync Zuggle](search:Swap Resync Zuggle)

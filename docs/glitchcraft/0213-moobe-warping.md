@@ -3,7 +3,7 @@ title: "Moobe Warping"
 ---
 
 # Moobe Warping
-Ryan? - 12 January 2024
+_Ryan? - 12 January 2024_
 
 ## Overview
 Using Moobe and a horse, it's possible to fully warp (opposed to only temporarily) to a preset climbing position.
@@ -22,6 +22,4 @@ Using Moobe and a horse, it's possible to fully warp (opposed to only temporaril
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1194033039123165215/1195511230660616355)
 - [Discord](https://discord.com/channels/1086729144307564648/1194033039123165215/1195529500558114876)
-
-## See also
 - [Mulberry's Out of Body Experience](search:Mulberry's Out of Body Experience)

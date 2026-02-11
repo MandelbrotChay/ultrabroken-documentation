@@ -3,7 +3,7 @@ title: "Culling Area Fuse Storage"
 ---
 
 # Culling Area Fuse Storage
-Mozz, pyuk - 30 June 2023
+_Mozz, pyuk - 30 June 2023_
 
 ## Overview
 A method of Fuse Storage using Area Culling
@@ -18,7 +18,5 @@ A method of Fuse Storage using Area Culling
 
 ## Resources
 —
-
-## See also
 - [Fuse Storage](search:Fuse Storage)
 - [Object Culling](search:Object Culling)

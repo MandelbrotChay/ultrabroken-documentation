@@ -3,7 +3,7 @@ title: "Quantum Linking"
 ---
 
 # Quantum Linking `QL`
-NaN Gogh, pyuk - 30 August 2023
+_NaN Gogh, pyuk - 30 August 2023_
 
 ## Overview
 Uses culling to separate glued objects in space, while still retaining a coherent construction
@@ -40,8 +40,6 @@ Quantum Anchor 7/23/2023
 - [Twitter](https://twitter.com/_nan_gogh/status/1676914554956132352)
 - [Twitter](https://vxtwitter.com/_nan_gogh/status/1678205905869889536?s=46)
 - [YouTube](https://www.youtube.com/watch?v=dxJru92WVtI)
-
-## See also
 - [Fuse Entanglement](search:Fuse EntanglementO)
 - [Object Culling](search:Object Culling)
 - [Wireless Energy](search:Wireless Energy)

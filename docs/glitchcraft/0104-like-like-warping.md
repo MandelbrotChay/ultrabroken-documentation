@@ -3,7 +3,7 @@ title: "Like-Like Warping"
 ---
 
 # Like-Like Warping
-Mozz - 15 June 2023
+_Mozz - 15 June 2023_
 
 ## Overview
 —
@@ -19,6 +19,3 @@ Mozz - 15 June 2023
 
 ## Resources
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1118758645111468042)
-
-## See also
-—
