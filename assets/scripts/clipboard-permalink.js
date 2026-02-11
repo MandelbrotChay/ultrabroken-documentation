@@ -16,7 +16,7 @@
       const permalink = window.location.href.split('#')[0] + '#' + id;
       
       navigator.clipboard.writeText(permalink).then(() => {
-        // Show a transient checkmark next to the heading instead of replacing text
+          // Show a transient checkmark next to the heading instead of replacing text
         try {
           // If a previous check exists, clear its timeout and remove it first
           const prev = heading.querySelector('.ub-copy-check');
@@ -44,9 +44,36 @@
         } catch (err) {
           console.error('Clipboard feedback error:', err);
         }
+        // Also show global copied-to-clipboard toast to match search share UI
+        try {
+          showCopiedToast && showCopiedToast('Copied to clipboard');
+        } catch (e) {}
       }).catch(err => {
         console.error('Failed to copy permalink:', err);
       });
     }
   });
 })();
+
+// Lightweight global toast for "Copied to clipboard" messages.
+// Exposed at module level so other scripts can reuse it.
+function showCopiedToast(message) {
+  try {
+    const id = 'ub-global-toast';
+    let el = document.getElementById(id);
+    if (!el) {
+      el = document.createElement('div');
+      el.id = id;
+      el.className = 'ub-toast';
+      document.body.appendChild(el);
+    }
+    el.textContent = message || 'Copied to clipboard';
+    // trigger visible state
+    requestAnimationFrame(() => el.classList.add('ub-toast--visible'));
+    // reset hide timer
+    if (el._ubHideTimer) clearTimeout(el._ubHideTimer);
+    el._ubHideTimer = setTimeout(() => {
+      el.classList.remove('ub-toast--visible');
+    }, 1600);
+  } catch (e) { console.error('showCopiedToast error', e); }
+}
