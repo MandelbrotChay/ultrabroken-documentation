@@ -138,5 +138,13 @@ function setSearchQueryAndSubmit(input, q) {
 
     // 4) As a final fallback, re-dispatch input after a short delay to encourage reactive listeners
     setTimeout(() => { try { input.dispatchEvent(new Event('input', { bubbles: true })); } catch (e) {} }, 50);
+    // 5) Ensure URL uses the `q` parameter (Material expects `?q=`). Use replaceState so we don't navigate.
+    try {
+      const u = new URL(window.location.href);
+      // remove any `query` param and set `q`
+      if (u.searchParams.has('query')) u.searchParams.delete('query');
+      u.searchParams.set('q', val);
+      history.replaceState(null, '', u.toString());
+    } catch (e) {}
   } catch (e) {}
 }
