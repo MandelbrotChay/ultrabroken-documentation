@@ -47,6 +47,19 @@
       join(repoRoot, 'search/search_index.json')
     ];
 
+    // If the site is hosted on GitHub Pages (owner.github.io), try the raw
+    // GitHub URL as a last-resort fallback so the widget can work before the
+    // Pages build publishes the docs directory.
+    try{
+      const host = (location && location.hostname) ? location.hostname : '';
+      const owner = host.split('.').length ? host.split('.')[0] : '';
+      const repo = repoRoot.replace(/^\//,'');
+      if (owner && repo){
+        const raw = `https://raw.githubusercontent.com/${owner}/${repo}/main/docs/search/search_index.json`;
+        tries.push(raw);
+      }
+    }catch(e){ /* ignore */ }
+
     const tried = [];
     for(const p of tries){
       if (!p) continue;
