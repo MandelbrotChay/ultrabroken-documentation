@@ -71,24 +71,26 @@ jobs:
 
       - name: Put WIKI_INDEX_URL into Worker secrets
         env:
-          CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
-          CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
           WIKI_INDEX_URL: ${{ steps.compute_url.outputs.WIKI_INDEX_URL }}
         run: |
+          cd docs/assets/scripts/worker
           printf '%s' "$WIKI_INDEX_URL" | wrangler secret put WIKI_INDEX_URL --commit=false || true
 
       - name: Put SYSTEM_PROMPT into Worker secrets
         env:
-          CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
-          CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
           SYSTEM_PROMPT: ${{ secrets.SYSTEM_PROMPT }}
         run: |
+          cd docs/assets/scripts/worker
           printf '%s' "$SYSTEM_PROMPT" | wrangler secret put SYSTEM_PROMPT --commit=false || true
 
       - name: Publish Worker
         env:
-          CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
-          CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
         run: |
           cd docs/assets/scripts/worker
-          wrangler publish --account-id "$CF_ACCOUNT_ID"
+          wrangler deploy
