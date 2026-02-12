@@ -1,0 +1,34 @@
+name: Generate wiki_index.json
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build_and_index:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r scripts/requirements.txt || true
+
+      - name: Build MkDocs site
+        run: mkdocs build
+
+      - name: Generate wiki_index.json
+        run: |
+          python scripts/generate_embeddings.py --output site/wiki_index.json || python scripts/generate_embeddings.py --output site/wiki_index.json --no-embeddings
+
+      - name: Deploy site to gh-pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site

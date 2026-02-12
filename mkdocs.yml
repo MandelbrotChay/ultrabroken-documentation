@@ -33,6 +33,7 @@ extra_javascript:
   - assets/scripts/header-marquee.js
   - assets/scripts/particles-constellations.js
   - assets/scripts/search-link.js
+  - assets/scripts/ai-worker-client.js
   
 
 nav:
