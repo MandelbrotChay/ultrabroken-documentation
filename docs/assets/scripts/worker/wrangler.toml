@@ -1,8 +1,11 @@
 name = "ultrabroken-rag"
 main = "worker.js"
 compatibility_date = "2026-01-01"
-# Fill `account_id` via CI or wrangler environment (CF_ACCOUNT_ID)
-# account_id = "<YOUR_ACCOUNT_ID>"
+# Set `account_id` via CI or put your account ID here. Do NOT commit secrets.
+account_id = "<YOUR_ACCOUNT_ID>"
+
+# Deploy to your workers.dev subdomain (requires one-time registration in Cloudflare)
+workers_dev = true
 
 [build]
 command = ""
