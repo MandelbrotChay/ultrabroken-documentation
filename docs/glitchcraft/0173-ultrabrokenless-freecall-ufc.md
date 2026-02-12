@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Ultrabrokenless Freecall"
 ---
 
@@ -13,10 +13,10 @@ _susannediazz, ROBUXY2nd - 9 September 2023_
 
 ## Instructions
 ---
-1. recall lock an object
-2. attach an object to it
-3. recall said object
-4. break off the object with UH
+1. Recall lock an object
+2. Attach an object to it
+3. Recall said object
+4. Break off the object with Ultrahand
 
 ## Notes
 ---
