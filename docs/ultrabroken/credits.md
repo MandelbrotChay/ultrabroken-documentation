@@ -28,6 +28,7 @@ Ultrabroken has been researched and documented by many dedicated researchers. Th
 - fuse_it_or_loose_it
 - susannediazz
 - cr-2-4 (colombiancris)
+- Jordan
 
 ## Special Thanks
 ---
