@@ -34,13 +34,16 @@
     const pathname = (location && location.pathname) ? location.pathname : '/';
     const basePath = pathname.replace(/\/[^\/]*$/, '/');
 
-    const tries = [
-      preferred,
-      origin + '/search/search_index.json',
-      basePath + 'search/search_index.json',
-      'search/search_index.json',
-      './search/search_index.json'
-    ];
+    const tries = [];
+    // If we're already inside the /search/ directory, try same-directory first
+    if (pathname.indexOf('/search/') !== -1 || pathname.endsWith('/search/')){
+      tries.push(basePath + 'search_index.json');
+    }
+    tries.push(preferred);
+    tries.push(origin + '/search/search_index.json');
+    tries.push(basePath + 'search/search_index.json');
+    tries.push('search/search_index.json');
+    tries.push('./search/search_index.json');
 
     const tried = [];
     for (const p of tries){
