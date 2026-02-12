@@ -24,6 +24,5 @@ For performing this on 1.2.1, you will need to have your target item auto FE'd t
 
 ## Resources
 ---
-—
 - [Fuse Entanglement](search:Fuse Entanglement)
 - [Fuse Storage](search:Fuse Storage)

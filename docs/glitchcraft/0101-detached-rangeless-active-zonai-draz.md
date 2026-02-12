@@ -22,5 +22,4 @@ Can be kept permanently active via GAS and can be zuggled for transferring/other
 
 ## Resources
 ---
-—
 - [Fuse Entanglement](search:Fuse Entanglement)

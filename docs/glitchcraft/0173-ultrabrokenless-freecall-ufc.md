@@ -24,5 +24,4 @@ _susannediazz, ROBUXY2nd - 9 September 2023_
 
 ## Resources
 ---
-—
 - [Recall Locking](search:Recall Locking)

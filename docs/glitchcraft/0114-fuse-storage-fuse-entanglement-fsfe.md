@@ -21,7 +21,6 @@ _Ryan?, Mozz - 18 June 2023_
 
 ## Resources
 ---
-—
 - [Fuse Entanglement](search:Fuse Entanglement)
 - [Fuse Storage](search:Fuse Storage)
 - [Like-Like FSFE](search:Like-Like FSFE)

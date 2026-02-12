@@ -29,5 +29,4 @@ For 1.1.2, see FEZ and smuggle stacking zuggling (and FEWZ)
 
 ## Resources
 ---
-—
 - [Zuggle](search:Zuggle)

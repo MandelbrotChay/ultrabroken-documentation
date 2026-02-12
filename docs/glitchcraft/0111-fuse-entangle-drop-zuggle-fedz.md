@@ -39,7 +39,6 @@ For multiple FEDZ, you must do it in this order:
 
 ## Resources
 ---
-—
 - [Fuse Entanglement](search:Fuse Entanglement)
 - [Slugging](search:Slugging)
 - [Zuggling](search:Zuggling)

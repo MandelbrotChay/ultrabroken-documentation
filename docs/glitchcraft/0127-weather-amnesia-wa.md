@@ -22,5 +22,4 @@ Certain triggers, such as text boxes, will restore the caves' local weather.
 
 ## Resources
 ---
-—
 - [Memory Buffering](search:Memory Buffering)

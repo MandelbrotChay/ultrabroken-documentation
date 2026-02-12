@@ -26,6 +26,5 @@ YouTube
 
 ## Resources
 ---
-—
 - [Like-Like Culling](search:Like-Like Culling)
 - [Cull Zone Culling](search:Cull Zone Culling)
