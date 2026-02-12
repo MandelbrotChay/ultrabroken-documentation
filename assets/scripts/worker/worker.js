@@ -82,10 +82,19 @@ export default {
         try{
           const embResp = await env.AI.run(env.EMBEDDING_MODEL || '@cf/baai/bge-small-en-v1.5', { text: query });
           qEmb = embResp && embResp.data && embResp.data[0];
-        }catch(e){ qEmb = null; }
+          if (!qEmb) console.log('AI binding present but returned no embedding for query:', query.slice(0,120));
+        }catch(e){
+          qEmb = null;
+          console.log('AI.run failed, falling back to substring matching. error:', String(e));
+        }
+      } else {
+        console.log('No env.AI binding found - using substring fallback for query:', query.slice(0,120));
       }
       if (!qEmb){
+        // substring fallback: exact containment
         scored = index.map(i=>({ item:i, score: (i.text||'').toLowerCase().includes(query.toLowerCase()) ? 1 : 0 }));
+        const hitCount = scored.reduce((c,s)=>c + (s.score>0?1:0), 0);
+        console.log('Substring fallback scored', hitCount, 'hits for query:', query.slice(0,120));
       } else {
         scored = index.map(i=>({ item:i, score: cosine(qEmb, i.embedding||[]) }));
       }
