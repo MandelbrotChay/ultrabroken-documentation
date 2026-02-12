@@ -1,0 +1,8 @@
+name = "ultrabroken-rag"
+main = "worker.js"
+compatibility_date = "2026-01-01"
+# Fill `account_id` via CI or wrangler environment (CF_ACCOUNT_ID)
+# account_id = "<YOUR_ACCOUNT_ID>"
+
+[build]
+command = ""
