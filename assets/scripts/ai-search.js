@@ -25,10 +25,17 @@
   }
 
   async function tryFetchIndex(){
+    // Try multiple likely locations for the index. Sites can be deployed at
+    // a subpath, so attempt relative, root-absolute and origin-absolute paths.
+    const origin = (location && location.origin) ? location.origin : '';
+    const basePath = (location && location.pathname) ? location.pathname.replace(/\/[^\/]*$/, '/') : './';
     const tries = [
       'search/search_index.json',
       './search/search_index.json',
-      '/search/search_index.json'
+      '/search/search_index.json',
+      origin + '/search/search_index.json',
+      origin + basePath + 'search/search_index.json',
+      basePath + 'search/search_index.json'
     ];
     for(const p of tries){
       try{
