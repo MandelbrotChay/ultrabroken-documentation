@@ -22,6 +22,7 @@ import re
 import os
 from pathlib import Path
 from bs4 import BeautifulSoup
+import gzip
 from sentence_transformers import SentenceTransformer
 from tqdm import tqdm
 
@@ -76,12 +77,16 @@ def walk_docs():
         text = extract_text(p)
         if not text:
             continue
-        path = '/' + '/'.join(['ultrabroken-documentation', str(rel.with_suffix(''))]) + '/' if str(rel) != 'index.md' else '/ultrabroken-documentation/'
+        if rel == Path('index.md'):
+            path = '/ultrabroken-documentation/'
+        else:
+            parts = list(rel.with_suffix('').parts)
+            path = '/' + '/'.join(['ultrabroken-documentation'] + parts) + '/'
         items.append({'id': str(rel), 'title': title, 'path': path, 'text': text})
     return items
 
 
-def build_index(output: str, model_name: str):
+def build_index(output: str, model_name: str, gzip_output: bool = False):
     items = walk_docs()
     model = SentenceTransformer(model_name)
 
@@ -105,7 +110,15 @@ def build_index(output: str, model_name: str):
 
     out = Path(output)
     out.parent.mkdir(parents=True, exist_ok=True)
-    out.write_text(json.dumps(index, ensure_ascii=False), encoding='utf-8')
+    payload = json.dumps(index, ensure_ascii=False)
+    if gzip_output:
+        # if user passed a filename without .gz, append .gz
+        if not str(out).endswith('.gz'):
+            out = Path(str(out) + '.gz')
+        with gzip.open(out, 'wt', encoding='utf-8') as fh:
+            fh.write(payload)
+    else:
+        out.write_text(payload, encoding='utf-8')
     print('WROTE', out)
 
 
@@ -113,8 +126,9 @@ def main():
     p = argparse.ArgumentParser()
     p.add_argument('--output', '-o', default='site/wiki_index.json')
     p.add_argument('--model', default='all-MiniLM-L6-v2')
+    p.add_argument('--gzip', action='store_true', help='Write gzipped output (appends .gz if needed)')
     args = p.parse_args()
-    build_index(args.output, args.model)
+    build_index(args.output, args.model, gzip_output=args.gzip)
 
 
 if __name__ == '__main__':
