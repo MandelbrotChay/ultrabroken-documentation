@@ -22,7 +22,10 @@
   }
 
   async function askWorker(q){
-    const url = window.AI_WORKER_URL || localStorage.getItem('ai_worker_url') || '/worker';
+    // Default to the registered workers.dev subdomain so fetches go to the Worker,
+    // not the GitHub Pages origin which rejects POSTs to /worker.
+    const DEFAULT_WORKER_URL = 'https://ultrabroken-rag.gl1tchcr4vt.workers.dev';
+    const url = window.AI_WORKER_URL || localStorage.getItem('ai_worker_url') || DEFAULT_WORKER_URL;
     try{
       const res = await fetch(url, { method:'POST', headers: {'Content-Type':'application/json'}, body: JSON.stringify({ query: q }) });
       if (!res.ok) throw new Error('worker error '+res.status);
