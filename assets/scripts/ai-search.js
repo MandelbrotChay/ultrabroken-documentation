@@ -25,40 +25,33 @@
   }
 
   async function tryFetchIndex(){
-    // Try multiple likely locations for the index. Sites can be deployed at a
-    // subpath (GitHub Pages project pages). We'll attempt relative, root-absolute,
-    // origin-absolute and a likely repo-root path derived from the pathname.
+    // Prefer the absolute search index for this project site, then fall back
+    // to other sensible locations. This repository is served under
+    // /ultrabroken-documentation/ on GitHub Pages, so prefer that absolute path.
     const origin = (location && location.origin) ? location.origin.replace(/\/$/,'') : '';
+    const preferred = origin + '/ultrabroken-documentation/search/search_index.json';
+
     const pathname = (location && location.pathname) ? location.pathname : '/';
-    const segments = pathname.split('/').filter(Boolean);
-    const repoRoot = segments.length ? ('/' + segments[0]) : '';
     const basePath = pathname.replace(/\/[^\/]*$/, '/');
 
-    const join = (a,b) => (''+a).replace(/\/$/,'') + '/' + (''+b).replace(/^\//,'');
-
     const tries = [
-      'search/search_index.json',
-      './search/search_index.json',
-      '/search/search_index.json',
+      preferred,
       origin + '/search/search_index.json',
-      origin + join(repoRoot, 'search/search_index.json'),
-      origin + join(basePath, 'search/search_index.json'),
-      join(basePath, 'search/search_index.json'),
-      join(repoRoot, 'search/search_index.json')
+      basePath + 'search/search_index.json',
+      'search/search_index.json',
+      './search/search_index.json'
     ];
 
-    // (raw.githubusercontent fallback removed — kept lookup to origin/repoRoot/basePath)
-
     const tried = [];
-    for(const p of tries){
+    for (const p of tries){
       if (!p) continue;
       tried.push(p);
       try{
         const res = await fetch(p);
         if (!res.ok) continue;
         const json = await res.json();
-        return {json,p,tried};
-      }catch(e){ /* ignore */ }
+        return {json, p, tried};
+      } catch (e) { /* ignore */ }
     }
     return {json:null, p:null, tried};
   }
