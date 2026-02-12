@@ -1,4 +1,4 @@
-﻿---
+---
 title: "New Item Desync"
 ---
 
@@ -13,7 +13,7 @@ _[Modoki_returns](https://twitter.com/Modoki_returns) - 12 May 2023_
 
 ## Instructions
 ---
-- [ ] The new item must change positions when you sort your inventory. So for shields & bows, the new item must have higher strength than the lowest strength shield/bow currently in your inventory. Weapons are slightly more complicated because they can only be sorted by type.
+The new item must change positions when you sort your inventory. So for shields & bows, the new item must have higher strength than the lowest strength shield/bow currently in your inventory. Weapons are slightly more complicated because they can only be sorted by type.
 
 1. Pick up NEW item (displays ???) then in the text popup press +
 2. Sort inventory
