@@ -25,27 +25,40 @@
   }
 
   async function tryFetchIndex(){
-    // Try multiple likely locations for the index. Sites can be deployed at
-    // a subpath, so attempt relative, root-absolute and origin-absolute paths.
-    const origin = (location && location.origin) ? location.origin : '';
-    const basePath = (location && location.pathname) ? location.pathname.replace(/\/[^\/]*$/, '/') : './';
+    // Try multiple likely locations for the index. Sites can be deployed at a
+    // subpath (GitHub Pages project pages). We'll attempt relative, root-absolute,
+    // origin-absolute and a likely repo-root path derived from the pathname.
+    const origin = (location && location.origin) ? location.origin.replace(/\/$/,'') : '';
+    const pathname = (location && location.pathname) ? location.pathname : '/';
+    const segments = pathname.split('/').filter(Boolean);
+    const repoRoot = segments.length ? ('/' + segments[0]) : '';
+    const basePath = pathname.replace(/\/[^\/]*$/, '/');
+
+    const join = (a,b) => (''+a).replace(/\/$/,'') + '/' + (''+b).replace(/^\//,'');
+
     const tries = [
       'search/search_index.json',
       './search/search_index.json',
       '/search/search_index.json',
       origin + '/search/search_index.json',
-      origin + basePath + 'search/search_index.json',
-      basePath + 'search/search_index.json'
+      origin + join(repoRoot, 'search/search_index.json'),
+      origin + join(basePath, 'search/search_index.json'),
+      join(basePath, 'search/search_index.json'),
+      join(repoRoot, 'search/search_index.json')
     ];
+
+    const tried = [];
     for(const p of tries){
+      if (!p) continue;
+      tried.push(p);
       try{
         const res = await fetch(p);
         if (!res.ok) continue;
         const json = await res.json();
-        return {json,p};
+        return {json,p,tried};
       }catch(e){ /* ignore */ }
     }
-    return null;
+    return {json:null, p:null, tried};
   }
 
   function tokenize(s){
@@ -192,9 +205,11 @@
     if (!placeholder) return;
     const w = renderWidget(placeholder);
     const idxRes = await tryFetchIndex();
-    const indexJson = idxRes ? idxRes.json : null;
+    const indexJson = idxRes && idxRes.json ? idxRes.json : null;
     if (!indexJson){
-      w.out.textContent = 'Search index not available on this site. The AI search requires MkDocs search plugin output (search/search_index.json).';
+      const tried = (idxRes && idxRes.tried) ? idxRes.tried : [];
+      w.out.textContent = 'Search index not available on this site. The AI search requires MkDocs search plugin output (search/search_index.json).\nAttempted paths:\n' + tried.join('\n');
+      console.debug('ai-search: failed to locate search_index.json, attempted paths:', tried);
     }
 
     w.btn.addEventListener('click', async ()=>{
