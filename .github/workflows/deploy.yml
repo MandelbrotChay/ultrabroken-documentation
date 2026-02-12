@@ -25,7 +25,7 @@ jobs:
         env:
           MODEL: all-MiniLM-L6-v2
         run: |
-          python docs/assets/scripts/worker/generate_embeddings.py --output site/wiki_index.json --model "$MODEL"
+          python docs/assets/scripts/worker/generate_embeddings.py --output site/wiki_index.json --model "$MODEL" --gzip
 
       - name: Gzip index and size-check
         run: |
