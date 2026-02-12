@@ -86,7 +86,7 @@ jobs:
           WIKI_INDEX_URL: ${{ steps.compute_url.outputs.WIKI_INDEX_URL }}
         run: |
           cd docs/assets/scripts/worker
-          printf '%s' "$WIKI_INDEX_URL" | wrangler secret put WIKI_INDEX_URL --commit=false || true
+          printf '%s' "$WIKI_INDEX_URL" | wrangler secret put WIKI_INDEX_URL || true
 
       - name: Put SYSTEM_PROMPT into Worker secrets
         env:
@@ -95,7 +95,7 @@ jobs:
           SYSTEM_PROMPT: ${{ secrets.SYSTEM_PROMPT }}
         run: |
           cd docs/assets/scripts/worker
-          printf '%s' "$SYSTEM_PROMPT" | wrangler secret put SYSTEM_PROMPT --commit=false || true
+          printf '%s' "$SYSTEM_PROMPT" | wrangler secret put SYSTEM_PROMPT || true
 
       - name: Publish Worker
         env:
