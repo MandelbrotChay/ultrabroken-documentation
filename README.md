@@ -57,7 +57,7 @@ Emphasis:
 
 ```markdown
 **bold**  
-*italic*  
+_italic_  
 `inline code`
 ```
 
