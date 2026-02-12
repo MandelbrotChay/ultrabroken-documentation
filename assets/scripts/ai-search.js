@@ -167,7 +167,22 @@
           urlCandidates.push(origin + docname + '/');
         }
       } else {
-        // docname appears relative; try base-relative and root-relative forms
+        // docname appears relative; when the current page is inside a
+        // `/search/` directory (site's search page), avoid prepending that
+        // segment. Try the project-root prefixed absolute path first.
+        const pathname = (location && location.pathname) ? location.pathname : '/';
+        let projectPrefix = '/';
+        if (pathname.indexOf('/search/') !== -1 || pathname.endsWith('/search/')){
+          projectPrefix = pathname.split('/search/')[0];
+          if (!projectPrefix.endsWith('/')) projectPrefix += '/';
+        }
+        // Prefer origin + projectPrefix + docname (e.g., /ultrabroken-documentation/glitchcraft/...)
+        if (projectPrefix && projectPrefix !== '/'){
+          urlCandidates.push(origin + projectPrefix + docname);
+          urlCandidates.push(origin + projectPrefix + docname + '/');
+          urlCandidates.push(origin + projectPrefix + docname + '.html');
+        }
+        // fallback to base-relative and root-relative forms
         urlCandidates.push(base + docname);
         urlCandidates.push(base + docname + '/');
         urlCandidates.push(base + docname + '.html');
