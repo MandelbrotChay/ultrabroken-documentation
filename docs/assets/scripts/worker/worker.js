@@ -40,16 +40,39 @@ async function fetchIndex(url){
 
 export default {
   async fetch(req, env){
-    if (req.method !== 'POST') return new Response('Method not allowed', { status: 405 });
+    const CORS_HEADERS = {
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Methods': 'POST, OPTIONS',
+      'Access-Control-Allow-Headers': 'Content-Type'
+    };
+
+    if (req.method === 'OPTIONS') return new Response(null, { status: 204, headers: CORS_HEADERS });
+    if (req.method !== 'POST') return new Response('Method not allowed', { status: 405, headers: CORS_HEADERS });
+
     const body = await req.json().catch(()=>({}));
     const query = (body && body.query) ? String(body.query) : '';
-    if (!query) return new Response(JSON.stringify({ error: 'missing query' }), { status:400, headers:{'Content-Type':'application/json'} });
+    if (!query) return new Response(JSON.stringify({ error: 'missing query' }), { status:400, headers: Object.assign({'Content-Type':'application/json'}, CORS_HEADERS) });
 
     const indexUrl = env.WIKI_INDEX_URL || `https://` + (env.SITE_HOSTNAME || 'nan-gogh.github.io') + `/${env.SITE_PATH || 'ultrabroken-documentation'}/wiki_index.json`;
 
+    // Try to read parsed index from the Worker cache first to avoid refetch+parse on every request.
     let index;
-    try{ index = await fetchIndex(indexUrl); } catch(e){
-      return new Response(JSON.stringify({ error: 'could not load index', detail: String(e) }), { status:500, headers:{'Content-Type':'application/json'} });
+    try{
+      const cacheKey = new Request(indexUrl);
+      const cached = await caches.default.match(cacheKey);
+      if (cached){
+        try{ index = await cached.json(); } catch(e){ index = null; }
+      }
+      if (!index){
+        index = await fetchIndex(indexUrl);
+        try{
+          const resp = new Response(JSON.stringify(index), { headers: {'Content-Type':'application/json'} });
+          resp.headers.set('Cache-Control', 'public, max-age=3600');
+          await caches.default.put(cacheKey, resp.clone());
+        }catch(e){ /* ignore cache put failures */ }
+      }
+    }catch(e){
+      return new Response(JSON.stringify({ error: 'could not load index', detail: String(e) }), { status:500, headers: Object.assign({'Content-Type':'application/json'}, CORS_HEADERS) });
     }
 
     let scored = [];
@@ -70,7 +93,7 @@ export default {
       const qt = query.toLowerCase();
       scored = index.map(i=>({ item:i, score: ((i.text||'').toLowerCase().includes(qt) || (i.title||'').toLowerCase().includes(qt)) ? 1 : 0 }));
     } else {
-      return new Response(JSON.stringify({ error: 'index format not recognized' }), { status:500, headers:{'Content-Type':'application/json'} });
+      return new Response(JSON.stringify({ error: 'index format not recognized' }), { status:500, headers: Object.assign({'Content-Type':'application/json'}, CORS_HEADERS) });
     }
 
     scored.sort((a,b)=>b.score - a.score);
@@ -86,12 +109,12 @@ export default {
             { role: 'user', content: `Context:\n${context}\n\nQuestion:\n${query}` }
           ]
         });
-        return new Response(JSON.stringify({ answer: resp && resp.response ? resp.response : '', used: top.length, candidates: top.map(t=>({title:t.title, path:t.path})) }), { headers:{'Content-Type':'application/json'} });
+        return new Response(JSON.stringify({ answer: resp && resp.response ? resp.response : '', used: top.length, candidates: top.map(t=>({title:t.title, path:t.path})) }), { headers: Object.assign({'Content-Type':'application/json'}, CORS_HEADERS) });
       }catch(e){ }
     }
 
-    if (!top.length) return new Response(JSON.stringify({ answer: 'silence', used:0, candidates:[] }), { headers:{'Content-Type':'application/json'} });
+    if (!top.length) return new Response(JSON.stringify({ answer: 'silence', used:0, candidates:[] }), { headers: Object.assign({'Content-Type':'application/json'}, CORS_HEADERS) });
     const answer = top.map(t=>t.text).slice(0,5).join('\n\n');
-    return new Response(JSON.stringify({ answer, used: top.length, candidates: top.map(t=>({title:t.title, path:t.path})) }), { headers:{'Content-Type':'application/json'} });
+    return new Response(JSON.stringify({ answer, used: top.length, candidates: top.map(t=>({title:t.title, path:t.path})) }), { headers: Object.assign({'Content-Type':'application/json'}, CORS_HEADERS) });
   }
 };
