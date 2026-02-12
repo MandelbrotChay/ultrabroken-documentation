@@ -6,60 +6,27 @@ on:
       - main
 
 jobs:
-  build-site:
+  deploy:
     runs-on: ubuntu-latest
-    outputs:
-      site-upload-name: site
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v4
         with:
           python-version: '3.x'
-      - name: Install MkDocs dependencies
+      - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install mkdocs mkdocs-material mkdocs-minify-plugin beautifulsoup4
+          pip install mkdocs mkdocs-material mkdocs-minify-plugin sentence-transformers beautifulsoup4 tqdm
+
       - name: Build MkDocs site
         run: mkdocs build
-      - name: Generate title index
-        run: |
-          python docs/assets/scripts/worker/generate_search_index.py
-      - name: Upload site artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: site
-          path: site
 
-  generate-embeddings:
-    runs-on: ubuntu-latest
-    needs: build-site
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Setup Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.x'
-      - name: Restore pip cache
-        uses: actions/cache@v4
-        with:
-          path: ~/.cache/pip
-          key: ${{ runner.os }}-pip-${{ hashFiles('**/docs/assets/scripts/worker/**') }}
-      - name: Download site artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: site
-          path: ./site
-      - name: Install CPU PyTorch + sentence-transformers
-        run: |
-          python -m pip install --upgrade pip
-          python -m pip install --index-url https://download.pytorch.org/whl/cpu torch
-          pip install sentence-transformers tqdm
       - name: Generate embeddings
         env:
           MODEL: all-MiniLM-L6-v2
         run: |
           python docs/assets/scripts/worker/generate_embeddings.py --output site/wiki_index.json --model "$MODEL"
+
       - name: Gzip index and size-check
         run: |
           if [ -f site/wiki_index.json ]; then gzip -9 -c site/wiki_index.json > site/wiki_index.json.gz; fi
@@ -72,32 +39,15 @@ jobs:
             fi
           else
             echo 'no index produced'
-            exit 1
           fi
-      - name: Upload updated site artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: site
-          path: site
-
-  publish-site:
-    runs-on: ubuntu-latest
-    needs: generate-embeddings
-    steps:
-      - name: Download site artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: site
-          path: ./site
-      - name: Publish site to GH Pages
-        uses: peaceiris/actions-gh-pages@v3
+      - uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./site
 
   publish-worker:
     runs-on: ubuntu-latest
-    needs: publish-site
+    needs: deploy
     steps:
       - name: Checkout
         uses: actions/checkout@v4
