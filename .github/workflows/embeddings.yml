@@ -1,0 +1,145 @@
+name: Rebuild Embeddings & Deploy Worker
+
+on:
+  schedule:
+    - cron: '0 2 * * *'   # daily at 02:00 UTC
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+    paths:
+      - 'docs/**'
+      - 'mkdocs.yml'
+      - 'requirements.txt'
+      - 'docs/assets/scripts/worker/**'
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Cache pip + HF model cache
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/pip
+            ~/.cache/huggingface
+            ~/.cache/huggingface/hub
+            ~/.cache/torch
+          key: ${{ runner.os }}-pip-hf-${{ hashFiles('requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-hf-
+
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Build MkDocs site
+        run: mkdocs build
+
+      - name: Check docs hash (skip if unchanged)
+        id: docs_hash
+        run: |
+          # compute a hash of the docs files tracked in git
+          CURRENT_HASH=${{ hashFiles('docs/**') }}
+          echo "current=$CURRENT_HASH"
+          OWNER=${{ github.repository_owner }}
+          REPO=${{ github.event.repository.name }}
+          # try to download previously published hash from gh-pages
+          PREV_HASH=$(curl -fsS "https://raw.githubusercontent.com/${OWNER}/${REPO}/gh-pages/wiki_index.hash" || true)
+          echo "prev=$PREV_HASH"
+          if [ -n "$PREV_HASH" ] && [ "$CURRENT_HASH" = "$PREV_HASH" ]; then
+            echo "Docs unchanged - skipping embeddings"
+            echo "skip=true" >> $GITHUB_OUTPUT
+          else
+            echo "skip=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Generate embeddings
+        if: steps.docs_hash.outputs.skip != 'true'
+        env:
+          MODEL: all-MiniLM-L6-v2
+        run: |
+          python docs/assets/scripts/worker/generate_embeddings.py --output site/wiki_index.json --model "$MODEL" --gzip
+          # write the docs hash next to the index so future runs can detect changes
+          echo "${{ hashFiles('docs/**') }}" > site/wiki_index.hash
+
+      - name: Gzip index and size-check
+        run: |
+          if [ -f site/wiki_index.json.gz ]; then
+            s=$(wc -c < site/wiki_index.json.gz)
+            echo "gz size $s"
+            if [ "$s" -gt $((500*1024*1024)) ]; then
+              echo "INDEX TOO LARGE $s"
+              exit 1
+            fi
+          else
+            echo 'no index produced'
+            exit 1
+          fi
+
+      - name: Publish site
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Wrangler
+        run: npm install -g wrangler
+
+      - name: Verify Cloudflare auth
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: |
+          wrangler whoami || (echo "Cloudflare auth failed" && exit 1)
+
+      - name: Compute WIKI_INDEX_URL
+        id: compute_url
+        run: |
+          OWNER=${{ github.repository_owner }}
+          REPO=${{ github.event.repository.name }}
+          URL="https://${OWNER}.github.io/${REPO}/wiki_index.json.gz"
+          echo "WIKI_INDEX_URL=$URL" >> $GITHUB_OUTPUT
+
+      - name: Inject account_id into wrangler.toml
+        run: |
+          sed -i "s/<YOUR_ACCOUNT_ID>/${{ secrets.CLOUDFLARE_ACCOUNT_ID }}/g" docs/assets/scripts/worker/wrangler.toml
+
+      - name: Put WIKI_INDEX_URL into Worker secrets
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          WIKI_INDEX_URL: ${{ steps.compute_url.outputs.WIKI_INDEX_URL }}
+        run: |
+          cd docs/assets/scripts/worker
+          printf '%s' "$WIKI_INDEX_URL" | wrangler secret put WIKI_INDEX_URL || true
+
+      - name: Put SYSTEM_PROMPT into Worker secrets
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          SYSTEM_PROMPT: ${{ secrets.SYSTEM_PROMPT }}
+        run: |
+          cd docs/assets/scripts/worker
+          printf '%s' "$SYSTEM_PROMPT" | wrangler secret put SYSTEM_PROMPT || true
+
+      - name: Publish Worker
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          cd docs/assets/scripts/worker
+          export CLOUDFLARE_API_TOKEN="${{ secrets.CLOUDFLARE_API_TOKEN }}"
+          export CLOUDFLARE_ACCOUNT_ID="${{ secrets.CLOUDFLARE_ACCOUNT_ID }}"
+          env | grep CLOUDFLARE || true
+          wrangler deploy
