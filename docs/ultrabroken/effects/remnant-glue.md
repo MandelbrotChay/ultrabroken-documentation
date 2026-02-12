@@ -34,8 +34,8 @@ Moreover, there is a belief that Remnant Glue from previous Ultrabroken sessions
 
 ## Termination
 ---
-
 - Exceed the Distance Unload Radius of the Remnant Glue
+- Cull an object involved in a Spooky Interaction that causes Remnant Glue
 - Put Ultrabroken Equipment into the inventory without equipping it, put it on a mount or give it to the Break Apart shop to restore it
 - Put an object involved in a Spooky Interaction into the inventory to cancel it
 - Exceed the Distance Unload Radius of one object involved in a Spooky Interaction to cancel it
