@@ -149,13 +149,33 @@
     for(const item of top){
       const urlCandidates = [];
       const base = location.pathname.replace(/\/[^\/]*$/, '/');
-      const docname = item.d.docname || item.d.url || item.d.title;
+      const origin = (location && location.origin) ? location.origin.replace(/\/$/, '') : '';
+      let docname = item.d.docname || item.d.url || item.d.title;
       if (!docname) continue;
-      // possible urls
-      urlCandidates.push(base + docname + '.html');
-      urlCandidates.push('/' + docname + '.html');
-      urlCandidates.push(base + docname + '/');
-      urlCandidates.push('/' + docname + '/');
+      docname = String(docname);
+      // Normalize and prefer absolute site paths when provided by the index.
+      if (docname.startsWith('http://') || docname.startsWith('https://')){
+        urlCandidates.push(docname);
+      } else if (docname.startsWith('/')){
+        // docname is site-root relative: use origin + docname (most reliable on GitHub Pages)
+        urlCandidates.push(origin + docname);
+        // also try common variants
+        if (docname.endsWith('/')){
+          urlCandidates.push(origin + docname + 'index.html');
+        } else {
+          urlCandidates.push(origin + docname + '.html');
+          urlCandidates.push(origin + docname + '/');
+        }
+      } else {
+        // docname appears relative; try base-relative and root-relative forms
+        urlCandidates.push(base + docname);
+        urlCandidates.push(base + docname + '/');
+        urlCandidates.push(base + docname + '.html');
+        urlCandidates.push('/' + docname);
+        urlCandidates.push('/' + docname + '/');
+        urlCandidates.push('/' + docname + '.html');
+      }
+      // last-resort: raw docname (some indexes supply full paths already)
       urlCandidates.push(docname);
       let text = null;
       for(const u of urlCandidates){
