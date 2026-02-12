@@ -9,7 +9,7 @@ title: "Mineru Cull Storage"
 ---
 Stores the callback of Mineru while mouted on her, useful for swap resync zuggle setups
 
-_ofstrings2 - 9 November 2025_
+_[ofstrings2](https://www.youtube.com/channel/UCdJgWquwZxJlfc8rDMmmilA) - 9 November 2025_
 
 ## Instructions
 ---

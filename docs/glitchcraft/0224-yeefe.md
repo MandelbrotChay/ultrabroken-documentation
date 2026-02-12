@@ -17,7 +17,7 @@ _Yee, mulberry - 20 February 2024_
 2. Fuse the sdc steering stick to mineru
 3. Fuse before link culls
 
-Yeefe can also be set up using the String Feory method (ofstrings2):
+Yeefe can also be set up using the String Feory method ([ofstrings2](https://www.youtube.com/channel/UCdJgWquwZxJlfc8rDMmmilA)):
 1. Mineru FE any equipment
 2. Pick it up
 3. Attempt to fuse a steering stick to the equipment just before it culls, similar to yeefe, if you time it correctly, you get a fuse effect without the item fusing (cold fuse)
@@ -28,11 +28,12 @@ This equipment can be used as a portacull, but also as a way to cull Link.
 ## Notes
 ---
 Spears can be used to yeefe hoverstones, they cause the hoverstone to fe next to link (normally they fe on top of link and softlock)
-https://discord.com/channels/1086729144307564648/1113557914444111873/1224074388983250975 (ofstrings2)
+ (ofstrings2)
 Test on more versions
 
 ## Resources
 ---
 - [Discord](https://discord.com/channels/1086729144307564648/1112801830821449798/1209443743581736980)
+- [DHoverstone YeeFe](https://discord.com/channels/1086729144307564648/1113557914444111873/1224074388983250975)
 - [Fuse Entanglement](search:Fuse Entanglement)
 - [Stick Desync](search:Stick Desync)

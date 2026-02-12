@@ -26,7 +26,7 @@ Ultrabroken has been researched and documented by many dedicated researchers. Th
 - Lightos
 - ROBUXY2nd
 - fuse_it_or_loose_it
-- susannediazz
+- [suusi](https://www.youtube.com/channel/UCbUwlQ_88XfXD2bfU_4kxYg)
 - cr-2-4 (colombiancris)
 - Jordan
 

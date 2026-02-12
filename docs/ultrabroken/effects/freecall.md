@@ -1,6 +1,6 @@
 # Freecall
 
-*Discovered by susannediazz*
+*Discovered by [suusi](https://www.youtube.com/channel/UCbUwlQ_88XfXD2bfU_4kxYg)*
 
 ## Description
 ---
