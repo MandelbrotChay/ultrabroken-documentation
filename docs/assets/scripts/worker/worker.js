@@ -159,8 +159,8 @@ export default {
     // If OpenRouter is configured, try to synthesize an answer from the retrieved evidence.
     let openrouter_error = null;
     const has_openrouter_key = !!(env && env.OPENROUTER_API_KEY);
-    if (has_openrouter_key){
-      try{
+    if (has_openrouter_key) {
+      try {
         const contextItems = topCandidates.map(s=>({ id: s.item.id || s.item.path || null, text: s.item.text || s.item.title || '', score: s.score }));
         const system = env.SYSTEM_PROMPT || 'You are a concise technical editor. Use only the provided context to answer. If none of the context answers the question, reply exactly with NO_RELEVANT_INFO.';
         const payloadBody = {
@@ -177,8 +177,9 @@ export default {
           headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${env.OPENROUTER_API_KEY}` },
           body: JSON.stringify(payloadBody)
         });
-        if (orRes){
-          if (!orRes.ok){
+
+        if (orRes) {
+          if (!orRes.ok) {
             openrouter_error = `openrouter status ${orRes.status}`;
           }
           const orJson = await orRes.json().catch(()=>null);
@@ -198,10 +199,10 @@ export default {
             return new Response(JSON.stringify({ answer: modelText, evidence: evidences.slice(0,3).map(s=>({ id: s.item.id||s.item.path, similarity: s.score })), did_answer: true }), { headers: Object.assign({'Content-Type':'application/json'}, CORS_HEADERS) });
           }
         }
-      }catch(e){ /* fallthrough to return evidence below */ }
-          }
-        }
-      }catch(e){ openrouter_error = String(e); /* fallthrough to return evidence below */ }
+      } catch(e){
+        openrouter_error = String(e);
+      }
+    }
     // If OpenRouter is not configured or did not produce a usable answer, return evidence/debug
     // rather than an unconditional silence so the UI can surface the retrieved candidates.
     const evidenceList = evidences.slice(0,3).map(s=>({ id: s.item.id||s.item.path, similarity: s.score, title: s.item.title }));
