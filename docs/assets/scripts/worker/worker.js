@@ -151,9 +151,18 @@ export default {
 
     // If there are no evidence hits above the similarity threshold, return debug details
     // instead of a silent response to aid debugging and tuning.
+    // Helper: decide whether to return detailed debug payload or user-friendly silence
+    const respondFailure = (payload) => {
+      const headers = Object.assign({'Content-Type':'application/json'}, CORS_HEADERS);
+      const envDebug = env && (String(env.RETURN_DEBUG || '').toLowerCase() === 'true' || String(env.RETURN_DEBUG || '') === '1');
+      const wantDebug = envDebug || (body && body.debug);
+      if (wantDebug) return new Response(JSON.stringify(payload), { headers });
+      return makeSilence();
+    };
+
     if (!evidences || evidences.length === 0) {
       const dbg = topCandidates.map(s=>({ id: s.item.id||s.item.path, score: s.score, title: s.item.title }));
-      return new Response(JSON.stringify({ answer: null, evidence: dbg.slice(0,3), did_answer: false, debug: { query, tokens: qTokens, top: dbg, threshold: SIMILARITY_THRESHOLD, index_len: index.length } }), { headers: Object.assign({'Content-Type':'application/json'}, CORS_HEADERS) });
+      return respondFailure({ answer: null, evidence: dbg.slice(0,3), did_answer: false, debug: { query, tokens: qTokens, top: dbg, threshold: SIMILARITY_THRESHOLD, index_len: index.length } });
     }
 
     // If OpenRouter is configured, try to synthesize an answer from the retrieved evidence.
@@ -246,6 +255,6 @@ export default {
     const evidenceList = evidences.slice(0,3).map(s=>({ id: s.item.id||s.item.path, similarity: s.score, title: s.item.title }));
     const debugPayload = { query, tokens: qTokens, top: topCandidates.map(s=>({ id: s.item.id||s.item.path, score: s.score, title: s.item.title })), threshold: SIMILARITY_THRESHOLD, index_len: index.length, has_openrouter_key, openrouter_error };
     if (typeof openrouter_debug !== 'undefined' && openrouter_debug) debugPayload.openrouter_debug = openrouter_debug;
-    return new Response(JSON.stringify({ answer: null, evidence: evidenceList, did_answer: false, debug: debugPayload }), { headers: Object.assign({'Content-Type':'application/json'}, CORS_HEADERS) });
+    return respondFailure({ answer: null, evidence: evidenceList, did_answer: false, debug: debugPayload });
   }
 };
