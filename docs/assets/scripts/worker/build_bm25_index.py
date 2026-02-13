@@ -17,7 +17,6 @@ import re
 import json
 import gzip
 
-
 CHUNK_SIZE_WORDS = 400
 CHUNK_OVERLAP_WORDS = 50
 
