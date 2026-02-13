@@ -4,6 +4,7 @@
 :root {
   --teal-glow: #00f0c2;
   --teal-dark: #00796b;
+  --hr-sep: rgba(255,255,255,0.12);
   /* Marquee controls: pixels per second, and pause at ends (ms) */
   --ub-marquee-speed: 30;
   --ub-marquee-pause-ms: 1300;
@@ -697,6 +698,8 @@ li.task-list-item a, li.task-list a {
    them subtly visible on dark backgrounds */
 .md-content hr {
   margin: 0.25rem 0;
+  border: none;
+  border-top: 1px solid var(--hr-sep);
 }
 
 /* AI Search UI (merged from ai-search.css) */
@@ -752,8 +755,8 @@ li.task-list-item a, li.task-list a {
   box-sizing: border-box;
   max-width: none;
   font-family: 'Texturina', Georgia, serif;
-  /* more visible separator line between question and answer */
-  border-top: 1px solid rgba(0,0,0,0.14);
+  /* use same separator as page horizontal rules */
+  border-top: 1px solid var(--hr-sep);
   padding-top: 0.6rem;
 }
 
