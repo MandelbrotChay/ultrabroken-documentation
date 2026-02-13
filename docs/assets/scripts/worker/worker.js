@@ -179,7 +179,7 @@ export default {
           const reqBodyStr = JSON.stringify(payloadBody);
           if (reqBodyStr.length > 2000) or_debug.request_payload_excerpt = reqBodyStr.slice(0,2000) + '...[truncated]'; else or_debug.request_payload_excerpt = reqBodyStr;
 
-          const orRes = await fetch('https://api.openrouter.ai/v1/chat/completions', {
+          const orRes = await fetch('https://openrouter.ai/api/v1/chat/completions', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${env.OPENROUTER_API_KEY}` },
             body: reqBodyStr
