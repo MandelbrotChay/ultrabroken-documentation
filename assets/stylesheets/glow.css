@@ -757,4 +757,4 @@ li.task-list-item a, li.task-list a {
 }
 
 /* Make sure preformatted debug/evidence don't overflow the container */
-.ub-ai-out code, .ub-ai-out pre { white-space: pre-wrap; word-break: break-word; }
+.ub-ai-out code, .ub-ai-out pre { white-space: pre-wrap; word-break: break-word; font-family: 'New Rocker', 'Texturina', Georgia, serif;}
