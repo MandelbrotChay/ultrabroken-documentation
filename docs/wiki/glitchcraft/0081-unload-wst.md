@@ -9,7 +9,7 @@ title: "Unload WST"
 ---
 Allows you to transfer modifiers and materials to any weapon. This method is unique as it allows for the modifiers to be tranfered to the master sword as well.
 
-_BigDUCCO,  Vee.Might.Exist, syb - Resync your inventory by re-equipping_
+_BigDUCCO, Vee.Might.Exist, syb - Resync your inventory by re-equipping_
 
 ## Instructions
 ---

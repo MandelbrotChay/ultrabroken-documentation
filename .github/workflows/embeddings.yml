@@ -64,7 +64,7 @@ jobs:
       - name: Build BM25 index
         if: ${{ steps.docs_hash.outputs.skip == 'false' }}
         run: |
-          python docs/worker/build_bm25_index.py --output site/wiki_index.json --gzip
+          python docs/worker/build_bm25_index.py --docs-dir docs/wiki --output site/wiki_index.json --gzip
           echo "${{ hashFiles('docs/wiki/**') }}" > site/wiki_index.hash
 
       - name: Gzip index and size-check
