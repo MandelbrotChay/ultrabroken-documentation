@@ -1,99 +1,36 @@
-name: Site — publish (style / assets)
+name: Site — publish (assets-only)
 
 on:
   push:
     paths:
-      - 'mkdocs.yml'
       - 'docs/assets/**'
   workflow_dispatch: {}
 
 jobs:
-  publish:
+  publish-assets:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-      - name: Determine changed paths
-        id: check_changes
+
+      - name: Publish assets to gh-pages
+        env:
+          REPO: ${{ github.repository }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          # ensure we have history to diff against
-          git fetch --no-tags --prune || true
-          BASE="${{ github.event.before }}"
-          if [ -z "$BASE" ] || [ "$BASE" = "0000000000000000000000000000000000000000" ]; then
-            BASE=$(git rev-parse HEAD^ || true)
-          fi
-          CHANGED=$(git diff --name-only "$BASE" "${{ github.sha }}" || true)
-          echo "Changed files:\n$CHANGED"
-          ONLY_ASSETS=true
-          for f in $CHANGED; do
-            case "$f" in
-              docs/assets/*) ;; # allowed
-              mkdocs.yml) ONLY_ASSETS=false; break;;
-              *) ONLY_ASSETS=false; break;;
-            esac
-          done
-          # Verify gh-pages branch contains an index.html — if not, don't fast-path
-          GH_PAGES_HAS_INDEX=false
-          if git ls-remote --exit-code --heads origin gh-pages 2>/dev/null; then
-            if git ls-tree --name-only origin/gh-pages | grep -q '^index.html$' 2>/dev/null; then
-              GH_PAGES_HAS_INDEX=true
-            fi
-          fi
-          if [ "$GH_PAGES_HAS_INDEX" != "true" ]; then
-            ONLY_ASSETS=false
-          fi
-          echo "only_assets=$ONLY_ASSETS" >> $GITHUB_OUTPUT
-      - name: "Fast-path: publish assets only"
-        if: steps.check_changes.outputs.only_assets == 'true'
-        run: |
-          echo "Only docs/assets changed — merging assets into existing gh-pages site"
-          rm -rf site || true
-          REPO="${{ github.repository }}"
-          GH_TOKEN="${{ secrets.GITHUB_TOKEN }}"
+          set -euo pipefail
           REPO_URL="https://x-access-token:${GH_TOKEN}@github.com/${REPO}"
+          rm -rf site || true
+          # If gh-pages exists, clone it so we update only assets; otherwise create minimal site
           if git ls-remote --exit-code --heads origin gh-pages 2>/dev/null; then
             git clone --depth 1 --branch gh-pages "$REPO_URL" site || true
           else
             mkdir -p site
-            echo "<\!doctype html><meta charset=\"utf-8\"><title>Placeholder</title><h1>Site placeholder</h1>" > site/index.html
+            echo "<!doctype html><meta charset=\"utf-8\"><title>Placeholder</title><h1>Placeholder</h1>" > site/index.html
           fi
           mkdir -p site/assets
           cp -a docs/assets/. site/assets/
 
-      - uses: actions/setup-python@v4
-        if: steps.check_changes.outputs.only_assets != 'true'
-        with:
-          python-version: '3.x'
-      - name: Restore pip cache
-        uses: actions/cache@v4
-        with:
-          path: ~/.cache/pip
-          key: ${{ runner.os }}-pip-${{ hashFiles('docs/worker/requirements.txt') }}
-          restore-keys: |
-            ${{ runner.os }}-pip-
-
-      - name: Restore wheelhouse
-        uses: actions/cache@v4
-        with:
-          path: ./.wheels
-          key: ${{ runner.os }}-wheels-${{ hashFiles('docs/worker/requirements.txt') }}
-          restore-keys: |
-            ${{ runner.os }}-wheels-
-
-      - name: Build wheels and install
-        if: steps.check_changes.outputs.only_assets != 'true'
-        run: |
-          python -m pip install --upgrade pip
-          mkdir -p ./.wheels
-          pip wheel --wheel-dir ./.wheels -r docs/worker/requirements.txt || true
-          pip wheel --wheel-dir ./.wheels mkdocs mkdocs-material mkdocs-minify-plugin || true
-          pip install --no-index --find-links ./.wheels -r docs/worker/requirements.txt || true
-          pip install --no-index --find-links ./.wheels mkdocs mkdocs-material mkdocs-minify-plugin
-      - name: Build site
-        if: steps.check_changes.outputs.only_assets != 'true'
-        run: mkdocs build
-      - name: Publish site
+      - name: Publish site (gh-pages)
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
