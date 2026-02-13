@@ -12,7 +12,57 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Determine changed paths
+        id: check_changes
+        run: |
+          # ensure we have history to diff against
+          git fetch --no-tags --prune || true
+          BASE="${{ github.event.before }}"
+          if [ -z "$BASE" ] || [ "$BASE" = "0000000000000000000000000000000000000000" ]; then
+            BASE=$(git rev-parse HEAD^ || true)
+          fi
+          CHANGED=$(git diff --name-only "$BASE" "${{ github.sha }}" || true)
+          echo "Changed files:\n$CHANGED"
+          ONLY_ASSETS=true
+          for f in $CHANGED; do
+            case "$f" in
+              docs/assets/*) ;; # allowed
+              mkdocs.yml) ONLY_ASSETS=false; break;;
+              *) ONLY_ASSETS=false; break;;
+            esac
+          done
+          # Verify gh-pages branch contains an index.html — if not, don't fast-path
+          GH_PAGES_HAS_INDEX=false
+          if git ls-remote --exit-code --heads origin gh-pages 2>/dev/null; then
+            if git ls-tree --name-only origin/gh-pages | grep -q '^index.html$' 2>/dev/null; then
+              GH_PAGES_HAS_INDEX=true
+            fi
+          fi
+          if [ "$GH_PAGES_HAS_INDEX" != "true" ]; then
+            ONLY_ASSETS=false
+          fi
+          echo "only_assets=$ONLY_ASSETS" >> $GITHUB_OUTPUT
+      - name: "Fast-path: publish assets only"
+        if: steps.check_changes.outputs.only_assets == 'true'
+        run: |
+          echo "Only docs/assets changed — merging assets into existing gh-pages site"
+          rm -rf site || true
+          REPO="${{ github.repository }}"
+          GH_TOKEN="${{ secrets.GITHUB_TOKEN }}"
+          REPO_URL="https://x-access-token:${GH_TOKEN}@github.com/${REPO}"
+          if git ls-remote --exit-code --heads origin gh-pages 2>/dev/null; then
+            git clone --depth 1 --branch gh-pages "$REPO_URL" site || true
+          else
+            mkdir -p site
+            echo "<\!doctype html><meta charset=\"utf-8\"><title>Placeholder</title><h1>Site placeholder</h1>" > site/index.html
+          fi
+          mkdir -p site/assets
+          cp -a docs/assets/. site/assets/
+
       - uses: actions/setup-python@v4
+        if: steps.check_changes.outputs.only_assets != 'true'
         with:
           python-version: '3.x'
       - name: Restore pip cache
