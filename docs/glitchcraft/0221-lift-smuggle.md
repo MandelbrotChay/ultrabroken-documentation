@@ -20,7 +20,7 @@ Don't swap shields!
 ## Notes
 ---
 Pressing Zr during a specific time frame also allows the bow to be held. This works independently from koroks too.
-https://discord.com/channels/1086729144307564648/1105598687167664239/1203350214304600084 (Lightos)
+https://discord.com/channels/1086729144307564648/1105598687167664239/1203350214304600084 ([Lightos](https://www.youtube.com/@lightos_))
 
 ## Resources
 ---

@@ -13,7 +13,7 @@ _mulberry - 20 January 2024_
 
 ## Instructions
 ---
-There exist a couple variations, this variation is the easiest: (Mulberry, Lightos)
+There exist a couple variations, this variation is the easiest: (Mulberry, [Lightos](https://www.youtube.com/@lightos_))
 1. perform sdc and put the sdc stick in a culling area
 2. pickup sdc base
 3. lift a small object (time bombs work great)

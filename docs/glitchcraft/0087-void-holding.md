@@ -9,7 +9,7 @@ title: "Void Holding"
 ---
 Allows you to hold materials "whenever you want" as long as you are at a low enough Y coordinate
 
-_Lightos - 10 June 2023_
+_[Lightos](https://www.youtube.com/@lightos_) - 10 June 2023_
 
 ## Instructions
 ---

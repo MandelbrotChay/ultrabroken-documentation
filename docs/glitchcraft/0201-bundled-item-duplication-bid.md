@@ -17,7 +17,7 @@ _Ock - 12 December 2023_
 2. Hold an item 1 frame before link culls
 If you are having trouble with this method, there is an altenative method that removes the timing, but it requires getting specific cull luck:
 Watch a memory to uncull, hold L during the memory and don't release it, wait 1 second, then unpause and choose the map rune 
-Discord (Lightos)
+Discord ([Lightos](https://www.youtube.com/@lightos_))
 3. unload the item in some way, one way to do this is let a horse eat it (only works with apples)
 4. drop the unloaded item onto the ground
 5. mount a horse to stop the culling

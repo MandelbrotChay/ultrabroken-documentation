@@ -9,7 +9,7 @@ title: "Hero Path Link Storage"
 ---
 Visual glitch with the hero path.
 
-_Lightos - 20 June 2023_
+_[Lightos](https://www.youtube.com/@lightos_) - 20 June 2023_
 
 ## Instructions
 ---

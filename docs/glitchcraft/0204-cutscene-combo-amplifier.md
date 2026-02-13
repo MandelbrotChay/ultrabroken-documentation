@@ -9,7 +9,7 @@ title: "Cutscene Combo Amplifier"
 ---
 Extends and stacks the damage frames of an attack with memory buffering, causing huge damage.
 
-_Lightos - 22 December 2023_
+_[Lightos](https://www.youtube.com/@lightos_) - 22 December 2023_
 
 ## Instructions
 ---

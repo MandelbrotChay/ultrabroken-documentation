@@ -75,12 +75,10 @@ jobs:
             echo "skip=false" >> $GITHUB_OUTPUT
           fi
 
-      - name: Generate embeddings
-        if: ${{ false }}
-        env:
-          MODEL: all-MiniLM-L6-v2
+      - name: Build BM25 index
+        if: ${{ steps.docs_hash.outputs.skip == 'false' }}
         run: |
-          python docs/assets/scripts/worker/generate_embeddings.py --output site/wiki_index.json --model "$MODEL" --gzip
+          python docs/assets/scripts/worker/build_bm25_index.py --output site/wiki_index.json --gzip
           # write the docs hash next to the index so future runs can detect changes
           echo "${{ hashFiles('docs/**') }}" > site/wiki_index.hash
 
