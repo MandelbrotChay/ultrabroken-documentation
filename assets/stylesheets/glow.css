@@ -736,7 +736,7 @@ li.task-list-item a, li.task-list a {
 .ub-ai-btn {
   padding: 0.45rem 0.7rem;
   background: var(--teal-glow);
-  color: #001;
+  color: var(--teal-dark);
   border: none;
   border-radius: 4px;
   cursor: pointer;
