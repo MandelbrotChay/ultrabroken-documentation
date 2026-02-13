@@ -751,13 +751,14 @@ li.task-list-item a, li.task-list a {
   border: none;
   box-sizing: border-box;
   max-width: none;
+  font-family: 'Texturina', Georgia, serif;
   /* single subtle separator line between question and answer */
   border-top: 1px solid rgba(0,0,0,0.06);
   padding-top: 0.6rem;
 }
 
 /* Make sure preformatted debug/evidence don't overflow the container */
-.ub-ai-out code, .ub-ai-out pre { white-space: pre-wrap; word-break: break-word; font-family: 'Texturina', 'New Rocker', Georgia, serif;} 
+.ub-ai-out code, .ub-ai-out pre { white-space: pre-wrap; word-break: break-word; } 
 
 /* Asset publish trigger: do not remove - used to trigger asset-only workflow */
 /* timestamp: 2026-02-13T00:00:00Z */
