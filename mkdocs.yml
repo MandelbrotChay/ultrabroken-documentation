@@ -8,7 +8,6 @@ use_directory_urls: true
 
 theme:
   name: material
-  custom_dir: docs/assets/theme
   logo: assets/images/ultrabroken_rune.svg
   favicon: assets/images/ultrabroken_rune.ico
   features:
@@ -36,7 +35,6 @@ extra_javascript:
   - assets/scripts/particles-constellations.js
   - assets/scripts/search-link.js
   - assets/scripts/ai-worker-client.js
-  # - assets/scripts/header-logo-link.js
   
 
 nav:
