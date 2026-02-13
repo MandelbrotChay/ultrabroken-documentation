@@ -83,6 +83,7 @@ jobs:
           echo "${{ hashFiles('docs/**') }}" > site/wiki_index.hash
 
       - name: Gzip index and size-check
+        if: ${{ steps.docs_hash.outputs.skip == 'false' }}
         run: |
           if [ -f site/wiki_index.json.gz ]; then
             s=$(wc -c < site/wiki_index.json.gz)
@@ -105,14 +106,15 @@ jobs:
       # Publish the Cloudflare Worker (optional) using existing repo secrets.
       # This step will only run when both CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID are set.
       - name: Publish Cloudflare Worker
-        if: env.CLOUDFLARE_API_TOKEN != '' && env.CLOUDFLARE_ACCOUNT_ID != ''
+        if: ${{ secrets.CLOUDFLARE_API_TOKEN != '' && secrets.CLOUDFLARE_ACCOUNT_ID != '' }}
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-        uses: cloudflare/wrangler-action@v2
-        with:
-          apiToken: ${{ env.CLOUDFLARE_API_TOKEN }}
-          workingDirectory: docs/assets/scripts/worker
-          command: publish
-          args: --account-id ${{ env.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          set -e
+          echo "Publishing Cloudflare Worker using wrangler CLI"
+          # Use npx to avoid relying on an external action tag; run from the worker dir so
+          # wrangler picks up the wrangler.toml there.
+          cd docs/assets/scripts/worker
+          npx --yes @cloudflare/wrangler@2 publish --account-id "${{ env.CLOUDFLARE_ACCOUNT_ID }}"
 
