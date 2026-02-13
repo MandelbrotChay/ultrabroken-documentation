@@ -1,0 +1,59 @@
+/* Scoped AI search styles — uses project fonts/colors from glow.css */
+:root {
+  --ai-bg: rgba(0,0,0,0.02);
+}
+
+.ub-ai-root {
+  width: 100%;
+  max-width: none;
+  margin: 0.5rem 0;
+  padding: 0.6rem;
+  border: 1px solid rgba(0,0,0,0.06);
+  border-radius: 6px;
+  box-sizing: border-box;
+  background: var(--ai-bg);
+  font-family: inherit; /* uses Texturina from glow.css */
+}
+
+.ub-ai-input {
+  width: 100%;
+  padding: 0.6rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid rgba(0,240,194,0.12);
+  border-radius: 4px;
+  background: transparent;
+  color: var(--teal-glow);
+  caret-color: var(--teal-glow);
+  font-family: inherit;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.ub-ai-input::placeholder { color: rgba(0,240,194,0.45); }
+
+.ub-ai-btn {
+  padding: 0.45rem 0.7rem;
+  background: var(--teal-glow);
+  color: #001;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'New Rocker', 'Texturina', Georgia, serif;
+  margin-left: 0.4rem;
+}
+.ub-ai-btn:hover { filter: brightness(0.95); }
+
+.ub-ai-out {
+  white-space: pre-wrap;
+  background: rgba(0,0,0,0.03);
+  padding: 0.6rem;
+  margin-top: 0.6rem;
+  border-radius: 4px;
+  color: #083;
+  border: 1px solid rgba(0,240,194,0.08);
+  box-sizing: border-box;
+  max-width: none;
+}
+
+/* Make sure preformatted debug/evidence don't overflow the container */
+.ub-ai-out code, .ub-ai-out pre { white-space: pre-wrap; word-break: break-word; }
