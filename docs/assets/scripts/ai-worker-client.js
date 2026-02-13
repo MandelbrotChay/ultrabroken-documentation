@@ -40,8 +40,24 @@
     w.btn.addEventListener('click', async ()=>{
       const q = w.input.value.trim(); if (!q) return; w.out.textContent = 'Asking...';
       const r = await askWorker(q);
-      if (r.error) w.out.textContent = 'Error: ' + r.error;
-      else w.out.textContent = r.answer || 'silence';
+      if (r.error) {
+        w.out.textContent = 'Error: ' + r.error;
+        return;
+      }
+      if (r.answer) {
+        w.out.textContent = r.answer;
+        return;
+      }
+      // If no answer, prefer debug payload -> evidence -> fallback 'silence'
+      if (r.debug) {
+        w.out.textContent = JSON.stringify(r.debug, null, 2);
+        return;
+      }
+      if (r.evidence) {
+        w.out.textContent = JSON.stringify(r.evidence, null, 2);
+        return;
+      }
+      w.out.textContent = 'silence';
     });
   });
 
