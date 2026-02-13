@@ -3,3 +3,4 @@ mkdocs-material
 mkdocs-minify-plugin
 beautifulsoup4
 tqdm
+wheel
