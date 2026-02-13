@@ -5,6 +5,9 @@
 const TOP_K = 6;
 // Lower threshold so BM25 hits on reasonable queries; tune up if too noisy.
 const SIMILARITY_THRESHOLD = 0.02;
+// Global debug toggle (set true to return full debug payloads to any request).
+// Change this in-code when you want repository-wide debugging; not a secret.
+const RETURN_DEBUG = false;
 
 function cosine(a, b){
   let dot=0, na=0, nb=0;
@@ -154,8 +157,7 @@ export default {
     // Helper: decide whether to return detailed debug payload or user-friendly silence
     const respondFailure = (payload) => {
       const headers = Object.assign({'Content-Type':'application/json'}, CORS_HEADERS);
-      const envDebug = env && (String(env.RETURN_DEBUG || '').toLowerCase() === 'true' || String(env.RETURN_DEBUG || '') === '1');
-      const wantDebug = envDebug || (body && body.debug);
+      const wantDebug = (typeof RETURN_DEBUG !== 'undefined' && RETURN_DEBUG) || (body && body.debug);
       if (wantDebug) return new Response(JSON.stringify(payload), { headers });
       return makeSilence();
     };
