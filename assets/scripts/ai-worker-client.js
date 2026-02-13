@@ -14,7 +14,7 @@
   function render(container){
     const root = el('div', { class: 'ub-ai-root' });
     const row = el('div', { style: 'display:flex; gap:0.4rem; align-items:center;' });
-    const input = el('input', { type: 'search', placeholder: 'Ask the Wiki...', class: 'ub-ai-input' });
+    const input = el('input', { type: 'search', placeholder: 'This entity looks like it has seen too much. Will it share wisdom or madness?', class: 'ub-ai-input' });
     const btn = el('button', { type: 'button', class: 'ub-ai-btn' }, 'Ask');
     const out = el('pre', { class: 'ub-ai-out' }, '');
     row.appendChild(input);
