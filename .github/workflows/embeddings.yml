@@ -76,49 +76,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./site
 
-  ai-deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - name: Fail early if Cloudflare secrets missing
-        run: |
-          if [ -z "${{ secrets.CLOUDFLARE_API_TOKEN }}" ] || [ -z "${{ secrets.CLOUDFLARE_ACCOUNT_ID }}" ]; then
-            echo "Missing Cloudflare secrets (CLOUDFLARE_API_TOKEN / CLOUDFLARE_ACCOUNT_ID)."
-            echo "To enable AI worker deployment, add these secrets to the repo."
-            exit 1
-          fi
-
-      - uses: actions/checkout@v4
-
-      - name: Publish Cloudflare Worker
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-        run: |
-          set -euo pipefail
-          echo "Publishing Cloudflare Worker using wrangler CLI"
-          cd docs/assets/scripts/worker
-          # Inject account_id into wrangler.toml so wrangler CLI doesn't require --account-id
-          if grep -q "^account_id" wrangler.toml 2>/dev/null; then
-            sed -i "s/^account_id *= *.*/account_id = \"${{ env.CLOUDFLARE_ACCOUNT_ID }}\"/" wrangler.toml
-          else
-            echo "account_id = \"${{ env.CLOUDFLARE_ACCOUNT_ID }}\"" >> wrangler.toml
-          fi
-          # Export token for Wrangler v4 compatibility
-          export CF_API_TOKEN="${{ env.CLOUDFLARE_API_TOKEN }}"
-          # Provision OpenRouter secrets from GitHub Secrets into the Worker (non-interactive)
-          if [ -n "${{ secrets.OPENROUTER_API_KEY }}" ]; then
-            echo "Provisioning OPENROUTER_API_KEY into Worker via wrangler secret put"
-            printf "%s" "${{ secrets.OPENROUTER_API_KEY }}" | npx --yes wrangler@4 secret put OPENROUTER_API_KEY || true
-          fi
-          if [ -n "${{ secrets.OPENROUTER_MODEL }}" ]; then
-            echo "Provisioning OPENROUTER_MODEL into Worker via wrangler secret put"
-            printf "%s" "${{ secrets.OPENROUTER_MODEL }}" | npx --yes wrangler@4 secret put OPENROUTER_MODEL || true
-          fi
-          if [ -n "${{ secrets.SYSTEM_PROMPT }}" ]; then
-            echo "Provisioning SYSTEM_PROMPT into Worker via wrangler secret put"
-            printf "%s" "${{ secrets.SYSTEM_PROMPT }}" | npx --yes wrangler@4 secret put SYSTEM_PROMPT || true
-          fi
-          echo "Installing Wrangler v4 and deploying..."
-          npx --yes wrangler@4 deploy
 
