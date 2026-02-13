@@ -757,6 +757,11 @@ li.task-list-item a, li.task-list a {
   padding-top: 0.6rem;
 }
 
+/* Force the answer box and its contents to use Texturina (override theme defaults) */
+.ub-ai-out, .ub-ai-out * {
+  font-family: 'Texturina', Georgia, serif !important;
+}
+
 /* Make sure preformatted debug/evidence don't overflow the container */
 .ub-ai-out code, .ub-ai-out pre { white-space: pre-wrap; word-break: break-word; } 
 
