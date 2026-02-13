@@ -709,20 +709,18 @@ li.task-list-item a, li.task-list a {
   width: 100%;
   max-width: none;
   margin: 0.5rem 0;
-  padding: 0.6rem;
-  border: 1px solid rgba(0,0,0,0.06);
-  border-radius: 6px;
+  padding: 0.25rem 0;
   box-sizing: border-box;
-  background: var(--ai-bg);
-  font-family: inherit; /* uses Texturina from glow.css */
+  background: transparent; /* remove bounding box */
+  font-family: inherit;
 }
 
 .ub-ai-input {
   width: 100%;
-  padding: 0.6rem;
-  margin-bottom: 0.5rem;
-  border: 1px solid rgba(0,240,194,0.12);
-  border-radius: 4px;
+  padding: 0.4rem 0;
+  margin-bottom: 0;
+  border: none;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
   background: transparent;
   color: var(--teal-glow);
   caret-color: var(--teal-glow);
@@ -747,14 +745,16 @@ li.task-list-item a, li.task-list a {
 
 .ub-ai-out {
   white-space: pre-wrap;
-  background: rgba(0,0,0,0.03);
-  padding: 0.6rem;
-  margin-top: 0.6rem;
-  border-radius: 4px;
+  background: transparent;
+  padding: 0.6rem 0 0 0;
+  margin-top: 0.5rem;
   color: #083;
-  border: 1px solid rgba(0,240,194,0.08);
+  border: none;
   box-sizing: border-box;
   max-width: none;
+  /* separator line between question and answer */
+  border-top: 1px solid rgba(0,0,0,0.08);
+  padding-top: 0.6rem;
 }
 
 /* Make sure preformatted debug/evidence don't overflow the container */
