@@ -728,7 +728,7 @@ li.task-list-item a, li.task-list a {
   box-sizing: border-box;
 }
 
-.ub-ai-input::placeholder { color: rgba(0,240,194,0.45); }
+.ub-ai-input::placeholder { color: var(--teal-glow); opacity: 1 !important; }
 
 .ub-ai-btn {
   padding: 0.45rem 0.7rem;
