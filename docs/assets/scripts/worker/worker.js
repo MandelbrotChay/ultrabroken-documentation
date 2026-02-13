@@ -203,9 +203,19 @@ export default {
         openrouter_error = String(e);
       }
     }
+    // Prepare evidence list for either debug or extractive fallback
+    const evidenceList = evidences.slice(0,3).map(s=>({ id: s.item.id||s.item.path, similarity: s.score, title: s.item.title, text: s.item.text }));
+
+    // If OpenRouter was attempted but returned an error, provide an extractive fallback
+    // consisting of the concatenated top evidence text so the user still gets a helpful reply.
+    const extractiveText = evidenceList.map(e=>e.text||'').filter(Boolean).join('\n\n').trim();
+    const truncated = extractiveText.length > 3000 ? extractiveText.slice(0,3000) + '...' : extractiveText;
+    if ((has_openrouter_key && openrouter_error) && truncated){
+      return new Response(JSON.stringify({ answer: truncated, evidence: evidenceList, did_answer: true, extracted: true, debug: { query, tokens: qTokens, top: topCandidates.map(s=>({ id: s.item.id||s.item.path, score: s.score, title: s.item.title })), threshold: SIMILARITY_THRESHOLD, index_len: index.length, has_openrouter_key, openrouter_error } }), { headers: Object.assign({'Content-Type':'application/json'}, CORS_HEADERS) });
+    }
+
     // If OpenRouter is not configured or did not produce a usable answer, return evidence/debug
-    // rather than an unconditional silence so the UI can surface the retrieved candidates.
-    const evidenceList = evidences.slice(0,3).map(s=>({ id: s.item.id||s.item.path, similarity: s.score, title: s.item.title }));
+    // so the UI can surface the retrieved candidates.
     return new Response(JSON.stringify({ answer: null, evidence: evidenceList, did_answer: false, debug: { query, tokens: qTokens, top: topCandidates.map(s=>({ id: s.item.id||s.item.path, score: s.score, title: s.item.title })), threshold: SIMILARITY_THRESHOLD, index_len: index.length, has_openrouter_key, openrouter_error } }), { headers: Object.assign({'Content-Type':'application/json'}, CORS_HEADERS) });
   }
 };
