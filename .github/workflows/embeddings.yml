@@ -76,7 +76,7 @@ jobs:
           fi
 
       - name: Generate embeddings
-        if: steps.docs_hash.outputs.skip != 'true'
+        if: ${{ false }}
         env:
           MODEL: all-MiniLM-L6-v2
         run: |
@@ -104,66 +104,17 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./site
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
+      # Publish the Cloudflare Worker (optional) using existing repo secrets.
+      # This step will only run when both CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID are set.
+      - name: Publish Cloudflare Worker
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        if: env.CLOUDFLARE_API_TOKEN != '' && env.CLOUDFLARE_ACCOUNT_ID != ''
+        uses: cloudflare/wrangler-action@2
         with:
-          node-version: '20'
+          apiToken: ${{ env.CLOUDFLARE_API_TOKEN }}
+          workingDirectory: docs/assets/scripts/worker
+          command: publish
+          args: --account-id ${{ env.CLOUDFLARE_ACCOUNT_ID }}
 
-      - name: Install Wrangler
-        run: npm install -g wrangler
-
-      - name: Verify Cloudflare auth
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-        run: |
-          wrangler whoami || (echo "Cloudflare auth failed" && exit 1)
-
-      - name: Compute WIKI_INDEX_URL
-        id: compute_url
-        run: |
-          OWNER=${{ github.repository_owner }}
-          REPO=${{ github.event.repository.name }}
-          URL="https://${OWNER}.github.io/${REPO}/wiki_index.json.gz"
-          echo "WIKI_INDEX_URL=$URL" >> $GITHUB_OUTPUT
-
-      - name: Inject account_id into wrangler.toml
-        run: |
-          sed -i "s/<YOUR_ACCOUNT_ID>/${{ secrets.CLOUDFLARE_ACCOUNT_ID }}/g" docs/assets/scripts/worker/wrangler.toml
-
-      - name: Put WIKI_INDEX_URL into Worker secrets
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          WIKI_INDEX_URL: ${{ steps.compute_url.outputs.WIKI_INDEX_URL }}
-        run: |
-          cd docs/assets/scripts/worker
-          printf '%s' "$WIKI_INDEX_URL" | wrangler secret put WIKI_INDEX_URL || true
-
-      - name: Put SYSTEM_PROMPT into Worker secrets
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          SYSTEM_PROMPT: ${{ secrets.SYSTEM_PROMPT }}
-        run: |
-          cd docs/assets/scripts/worker
-          printf '%s' "$SYSTEM_PROMPT" | wrangler secret put SYSTEM_PROMPT || true
-
-      - name: Put AI token into Worker secrets
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          AI_TOKEN: ${{ secrets.CLOUDFLARE_AI_API_TOKEN }}
-        run: |
-          cd docs/assets/scripts/worker
-          printf '%s' "$AI_TOKEN" | wrangler secret put AI || true
-
-      - name: Publish Worker
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-        run: |
-          cd docs/assets/scripts/worker
-          export CLOUDFLARE_API_TOKEN="${{ secrets.CLOUDFLARE_API_TOKEN }}"
-          export CLOUDFLARE_ACCOUNT_ID="${{ secrets.CLOUDFLARE_ACCOUNT_ID }}"
-          env | grep CLOUDFLARE || true
-          wrangler deploy
