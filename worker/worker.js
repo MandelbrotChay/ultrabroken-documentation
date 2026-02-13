@@ -2,7 +2,8 @@
  * Minimal Cloudflare Worker scaffold for RAG over a precomputed wiki_index.json.
  */
 
-const TOP_K = 6;
+// Increase TOP_K to collect more candidates (we'll deduplicate by path for evidence)
+const TOP_K = 12;
 // Lower threshold so BM25 hits on reasonable queries; tune up if too noisy.
 const SIMILARITY_THRESHOLD = 0.02;
 // Global debug toggle (set true to return full debug payloads to any request).
@@ -143,8 +144,20 @@ export default {
 
     scored.sort((a,b)=>b.score - a.score);
     const topCandidates = scored.slice(0, TOP_K);
-    const evidences = topCandidates.filter(s=>typeof s.score==='number' && s.score >= SIMILARITY_THRESHOLD);
     const top = topCandidates.filter(s=>s.score>0).map(s=>s.item);
+    // Deduplicate evidences by `path` to ensure multiple files are referenced
+    const evidences = [];
+    const seenPaths = Object.create(null);
+    for (const s of topCandidates){
+      if (typeof s.score !== 'number' || s.score < SIMILARITY_THRESHOLD) continue;
+      const p = (s.item && (s.item.path || s.item.id)) || null;
+      const key = p ? String(p) : (s.item && s.item.id) || null;
+      if (key && !seenPaths[key]){
+        evidences.push(s);
+        seenPaths[key] = 1;
+      }
+      if (evidences.length >= 3) break;
+    }
 
     // If debug requested, return top candidate scores to help tune threshold.
     if (body && body.debug) {

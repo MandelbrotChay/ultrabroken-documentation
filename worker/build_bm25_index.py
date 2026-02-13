@@ -110,7 +110,11 @@ def main():
     p.add_argument('--output', '-o', default='site/wiki_index.json')
     p.add_argument('--gzip', action='store_true')
     p.add_argument('--no-chunk', dest='chunk', action='store_false', help='Do not chunk pages; emit one item per page')
+    p.add_argument('--docs-dir', default='docs', help='Path under the repo root to read markdown from (e.g. docs/wiki)')
     args = p.parse_args()
+    # allow overriding which docs subtree to index (default 'docs')
+    global DOCS
+    DOCS = ROOT / args.docs_dir
     build_index(args.output, gzip_output=args.gzip, chunk=args.chunk)
 
 
