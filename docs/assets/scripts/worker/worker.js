@@ -3,7 +3,8 @@
  */
 
 const TOP_K = 6;
-const SIMILARITY_THRESHOLD = 0.18; // tuneable: require this similarity to consider evidence "strong"
+// Lower threshold so BM25 hits on reasonable queries; tune up if too noisy.
+const SIMILARITY_THRESHOLD = 0.02;
 
 function cosine(a, b){
   let dot=0, na=0, nb=0;
@@ -141,6 +142,12 @@ export default {
     const topCandidates = scored.slice(0, TOP_K);
     const evidences = topCandidates.filter(s=>typeof s.score==='number' && s.score >= SIMILARITY_THRESHOLD);
     const top = topCandidates.filter(s=>s.score>0).map(s=>s.item);
+
+    // If debug requested, return top candidate scores to help tune threshold.
+    if (body && body.debug) {
+      const dbg = topCandidates.map(s=>({ id: s.item.id||s.item.path, score: s.score, title: s.item.title }));
+      return new Response(JSON.stringify({ debug: true, query, tokens: qTokens, top: dbg, threshold: SIMILARITY_THRESHOLD, index_len: index.length }), { headers: Object.assign({'Content-Type':'application/json'}, CORS_HEADERS) });
+    }
 
     // If there are no evidence hits above the similarity threshold, return the strict fallback.
     if (!evidences || evidences.length === 0) {
