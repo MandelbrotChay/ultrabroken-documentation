@@ -1,0 +1,46 @@
+name: Worker — deploy
+
+on:
+  push:
+    paths:
+      - 'docs/assets/scripts/worker/**'
+      - '.github/workflows/worker-deploy.yml'
+  workflow_dispatch: {}
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fail early if Cloudflare secrets missing
+        run: |
+          if [ -z "${{ secrets.CLOUDFLARE_API_TOKEN }}" ] || [ -z "${{ secrets.CLOUDFLARE_ACCOUNT_ID }}" ]; then
+            echo "Missing Cloudflare secrets (CLOUDFLARE_API_TOKEN / CLOUDFLARE_ACCOUNT_ID)."
+            exit 1
+          fi
+
+      - uses: actions/checkout@v4
+
+      - name: Publish Cloudflare Worker
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          set -euo pipefail
+          echo "Publishing Cloudflare Worker using wrangler CLI"
+          cd docs/assets/scripts/worker
+          if grep -q "^account_id" wrangler.toml 2>/dev/null; then
+            sed -i "s/^account_id *= *.*/account_id = \"${{ env.CLOUDFLARE_ACCOUNT_ID }}\"/" wrangler.toml
+          else
+            echo "account_id = \"${{ env.CLOUDFLARE_ACCOUNT_ID }}\"" >> wrangler.toml
+          fi
+          export CF_API_TOKEN="${{ env.CLOUDFLARE_API_TOKEN }}"
+          if [ -n "${{ secrets.OPENROUTER_API_KEY }}" ]; then
+            printf "%s" "${{ secrets.OPENROUTER_API_KEY }}" | npx --yes wrangler@4 secret put OPENROUTER_API_KEY || true
+          fi
+          if [ -n "${{ secrets.OPENROUTER_MODEL }}" ]; then
+            printf "%s" "${{ secrets.OPENROUTER_MODEL }}" | npx --yes wrangler@4 secret put OPENROUTER_MODEL || true
+          fi
+          if [ -n "${{ secrets.SYSTEM_PROMPT }}" ]; then
+            printf "%s" "${{ secrets.SYSTEM_PROMPT }}" | npx --yes wrangler@4 secret put SYSTEM_PROMPT || true
+          fi
+          npx --yes wrangler@4 deploy
