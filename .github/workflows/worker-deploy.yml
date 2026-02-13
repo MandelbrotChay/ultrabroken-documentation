@@ -3,7 +3,7 @@ name: Worker — deploy
 on:
   push:
     paths:
-      - 'docs/assets/scripts/worker/**'
+      - 'docs/worker/**'
       - '.github/workflows/worker-deploy.yml'
   workflow_dispatch: {}
 
@@ -27,7 +27,7 @@ jobs:
         run: |
           set -euo pipefail
           echo "Publishing Cloudflare Worker using wrangler CLI"
-          cd docs/assets/scripts/worker
+          cd docs/worker
           if grep -q "^account_id" wrangler.toml 2>/dev/null; then
             sed -i "s/^account_id *= *.*/account_id = \"${{ env.CLOUDFLARE_ACCOUNT_ID }}\"/" wrangler.toml
           else
