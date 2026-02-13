@@ -156,52 +156,49 @@ export default {
       return new Response(JSON.stringify({ answer: null, evidence: dbg.slice(0,3), did_answer: false, debug: { query, tokens: qTokens, top: dbg, threshold: SIMILARITY_THRESHOLD, index_len: index.length } }), { headers: Object.assign({'Content-Type':'application/json'}, CORS_HEADERS) });
     }
 
-    if (env){
-      // Prefer OpenRouter if configured (user provides OPENROUTER_API_KEY).
-      // `OPENROUTER_MODEL` is optional — when omitted, the account default model will be used.
-      if (env.OPENROUTER_API_KEY){
-        try{
-          const contextItems = topCandidates.map(s=>({ id: s.item.id || s.item.path || null, text: s.item.text || s.item.title || '', score: s.score }));
-          const system = env.SYSTEM_PROMPT || 'You are a concise technical editor. Use only the provided context to answer. If none of the context answers the question, reply exactly with NO_RELEVANT_INFO.';
-          const payloadBody = {
-            messages: [
-              { role: 'system', content: system },
-              { role: 'user', content: JSON.stringify({ query, context: contextItems.slice(0, TOP_K), meta: { top_k: TOP_K, threshold: SIMILARITY_THRESHOLD } }) }
-            ],
-            temperature: 0.0,
-            max_tokens: 800
-          };
-          if (env.OPENROUTER_MODEL) payloadBody.model = env.OPENROUTER_MODEL;
-          const orRes = await fetch('https://api.openrouter.ai/v1/chat/completions', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${env.OPENROUTER_API_KEY}` },
-            body: JSON.stringify(payloadBody)
-          });
-          if (orRes && orRes.ok){
-            const orJson = await orRes.json().catch(()=>null);
-            let modelText = '';
-            if (orJson){
-              if (orJson.choices && orJson.choices[0] && orJson.choices[0].message) modelText = orJson.choices[0].message.content || '';
-              else if (orJson.output && Array.isArray(orJson.output) && orJson.output[0] && orJson.output[0].content) modelText = orJson.output[0].content;
-              else if (orJson.result) modelText = String(orJson.result);
-            }
-            modelText = String(modelText || '').trim();
-            if (modelText && modelText.length >= 4 && !/^(silence|no_relevant_info|no_relevant_information|noinfo)$/i.test(modelText)){
-              let parsed = null;
-              try{ parsed = JSON.parse(modelText); }catch(e){ parsed = null; }
-              if (parsed && parsed.answer) {
-                return new Response(JSON.stringify({ answer: parsed.answer, evidence: evidences.slice(0,3).map(s=>({ id: s.item.id||s.item.path, similarity: s.score })), did_answer: true }), { headers: Object.assign({'Content-Type':'application/json'}, CORS_HEADERS) });
-              }
-              return new Response(JSON.stringify({ answer: modelText, evidence: evidences.slice(0,3).map(s=>({ id: s.item.id||s.item.path, similarity: s.score })), did_answer: true }), { headers: Object.assign({'Content-Type':'application/json'}, CORS_HEADERS) });
-            }
+    // If OpenRouter is configured, try to synthesize an answer from the retrieved evidence.
+    if (env && env.OPENROUTER_API_KEY){
+      try{
+        const contextItems = topCandidates.map(s=>({ id: s.item.id || s.item.path || null, text: s.item.text || s.item.title || '', score: s.score }));
+        const system = env.SYSTEM_PROMPT || 'You are a concise technical editor. Use only the provided context to answer. If none of the context answers the question, reply exactly with NO_RELEVANT_INFO.';
+        const payloadBody = {
+          messages: [
+            { role: 'system', content: system },
+            { role: 'user', content: JSON.stringify({ query, context: contextItems.slice(0, TOP_K), meta: { top_k: TOP_K, threshold: SIMILARITY_THRESHOLD } }) }
+          ],
+          temperature: 0.0,
+          max_tokens: 800
+        };
+        if (env.OPENROUTER_MODEL) payloadBody.model = env.OPENROUTER_MODEL;
+        const orRes = await fetch('https://api.openrouter.ai/v1/chat/completions', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${env.OPENROUTER_API_KEY}` },
+          body: JSON.stringify(payloadBody)
+        });
+        if (orRes && orRes.ok){
+          const orJson = await orRes.json().catch(()=>null);
+          let modelText = '';
+          if (orJson){
+            if (orJson.choices && orJson.choices[0] && orJson.choices[0].message) modelText = orJson.choices[0].message.content || '';
+            else if (orJson.output && Array.isArray(orJson.output) && orJson.output[0] && orJson.output[0].content) modelText = orJson.output[0].content;
+            else if (orJson.result) modelText = String(orJson.result);
           }
-        }catch(e){ /* fallthrough to other LLMs/fallbacks */ }
-      }
-      // If OpenRouter LLM did not yield a usable answer, strict fallback is to return 'silence'.
-      return makeSilence();
+          modelText = String(modelText || '').trim();
+          if (modelText && modelText.length >= 4 && !/^(silence|no_relevant_info|no_relevant_information|noinfo)$/i.test(modelText)){
+            let parsed = null;
+            try{ parsed = JSON.parse(modelText); }catch(e){ parsed = null; }
+            if (parsed && parsed.answer) {
+              return new Response(JSON.stringify({ answer: parsed.answer, evidence: evidences.slice(0,3).map(s=>({ id: s.item.id||s.item.path, similarity: s.score })), did_answer: true }), { headers: Object.assign({'Content-Type':'application/json'}, CORS_HEADERS) });
+            }
+            return new Response(JSON.stringify({ answer: modelText, evidence: evidences.slice(0,3).map(s=>({ id: s.item.id||s.item.path, similarity: s.score })), did_answer: true }), { headers: Object.assign({'Content-Type':'application/json'}, CORS_HEADERS) });
+          }
+        }
+      }catch(e){ /* fallthrough to return evidence below */ }
     }
 
-    // Ensure the fetch handler always returns a Response even when `env` is not provided.
-    return makeSilence();
+    // If OpenRouter is not configured or did not produce a usable answer, return evidence/debug
+    // rather than an unconditional silence so the UI can surface the retrieved candidates.
+    const evidenceList = evidences.slice(0,3).map(s=>({ id: s.item.id||s.item.path, similarity: s.score, title: s.item.title }));
+    return new Response(JSON.stringify({ answer: null, evidence: evidenceList, did_answer: false, debug: { query, tokens: qTokens, top: topCandidates.map(s=>({ id: s.item.id||s.item.path, score: s.score, title: s.item.title })), threshold: SIMILARITY_THRESHOLD, index_len: index.length } }), { headers: Object.assign({'Content-Type':'application/json'}, CORS_HEADERS) });
   }
 };
