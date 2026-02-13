@@ -100,7 +100,8 @@ jobs:
           else
             echo "account_id = \"${{ env.CLOUDFLARE_ACCOUNT_ID }}\"" >> wrangler.toml
           fi
-          # Export token under CF_API_TOKEN for wrangler compatibility
+          # Export token for Wrangler v4 compatibility
           export CF_API_TOKEN="${{ env.CLOUDFLARE_API_TOKEN }}"
-          npx --yes wrangler@2 publish
+          echo "Installing Wrangler v4 and publishing..."
+          npx --yes wrangler@4 publish
 
