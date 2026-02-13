@@ -7,7 +7,7 @@ Ultrabroken has been researched and documented by many dedicated researchers. Th
 
 - Duncan
 - NaN Gogh
-- Mozz
+- [Mozz](https://www.youtube.com/@M0zzed)
 - ElDuende
 - MrCheeze
 - Flash

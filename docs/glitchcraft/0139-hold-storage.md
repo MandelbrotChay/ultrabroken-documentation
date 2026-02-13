@@ -9,7 +9,7 @@ title: "Hold Storage"
 ---
 Allows Link to remain in a object holding state when not normally possible, as well as desync the hold state.
 
-_Ryan?, NaN Gogh, Mozz - 2 July 2023_
+_Ryan?, NaN Gogh, [Mozz](https://www.youtube.com/@M0zzed) - 2 July 2023_
 
 ## Instructions
 ---

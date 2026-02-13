@@ -9,7 +9,7 @@ title: "Lift Warping"
 ---
 Links position is tied to any object he can lift over his head, should the position of the object change, Link will warp to it's new position. This can be achieved in a number of ways.
 
-_Originally discovered by Mozz - 15 June 2023_
+_Originally discovered by [Mozz](https://www.youtube.com/@M0zzed) - 15 June 2023_
 
 ## Instructions
 ---

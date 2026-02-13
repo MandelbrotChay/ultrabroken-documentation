@@ -9,7 +9,7 @@ title: "Long Jump"
 ---
 Jump farther
 
-_Mozz - 18 May 2023_
+_[Mozz](https://www.youtube.com/@M0zzed) - 18 May 2023_
 
 ## Instructions
 ---

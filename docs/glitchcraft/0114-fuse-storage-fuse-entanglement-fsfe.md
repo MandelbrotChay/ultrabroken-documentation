@@ -9,7 +9,7 @@ title: "Fuse Storage Fuse Entanglement"
 ---
 Unique methods of achieving Fuse Entanglement through Fuse Storage.
 
-_Ryan?, Mozz - 18 June 2023_
+_Ryan?, [Mozz](https://www.youtube.com/@M0zzed) - 18 June 2023_
 
 ## Instructions
 ---

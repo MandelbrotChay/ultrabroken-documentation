@@ -9,7 +9,7 @@ title: "Like-Like Drop Smuggling"
 ---
 Allows for Drop Smuggling via slugging
 
-_Mozz, mulberry - 15 June 2023_
+_[Mozz](https://www.youtube.com/@M0zzed), mulberry - 15 June 2023_
 
 ## Instructions
 ---

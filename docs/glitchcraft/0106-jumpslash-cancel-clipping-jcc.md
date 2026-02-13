@@ -9,7 +9,7 @@ title: "Jumpslash Cancel Clipping"
 ---
 Allows for clipping through thin ceilings.
 
-_Mozz - 16 June 2023_
+_[Mozz](https://www.youtube.com/@M0zzed) - 16 June 2023_
 
 ## Instructions
 ---

@@ -9,7 +9,7 @@ title: "Like-Like Culling"
 ---
 A method for object culling
 
-_Mozz - 13 June 2023_
+_[Mozz](https://www.youtube.com/@M0zzed) - 13 June 2023_
 
 ## Instructions
 ---

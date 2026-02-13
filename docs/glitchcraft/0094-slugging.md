@@ -9,7 +9,7 @@ title: "Slugging"
 ---
 Allows Link to hold an unloaded piece of equipment using a like like. This also causes the item to share a relation with the like like, allowing for many glitches
 
-_Mozz - 15 June 2023_
+_[Mozz](https://www.youtube.com/@M0zzed) - 15 June 2023_
 
 ## Instructions
 ---

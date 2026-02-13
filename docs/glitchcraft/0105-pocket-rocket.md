@@ -9,7 +9,7 @@ title: "Pocket Rocket"
 ---
 Allows for repeated boost from a midair rocket shield surf, making it a very good movement option.
 
-_Mozz, SmallAnt - 15 June 2023_
+_[Mozz](https://www.youtube.com/@M0zzed), SmallAnt - 15 June 2023_
 
 ## Instructions
 ---

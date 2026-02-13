@@ -9,7 +9,7 @@ title: "Like-Like Smuggle Desync"
 ---
 Allows for desync and consequently, WST via slugging.
 
-_Mozz - 15 June 2023_
+_[Mozz](https://www.youtube.com/@M0zzed) - 15 June 2023_
 
 ## Instructions
 ---

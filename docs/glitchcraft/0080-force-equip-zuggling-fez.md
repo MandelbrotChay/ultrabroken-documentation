@@ -9,7 +9,7 @@ title: "Force Equip Zuggling"
 ---
 Allows Link to zuggle weapons using any interaction that forcefully equips a weapon. Best achieved by shrines or quests.
 
-_BigDUCCO, Mozz, Rhkellz, Syb, NaN Gogh - 7 June 2023_
+_BigDUCCO, [Mozz](https://www.youtube.com/@M0zzed), Rhkellz, Syb, NaN Gogh - 7 June 2023_
 
 ## Instructions
 ---

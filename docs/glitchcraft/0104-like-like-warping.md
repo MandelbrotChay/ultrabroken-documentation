@@ -7,7 +7,7 @@ title: "Like-Like Warping"
 
 ## Summary
 ---
-_Mozz - 15 June 2023_
+_[Mozz](https://www.youtube.com/@M0zzed) - 15 June 2023_
 
 ## Instructions
 ---

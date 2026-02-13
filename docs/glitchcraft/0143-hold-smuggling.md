@@ -9,7 +9,7 @@ title: "Hold Smuggling"
 ---
 Enables full control of Link while holding objects in the menu.
 
-_Mozz, NaN Gogh - 4 July 2023_
+_[Mozz](https://www.youtube.com/@M0zzed), NaN Gogh - 4 July 2023_
 
 ## Instructions
 ---

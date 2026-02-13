@@ -9,7 +9,7 @@ title: "Springdolling"
 ---
 allows you to launch a large horizontal distance using springs
 
-_Mozz - 15 May 2023_
+_[Mozz](https://www.youtube.com/@M0zzed) - 15 May 2023_
 
 ## Instructions
 ---

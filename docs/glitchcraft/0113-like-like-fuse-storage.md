@@ -9,7 +9,7 @@ title: "Like-Like Fuse Storage"
 ---
 Fusing to an item on the same frame that a like-like eats it causes fuse storage
 
-_Mozz - 18 June 2023_
+_[Mozz](https://www.youtube.com/@M0zzed) - 18 June 2023_
 
 ## Instructions
 ---

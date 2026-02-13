@@ -9,7 +9,7 @@ title: "Smuggle Stacking Zuggle"
 ---
 Allows to zuggle bows and shields in version 1.1.2. Weapon zuggle on 1.1.2 is a little bit more complicated. Check the next glitch (FEZ) for that.
 
-_BigDUCCO, LegendofLink, Mozz - 6 June 2023_
+_BigDUCCO, LegendofLink, [Mozz](https://www.youtube.com/@M0zzed) - 6 June 2023_
 
 ## Instructions
 ---

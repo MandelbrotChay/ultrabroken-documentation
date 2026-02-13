@@ -9,7 +9,7 @@ title: "Menu Overload"
 ---
 Overloads the item menu via Moobe, acting similarly to menu overload in BOTW
 
-_Mozz - 11 January 2024_
+_[Mozz](https://www.youtube.com/@M0zzed) - 11 January 2024_
 
 ## Instructions
 ---

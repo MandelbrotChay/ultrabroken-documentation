@@ -9,7 +9,7 @@ title: "Warp Bumping"
 ---
 Using a Zlotted object to obstruct a warp position, you can offset Link, while warping. Doing this with a travel medallion can allow you to pass between a wall into a space that is inbounds.
 
-_Mozz, InAMuffinCup - 7 June 2023_
+_[Mozz](https://www.youtube.com/@M0zzed), InAMuffinCup - 7 June 2023_
 
 ## Instructions
 ---

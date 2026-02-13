@@ -9,7 +9,7 @@ title: "GAS Launching"
 ---
 Causes the object to fling Link great distances with relative ease.
 
-_NX721, pyuk, Flash, Mozz, Blize - 25 June 2023_
+_NX721, pyuk, Flash, [Mozz](https://www.youtube.com/@M0zzed), Blize - 25 June 2023_
 
 ## Instructions
 ---

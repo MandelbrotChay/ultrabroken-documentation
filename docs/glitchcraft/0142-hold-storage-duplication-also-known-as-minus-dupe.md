@@ -9,7 +9,7 @@ title: "Hold Storage Duplication"
 ---
 Allows you to dupe items via hold storage.
 
-_NaN Gogh, Mozz - 3 July 2023_
+_NaN Gogh, [Mozz](https://www.youtube.com/@M0zzed) - 3 July 2023_
 
 ## Instructions
 ---

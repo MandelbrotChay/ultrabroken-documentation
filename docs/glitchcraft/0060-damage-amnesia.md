@@ -9,7 +9,7 @@ title: "Damage Amnesia"
 ---
 Allows Link to negate sources of damage.
 
-_Mozz - 27 May 2023_
+_[Mozz](https://www.youtube.com/@M0zzed) - 27 May 2023_
 
 ## Instructions
 ---

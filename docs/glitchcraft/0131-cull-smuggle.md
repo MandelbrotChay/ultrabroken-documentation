@@ -9,7 +9,7 @@ title: "Cull Smuggle"
 ---
 Allows any equipment that can be fuse entangled to be smuggled using margin culling.
 
-_Mozz, ROBUXY2ND, ock - 27 June 2023_
+_[Mozz](https://www.youtube.com/@M0zzed), ROBUXY2ND, ock - 27 June 2023_
 
 ## Instructions
 ---

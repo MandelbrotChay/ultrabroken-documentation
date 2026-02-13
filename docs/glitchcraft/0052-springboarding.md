@@ -9,7 +9,7 @@ title: "Springboarding"
 ---
 Spring jump across terrain for as long as shield durability lasts.
 
-_Mozz - 24 May 2023_
+_[Mozz](https://www.youtube.com/@M0zzed) - 24 May 2023_
 
 ## Instructions
 ---

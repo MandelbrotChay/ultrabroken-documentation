@@ -9,7 +9,7 @@ title: "Entanglement Height Glitch"
 ---
 Suspends Link a certain distance off the ground while shield surfing.
 
-_Mozz - 24 May 2023_
+_[Mozz](https://www.youtube.com/@M0zzed) - 24 May 2023_
 
 ## Instructions
 ---

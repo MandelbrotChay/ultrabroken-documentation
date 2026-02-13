@@ -9,7 +9,7 @@ title: "Like-Like FSFE"
 ---
 A method of Fuse Storage Fuse Entanglement.
 
-_Ryan?, Mozz - 18 June 2023_
+_Ryan?, [Mozz](https://www.youtube.com/@M0zzed) - 18 June 2023_
 
 ## Instructions
 ---

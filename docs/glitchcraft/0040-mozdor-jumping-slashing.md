@@ -9,7 +9,7 @@ title: "Mozdor jumping/slashing"
 ---
 Allows you to jump very far (can be chained infinitly)
 
-_Mozz, AgdoR - 20 May 2023_
+_[Mozz](https://www.youtube.com/@M0zzed), AgdoR - 20 May 2023_
 
 ## Instructions
 ---
