@@ -3,7 +3,7 @@ name: Docs — Build, BM25 Index & Publish
 on:
   push:
     paths:
-      - 'docs/**'
+      - 'docs/wiki/**'
   workflow_dispatch: {}
   schedule:
     - cron: '0 2 * * *'
@@ -39,7 +39,7 @@ jobs:
       - name: Check docs hash (skip if unchanged)
         id: docs_hash
         run: |
-          CURRENT_HASH=${{ hashFiles('docs/**') }}
+          CURRENT_HASH=${{ hashFiles('docs/wiki/**') }}
           OWNER=${{ github.repository_owner }}
           REPO=${{ github.event.repository.name }}
           PREV_HASH=$(curl -fsS "https://raw.githubusercontent.com/${OWNER}/${REPO}/gh-pages/wiki_index.hash" || true)
@@ -53,7 +53,7 @@ jobs:
         if: ${{ steps.docs_hash.outputs.skip == 'false' }}
         run: |
           python docs/worker/build_bm25_index.py --output site/wiki_index.json --gzip
-          echo "${{ hashFiles('docs/**') }}" > site/wiki_index.hash
+          echo "${{ hashFiles('docs/wiki/**') }}" > site/wiki_index.hash
 
       - name: Gzip index and size-check
         if: ${{ steps.docs_hash.outputs.skip == 'false' }}
