@@ -82,6 +82,7 @@ jobs:
             ${{ runner.os }}-wheels-
 
       - name: Build wheels and install
+        if: steps.check_changes.outputs.only_assets != 'true'
         run: |
           python -m pip install --upgrade pip
           mkdir -p ./.wheels
@@ -90,6 +91,7 @@ jobs:
           pip install --no-index --find-links ./.wheels -r docs/worker/requirements.txt || true
           pip install --no-index --find-links ./.wheels mkdocs mkdocs-material mkdocs-minify-plugin
       - name: Build site
+        if: steps.check_changes.outputs.only_assets != 'true'
         run: mkdocs build
       - name: Publish site
         uses: peaceiris/actions-gh-pages@v3
