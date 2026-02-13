@@ -100,5 +100,5 @@ jobs:
           set -e
           echo "Publishing Cloudflare Worker using wrangler CLI"
           cd docs/assets/scripts/worker
-          npx --yes @cloudflare/wrangler@2 publish --account-id "${{ env.CLOUDFLARE_ACCOUNT_ID }}"
+          npx --yes wrangler@2 publish --account-id "${{ env.CLOUDFLARE_ACCOUNT_ID }}"
 
