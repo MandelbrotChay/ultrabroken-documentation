@@ -235,6 +235,14 @@ export default {
             console.error('OpenRouter non-OK response', { status: orRes.status, duration_ms: or_debug.duration_ms });
           }
 
+          // sanitize model outputs to remove leading 'Answer:' and trailing 'Source:' blocks
+          const cleanAnswer = (s) => {
+            let t = String(s || '').trim();
+            t = t.replace(/^Answer\s*[:\-]\s*/i, '');
+            t = t.replace(/\nSource[s]?:[\s\S]*$/i, '');
+            return t.trim();
+          };
+
           let modelText = '';
           if (orJson){
             if (orJson.choices && orJson.choices[0] && orJson.choices[0].message) modelText = orJson.choices[0].message.content || '';
@@ -248,9 +256,9 @@ export default {
             let parsed = null;
             try{ parsed = JSON.parse(modelText); }catch(e){ parsed = null; }
             if (parsed && parsed.answer) {
-              return new Response(JSON.stringify({ answer: parsed.answer, evidence: evidences.slice(0,3).map(s=>({ id: s.item.id||s.item.path, similarity: s.score })), did_answer: true }), { headers: Object.assign({'Content-Type':'application/json'}, CORS_HEADERS) });
+              return new Response(JSON.stringify({ answer: cleanAnswer(parsed.answer), evidence: evidences.slice(0,3).map(s=>({ id: s.item.id||s.item.path, similarity: s.score })), did_answer: true }), { headers: Object.assign({'Content-Type':'application/json'}, CORS_HEADERS) });
             }
-            return new Response(JSON.stringify({ answer: modelText, evidence: evidences.slice(0,3).map(s=>({ id: s.item.id||s.item.path, similarity: s.score })), did_answer: true }), { headers: Object.assign({'Content-Type':'application/json'}, CORS_HEADERS) });
+            return new Response(JSON.stringify({ answer: cleanAnswer(modelText), evidence: evidences.slice(0,3).map(s=>({ id: s.item.id||s.item.path, similarity: s.score })), did_answer: true }), { headers: Object.assign({'Content-Type':'application/json'}, CORS_HEADERS) });
           }
           // attach the OpenRouter debug info to the outer scope so it can be returned if we fallthrough
           openrouter_error = openrouter_error || null;
