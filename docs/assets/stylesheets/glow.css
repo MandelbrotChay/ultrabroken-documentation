@@ -752,8 +752,8 @@ li.task-list-item a, li.task-list a {
   box-sizing: border-box;
   max-width: none;
   font-family: 'Texturina', Georgia, serif;
-  /* single subtle separator line between question and answer */
-  border-top: 1px solid rgba(0,0,0,0.06);
+  /* more visible separator line between question and answer */
+  border-top: 1px solid rgba(0,0,0,0.14);
   padding-top: 0.6rem;
 }
 
