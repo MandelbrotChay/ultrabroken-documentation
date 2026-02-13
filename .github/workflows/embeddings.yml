@@ -1,16 +1,10 @@
-name: Rebuild Embeddings & Deploy Worker
+name: Build Site, BM25 Index & Deploy Worker
 
 on:
+  push: {}            # run on every push (all branches)
+  workflow_dispatch: {}
   schedule:
     - cron: '0 2 * * *'   # daily at 02:00 UTC
-  workflow_dispatch:
-  push:
-    branches: [ main ]
-    paths:
-      - 'docs/**'
-      - 'mkdocs.yml'
-      - 'requirements.txt'
-      - 'docs/assets/scripts/worker/**'
 
 jobs:
   build:
