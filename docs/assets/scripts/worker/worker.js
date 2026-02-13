@@ -172,22 +172,51 @@ export default {
           max_tokens: 800
         };
         if (env.OPENROUTER_MODEL) payloadBody.model = env.OPENROUTER_MODEL;
-        const orRes = await fetch('https://api.openrouter.ai/v1/chat/completions', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${env.OPENROUTER_API_KEY}` },
-          body: JSON.stringify(payloadBody)
-        });
+        // Call OpenRouter and capture detailed debug info (timing, status, headers, truncated body)
+        let or_debug = { request_payload_excerpt: null, status: null, duration_ms: null, response_excerpt: null, response_json_keys: null, headers: null };
+        try {
+          const start = Date.now();
+          const reqBodyStr = JSON.stringify(payloadBody);
+          if (reqBodyStr.length > 2000) or_debug.request_payload_excerpt = reqBodyStr.slice(0,2000) + '...[truncated]'; else or_debug.request_payload_excerpt = reqBodyStr;
 
-        if (orRes) {
-          if (!orRes.ok) {
+          const orRes = await fetch('https://api.openrouter.ai/v1/chat/completions', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${env.OPENROUTER_API_KEY}` },
+            body: reqBodyStr
+          });
+          or_debug.duration_ms = Date.now() - start;
+          or_debug.status = orRes.status;
+          // capture headers (shallow)
+          try{
+            const h = {};
+            for (const [k,v] of orRes.headers.entries()){
+              h[k] = v;
+            }
+            or_debug.headers = h;
+          }catch(e){ or_debug.headers = { error: String(e) }; }
+
+          // read response as text so we can both log and attempt to parse
+          const orText = await orRes.text().catch(()=>null);
+          if (orText == null) or_debug.response_excerpt = null;
+          else if (orText.length > 2000) or_debug.response_excerpt = orText.slice(0,2000) + '...[truncated]';
+          else or_debug.response_excerpt = orText;
+
+          let orJson = null;
+          try{ orJson = orText ? JSON.parse(orText) : null; }catch(e){ orJson = null; }
+          if (orJson && typeof orJson === 'object') or_debug.response_json_keys = Object.keys(orJson);
+
+          if (!orRes.ok){
             openrouter_error = `openrouter status ${orRes.status}`;
+            console.error('OpenRouter non-OK response', { status: orRes.status, duration_ms: or_debug.duration_ms });
           }
-          const orJson = await orRes.json().catch(()=>null);
+
           let modelText = '';
           if (orJson){
             if (orJson.choices && orJson.choices[0] && orJson.choices[0].message) modelText = orJson.choices[0].message.content || '';
             else if (orJson.output && Array.isArray(orJson.output) && orJson.output[0] && orJson.output[0].content) modelText = orJson.output[0].content;
             else if (orJson.result) modelText = String(orJson.result);
+          } else if (orText){
+            modelText = orText;
           }
           modelText = String(modelText || '').trim();
           if (modelText && modelText.length >= 4 && !/^(silence|no_relevant_info|no_relevant_information|noinfo)$/i.test(modelText)){
@@ -198,24 +227,24 @@ export default {
             }
             return new Response(JSON.stringify({ answer: modelText, evidence: evidences.slice(0,3).map(s=>({ id: s.item.id||s.item.path, similarity: s.score })), did_answer: true }), { headers: Object.assign({'Content-Type':'application/json'}, CORS_HEADERS) });
           }
+          // attach the OpenRouter debug info to the outer scope so it can be returned if we fallthrough
+          openrouter_error = openrouter_error || null;
+          if (typeof or_debug !== 'undefined') openrouter_debug = or_debug;
+        } catch(innerErr){
+          openrouter_error = String(innerErr);
+          console.error('OpenRouter inner call threw', innerErr);
+          if (typeof or_debug !== 'undefined') openrouter_debug = or_debug;
         }
       } catch(e){
         openrouter_error = String(e);
+        console.error('OpenRouter call threw', e);
       }
     }
-    // Prepare evidence list for either debug or extractive fallback
-    const evidenceList = evidences.slice(0,3).map(s=>({ id: s.item.id||s.item.path, similarity: s.score, title: s.item.title, text: s.item.text }));
-
-    // If OpenRouter was attempted but returned an error, provide an extractive fallback
-    // consisting of the concatenated top evidence text so the user still gets a helpful reply.
-    const extractiveText = evidenceList.map(e=>e.text||'').filter(Boolean).join('\n\n').trim();
-    const truncated = extractiveText.length > 3000 ? extractiveText.slice(0,3000) + '...' : extractiveText;
-    if ((has_openrouter_key && openrouter_error) && truncated){
-      return new Response(JSON.stringify({ answer: truncated, evidence: evidenceList, did_answer: true, extracted: true, debug: { query, tokens: qTokens, top: topCandidates.map(s=>({ id: s.item.id||s.item.path, score: s.score, title: s.item.title })), threshold: SIMILARITY_THRESHOLD, index_len: index.length, has_openrouter_key, openrouter_error } }), { headers: Object.assign({'Content-Type':'application/json'}, CORS_HEADERS) });
-    }
-
     // If OpenRouter is not configured or did not produce a usable answer, return evidence/debug
-    // so the UI can surface the retrieved candidates.
-    return new Response(JSON.stringify({ answer: null, evidence: evidenceList, did_answer: false, debug: { query, tokens: qTokens, top: topCandidates.map(s=>({ id: s.item.id||s.item.path, score: s.score, title: s.item.title })), threshold: SIMILARITY_THRESHOLD, index_len: index.length, has_openrouter_key, openrouter_error } }), { headers: Object.assign({'Content-Type':'application/json'}, CORS_HEADERS) });
+    // rather than an unconditional silence so the UI can surface the retrieved candidates.
+    const evidenceList = evidences.slice(0,3).map(s=>({ id: s.item.id||s.item.path, similarity: s.score, title: s.item.title }));
+    const debugPayload = { query, tokens: qTokens, top: topCandidates.map(s=>({ id: s.item.id||s.item.path, score: s.score, title: s.item.title })), threshold: SIMILARITY_THRESHOLD, index_len: index.length, has_openrouter_key, openrouter_error };
+    if (typeof openrouter_debug !== 'undefined' && openrouter_debug) debugPayload.openrouter_debug = openrouter_debug;
+    return new Response(JSON.stringify({ answer: null, evidence: evidenceList, did_answer: false, debug: debugPayload }), { headers: Object.assign({'Content-Type':'application/json'}, CORS_HEADERS) });
   }
 };
