@@ -38,49 +38,49 @@ extra_javascript:
   
 
 nav:
-  - Home: index.md
+  - Home: wiki/1index.md
      #- Welcome: index.md
      #- Ultrabroken: ultrabroken/index.md
      #- Entanglement: entanglement/index.md
      #- Zuggling: zuggling/index.md
      #- Glitchcraft: glitchcraft/index.md
   - Ultrabroken: 
-     - Introduction: ultrabroken/index.md
-     - Basics: 
-        - Overview: ultrabroken/basics/index.md
-        - Introduction: ultrabroken/basics/introduction.md
-        - Requirements: ultrabroken/basics/requirements.md
-        - Procedure: ultrabroken/basics/procedure.md
-        - Exceptions: ultrabroken/basics/exceptions.md
-        - Attributes: ultrabroken/basics/attributes.md
-        - Theories: ultrabroken/basics/theories.md
-        - Datamine: ultrabroken/basics/datamine.md
-     - Effects:
-        - Overview: ultrabroken/effects/index.md
-        - Wacko Boingo: ultrabroken/effects/wacko-boingo.md
-        - Lift Lock: ultrabroken/effects/lift-lock.md
-        - Recall Fling: ultrabroken/effects/recall-fling.md
-        - Ghost Glue: ultrabroken/effects/ghost-glue.md
-        - Remnant Glue: ultrabroken/effects/remnant-glue.md
-        - Glue Lock: ultrabroken/effects/glue-lock.md
-        - Mass Matching: ultrabroken/effects/mass-matching.md
-        - Ghost Smuggle: ultrabroken/effects/ghost-smuggle.md
-        - Phantom Smuggle: ultrabroken/effects/phantom-smuggle.md
-        - Resurrect Smuggle: ultrabroken/effects/resurrect-smuggle.md
-        - Ouija Entanglement: ultrabroken/effects/ouija-entanglement.md
-        - Antimass: ultrabroken/effects/antimass.md
-        - Freecall: ultrabroken/effects/freecall.md
-        - Quantum State Freeze: ultrabroken/effects/quantum-state-freeze.md
-        - Fuse Stacking: ultrabroken/effects/fuse-stacking.md
-        - Transmigration: ultrabroken/effects/transmigration.md
-        - Autobuild Standalones: ultrabroken/effects/autobuild-standalones.md
-        - Slidy Cart: ultrabroken/effects/slidy-cart.md
-     - Devices: ultrabroken/devices/index.md
-     - Builds: ultrabroken/builds/index.md
-     - Tips: ultrabroken/meta.md
-     - Credits: ultrabroken/credits.md
+    - Introduction: wiki/ultrabroken/index.md
+    - Basics: 
+      - Overview: wiki/ultrabroken/basics/index.md
+      - Introduction: wiki/ultrabroken/basics/introduction.md
+      - Requirements: wiki/ultrabroken/basics/requirements.md
+      - Procedure: wiki/ultrabroken/basics/procedure.md
+      - Exceptions: wiki/ultrabroken/basics/exceptions.md
+      - Attributes: wiki/ultrabroken/basics/attributes.md
+      - Theories: wiki/ultrabroken/basics/theories.md
+      - Datamine: wiki/ultrabroken/basics/datamine.md
+    - Effects:
+      - Overview: wiki/ultrabroken/effects/index.md
+      - Wacko Boingo: wiki/ultrabroken/effects/wacko-boingo.md
+      - Lift Lock: wiki/ultrabroken/effects/lift-lock.md
+      - Recall Fling: wiki/ultrabroken/effects/recall-fling.md
+      - Ghost Glue: wiki/ultrabroken/effects/ghost-glue.md
+      - Remnant Glue: wiki/ultrabroken/effects/remnant-glue.md
+      - Glue Lock: wiki/ultrabroken/effects/glue-lock.md
+      - Mass Matching: wiki/ultrabroken/effects/mass-matching.md
+      - Ghost Smuggle: wiki/ultrabroken/effects/ghost-smuggle.md
+      - Phantom Smuggle: wiki/ultrabroken/effects/phantom-smuggle.md
+      - Resurrect Smuggle: wiki/ultrabroken/effects/resurrect-smuggle.md
+      - Ouija Entanglement: wiki/ultrabroken/effects/ouija-entanglement.md
+      - Antimass: wiki/ultrabroken/effects/antimass.md
+      - Freecall: wiki/ultrabroken/effects/freecall.md
+      - Quantum State Freeze: wiki/ultrabroken/effects/quantum-state-freeze.md
+      - Fuse Stacking: wiki/ultrabroken/effects/fuse-stacking.md
+      - Transmigration: wiki/ultrabroken/effects/transmigration.md
+      - Autobuild Standalones: wiki/ultrabroken/effects/autobuild-standalones.md
+      - Slidy Cart: wiki/ultrabroken/effects/slidy-cart.md
+    - Devices: wiki/ultrabroken/devices/index.md
+    - Builds: wiki/ultrabroken/builds/index.md
+    - Tips: wiki/ultrabroken/meta.md
+    - Credits: wiki/ultrabroken/credits.md
   - Entanglement:
-    - Introduction: entanglement/index.md
+    - Introduction: wiki/entanglement/index.md
     # - Fuse Entanglement: glitchcraft/0051-fuse-entanglement.md
     # - Fuse Storage Fuse Entanglement: glitchcraft/0114-fuse-storage-fuse-entanglement-fsfe.md
     # - Cull Fuse Entanglement: glitchcraft/0180-cull-fuse-entanglement-cull-fe.md
@@ -94,7 +94,7 @@ nav:
     # - Detanglement: glitchcraft/0172-detanglement.md
     # - Collection: entanglement/entanglement-collection.md
   - Zuggling:
-    - Introduction: zuggling/index.md
+    - Introduction: wiki/zuggling/index.md
     # - Zuggle: glitchcraft/0023-zuggle.md
     # - Equipment Collision Zuggle: glitchcraft/0024-equipment-collision-zuggle.md
     # - Map Zuggling: glitchcraft/0049-map-zuggling-mz.md
@@ -138,11 +138,11 @@ nav:
     # - Double Bypass Zuggle: glitchcraft/0278-double-bypass-zuggle-dbz.md
     # - Zuggle Overload Desync: glitchcraft/0294-zuggle-overload-desync.md
     # - Collection: zuggling/zuggle-collection.md
-  - Desync: desync/index.md
-  - OOB: oob/index.md
-  - MNF: mnf/index.md
-  - Overload: overload/index.md
-  - Glitchcraft: glitchcraft/glitchcraft-grimoire.md
+  - Desync: wiki/desync/index.md
+  - OOB: wiki/oob/index.md
+  - MNF: wiki/mnf/index.md
+  - Overload: wiki/overload/index.md
+  - Glitchcraft: wiki/glitchcraft/glitchcraft-grimoire.md
 
 plugins:
   - search
