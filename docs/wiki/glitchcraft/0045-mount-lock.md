@@ -7,7 +7,7 @@ title: "Mount Lock"
 
 ## Summary
 ---
-Dismounting a steering stick on the same frame that a temple discovery cutscene is played causes Link to be stuck to the steering stick while standing on it, allowing him to perform actions that would otherwise be impossible while mounted
+Dismounting a steering stick on the same frame that a temple discovery cutscene is played causes Link to be stuck to the steering stick while standing on it, allowing him to perform actions that would otherwise be impossible while mounted.
 
 _Physioninja - 21 May 2023_
 
