@@ -102,6 +102,6 @@ jobs:
           fi
           # Export token for Wrangler v4 compatibility
           export CF_API_TOKEN="${{ env.CLOUDFLARE_API_TOKEN }}"
-          echo "Installing Wrangler v4 and publishing..."
-          npx --yes wrangler@4 publish
+          echo "Installing Wrangler v4 and deploying..."
+          npx --yes wrangler@4 deploy
 
