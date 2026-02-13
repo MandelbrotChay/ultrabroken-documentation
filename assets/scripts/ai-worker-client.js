@@ -12,13 +12,17 @@
   }
 
   function render(container){
-    const root = el('div',{style:'max-width:720px;margin:0.5rem 0;padding:0.5rem;border:1px solid rgba(0,0,0,0.06);border-radius:6px;'});
-    const input = el('input',{type:'search',placeholder:'Ask the Wiki...', style:'width:100%;padding:0.5rem;margin-bottom:0.5rem;'});
-    const btn = el('button',{type:'button', style:'padding:0.45rem 0.7rem;'}, 'Ask');
-    const out = el('pre',{style:'white-space:pre-wrap;background:#f7f7f8;padding:0.6rem;margin-top:0.6rem;border-radius:4px;'}, '');
-    root.appendChild(input); root.appendChild(btn); root.appendChild(out);
+    const root = el('div', { class: 'ub-ai-root' });
+    const row = el('div', { style: 'display:flex; gap:0.4rem; align-items:center;' });
+    const input = el('input', { type: 'search', placeholder: 'Ask the Wiki...', class: 'ub-ai-input' });
+    const btn = el('button', { type: 'button', class: 'ub-ai-btn' }, 'Ask');
+    const out = el('pre', { class: 'ub-ai-out' }, '');
+    row.appendChild(input);
+    row.appendChild(btn);
+    root.appendChild(row);
+    root.appendChild(out);
     container.appendChild(root);
-    return {input, btn, out};
+    return { input, btn, out };
   }
 
   async function askWorker(q){
