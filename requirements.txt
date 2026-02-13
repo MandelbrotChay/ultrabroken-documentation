@@ -1,6 +1,5 @@
 mkdocs
 mkdocs-material
 mkdocs-minify-plugin
-sentence-transformers
 beautifulsoup4
 tqdm
