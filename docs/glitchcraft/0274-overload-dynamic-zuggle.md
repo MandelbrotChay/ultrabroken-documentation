@@ -5,7 +5,7 @@ title: "Overload Dynamic Zuggle"
 # Overload Dynamic Zuggle
 `1.0.0` `1.1.0` `1.1.1`
 
-## Overview
+## Summary
 ---
 Picking up a thrown boomerang while zuggle overloaded can cause dynamic zuggle
 

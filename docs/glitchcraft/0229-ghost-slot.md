@@ -5,7 +5,7 @@ title: "Ghost SLOT"
 # Ghost SLOT
 `1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
-## Overview
+## Summary
 ---
 Allows objects to be transferred through saves by creating a fuse ghost and detangling it out of range. The object will continue to persist through saves until it is "de-ghosted".
 

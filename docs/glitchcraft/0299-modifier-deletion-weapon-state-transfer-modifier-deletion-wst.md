@@ -6,7 +6,7 @@ title: "Modifier Deletion Weapon State Transfer"
 `1.0.0`
 Credit is almost impossible to pinpoint. Many people have found this, but most of the research was done by Zas
 
-## Overview
+## Summary
 ---
 Equipping and dropping items in a specific order causes wst with a sideeffect of deleting modifiers.
 

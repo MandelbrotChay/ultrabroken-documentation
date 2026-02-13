@@ -5,7 +5,7 @@ title: "Shock Cold Fuse"
 # Shock Cold Fuse
 `1.0.0`
 
-## Overview
+## Summary
 ---
 Interrupting a fuse on the first possible frame with shock causes cold fusion
 

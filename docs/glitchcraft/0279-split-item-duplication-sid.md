@@ -5,7 +5,7 @@ title: "Split Item Duplication"
 # Split Item Duplication `SID`
 `1.2.0` `1.2.1+`
 
-## Overview
+## Summary
 ---
 Allows you to dupe materials through Stack Splitting
 

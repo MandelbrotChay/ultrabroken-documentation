@@ -5,7 +5,7 @@ title: "Midair Item Transmutation"
 # Midair Item Transmutation `MIT`
 `1.1.0` `1.1.1`
 
-## Overview
+## Summary
 ---
 Allows you to transmutate any material very fast. Technical explanation: let's say you have
 Slot A: [1x Apple]

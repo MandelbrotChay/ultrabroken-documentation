@@ -5,7 +5,7 @@ title: "Quick Smuggling"
 # Quick Smuggling
 `1.2.0`
 
-## Overview
+## Summary
 ---
 Allows for easy and quick smuggling of any equipment, including arrow smuggle.
 

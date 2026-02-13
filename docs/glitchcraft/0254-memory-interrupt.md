@@ -5,7 +5,7 @@ title: "Memory Interrupt"
 # Memory Interrupt
 `1.0.0`
 
-## Overview
+## Summary
 ---
 Interrupting a memory causes a forced pause after a dialogue
 

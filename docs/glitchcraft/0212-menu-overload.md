@@ -5,7 +5,7 @@ title: "Menu Overload"
 # Menu Overload
 `1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
-## Overview
+## Summary
 ---
 Overloads the item menu via Moobe, acting similarly to menu overload in BOTW
 

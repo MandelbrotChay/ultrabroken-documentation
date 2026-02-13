@@ -5,7 +5,7 @@ title: "Guard-less Active Shield"
 # Guard-less Active Shield `GAS`
 `1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
-## Overview
+## Summary
 ---
 Makes the fuse of a shield constantly active
 

@@ -5,7 +5,7 @@ title: "Infinite Height"
 # Infinite Height
 `1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
-## Overview
+## Summary
 ---
 Allows you chain jump attacks to jump infinitly.
 

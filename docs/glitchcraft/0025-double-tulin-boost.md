@@ -5,7 +5,7 @@ title: "Double Tulin Boost"
 # Double Tulin Boost
 `1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
-## Overview
+## Summary
 ---
 Allows you to get more speed with tulin than just normal tulin (isnt' as effective as tulin pumping)
 

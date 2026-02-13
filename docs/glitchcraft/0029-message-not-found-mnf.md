@@ -5,7 +5,7 @@ title: "Message Not Found"
 # Message Not Found `MNF`
 `1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
-## Overview
+## Summary
 ---
 Allows you to obtain the prologue master sword (named MsgNotFound or MNF), whose durability cannot decrease
 

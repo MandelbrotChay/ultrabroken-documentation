@@ -5,7 +5,7 @@ title: "Corrupt Meal"
 # Corrupt Meal
 `1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
-## Overview
+## Summary
 ---
 Cooking an apple on the same frame that it is deleted results in a meal that takes up whatever was last cooked since the last game boot, though it does not go into the inventory.
 

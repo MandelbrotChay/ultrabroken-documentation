@@ -5,7 +5,7 @@ title: "Cucco Warping"
 # Cucco Warping
 `1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
-## Overview
+## Summary
 ---
 Picking up a cucco right as it voids out from entering water warps Link to its respawn location
 

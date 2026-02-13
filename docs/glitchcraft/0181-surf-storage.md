@@ -5,7 +5,7 @@ title: "Surf storage"
 # Surf storage
 `1.0.0`
 
-## Overview
+## Summary
 ---
 Discord
 When Link surfes onto a slope and his surfing state gets canceled with in a single frame, the game stores his coordinates and the angle that he was surfing.

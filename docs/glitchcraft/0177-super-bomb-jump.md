@@ -5,7 +5,7 @@ title: "Super Bomb Jump"
 # Super Bomb Jump
 `1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
-## Overview
+## Summary
 ---
 Jumping on a specific frame allows you to get a much higher bomb jump than usual
 

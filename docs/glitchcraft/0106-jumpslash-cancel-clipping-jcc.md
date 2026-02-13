@@ -5,7 +5,7 @@ title: "Jumpslash Cancel Clipping"
 # Jumpslash Cancel Clipping `JCC`
 `1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
-## Overview
+## Summary
 ---
 Allows for clipping through thin ceilings.
 

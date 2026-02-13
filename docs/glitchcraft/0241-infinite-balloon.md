@@ -5,7 +5,7 @@ title: "Infinite Balloon"
 # Infinite Balloon
 `1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
-## Overview
+## Summary
 ---
 Steal Robbie's balloon which has will never deplete.
 

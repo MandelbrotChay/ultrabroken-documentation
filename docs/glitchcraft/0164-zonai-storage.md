@@ -5,7 +5,7 @@ title: "Zonai Storage"
 # Zonai Storage
 `1.0.0`
 
-## Overview
+## Summary
 ---
 Allows Zonai devices to be stored and taken into shrines
 

@@ -5,7 +5,7 @@ title: "Fuse Entanglement Clipping"
 # Fuse Entanglement Clipping `FEC`
 `1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
-## Overview
+## Summary
 ---
 Using the object clipping properties of Fuse Entanglement with a steering-stick allows you to clip through certain walls, mostly invisble ones.
 

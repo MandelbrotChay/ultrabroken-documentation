@@ -5,7 +5,7 @@ title: "Buoy Bouncing"
 # Buoy Bouncing
 `1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
-## Overview
+## Summary
 ---
 Get an abnormaly large shield jump boost when coming into contact with water.
 

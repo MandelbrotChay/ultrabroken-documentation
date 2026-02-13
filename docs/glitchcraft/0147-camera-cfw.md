@@ -5,7 +5,7 @@ title: "Camera CFW"
 # Camera CFW
 `1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
-## Overview
+## Summary
 ---
 Glitches out the camera rune and can remove the waymarkers and the camera UI
 

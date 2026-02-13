@@ -5,7 +5,7 @@ title: "Throw Tap Sprinting"
 # Throw Tap Sprinting `TTS`
 `1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
-## Overview
+## Summary
 ---
 _Deystroyer, Tauktes - 14 May 2023_
 

@@ -5,7 +5,7 @@ title: "Infinite Damage"
 # Infinite Damage
 `1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
-## Overview
+## Summary
 ---
 Damage repeats infinitely during spin attack.
 

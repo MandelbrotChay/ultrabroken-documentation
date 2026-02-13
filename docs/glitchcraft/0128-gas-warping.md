@@ -5,7 +5,7 @@ title: "GAS Warping"
 # GAS Warping
 `1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
-## Overview
+## Summary
 ---
 Makes it so the game never updates Link's last valid coordinates for as long as the GAS device is active (a temporary travel medallion).
 

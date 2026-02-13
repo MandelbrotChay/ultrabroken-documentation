@@ -5,7 +5,7 @@ title: "Weapon FE"
 # Weapon FE
 `1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
-## Overview
+## Summary
 ---
 Allows for FE to weapons
 

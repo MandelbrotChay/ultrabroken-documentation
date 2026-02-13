@@ -5,7 +5,7 @@ title: "Two Handed With Shield"
 # Two Handed With Shield
 `1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
-## Overview
+## Summary
 ---
 Allows you to use a shield and a two handed weapon at the same time
 

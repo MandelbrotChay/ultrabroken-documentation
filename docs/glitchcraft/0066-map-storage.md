@@ -5,7 +5,7 @@ title: "Map Storage"
 # Map Storage
 `1.1.0` `1.1.1`
 
-## Overview
+## Summary
 ---
 Allows you to have control over Link while the map is open.
 

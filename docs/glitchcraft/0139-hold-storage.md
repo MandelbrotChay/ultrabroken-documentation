@@ -5,7 +5,7 @@ title: "Hold Storage"
 # Hold Storage
 `1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
-## Overview
+## Summary
 ---
 Allows Link to remain in a object holding state when not normally possible, as well as desync the hold state.
 

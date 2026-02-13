@@ -5,7 +5,7 @@ title: "Durability-"
 # Durability-
 `1.0.0`
 
-## Overview
+## Summary
 ---
 Dropping and picking up a bow with a durability modifier removes the extra durability.
 

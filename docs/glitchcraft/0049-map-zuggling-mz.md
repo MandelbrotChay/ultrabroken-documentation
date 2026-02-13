@@ -5,7 +5,7 @@ title: "Map Zuggling"
 # Map Zuggling `MZ`
 `1.0.0` `1.1.0` `1.1.1`
 
-## Overview
+## Summary
 ---
 Allows you to zuggle much faster than older versions
 

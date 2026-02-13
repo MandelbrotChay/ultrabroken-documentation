@@ -5,7 +5,7 @@ title: "Overload at Home"
 # Overload at Home
 `1.2.0` `1.2.1`
 
-## Overview
+## Summary
 ---
 By repeatedly culling Link while lifting an object during house building, it's possible to achieve an effect similar to zuggle overload
 

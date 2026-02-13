@@ -5,7 +5,7 @@ title: "Double Unfuse Duplicashen"
 # Double Unfuse Duplicashen `DUD`
 `1.0.0` `1.1.0` `1.1.1`
 
-## Overview
+## Summary
 ---
 allows you to duplicate any material that can be fused to an arrow
 

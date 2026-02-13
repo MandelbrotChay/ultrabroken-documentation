@@ -5,7 +5,7 @@ title: "Shrunken Actors"
 # Shrunken Actors
 `1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
-## Overview
+## Summary
 ---
 Permanently shrink any ultrahandable object (ultrabroken method)
 

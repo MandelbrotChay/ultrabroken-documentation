@@ -5,7 +5,7 @@ title: "Octodupe"
 # Octodupe
 `1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
-## Overview
+## Summary
 ---
 Allows for the duplication of items sucked up by a rock octorok.
 

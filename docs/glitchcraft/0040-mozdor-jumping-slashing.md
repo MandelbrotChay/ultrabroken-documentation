@@ -5,7 +5,7 @@ title: "Mozdor jumping/slashing"
 # Mozdor jumping/slashing
 `1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
-## Overview
+## Summary
 ---
 Allows you to jump very far (can be chained infinitly)
 

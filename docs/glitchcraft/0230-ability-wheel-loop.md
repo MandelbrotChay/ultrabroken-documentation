@@ -5,7 +5,7 @@ title: "Ability Wheel Loop"
 # Ability Wheel Loop
 `1.0.0`
 
-## Overview
+## Summary
 ---
 Gets you stuck in the ability wheel indefinitely opening and closing.
 

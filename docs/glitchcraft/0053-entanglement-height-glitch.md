@@ -5,7 +5,7 @@ title: "Entanglement Height Glitch"
 # Entanglement Height Glitch
 `1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
-## Overview
+## Summary
 ---
 Suspends Link a certain distance off the ground while shield surfing.
 

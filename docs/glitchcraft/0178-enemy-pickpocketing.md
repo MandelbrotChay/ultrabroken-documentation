@@ -5,7 +5,7 @@ title: "Enemy Pickpocketing"
 # Enemy Pickpocketing
 `1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
-## Overview
+## Summary
 ---
 Lets you take weapons out of enemy's hands
 

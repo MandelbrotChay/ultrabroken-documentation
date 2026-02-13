@@ -5,7 +5,7 @@ title: "Arrow Smuggling"
 # Arrow Smuggling
 `1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
-## Overview
+## Summary
 ---
 A type of equipment smuggle that makes Link hold an arrow without pulling out his bow.
 

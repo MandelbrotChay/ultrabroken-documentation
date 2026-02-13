@@ -5,7 +5,7 @@ title: "Shock FE"
 # Shock FE
 `1.0.0`
 
-## Overview
+## Summary
 ---
 Interrupting a fuse to a zuggled item causes FE
 

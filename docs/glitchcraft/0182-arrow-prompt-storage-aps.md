@@ -5,7 +5,7 @@ title: "Arrow Prompt Storage"
 # Arrow Prompt Storage `APS`
 `1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
-## Overview
+## Summary
 ---
 Allows storage of the arrow prompt and can be given multiple times via an enemy shooting their unloaded arrow.
 

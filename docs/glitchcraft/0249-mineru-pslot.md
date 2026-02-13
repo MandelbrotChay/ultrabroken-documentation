@@ -5,7 +5,7 @@ title: "Mineru PSLOT"
 # Mineru PSLOT `MPSLOT`
 `1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1+`
 
-## Overview
+## Summary
 ---
 Using Mineru Culling it's possible to send a piece of equipment to culled purgatory portably, allowing for PSLOT
 

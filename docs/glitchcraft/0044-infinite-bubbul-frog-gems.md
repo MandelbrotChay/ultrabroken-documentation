@@ -5,7 +5,7 @@ title: "Infinite Bubbul Frog Gems"
 # Infinite Bubbul Frog Gems
 `1.0.0` `1.1.0` `1.1.1`
 
-## Overview
+## Summary
 ---
 Allows you to get infinite bubbul gems
 

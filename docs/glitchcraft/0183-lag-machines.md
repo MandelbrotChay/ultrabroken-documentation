@@ -5,7 +5,7 @@ title: "Lag Machines"
 # Lag Machines
 `1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
-## Overview
+## Summary
 ---
 Filling up small areas with many objects causes a lot of lag and strange effects
 

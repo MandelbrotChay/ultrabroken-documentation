@@ -5,7 +5,7 @@ title: "Weather Amnesia"
 # Weather Amnesia `WA`
 `1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
-## Overview
+## Summary
 ---
 Viewing a memory near a cave will overwrite its local weather with the overworld's weather.
 

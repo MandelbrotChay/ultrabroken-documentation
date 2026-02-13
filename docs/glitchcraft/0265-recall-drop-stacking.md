@@ -5,7 +5,7 @@ title: "Recall Drop Stacking"
 # Recall Drop Stacking
 `1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
-## Overview
+## Summary
 ---
 Dropping many zonai devices in recall causes intense frame drops
 

@@ -5,7 +5,7 @@ title: "Horse Duping"
 # Horse Duping
 `1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
-## Overview
+## Summary
 ---
 Killing a horse while in a specific cull setup, sends it to the horse god without killing it.
 

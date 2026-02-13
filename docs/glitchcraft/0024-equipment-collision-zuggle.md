@@ -5,7 +5,7 @@ title: "Equipment Collision Zuggle"
 # Equipment Collision Zuggle
 `1.0.0` `1.1.0` `1.1.1`
 
-## Overview
+## Summary
 ---
 The original zuggle method discovered by Zvleon.
 

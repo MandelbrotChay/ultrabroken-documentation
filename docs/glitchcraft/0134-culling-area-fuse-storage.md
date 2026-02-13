@@ -5,7 +5,7 @@ title: "Culling Area Fuse Storage"
 # Culling Area Fuse Storage
 _Mozz, pyuk - 30 June 2023_
 
-## Overview
+## Summary
 ---
 A method of Fuse Storage using Area Culling
 

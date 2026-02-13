@@ -5,7 +5,7 @@ title: "Shadow/Void Icons"
 # Shadow/Void Icons
 `1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1+`
 
-## Overview
+## Summary
 ---
 Using the camera it's possible to make equipment icons black, leaving only the equipment's shadow and some other eventual colors coming from the fuse. It's also possible to get fully empty icons.
 

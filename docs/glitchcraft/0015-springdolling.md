@@ -5,7 +5,7 @@ title: "Springdolling"
 # Springdolling
 `1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
-## Overview
+## Summary
 ---
 allows you to launch a large horizontal distance using springs
 

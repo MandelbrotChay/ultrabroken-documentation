@@ -5,7 +5,7 @@ title: "Display Duping"
 # Display Duping
 `1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
-## Overview
+## Summary
 ---
 Allows you to dupe equipment that can be put into displays.
 

@@ -5,7 +5,7 @@ title: "MNF Glow Overload"
 # MNF Glow Overload
 `1.0.0`
 
-## Overview
+## Summary
 ---
 Stacking the glow from the MsgNotFound sword to extreme lengths causes many visual effects to stop rendering correctly
 

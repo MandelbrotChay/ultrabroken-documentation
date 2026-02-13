@@ -5,7 +5,7 @@ title: "Pickup Smuggling"
 # Pickup Smuggling
 `1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
-## Overview
+## Summary
 ---
 Allows Link to pick up an object as if he were holding it like an item.
 

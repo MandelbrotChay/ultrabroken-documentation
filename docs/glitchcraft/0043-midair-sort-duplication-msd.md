@@ -5,7 +5,7 @@ title: "Midair Sort Duplication"
 # Midair Sort Duplication `MSD`
 `1.0.0` `1.1.0` `1.1.1`
 
-## Overview
+## Summary
 ---
 Allows duplication of materials while midair.
 

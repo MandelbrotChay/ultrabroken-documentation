@@ -3,7 +3,7 @@
 *Discovered by various glitch hunters during the Wacko Boingo era and in the aftermath*
 
 
-## Overview
+## Summary
 ---
 
 Congratulations on reaching the deepest depths of the Ultrabroken rabbit hole! Below is valuable information regarding individual Ultrabroken Effects for various Zonai Devices. While some effects prove to be more advantageous than others, here is a list of the currently known Ultrabroken Effects on individual Zonai Devices.

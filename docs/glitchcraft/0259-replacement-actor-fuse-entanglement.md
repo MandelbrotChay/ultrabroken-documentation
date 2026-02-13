@@ -5,7 +5,7 @@ title: "Replacement Actor Fuse Entanglement"
 # Replacement Actor Fuse Entanglement
 `1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
-## Overview
+## Summary
 ---
 Allows objects that have fuse replacement actors to be fuse entangled. Objects that have replacement actors set to themselves, such as bomb flowers, cannot be fuse entangled
 

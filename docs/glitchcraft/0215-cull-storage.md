@@ -5,7 +5,7 @@ title: "Cull Storage"
 # Cull Storage
 `1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
-## Overview
+## Summary
 ---
 Culling and unculling an sdc stick in a specific way allows you to store its cull.
 

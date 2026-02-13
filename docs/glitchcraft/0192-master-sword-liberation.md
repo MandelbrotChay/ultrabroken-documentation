@@ -5,7 +5,7 @@ title: "Master Sword Liberation"
 # Master Sword Liberation
 `1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
-## Overview
+## Summary
 ---
 Allows you to dupe the master sword/decayed master sword
 

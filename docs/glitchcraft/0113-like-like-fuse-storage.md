@@ -5,7 +5,7 @@ title: "Like-Like Fuse Storage"
 # Like-Like Fuse Storage
 `1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0`
 
-## Overview
+## Summary
 ---
 Fusing to an item on the same frame that a like-like eats it causes fuse storage
 

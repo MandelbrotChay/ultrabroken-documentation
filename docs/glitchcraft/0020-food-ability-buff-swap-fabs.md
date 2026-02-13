@@ -5,7 +5,7 @@ title: "Food Ability Buff Swap"
 # Food Ability Buff Swap `FABS`
 `1.0.0` `1.1.0` `1.1.1`
 
-## Overview
+## Summary
 ---
 Allows you to get roasted food (stackable) with a food effect
 

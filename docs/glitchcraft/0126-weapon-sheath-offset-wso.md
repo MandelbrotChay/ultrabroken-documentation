@@ -5,7 +5,7 @@ title: "Weapon Sheath Offset"
 # Weapon Sheath Offset `WSO`
 `1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
-## Overview
+## Summary
 ---
 Puts the weapon sheathe in an offset state, similar to the sheathe during Zuggle Overload
 

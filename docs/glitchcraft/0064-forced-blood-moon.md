@@ -5,7 +5,7 @@ title: "Forced Blood Moon"
 # Forced Blood Moon
 `1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
-## Overview
+## Summary
 ---
 Allows you to force a blood moon whenever you want
 

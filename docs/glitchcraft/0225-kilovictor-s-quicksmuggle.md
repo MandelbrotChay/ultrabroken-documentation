@@ -5,7 +5,7 @@ title: "Kilovictor's quicksmuggle"
 # Kilovictor's quicksmuggle
 `1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
-## Overview
+## Summary
 ---
 fusing an sdc stick to equipment allows for a different, stronger cull, which can be used to cull equipment.
 

@@ -5,7 +5,7 @@ title: "Zonai Sort Duplication"
 # Zonai Sort Duplication `ZSD`
 `1.0.0` `1.1.0` `1.1.1`
 
-## Overview
+## Summary
 ---
 Allows you to dupe zonai parts back into your inventory.
 

@@ -5,7 +5,7 @@ title: "Laser-OOB"
 # Laser-OOB
 `1.0.0` `1.1.0` `1.1.1`
 
-## Overview
+## Summary
 ---
 The game puts a floor inside Link
 

@@ -5,7 +5,7 @@ title: "Hero Path Link Storage"
 # Hero Path Link Storage `HPLS`
 `1.1.0` `1.1.1` `1.1.2`
 
-## Overview
+## Summary
 ---
 Visual glitch with the hero path.
 

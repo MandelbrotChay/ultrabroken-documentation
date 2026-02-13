@@ -5,7 +5,7 @@ title: "Throwless Storage"
 # Throwless Storage
 `1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0`
 
-## Overview
+## Summary
 ---
 Makes it so that Link puts the weapon in an active state (allows for activation of Zonai Devices at all times).
 

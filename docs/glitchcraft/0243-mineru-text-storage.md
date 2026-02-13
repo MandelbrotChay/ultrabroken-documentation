@@ -5,7 +5,7 @@ title: "Mineru Text Storage"
 # Mineru Text Storage
 `1.0.0`
 
-## Overview
+## Summary
 ---
 Lets you move while text is on screen
 

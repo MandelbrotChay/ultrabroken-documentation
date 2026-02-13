@@ -5,7 +5,7 @@ title: "Mineru Ability Desync"
 # Mineru Ability Desync
 `1.1.0` `1.1.1`
 
-## Overview
+## Summary
 ---
 Desyncs Flame Emitters attached to Mineru
 

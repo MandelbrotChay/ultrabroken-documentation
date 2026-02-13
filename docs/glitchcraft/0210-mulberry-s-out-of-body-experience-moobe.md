@@ -5,7 +5,7 @@ title: "Mulberry's Out of Body Experience"
 # Mulberry's Out of Body Experience `MOOBE`
 `1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
-## Overview
+## Summary
 ---
 (Temporarily) Warps Link to a previous climbing position from anywhere in the world, only while the game is paused.
 

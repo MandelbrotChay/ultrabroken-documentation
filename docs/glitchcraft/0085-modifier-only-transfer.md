@@ -5,7 +5,7 @@ title: "Modifier ONLY Transfer"
 # Modifier ONLY Transfer
 `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
-## Overview
+## Summary
 ---
 Allows you to transfer only the modifier, but only works on weapons.
 

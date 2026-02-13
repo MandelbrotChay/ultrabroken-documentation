@@ -5,7 +5,7 @@ title: "MNF Zuggle Fuse"
 # MNF Zuggle Fuse
 `1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
-## Overview
+## Summary
 ---
 Allows to fuse to the MNF
 

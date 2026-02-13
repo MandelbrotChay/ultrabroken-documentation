@@ -5,7 +5,7 @@ title: "Weapon Stacking Duplication"
 # Weapon Stacking Duplication `WSD`
 `1.0.0` `1.1.0` `1.1.1`
 
-## Overview
+## Summary
 ---
 Allows for a quick dupe of any weapon, bow or shield
 

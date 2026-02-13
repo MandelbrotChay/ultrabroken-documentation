@@ -5,7 +5,7 @@ title: "MNF Fusing"
 # MNF Fusing
 `1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
-## Overview
+## Summary
 ---
 Allows you to fuse to the MNF
 

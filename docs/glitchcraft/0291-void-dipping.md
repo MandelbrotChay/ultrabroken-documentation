@@ -5,7 +5,7 @@ title: "Void Dipping"
 # Void Dipping
 `1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1` `1.3.0` `1.4.0` `1.4.1` `1.4.2` `Switch 2`
 
-## Overview
+## Summary
 ---
 An extremely powerful equipment state caused by interrupting and retrieving an equipment item that has been destroyed by the void.
 

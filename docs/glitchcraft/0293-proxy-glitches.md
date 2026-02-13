@@ -5,7 +5,7 @@ title: "Proxy Glitches"
 # Proxy Glitches
 `1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
-## Overview
+## Summary
 ---
 When link gets into areas he is not supposed to (e.g. clipped into a wall or out of bounds), the game forces link back into bounds with large amounts of force
 

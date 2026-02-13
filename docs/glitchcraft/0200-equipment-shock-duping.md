@@ -5,7 +5,7 @@ title: "Equipment Shock Duping"
 # Equipment Shock Duping
 `1.0.0`
 
-## Overview
+## Summary
 ---
 Droping a recently equipped weapon shortly before shock dropping it, can cause a dupe.
 

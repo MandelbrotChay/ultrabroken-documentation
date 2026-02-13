@@ -5,7 +5,7 @@ title: "Like Like New Textbox Softlock"
 # Like Like New Textbox Softlock
 `1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
-## Overview
+## Summary
 ---
 Picking up a new item while it gets eaten by a like like softlocks the game
 

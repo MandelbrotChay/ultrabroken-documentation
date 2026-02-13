@@ -5,7 +5,7 @@ title: "Moobe Warping"
 # Moobe Warping
 `1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
-## Overview
+## Summary
 ---
 Using Moobe and a horse, it's possible to fully warp (opposed to only temporarily) to a preset climbing position.
 

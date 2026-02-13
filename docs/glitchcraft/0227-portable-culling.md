@@ -5,7 +5,7 @@ title: "Portable Culling"
 # Portable Culling
 `1.2.0` `1.2.1`
 
-## Overview
+## Summary
 ---
 Fusing a cold fused sdc stick makes it possible to cull link anywhere, empty slot smuggle (smuggle item without them being equipped), desync, invizuggle any equipment and more.
 

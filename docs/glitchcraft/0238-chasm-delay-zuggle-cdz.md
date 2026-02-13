@@ -5,7 +5,7 @@ title: "Chasm Delay Zuggle"
 # Chasm Delay Zuggle `CDZ`
 `1.2.0` `1.2.1`
 
-## Overview
+## Summary
 ---
 Every chasm has an "unload box" that unloads the overworld if passed through. By positioning link inside the box, with the help of portable culling it's possible to infinitely delay a drop, causing a zuggle.
 

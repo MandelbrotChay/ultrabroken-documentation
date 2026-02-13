@@ -5,7 +5,7 @@ title: "Breaking AMS"
 # Breaking AMS
 `1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
-## Overview
+## Summary
 ---
 By using certain setups, it is possible to ignore the no durability use.
 

@@ -5,7 +5,7 @@ title: "Banc Storage"
 # Banc Storage
 `1.0.0`
 
-## Overview
+## Summary
 ---
 Using memory interrupt, it's possible to store a banc change (shrine entry/exit, warp, panic blood moon, etc) to another save file.
 

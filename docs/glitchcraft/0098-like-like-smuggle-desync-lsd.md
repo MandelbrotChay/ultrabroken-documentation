@@ -5,7 +5,7 @@ title: "Like-Like Smuggle Desync"
 # Like-Like Smuggle Desync `LSD`
 `1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
-## Overview
+## Summary
 ---
 Allows for desync and consequently, WST via slugging.
 

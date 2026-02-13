@@ -5,7 +5,7 @@ title: "Unsheathed Mastersword"
 # Unsheathed Mastersword
 `1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0`
 
-## Overview
+## Summary
 ---
 Puts the master sword in a visual state where it is outside of it's sheath.
 

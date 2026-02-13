@@ -5,7 +5,7 @@ title: "Hand Locked Equipment Smuggling"
 # Hand Locked Equipment Smuggling `HLES`
 `1.0.0`
 
-## Overview
+## Summary
 ---
 Allows you to smuggle equipment only when your hands are busy.
 

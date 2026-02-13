@@ -5,7 +5,7 @@ title: "Travel Medallion storage"
 # Travel Medallion storage `TMS`
 `1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
-## Overview
+## Summary
 ---
 Places the travel medallion at links feet after loading a file.
 

@@ -5,7 +5,7 @@ title: "Void Holding"
 # Void Holding
 `1.0.0` `1.1.0` `1.1.1`
 
-## Overview
+## Summary
 ---
 Allows you to hold materials "whenever you want" as long as you are at a low enough Y coordinate
 

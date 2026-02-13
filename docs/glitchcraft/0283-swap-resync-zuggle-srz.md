@@ -5,7 +5,7 @@ title: "Swap Resync Zuggle"
 # Swap Resync Zuggle `SRZ`
 `1.2.0` `1.2.1+`
 
-## Overview
+## Summary
 ---
 Using Swap Resync, it's possible to zuggle anywhere simply using portacull equipment.
 

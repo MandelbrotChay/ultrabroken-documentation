@@ -5,7 +5,7 @@ title: "Like-Like FSFE"
 # Like-Like FSFE
 `1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1`
 
-## Overview
+## Summary
 ---
 A method of Fuse Storage Fuse Entanglement.
 

@@ -5,7 +5,7 @@ title: "Inventory Shift Duplication"
 # Inventory Shift Duplication `ISD`
 `1.0.0` `1.1.0` `1.1.1` `1.1.2`
 
-## Overview
+## Summary
 ---
 Exploits inventory shift after creating an empty inventory slot to duplicate items.
 

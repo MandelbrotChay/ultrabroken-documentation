@@ -5,7 +5,7 @@ title: "Smuggle Retrieval"
 # Smuggle Retrieval
 `1.0.0` `1.1.0` `1.1.1` `1.1.2` `1.2.0` `1.2.1+`
 
-## Overview
+## Summary
 ---
 Dropping an unloaded piece of equipment drops a smuggle instead (if Link has one). Fail dropping equips it back.
 
