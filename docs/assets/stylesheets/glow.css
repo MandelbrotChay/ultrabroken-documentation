@@ -719,8 +719,7 @@ li.task-list-item a, li.task-list a {
   width: 100%;
   padding: 0.4rem 0;
   margin-bottom: 0;
-  border: none;
-  border-bottom: 1px solid rgba(0,0,0,0.08);
+  border: none; /* remove bottom border to avoid double-line */
   background: transparent;
   color: var(--teal-glow);
   caret-color: var(--teal-glow);
@@ -733,8 +732,8 @@ li.task-list-item a, li.task-list a {
 
 .ub-ai-btn {
   padding: 0.45rem 0.7rem;
-  background: var(--teal-glow);
-  color: var(--teal-dark);
+  background: var(--teal-dark);
+  color: var(--teal-glow);
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -752,8 +751,8 @@ li.task-list-item a, li.task-list a {
   border: none;
   box-sizing: border-box;
   max-width: none;
-  /* separator line between question and answer */
-  border-top: 1px solid rgba(0,0,0,0.08);
+  /* single subtle separator line between question and answer */
+  border-top: 1px solid rgba(0,0,0,0.06);
   padding-top: 0.6rem;
 }
 
