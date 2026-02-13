@@ -158,6 +158,7 @@ export default {
 
     // If OpenRouter is configured, try to synthesize an answer from the retrieved evidence.
     let openrouter_error = null;
+    let openrouter_debug = null;
     const has_openrouter_key = !!(env && env.OPENROUTER_API_KEY);
     if (has_openrouter_key) {
       try {
