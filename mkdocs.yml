@@ -3,11 +3,12 @@ site_name: Ultrabroken Docs
 site_description: Comprehensive documentation of the Ultrabroken glitch in The Legend of Zelda - Tears of the Kingdom
 site_author: NaN Gogh & Community
 copyright: Community-Driven Research
-site_url: https://nan-gogh.github.io/ultrabroken-documentation/wiki/
+site_url: https://nan-gogh.github.io/ultrabroken-documentation/
 use_directory_urls: true
 
 theme:
   name: material
+  custom_dir: docs/assets/theme
   logo: assets/images/ultrabroken_rune.svg
   favicon: assets/images/ultrabroken_rune.ico
   features:
@@ -35,6 +36,7 @@ extra_javascript:
   - assets/scripts/particles-constellations.js
   - assets/scripts/search-link.js
   - assets/scripts/ai-worker-client.js
+  # - assets/scripts/header-logo-link.js
   
 
 nav:
@@ -160,6 +162,7 @@ markdown_extensions:
       permalink: false
 
 extra:
+  homepage: /ultrabroken-documentation/wiki/
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/nan-gogh/ultrabroken-documentation
