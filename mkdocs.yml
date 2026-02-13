@@ -38,7 +38,7 @@ extra_javascript:
   
 
 nav:
-  - Home: wiki/1index.md
+  - Home: wiki/index.md
      #- Welcome: index.md
      #- Ultrabroken: ultrabroken/index.md
      #- Entanglement: entanglement/index.md
