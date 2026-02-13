@@ -97,8 +97,16 @@ jobs:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
         run: |
-          set -e
+          set -euo pipefail
           echo "Publishing Cloudflare Worker using wrangler CLI"
           cd docs/assets/scripts/worker
-          npx --yes wrangler@2 publish --account-id "${{ env.CLOUDFLARE_ACCOUNT_ID }}"
+          # Inject account_id into wrangler.toml so wrangler CLI doesn't require --account-id
+          if grep -q "^account_id" wrangler.toml 2>/dev/null; then
+            sed -i "s/^account_id *= *.*/account_id = \"${{ env.CLOUDFLARE_ACCOUNT_ID }}\"/" wrangler.toml
+          else
+            echo "account_id = \"${{ env.CLOUDFLARE_ACCOUNT_ID }}\"" >> wrangler.toml
+          fi
+          # Export token under CF_API_TOKEN for wrangler compatibility
+          export CF_API_TOKEN="${{ env.CLOUDFLARE_API_TOKEN }}"
+          npx --yes wrangler@2 publish
 
