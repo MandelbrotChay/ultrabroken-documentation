@@ -9,7 +9,7 @@ title: "AntiGrav Weapons"
 ---
 Puts weapons in an "Anti Gravity" state.
 
-_1.0.0-1.1.2 Setup Zas, 1.2 Setup Blize - 28 May 2023_
+_1.0.0-1.1.2 Setup Zas, 1.2 Setup [Blize](https://www.youtube.com/@blizegaming) - 28 May 2023_
 
 ## Instructions
 ---
@@ -35,7 +35,7 @@ Zas
 
 May 28, 2023
 
-Blize
+[Blize](https://www.youtube.com/@blizegaming)
 
 August 16, 2023
 

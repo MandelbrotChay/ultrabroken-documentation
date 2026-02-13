@@ -18,10 +18,11 @@ _tahatanogame - 4 September 2023_
 2. play a certain type of minigame
 3. drown to wrong warp
 4. escape the phantom ganon fight by warping to the hyrule castle shrine or clipping out
-Watch Blize's guide for more info!
 
 ## Notes
 ---
+Watch [Blize](https://www.youtube.com/@blizegaming)'s guide for more info!
+
 After a game close and reopen, you will respawn at the phantom ganon fight, just reload a file to fix this
 Requires the crisis at Hyrule castle quest to be unfinished
 

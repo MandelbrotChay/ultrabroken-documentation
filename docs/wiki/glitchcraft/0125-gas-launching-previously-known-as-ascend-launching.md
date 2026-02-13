@@ -9,7 +9,7 @@ title: "GAS Launching"
 ---
 Causes the object to fling Link great distances with relative ease.
 
-_NX721, pyuk, Flash, [Mozz](https://www.youtube.com/@M0zzed), Blize - 25 June 2023_
+_NX721, pyuk, Flash, [Mozz](https://www.youtube.com/@M0zzed), [Blize](https://www.youtube.com/@blizegaming) - 25 June 2023_
 
 ## Instructions
 ---
@@ -27,7 +27,7 @@ If done correctly, Link will be sent flying off in the opposite direction of whe
 
 Ascending also works if Link picks up a Big Battery or Rock and Ascends into it. The trajectory of where Link launches depends on how long the user waits to exit ascend. It's also possible to continue launching further into the air if a Hover Stone is activated in midair to keep yourself grounded to perform it again.
 
-Recall Method: Stand on a Battery and use Recall and stay as you would for Hydro Clipping for a boost. Batteries work best. Please see Blize's video for more info.
+Recall Method: Stand on a Battery and use Recall and stay as you would for Hydro Clipping for a boost. Batteries work best. Please see [Blize](https://www.youtube.com/@blizegaming)'s video for more info.
 Can also be done with cooking pots and rocks too, but they don't give a lot of vertical height.
 
 Uses Recall, but anything that freezes time works too.

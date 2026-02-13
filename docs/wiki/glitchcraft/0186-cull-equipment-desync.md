@@ -9,7 +9,7 @@ title: "Cull Equipment Desync"
 ---
 Allows to have a weapon equipped that is not in the inventory.
 
-_Blize, ock (Cull Arrow Smuggle), Blize - 10 October 2023_
+_[Blize](https://www.youtube.com/@blizegaming), ock (Cull Arrow Smuggle), Blize - 10 October 2023_
 
 ## Instructions
 ---
