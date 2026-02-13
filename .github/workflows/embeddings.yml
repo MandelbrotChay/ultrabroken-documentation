@@ -13,8 +13,10 @@ on:
       - 'docs/assets/scripts/worker/**'
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
+    outputs:
+      docs_changed: ${{ steps.docs_hash.outputs.skip }}
     steps:
       - uses: actions/checkout@v4
 
@@ -103,18 +105,27 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./site
 
-      # Publish the Cloudflare Worker (optional) using existing repo secrets.
-      # This step will only run when both CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID are set.
+  ai-deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fail early if Cloudflare secrets missing
+        run: |
+          if [ -z "${{ secrets.CLOUDFLARE_API_TOKEN }}" ] || [ -z "${{ secrets.CLOUDFLARE_ACCOUNT_ID }}" ]; then
+            echo "Missing Cloudflare secrets (CLOUDFLARE_API_TOKEN / CLOUDFLARE_ACCOUNT_ID)."
+            echo "To enable AI worker deployment, add these secrets to the repo."
+            exit 1
+          fi
+
+      - uses: actions/checkout@v4
+
       - name: Publish Cloudflare Worker
-        if: env.CLOUDFLARE_API_TOKEN != '' && env.CLOUDFLARE_ACCOUNT_ID != ''
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
         run: |
           set -e
           echo "Publishing Cloudflare Worker using wrangler CLI"
-          # Use npx to avoid relying on an external action tag; run from the worker dir so
-          # wrangler picks up the wrangler.toml there.
           cd docs/assets/scripts/worker
           npx --yes @cloudflare/wrangler@2 publish --account-id "${{ env.CLOUDFLARE_ACCOUNT_ID }}"
 
