@@ -149,9 +149,11 @@ export default {
       return new Response(JSON.stringify({ debug: true, query, tokens: qTokens, top: dbg, threshold: SIMILARITY_THRESHOLD, index_len: index.length }), { headers: Object.assign({'Content-Type':'application/json'}, CORS_HEADERS) });
     }
 
-    // If there are no evidence hits above the similarity threshold, return the strict fallback.
+    // If there are no evidence hits above the similarity threshold, return debug details
+    // instead of a silent response to aid debugging and tuning.
     if (!evidences || evidences.length === 0) {
-      return makeSilence();
+      const dbg = topCandidates.map(s=>({ id: s.item.id||s.item.path, score: s.score, title: s.item.title }));
+      return new Response(JSON.stringify({ answer: null, evidence: dbg.slice(0,3), did_answer: false, debug: { query, tokens: qTokens, top: dbg, threshold: SIMILARITY_THRESHOLD, index_len: index.length } }), { headers: Object.assign({'Content-Type':'application/json'}, CORS_HEADERS) });
     }
 
     if (env){
