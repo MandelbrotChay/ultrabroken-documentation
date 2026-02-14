@@ -785,7 +785,7 @@ li.task-list-item a, li.task-list a {
   align-items: center !important;
   justify-content: center !important;
   border-radius: 0.2rem !important; /* match .ub-ai-clear */
-  margin-left: 0.4rem; /* keep spacing consistent with layout */
+  margin-left: 0.12rem; /* reduce distance to input (was 0.4rem) */
   width: 1.6rem !important; /* match clear button */
   height: 1.6rem !important; /* match clear button */
 }
