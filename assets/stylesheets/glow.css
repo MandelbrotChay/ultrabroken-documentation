@@ -353,10 +353,10 @@ body.ultrabroken-center-rune::after {
    altering its size or z-index. */
 @media (max-width: 640px) {
   body::after {
-    bottom: 18vmin; /* move rune further upward on the y axis */
+    bottom: 25vmin; /* move rune further upward on the y axis */
   }
   body.ultrabroken-center-rune::after {
-    bottom: 18vmin; /* same adjustment when centered */
+    bottom: 25vmin; /* same adjustment when centered */
   }
 }
 
