@@ -88,11 +88,18 @@
         if (sourcePairs.length > 0) {
           html += '<hr class="ub-ai-hr"/>';
           html += '<div class="ub-ai-sources"><ul>';
+          const normalizeMd = (h) => {
+            if (!h) return h;
+            try{ return String(h).replace(/\.md$/i, '/'); }catch(e){ return h; }
+          };
           for (const s of sourcePairs) {
             const name = s.title || s.path || 'source';
-            const p = String(s.path || '').trim();
+            const pRaw = String(s.path || '').trim();
+            // remove trailing .md from the path and ensure leading '/'
+            const p = normalizeMd(pRaw);
             const base = 'https://nan-gogh.github.io/ultrabroken-documentation/wiki';
-            const href = base + (p.startsWith('/') ? p : ('/' + p));
+            const rest = p.startsWith('/') ? p : ('/' + p);
+            const href = base + rest;
             html += '<li><a href="' + escapeHtml(href) + '" target="_blank" rel="noopener noreferrer">' + escapeHtml(name) + '</a></li>';
           }
           html += '</ul></div>';
@@ -106,7 +113,9 @@
           html += '<div class="ub-ai-sources"><strong>Sources:</strong><ul>';
           for (const e of r.evidence) {
             const name = e.title || e.id || e.file || e.path || 'source';
-            const href = (e.url && String(e.url)) || (e.path && String(e.path)) || (e.file ? ('/docs/' + String(e.file)) : String(e.id || '#'));
+            let href = (e.url && String(e.url)) || (e.path && String(e.path)) || (e.file ? ('/docs/' + String(e.file)) : String(e.id || '#'));
+            // normalize .md suffix to a trailing slash for MkDocs
+            try{ href = String(href).replace(/\.md$/i, '/'); }catch(e){ }
             html += '<li><a href="' + escapeHtml(href) + '" target="_blank" rel="noopener noreferrer">' + escapeHtml(name) + '</a></li>';
           }
           html += '</ul></div>';
