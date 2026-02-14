@@ -235,17 +235,6 @@ export default {
             console.error('OpenRouter non-OK response', { status: orRes.status, duration_ms: or_debug.duration_ms });
           }
 
-          // sanitize model outputs to remove literal labels like 'Answer:' and 'Source:'
-          // but preserve the following text (e.g. source paths)
-          const cleanAnswer = (s) => {
-            let t = String(s || '').trim();
-            // remove a leading 'Answer:' label
-            t = t.replace(/^Answer\s*[:\-]\s*/i, '');
-            // remove any 'Source:' or 'Sources:' labels but keep the remainder
-            t = t.replace(/\bSource[s]?\s*[:\-]\s*/ig, '');
-            return t.trim();
-          };
-
           let modelText = '';
           if (orJson){
             if (orJson.choices && orJson.choices[0] && orJson.choices[0].message) modelText = orJson.choices[0].message.content || '';
@@ -258,11 +247,10 @@ export default {
           if (modelText && modelText.length >= 4 && !/^(silence|no_relevant_info|no_relevant_information|noinfo)$/i.test(modelText)){
             let parsed = null;
             try{ parsed = JSON.parse(modelText); }catch(e){ parsed = null; }
-            const mapEvidence = (arr) => arr.slice(0,3).map(s => ({ id: s.item.id||s.item.path, file: s.item.id||null, path: s.item.path||null, title: s.item.title||null, similarity: s.score }));
             if (parsed && parsed.answer) {
-              return new Response(JSON.stringify({ answer: cleanAnswer(parsed.answer), evidence: mapEvidence(evidences), did_answer: true }), { headers: Object.assign({'Content-Type':'application/json'}, CORS_HEADERS) });
+              return new Response(JSON.stringify({ answer: parsed.answer, evidence: evidences.slice(0,3).map(s=>({ id: s.item.id||s.item.path, similarity: s.score })), did_answer: true }), { headers: Object.assign({'Content-Type':'application/json'}, CORS_HEADERS) });
             }
-            return new Response(JSON.stringify({ answer: cleanAnswer(modelText), evidence: mapEvidence(evidences), did_answer: true }), { headers: Object.assign({'Content-Type':'application/json'}, CORS_HEADERS) });
+            return new Response(JSON.stringify({ answer: modelText, evidence: evidences.slice(0,3).map(s=>({ id: s.item.id||s.item.path, similarity: s.score })), did_answer: true }), { headers: Object.assign({'Content-Type':'application/json'}, CORS_HEADERS) });
           }
           // attach the OpenRouter debug info to the outer scope so it can be returned if we fallthrough
           openrouter_error = openrouter_error || null;
@@ -279,7 +267,7 @@ export default {
     }
     // If OpenRouter is not configured or did not produce a usable answer, return evidence/debug
     // rather than an unconditional silence so the UI can surface the retrieved candidates.
-    const evidenceList = evidences.slice(0,3).map(s=>({ id: s.item.id||s.item.path, file: s.item.id||null, path: s.item.path||null, title: s.item.title||null, similarity: s.score }));
+    const evidenceList = evidences.slice(0,3).map(s=>({ id: s.item.id||s.item.path, similarity: s.score, title: s.item.title }));
     const debugPayload = { query, tokens: qTokens, top: topCandidates.map(s=>({ id: s.item.id||s.item.path, score: s.score, title: s.item.title })), threshold: SIMILARITY_THRESHOLD, index_len: index.length, has_openrouter_key, openrouter_error };
     if (typeof openrouter_debug !== 'undefined' && openrouter_debug) debugPayload.openrouter_debug = openrouter_debug;
     return respondFailure({ answer: null, evidence: evidenceList, did_answer: false, debug: debugPayload });
