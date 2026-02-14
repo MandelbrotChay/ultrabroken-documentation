@@ -35,9 +35,9 @@ DOCS = ROOT / 'docs'
 
 
 def extract_text(md_path: Path) -> str:
-    text = md_path.read_text(encoding='utf-8')
-    # strip YAML frontmatter
-    text = re.sub(r'^---[\s\S]*?---\s*', '', text)
+    raw = md_path.read_text(encoding='utf-8')
+    # strip YAML frontmatter from the working text
+    text = re.sub(r'^---[\s\S]*?---\s*', '', raw)
     # remove images and links
     text = re.sub(r'!\[[^\]]*\]\([^\)]*\)', '', text)
     text = re.sub(r'\[[^\]]*\]\([^\)]*\)', '', text)
@@ -71,7 +71,13 @@ def walk_docs(chunk: bool = True):
         # skip hidden or dot folders
         if rel.parts and str(rel.parts[0]).startswith('.'):
             continue
-        title = rel.stem
+        # Prefer the first H1 in the markdown as the title; fall back to filename stem
+        raw = p.read_text(encoding='utf-8')
+        m = re.search(r'^\s*#\s+(.+)$', raw, flags=re.MULTILINE)
+        if m:
+            title = m.group(1).strip()
+        else:
+            title = rel.stem
         text = extract_text(p)
         if not text:
             continue
