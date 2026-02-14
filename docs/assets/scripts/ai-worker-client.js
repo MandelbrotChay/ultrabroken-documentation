@@ -15,7 +15,8 @@
     const root = el('div', { class: 'ub-ai-root' });
     const row = el('div', { style: 'display:flex; gap:0.4rem; align-items:center;' });
     const inputWrap = el('div', { class: 'ub-ai-input-wrap', style: 'position:relative; flex:1;' });
-    const input = el('input', { type: 'search', placeholder: 'Will it share wisdom or madness?', class: 'ub-ai-input' });
+    const _placeholder_text = 'Will it share wisdom or madness?';
+    const input = el('input', { type: 'search', placeholder: '', 'data-ub-placeholder': _placeholder_text, class: 'ub-ai-input' });
     const clearBtn = el('button', { type: 'button', class: 'ub-ai-clear', 'aria-label': 'Clear search' }, '');
     const askBtn = el('button', { type: 'button', class: 'ub-ai-ask', 'aria-label': 'Ask' }, '');
     const out = el('pre', { class: 'ub-ai-out' }, '');
@@ -71,6 +72,13 @@
       w.btn.addEventListener('click', handleAsk);
       // also allow Enter on the input to trigger ask
       w.input.addEventListener('keydown', (ev)=>{ if (ev.key === 'Enter') handleAsk(); });
+      // Show placeholder only while the field is focused. Append a pipe
+      // marker for a typing cue while focused.
+      try{
+        const stored = w.input.getAttribute('data-ub-placeholder') || '';
+        w.input.addEventListener('focus', ()=>{ if (!w.input.value) w.input.placeholder = stored + ' |'; });
+        w.input.addEventListener('blur', ()=>{ w.input.placeholder = ''; });
+      }catch(e){}
       // Wire clear button and replace Ask text with an SVG ask-icon that only appears when input has text
       try{
         // Ensure clear button exists
