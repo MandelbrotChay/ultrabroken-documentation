@@ -1,8 +1,8 @@
 ---
-title: AI Search (Cloudflare)
+title: Ask the Librarian
 ---
 
-# Ask the librarian
+# Ask the Librarian
 
 <!-- This entity looks like it has seen too much. Will it share wisdom or madness? -->
 
