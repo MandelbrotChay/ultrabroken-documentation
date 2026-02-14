@@ -788,6 +788,18 @@ li.task-list-item a, li.task-list a {
 }
 .ub-ai-btn:hover { filter: brightness(0.95); }
 
+/* Icon-only Ask button variant: remove filled pill and center the icon */
+.ub-ai-ask {
+  background: transparent !important;
+  padding: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 0 !important;
+  margin-left: 0.4rem; /* keep spacing consistent with layout */
+}
+.ub-ai-ask img { display: block; height: 1em; width: auto; }
+
 .ub-ai-out {
   white-space: pre-wrap;
   background: transparent;
