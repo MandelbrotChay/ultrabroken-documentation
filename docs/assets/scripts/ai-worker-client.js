@@ -69,8 +69,22 @@
       w.input.addEventListener('keydown', (ev)=>{ if (ev.key === 'Enter') handleAsk(); });
       // Keep rune centered while on the AI page
       try{ document.body.classList.add('ultrabroken-center-rune'); }catch(e){}
+      // Keep rune centered while on the AI page
+      try{ document.body.classList.add('ultrabroken-center-rune'); }catch(e){}
       placeholder.dataset.aiInitialized = '1';
     }catch(e){ console.debug('initAIWidget error', e); }
+  }
+
+  // Fast rune-centering update that runs immediately on mutations/navigation
+  function updateCenteredRune(){
+    try{
+      const placeholder = document.querySelector('#ai-search-root');
+      if (placeholder) {
+        document.body.classList.add('ultrabroken-center-rune');
+      } else {
+        document.body.classList.remove('ultrabroken-center-rune');
+      }
+    }catch(e){ console.debug('updateCenteredRune error', e); }
   }
 
   // Reuse the project's established navigation-detection pattern: observe
@@ -79,18 +93,18 @@
   function attachNavObserver(){
     try{
       const target = document.body; if (!target) return;
-      const mo = new MutationObserver(()=>{ setTimeout(initAIWidget, 50); });
+      const mo = new MutationObserver(()=>{ updateCenteredRune(); setTimeout(initAIWidget, 50); });
       mo.observe(target, { childList: true, subtree: true });
-      window.addEventListener('popstate', ()=> setTimeout(initAIWidget, 50));
+      window.addEventListener('popstate', ()=>{ updateCenteredRune(); setTimeout(initAIWidget, 50); });
       const _pushState = history.pushState;
-      history.pushState = function () { _pushState.apply(this, arguments); setTimeout(initAIWidget, 50); };
+      history.pushState = function () { _pushState.apply(this, arguments); updateCenteredRune(); setTimeout(initAIWidget, 50); };
     }catch(e){ console.debug('attachNavObserver error', e); }
   }
 
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', ()=>{ initAIWidget(); attachNavObserver(); });
+    document.addEventListener('DOMContentLoaded', ()=>{ updateCenteredRune(); initAIWidget(); attachNavObserver(); });
   } else {
-    initAIWidget(); attachNavObserver();
+    updateCenteredRune(); initAIWidget(); attachNavObserver();
   }
 
 })();
