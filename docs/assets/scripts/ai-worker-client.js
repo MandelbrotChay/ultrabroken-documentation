@@ -57,29 +57,25 @@
         // remove leading label
         let sanitized = answerText.replace(/^Answer\s*[:\-]\s*/i, '').trim();
 
-        // detect inline source lines like: "Title — /path/to/page" and build links from them
+        // detect inline source pairs like "Title — /path/to/page" anywhere in the
+        // answer (including semicolon-separated lists) and build links from them.
+        // This captures multiple pairs even when they're on one line separated by ';'.
         const sourcePairs = [];
-        const lines = sanitized.split(/\r?\n/).map(l => l.trim());
-        const dashRe = /[\-\u2013\u2014\u2015]/; // hyphen, en-dash, em-dash, horizontal bar
-        for (const l of lines) {
-          if (!l) continue;
-          // match: title <dash> path
-          const m = l.match(new RegExp('^(.+?)\\s+' + dashRe.source + '+\\s*(\\/?\\S+)$'));
-          if (m) {
-            const title = m[1].trim();
-            const path = m[2].trim();
-            sourcePairs.push({ title, path });
-          }
+        // match: title <dash(s)> path (path is non-whitespace, may start with '/')
+        const pairRe = /([^;\n\r]+?)\s+[\-\u2013\u2014\u2015]+\s*(\/?\S+)(?:\s*(?:;|$))/ig;
+        let m;
+        while ((m = pairRe.exec(sanitized)) !== null) {
+          const title = (m[1] || '').trim();
+          const path = (m[2] || '').trim();
+          if (title && path) sourcePairs.push({ title, path });
         }
 
-        // remove any trailing 'Source:' label lines from sanitized display
+        // remove 'Source:' labels and strip out the matched source substrings
         sanitized = sanitized.replace(/\bSource[s]?\s*[:\-]\s*/ig, '').trim();
-        // also remove the matched sourceLines from the displayed answer
         if (sourcePairs.length > 0) {
-          const filtered = lines.filter(l => {
-            return !l.match(new RegExp('^(.+?)\\s+' + dashRe.source + '+\\s*(\\/?\\S+)$'));
-          });
-          sanitized = filtered.join('\n').trim();
+          sanitized = sanitized.replace(pairRe, '');
+          // also remove stray semicolons or trailing separators left behind
+          sanitized = sanitized.replace(/[;\s]+$/,'').trim();
         }
 
         let html = '<div class="ub-ai-answer">' + escapeHtml(sanitized) + '</div>';
