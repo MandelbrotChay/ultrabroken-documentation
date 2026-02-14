@@ -716,6 +716,8 @@ li.task-list-item a, li.task-list a {
   box-sizing: border-box;
   background: transparent; /* remove bounding box */
   font-family: inherit;
+  position: relative; /* ensure it creates a stacking context above background rune */
+  z-index: 10;
 }
 
 .ub-ai-input {
