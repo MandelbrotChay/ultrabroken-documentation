@@ -742,7 +742,8 @@ li.task-list-item a, li.task-list a {
   display:none;
   cursor:pointer;
 }
-.ub-ai-clear img{ width:100%; height:100%; display:block; object-fit: contain;}
+/* Icon images inside AI controls should fill their buttons */
+.ub-ai-clear img, .ub-ai-ask img { width:100%; height:100%; display:block; object-fit: contain; }
 
 /* Hide native browser clear/reveal controls for search inputs */
 .ub-ai-input{ -webkit-appearance: textfield; appearance: textfield; }
@@ -775,21 +776,22 @@ li.task-list-item a, li.task-list a {
 
 .ub-ai-input::placeholder { color: rgba(0,240,194,0.45); }
 
-/* Icon-only Ask button variant: remove filled pill and center the icon */
+/* Icon-only Ask button variant: harmonized with the clear button so
+   both can be shown/hidden by JS reliably. Start hidden; JS toggles
+   `display` to `flex` when the input has content. */
 .ub-ai-ask {
-  background: transparent !important;
-  /* match clear button internals so images render identical sizes */
-  padding: 0.15rem !important; /* same as .ub-ai-clear */
-  box-sizing: border-box !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  border-radius: 0.2rem !important; /* match .ub-ai-clear */
-  /*margin-left: 0.12rem;  reduce distance to input (was 0.4rem) */
-  width: 1.6rem !important; /* match clear button */
-  height: 1.6rem !important; /* match clear button */
+  background: transparent;
+  padding: 0.15rem;
+  box-sizing: border-box;
+  display: none; /* initial state - mirror .ub-ai-clear */
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.2rem;
+  width: 1.6rem;
+  height: 1.6rem;
+  border: none;
+  cursor: pointer;
 }
-.ub-ai-ask img { display: block; width: 100%; height: 100%; object-fit: contain; }
 
 /* DEBUG: temporarily force visible outline and minimum size to diagnose
    invisible/zero-size AI control icons. Remove after debugging. 
