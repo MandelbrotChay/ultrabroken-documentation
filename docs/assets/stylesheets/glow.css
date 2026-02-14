@@ -302,11 +302,11 @@ body::after {
    `#ai-search-root` is present. Keeps same visual but centers it. */
 body.ultrabroken-center-rune::after {
   left: 50%;
-  top: 50%;
   right: auto;
-  bottom: auto;
-  background-position: center center;
-  transform: translate(-50%, -50%);
+  /* Keep rune anchored near the bottom while centered horizontally */
+  bottom: 2vmin;
+  background-position: center bottom;
+  transform: translateX(-50%);
   background-size: 48vmin 48vmin;
   opacity: 0.06;
 }
