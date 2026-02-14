@@ -17,7 +17,7 @@
     const inputWrap = el('div', { class: 'ub-ai-input-wrap', style: 'position:relative; flex:1;' });
     const input = el('input', { type: 'search', placeholder: 'Will it share wisdom or madness?', class: 'ub-ai-input' });
     const clearBtn = el('button', { type: 'button', class: 'ub-ai-clear', 'aria-label': 'Clear search' }, '');
-    const btn = el('button', { type: 'button', class: 'ub-ai-btn' }, 'Ask');
+    const btn = el('button', { type: 'button', class: 'ub-ai-btn ub-ai-ask' }, 'Ask');
     const out = el('pre', { class: 'ub-ai-out' }, '');
     inputWrap.appendChild(input);
     inputWrap.appendChild(clearBtn);
