@@ -788,6 +788,14 @@ li.task-list-item a, li.task-list a {
 }
 .ub-ai-ask img { display: block; height: 1em; width: auto; }
 
+/* DEBUG: temporarily force visible outline and minimum size to diagnose
+   invisible/zero-size AI control icons. Remove after debugging. */
+.ub-ai-clear, .ub-ai-ask {
+  outline: 2px dashed rgba(255,0,0,0.9) !important;
+  min-width: 1.2rem !important;
+  min-height: 1.2rem !important;
+}
+
 .ub-ai-out {
   white-space: pre-wrap;
   background: transparent;
