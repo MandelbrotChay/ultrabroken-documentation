@@ -60,12 +60,11 @@
         // detect inline source lines like: "Title — /path/to/page" and build links from them
         const sourcePairs = [];
         const lines = sanitized.split(/\r?\n/).map(l => l.trim());
-        // Only accept pairs where the RHS is an explicit path starting with '/'
-        // Example: "Long Jump — /glitchcraft/0035-long-jump/"
-        const pairRe = /^(.+?)\s+[–—-]\s*(\/\S+)$/; // hyphen, en-dash, em-dash
+        const dashRe = /[\-\u2013\u2014\u2015]/; // hyphen, en-dash, em-dash, horizontal bar
         for (const l of lines) {
           if (!l) continue;
-          const m = l.match(pairRe);
+          // match: title <dash> path
+          const m = l.match(new RegExp('^(.+?)\\s+' + dashRe.source + '+\\s*(\\/?\\S+)$'));
           if (m) {
             const title = m[1].trim();
             const path = m[2].trim();
