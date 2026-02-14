@@ -54,16 +54,60 @@
       // Render an answer if present (sanitize and strip model-inserted labels)
       if (r.answer) {
         const answerText = String(r.answer || '').trim();
-        const sanitized = answerText.replace(/^Answer\s*[:\-]\s*/i, '').replace(/\nSource[s]?:[\s\S]*$/i, '').trim();
+        // remove leading label
+        let sanitized = answerText.replace(/^Answer\s*[:\-]\s*/i, '').trim();
+
+        // detect inline source lines like: "Title — /path/to/page" and build links from them
+        const sourcePairs = [];
+        const lines = sanitized.split(/\r?\n/).map(l => l.trim());
+        // Only accept pairs where the RHS is an explicit path starting with '/'
+        // Example: "Long Jump — /glitchcraft/0035-long-jump/"
+        const pairRe = /^(.+?)\s+[–—-]\s*(\/\S+)$/; // hyphen, en-dash, em-dash
+        for (const l of lines) {
+          if (!l) continue;
+          const m = l.match(pairRe);
+          if (m) {
+            const title = m[1].trim();
+            const path = m[2].trim();
+            sourcePairs.push({ title, path });
+          }
+        }
+
+        // remove any trailing 'Source:' label lines from sanitized display
+        sanitized = sanitized.replace(/\bSource[s]?\s*[:\-]\s*/ig, '').trim();
+        // also remove the matched sourceLines from the displayed answer
+        if (sourcePairs.length > 0) {
+          const filtered = lines.filter(l => {
+            return !l.match(new RegExp('^(.+?)\\s+' + dashRe.source + '+\\s*(\\/?\\S+)$'));
+          });
+          sanitized = filtered.join('\n').trim();
+        }
+
         let html = '<div class="ub-ai-answer">' + escapeHtml(sanitized) + '</div>';
-        // render sources (if any) as clickable links
+
+        // If we found inline source pairs, ONLY use those to build clickable links
+        if (sourcePairs.length > 0) {
+          html += '<hr class="ub-ai-hr"/>';
+          html += '<div class="ub-ai-sources"><ul>';
+          for (const s of sourcePairs) {
+            const name = s.title || s.path || 'source';
+            const p = String(s.path || '').trim();
+            const base = 'https://nan-gogh.github.io/ultrabroken-documentation/wiki';
+            const href = base + (p.startsWith('/') ? p : ('/' + p));
+            html += '<li><a href="' + escapeHtml(href) + '" target="_blank" rel="noopener noreferrer">' + escapeHtml(name) + '</a></li>';
+          }
+          html += '</ul></div>';
+          w.out.innerHTML = html;
+          return;
+        }
+
+        // Otherwise fall back to evidence provided by the Worker
         if (r.evidence && Array.isArray(r.evidence) && r.evidence.length) {
           html += '<hr class="ub-ai-hr"/>';
           html += '<div class="ub-ai-sources"><strong>Sources:</strong><ul>';
           for (const e of r.evidence) {
             const name = e.title || e.id || e.file || e.path || 'source';
-            // prefer site path (published URL) if available, otherwise link to repo docs path
-            const href = (e.path && String(e.path)) || (e.file ? ('/docs/' + String(e.file)) : String(e.id || '#'));
+            const href = (e.url && String(e.url)) || (e.path && String(e.path)) || (e.file ? ('/docs/' + String(e.file)) : String(e.id || '#'));
             html += '<li><a href="' + escapeHtml(href) + '" target="_blank" rel="noopener noreferrer">' + escapeHtml(name) + '</a></li>';
           }
           html += '</ul></div>';
