@@ -180,38 +180,6 @@ export default {
       return respondFailure({ answer: null, evidence: dbg.slice(0,3), did_answer: false, debug: { query, tokens: qTokens, top: dbg, threshold: SIMILARITY_THRESHOLD, index_len: index.length } });
     }
 
-    // helper: construct a site-relative href for an index item
-    const makeHref = (item) => {
-      if (!item) return null;
-      // prefer explicit path if present
-      let p = item.path || null;
-      // if path is present and looks like '/<sitepath>/...', strip the site path prefix
-      try{
-        if (p && typeof p === 'string'){
-          // common index builder used '/ultrabroken-documentation/.../' - strip that if SITE_PATH specified
-          const sitePath = (env && env.SITE_PATH) ? String(env.SITE_PATH) : 'ultrabroken-documentation';
-          const prefix = '/' + sitePath;
-          if (p.startsWith(prefix)) p = p.slice(prefix.length) || '/';
-          // ensure it starts with '/'
-          if (!p.startsWith('/')) p = '/' + p;
-          return p;
-        }
-      }catch(e){ /* ignore and fallback to id */ }
-
-      // fallback: build from id/file (e.g. 'glitchcraft/0035-long-jump.md' -> '/glitchcraft/0035-long-jump/')
-      const id = item.id || item.file || null;
-      if (!id) return null;
-      let s = String(id);
-      // strip extension
-      s = s.replace(/\.mdx?$|\.markdown$/i, '');
-      // index -> '/'
-      if (s === 'index' || s.endsWith('/index')) return '/';
-      if (!s.startsWith('/')) s = '/' + s;
-      // ensure trailing slash
-      if (!s.endsWith('/')) s = s + '/';
-      return s;
-    };
-
     // If OpenRouter is configured, try to synthesize an answer from the retrieved evidence.
     let openrouter_error = null;
     let openrouter_debug = null;
@@ -290,7 +258,32 @@ export default {
           if (modelText && modelText.length >= 4 && !/^(silence|no_relevant_info|no_relevant_information|noinfo)$/i.test(modelText)){
             let parsed = null;
             try{ parsed = JSON.parse(modelText); }catch(e){ parsed = null; }
-            const mapEvidence = (arr) => arr.slice(0,3).map(s => ({ id: s.item.id||s.item.path, file: s.item.id||null, path: s.item.path||null, title: s.item.title||null, similarity: s.score, href: makeHref(s.item) }));
+            const makeUrlForItem = (it) => {
+              try{
+                const host = env.SITE_HOSTNAME || 'nan-gogh.github.io';
+                const sitePath = env.SITE_PATH || 'ultrabroken-documentation';
+                // Prefer explicit path on the item when present
+                if (it && it.path && typeof it.path === 'string'){
+                  // If path already contains the sitePath prefix, remove it and insert /wiki
+                  const p = it.path;
+                  const prefix = '/' + sitePath;
+                  if (p.indexOf(prefix) === 0){
+                    const rest = p.slice(prefix.length); // keeps leading '/'
+                    return `https://${host}/${sitePath}/wiki${rest}`;
+                  }
+                  // otherwise assume absolute path on host
+                  return `https://${host}${p}`;
+                }
+                // Fallback: use the id (relative file under docs) to build wiki URL
+                if (it && it.id){
+                  const idNoExt = String(it.id).replace(/\.md$/i, '');
+                  return `https://${host}/${sitePath}/wiki/${idNoExt}/`;
+                }
+              }catch(e){ /* ignore */ }
+              return null;
+            };
+
+            const mapEvidence = (arr) => arr.slice(0,3).map(s => ({ id: s.item.id||s.item.path, file: s.item.id||null, path: s.item.path||null, title: s.item.title||null, url: makeUrlForItem(s.item), similarity: s.score }));
             if (parsed && parsed.answer) {
               return new Response(JSON.stringify({ answer: cleanAnswer(parsed.answer), evidence: mapEvidence(evidences), did_answer: true }), { headers: Object.assign({'Content-Type':'application/json'}, CORS_HEADERS) });
             }
@@ -311,7 +304,28 @@ export default {
     }
     // If OpenRouter is not configured or did not produce a usable answer, return evidence/debug
     // rather than an unconditional silence so the UI can surface the retrieved candidates.
-    const evidenceList = evidences.slice(0,3).map(s=>({ id: s.item.id||s.item.path, file: s.item.id||null, path: s.item.path||null, title: s.item.title||null, similarity: s.score, href: makeHref(s.item) }));
+    const makeUrlForItem = (it) => {
+      try{
+        const host = env.SITE_HOSTNAME || 'nan-gogh.github.io';
+        const sitePath = env.SITE_PATH || 'ultrabroken-documentation';
+        if (it && it.path && typeof it.path === 'string'){
+          const p = it.path;
+          const prefix = '/' + sitePath;
+          if (p.indexOf(prefix) === 0){
+            const rest = p.slice(prefix.length);
+            return `https://${host}/${sitePath}/wiki${rest}`;
+          }
+          return `https://${host}${p}`;
+        }
+        if (it && it.id){
+          const idNoExt = String(it.id).replace(/\.md$/i, '');
+          return `https://${host}/${sitePath}/wiki/${idNoExt}/`;
+        }
+      }catch(e){ }
+      return null;
+    };
+
+    const evidenceList = evidences.slice(0,3).map(s=>({ id: s.item.id||s.item.path, file: s.item.id||null, path: s.item.path||null, title: s.item.title||null, url: makeUrlForItem(s.item), similarity: s.score }));
     const debugPayload = { query, tokens: qTokens, top: topCandidates.map(s=>({ id: s.item.id||s.item.path, score: s.score, title: s.item.title })), threshold: SIMILARITY_THRESHOLD, index_len: index.length, has_openrouter_key, openrouter_error };
     if (typeof openrouter_debug !== 'undefined' && openrouter_debug) debugPayload.openrouter_debug = openrouter_debug;
     return respondFailure({ answer: null, evidence: evidenceList, did_answer: false, debug: debugPayload });
