@@ -13,12 +13,12 @@ _[Mozz](https://www.youtube.com/@M0zzed), mulberry - 15 June 2023_
 
 ## Instructions
 ---
-Method 1 (works 1.0.0-1.1.2):
+Method 1 (1.0.0-1.1.2):
 
 1. Sluggle and drop the equipped sluggled item
 2. Retrieve the equipment from the like like
 
-Method 2 (works 1.0.0-1.2.1):
+Method 2 (1.0.0-1.2.1):
 
 1. Stand near a shock emitter or an ice chuchu jelly in front of a like like
 2. Unsheathe the target item
@@ -26,7 +26,7 @@ Method 2 (works 1.0.0-1.2.1):
 
 ## Notes
 ---
-Method 2 can also be executed with a chest if you open it right before Link gets eaten by the like like
+Method 2 can also be executed with a chest if you open it right before Link gets eaten by the like like.
 
 ## Resources
 ---
