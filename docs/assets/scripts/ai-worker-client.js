@@ -89,7 +89,12 @@
           w.clear.style.justifyContent = 'center';
           w.clear.style.padding = '0';
           w.clear.appendChild(clearImg);
-          w.clear.addEventListener('click', ()=>{ w.input.value = ''; w.out.textContent = ''; w.input.focus(); w.clear.style.display = 'none'; });
+          w.clear.addEventListener('click', ()=>{ 
+            w.input.value = ''; 
+            w.out.textContent = ''; 
+            w.input.focus(); 
+            try { if (typeof updateVisibility === 'function') updateVisibility(); else { w.clear.style.display = 'none'; w.btn.style.display = 'none'; } } catch(e){ w.clear.style.display = 'none'; w.btn.style.display = 'none'; }
+          });
         }
 
         // Replace textual Ask label with an SVG inside the Ask button
