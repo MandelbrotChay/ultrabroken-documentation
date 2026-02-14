@@ -744,6 +744,15 @@ li.task-list-item a, li.task-list a {
   cursor:pointer;
 }
 .ub-ai-clear img{ width:100%; height:100%; display:block; }
+
+/* Hide native browser clear/reveal controls for search inputs */
+.ub-ai-input{ -webkit-appearance: textfield; appearance: textfield; }
+.ub-ai-input::-ms-clear,
+.ub-ai-input::-ms-reveal{ display:none; width:0; height:0; }
+.ub-ai-input::-webkit-search-decoration,
+.ub-ai-input::-webkit-search-cancel-button,
+.ub-ai-input::-webkit-search-results-button,
+.ub-ai-input::-webkit-search-results-decoration{ -webkit-appearance:none; appearance:none; display:none; }
   padding: 0.25rem 0;
   box-sizing: border-box;
   background: transparent; /* remove bounding box */
