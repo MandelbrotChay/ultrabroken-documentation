@@ -37,32 +37,57 @@
     }catch(e){ return { error: String(e) }; }
   }
 
-  document.addEventListener('DOMContentLoaded', ()=>{
-    const placeholder = document.querySelector('#ai-search-root');
-    if (!placeholder) return;
-    const w = render(placeholder);
-    w.btn.addEventListener('click', async ()=>{
-      const q = w.input.value.trim(); if (!q) return; w.out.textContent = 'Asking...';
-      const r = await askWorker(q);
-      if (r.error) {
-        w.out.textContent = 'Error: ' + r.error;
-        return;
-      }
-      if (r.answer) {
-        w.out.textContent = r.answer;
-        return;
-      }
-      // If no answer, prefer debug payload -> evidence -> fallback 'silence'
-      if (r.debug) {
-        w.out.textContent = JSON.stringify(r.debug, null, 2);
-        return;
-      }
-      if (r.evidence) {
-        w.out.textContent = JSON.stringify(r.evidence, null, 2);
-        return;
-      }
-      w.out.textContent = 'silence';
-    });
-  });
+  // Idempotent initializer for the AI widget. Safe to call multiple times
+  // (e.g. after MkDocs Material instant navigation swaps).
+  function initAIWidget(){
+    try{
+      const placeholder = document.querySelector('#ai-search-root');
+      if (!placeholder) return;
+      // Avoid double-init on the same placeholder
+      if (placeholder.dataset.aiInitialized === '1') return;
+      // If an instance already exists inside, mark initialized and skip
+      if (placeholder.querySelector('.ub-ai-root')) { placeholder.dataset.aiInitialized = '1'; return; }
+      const w = render(placeholder);
+      const handleAsk = async ()=>{
+        const q = w.input.value.trim(); if (!q) return; w.out.textContent = 'Asking...';
+        const r = await askWorker(q);
+        if (r.error) {
+          w.out.textContent = 'Error: ' + r.error;
+          return;
+        }
+        if (r.answer) {
+          w.out.textContent = r.answer;
+          return;
+        }
+        if (r.debug) { w.out.textContent = JSON.stringify(r.debug, null, 2); return; }
+        if (r.evidence) { w.out.textContent = JSON.stringify(r.evidence, null, 2); return; }
+        w.out.textContent = 'silence';
+      };
+      w.btn.addEventListener('click', handleAsk);
+      // also allow Enter on the input to trigger ask
+      w.input.addEventListener('keydown', (ev)=>{ if (ev.key === 'Enter') handleAsk(); });
+      placeholder.dataset.aiInitialized = '1';
+    }catch(e){ console.debug('initAIWidget error', e); }
+  }
+
+  // Reuse the project's established navigation-detection pattern: observe
+  // body mutations, listen to popstate, and wrap pushState so we initialize
+  // the widget after client-side navigation.
+  function attachNavObserver(){
+    try{
+      const target = document.body; if (!target) return;
+      const mo = new MutationObserver(()=>{ setTimeout(initAIWidget, 50); });
+      mo.observe(target, { childList: true, subtree: true });
+      window.addEventListener('popstate', ()=> setTimeout(initAIWidget, 50));
+      const _pushState = history.pushState;
+      history.pushState = function () { _pushState.apply(this, arguments); setTimeout(initAIWidget, 50); };
+    }catch(e){ console.debug('attachNavObserver error', e); }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', ()=>{ initAIWidget(); attachNavObserver(); });
+  } else {
+    initAIWidget(); attachNavObserver();
+  }
 
 })();
