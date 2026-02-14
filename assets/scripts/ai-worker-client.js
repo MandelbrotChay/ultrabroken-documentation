@@ -48,19 +48,44 @@
         w.out.textContent = 'Error: ' + r.error;
         return;
       }
+
+      const escapeHtml = (s) => String(s||'').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":"&#39;"})[c]);
+
+      // If answer present, show it and list sources as clickable links (use evidence[].url)
       if (r.answer) {
-        w.out.textContent = r.answer;
+        const sanitized = String(r.answer || '').replace(/^Answer\s*[:\-]\s*/i, '').replace(/\bSource[s]?\s*[:\-]\s*/ig, '').trim();
+        let html = '<div class="ub-ai-answer">' + escapeHtml(sanitized) + '</div>';
+        if (Array.isArray(r.evidence) && r.evidence.length) {
+          html += '<hr class="ub-ai-hr"/>';
+          html += '<div class="ub-ai-sources"><ul>';
+          for (const e of r.evidence) {
+            const name = e.title || e.id || e.file || e.path || 'source';
+            const href = e.url || e.path || (e.file ? ('/docs/' + e.file) : '#');
+            html += '<li><a href="' + escapeHtml(href) + '" target="_blank" rel="noopener noreferrer">' + escapeHtml(name) + '</a></li>';
+          }
+          html += '</ul></div>';
+        }
+        w.out.innerHTML = html;
         return;
       }
+
       // If no answer, prefer debug payload -> evidence -> fallback 'silence'
       if (r.debug) {
         w.out.textContent = JSON.stringify(r.debug, null, 2);
         return;
       }
-      if (r.evidence) {
-        w.out.textContent = JSON.stringify(r.evidence, null, 2);
+      if (Array.isArray(r.evidence) && r.evidence.length) {
+        let html = '<div class="ub-ai-sources"><ul>';
+        for (const e of r.evidence) {
+          const name = e.title || e.id || e.file || e.path || 'source';
+          const href = e.url || e.path || (e.file ? ('/docs/' + e.file) : '#');
+          html += '<li><a href="' + escapeHtml(href) + '" target="_blank" rel="noopener noreferrer">' + escapeHtml(name) + '</a></li>';
+        }
+        html += '</ul></div>';
+        w.out.innerHTML = html;
         return;
       }
+
       w.out.textContent = 'silence';
     });
   });
