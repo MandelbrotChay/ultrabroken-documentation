@@ -298,6 +298,19 @@ body::after {
   animation: pulseLogo 4200ms ease-in-out infinite;
 }
 
+/* Center rune variant for AI page (librarian). Toggled via JS when
+   `#ai-search-root` is present. Keeps same visual but centers it. */
+body.ultrabroken-center-rune::after {
+  left: 50%;
+  top: 50%;
+  right: auto;
+  bottom: auto;
+  background-position: center center;
+  transform: translate(-50%, -50%);
+  background-size: 48vmin 48vmin;
+  opacity: 0.06;
+}
+
 /* Dedicated DOM overlay for 404 question-mark so it can be positioned independently */
 .ultrabroken-404-overlay {
   position: fixed;
