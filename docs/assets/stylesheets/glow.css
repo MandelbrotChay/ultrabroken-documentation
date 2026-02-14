@@ -776,18 +776,6 @@ li.task-list-item a, li.task-list a {
 
 .ub-ai-input::placeholder { color: rgba(0,240,194,0.45); }
 
-.ub-ai-btn {
-  padding: 0.45rem 0.7rem;
-  background: var(--teal-dark);
-  color: var(--teal-glow);
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-family: 'New Rocker', 'Texturina', Georgia, serif;
-  margin-left: 0.4rem;
-}
-.ub-ai-btn:hover { filter: brightness(0.95); }
-
 /* Icon-only Ask button variant: remove filled pill and center the icon */
 .ub-ai-ask {
   background: transparent !important;

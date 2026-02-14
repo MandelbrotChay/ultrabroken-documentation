@@ -17,16 +17,16 @@
     const inputWrap = el('div', { class: 'ub-ai-input-wrap', style: 'position:relative; flex:1;' });
     const input = el('input', { type: 'search', placeholder: 'Will it share wisdom or madness?', class: 'ub-ai-input' });
     const clearBtn = el('button', { type: 'button', class: 'ub-ai-clear', 'aria-label': 'Clear search' }, '');
-    const btn = el('button', { type: 'button', class: 'ub-ai-btn ub-ai-ask' }, 'Ask');
+    const askBtn = el('button', { type: 'button', class: 'ub-ai-ask', 'aria-label': 'Ask' }, '');
     const out = el('pre', { class: 'ub-ai-out' }, '');
     inputWrap.appendChild(input);
     inputWrap.appendChild(clearBtn);
     row.appendChild(inputWrap);
-    row.appendChild(btn);
+    row.appendChild(askBtn);
     root.appendChild(row);
     root.appendChild(out);
     container.appendChild(root);
-    return { input, btn, out, clear: clearBtn };
+    return { input, btn: askBtn, out, clear: clearBtn };
   }
 
   async function askWorker(q){
