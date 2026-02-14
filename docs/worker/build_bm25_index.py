@@ -64,6 +64,50 @@ def chunk_text_words(text: str, size: int = CHUNK_SIZE_WORDS, overlap: int = CHU
     return chunks
 
 
+def extract_title(md_path: Path) -> str:
+    """Extract a human-friendly title for the page.
+
+    Strategy (in order):
+    1. YAML frontmatter `title` key (if present)
+    2. First ATX H1 (`# Title`) or H2 (`## Title`)
+    3. Setext-style H1/H2 (underlines with === or ---)
+    4. Fallback to filename stem (caller can handle that)
+    """
+    try:
+        raw = md_path.read_text(encoding='utf-8')
+    except Exception:
+        return None
+
+    # 1) YAML frontmatter title
+    m = re.match(r'^---[\s\S]*?---', raw)
+    if m:
+        fm = m.group(0)
+        mm = re.search(r'^title:\s*(?:"([^"]+)"|\'([^\']+)\'|(.+))', fm, flags=re.IGNORECASE | re.MULTILINE)
+        if mm:
+            for g in mm.groups():
+                if g:
+                    return g.strip().strip('"').strip("'")
+
+    # strip frontmatter for further searches
+    body = re.sub(r'^---[\s\S]*?---\s*', '', raw)
+
+    # 2) ATX headings: look for H1 then H2
+    m = re.search(r'^[ \t]*#\s+(.+)$', body, flags=re.MULTILINE)
+    if m:
+        return m.group(1).strip()
+    m = re.search(r'^[ \t]*##\s+(.+)$', body, flags=re.MULTILINE)
+    if m:
+        return m.group(1).strip()
+
+    # 3) Setext-style headings (underlines)
+    # find a line followed by a line of === or ---
+    m = re.search(r'^(?P<title>.+?)\r?\n(?P<underline>[-=]{3,})\r?\n', body, flags=re.MULTILINE)
+    if m:
+        return m.group('title').strip()
+
+    return None
+
+
 def walk_docs(chunk: bool = True):
     items = []
     for p in sorted(DOCS.rglob('*.md')):
@@ -71,7 +115,8 @@ def walk_docs(chunk: bool = True):
         # skip hidden or dot folders
         if rel.parts and str(rel.parts[0]).startswith('.'):
             continue
-        title = rel.stem
+        # prefer an extracted title (YAML frontmatter, H1/H2, Setext), fall back to filename stem
+        title = extract_title(p) or rel.stem
         text = extract_text(p)
         if not text:
             continue
