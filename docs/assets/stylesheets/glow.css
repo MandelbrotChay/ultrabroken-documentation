@@ -737,13 +737,12 @@ li.task-list-item a, li.task-list a {
   width:1.6rem;
   height:1.6rem;
   padding:0.15rem;
-  border-radius:0.2rem;
   border:none;
   background: transparent;
   display:none;
   cursor:pointer;
 }
-.ub-ai-clear img{ width:100%; height:100%; display:block; }
+.ub-ai-clear img{ width:100%; height:100%; display:block; object-fit: contain;}
 
 /* Hide native browser clear/reveal controls for search inputs */
 .ub-ai-input{ -webkit-appearance: textfield; appearance: textfield; }
@@ -779,11 +778,13 @@ li.task-list-item a, li.task-list a {
 /* Icon-only Ask button variant: remove filled pill and center the icon */
 .ub-ai-ask {
   background: transparent !important;
-  padding: 0 !important;
+  /* match clear button internals so images render identical sizes */
+  padding: 0.15rem !important; /* same as .ub-ai-clear */
+  box-sizing: border-box !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
-  border-radius: 0 !important;
+  border-radius: 0.2rem !important; /* match .ub-ai-clear */
   margin-left: 0.4rem; /* keep spacing consistent with layout */
   width: 1.6rem !important; /* match clear button */
   height: 1.6rem !important; /* match clear button */
@@ -791,12 +792,12 @@ li.task-list-item a, li.task-list a {
 .ub-ai-ask img { display: block; width: 100%; height: 100%; object-fit: contain; }
 
 /* DEBUG: temporarily force visible outline and minimum size to diagnose
-   invisible/zero-size AI control icons. Remove after debugging. */
+   invisible/zero-size AI control icons. Remove after debugging. 
 .ub-ai-clear, .ub-ai-ask {
   outline: 2px dashed rgba(255,0,0,0.9) !important;
   min-width: 1.2rem !important;
   min-height: 1.2rem !important;
-}
+}*/
 
 .ub-ai-out {
   white-space: pre-wrap;
