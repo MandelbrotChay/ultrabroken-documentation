@@ -14,15 +14,19 @@
   function render(container){
     const root = el('div', { class: 'ub-ai-root' });
     const row = el('div', { style: 'display:flex; gap:0.4rem; align-items:center;' });
+    const inputWrap = el('div', { class: 'ub-ai-input-wrap', style: 'position:relative; flex:1;' });
     const input = el('input', { type: 'search', placeholder: 'Will it share wisdom or madness?', class: 'ub-ai-input' });
+    const clearBtn = el('button', { type: 'button', class: 'ub-ai-clear', 'aria-label': 'Clear search' }, '');
     const btn = el('button', { type: 'button', class: 'ub-ai-btn' }, 'Ask');
     const out = el('pre', { class: 'ub-ai-out' }, '');
-    row.appendChild(input);
+    inputWrap.appendChild(input);
+    inputWrap.appendChild(clearBtn);
+    row.appendChild(inputWrap);
     row.appendChild(btn);
     root.appendChild(row);
     root.appendChild(out);
     container.appendChild(root);
-    return { input, btn, out };
+    return { input, btn, out, clear: clearBtn };
   }
 
   async function askWorker(q){
@@ -67,6 +71,21 @@
       w.btn.addEventListener('click', handleAsk);
       // also allow Enter on the input to trigger ask
       w.input.addEventListener('keydown', (ev)=>{ if (ev.key === 'Enter') handleAsk(); });
+      // Wire clear button to immediately clear input and output
+      try{
+        if (w.clear){
+          // set image for the clear button (published site path)
+          const img = document.createElement('img');
+          img.src = '/ultrabroken-documentation/assets/images/close-icon.svg';
+          img.alt = '';
+          img.style.width = '1rem'; img.style.height = '1rem';
+          w.clear.appendChild(img);
+          w.clear.addEventListener('click', ()=>{ w.input.value = ''; w.out.textContent = ''; w.input.focus(); w.clear.style.display = 'none'; });
+          w.input.addEventListener('input', ()=>{ w.clear.style.display = w.input.value.trim() ? 'block' : 'none'; });
+          // initial state
+          w.clear.style.display = w.input.value.trim() ? 'block' : 'none';
+        }
+      }catch(e){ /* ignore */ }
       // Keep rune centered while on the AI page
       try{ document.body.classList.add('ultrabroken-center-rune'); }catch(e){}
       // Keep rune centered while on the AI page

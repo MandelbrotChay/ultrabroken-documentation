@@ -722,9 +722,28 @@ li.task-list-item a, li.task-list a {
 }
 
 .ub-ai-root {
-  width: 100%;
-  max-width: none;
+  position: relative;
+  z-index: 3; /* below header (4) */
   margin: 0.5rem 0;
+
+/* Input wrapper and custom clear button */
+.ub-ai-input-wrap{ display:block; }
+.ub-ai-input{ width:100%; padding-right:2.2rem; box-sizing:border-box; }
+.ub-ai-clear{
+  position:absolute;
+  right:0.3rem;
+  top:50%;
+  transform:translateY(-50%);
+  width:1.6rem;
+  height:1.6rem;
+  padding:0.15rem;
+  border-radius:0.2rem;
+  border:none;
+  background: transparent;
+  display:none;
+  cursor:pointer;
+}
+.ub-ai-clear img{ width:100%; height:100%; display:block; }
   padding: 0.25rem 0;
   box-sizing: border-box;
   background: transparent; /* remove bounding box */
