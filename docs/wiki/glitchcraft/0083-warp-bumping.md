@@ -25,4 +25,4 @@ _[Mozz](https://www.youtube.com/@M0zzed), InAMuffinCup - 7 June 2023_
 ---
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1116180070063677440)
 - [Discord](https://discord.com/channels/1086729144307564648/1113557914444111873/1116180070063677440)
-- [Zuggle Load Object Transfering](search:Zuggle Load Object Transfering)
+- [Zuggle Load Object Transfer](search:Zuggle Load Object Transfer)
