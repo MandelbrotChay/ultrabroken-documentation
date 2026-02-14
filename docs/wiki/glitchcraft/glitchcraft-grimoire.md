@@ -46,7 +46,7 @@ This page lists generated glitch stubs created from the community spreadsheet.
 - [Ascend Storage](./0037-ascend-storage.md)
 - [Scope Render Cancel](./0038-scope-render-cancel.md)
 - [Midair Item Transmutation (MIT)](./0039-midair-item-transmutation-mit.md)
-- [Mozdor jumping/slashing](./0040-mozdor-jumping-slashing.md)
+- [Mozdor Jumping/Slashing](./0040-mozdor-jumping-slashing.md)
 - [Stamina Depletion Freeze (SDF)](./0041-stamina-depletion-freeze-sdf.md)
 - [Jumpslash Canceling](./0042-jumpslash-canceling.md)
 - [Midair Sort Duplication (MSD)](./0043-midair-sort-duplication-msd.md)

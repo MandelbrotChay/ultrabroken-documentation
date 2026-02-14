@@ -49,33 +49,21 @@
         return;
       }
 
-      const escapeHtml = (s) => String(s||'').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":"&#39;"})[c]);
+      const escapeHtml = (s) => String(s||'').replace(/[&<>\"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":"&#39;"})[c]);
 
-      // If answer present, show it and list sources as clickable links (use evidence[].url)
+      // Render an answer if present (sanitize and strip model-inserted labels)
       if (r.answer) {
-        // remove literal labels and any trailing plain-text source lines like
-        // "Title — /path" or bare ids/paths that models sometimes append
-        let sanitized = String(r.answer || '').replace(/^Answer\s*[:\-]\s*/i, '').replace(/\bSource[s]?\s*[:\-]\s*/ig, '').trim();
-        const lines = sanitized.split(/\r?\n/).map(l=>l.trim());
-        const filtered = lines.filter(l => {
-          if (!l) return false; // drop empty lines at end
-          // Title — /path
-          if (/^[^\n\r]+\s+—\s+\/?[\w\-\/\.]+$/i.test(l)) return false;
-          // bare path starting with /
-          if (/^\/[\w\-\/\.]+$/i.test(l)) return false;
-          // bare id like 0282-swap-resync or 0244-portable-cull-...
-          if (/^[0-9]{3,4}[-\w]+(?:\.md)?$/i.test(l)) return false;
-          return true;
-        });
-        sanitized = filtered.join('\n').trim();
+        const answerText = String(r.answer || '').trim();
+        const sanitized = answerText.replace(/^Answer\s*[:\-]\s*/i, '').replace(/\nSource[s]?:[\s\S]*$/i, '').trim();
         let html = '<div class="ub-ai-answer">' + escapeHtml(sanitized) + '</div>';
-        if (Array.isArray(r.evidence) && r.evidence.length) {
+        // render sources (if any) as clickable links
+        if (r.evidence && Array.isArray(r.evidence) && r.evidence.length) {
           html += '<hr class="ub-ai-hr"/>';
-          html += '<div class="ub-ai-sources"><ul>';
+          html += '<div class="ub-ai-sources"><strong>Sources:</strong><ul>';
           for (const e of r.evidence) {
-            // prefer friendly title from index; fall back to id/path
-            const name = (e && e.title) ? e.title : (e.id || e.file || e.path || 'source');
-            const href = (e && (e.url || e.path)) || (e.file ? ('/docs/' + e.file) : '#');
+            const name = e.title || e.id || e.file || e.path || 'source';
+            // prefer site path (published URL) if available, otherwise link to repo docs path
+            const href = (e.path && String(e.path)) || (e.file ? ('/docs/' + String(e.file)) : String(e.id || '#'));
             html += '<li><a href="' + escapeHtml(href) + '" target="_blank" rel="noopener noreferrer">' + escapeHtml(name) + '</a></li>';
           }
           html += '</ul></div>';
@@ -84,16 +72,16 @@
         return;
       }
 
-      // If no answer, prefer debug payload -> evidence -> fallback 'silence'
+      // If no synthesized answer, show debug or evidence in user-friendly form
       if (r.debug) {
         w.out.textContent = JSON.stringify(r.debug, null, 2);
         return;
       }
-      if (Array.isArray(r.evidence) && r.evidence.length) {
-        let html = '<div class="ub-ai-sources"><ul>';
+      if (r.evidence && Array.isArray(r.evidence) && r.evidence.length) {
+        let html = '<div class="ub-ai-sources"><strong>Sources:</strong><ul>';
         for (const e of r.evidence) {
           const name = e.title || e.id || e.file || e.path || 'source';
-          const href = e.url || e.path || (e.file ? ('/docs/' + e.file) : '#');
+          const href = (e.path && String(e.path)) || (e.file ? ('/docs/' + String(e.file)) : String(e.id || '#'));
           html += '<li><a href="' + escapeHtml(href) + '" target="_blank" rel="noopener noreferrer">' + escapeHtml(name) + '</a></li>';
         }
         html += '</ul></div>';
@@ -101,7 +89,7 @@
         return;
       }
 
-      w.out.textContent = 'Silence echoes back...';
+      w.out.textContent = 'silence';
     });
   });
 

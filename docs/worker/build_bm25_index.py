@@ -48,26 +48,6 @@ def extract_text(md_path: Path) -> str:
     return text.strip()
 
 
-def extract_title(md_path: Path) -> str:
-    """Return the first Markdown heading (H1 or H2) found in the file, or
-    None if none found. This gives a human-friendly title instead of the
-    filename stem."""
-    try:
-        raw = md_path.read_text(encoding='utf-8')
-    except Exception:
-        return None
-    # strip YAML frontmatter first
-    raw = re.sub(r'^---[\s\S]*?---\s*', '', raw)
-    # look for an H1 or H2 at line start
-    m = re.search(r'^[ \t]*#\s+(.+)$', raw, flags=re.MULTILINE)
-    if m:
-        return m.group(1).strip()
-    m2 = re.search(r'^[ \t]*##\s+(.+)$', raw, flags=re.MULTILINE)
-    if m2:
-        return m2.group(1).strip()
-    return None
-
-
 def chunk_text_words(text: str, size: int = CHUNK_SIZE_WORDS, overlap: int = CHUNK_OVERLAP_WORDS):
     words = text.split()
     if not words:
@@ -91,7 +71,7 @@ def walk_docs(chunk: bool = True):
         # skip hidden or dot folders
         if rel.parts and str(rel.parts[0]).startswith('.'):
             continue
-        title = extract_title(p) or rel.stem
+        title = rel.stem
         text = extract_text(p)
         if not text:
             continue
