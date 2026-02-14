@@ -22,7 +22,7 @@ Credit to BigDUCCO for setup!
 
 ## Notes
 ---
-May 12, 2023; June 12, 2023
+12 May 2023; 12 June 2023
 
 ## Resources
 ---

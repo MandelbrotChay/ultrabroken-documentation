@@ -9,7 +9,7 @@ title: "Stick Desync Clip"
 ---
 By dropping a shield just before mounting a steering stick that is fuse entangled to it, we can clip through floors easily.
 
-_NaN Gogh, DisguisedMoth - 1 July 2023_
+_NaN Gogh, DisguisedMoth - 1 July 2023, 28 July 2023_
 
 ## Instructions
 ---

@@ -21,7 +21,7 @@ _Rediscovered by robuxy2nd and originally found by Physioninja - 1 June 2023_
 
 ## Notes
 ---
-September 12, 2023; June 1, 2023
+12 September 2023; 01 June 2023
 
 ## Resources
 ---

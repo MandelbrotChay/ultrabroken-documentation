@@ -26,7 +26,7 @@ Only works in some caves!
 The glitch may be not exclusive to bubbulfrogs (just a theory)
 Needs to be tested more, and see if it can be consistently replicated.
 
-May 21, 2023(?)
+21 May 2023(?)
 
 ## Resources
 ---

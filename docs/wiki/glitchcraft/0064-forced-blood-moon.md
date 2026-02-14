@@ -20,12 +20,12 @@ _1789(@W0ERYySQgZyGOY3), simonfirefighter, Maxmasher, Flash, acaepius - 28 May 2
 
 ## Notes
 ---
-Another way of performing a Forced Blood Moon is from using GAS to store overworld projectiles with a hydrant for a longer period of time in recall (about a minute, unsure if Zuggle Overload is needed or just staying in bullet time until you hit the ground).
+Another way of performing a Forced Blood Moon is from using GAS to store overworld projectiles with a hydrant for a longer period of time in recall (about a minute, unsure if Zuggle Overload is needed or just staying in bullet time until you hit the ground). 
 
 A Forced blood moon can also happen by causing enough electric particles to water.
 Bullet time is not always needed and other gems could work too. There are many way of achieving a forced blood moons. 1.0.0 often requires different setups.
 
-May 28, 2023, June 16, 2023, & June 27, 2023
+28 May 2023, 16 June 2023, & 27 June 2023
 
 ## Resources
 ---
