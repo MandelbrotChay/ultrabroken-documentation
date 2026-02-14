@@ -42,7 +42,8 @@
   function initAIWidget(){
     try{
       const placeholder = document.querySelector('#ai-search-root');
-      if (!placeholder) return;
+      // Toggle centered rune class based on presence of the AI page placeholder
+      if (!placeholder) { document.body.classList.remove('ultrabroken-center-rune'); return; }
       // Avoid double-init on the same placeholder
       if (placeholder.dataset.aiInitialized === '1') return;
       // If an instance already exists inside, mark initialized and skip
@@ -66,6 +67,8 @@
       w.btn.addEventListener('click', handleAsk);
       // also allow Enter on the input to trigger ask
       w.input.addEventListener('keydown', (ev)=>{ if (ev.key === 'Enter') handleAsk(); });
+      // Keep rune centered while on the AI page
+      try{ document.body.classList.add('ultrabroken-center-rune'); }catch(e){}
       placeholder.dataset.aiInitialized = '1';
     }catch(e){ console.debug('initAIWidget error', e); }
   }
