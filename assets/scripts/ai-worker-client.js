@@ -72,12 +72,16 @@
       w.btn.addEventListener('click', handleAsk);
       // also allow Enter on the input to trigger ask
       w.input.addEventListener('keydown', (ev)=>{ if (ev.key === 'Enter') handleAsk(); });
-      // Show placeholder only while the field is focused. Append a pipe
-      // marker for a typing cue while focused.
+      // Show placeholder only when the field is NOT focused (and empty).
+      // When focused we hide the placeholder so caret/typing is clear.
       try{
         const stored = w.input.getAttribute('data-ub-placeholder') || '';
-        w.input.addEventListener('focus', ()=>{ if (!w.input.value) w.input.placeholder = stored + ' |'; });
-        w.input.addEventListener('blur', ()=>{ w.input.placeholder = ''; });
+        // Hide placeholder while editing
+        w.input.addEventListener('focus', ()=>{ w.input.placeholder = ''; });
+        // Restore placeholder when blurred and empty
+        w.input.addEventListener('blur', ()=>{ if (!w.input.value) w.input.placeholder = stored; });
+        // Initial state: if not focused and empty, show placeholder
+        if (document.activeElement !== w.input && !w.input.value) w.input.placeholder = stored;
       }catch(e){}
       // Wire clear button and replace Ask text with an SVG ask-icon that only appears when input has text
       try{
