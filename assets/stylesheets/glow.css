@@ -348,6 +348,18 @@ body.ultrabroken-center-rune::after {
   body::after { animation: none !important; }
 }
 
+/* On narrow viewports the rune can be occluded by the footer. Raise it
+   vertically (only on small screens) so it sits above the footer without
+   altering its size or z-index. */
+@media (max-width: 640px) {
+  body::after {
+    bottom: 12vmin; /* move rune upward on the y axis */
+  }
+  body.ultrabroken-center-rune::after {
+    bottom: 12vmin; /* same adjustment when centered */
+  }
+}
+
 /* Floating particles animation */
 @keyframes float-particle-1 {
   0% { transform: translateY(0) translateX(0); opacity: 0; }
