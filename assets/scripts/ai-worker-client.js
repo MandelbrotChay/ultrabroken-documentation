@@ -78,7 +78,7 @@
           // set image for the clear button (published site path)
           const clearImg = document.createElement('img');
           clearImg.src = '/ultrabroken-documentation/assets/images/close-icon.svg';
-          clearImg.alt = '';
+          clearImg.alt = 'Clear';
           clearImg.style.width = 'auto';
           clearImg.style.height = 'auto';
           clearImg.style.display = 'block';

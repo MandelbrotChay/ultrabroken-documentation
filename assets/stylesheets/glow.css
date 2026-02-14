@@ -778,20 +778,17 @@ li.task-list-item a, li.task-list a {
 
 /* Icon-only Ask button variant: remove filled pill and center the icon */
 .ub-ai-ask {
-  position:absolute;
-  right:0.3rem;
-  top:50%;
-  transform:translateY(-50%);
-  width:1.6rem;
-  height:1.6rem;
-  padding:0.15rem;
-  border-radius:0.2rem;
-  border:none;
-  background: transparent;
-  display:none;
-  cursor:pointer;
+  background: transparent !important;
+  padding: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 0 !important;
+  margin-left: 0.4rem; /* keep spacing consistent with layout */
+  width: 1.6rem !important; /* match clear button */
+  height: 1.6rem !important; /* match clear button */
 }
-.ub-ai-ask img{ width:100%; height:100%; display:block; }
+.ub-ai-ask img { display: block; width: 100%; height: 100%; object-fit: contain; }
 
 /* DEBUG: temporarily force visible outline and minimum size to diagnose
    invisible/zero-size AI control icons. Remove after debugging. */
