@@ -48,95 +48,19 @@
         w.out.textContent = 'Error: ' + r.error;
         return;
       }
-
-      const escapeHtml = (s) => String(s||'').replace(/[&<>\"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":"&#39;"})[c]);
-
-      // Render an answer if present (sanitize and strip model-inserted labels)
       if (r.answer) {
-        const answerText = String(r.answer || '').trim();
-        // remove leading label
-        let sanitized = answerText.replace(/^Answer\s*[:\-]\s*/i, '').trim();
-
-        // detect inline source pairs like "Title — /path/to/page" anywhere in the
-        // answer (including semicolon-separated lists) and build links from them.
-        // This captures multiple pairs even when they're on one line separated by ';'.
-        const sourcePairs = [];
-        // match: title <dash(s)> path (path is non-whitespace, may start with '/')
-        const pairRe = /([^;\n\r]+?)\s+[\-\u2013\u2014\u2015]+\s*(\/?\S+)(?:\s*(?:;|$))/ig;
-        let m;
-        while ((m = pairRe.exec(sanitized)) !== null) {
-          const title = (m[1] || '').trim();
-          const path = (m[2] || '').trim();
-          if (title && path) sourcePairs.push({ title, path });
-        }
-
-        // remove 'Source:' labels and strip out the matched source substrings
-        sanitized = sanitized.replace(/\bSource[s]?\s*[:\-]\s*/ig, '').trim();
-        if (sourcePairs.length > 0) {
-          sanitized = sanitized.replace(pairRe, '');
-          // also remove stray semicolons or trailing separators left behind
-          sanitized = sanitized.replace(/[;\s]+$/,'').trim();
-        }
-
-        let html = '<div class="ub-ai-answer">' + escapeHtml(sanitized) + '</div>';
-
-        // If we found inline source pairs, ONLY use those to build clickable links
-        if (sourcePairs.length > 0) {
-          html += '<hr class="ub-ai-hr"/>';
-          html += '<div class="ub-ai-sources"><ul>';
-          const normalizeMd = (h) => {
-            if (!h) return h;
-            try{ return String(h).replace(/\.md$/i, '/'); }catch(e){ return h; }
-          };
-          for (const s of sourcePairs) {
-            const name = s.title || s.path || 'source';
-            const pRaw = String(s.path || '').trim();
-            // remove trailing .md from the path and ensure leading '/'
-            const p = normalizeMd(pRaw);
-            const base = 'https://nan-gogh.github.io/ultrabroken-documentation/wiki';
-            const rest = p.startsWith('/') ? p : ('/' + p);
-            const href = base + rest;
-            html += '<li><a href="' + escapeHtml(href) + '" target="_blank" rel="noopener noreferrer">' + escapeHtml(name) + '</a></li>';
-          }
-          html += '</ul></div>';
-          w.out.innerHTML = html;
-          return;
-        }
-
-        // Otherwise fall back to evidence provided by the Worker
-        if (r.evidence && Array.isArray(r.evidence) && r.evidence.length) {
-          html += '<hr class="ub-ai-hr"/>';
-          html += '<div class="ub-ai-sources"><strong>Sources:</strong><ul>';
-          for (const e of r.evidence) {
-            const name = e.title || e.id || e.file || e.path || 'source';
-            let href = (e.url && String(e.url)) || (e.path && String(e.path)) || (e.file ? ('/docs/' + String(e.file)) : String(e.id || '#'));
-            // normalize .md suffix to a trailing slash for MkDocs
-            try{ href = String(href).replace(/\.md$/i, '/'); }catch(e){ }
-            html += '<li><a href="' + escapeHtml(href) + '" target="_blank" rel="noopener noreferrer">' + escapeHtml(name) + '</a></li>';
-          }
-          html += '</ul></div>';
-        }
-        w.out.innerHTML = html;
+        w.out.textContent = r.answer;
         return;
       }
-
-      // If no synthesized answer, show debug or evidence in user-friendly form
+      // If no answer, prefer debug payload -> evidence -> fallback 'silence'
       if (r.debug) {
         w.out.textContent = JSON.stringify(r.debug, null, 2);
         return;
       }
-      if (r.evidence && Array.isArray(r.evidence) && r.evidence.length) {
-        let html = '<div class="ub-ai-sources"><strong>Sources:</strong><ul>';
-        for (const e of r.evidence) {
-          const name = e.title || e.id || e.file || e.path || 'source';
-          const href = (e.path && String(e.path)) || (e.file ? ('/docs/' + String(e.file)) : String(e.id || '#'));
-          html += '<li><a href="' + escapeHtml(href) + '" target="_blank" rel="noopener noreferrer">' + escapeHtml(name) + '</a></li>';
-        }
-        html += '</ul></div>';
-        w.out.innerHTML = html;
+      if (r.evidence) {
+        w.out.textContent = JSON.stringify(r.evidence, null, 2);
         return;
       }
-
       w.out.textContent = 'silence';
     });
   });
