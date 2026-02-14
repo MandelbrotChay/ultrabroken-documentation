@@ -78,12 +78,39 @@
           const img = document.createElement('img');
           img.src = '/ultrabroken-documentation/assets/images/close-icon.svg';
           img.alt = '';
-          img.style.width = '1rem'; img.style.height = '1rem';
+          img.style.width = 'auto';
+          img.style.height = 'auto';
+          img.style.display = 'block';
+          img.style.objectFit = 'contain';
+          // ensure clear button centers its contents so the icon lines up with the Ask button
+          w.clear.style.display = 'none';
+          w.clear.style.alignItems = 'center';
+          w.clear.style.justifyContent = 'center';
+          w.clear.style.padding = '0';
           w.clear.appendChild(img);
           w.clear.addEventListener('click', ()=>{ w.input.value = ''; w.out.textContent = ''; w.input.focus(); w.clear.style.display = 'none'; });
-          w.input.addEventListener('input', ()=>{ w.clear.style.display = w.input.value.trim() ? 'block' : 'none'; });
+          w.input.addEventListener('input', ()=>{ w.clear.style.display = w.input.value.trim() ? 'flex' : 'none'; });
+          // size the SVG so its visual height matches the Ask button height
+          try{
+            const resizeImg = ()=>{
+              try{
+                const btnRect = w.btn.getBoundingClientRect();
+                if (btnRect && btnRect.height > 0) {
+                  // use the button's rendered height (including padding)
+                  img.style.height = Math.max(12, Math.round(btnRect.height)) + 'px';
+                  img.style.width = 'auto';
+                } else {
+                  const fs = parseFloat(getComputedStyle(w.btn).fontSize) || 16;
+                  img.style.height = Math.round(fs) + 'px';
+                }
+              }catch(e){}
+            };
+            // initial sizing and keep in sync with resizes
+            resizeImg();
+            window.addEventListener('resize', resizeImg);
+          }catch(e){ /* ignore sizing failures */ }
           // initial state
-          w.clear.style.display = w.input.value.trim() ? 'block' : 'none';
+          w.clear.style.display = w.input.value.trim() ? 'flex' : 'none';
         }
       }catch(e){ /* ignore */ }
       // Keep rune centered while on the AI page
