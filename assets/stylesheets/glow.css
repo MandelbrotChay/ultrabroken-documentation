@@ -721,19 +721,19 @@ li.task-list-item a, li.task-list a {
   --ai-bg: rgba(0,0,0,0.02);
 }
 
-.ub-ai-ask {
-  background: transparent !important;
-  /* match clear button internals so images render identical sizes */
-  padding: 0.15rem !important; /* same as .ub-ai-clear */
-  box-sizing: border-box !important;
-  display: inline-flex; /* allow JS to toggle display via inline style */
-  align-items: center !important;
-  justify-content: center !important;
-  border-radius: 0.2rem !important; /* match .ub-ai-clear */
-  margin-left: 0.12rem; /* reduce distance to input (was 0.4rem) */
-  width: 1.6rem !important; /* match clear button */
-  height: 1.6rem !important; /* match clear button */
-}
+.ub-ai-root {
+  position: relative;
+  z-index: 3; /* below header (4) */
+  margin: 0.5rem 0;
+
+/* Input wrapper and custom clear button */
+.ub-ai-input-wrap{ display:block; }
+.ub-ai-input{ width:100%; padding-right:2.2rem; box-sizing:border-box; }
+.ub-ai-clear{
+  position:absolute;
+  right:0.3rem;
+  top:50%;
+  transform:translateY(-50%);
   width:1.6rem;
   height:1.6rem;
   padding:0.15rem;

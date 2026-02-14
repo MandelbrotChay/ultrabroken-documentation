@@ -16,8 +16,8 @@
     const row = el('div', { style: 'display:flex; gap:0.4rem; align-items:center;' });
     const inputWrap = el('div', { class: 'ub-ai-input-wrap', style: 'position:relative; flex:1;' });
     const input = el('input', { type: 'search', placeholder: 'Will it share wisdom or madness?', class: 'ub-ai-input' });
-    const clearBtn = el('button', { type: 'button', class: 'ub-ai-clear', 'aria-label': 'Clear search', style: 'display:none;' }, '');
-    const askBtn = el('button', { type: 'button', class: 'ub-ai-ask', 'aria-label': 'Ask', style: 'display:none;' }, '');
+    const clearBtn = el('button', { type: 'button', class: 'ub-ai-clear', 'aria-label': 'Clear search' }, '');
+    const askBtn = el('button', { type: 'button', class: 'ub-ai-ask', 'aria-label': 'Ask' }, '');
     const out = el('pre', { class: 'ub-ai-out' }, '');
     inputWrap.appendChild(input);
     inputWrap.appendChild(clearBtn);
@@ -89,12 +89,7 @@
           w.clear.style.justifyContent = 'center';
           w.clear.style.padding = '0';
           w.clear.appendChild(clearImg);
-          w.clear.addEventListener('click', ()=>{ 
-            w.input.value = ''; 
-            w.out.textContent = ''; 
-            w.input.focus(); 
-            try { if (typeof updateVisibility === 'function') updateVisibility(); else { w.clear.style.display = 'none'; w.btn.style.display = 'none'; } } catch(e){ w.clear.style.display = 'none'; w.btn.style.display = 'none'; }
-          });
+          w.clear.addEventListener('click', ()=>{ w.input.value = ''; w.out.textContent = ''; w.input.focus(); w.clear.style.display = 'none'; });
         }
 
         // Replace textual Ask label with an SVG inside the Ask button
