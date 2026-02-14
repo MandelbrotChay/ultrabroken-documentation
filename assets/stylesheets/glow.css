@@ -717,7 +717,7 @@ li.task-list-item a, li.task-list a {
   background: transparent; /* remove bounding box */
   font-family: inherit;
   position: relative; /* ensure it creates a stacking context above background rune */
-  z-index: 10;
+  z-index: 3; /* keep below header (z-index:4) but above rune (z-index:0) */
 }
 
 .ub-ai-input {
