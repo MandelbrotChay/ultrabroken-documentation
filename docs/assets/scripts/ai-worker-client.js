@@ -53,14 +53,29 @@
 
       // If answer present, show it and list sources as clickable links (use evidence[].url)
       if (r.answer) {
-        const sanitized = String(r.answer || '').replace(/^Answer\s*[:\-]\s*/i, '').replace(/\bSource[s]?\s*[:\-]\s*/ig, '').trim();
+        // remove literal labels and any trailing plain-text source lines like
+        // "Title — /path" or bare ids/paths that models sometimes append
+        let sanitized = String(r.answer || '').replace(/^Answer\s*[:\-]\s*/i, '').replace(/\bSource[s]?\s*[:\-]\s*/ig, '').trim();
+        const lines = sanitized.split(/\r?\n/).map(l=>l.trim());
+        const filtered = lines.filter(l => {
+          if (!l) return false; // drop empty lines at end
+          // Title — /path
+          if (/^[^\n\r]+\s+—\s+\/?[\w\-\/\.]+$/i.test(l)) return false;
+          // bare path starting with /
+          if (/^\/[\w\-\/\.]+$/i.test(l)) return false;
+          // bare id like 0282-swap-resync or 0244-portable-cull-...
+          if (/^[0-9]{3,4}[-\w]+(?:\.md)?$/i.test(l)) return false;
+          return true;
+        });
+        sanitized = filtered.join('\n').trim();
         let html = '<div class="ub-ai-answer">' + escapeHtml(sanitized) + '</div>';
         if (Array.isArray(r.evidence) && r.evidence.length) {
           html += '<hr class="ub-ai-hr"/>';
           html += '<div class="ub-ai-sources"><ul>';
           for (const e of r.evidence) {
-            const name = e.title || e.id || e.file || e.path || 'source';
-            const href = e.url || e.path || (e.file ? ('/docs/' + e.file) : '#');
+            // prefer friendly title from index; fall back to id/path
+            const name = (e && e.title) ? e.title : (e.id || e.file || e.path || 'source');
+            const href = (e && (e.url || e.path)) || (e.file ? ('/docs/' + e.file) : '#');
             html += '<li><a href="' + escapeHtml(href) + '" target="_blank" rel="noopener noreferrer">' + escapeHtml(name) + '</a></li>';
           }
           html += '</ul></div>';
@@ -86,7 +101,7 @@
         return;
       }
 
-      w.out.textContent = 'silence';
+      w.out.textContent = 'Silence echoes back...';
     });
   });
 
