@@ -140,77 +140,145 @@ label.md-header__button[for^="__palette_"] {
 label.md-header__button[for="__drawer"]:hover,
 label.md-header__button[for="__search"]:hover,
 label.md-header__button[for^="__palette_"]:hover {
-  /* AI Search UI (merged from ai-search.css) */
-  /* Scoped AI search styles — uses project fonts/colors from this file */
-  :root {
-    --ai-bg: rgba(0,0,0,0.02);
+  /* Subtle darken on hover to match default return-arrow behavior */
+  filter: brightness(0.9);
+}
+
+/* Search bar and input styling - bright teal, no glow */
+.md-search__input {
+  color: var(--teal-glow) !important;
+  caret-color: var(--teal-glow) !important;
+  border-color: rgba(0,240,194,0.5) !important;
+  font-family: 'Texturina', Georgia, 'Times New Roman', serif !important;
+}
+.md-search__input::placeholder {
+  color: rgba(0,240,194,0.5) !important;
+  font-family: 'Texturina', Georgia, 'Times New Roman', serif !important;
+}
+.md-search__input:focus {
+  border-color: var(--teal-glow) !important;
+}
+
+/* Search icon - bright teal, no glow */
+.md-search__icon {
+  color: var(--teal-glow) !important;
+}
+
+/* Disable Material theme search & mobile-nav overlay effects (blur + darkening) */
+[data-md-toggle="search"]:checked ~ .md-header .md-search__overlay {
+  opacity: 0 !important;
+}
+[data-md-toggle="search"]:checked ~ .md-container {
+  filter: none !important;
+  -webkit-filter: none !important;
+}
+.md-search__overlay {
+  background: transparent !important;
+  opacity: 0 !important;
+}
+/* Mobile drawer overlay */
+.md-overlay {
+  opacity: 0 !important;
+  background: transparent !important;
+}
+
+/* Accent headings and links */
+a {
+  color: var(--teal-dark);
+}
+a:hover {
+  color: var(--teal-glow) !important;
+  text-shadow: 0 0 10px rgba(0,240,194,0.9);
+}
+
+/* Support editor-friendly `search:` links written as Markdown `[Label](search:Term)`.
+   Intercepted by `search-link.js`. Styled to match other inline links but without
+   an underline in idle state to match the search-link button style. */
+a[href^="search:"] {
+  color: #00ccb8; /* match Resources link color (0,204,184) */
+  text-decoration: none;
+  transition: color .18s ease, text-shadow .18s ease;
+}
+a[href^="search:"]:hover {
+  color: var(--teal-glow) !important;
+  text-shadow: 0 0 10px rgba(0,240,194,0.9);
+}
+a[href^="search:"]:focus {
+  outline: 2px solid var(--teal-glow);
+  outline-offset: 2px;
+}
+
+/* Make editor search-link buttons look and behave visually like anchors.
+   Keep them as buttons (accessible semantics) but remove button chrome so
+   they match regular `a` links used across the site. */
+button.search-link,
+.link-button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  color: #00ccb8; /* match Resources link color (0,204,184) */
+  text-decoration: none; /* no underline in idle state */
+  cursor: pointer;
+  font: inherit;
+  transition: color .18s ease, text-shadow .18s ease;
+}
+button.search-link:hover,
+.link-button:hover {
+  color: var(--teal-glow) !important;
+  text-shadow: 0 0 10px rgba(0,240,194,0.9);
+}
+button.search-link:focus,
+.link-button:focus {
+  outline: 2px solid var(--teal-glow);
+  outline-offset: 2px;
+}
+
+.md-content h1, .md-content h2, .md-content h3 {
+  text-shadow: 0 0 6px rgba(0,240,194,0.06);
+}
+
+/* Use teal accent for top-level headings only (h1) */
+.md-content h1, h1 {
+  color: var(--teal-glow) !important;
+}
+
+/* Using default MkDocs Material permalink styles (no custom permalink overrides) */
+
+/* Sidebar section headers - override ellipsis clipping */
+.md-nav__title {
+  overflow: visible !important;
+}
+.md-nav__title .md-ellipsis {
+  overflow: visible !important;
+  text-overflow: clip !important;
+}
+
+/* Ensure nav titles also use Texturina for consistency */
+.md-nav__title {
+  font-family: 'Texturina', Georgia, 'Times New Roman', serif !important;
+}
+
+/* Hide redundant sidebar header on mobile (drawer already has sticky page header) */
+/* Only hide the PRIMARY nav title, not nested ones (which contain back buttons) */
+@media (max-width: 76.25em) {
+  .md-nav--primary > .md-nav__title {
+    font-size: 0; /* Hide original text content */
   }
-
-  .ub-ai-root {
-    position: relative;
-    z-index: 3; /* below header (4) */
-    margin: 0.5rem 0;
+  .md-nav--primary > .md-nav__title::before {
+    content: "Navigation";
+    font-size: 1rem; /* Restore readable font size */
+    display: inline-block;
+    color: var(--teal-glow) !important;
   }
+}
 
-  /* Input wrapper and custom clear button */
-  .ub-ai-input-wrap{ display:block; }
-  .ub-ai-input{ width:100%; padding-right:2.2rem; box-sizing:border-box; }
-  .ub-ai-clear{
-    position:absolute;
-    right:0.3rem;
-    top:50%;
-    transform:translateY(-50%);
-    width:1.6rem;
-    height:1.6rem;
-    padding:0.15rem;
-    border:none;
-    background: transparent;
-    display:none; /* JS controls visibility */
-    cursor:pointer;
-  }
-  .ub-ai-clear img{ width:100%; height:100%; display:block; object-fit: contain;}
+/* Sidebar logo - no state effects */
 
-  /* Hide native browser clear/reveal controls for search inputs */
-  .ub-ai-input{ -webkit-appearance: textfield; appearance: textfield; }
-  .ub-ai-input::-ms-clear,
-  .ub-ai-input::-ms-reveal{ display:none; width:0; height:0; }
-  .ub-ai-input::-webkit-search-decoration,
-  .ub-ai-input::-webkit-search-cancel-button,
-  .ub-ai-input::-webkit-search-results-button,
-  .ub-ai-input::-webkit-search-results-decoration{ -webkit-appearance:none; appearance:none; display:none; }
-  .ub-ai-input { padding: 0.25rem 0; box-sizing: border-box; background: transparent; font-family: inherit; position: relative; z-index: 3; }
-
-  .ub-ai-input {
-    width: 100%;
-    padding: 0.4rem 0;
-    margin-bottom: 0;
-    border: none; /* remove bottom border to avoid double-line */
-    background: transparent;
-    color: var(--teal-glow);
-    caret-color: var(--teal-glow);
-    font-family: inherit;
-    font-size: 1rem;
-    box-sizing: border-box;
-  }
-
-  .ub-ai-input::placeholder { color: rgba(0,240,194,0.45); }
-
-  /* Icon-only Ask button variant: remove filled pill and center the icon */
-  .ub-ai-ask {
-    background: transparent !important;
-    /* match clear button internals so images render identical sizes */
-    padding: 0.15rem !important; /* same as .ub-ai-clear */
-    box-sizing: border-box !important;
-    display: inline-flex; /* allow JS to toggle inline style.display */
-    align-items: center !important;
-    justify-content: center !important;
-    border-radius: 0.2rem !important; /* match .ub-ai-clear */
-    margin-left: 0.12rem; /* reduce distance to input (was 0.4rem) */
-    width: 1.6rem !important; /* match clear button */
-    height: 1.6rem !important; /* match clear button */
-    cursor:pointer;
-  }
-  .ub-ai-ask img { display: block; width: 100%; height: 100%; object-fit: contain; }
+/* Large, barely-visible rune in the lower-right corner */
+body::after {
+  content: "";
+  position: fixed;
   right: 2vmin;
   bottom: 2vmin;
   width: 48vmin;
@@ -653,19 +721,19 @@ li.task-list-item a, li.task-list a {
   --ai-bg: rgba(0,0,0,0.02);
 }
 
-.ub-ai-ask {
-  background: transparent !important;
-  /* match clear button internals so images render identical sizes */
-  padding: 0.15rem !important; /* same as .ub-ai-clear */
-  box-sizing: border-box !important;
-  display: inline-flex; /* remove !important so JS can toggle `style.display` */
-  align-items: center !important;
-  justify-content: center !important;
-  border-radius: 0.2rem !important; /* match .ub-ai-clear */
-  margin-left: 0.12rem; /* reduce distance to input (was 0.4rem) */
-  width: 1.6rem !important; /* match clear button */
-  height: 1.6rem !important; /* match clear button */
-}
+.ub-ai-root {
+  position: relative;
+  z-index: 3; /* below header (4) */
+  margin: 0.5rem 0;
+
+/* Input wrapper and custom clear button */
+.ub-ai-input-wrap{ display:block; }
+.ub-ai-input{ width:100%; padding-right:2.2rem; box-sizing:border-box; }
+.ub-ai-clear{
+  position:absolute;
+  right:0.3rem;
+  top:50%;
+  transform:translateY(-50%);
   width:1.6rem;
   height:1.6rem;
   padding:0.15rem;
@@ -674,7 +742,8 @@ li.task-list-item a, li.task-list a {
   display:none;
   cursor:pointer;
 }
-.ub-ai-clear img{ width:100%; height:100%; display:block; object-fit: contain;}
+/* Icon images inside AI controls should fill their buttons */
+.ub-ai-clear img, .ub-ai-ask img { width:100%; height:100%; display:block; object-fit: contain; }
 
 /* Hide native browser clear/reveal controls for search inputs */
 .ub-ai-input{ -webkit-appearance: textfield; appearance: textfield; }
@@ -707,22 +776,22 @@ li.task-list-item a, li.task-list a {
 
 .ub-ai-input::placeholder { color: rgba(0,240,194,0.45); }
 
-/* Icon-only Ask button variant: remove filled pill and center the icon */
+/* Icon-only Ask button variant: harmonized with the clear button so
+   both can be shown/hidden by JS reliably. Start hidden; JS toggles
+   `display` to `flex` when the input has content. */
 .ub-ai-ask {
-  background: transparent !important;
-  /* match clear button internals so images render identical sizes */
-  padding: 0.15rem !important; /* same as .ub-ai-clear */
-  box-sizing: border-box !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  border-radius: 0.2rem !important; /* match .ub-ai-clear */
-  /*margin-left: 0.12rem;  reduce distance to input (was 0.4rem) */
-  width: 1.6rem !important; /* match clear button */
-  height: 1.6rem !important; /* match clear button */
-  cursor:pointer;
+  background: transparent;
+  padding: 0.15rem;
+  box-sizing: border-box;
+  display: none; /* initial state - mirror .ub-ai-clear */
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.2rem;
+  width: 1.6rem;
+  height: 1.6rem;
+  border: none;
+  cursor: pointer;
 }
-.ub-ai-ask img { display: block; width: 100%; height: 100%; object-fit: contain; }
 
 /* DEBUG: temporarily force visible outline and minimum size to diagnose
    invisible/zero-size AI control icons. Remove after debugging. 
