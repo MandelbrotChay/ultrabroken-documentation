@@ -159,6 +159,15 @@ export default {
       if (evidences.length >= 3) break;
     }
 
+    // Prepare a stable evidence list (title + short preview) to return with answers
+    // Use full `text` for model context but provide a small `text_preview` for UI.
+    const evidenceList = evidences.slice(0,3).map(s=>({
+      id: s.item.id||s.item.path,
+      similarity: s.score,
+      title: s.item.title,
+      text_preview: (s.item.text || '').split('\n').slice(0,2).join(' ').slice(0,200)
+    }));
+
     // If debug requested, return top candidate scores to help tune threshold.
     if (body && body.debug) {
       const dbg = topCandidates.map(s=>({ id: s.item.id||s.item.path, score: s.score, title: s.item.title }));
@@ -256,9 +265,9 @@ export default {
             let parsed = null;
             try{ parsed = JSON.parse(modelText); }catch(e){ parsed = null; }
             if (parsed && parsed.answer) {
-              return new Response(JSON.stringify({ answer: parsed.answer, evidence: evidences.slice(0,3).map(s=>({ id: s.item.id||s.item.path, similarity: s.score })), did_answer: true }), { headers: Object.assign({'Content-Type':'application/json'}, CORS_HEADERS) });
+              return new Response(JSON.stringify({ answer: parsed.answer, evidence: evidenceList, did_answer: true }), { headers: Object.assign({'Content-Type':'application/json'}, CORS_HEADERS) });
             }
-            return new Response(JSON.stringify({ answer: modelText, evidence: evidences.slice(0,3).map(s=>({ id: s.item.id||s.item.path, similarity: s.score })), did_answer: true }), { headers: Object.assign({'Content-Type':'application/json'}, CORS_HEADERS) });
+            return new Response(JSON.stringify({ answer: modelText, evidence: evidenceList, did_answer: true }), { headers: Object.assign({'Content-Type':'application/json'}, CORS_HEADERS) });
           }
           // attach the OpenRouter debug info to the outer scope so it can be returned if we fallthrough
           openrouter_error = openrouter_error || null;
@@ -275,8 +284,8 @@ export default {
     }
     // If OpenRouter is not configured or did not produce a usable answer, return evidence/debug
     // rather than an unconditional silence so the UI can surface the retrieved candidates.
-    // Provide title and a short preview for UI/evidence rendering (prefer `text`)
-    const evidenceList = evidences.slice(0,3).map(s=>({ id: s.item.id||s.item.path, similarity: s.score, title: s.item.title, text_preview: (s.item.text || '').split('\n').slice(0,2).join(' ').slice(0,200) }));
+    // Provide title and a short preview for UI/evidence rendering (prefer `text`).
+    // `evidenceList` was prepared earlier so we can return it with model answers.
     const debugPayload = { query, tokens: qTokens, top: topCandidates.map(s=>({ id: s.item.id||s.item.path, score: s.score, title: s.item.title })), threshold: SIMILARITY_THRESHOLD, index_len: index.length, has_openrouter_key, openrouter_error };
     if (typeof openrouter_debug !== 'undefined' && openrouter_debug) debugPayload.openrouter_debug = openrouter_debug;
     return respondFailure({ answer: null, evidence: evidenceList, did_answer: false, debug: debugPayload });
