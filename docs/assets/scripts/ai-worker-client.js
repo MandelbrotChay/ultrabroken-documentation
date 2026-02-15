@@ -58,6 +58,34 @@
       // If an instance already exists inside, mark initialized and skip
       if (placeholder.querySelector('.ub-ai-root')) { placeholder.dataset.aiInitialized = '1'; return; }
       const w = render(placeholder);
+      // Parse simple source lines from model answer text. Returns array of {title?, path}
+      function parseSourcesFromText(text){
+        const out = [];
+        if (!text || typeof text !== 'string') return out;
+        const lines = text.split(/\r?\n/).map(l=>l.trim()).filter(Boolean);
+        for (const line of lines){
+          // Pattern: Source: Title — /path/to/doc
+          let m = line.match(/^Source:\s*(.+?)\s*[–—-]\s*(\/?\S+)$/i);
+          if (m){
+            out.push({ title: m[1].trim(), path: m[2].startsWith('/') ? m[2] : '/' + m[2].replace(/^\/+/, '') });
+            continue;
+          }
+          // Pattern: direct path or slug like 'overload/index' or '/overload/index'
+          if (/^\/?[A-Za-z0-9_\-\/]+$/.test(line)){
+            const slug = line.replace(/^\/+|\/+$/g,'');
+            out.push({ title: null, path: '/' + slug });
+            continue;
+          }
+          // Fallback: extract any first /path/in/string
+          const p = line.match(/(\/[-A-Za-z0-9_\/\.]+)/);
+          if (p){
+            out.push({ title: null, path: p[1] });
+            continue;
+          }
+        }
+        return out;
+      }
+
       const handleAsk = async ()=>{
         const q = w.input.value.trim(); if (!q) return; w.out.textContent = 'Asking...';
         if (w.evidence) w.evidence.innerHTML = '';
@@ -93,6 +121,24 @@
             });
             if (w.evidence) w.evidence.appendChild(list);
           }
+
+          // Additionally parse any source lines the model included in its answer and render them as links too
+          try{
+            const modelSources = parseSourcesFromText(r.answer);
+            if (modelSources && modelSources.length){
+              // reuse existing list if present, otherwise create
+              let list = w.evidence && w.evidence.querySelector && w.evidence.querySelector('.ub-ai-evidence-list');
+              if (!list) { list = el('ul', { class: 'ub-ai-evidence-list' }, []); if (w.evidence) w.evidence.appendChild(list); }
+              modelSources.forEach(s => {
+                const slug = (s.path||'').replace(/^\/+|\/+$/g,'');
+                const href = base + encodeURI(slug);
+                const text = s.title || slug || s.path;
+                const a = el('a', { href: href, target: '_blank', rel: 'noopener noreferrer' }, text);
+                const li = el('li', {}, a);
+                list.appendChild(li);
+              });
+            }
+          }catch(e){ /* ignore model source parsing errors */ }
         }catch(e){ /* ignore rendering errors */ }
         // If nothing was rendered and there was no answer, show silence
         if (!w.out.textContent && (!r.evidence || !r.evidence.length)) w.out.textContent = 'silence';
