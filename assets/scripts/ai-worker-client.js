@@ -17,11 +17,11 @@
   const SHOW_MODEL_SOURCES = false;
   // Internal flag: controls whether Worker-provided evidence is rendered.
   // Default `false` keeps the UI from showing Worker evidence until enabled.
-  const SHOW_WORKER_EVIDENCE = false;
+  const SHOW_WORKER_EVIDENCE = true;
   // Internal flag: when true, strip model-supplied `Source:` lines from the
   // model answer before displaying it, and ensure the displayed answer does
   // not end with any blank lines. Default `false`.
-  const TRIM_MODEL_SOURCES_FROM_ANSWER = false;
+  const TRIM_MODEL_SOURCES_FROM_ANSWER = true;
 
   function render(container){
     const root = el('div', { class: 'ub-ai-root' });
