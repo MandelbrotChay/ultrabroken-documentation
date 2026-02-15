@@ -28,8 +28,10 @@
     row.appendChild(askBtn);
     root.appendChild(row);
     root.appendChild(out);
+    // append evidence container to the widget so it's accessible via the returned handle
+    root.appendChild(evidenceWrap);
     container.appendChild(root);
-    return { input, btn: askBtn, out, clear: clearBtn };
+    return { input, btn: askBtn, out, clear: clearBtn, evidence: evidenceWrap };
   }
 
   async function askWorker(q){
@@ -58,7 +60,7 @@
       const w = render(placeholder);
       const handleAsk = async ()=>{
         const q = w.input.value.trim(); if (!q) return; w.out.textContent = 'Asking...';
-        evidenceWrap.innerHTML = '';
+        if (w.evidence) w.evidence.innerHTML = '';
         const r = await askWorker(q);
         if (r.error) {
           w.out.textContent = 'Error: ' + r.error;
@@ -89,7 +91,7 @@
               const li = el('li', {}, a);
               list.appendChild(li);
             });
-            evidenceWrap.appendChild(list);
+            if (w.evidence) w.evidence.appendChild(list);
           }
         }catch(e){ /* ignore rendering errors */ }
         // If nothing was rendered and there was no answer, show silence
