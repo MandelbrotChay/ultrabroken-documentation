@@ -18,12 +18,12 @@
   // Internal flag: controls whether Worker-provided evidence is rendered.
   // Default `false` keeps the UI from showing Worker evidence until enabled.
   const SHOW_WORKER_EVIDENCE = false;
-  // Internal flag: when true, separate the model response into its main
-  // answer and a trailing sources section (starting at the first line that
-  // begins with 'Source'). If enabled, the sources section will be parsed
-  // and rendered only when `SHOW_RESPONSE_SOURCES` is true; otherwise the
-  // sources section will be removed from the displayed answer. Default
-  // `false` keeps prior behaviour (no splitting).
+  // Internal flag: controls whether the response's trailing "sources"
+  // block (the text starting at the first line beginning with 'Source')
+  // is shown inline after the main answer. Note: the client ALWAYS splits
+  // the model response into `main` and `sources` (so sources are available
+  // for parsing). `SHOW_RESPONSE_SOURCES` only controls whether the raw
+  // sources block is appended to the displayed answer. Default `false`.
   const SHOW_RESPONSE_SOURCES = false;
 
   function render(container){
