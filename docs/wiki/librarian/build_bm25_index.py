@@ -124,11 +124,17 @@ def walk_docs(chunk: bool = True):
         text = full_text
         if not text:
             continue
-        if rel == Path('index.md'):
+        # Normalize site-relative paths. When indexing the `wiki` subtree
+        # produce paths under `/wiki/...`. Otherwise keep the site root
+        # index at `/`.
+        is_wiki_subtree = (str(DOCS).rstrip('/').endswith('/wiki') or DOCS.name == 'wiki')
+        if rel == Path('index.md') and not is_wiki_subtree:
             path = '/'
         else:
             parts = list(rel.with_suffix('').parts)
-            path = '/' + '/'.join(['ultrabroken-documentation'] + parts) + '/'
+            if is_wiki_subtree and (not parts or parts[0] != 'wiki'):
+                parts = ['wiki'] + parts
+            path = '/' + '/'.join(parts) + '/'
 
         if chunk:
             chunks = chunk_text_words(text)
