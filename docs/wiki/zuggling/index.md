@@ -1,3 +1,7 @@
+---
+title: "Smuggling and Zuggling Overview"
+---
+
 # Smuggling and Zuggling 
 _Basic stub_
 

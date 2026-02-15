@@ -1,3 +1,7 @@
+---
+title: "Slidy Cart aka Wacko Wheels"
+---
+
 # Slidy Cart (Wacko Wheels)
 
 *Discovered by Duncan, optimized by NaN Gogh*

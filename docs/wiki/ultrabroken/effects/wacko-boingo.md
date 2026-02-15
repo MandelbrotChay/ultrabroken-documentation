@@ -1,3 +1,7 @@
+---
+title: "Wacko Boingo aka Ultrabroken Flight"
+---
+
 # Wacko Boingo (Ultrabroken Flight)
 
 *Discovered by Duncan*

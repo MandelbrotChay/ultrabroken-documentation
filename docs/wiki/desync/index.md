@@ -1,3 +1,7 @@
+---
+title: "Desync Overview"
+---
+
 # Desync
 _Basic stub_
 

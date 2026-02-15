@@ -1,3 +1,7 @@
+---
+title: "Ultrabroken Autobuild Standalones"
+---
+
 # Autobuild Standalones
 
 *Discovered by NaN Gogh*

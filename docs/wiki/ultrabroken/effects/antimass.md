@@ -1,3 +1,7 @@
+---
+title: "Ultrabroken Antimass"
+---
+
 # Antimass
 
 *Discovered by Lafoscony*

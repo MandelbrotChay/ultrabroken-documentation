@@ -1,3 +1,7 @@
+---
+title: "Ultrabroken Ghost Smuggle"
+---
+
 # Ghost Smuggle
 
 *Discovered by The_Andromeda, Lafoscony*

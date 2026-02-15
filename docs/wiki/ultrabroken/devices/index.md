@@ -1,3 +1,7 @@
+---
+title: "Ultrabroken Zonai Device Hacks"
+---
+
 # Zonai Device Hacks
 
 *Discovered by various glitch hunters during the Wacko Boingo era and in the aftermath*

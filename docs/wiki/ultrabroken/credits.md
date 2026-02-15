@@ -1,3 +1,7 @@
+---
+title: "Ultrabroken Credits"
+---
+
 # Credits
 
 Ultrabroken has been researched and documented by many dedicated researchers. Thank you to everyone for adding your effort to this legacy!

@@ -1,3 +1,7 @@
+---
+title: "Ultrabroken Remnant Glue"
+---
+
 # Remnant Glue
 
 *Discovered by Duncan*

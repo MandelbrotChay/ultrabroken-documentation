@@ -1,3 +1,7 @@
+---
+title: "Ultrabroken Exceptions"
+---
+
 # Exceptions to Ultrabroken
 
 ## Objects That Refuse to Break

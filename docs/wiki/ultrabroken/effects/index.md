@@ -1,3 +1,7 @@
+---
+title: "Ultrabroken Effects Overview"
+---
+
 # Ultrabroken Effects
 
 While Ultrabroken may seem as simple as a single dialogue, it actually opens up a profound rabbit hole. Within this realm, numerous mind-bending outcomes and effects can be achieved through specific, and at times rather intricate, configurations.

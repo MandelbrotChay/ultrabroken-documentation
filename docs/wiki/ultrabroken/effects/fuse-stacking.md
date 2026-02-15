@@ -1,3 +1,7 @@
+---
+title: "Ultrabroken Fuse Stacking"
+---
+
 # Fuse Stacking
 
 *Discovered by Trli*

@@ -1,3 +1,7 @@
+---
+title: "Ultrabroken Requirements"
+---
+
 # Requirements to Trigger Ultrabroken
 
 Flash successfully pinpointed the precise conditions that trigger the appearance of Zorona and Kairo at Riverside Stable. This specific occurrence provides the sole opportunity for them to execute Ultrabroken. Once it is set up, there are ways to conserve the moment in time forever.

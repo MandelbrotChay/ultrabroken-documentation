@@ -1,3 +1,7 @@
+---
+title: "Ultrabroken Glue Lock"
+---
+
 # Glue Lock
 
 *Discovered by NaN Gogh*

@@ -1,3 +1,7 @@
+---
+title: "Fuse Entanglement Overview"
+---
+
 # Fuse Entanglement
 _Basic stub_
 

@@ -1,3 +1,7 @@
+---
+title: "Ultrabroken Transmigration"
+---
+
 # Transmigration
 
 *Discovered by NaN Gogh*

@@ -1,3 +1,7 @@
+---
+title: "Ultrabroken Ouija Entanglement"
+---
+
 # Ouija Entanglement
 
 *Discovered by NaN Gogh*

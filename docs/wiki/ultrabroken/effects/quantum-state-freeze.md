@@ -1,3 +1,7 @@
+---
+title: "Ultrabroken Quantum State Freeze"
+---
+
 # Quantum State Freeze
 
 *Discovered by NaN Gogh*

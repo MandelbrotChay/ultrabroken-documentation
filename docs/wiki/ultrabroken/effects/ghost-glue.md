@@ -1,3 +1,7 @@
+---
+title: "Ultrabroken Ghost Glue"
+---
+
 # Ghost Glue
 
 *Discovered by Duncan*

@@ -1,3 +1,7 @@
+---
+title: "Ultrabroken Resurrect Smuggle"
+---
+
 # Resurrect Smuggle
 
 *Discovered by cr-2-4 aka colombiancris*

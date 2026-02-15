@@ -1,3 +1,7 @@
+---
+title: "Ultrabroken Theories and Speculation"
+---
+
 # Theories and Speculation
 
 ## Technical Speculation

@@ -1,3 +1,7 @@
+---
+title: "Ultrabroken Phantom Smuggle"
+---
+
 # Phantom Smuggle
 
 *Discovered by NaN Gogh*

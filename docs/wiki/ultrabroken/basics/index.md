@@ -1,3 +1,7 @@
+---
+title: "Ultrabroken Core Mechanic"
+---
+
 # Ultrabroken: The Core Mechanic
 
 Welcome to the foundation of the Ultrabroken phenomenon. This section covers everything you need to understand the core mechanic before exploring its effects.
