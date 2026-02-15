@@ -138,7 +138,6 @@ def walk_docs(chunk: bool = True):
             items.append({'id': str(rel), 'title': title, 'path': path, 'text': text})
     return items
 
-
 def build_index(output: str, gzip_output: bool = False, chunk: bool = True):
     items = walk_docs(chunk=chunk)
     out = Path(output)
