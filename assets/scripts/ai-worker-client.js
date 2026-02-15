@@ -62,16 +62,25 @@
       function parseSourcesFromText(text){
         // Only accept explicit model-supplied source lines of the form:
         // Source: Title — /path/to/doc
+        // Support multiple sources bundled on one line separated by ';'
         const out = [];
         if (!text || typeof text !== 'string') return out;
         const lines = text.split(/\r?\n/).map(l=>l.trim()).filter(Boolean);
         for (const line of lines){
-          const m = line.match(/^Source:\s*(.+?)\s*[–—-]\s*(\/?\S+)$/i);
-          if (m){
-            const title = m[1].trim();
-            const rawPath = m[2];
-            const path = rawPath.startsWith('/') ? rawPath : '/' + rawPath.replace(/^\/+/, '');
-            out.push({ title, path });
+          // match the rest of the line after the leading 'Source:'
+          const m = line.match(/^Source:\s*(.+)$/i);
+          if (!m) continue;
+          const rest = m[1];
+          // split multiple sources on semicolon
+          const parts = rest.split(/\s*;\s*/).map(p=>p.trim()).filter(Boolean);
+          for (const part of parts){
+            const mm = part.match(/^(.+?)\s*[–—-]\s*(\/?\S+)$/);
+            if (mm){
+              const title = mm[1].trim();
+              const rawPath = mm[2];
+              const path = rawPath.startsWith('/') ? rawPath : '/' + rawPath.replace(/^\/+/, '');
+              out.push({ title, path });
+            }
           }
         }
         return out;
