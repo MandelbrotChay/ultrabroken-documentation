@@ -130,7 +130,8 @@
               let list = w.evidence && w.evidence.querySelector && w.evidence.querySelector('.ub-ai-evidence-list');
               if (!list) { list = el('ul', { class: 'ub-ai-evidence-list' }, []); if (w.evidence) w.evidence.appendChild(list); }
               modelSources.forEach(s => {
-                const slug = (s.path||'').replace(/^\/+|\/+$/g,'');
+                // normalize and strip any trailing .md from model-provided paths
+                const slug = (s.path||'').replace(/^\/+|\/+$/g,'').replace(/\.md$/,'');
                 const href = base + encodeURI(slug);
                 const text = s.title || slug || s.path;
                 const a = el('a', { href: href, target: '_blank', rel: 'noopener noreferrer' }, text);
