@@ -18,6 +18,10 @@
   // Internal flag: controls whether Worker-provided evidence is rendered.
   // Default `false` keeps the UI from showing Worker evidence until enabled.
   const SHOW_WORKER_EVIDENCE = false;
+  // Internal flag: when true, strip model-supplied `Source:` lines from the
+  // model answer before displaying it, and ensure the displayed answer does
+  // not end with any blank lines. Default `false`.
+  const TRIM_MODEL_SOURCES_FROM_ANSWER = false;
 
   function render(container){
     const root = el('div', { class: 'ub-ai-root' });
@@ -99,6 +103,17 @@
         return out;
       }
 
+      // Remove any lines that start with 'Source:' (case-insensitive) and
+      // trim trailing whitespace/newlines so the answer does not end with a
+      // blank line. Operates on the raw text from the model.
+      function stripSourceLinesFromText(text){
+        if (!text || typeof text !== 'string') return text;
+        const lines = text.split(/\r?\n/);
+        const filtered = lines.filter(l => !/^\s*Source:\s*/i.test(l));
+        // Join and remove any trailing whitespace/newlines
+        return filtered.join('\n').replace(/\s+$/,'');
+      }
+
       const handleAsk = async ()=>{
         const q = w.input.value.trim(); if (!q) return; w.out.textContent = 'Asking...';
         if (w.evidence) w.evidence.innerHTML = '';
@@ -107,9 +122,12 @@
           w.out.textContent = 'Error: ' + r.error;
           return;
         }
-        // Render model answer (if present)
+        // Render model answer (if present). Optionally strip model-supplied
+        // `Source:` lines from the answer and ensure no trailing blank line.
         if (r.answer) {
-          w.out.textContent = r.answer;
+          let answerText = r.answer;
+          if (TRIM_MODEL_SOURCES_FROM_ANSWER) answerText = stripSourceLinesFromText(answerText);
+          w.out.textContent = answerText;
         } else if (r.debug) {
           w.out.textContent = JSON.stringify(r.debug, null, 2);
         } else {
