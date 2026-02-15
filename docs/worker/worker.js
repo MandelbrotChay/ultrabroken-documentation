@@ -264,25 +264,10 @@ export default {
           if (modelText && modelText.length >= 4 && !/^(silence|no_relevant_info|no_relevant_information|noinfo)$/i.test(modelText)){
             let parsed = null;
             try{ parsed = JSON.parse(modelText); }catch(e){ parsed = null; }
-            // Synthesize a Sources block from the authoritative `evidenceList`
-            // and append it to the textual answer so the client can parse
-            // model-visible `Source:` lines consistently.
-            const makeSourcesBlock = (evList) => {
-              if (!Array.isArray(evList) || evList.length === 0) return '';
-              const lines = evList.map(e => {
-                const title = (e && e.title) ? String(e.title) : (e && (e.id||e.path) ? String(e.id||e.path) : '');
-                const path = (e && e.path) ? String(e.path) : (e && e.id ? '/' + String(e.id).replace(/^\/+/, '') + '/' : '');
-                return `Source: ${title} — ${path}`;
-              });
-              return '\n\n' + lines.join('\n');
-            };
-            const sourcesBlock = makeSourcesBlock(evidenceList);
             if (parsed && parsed.answer) {
-              const ans = String(parsed.answer || '').trim() + sourcesBlock;
-              return new Response(JSON.stringify({ answer: ans, evidence: evidenceList, did_answer: true }), { headers: Object.assign({'Content-Type':'application/json'}, CORS_HEADERS) });
+              return new Response(JSON.stringify({ answer: parsed.answer, evidence: evidenceList, did_answer: true }), { headers: Object.assign({'Content-Type':'application/json'}, CORS_HEADERS) });
             }
-            const ans = String(modelText || '').trim() + sourcesBlock;
-            return new Response(JSON.stringify({ answer: ans, evidence: evidenceList, did_answer: true }), { headers: Object.assign({'Content-Type':'application/json'}, CORS_HEADERS) });
+            return new Response(JSON.stringify({ answer: modelText, evidence: evidenceList, did_answer: true }), { headers: Object.assign({'Content-Type':'application/json'}, CORS_HEADERS) });
           }
           // attach the OpenRouter debug info to the outer scope so it can be returned if we fallthrough
           openrouter_error = openrouter_error || null;
