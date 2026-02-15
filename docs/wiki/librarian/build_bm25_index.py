@@ -35,9 +35,12 @@ DOCS = ROOT / 'docs'
 
 
 def extract_text(md_path: Path) -> str:
-    text = md_path.read_text(encoding='utf-8')
+    # read with utf-8-sig to remove any BOM present
+    text = md_path.read_text(encoding='utf-8-sig')
     # strip YAML frontmatter
     text = re.sub(r'^---[\s\S]*?---\s*', '', text)
+    # remove leading ATX headings (e.g. "# Title" or "## Subtitle") to keep excerpts clean
+    text = re.sub(r'^[ \t]*#{1,6}\s+.*?\n', '', text)
     # remove images and links
     text = re.sub(r'!\[[^\]]*\]\([^\)]*\)', '', text)
     text = re.sub(r'\[[^\]]*\]\([^\)]*\)', '', text)
@@ -117,7 +120,12 @@ def walk_docs(chunk: bool = True):
             continue
         # prefer an extracted title (YAML frontmatter, H1/H2, Setext), fall back to filename stem
         title = extract_title(p) or rel.stem
-        text = extract_text(p)
+        full_text = extract_text(p)
+        # derive a short excerpt for UI use (first ~40 words) without leading headings
+        excerpt = ''
+        if full_text:
+            excerpt = ' '.join(full_text.split()[:40]).strip()
+        text = full_text
         if not text:
             continue
         if rel == Path('index.md'):
@@ -129,9 +137,9 @@ def walk_docs(chunk: bool = True):
         if chunk:
             chunks = chunk_text_words(text)
             for i, c in enumerate(chunks):
-                items.append({'id': str(rel), 'title': title, 'path': path, 'text': c, 'chunk_index': i})
+                items.append({'id': str(rel), 'title': title, 'path': path, 'text': c, 'chunk_index': i, 'excerpt': excerpt})
         else:
-            items.append({'id': str(rel), 'title': title, 'path': path, 'text': text})
+            items.append({'id': str(rel), 'title': title, 'path': path, 'text': text, 'excerpt': excerpt})
     return items
 
 

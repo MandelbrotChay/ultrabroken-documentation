@@ -186,7 +186,13 @@ export default {
     const has_openrouter_key = !!(env && env.OPENROUTER_API_KEY);
     if (has_openrouter_key) {
       try {
-        const contextItems = topCandidates.map(s=>({ id: s.item.id || s.item.path || null, text: s.item.text || s.item.title || '', score: s.score }));
+        // Prefer a cleaned `excerpt` and include `title` separately so the model sees the canonical title
+        const contextItems = topCandidates.map(s=>({
+          id: s.item.id || s.item.path || null,
+          title: s.item.title || null,
+          text: s.item.excerpt || s.item.text || s.item.title || '',
+          score: s.score
+        }));
         const system = env.SYSTEM_PROMPT || 'You are a concise technical editor. Use only the provided context to answer. If none of the context answers the question, reply exactly with NO_RELEVANT_INFO.';
         const payloadBody = {
           messages: [
@@ -267,7 +273,8 @@ export default {
     }
     // If OpenRouter is not configured or did not produce a usable answer, return evidence/debug
     // rather than an unconditional silence so the UI can surface the retrieved candidates.
-    const evidenceList = evidences.slice(0,3).map(s=>({ id: s.item.id||s.item.path, similarity: s.score, title: s.item.title }));
+    // Provide title and a short excerpt for UI/evidence rendering (prefer `excerpt`)
+    const evidenceList = evidences.slice(0,3).map(s=>({ id: s.item.id||s.item.path, similarity: s.score, title: s.item.title, excerpt: s.item.excerpt || (s.item.text || '').split('\n').slice(0,2).join(' ').slice(0,200) }));
     const debugPayload = { query, tokens: qTokens, top: topCandidates.map(s=>({ id: s.item.id||s.item.path, score: s.score, title: s.item.title })), threshold: SIMILARITY_THRESHOLD, index_len: index.length, has_openrouter_key, openrouter_error };
     if (typeof openrouter_debug !== 'undefined' && openrouter_debug) debugPayload.openrouter_debug = openrouter_debug;
     return respondFailure({ answer: null, evidence: evidenceList, did_answer: false, debug: debugPayload });
