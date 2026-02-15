@@ -161,22 +161,12 @@ export default {
 
     // Prepare a stable evidence list (title + short preview) to return with answers
     // Use full `text` for model context but provide a small `text_preview` for UI.
-    const evidenceList = evidences.slice(0,3).map(s=>{
-      // normalize a site-relative path for the evidence item. Prefer
-      // `s.item.path` when available (already site-relative like '/wiki/...'),
-      // otherwise derive from the item id (e.g. 'wiki/ultrabroken/...').
-      let rawPath = s.item && s.item.path ? String(s.item.path) : ('/' + String(s.item.id || '').replace(/\.md$/,'').replace(/^\/+/, ''));
-      if (!rawPath.startsWith('/')) rawPath = '/' + rawPath;
-      // ensure trailing slash for consistency
-      if (!rawPath.endsWith('/')) rawPath = rawPath + '/';
-      return {
-        id: s.item.id||s.item.path,
-        path: rawPath,
-        similarity: s.score,
-        title: s.item.title,
-        text_preview: (s.item.text || '').split('\n').slice(0,2).join(' ').slice(0,200)
-      };
-    });
+    const evidenceList = evidences.slice(0,3).map(s=>({
+      id: s.item.id||s.item.path,
+      similarity: s.score,
+      title: s.item.title,
+      text_preview: (s.item.text || '').split('\n').slice(0,2).join(' ').slice(0,200)
+    }));
 
     // If debug requested, return top candidate scores to help tune threshold.
     if (body && body.debug) {
