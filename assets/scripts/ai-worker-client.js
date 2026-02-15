@@ -19,6 +19,11 @@
     const input = el('input', { type: 'search', placeholder: '', 'data-ub-placeholder': _placeholder_text, class: 'ub-ai-input' });
     const clearBtn = el('button', { type: 'button', class: 'ub-ai-clear', 'aria-label': 'Clear search' }, '');
     const askBtn = el('button', { type: 'button', class: 'ub-ai-ask', 'aria-label': 'Ask' }, '');
+    // Toggle to control whether model-supplied sources are rendered
+    const toggleLabel = el('label', { class: 'ub-ai-toggle-label', style: 'display:flex; align-items:center; gap:0.4rem; margin-left:0.4rem;' }, []);
+    const toggleInput = el('input', { type: 'checkbox', class: 'ub-ai-toggle-input', title: 'Show model-returned sources' });
+    toggleLabel.appendChild(toggleInput);
+    toggleLabel.appendChild(document.createTextNode('Model sources'));
     // Output area (answer + evidence). `out` holds the model answer; `evidenceWrap` holds clickable evidence links returned by the Worker.
     const out = el('pre', { class: 'ub-ai-out' }, '');
     const evidenceWrap = el('div', { class: 'ub-ai-evidence' }, '');
@@ -26,12 +31,13 @@
     inputWrap.appendChild(clearBtn);
     row.appendChild(inputWrap);
     row.appendChild(askBtn);
+    row.appendChild(toggleLabel);
     root.appendChild(row);
     root.appendChild(out);
     // append evidence container to the widget so it's accessible via the returned handle
     root.appendChild(evidenceWrap);
     container.appendChild(root);
-    return { input, btn: askBtn, out, clear: clearBtn, evidence: evidenceWrap };
+    return { input, btn: askBtn, out, clear: clearBtn, evidence: evidenceWrap, toggle: toggleInput };
   }
 
   async function askWorker(q){
@@ -58,6 +64,17 @@
       // If an instance already exists inside, mark initialized and skip
       if (placeholder.querySelector('.ub-ai-root')) { placeholder.dataset.aiInitialized = '1'; return; }
       const w = render(placeholder);
+      // Initialize toggle state from localStorage (remember user preference)
+      try{
+        const key = 'ai_show_model_sources';
+        const stored = localStorage.getItem(key);
+        if (w.toggle && typeof stored !== 'undefined' && stored !== null){
+          w.toggle.checked = stored === '1';
+        }
+        if (w.toggle){
+          w.toggle.addEventListener('change', ()=>{ try{ localStorage.setItem(key, w.toggle.checked ? '1' : '0'); }catch(e){} });
+        }
+      }catch(e){}
       // Parse simple source lines from model answer text. Returns array of {title?, path}
       function parseSourcesFromText(text){
         // Only accept explicit model-supplied source lines of the form:
@@ -128,20 +145,24 @@
 
           // Additionally parse any source lines the model included in its answer and render them as links too
           try{
-            const modelSources = parseSourcesFromText(r.answer);
-            if (modelSources && modelSources.length){
-              // reuse existing list if present, otherwise create
-              let list = w.evidence && w.evidence.querySelector && w.evidence.querySelector('.ub-ai-evidence-list');
-              if (!list) { list = el('ul', { class: 'ub-ai-evidence-list' }, []); if (w.evidence) w.evidence.appendChild(list); }
-              modelSources.forEach(s => {
-                // normalize and strip any trailing .md from model-provided paths
-                const slug = (s.path||'').replace(/^\/+|\/+$/g,'').replace(/\.md$/,'');
-                const href = base + encodeURI(slug);
-                const text = s.title || slug || s.path;
-                const a = el('a', { href: href, target: '_blank', rel: 'noopener noreferrer' }, text);
-                const li = el('li', {}, a);
-                list.appendChild(li);
-              });
+            // Only render model-returned sources if the toggle is enabled
+            const showModelSources = !(w.toggle && typeof w.toggle.checked !== 'undefined') || (w.toggle && w.toggle.checked);
+            if (showModelSources){
+              const modelSources = parseSourcesFromText(r.answer);
+              if (modelSources && modelSources.length){
+                // reuse existing list if present, otherwise create
+                let list = w.evidence && w.evidence.querySelector && w.evidence.querySelector('.ub-ai-evidence-list');
+                if (!list) { list = el('ul', { class: 'ub-ai-evidence-list' }, []); if (w.evidence) w.evidence.appendChild(list); }
+                modelSources.forEach(s => {
+                  // normalize and strip any trailing .md from model-provided paths
+                  const slug = (s.path||'').replace(/^\/+|\/+$/g,'').replace(/\.md$/,'');
+                  const href = base + encodeURI(slug);
+                  const text = s.title || slug || s.path;
+                  const a = el('a', { href: href, target: '_blank', rel: 'noopener noreferrer' }, text);
+                  const li = el('li', {}, a);
+                  list.appendChild(li);
+                });
+              }
             }
           }catch(e){ /* ignore model source parsing errors */ }
         }catch(e){ /* ignore rendering errors */ }
