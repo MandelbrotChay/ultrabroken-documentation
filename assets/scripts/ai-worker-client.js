@@ -167,25 +167,12 @@
           // Worker evidence rendering controlled by internal flag.
           if (SHOW_WORKER_EVIDENCE && Array.isArray(ev) && ev.length){
             const list = el('ul', { class: 'ub-ai-evidence-list' }, []);
-            // helper: build a safe href from an item `path` or `id` while
-            // avoiding double '/wiki/wiki/...' when a `/wiki/...` path is
-            // already present.
-            function makeHref(item){
-              const siteRoot = 'https://nan-gogh.github.io/ultrabroken-documentation';
-              const base = siteRoot + '/wiki/';
-              const p = (item.path || item.id || '').toString();
-              if (!p) return '#';
-              // normalize leading slash
-              let norm = p.replace(/\\.md$/,'').replace(/^\\/+/, '/');
-              // if the path is already site-relative under /wiki/, join with siteRoot
-              if (norm.startsWith('/wiki/')) return siteRoot + norm;
-              // otherwise use the base (which already contains /wiki/)
-              norm = norm.replace(/^\/+/, '');
-              return base + encodeURI(norm);
-            }
             ev.forEach(item => {
-              const href = makeHref(item);
-              const text = item.title || (item.path||item.id) || '';
+              const id = item.id || item.path || '';
+              // Normalize id to a wiki path without .md
+              let slug = String(id).replace(/\.md$/,'').replace(/^\/+|\/+$/g, '');
+              const href = base + encodeURI(slug);
+              const text = item.title || slug || id;
               const a = el('a', { href: href, target: '_blank', rel: 'noopener noreferrer' }, text);
               const li = el('li', {}, a);
               list.appendChild(li);
@@ -209,17 +196,8 @@
                 if (!list) { list = el('ul', { class: 'ub-ai-evidence-list' }, []); if (w.evidence) w.evidence.appendChild(list); }
                 modelSources.forEach(s => {
                   // normalize and strip any trailing .md from model-provided paths
-                  // use the same link-building logic as the worker evidence
-                  // renderer so model-supplied paths are normalized.
-                  const href = (function(p){
-                    const siteRoot = 'https://nan-gogh.github.io/ultrabroken-documentation';
-                    const base = siteRoot + '/wiki/';
-                    if (!p) return '#';
-                    let norm = p.replace(/\.md$/,'').replace(/^\/+/, '/');
-                    if (norm.startsWith('/wiki/')) return siteRoot + norm;
-                    norm = norm.replace(/^\/+/, '');
-                    return base + encodeURI(norm);
-                  })(s.path||s.path || s.title || '');
+                  const slug = (s.path||'').replace(/^\/+|\/+$/g,'').replace(/\.md$/,'');
+                  const href = base + encodeURI(slug);
                   const text = s.title || slug || s.path;
                   const a = el('a', { href: href, target: '_blank', rel: 'noopener noreferrer' }, text);
                   const li = el('li', {}, a);
