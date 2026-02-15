@@ -121,10 +121,6 @@ def walk_docs(chunk: bool = True):
         # prefer an extracted title (YAML frontmatter, H1/H2, Setext), fall back to filename stem
         title = extract_title(p) or rel.stem
         full_text = extract_text(p)
-        # derive a short excerpt for UI use (first ~40 words) without leading headings
-        excerpt = ''
-        if full_text:
-            excerpt = ' '.join(full_text.split()[:40]).strip()
         text = full_text
         if not text:
             continue
@@ -137,9 +133,9 @@ def walk_docs(chunk: bool = True):
         if chunk:
             chunks = chunk_text_words(text)
             for i, c in enumerate(chunks):
-                items.append({'id': str(rel), 'title': title, 'path': path, 'text': c, 'chunk_index': i, 'excerpt': excerpt})
+                items.append({'id': str(rel), 'title': title, 'path': path, 'text': c, 'chunk_index': i})
         else:
-            items.append({'id': str(rel), 'title': title, 'path': path, 'text': text, 'excerpt': excerpt})
+            items.append({'id': str(rel), 'title': title, 'path': path, 'text': text})
     return items
 
 
