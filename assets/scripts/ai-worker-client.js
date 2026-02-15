@@ -107,20 +107,24 @@
         try{
           const base = 'https://nan-gogh.github.io/ultrabroken-documentation/wiki/';
           const ev = r.evidence || [];
-          if (Array.isArray(ev) && ev.length){
-            const list = el('ul', { class: 'ub-ai-evidence-list' }, []);
-            ev.forEach(item => {
-              const id = item.id || item.path || '';
-              // Normalize id to a wiki path without .md
-              let slug = String(id).replace(/\.md$/,'').replace(/^\/+|\/+$/g, '');
-              const href = base + encodeURI(slug);
-              const text = item.title || slug || id;
-              const a = el('a', { href: href, target: '_blank', rel: 'noopener noreferrer' }, text);
-              const li = el('li', {}, a);
-              list.appendChild(li);
-            });
-            if (w.evidence) w.evidence.appendChild(list);
-          }
+          /* Worker evidence rendering is temporarily disabled — model-returned
+             sources will still be parsed and rendered. Re-enable this block when
+             you want the Worker-provided evidence links shown alongside model
+             sources. */
+          // if (Array.isArray(ev) && ev.length){
+          //   const list = el('ul', { class: 'ub-ai-evidence-list' }, []);
+          //   ev.forEach(item => {
+          //     const id = item.id || item.path || '';
+          //     // Normalize id to a wiki path without .md
+          //     let slug = String(id).replace(/\.md$/,'').replace(/^\/+|\/+$/g, '');
+          //     const href = base + encodeURI(slug);
+          //     const text = item.title || slug || id;
+          //     const a = el('a', { href: href, target: '_blank', rel: 'noopener noreferrer' }, text);
+          //     const li = el('li', {}, a);
+          //     list.appendChild(li);
+          //   });
+          //   if (w.evidence) w.evidence.appendChild(list);
+          // }
 
           // Additionally parse any source lines the model included in its answer and render them as links too
           try{
