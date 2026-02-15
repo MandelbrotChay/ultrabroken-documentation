@@ -137,18 +137,23 @@
         // parsed and rendered as links only when `SHOW_RESPONSE_SOURCES`
         // is true. When splitting is disabled the full `r.answer` is
         // treated as the main answer.
+        // Always split the model answer into main and sources (if any).
+        // `SHOW_RESPONSE_SOURCES` controls whether the sources section is
+        // displayed inline after the main answer. `SHOW_MODEL_SOURCES`
+        // independently controls whether model-returned sources are
+        // parsed and rendered as links in the evidence area.
         let sourcesText = null;
         if (r.answer) {
-          let answerText = r.answer;
-          if (SHOW_RESPONSE_SOURCES){
-            const sp = splitAnswerAndSources(r.answer);
-            answerText = sp.main;
-            sourcesText = sp.sources;
+          const sp = splitAnswerAndSources(r.answer);
+          const mainText = sp.main;
+          sourcesText = sp.sources; // may be null
+          // Display main answer; optionally append the raw sources block
+          // when configured to show the response's sources section.
+          if (SHOW_RESPONSE_SOURCES && sourcesText) {
+            w.out.textContent = mainText + '\n\n' + sourcesText;
           } else {
-            // ensure no trailing whitespace/newlines
-            answerText = String(r.answer).replace(/\s+$/,'');
+            w.out.textContent = String(mainText).replace(/\s+$/,'');
           }
-          w.out.textContent = answerText;
         } else if (r.debug) {
           w.out.textContent = JSON.stringify(r.debug, null, 2);
         } else {
@@ -177,11 +182,14 @@
 
           // Additionally parse any source lines the model included in its answer and render them as links too
           try{
-            // Only render model-returned sources if the internal flag enables it
-            // and if a separated sources section was found.
-            const showModelSources = SHOW_MODEL_SOURCES && sourcesText;
+            // Only render model-returned sources if the internal flag enables it.
+            // Parse from the separated `sourcesText` when present, otherwise
+            // fall back to parsing the entire `r.answer` so the two flags are
+            // independent.
+            const sourceTextToParse = (sourcesText != null) ? sourcesText : r.answer;
+            const showModelSources = SHOW_MODEL_SOURCES && sourceTextToParse;
             if (showModelSources){
-              const modelSources = parseSourcesFromText(sourcesText);
+              const modelSources = parseSourcesFromText(sourceTextToParse);
               if (modelSources && modelSources.length){
                 // reuse existing list if present, otherwise create
                 let list = w.evidence && w.evidence.querySelector && w.evidence.querySelector('.ub-ai-evidence-list');
