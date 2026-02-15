@@ -24,7 +24,7 @@
   // the model response into `main` and `sources` (so sources are available
   // for parsing). `SHOW_RESPONSE_SOURCES` only controls whether the raw
   // sources block is appended to the displayed answer. Default `false`.
-  const SHOW_RESPONSE_SOURCES = true;
+  const SHOW_RESPONSE_SOURCES = false;
 
   function render(container){
     const root = el('div', { class: 'ub-ai-root' });
@@ -160,63 +160,56 @@
           w.out.textContent = '';
         }
 
-        // Always render Worker-provided evidence as authoritative clickable links
+        // Additionally parse any source lines the model included in its answer and render them as links first
         try{
           const base = 'https://nan-gogh.github.io/ultrabroken-documentation/wiki/';
-          const ev = r.evidence || [];
-          // Worker evidence rendering controlled by internal flag.
-          if (SHOW_WORKER_EVIDENCE && Array.isArray(ev) && ev.length){
-            const list = el('ul', { class: 'ub-ai-evidence-list' }, []);
-            ev.forEach(item => {
-              const id = item.id || item.path || '';
-              // Normalize id to a wiki path without .md
-              let slug = String(id).replace(/\.md$/,'').replace(/^\/+|\/+$/g, '');
-              const href = base + encodeURI(slug);
-              const text = item.title || slug || id;
-              const a = el('a', { href: href, target: '_blank', rel: 'noopener noreferrer' }, text);
-              const li = el('li', {}, a);
-              list.appendChild(li);
-            });
-            if (w.evidence) w.evidence.appendChild(list);
+          const sourceTextToParse = (sourcesText != null) ? sourcesText : r.answer;
+          const showModelSources = SHOW_MODEL_SOURCES && sourceTextToParse;
+          if (showModelSources){
+            const modelSources = parseSourcesFromText(sourceTextToParse);
+            if (modelSources && modelSources.length){
+              // create list and append to evidence area (model sources go first)
+              let list = el('ul', { class: 'ub-ai-evidence-list' }, []);
+              if (w.evidence) w.evidence.appendChild(list);
+              const siteRoot = 'https://nan-gogh.github.io/ultrabroken-documentation';
+              modelSources.forEach(s => {
+                const p = (s.path || s.id || '').toString();
+                let href;
+                if (p && p.startsWith('/wiki/')) {
+                  href = siteRoot + p;
+                } else {
+                  const slug = p.replace(/^\/+|\/+$/g,'').replace(/\.md$/,'');
+                  href = base + encodeURI(slug);
+                }
+                const text = s.title || (s.path||s.id) || '';
+                const a = el('a', { href: href, target: '_blank', rel: 'noopener noreferrer' }, text);
+                const li = el('li', {}, a);
+                list.appendChild(li);
+              });
+            }
           }
 
-          // Additionally parse any source lines the model included in its answer and render them as links too
+          // Always render Worker-provided evidence as authoritative clickable links
           try{
-            // Only render model-returned sources if the internal flag enables it.
-            // Parse from the separated `sourcesText` when present, otherwise
-            // fall back to parsing the entire `r.answer` so the two flags are
-            // independent.
-            const sourceTextToParse = (sourcesText != null) ? sourcesText : r.answer;
-            const showModelSources = SHOW_MODEL_SOURCES && sourceTextToParse;
-            if (showModelSources){
-              const modelSources = parseSourcesFromText(sourceTextToParse);
-              if (modelSources && modelSources.length){
-                // reuse existing list if present, otherwise create
-                let list = w.evidence && w.evidence.querySelector && w.evidence.querySelector('.ub-ai-evidence-list');
-                if (!list) { list = el('ul', { class: 'ub-ai-evidence-list' }, []); if (w.evidence) w.evidence.appendChild(list); }
-                modelSources.forEach(s => {
-                  // normalize and strip any trailing .md from model-provided paths
-                  // Build href safely: if the model supplied a site-relative
-                  // `/wiki/...` path already, use the site root + path to avoid
-                  // doubling the `/wiki/` prefix. Otherwise join with `base`.
-                  const siteRoot = 'https://nan-gogh.github.io/ultrabroken-documentation';
-                  const p = (s.path || s.id || '').toString();
-                  let href;
-                  if (p && p.startsWith('/wiki/')) {
-                    href = siteRoot + p;
-                  } else {
-                    const slug = p.replace(/^\/+|\/+$/g,'').replace(/\.md$/,'');
-                    href = base + encodeURI(slug);
-                  }
-                  const text = s.title || (s.path||s.id) || '';
-                  const a = el('a', { href: href, target: '_blank', rel: 'noopener noreferrer' }, text);
-                  const li = el('li', {}, a);
-                  list.appendChild(li);
-                });
-              }
+            const ev = r.evidence || [];
+            // Worker evidence rendering controlled by internal flag.
+            if (SHOW_WORKER_EVIDENCE && Array.isArray(ev) && ev.length){
+              // reuse existing list if model sources created one, otherwise create
+              let list = w.evidence && w.evidence.querySelector && w.evidence.querySelector('.ub-ai-evidence-list');
+              if (!list) { list = el('ul', { class: 'ub-ai-evidence-list' }, []); if (w.evidence) w.evidence.appendChild(list); }
+              ev.forEach(item => {
+                const id = item.id || item.path || '';
+                // Normalize id to a wiki path without .md
+                let slug = String(id).replace(/\.md$/,'').replace(/^\/+|\/+$/g, '');
+                const href = base + encodeURI(slug);
+                const text = item.title || slug || id;
+                const a = el('a', { href: href, target: '_blank', rel: 'noopener noreferrer' }, text);
+                const li = el('li', {}, a);
+                list.appendChild(li);
+              });
             }
-          }catch(e){ /* ignore model source parsing errors */ }
-        }catch(e){ /* ignore rendering errors */ }
+          }catch(e){ /* ignore rendering errors */ }
+        }catch(e){ /* ignore model source parsing errors */ }
         // If nothing was rendered and there was no answer, show silence
         if (!w.out.textContent && (!r.evidence || !r.evidence.length)) w.out.textContent = 'silence';
       };
