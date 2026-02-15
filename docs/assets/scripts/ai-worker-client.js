@@ -11,6 +11,14 @@
     return e;
   }
 
+  // Internal flag: controls whether model-returned `Source:` lines are rendered.
+  // This is intentionally an internal toggle (not user-facing). Set to `true`
+  // to enable rendering of model-supplied sources, or `false` to disable.
+  const SHOW_MODEL_SOURCES = false;
+  // Internal flag: controls whether Worker-provided evidence is rendered.
+  // Default `false` keeps the UI from showing Worker evidence until enabled.
+  const SHOW_WORKER_EVIDENCE = false;
+
   function render(container){
     const root = el('div', { class: 'ub-ai-root' });
     const row = el('div', { style: 'display:flex; gap:0.4rem; align-items:center;' });
@@ -19,11 +27,8 @@
     const input = el('input', { type: 'search', placeholder: '', 'data-ub-placeholder': _placeholder_text, class: 'ub-ai-input' });
     const clearBtn = el('button', { type: 'button', class: 'ub-ai-clear', 'aria-label': 'Clear search' }, '');
     const askBtn = el('button', { type: 'button', class: 'ub-ai-ask', 'aria-label': 'Ask' }, '');
-    // Toggle to control whether model-supplied sources are rendered
-    const toggleLabel = el('label', { class: 'ub-ai-toggle-label', style: 'display:flex; align-items:center; gap:0.4rem; margin-left:0.4rem;' }, []);
-    const toggleInput = el('input', { type: 'checkbox', class: 'ub-ai-toggle-input', title: 'Show model-returned sources' });
-    toggleLabel.appendChild(toggleInput);
-    toggleLabel.appendChild(document.createTextNode('Model sources'));
+    // NOTE: user-facing toggle removed — rendering of model-returned sources
+    // is controlled by the internal `SHOW_MODEL_SOURCES` flag declared above.
     // Output area (answer + evidence). `out` holds the model answer; `evidenceWrap` holds clickable evidence links returned by the Worker.
     const out = el('pre', { class: 'ub-ai-out' }, '');
     const evidenceWrap = el('div', { class: 'ub-ai-evidence' }, '');
@@ -31,13 +36,13 @@
     inputWrap.appendChild(clearBtn);
     row.appendChild(inputWrap);
     row.appendChild(askBtn);
-    row.appendChild(toggleLabel);
+    
     root.appendChild(row);
     root.appendChild(out);
     // append evidence container to the widget so it's accessible via the returned handle
     root.appendChild(evidenceWrap);
     container.appendChild(root);
-    return { input, btn: askBtn, out, clear: clearBtn, evidence: evidenceWrap, toggle: toggleInput };
+    return { input, btn: askBtn, out, clear: clearBtn, evidence: evidenceWrap };
   }
 
   async function askWorker(q){
@@ -64,17 +69,8 @@
       // If an instance already exists inside, mark initialized and skip
       if (placeholder.querySelector('.ub-ai-root')) { placeholder.dataset.aiInitialized = '1'; return; }
       const w = render(placeholder);
-      // Initialize toggle state from localStorage (remember user preference)
-      try{
-        const key = 'ai_show_model_sources';
-        const stored = localStorage.getItem(key);
-        if (w.toggle && typeof stored !== 'undefined' && stored !== null){
-          w.toggle.checked = stored === '1';
-        }
-        if (w.toggle){
-          w.toggle.addEventListener('change', ()=>{ try{ localStorage.setItem(key, w.toggle.checked ? '1' : '0'); }catch(e){} });
-        }
-      }catch(e){}
+      // No user-facing toggle: `SHOW_MODEL_SOURCES` controls whether model-
+      // returned `Source:` lines are rendered. This is intentionally internal.
       // Parse simple source lines from model answer text. Returns array of {title?, path}
       function parseSourcesFromText(text){
         // Only accept explicit model-supplied source lines of the form:
@@ -124,29 +120,26 @@
         try{
           const base = 'https://nan-gogh.github.io/ultrabroken-documentation/wiki/';
           const ev = r.evidence || [];
-          /* Worker evidence rendering is temporarily disabled — model-returned
-             sources will still be parsed and rendered. Re-enable this block when
-             you want the Worker-provided evidence links shown alongside model
-             sources. */
-          // if (Array.isArray(ev) && ev.length){
-          //   const list = el('ul', { class: 'ub-ai-evidence-list' }, []);
-          //   ev.forEach(item => {
-          //     const id = item.id || item.path || '';
-          //     // Normalize id to a wiki path without .md
-          //     let slug = String(id).replace(/\.md$/,'').replace(/^\/+|\/+$/g, '');
-          //     const href = base + encodeURI(slug);
-          //     const text = item.title || slug || id;
-          //     const a = el('a', { href: href, target: '_blank', rel: 'noopener noreferrer' }, text);
-          //     const li = el('li', {}, a);
-          //     list.appendChild(li);
-          //   });
-          //   if (w.evidence) w.evidence.appendChild(list);
-          // }
+          // Worker evidence rendering controlled by internal flag.
+          if (SHOW_WORKER_EVIDENCE && Array.isArray(ev) && ev.length){
+            const list = el('ul', { class: 'ub-ai-evidence-list' }, []);
+            ev.forEach(item => {
+              const id = item.id || item.path || '';
+              // Normalize id to a wiki path without .md
+              let slug = String(id).replace(/\.md$/,'').replace(/^\/+|\/+$/g, '');
+              const href = base + encodeURI(slug);
+              const text = item.title || slug || id;
+              const a = el('a', { href: href, target: '_blank', rel: 'noopener noreferrer' }, text);
+              const li = el('li', {}, a);
+              list.appendChild(li);
+            });
+            if (w.evidence) w.evidence.appendChild(list);
+          }
 
           // Additionally parse any source lines the model included in its answer and render them as links too
           try{
-            // Only render model-returned sources if the toggle is enabled
-            const showModelSources = !(w.toggle && typeof w.toggle.checked !== 'undefined') || (w.toggle && w.toggle.checked);
+            // Only render model-returned sources if the internal flag enables it
+            const showModelSources = SHOW_MODEL_SOURCES;
             if (showModelSources){
               const modelSources = parseSourcesFromText(r.answer);
               if (modelSources && modelSources.length){
