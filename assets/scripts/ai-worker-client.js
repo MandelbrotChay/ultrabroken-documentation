@@ -15,7 +15,7 @@
     const root = el('div', { class: 'ub-ai-root' });
     const row = el('div', { style: 'display:flex; gap:0.4rem; align-items:center;' });
     const inputWrap = el('div', { class: 'ub-ai-input-wrap', style: 'position:relative; flex:1;' });
-    const _placeholder_text = 'Will it share wisdom or madness?';
+    const _placeholder_text = 'Will it share wisdom or weirdness?';
     const input = el('input', { type: 'search', placeholder: '', 'data-ub-placeholder': _placeholder_text, class: 'ub-ai-input' });
     const clearBtn = el('button', { type: 'button', class: 'ub-ai-clear', 'aria-label': 'Clear search' }, '');
     const askBtn = el('button', { type: 'button', class: 'ub-ai-ask', 'aria-label': 'Ask' }, '');
