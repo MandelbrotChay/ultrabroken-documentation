@@ -191,8 +191,8 @@ export default {
           id: s.item.id || s.item.path || null,
           title: s.item.title || null,
           // Prefer the full chunk `text` so the model sees step-by-step
-          // instructions; fall back to `excerpt` if `text` is not present.
-          text: s.item.text || s.item.excerpt || s.item.title || '',
+          // instructions; fall back to `title` if `text` is not present.
+          text: s.item.text || s.item.title || '',
           score: s.score
         }));
         const system = env.SYSTEM_PROMPT || 'You are a concise technical editor. Use only the provided context to answer. If none of the context answers the question, reply exactly with NO_RELEVANT_INFO.';
@@ -276,7 +276,7 @@ export default {
     // If OpenRouter is not configured or did not produce a usable answer, return evidence/debug
     // rather than an unconditional silence so the UI can surface the retrieved candidates.
     // Provide title and a short excerpt for UI/evidence rendering (prefer `excerpt`)
-    const evidenceList = evidences.slice(0,3).map(s=>({ id: s.item.id||s.item.path, similarity: s.score, title: s.item.title, excerpt: (s.item.text || s.item.excerpt || '').split('\n').slice(0,2).join(' ').slice(0,200) }));
+    const evidenceList = evidences.slice(0,3).map(s=>({ id: s.item.id||s.item.path, similarity: s.score, title: s.item.title, excerpt: (s.item.text || '').split('\n').slice(0,2).join(' ').slice(0,200) }));
     const debugPayload = { query, tokens: qTokens, top: topCandidates.map(s=>({ id: s.item.id||s.item.path, score: s.score, title: s.item.title })), threshold: SIMILARITY_THRESHOLD, index_len: index.length, has_openrouter_key, openrouter_error };
     if (typeof openrouter_debug !== 'undefined' && openrouter_debug) debugPayload.openrouter_debug = openrouter_debug;
     return respondFailure({ answer: null, evidence: evidenceList, did_answer: false, debug: debugPayload });
