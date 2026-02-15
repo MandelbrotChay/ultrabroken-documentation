@@ -14,14 +14,17 @@
   // Internal flag: controls whether model-returned `Source:` lines are rendered.
   // This is intentionally an internal toggle (not user-facing). Set to `true`
   // to enable rendering of model-supplied sources, or `false` to disable.
-  const SHOW_MODEL_SOURCES = false;
+  const SHOW_MODEL_SOURCES = true;
   // Internal flag: controls whether Worker-provided evidence is rendered.
   // Default `false` keeps the UI from showing Worker evidence until enabled.
-  const SHOW_WORKER_EVIDENCE = true;
-  // Internal flag: when true, strip model-supplied `Source:` lines from the
-  // model answer before displaying it, and ensure the displayed answer does
-  // not end with any blank lines. Default `false`.
-  const TRIM_MODEL_SOURCES_FROM_ANSWER = true;
+  const SHOW_WORKER_EVIDENCE = false;
+  // Internal flag: when true, separate the model response into its main
+  // answer and a trailing sources section (starting at the first line that
+  // begins with 'Source'). If enabled, the sources section will be parsed
+  // and rendered only when `SHOW_RESPONSE_SOURCES` is true; otherwise the
+  // sources section will be removed from the displayed answer. Default
+  // `false` keeps prior behaviour (no splitting).
+  const SHOW_RESPONSE_SOURCES = false;
 
   function render(container){
     const root = el('div', { class: 'ub-ai-root' });
@@ -103,15 +106,21 @@
         return out;
       }
 
-      // Remove any lines that start with 'Source:' (case-insensitive) and
-      // trim trailing whitespace/newlines so the answer does not end with a
-      // blank line. Operates on the raw text from the model.
-      function stripSourceLinesFromText(text){
-        if (!text || typeof text !== 'string') return text;
+      // Split a model answer into `main` (text before the first Source line)
+      // and `sources` (the rest, starting at the first Source line). The
+      // separator is the first line that begins with 'Source' (case-
+      // insensitive). Returns { main: string, sources: string|null }.
+      function splitAnswerAndSources(text){
+        if (!text || typeof text !== 'string') return { main: '', sources: null };
         const lines = text.split(/\r?\n/);
-        const filtered = lines.filter(l => !/^\s*Source:\s*/i.test(l));
-        // Join and remove any trailing whitespace/newlines
-        return filtered.join('\n').replace(/\s+$/,'');
+        let idx = -1;
+        for (let i = 0; i < lines.length; i++){
+          if (/^\s*Source\b[:\s]/i.test(lines[i])) { idx = i; break; }
+        }
+        if (idx === -1) return { main: text.replace(/\s+$/,'') , sources: null };
+        const main = lines.slice(0, idx).join('\n').replace(/\s+$/,'');
+        const sources = lines.slice(idx).join('\n').trim();
+        return { main, sources };
       }
 
       const handleAsk = async ()=>{
@@ -122,11 +131,23 @@
           w.out.textContent = 'Error: ' + r.error;
           return;
         }
-        // Render model answer (if present). Optionally strip model-supplied
-        // `Source:` lines from the answer and ensure no trailing blank line.
+        // Render model answer (if present). Optionally split a trailing
+        // sources section (starting at the first 'Source' line). The
+        // main answer is always shown; the trailing sources section is
+        // parsed and rendered as links only when `SHOW_RESPONSE_SOURCES`
+        // is true. When splitting is disabled the full `r.answer` is
+        // treated as the main answer.
+        let sourcesText = null;
         if (r.answer) {
           let answerText = r.answer;
-          if (TRIM_MODEL_SOURCES_FROM_ANSWER) answerText = stripSourceLinesFromText(answerText);
+          if (SHOW_RESPONSE_SOURCES){
+            const sp = splitAnswerAndSources(r.answer);
+            answerText = sp.main;
+            sourcesText = sp.sources;
+          } else {
+            // ensure no trailing whitespace/newlines
+            answerText = String(r.answer).replace(/\s+$/,'');
+          }
           w.out.textContent = answerText;
         } else if (r.debug) {
           w.out.textContent = JSON.stringify(r.debug, null, 2);
@@ -157,9 +178,10 @@
           // Additionally parse any source lines the model included in its answer and render them as links too
           try{
             // Only render model-returned sources if the internal flag enables it
-            const showModelSources = SHOW_MODEL_SOURCES;
+            // and if a separated sources section was found.
+            const showModelSources = SHOW_MODEL_SOURCES && sourcesText;
             if (showModelSources){
-              const modelSources = parseSourcesFromText(r.answer);
+              const modelSources = parseSourcesFromText(sourcesText);
               if (modelSources && modelSources.length){
                 // reuse existing list if present, otherwise create
                 let list = w.evidence && w.evidence.querySelector && w.evidence.querySelector('.ub-ai-evidence-list');
