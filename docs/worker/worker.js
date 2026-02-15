@@ -204,7 +204,7 @@ export default {
           text: s.item.text || s.item.title || '',
           score: s.score
         }));
-        const system = /*env.SYSTEM_PROMPT ||*/ 'You are a concise technical editor. Use only the provided context to answer. If none of the context answers the question, reply exactly with NO_RELEVANT_INFO.';
+        const system = env.SYSTEM_PROMPT || 'You are a concise technical editor. Use only the provided context to answer. If none of the context answers the question, reply exactly with NO_RELEVANT_INFO.';
         const payloadBody = {
           messages: [
             { role: 'system', content: system },
