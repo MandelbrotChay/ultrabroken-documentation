@@ -196,9 +196,19 @@
                 if (!list) { list = el('ul', { class: 'ub-ai-evidence-list' }, []); if (w.evidence) w.evidence.appendChild(list); }
                 modelSources.forEach(s => {
                   // normalize and strip any trailing .md from model-provided paths
-                  const slug = (s.path||'').replace(/^\/+|\/+$/g,'').replace(/\.md$/,'');
-                  const href = base + encodeURI(slug);
-                  const text = s.title || slug || s.path;
+                  // Build href safely: if the model supplied a site-relative
+                  // `/wiki/...` path already, use the site root + path to avoid
+                  // doubling the `/wiki/` prefix. Otherwise join with `base`.
+                  const siteRoot = 'https://nan-gogh.github.io/ultrabroken-documentation';
+                  const p = (s.path || s.id || '').toString();
+                  let href;
+                  if (p && p.startsWith('/wiki/')) {
+                    href = siteRoot + p;
+                  } else {
+                    const slug = p.replace(/^\/+|\/+$/g,'').replace(/\.md$/,'');
+                    href = base + encodeURI(slug);
+                  }
+                  const text = s.title || (s.path||s.id) || '';
                   const a = el('a', { href: href, target: '_blank', rel: 'noopener noreferrer' }, text);
                   const li = el('li', {}, a);
                   list.appendChild(li);
