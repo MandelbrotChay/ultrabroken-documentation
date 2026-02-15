@@ -19,7 +19,9 @@
     const input = el('input', { type: 'search', placeholder: '', 'data-ub-placeholder': _placeholder_text, class: 'ub-ai-input' });
     const clearBtn = el('button', { type: 'button', class: 'ub-ai-clear', 'aria-label': 'Clear search' }, '');
     const askBtn = el('button', { type: 'button', class: 'ub-ai-ask', 'aria-label': 'Ask' }, '');
-    const out = el('pre', { class: 'ub-ai-out' }, '');
+    // Output area (answer + evidence). `out` holds the model answer; `evidenceWrap` holds clickable evidence links returned by the Worker.
+    const out = el('div', { class: 'ub-ai-out' }, '');
+    const evidenceWrap = el('div', { class: 'ub-ai-evidence' }, '');
     inputWrap.appendChild(input);
     inputWrap.appendChild(clearBtn);
     row.appendChild(inputWrap);
@@ -56,18 +58,42 @@
       const w = render(placeholder);
       const handleAsk = async ()=>{
         const q = w.input.value.trim(); if (!q) return; w.out.textContent = 'Asking...';
+        evidenceWrap.innerHTML = '';
         const r = await askWorker(q);
         if (r.error) {
           w.out.textContent = 'Error: ' + r.error;
           return;
         }
+        // Render model answer (if present)
         if (r.answer) {
           w.out.textContent = r.answer;
-          return;
+        } else if (r.debug) {
+          w.out.textContent = JSON.stringify(r.debug, null, 2);
+        } else {
+          w.out.textContent = '';
         }
-        if (r.debug) { w.out.textContent = JSON.stringify(r.debug, null, 2); return; }
-        if (r.evidence) { w.out.textContent = JSON.stringify(r.evidence, null, 2); return; }
-        w.out.textContent = 'silence';
+
+        // Always render Worker-provided evidence as authoritative clickable links
+        try{
+          const base = 'https://nan-gogh.github.io/ultrabroken-documentation/wiki/';
+          const ev = r.evidence || [];
+          if (Array.isArray(ev) && ev.length){
+            const list = el('ul', { class: 'ub-ai-evidence-list' }, []);
+            ev.forEach(item => {
+              const id = item.id || item.path || '';
+              // Normalize id to a wiki path without .md
+              let slug = String(id).replace(/\.md$/,'').replace(/^\/+|\/+$/g, '');
+              const href = base + encodeURI(slug);
+              const text = item.title || slug || id;
+              const a = el('a', { href: href, target: '_blank', rel: 'noopener noreferrer' }, text);
+              const li = el('li', {}, a);
+              list.appendChild(li);
+            });
+            evidenceWrap.appendChild(list);
+          }
+        }catch(e){ /* ignore rendering errors */ }
+        // If nothing was rendered and there was no answer, show silence
+        if (!w.out.textContent && (!r.evidence || !r.evidence.length)) w.out.textContent = 'silence';
       };
       w.btn.addEventListener('click', handleAsk);
       // also allow Enter on the input to trigger ask
