@@ -24,7 +24,7 @@
   // the model response into `main` and `sources` (so sources are available
   // for parsing). `SHOW_RESPONSE_SOURCES` only controls whether the raw
   // sources block is appended to the displayed answer. Default `false`.
-  const SHOW_RESPONSE_SOURCES = false;
+  const SHOW_RESPONSE_SOURCES = true;
 
   function render(container){
     const root = el('div', { class: 'ub-ai-root' });
@@ -78,48 +78,28 @@
       const w = render(placeholder);
       // No user-facing toggle: `SHOW_MODEL_SOURCES` controls whether model-
       // returned `Source:` lines are rendered. This is intentionally internal.
-      // Parse simple source lines from model answer text. Returns array of {title?, path}
-      function parseSourcesFromText(text){
-        // Only accept explicit model-supplied source lines of the form:
-        // Source: Title — /path/to/doc
-        // Support multiple sources bundled on one line separated by ';'
-        const out = [];
-        if (!text || typeof text !== 'string') return out;
-        const lines = text.split(/\r?\n/).map(l=>l.trim()).filter(Boolean);
-        for (const line of lines){
-          // match the rest of the line after the leading 'Source:'
-          const m = line.match(/^Source:\s*(.+)$/i);
-          if (!m) continue;
-          const rest = m[1];
-          // split multiple sources on semicolon
-          const parts = rest.split(/\s*;\s*/).map(p=>p.trim()).filter(Boolean);
-          for (const part of parts){
-            const mm = part.match(/^(.+?)\s*[–—-]\s*(\/?\S+)$/);
-            if (mm){
-              const title = mm[1].trim();
-              const rawPath = mm[2];
-              const path = rawPath.startsWith('/') ? rawPath : '/' + rawPath.replace(/^\/+/, '');
-              out.push({ title, path });
-            }
-          }
-        }
-        return out;
+      // Parse a fenced JSON block from the model answer. Returns array of {title, path} or null
+      function parseJsonSources(text){
+        if (!text || typeof text !== 'string') return null;
+        // Find the first fenced ```json block
+        const m = text.match(/```json\s*([\s\S]*?)```/i);
+        if (!m) return null;
+        try{
+          const parsed = JSON.parse(m[1]);
+          if (!Array.isArray(parsed)) return null;
+          const out = parsed.map(it => ({ title: it.title || '', path: it.path || '' })).filter(it => it.title && it.path);
+          return out.length ? out : null;
+        }catch(e){ return null; }
       }
 
-      // Split a model answer into `main` (text before the first Source line)
-      // and `sources` (the rest, starting at the first Source line). The
-      // separator is the first line that begins with 'Source' (case-
-      // insensitive). Returns { main: string, sources: string|null }.
+      // Split a model answer into `main` (text before the first JSON fence)
+      // and `sources` (the fenced JSON block text). Returns { main: string, sources: string|null }.
       function splitAnswerAndSources(text){
         if (!text || typeof text !== 'string') return { main: '', sources: null };
-        const lines = text.split(/\r?\n/);
-        let idx = -1;
-        for (let i = 0; i < lines.length; i++){
-          if (/^\s*Source\b[:\s]/i.test(lines[i])) { idx = i; break; }
-        }
+        const idx = text.search(/```json\s*/i);
         if (idx === -1) return { main: text.replace(/\s+$/,'') , sources: null };
-        const main = lines.slice(0, idx).join('\n').replace(/\s+$/,'');
-        const sources = lines.slice(idx).join('\n').trim();
+        const main = text.slice(0, idx).replace(/\s+$/,'');
+        const sources = text.slice(idx).trim();
         return { main, sources };
       }
 
@@ -160,28 +140,66 @@
           w.out.textContent = '';
         }
 
-        // Additionally parse any source lines the model included in its answer and render them as links first
+        // Parse the machine-readable JSON block the model is instructed to emit and render those links first
         try{
           const base = 'https://nan-gogh.github.io/ultrabroken-documentation/wiki/';
           const sourceTextToParse = (sourcesText != null) ? sourcesText : r.answer;
           const showModelSources = SHOW_MODEL_SOURCES && sourceTextToParse;
           if (showModelSources){
-            const modelSources = parseSourcesFromText(sourceTextToParse);
+            const modelSources = parseJsonSources(sourceTextToParse);
             if (modelSources && modelSources.length){
               // create list and append to evidence area (model sources go first)
               let list = el('ul', { class: 'ub-ai-evidence-list' }, []);
               if (w.evidence) w.evidence.appendChild(list);
               const siteRoot = 'https://nan-gogh.github.io/ultrabroken-documentation';
               modelSources.forEach(s => {
-                const p = (s.path || s.id || '').toString();
-                let href;
-                if (p && p.startsWith('/wiki/')) {
-                  href = siteRoot + p;
-                } else {
+                const rawP = (s.path || s.id || '').toString();
+                const rawTitle = (s.title || '').toString();
+                // normalise a model-provided path into a site-relative "/wiki/.../" path
+                function normalizePath(p){
+                  if (!p) return '';
+                  p = String(p).trim().replace(/`/g,'').replace(/^<|>$/g,'');
+                  try{
+                    const u = new URL(p);
+                    p = u.pathname + (u.pathname.endsWith('/') ? '' : '/');
+                  }catch(e){}
+                  if (p.startsWith('/')){
+                    // ensure trailing slash and remove duplicate slashes
+                    return '/' + p.replace(/^\/+/, '').replace(/\/+/g,'/').replace(/\/$/,'') + '/';
+                  }
+                  const idx = p.indexOf('wiki/');
+                  if (idx !== -1){
+                    let rest = p.slice(idx + 'wiki/'.length).replace(/^\/+|\/+$/g,'');
+                    return '/wiki/' + rest + '/';
+                  }
+                  // treat as slug
                   const slug = p.replace(/^\/+|\/+$/g,'').replace(/\.md$/,'');
-                  href = base + encodeURI(slug);
+                  return '/wiki/' + slug + '/';
                 }
-                const text = s.title || (s.path||s.id) || '';
+
+                const normPath = normalizePath(rawP);
+                const href = siteRoot + normPath;
+
+                // decide display title: prefer r.evidence authoritative title when JSON title looks like a slug
+                function looksLikeSlug(t){
+                  if (!t) return false;
+                  return /\/.+/.test(t) || /^\w+\/\d{1,4}/.test(t) || /\d{4}-/.test(t);
+                }
+
+                let text = rawTitle || normPath;
+                try{
+                  if ((looksLikeSlug(rawTitle) || !rawTitle) && r && Array.isArray(r.evidence)){
+                    const match = r.evidence.find(it => {
+                      const itPath = String(it.path || it.id || '').replace(/^\/+|\/+$/g,'').replace(/\.md$/,'');
+                      const aPath = normPath.replace(/^\/+|\/+$/g,'');
+                      return itPath && aPath && (itPath === aPath || itPath.endsWith(aPath) || aPath.endsWith(itPath));
+                    });
+                    if (match && match.title) text = match.title;
+                  }
+                }catch(e){}
+
+                // sanitize and trim
+                text = String(text).replace(/`/g,'').trim();
                 const a = el('a', { href: href, target: '_blank', rel: 'noopener noreferrer' }, text);
                 const li = el('li', {}, a);
                 list.appendChild(li);
