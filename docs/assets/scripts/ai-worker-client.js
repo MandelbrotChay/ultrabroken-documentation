@@ -152,14 +152,26 @@
           const mainText = sp.main;
           sourcesText = sp.sources; // may be null
           // Render Markdown safely when marked + DOMPurify are present.
+          const normalizeMarkdown = (s) => {
+            if (!s) return '';
+            try{
+              let t = String(s || '');
+              t = t.replace(/\r\n/g,'\n');
+              // Collapse 3+ consecutive newlines into 2 (single paragraph gap)
+              t = t.replace(/\n{3,}/g, '\n\n');
+              return t.trim();
+            }catch(e){ return String(s || '').trim(); }
+          };
+
           const safeRender = (md) => {
+            const clean = normalizeMarkdown(md);
             try{
               if (window.marked && window.DOMPurify) {
-                w.out.innerHTML = DOMPurify.sanitize(marked.parse(String(md || '')));
+                w.out.innerHTML = DOMPurify.sanitize(marked.parse(clean));
               } else {
-                w.out.textContent = String(md || '').replace(/\s+$/,'');
+                w.out.textContent = clean.replace(/\s+$/,'');
               }
-            }catch(e){ w.out.textContent = String(md || '').replace(/\s+$/,''); }
+            }catch(e){ w.out.textContent = clean.replace(/\s+$/,''); }
           };
           // Display main answer; optionally append the raw sources block
           // when configured to show the response's sources section.
