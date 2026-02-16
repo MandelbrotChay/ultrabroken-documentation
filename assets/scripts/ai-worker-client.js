@@ -14,7 +14,7 @@
   // Internal flag: controls whether model-returned `Source:` lines are rendered.
   // This is intentionally an internal toggle (not user-facing). Set to `true`
   // to enable rendering of model-supplied sources, or `false` to disable.
-  const SHOW_MODEL_SOURCES = true;
+  const SHOW_MODEL_SOURCES = false;
   // Internal flag: controls whether Worker-provided evidence is rendered.
   // Default `false` keeps the UI from showing Worker evidence until enabled.
   const SHOW_WORKER_EVIDENCE = true;
@@ -24,7 +24,7 @@
   // the model response into `main` and `sources` (so sources are available
   // for parsing). `SHOW_RESPONSE_SOURCES` only controls whether the raw
   // sources block is appended to the displayed answer. Default `false`.
-  const SHOW_RESPONSE_SOURCES = false;
+  const SHOW_RESPONSE_SOURCES = true;
 
   function render(container){
     const root = el('div', { class: 'ub-ai-root' });
