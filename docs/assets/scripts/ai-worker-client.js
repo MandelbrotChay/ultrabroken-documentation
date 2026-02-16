@@ -25,6 +25,7 @@
   // for parsing). `SHOW_RESPONSE_SOURCES` only controls whether the raw
   // sources block is appended to the displayed answer. Default `false`.
   const SHOW_RESPONSE_SOURCES = false;
+  
 
   function render(container){
     const root = el('div', { class: 'ub-ai-root' });
