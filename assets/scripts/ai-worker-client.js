@@ -180,25 +180,9 @@
                 const normPath = normalizePath(rawP);
                 const href = siteRoot + normPath;
 
-                // decide display title: prefer r.evidence authoritative title when JSON title looks like a slug
-                function looksLikeSlug(t){
-                  if (!t) return false;
-                  return /\/.+/.test(t) || /^\w+\/\d{1,4}/.test(t) || /\d{4}-/.test(t);
-                }
-
+                // Use the model-provided title when present; otherwise fall back to normalized path
                 let text = rawTitle || normPath;
-                try{
-                  if ((looksLikeSlug(rawTitle) || !rawTitle) && r && Array.isArray(r.evidence)){
-                    const match = r.evidence.find(it => {
-                      const itPath = String(it.path || it.id || '').replace(/^\/+|\/+$/g,'').replace(/\.md$/,'');
-                      const aPath = normPath.replace(/^\/+|\/+$/g,'');
-                      return itPath && aPath && (itPath === aPath || itPath.endsWith(aPath) || aPath.endsWith(itPath));
-                    });
-                    if (match && match.title) text = match.title;
-                  }
-                }catch(e){}
-
-                // sanitize and trim
+                // sanitize and trim (remove backticks)
                 text = String(text).replace(/`/g,'').trim();
                 const a = el('a', { href: href, target: '_blank', rel: 'noopener noreferrer' }, text);
                 const li = el('li', {}, a);
