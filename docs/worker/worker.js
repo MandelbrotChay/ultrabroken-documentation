@@ -117,6 +117,31 @@ export default {
         idf[t] = Math.log(1 + (N - df[t] + 0.5) / (df[t] + 0.5));
       }
       index.__bm25 = { N, docs, df, idf, avgLen };
+      // Build fast lookup maps and backlink map for better evidence matching
+      const pathMap = Object.create(null);
+      const idMap = Object.create(null);
+      const titleMap = Object.create(null);
+      const backlinks = Object.create(null);
+      const normalizePath = (p) => String(p || '').replace(/\\/g, '/');
+      const extractLinks = (txt) => (String(txt||'').match(/\/wiki\/[\w\-\/]+/g) || []).map(s=>s.replace(/\/$/, ''));
+      for (let i=0;i<N;i++){
+        const it = index[i];
+        const p = it.path || it.id || null;
+        if (p) pathMap[normalizePath(p).replace(/\/$/, '')] = it;
+        if (it.id) idMap[String(it.id)] = it;
+        if (it.title) titleMap[String((it.title||'').toLowerCase())] = it;
+      }
+      // build backlinks: scan each doc for /wiki/... references and map them
+      for (let i=0;i<N;i++){
+        const it = index[i];
+        const links = extractLinks(it.text || it.title || '');
+        for (const l of links){
+          const key = l.replace(/\/$/, '');
+          if (!backlinks[key]) backlinks[key] = [];
+          backlinks[key].push(it);
+        }
+      }
+      index.__maps = { pathMap, idMap, titleMap, backlinks };
     }
 
     const bm = index.__bm25;
@@ -138,7 +163,20 @@ export default {
           const tfWeight = denom>0 ? ((k1 + 1) * tf) / denom : 0;
           score += idf_t * tfWeight;
         }
-        return { item: it, score };
+        // lightweight title overlap boost: if query tokens overlap title tokens, slightly boost score
+        let titleBoost = 0;
+        if (it.title){
+          const titleTokens = tokenize(it.title);
+          const setA = Object.create(null), setB = Object.create(null);
+          for (const t of qTokens) setA[t]=1;
+          for (const t of titleTokens) setB[t]=1;
+          let inter = 0;
+          for (const t of Object.keys(setA)) if (setB[t]) inter++;
+          const overlap = Math.max(setA && Object.keys(setA).length ? inter / Math.max(Object.keys(setA).length,1) : 0, 0);
+          titleBoost = overlap; // 0..1
+        }
+        const finalScore = score * (1 + (titleBoost * 0.25));
+        return { item: it, score: finalScore, raw_score: score };
         });
       }
 
@@ -161,12 +199,29 @@ export default {
 
     // Prepare a stable evidence list (title + short preview) to return with answers
     // Use full `text` for model context but provide a small `text_preview` for UI.
-    const evidenceList = evidences.slice(0,3).map(s=>({
-      id: s.item.id||s.item.path,
-      similarity: s.score,
-      title: s.item.title,
-      text_preview: (s.item.text || '').split('\n').slice(0,2).join(' ').slice(0,200)
-    }));
+    // Include referencing files (backlinks) for each evidence to provide independent file references
+    const maps = index.__maps || {};
+    const evidenceList = evidences.slice(0,3).map(s=>{
+      const item = s.item;
+      const canonicalPath = (item.path || item.id || '').replace(/\/$/, '');
+      const refs = (maps.backlinks && maps.backlinks[canonicalPath]) || [];
+      const uniqueRefs = [];
+      const seen = Object.create(null);
+      for (const r of refs){
+        const k = r.id || r.path || r.title;
+        if (!k || seen[k]) continue;
+        seen[k]=1;
+        uniqueRefs.push({ id: r.id||r.path, title: r.title, text_preview: (r.text||'').split('\n').slice(0,2).join(' ').slice(0,200) });
+        if (uniqueRefs.length >= 3) break;
+      }
+      return {
+        id: item.id||item.path,
+        similarity: s.score,
+        title: item.title,
+        text_preview: (item.text || '').split('\n').slice(0,2).join(' ').slice(0,200),
+        referenced_by: uniqueRefs
+      };
+    });
 
     // If debug requested, return top candidate scores to help tune threshold.
     if (body && body.debug) {
