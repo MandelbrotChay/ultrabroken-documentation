@@ -59,7 +59,8 @@
     const DEFAULT_WORKER_URL = 'https://ultrabroken-rag.gl1tchcr4vt.workers.dev';
     const url = window.AI_WORKER_URL || localStorage.getItem('ai_worker_url') || DEFAULT_WORKER_URL;
     try{
-      const res = await fetch(url, { method:'POST', headers: {'Content-Type':'application/json'}, body: JSON.stringify({ query: q }) });
+      // Request debug info from the worker so the live UI can render evidence/debug payloads.
+      const res = await fetch(url, { method:'POST', headers: {'Content-Type':'application/json'}, body: JSON.stringify({ query: q, debug: true }) });
       if (!res.ok) throw new Error('worker error '+res.status);
       return await res.json();
     }catch(e){ return { error: String(e) }; }
@@ -208,6 +209,13 @@
                 const li = el('li', {}, a);
                 list.appendChild(li);
               });
+              // If the worker also supplied debug info, render it beneath the evidence list
+              try{
+                if (r.debug) {
+                  const pre = el('pre', { class: 'ub-ai-debug', style: 'white-space:pre-wrap; margin-top:0.5rem; padding:0.4rem; background:#f7f7f7; border-radius:6px;' }, JSON.stringify(r.debug, null, 2));
+                  if (w.evidence) w.evidence.appendChild(pre);
+                }
+              }catch(e){ /* ignore debug rendering errors */ }
             }
           }catch(e){ /* ignore rendering errors */ }
         }catch(e){ /* ignore model source parsing errors */ }
