@@ -2,7 +2,7 @@
 title: "Out of Bounds Overview"
 ---
 
-# Out of Bounds
+# Out of Bounds Overview
 _Basic stub_
 
 ## Introduction

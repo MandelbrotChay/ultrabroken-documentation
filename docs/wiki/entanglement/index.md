@@ -2,7 +2,7 @@
 title: "Fuse Entanglement Overview"
 ---
 
-# Fuse Entanglement
+# Fuse Entanglement Overview
 _Basic stub_
 
 ## Introduction

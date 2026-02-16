@@ -41,7 +41,7 @@
     // NOTE: user-facing toggle removed — rendering of model-returned sources
     // is controlled by the internal `SHOW_MODEL_SOURCES` flag declared above.
     // Output area (answer + evidence). `out` holds the model answer; `evidenceWrap` holds clickable evidence links returned by the Worker.
-    const out = el('pre', { class: 'ub-ai-out' }, '');
+    const out = el('div', { class: 'ub-ai-out' }, '');
     const evidenceWrap = el('div', { class: 'ub-ai-evidence' }, '');
     inputWrap.appendChild(input);
     inputWrap.appendChild(clearBtn);
@@ -151,12 +151,22 @@
           const sp = splitAnswerAndSources(r.answer);
           const mainText = sp.main;
           sourcesText = sp.sources; // may be null
+          // Render Markdown safely when marked + DOMPurify are present.
+          const safeRender = (md) => {
+            try{
+              if (window.marked && window.DOMPurify) {
+                w.out.innerHTML = DOMPurify.sanitize(marked.parse(String(md || '')));
+              } else {
+                w.out.textContent = String(md || '').replace(/\s+$/,'');
+              }
+            }catch(e){ w.out.textContent = String(md || '').replace(/\s+$/,''); }
+          };
           // Display main answer; optionally append the raw sources block
           // when configured to show the response's sources section.
           if (SHOW_RESPONSE_SOURCES && sourcesText) {
-            w.out.textContent = mainText + '\n\n' + sourcesText;
+            safeRender(mainText + '\n\n' + sourcesText);
           } else {
-            w.out.textContent = String(mainText).replace(/\s+$/,'');
+            safeRender(mainText);
           }
         } else if (r.debug) {
           w.out.textContent = JSON.stringify(r.debug, null, 2);

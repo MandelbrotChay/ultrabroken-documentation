@@ -2,7 +2,7 @@
 title: "Message Not Found Overview"
 ---
 
-# Message Not Found
+# Message Not Found Overview
 _Basic stub_
 
 ## Introduction

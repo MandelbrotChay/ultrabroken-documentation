@@ -2,7 +2,7 @@
 title: "Desync Overview"
 ---
 
-# Desync
+# Desync Overview
 _Basic stub_
 
 ## Introduction
