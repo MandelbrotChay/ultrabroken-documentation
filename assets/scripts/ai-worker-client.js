@@ -100,6 +100,10 @@
               const rawPath = mm[2];
               const path = rawPath.startsWith('/') ? rawPath : '/' + rawPath.replace(/^\/+/, '');
               out.push({ title, path });
+            } else {
+              // Title-only source line (model may emit only the title)
+              const titleOnly = part.trim();
+              if (titleOnly) out.push({ title: titleOnly });
             }
           }
         }
@@ -163,25 +167,38 @@
         // Additionally parse any source lines the model included in its answer and render them as links first
         try{
           const base = 'https://nan-gogh.github.io/ultrabroken-documentation/wiki/';
+          const siteRoot = 'https://nan-gogh.github.io/ultrabroken-documentation';
           const sourceTextToParse = (sourcesText != null) ? sourcesText : r.answer;
           const showModelSources = SHOW_MODEL_SOURCES && sourceTextToParse;
           if (showModelSources){
             const modelSources = parseSourcesFromText(sourceTextToParse);
+            // If Worker provided mapped model_sources, build a lookup map title->path
+            const workerMap = (r.model_sources && Array.isArray(r.model_sources)) ? (r.model_sources.reduce((acc, it) => { if (it && it.title) acc[String(it.title).toLowerCase()] = it.path; return acc; }, {}) ) : {};
             if (modelSources && modelSources.length){
               // create list and append to evidence area (model sources go first)
               let list = el('ul', { class: 'ub-ai-evidence-list' }, []);
               if (w.evidence) w.evidence.appendChild(list);
-              const siteRoot = 'https://nan-gogh.github.io/ultrabroken-documentation';
               modelSources.forEach(s => {
-                const p = (s.path || s.id || '').toString();
-                let href;
-                if (p && p.startsWith('/wiki/')) {
-                  href = siteRoot + p;
-                } else {
-                  const slug = p.replace(/^\/+|\/+$/g,'').replace(/\.md$/,'');
-                  href = base + encodeURI(slug);
-                }
                 const text = s.title || (s.path||s.id) || '';
+                let href;
+                // Prefer Worker-provided mapping when available
+                const mappedPath = workerMap && workerMap[String((s.title||'')).toLowerCase()];
+                if (mappedPath) {
+                  if (mappedPath.toString().startsWith('/wiki/')) {
+                    href = siteRoot + mappedPath;
+                  } else {
+                    const slug = (mappedPath||'').toString().replace(/^\/+|\/+$/g,'').replace(/\.md$/,'');
+                    href = base + encodeURI(slug);
+                  }
+                } else if (s.path && s.path.toString().startsWith('/wiki/')) {
+                  href = siteRoot + s.path;
+                } else if (s.path) {
+                  const slug = (s.path||'').toString().replace(/^\/+|\/+$/g,'').replace(/\.md$/,'');
+                  href = base + encodeURI(slug);
+                } else {
+                  // Title-only: build a search link that seeds the site search (use `search:Title` to drive search)
+                  href = siteRoot + '/?q=' + encodeURIComponent('search:' + text);
+                }
                 const a = el('a', { href: href, target: '_blank', rel: 'noopener noreferrer' }, text);
                 const li = el('li', {}, a);
                 list.appendChild(li);
