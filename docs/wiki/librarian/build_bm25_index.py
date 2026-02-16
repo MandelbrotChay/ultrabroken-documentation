@@ -77,7 +77,8 @@ def extract_title(md_path: Path) -> str:
     4. Fallback to filename stem (caller can handle that)
     """
     try:
-        raw = md_path.read_text(encoding='utf-8')
+        # read with utf-8-sig to strip a BOM if present (matches extract_text behavior)
+        raw = md_path.read_text(encoding='utf-8-sig')
     except Exception:
         return None
 
