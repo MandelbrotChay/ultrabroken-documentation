@@ -26,7 +26,6 @@
   // sources block is appended to the displayed answer. Default `false`.
   const SHOW_RESPONSE_SOURCES = false;
   
-
   function render(container){
     const root = el('div', { class: 'ub-ai-root' });
     const row = el('div', { style: 'display:flex; gap:0.4rem; align-items:center;' });
