@@ -14,7 +14,7 @@
   // Internal flag: controls whether model-returned `Source:` lines are rendered.
   // This is intentionally an internal toggle (not user-facing). Set to `true`
   // to enable rendering of model-supplied sources, or `false` to disable.
-  const SHOW_MODEL_SOURCES = true;
+  const SHOW_MODEL_SOURCES = false;
   // Internal flag: controls whether Worker-provided evidence is rendered.
   // Default `false` keeps the UI from showing Worker evidence until enabled.
   const SHOW_WORKER_EVIDENCE = true;
