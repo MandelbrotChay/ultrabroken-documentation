@@ -14,7 +14,7 @@
   // Internal flag: controls whether model-returned `Source:` lines are rendered.
   // This is intentionally an internal toggle (not user-facing). Set to `true`
   // to enable rendering of model-supplied sources, or `false` to disable.
-  const SHOW_MODEL_SOURCES = false;
+  const SHOW_MODEL_SOURCES = true;
   // Internal flag: controls whether Worker-provided evidence is rendered.
   // Default `false` keeps the UI from showing Worker evidence until enabled.
   const SHOW_WORKER_EVIDENCE = true;
@@ -59,8 +59,7 @@
     const DEFAULT_WORKER_URL = 'https://ultrabroken-rag.gl1tchcr4vt.workers.dev';
     const url = window.AI_WORKER_URL || localStorage.getItem('ai_worker_url') || DEFAULT_WORKER_URL;
     try{
-      // Request debug info from the worker so the live UI can render evidence/debug payloads.
-      const res = await fetch(url, { method:'POST', headers: {'Content-Type':'application/json'}, body: JSON.stringify({ query: q, debug: true }) });
+      const res = await fetch(url, { method:'POST', headers: {'Content-Type':'application/json'}, body: JSON.stringify({ query: q }) });
       if (!res.ok) throw new Error('worker error '+res.status);
       return await res.json();
     }catch(e){ return { error: String(e) }; }
@@ -209,13 +208,6 @@
                 const li = el('li', {}, a);
                 list.appendChild(li);
               });
-              // If the worker also supplied debug info, render it beneath the evidence list
-              try{
-                if (r.debug) {
-                  const pre = el('pre', { class: 'ub-ai-debug', style: 'white-space:pre-wrap; margin-top:0.5rem; padding:0.4rem; background:#f7f7f7; border-radius:6px;' }, JSON.stringify(r.debug, null, 2));
-                  if (w.evidence) w.evidence.appendChild(pre);
-                }
-              }catch(e){ /* ignore debug rendering errors */ }
             }
           }catch(e){ /* ignore rendering errors */ }
         }catch(e){ /* ignore model source parsing errors */ }
