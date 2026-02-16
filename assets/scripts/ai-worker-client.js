@@ -25,6 +25,10 @@
   // for parsing). `SHOW_RESPONSE_SOURCES` only controls whether the raw
   // sources block is appended to the displayed answer. Default `false`.
   const SHOW_RESPONSE_SOURCES = false;
+  // Internal toggle: when true, model-supplied source titles are rendered
+  // as `search:Title` links (intercepted by `search-link.js`). When false
+  // they render as normal page links. Default: false.
+  const USE_TITLE_SEARCH_LINKS = true;
   
   function render(container){
     const root = el('div', { class: 'ub-ai-root' });
@@ -173,18 +177,27 @@
               if (w.evidence) w.evidence.appendChild(list);
               const siteRoot = 'https://nan-gogh.github.io/ultrabroken-documentation';
               modelSources.forEach(s => {
-                const p = (s.path || s.id || '').toString();
-                let href;
-                if (p && p.startsWith('/wiki/')) {
-                  href = siteRoot + p;
-                } else {
-                  const slug = p.replace(/^\/+|\/+$/g,'').replace(/\.md$/,'');
-                  href = base + encodeURI(slug);
-                }
                 const text = s.title || (s.path||s.id) || '';
-                const a = el('a', { href: href, target: '_blank', rel: 'noopener noreferrer' }, text);
-                const li = el('li', {}, a);
-                list.appendChild(li);
+                const query = String(text).trim();
+                if (USE_TITLE_SEARCH_LINKS) {
+                  // Render as a `search:` link that `search-link.js` will intercept
+                  const href = 'search:' + encodeURIComponent(query);
+                  const a = el('a', { href: href, class: 'search-link', 'data-query': query }, text);
+                  const li = el('li', {}, a);
+                  list.appendChild(li);
+                } else {
+                  const p = (s.path || s.id || '').toString();
+                  let href;
+                  if (p && p.startsWith('/wiki/')) {
+                    href = siteRoot + p;
+                  } else {
+                    const slug = p.replace(/^\/+|\/+$/g,'').replace(/\.md$/,'');
+                    href = base + encodeURI(slug);
+                  }
+                  const a = el('a', { href: href, target: '_blank', rel: 'noopener noreferrer' }, text);
+                  const li = el('li', {}, a);
+                  list.appendChild(li);
+                }
               });
             }
           }
