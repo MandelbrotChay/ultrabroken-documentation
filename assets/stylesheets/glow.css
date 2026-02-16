@@ -818,7 +818,7 @@ li.task-list-item a, li.task-list a {
   background: transparent;
   padding: 0.6rem 0 0 0;
   margin-top: 0.5rem;
-  color: #083;
+  color: inherit;
   border: none;
   box-sizing: border-box;
   max-width: none;
@@ -831,7 +831,7 @@ li.task-list-item a, li.task-list a {
 /* Force the answer box and its contents to use Texturina (override theme defaults) */
 .ub-ai-out, .ub-ai-out * {
   font-family: 'Texturina', Georgia, serif !important;
-  color: #083 !important;
+  color: inherit !important;
 }
 
 /* Reduce vertical gap between rendered markdown paragraphs to avoid large blank areas */

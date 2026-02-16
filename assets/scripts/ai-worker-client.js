@@ -163,11 +163,24 @@
             }catch(e){ return String(s || '').trim(); }
           };
 
+          const normalizeHtmlWhitespace = (html) => {
+            // Remove empty paragraphs produced by Markdown -> HTML
+            html = html.replace(/<p>\s*<\/p>\s*/gi, '');
+            // Collapse long runs of <br> into at most two
+            html = html.replace(/(<br\s*\/?>\s*){3,}/gi, '<br><br>');
+            // Trim excessive whitespace between block tags
+            html = html.replace(/>\s+</g, '><');
+            return html.trim();
+          };
+
           const safeRender = (md) => {
             const clean = normalizeMarkdown(md);
             try{
               if (window.marked && window.DOMPurify) {
-                w.out.innerHTML = DOMPurify.sanitize(marked.parse(clean));
+                const raw = marked.parse(clean);
+                const sanitized = DOMPurify.sanitize(raw);
+                const normalized = normalizeHtmlWhitespace(sanitized);
+                w.out.innerHTML = normalized;
               } else {
                 w.out.textContent = clean.replace(/\s+$/,'');
               }
