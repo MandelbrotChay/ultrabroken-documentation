@@ -20,6 +20,25 @@ jobs:
 
       - uses: actions/checkout@v4
 
+      - name: Compute & set WIKI_INDEX_URL
+        run: |
+          OWNER=${{ github.repository_owner }}
+          REPO=${{ github.event.repository.name }}
+          URL="https://${OWNER}.github.io/${REPO}/wiki_index.json.gz"
+          echo "Computed WIKI_INDEX_URL=${URL}"
+          cd docs/worker
+          # If wrangler.toml has a [vars] section, add or replace WIKI_INDEX_URL there; otherwise append a new [vars] section.
+          if grep -q '^\[vars\]' wrangler.toml 2>/dev/null; then
+            if grep -q '^WIKI_INDEX_URL' wrangler.toml 2>/dev/null; then
+              sed -i "s|^WIKI_INDEX_URL *=.*|WIKI_INDEX_URL = \"${URL}\"|" wrangler.toml
+            else
+              # insert the variable immediately after the [vars] header
+              awk -v url="$URL" 'BEGIN{p=0} /^\[vars\]/{print; print "WIKI_INDEX_URL = \"" url "\""; p=1; next} {print}' wrangler.toml > wrangler.toml.tmp && mv wrangler.toml.tmp wrangler.toml
+            fi
+          else
+            printf "\n[vars]\nWIKI_INDEX_URL = \"%s\"\n" "${URL}" >> wrangler.toml
+          fi
+
       - name: Publish Cloudflare Worker
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}

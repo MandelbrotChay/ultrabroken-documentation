@@ -62,7 +62,7 @@ export default {
     // Centralized silence response so all sanity checks go through one place.
     const makeSilence = () => new Response(JSON.stringify({ answer: 'Silence echoes back...', evidence: [], did_answer: false }), { headers: Object.assign({'Content-Type':'application/json'}, CORS_HEADERS) });
 
-    const indexUrl = env.WIKI_INDEX_URL || `https://` + (env.SITE_HOSTNAME || 'nan-gogh.github.io') + `/${env.SITE_PATH || 'ultrabroken-documentation'}/wiki_index.json`;
+    const indexUrl = env.WIKI_INDEX_URL || `https://` + (env.SITE_HOSTNAME || 'nan-gogh.github.io') + `/${env.SITE_PATH || 'ultrabroken-documentation'}/wiki_index.json.gz`;
 
     // Try to read parsed index from the Worker cache first to avoid refetch+parse on every request.
     let index;

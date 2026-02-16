@@ -9,3 +9,6 @@ workers_dev = true
 
 [build]
 command = ""
+
+[vars]
+WIKI_INDEX_URL = "https://nan-gogh.github.io/ultrabroken-documentation/wiki_index.json.gz"
