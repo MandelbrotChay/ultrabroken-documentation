@@ -831,7 +831,11 @@ li.task-list-item a, li.task-list a {
 /* Force the answer box and its contents to use Texturina (override theme defaults) */
 .ub-ai-out, .ub-ai-out * {
   font-family: 'Texturina', Georgia, serif !important;
+  color: #083 !important;
 }
+
+/* Reduce vertical gap between rendered markdown paragraphs to avoid large blank areas */
+.ub-ai-out p { margin: 0 0 0.6rem 0; }
 
 /* Make sure preformatted debug/evidence don't overflow the container */
 .ub-ai-out code, .ub-ai-out pre { white-space: pre-wrap; word-break: break-word; } 
