@@ -150,11 +150,13 @@ label.md-header__button[for^="__palette_"]:hover {
   caret-color: var(--teal-glow) !important;
   border-color: rgba(0,240,194,0.5) !important;
   /* Use New Rocker for search input to match header/title styling */
-  font-family: 'New Rocker', 'Texturina', Georgia, 'Times New Roman', serif !important;
+  /*font-family: 'New Rocker', 'Texturina', Georgia, 'Times New Roman', serif !important;*/
+  font-size: 1.25rem !important;
+  line-height: 1.2 !important;
 }
 .md-search__input::placeholder {
   color: rgba(0,240,194,0.5) !important;
-  font-family: 'New Rocker', 'Texturina', Georgia, 'Times New Roman', serif !important;
+  /*font-family: 'New Rocker', 'Texturina', Georgia, 'Times New Roman', serif !important;*/
 }
 .md-search__input:focus {
   border-color: var(--teal-glow) !important;
@@ -783,7 +785,8 @@ li.task-list-item a, li.task-list a {
   color: var(--teal-glow);
   caret-color: var(--teal-glow);
   font-family: inherit;
-  font-size: 1rem;
+  font-size: 1.25rem; /* match H2-like size */
+  line-height: 1.2;
   box-sizing: border-box;
 }
 
