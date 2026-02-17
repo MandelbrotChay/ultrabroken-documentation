@@ -11,6 +11,10 @@ const SIMILARITY_THRESHOLD = 0.02;
 const RETURN_DEBUG = false;
 
 const APPEND_RESPONSE_SOURCES = false;
+// When true, include the Worker-collected retrieval evidence in the response
+// as `evidence`. When false, `evidence` will be an empty array to reduce
+// payload size and network footprint.
+const APPEND_WORKER_EVIDENCE = false;
 
 function cosine(a, b){
   let dot=0, na=0, nb=0;
@@ -63,7 +67,13 @@ export default {
 
     // Centralized silence response so all sanity checks go through one place.
     // New schema: { response_text, response_sources, sources, evidence }
-    const makeSilence = () => new Response(JSON.stringify({ response_text: 'Silence echoes back...', response_sources: null, sources: [], evidence: [] }), { headers: Object.assign({'Content-Type':'application/json'}, CORS_HEADERS) });
+    // Respect top-level flags so silence payload shape matches normal responses.
+    const makeSilence = () => new Response(JSON.stringify({
+      response_text: 'Silence echoes back...',
+      response_sources: null,
+      sources: [],
+      evidence: []
+    }), { headers: Object.assign({'Content-Type':'application/json'}, CORS_HEADERS) });
 
     const indexUrl = env.WIKI_INDEX_URL || `https://` + (env.SITE_HOSTNAME || 'nan-gogh.github.io') + `/${env.SITE_PATH || 'ultrabroken-documentation'}/wiki_index.json.gz`;
 
@@ -422,8 +432,10 @@ export default {
             const payload = {
               response_text: finalResponseText || modelText,
               response_sources: APPEND_RESPONSE_SOURCES ? (finalResponseSources || null) : null,
+              // `sources` is exclusively the model-parsed citations (do not merge retrieval evidence here)
               sources: finalSources || [],
-              evidence: evidenceList
+              // `evidence` contains authoritative retrieval hits and is optional to reduce payload size
+              evidence: APPEND_WORKER_EVIDENCE ? evidenceList : []
             };
             return new Response(JSON.stringify(payload), { headers: Object.assign({'Content-Type':'application/json'}, CORS_HEADERS) });
           }
