@@ -10,6 +10,15 @@
   --ub-marquee-pause-ms: 1300;
 }
 
+/* Override default text selection (blue) to use project teal */
+::selection {
+  background-color: var(--teal-dark) !important;
+  /*color: #ffffff !important;*/
+}
+::-moz-selection {
+  background-color: var(--teal-dark) !important;
+  /*color: #ffffff !important;*/
+}
 /* Apply fonts: Texturina for body, New Rocker for headings/navigation/title */
 html, body {
   font-family: 'Texturina', Georgia, 'Times New Roman', serif !important;
