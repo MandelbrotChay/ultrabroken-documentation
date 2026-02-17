@@ -14,7 +14,7 @@ const APPEND_RESPONSE_SOURCES = false;
 // When true, include the Worker-collected retrieval evidence in the response
 // as `evidence`. When false, `evidence` will be an empty array to reduce
 // payload size and network footprint.
-const APPEND_WORKER_EVIDENCE = false;
+const APPEND_WORKER_EVIDENCE = true;
 
 function cosine(a, b){
   let dot=0, na=0, nb=0;
@@ -111,6 +111,39 @@ export default {
     const QUESTION_WORDS = new Set(['what','how','why','where','when','which','who','whom','whose']);
     const COMMON_LOWERCASE_STOPWORDS = new Set(['the','a','an','to','of','in','on','for','by','with','and','or','is','are']);
     const WHITELIST = new Set(['Zuggle','Tulin','Overload']); // add domain-specific terms here
+    // Synonym sets: group equivalent terms/phrases together. Each array is a
+    // symmetric set — when any member is matched, we can emit the others.
+    const SYNONYM_SETS = Object.freeze([
+      ['oob', 'out of bounds', 'out-of-bounds'],
+      ['sld', 'persistent save load object transfer'],
+      ['sd', 'stick_desync', 'stick desync'],
+      ['Ultrabroken', 'ultrabreak', 'UB']
+    ]);
+
+    // Build a lookup: member (lowercased) -> array of other members in the same set.
+    // Also build a list of multi-word synonym phrases (parts) for greedy matching.
+    const { SYNONYMS_MAP, SYNONYM_PHRASES } = (() => {
+      const map = Object.create(null);
+      const phrases = [];
+      for (const set of SYNONYM_SETS){
+        for (const member of set){
+          const key = String(member).toLowerCase();
+          map[key] = map[key] || [];
+          for (const other of set){
+            if (String(other) === String(member)) continue;
+            if (!map[key].includes(other)) map[key].push(other);
+          }
+          // record multi-word/hyphenated members for greedy matching
+          const parts = String(member).split(/[\s_\-]+/).filter(Boolean).map(p=>p.toLowerCase());
+          if (parts.length > 1){
+            phrases.push({ parts, phrase: parts.join(' ') });
+          }
+        }
+      }
+      // Sort phrases by descending length to prefer longest matches first
+      phrases.sort((a,b) => b.parts.length - a.parts.length);
+      return { SYNONYMS_MAP: Object.freeze(map), SYNONYM_PHRASES: Object.freeze(phrases) };
+    })();
 
     const filterQueryForRetrieval = (query) => {
       if (!query) return '';
@@ -121,11 +154,58 @@ export default {
       // Helper to check TitleCase (first char upper, rest lower)
       const isTitleCase = (t) => /^[A-Z][a-z]+$/.test(t);
 
+      // Precompute multi-word whitelist entries (split on spaces or underscores)
+      const whitelistMulti = [];
+      for (const w of WHITELIST){
+        if (/\s|_/.test(w)) whitelistMulti.push(String(w).split(/[\s_]+/));
+      }
+
       for (let i = 0; i < raw.length; i++){
         const r = raw[i];
         // strip surrounding punctuation but keep internal chars (hyphens/underscores)
         const stripped = (r||'').replace(/^[^\w]+|[^\w]+$/g,'');
         if (!stripped) continue;
+        // Greedy multi-word synonym phrase matching (case-insensitive)
+        let matchedSyn = false;
+        if (SYNONYM_PHRASES && SYNONYM_PHRASES.length){
+          for (const sp of SYNONYM_PHRASES){
+            let ok = true;
+            for (let k = 0; k < sp.parts.length; k++){
+              const idx = i + k;
+              if (idx >= raw.length) { ok = false; break; }
+              const cand = (raw[idx]||'').replace(/^[^\w]+|[^\w]+$/g,'').toLowerCase();
+              if (cand !== sp.parts[k]) { ok = false; break; }
+            }
+            if (ok){
+              tokens.push(sp.phrase); // normalized lowercased phrase
+              i = i + sp.parts.length - 1; // skip consumed tokens
+              matchedSyn = true;
+              break;
+            }
+          }
+        }
+        if (matchedSyn) continue;
+        // Multi-word whitelist: match sequence starting at `i` against any multi-entry
+        let matchedMulti = false;
+        if (whitelistMulti.length > 0){
+          for (const parts of whitelistMulti){
+            let ok = true;
+            for (let k = 0; k < parts.length; k++){
+              const idx = i + k;
+              if (idx >= raw.length) { ok = false; break; }
+              const cand = (raw[idx]||'').replace(/^[^\w]+|[^\w]+$/g,'');
+              if (cand !== parts[k]) { ok = false; break; }
+            }
+            if (ok){
+              // emit separate words for the whitelist multi-word entry
+              for (const p of parts) tokens.push(p);
+              i = i + parts.length - 1;
+              matchedMulti = true;
+              break;
+            }
+          }
+        }
+        if (matchedMulti) continue;
         // Whitelist exact tokens (case-sensitive)
         if (WHITELIST.has(stripped)) { tokens.push(stripped); continue; }
         // Always remove question words (case-insensitive)
@@ -135,24 +215,25 @@ export default {
         // Preserve tokens containing digits, hyphens or underscores
         if (/[0-9]|-|_/.test(stripped)) { tokens.push(stripped); continue; }
         // TitleCase sequence detection: collect run and join with underscore
-        if (isTitleCase(stripped)){
-          const run = [stripped];
-          let j = i+1;
-          while (j < raw.length){
-            const next = (raw[j]||'').replace(/^[^\w]+|[^\w]+$/g,'');
-            if (!isTitleCase(next)) break;
-            run.push(next);
-            j++;
-          }
-          if (run.length > 1){
-            tokens.push(run.join('_'));
-            i = j-1; // skip consumed
+          if (isTitleCase(stripped)){
+            const run = [stripped];
+            let j = i+1;
+            while (j < raw.length){
+              const next = (raw[j]||'').replace(/^[^\w]+|[^\w]+$/g,'');
+              if (!isTitleCase(next)) break;
+              run.push(next);
+              j++;
+            }
+            if (run.length > 1){
+              // Emit separate words only (no joined form) so BM25 can match individual tokens.
+              for (const w of run) tokens.push(w);
+              i = j-1; // skip consumed
+              continue;
+            }
+            // single TitleCase word: keep it (may be a proper noun)
+            tokens.push(stripped);
             continue;
           }
-          // single TitleCase word: keep it (may be a proper noun)
-          tokens.push(stripped);
-          continue;
-        }
         // Lowercase stopwords: only remove when token is exactly lowercase
         if (stripped === stripped.toLowerCase() && COMMON_LOWERCASE_STOPWORDS.has(stripped)) continue;
         // Short lowercase tokens (<=2) are removed unless whitelisted
@@ -173,7 +254,33 @@ export default {
       }
 
       // Return a string suitable for existing `tokenize` (it will lowercase and split on \w+)
-      return tokens.join(' ');
+      // Conservative query-time expansion: emit up to N synonyms per token (N=2)
+      const expandTokens = (tokensList, maxPer=2) => {
+        if (!tokensList || !tokensList.length) return tokensList;
+        const seen = new Set();
+        const out = [];
+          for (const t of tokensList){
+          out.push(t);
+          const lower = String(t).toLowerCase();
+          seen.add(lower);
+          const syn = SYNONYMS_MAP[lower];
+          if (Array.isArray(syn) && syn.length){
+            let added = 0;
+            for (const s of syn){
+              if (added >= maxPer) break;
+              const sLower = String(s).toLowerCase();
+              if (seen.has(sLower)) continue;
+              out.push(s);
+              seen.add(sLower);
+              added++;
+            }
+          }
+        }
+        return out;
+      };
+
+      const finalTokens = expandTokens(tokens, 2);
+      return finalTokens.join(' ');
     };
 
     // Prepare BM25 structures on first load and attach to index to reuse across requests.
