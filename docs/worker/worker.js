@@ -14,7 +14,7 @@ const APPEND_RESPONSE_SOURCES = false;
 // When true, include the Worker-collected retrieval evidence in the response
 // as `evidence`. When false, `evidence` will be an empty array to reduce
 // payload size and network footprint.
-const APPEND_WORKER_EVIDENCE = false;
+const APPEND_WORKER_EVIDENCE = true;
 
 function cosine(a, b){
   let dot=0, na=0, nb=0;
