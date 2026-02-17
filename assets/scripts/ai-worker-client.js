@@ -16,8 +16,8 @@
         const base = scriptEl && scriptEl.src ? scriptEl.src.replace(/\/[^/]*$/, '/') : document.baseURI;
         const urls = [new URL('../vendor/marked.min.js', base).toString(), new URL('../vendor/purify.min.js', base).toString()];
         let loaded = 0;
-        const onLoad = ()=>{ loaded++; if (loaded >= urls.length) return resolve(true); };
-        const onError = ()=>{ loaded++; if (loaded >= urls.length) return resolve(!!(window.marked && window.DOMPurify)); };
+        const onLoad = ()=>{ loaded++; if (loaded >= urls.length) { console.debug('ai-client: vendor script loaded'); return resolve(true); } };
+        const onError = ()=>{ loaded++; if (loaded >= urls.length) { console.debug('ai-client: vendor script failed to load'); return resolve(!!(window.marked && window.DOMPurify)); } };
         urls.forEach(u=>{
           // If already loaded by some other script, skip
           if ((u.indexOf('marked.min.js')>=0 && window.marked) || (u.indexOf('purify.min.js')>=0 && window.DOMPurify)) { onLoad(); return; }
@@ -26,7 +26,7 @@
           document.head.appendChild(s);
         });
         // Fallback timeout — resolve whether or not vendors loaded to avoid blocking
-        setTimeout(()=> resolve(!!(window.marked && window.DOMPurify)), timeoutMs);
+        setTimeout(()=>{ console.debug('ai-client: vendor loader timeout, marked=', !!window.marked, 'DOMPurify=', !!window.DOMPurify); resolve(!!(window.marked && window.DOMPurify)); }, timeoutMs);
       }catch(e){ resolve(!!(window.marked && window.DOMPurify)); }
     });
   }
@@ -60,7 +60,7 @@
     const root = el('div', { class: 'ub-ai-root' });
     const row = el('div', { style: 'display:flex; gap:0.4rem; align-items:center;' });
     const inputWrap = el('div', { class: 'ub-ai-input-wrap', style: 'position:relative; flex:1;' });
-    const _placeholder_text = 'Will it share wisdom or waffle?';
+    const _placeholder_text = 'Will it share wiazrdry or waffle?';
     const input = el('input', { type: 'search', placeholder: '', 'data-ub-placeholder': _placeholder_text, class: 'ub-ai-input' });
     const clearBtn = el('button', { type: 'button', class: 'ub-ai-clear', 'aria-label': 'Clear search' }, '');
     const askBtn = el('button', { type: 'button', class: 'ub-ai-ask', 'aria-label': 'Ask' }, '');
@@ -232,12 +232,16 @@
           const safeRender = (md) => {
             const clean = normalizeMarkdown(md);
             try{
+              console.debug('ai-client: safeRender checking vendors', !!window.marked, !!window.DOMPurify);
               if (window.marked && window.DOMPurify) {
-                const raw = marked.parse(clean);
-                const sanitized = DOMPurify.sanitize(raw);
-                const normalized = normalizeHtmlWhitespace(sanitized);
-                w.out.innerHTML = normalized;
+                try{
+                  const raw = marked.parse(clean);
+                  const sanitized = DOMPurify.sanitize(raw);
+                  const normalized = normalizeHtmlWhitespace(sanitized);
+                  w.out.innerHTML = normalized;
+                }catch(e){ console.debug('ai-client: render error', e); w.out.textContent = clean.replace(/\s+$/,''); }
               } else {
+                console.debug('ai-client: vendors missing; falling back to plain text');
                 w.out.textContent = clean.replace(/\s+$/,'');
               }
             }catch(e){ w.out.textContent = clean.replace(/\s+$/,''); }
