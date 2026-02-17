@@ -275,6 +275,10 @@
                 if (w.evidence && !w.evidence.querySelector('.ub-ai-resources')){
                   const heading = el('h2', { class: 'ub-ai-resources md-typeset' }, 'Resources');
                   if (w.evidence) w.evidence.appendChild(heading);
+                  // Insert a horizontal rule to visually separate the Resources
+                  // heading from the list of source links.
+                  const sep = el('hr', { class: 'ub-ai-resources-sep' }, '');
+                  if (w.evidence) w.evidence.appendChild(sep);
                 }
               }catch(e){}
               // create list and append to evidence area (model sources go first)
