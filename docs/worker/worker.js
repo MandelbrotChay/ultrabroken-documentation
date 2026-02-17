@@ -356,8 +356,15 @@ export default {
                   let rest = [];
                   if (m && m[1]) rest = String(m[1]).split(/\s*;\s*/).map(p=>p.trim()).filter(Boolean);
                   else if (/^Sources?:\s*$/i.test(line)){
-                    // consume following lines
-                    for (let j = i+1; j < srcLines.length; j++){ const next = srcLines[j].trim(); if (!next) break; rest.push(next); }
+                    // consume following lines and skip them in the outer loop
+                    let j;
+                    for (j = i+1; j < srcLines.length; j++){
+                      const next = srcLines[j].trim();
+                      if (!next) break;
+                      rest.push(next);
+                    }
+                    // advance outer loop to last consumed line to avoid double-processing
+                    i = j - 1;
                   } else {
                     // lines already trimmed; try to treat as entry
                     rest = [line];
