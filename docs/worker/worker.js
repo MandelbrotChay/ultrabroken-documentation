@@ -10,7 +10,7 @@ const SIMILARITY_THRESHOLD = 0.02;
 // Change this in-code when you want repository-wide debugging; not a secret.
 const RETURN_DEBUG = false;
 
-const APPEND_RESPONSE_SOURCES = true;
+const APPEND_RESPONSE_SOURCES = false;
 // When true, include the Worker-collected retrieval evidence in the response
 // as `evidence`. When false, `evidence` will be an empty array to reduce
 // payload size and network footprint.
@@ -333,9 +333,9 @@ export default {
             // Helper to detect the canonical Sources block (a single line 'Sources:' followed by entries)
             const hasSources = (txt) => { try{ return /(^|\n)Sources:\s*($|\n)/m.test(String(txt||'')); }catch(e){ return false; } };
 
-            // parseSourcesFromText: extract textual Sources block, structured sources, and main answer text
-            const parseSourcesFromText = (txt) => {
-              const result = { response_text: String(txt||''), response_sources: null, sources: [] };
+            // splitResponseAndSources: separate model text into main response and raw Sources block
+            const splitResponseAndSources = (txt) => {
+              const result = { response_text: String(txt||''), response_sources: null };
               try{
                 const lines = String(txt||'').split(/\r?\n/);
                 let idx = -1;
@@ -343,49 +343,50 @@ export default {
                   if (/^\s*Sources?\b[:\s]/i.test(lines[i])) { idx = i; break; }
                 }
                 if (idx === -1) return result;
-                // response_sources is the block from idx..end
                 const srcLines = lines.slice(idx).map(l=>l.trim()).filter(Boolean);
                 result.response_sources = srcLines.join('\n');
-                // response_text is everything before idx
                 result.response_text = lines.slice(0, idx).join('\n').trim();
-                // build structured sources array from response_sources
-                const entries = [];
-                for (let i = 0; i < srcLines.length; i++){
-                  let line = srcLines[i];
-                  const m = line.match(/^Sources?:\s*(.+)$/i);
-                  let rest = [];
-                  if (m && m[1]) rest = String(m[1]).split(/\s*;\s*/).map(p=>p.trim()).filter(Boolean);
-                  else if (/^Sources?:\s*$/i.test(line)){
-                    // consume following lines and skip them in the outer loop
-                    let j;
-                    for (j = i+1; j < srcLines.length; j++){
-                      const next = srcLines[j].trim();
-                      if (!next) break;
-                      rest.push(next);
-                    }
-                    // advance outer loop to last consumed line to avoid double-processing
-                    i = j - 1;
-                  } else {
-                    // lines already trimmed; try to treat as entry
-                    rest = [line];
-                  }
-                  for (const part of rest){
-                    let p = part.replace(/^Sources?:\s*/i,'').replace(/^[\-\*\u2022\s]+/,'').replace(/[\-–—\s]+$/,'').trim();
-                    if (!p || p.length < 2) continue;
-                    const mm = p.match(/^(.+?)\s*[–—-]\s*(\/?\S+)$/);
-                    if (mm){
-                      const title = mm[1].trim();
-                      const rawPath = mm[2];
-                      const path = rawPath.startsWith('/') ? rawPath : '/' + rawPath.replace(/^\/+/, '');
-                      entries.push({ title, path });
-                    } else {
-                      entries.push({ title: p, path: null });
-                    }
-                  }
-                }
-                result.sources = entries;
                 return result;
               }catch(e){ return result; }
+            };
+
+            // parseSourcesBlock: parse the raw `response_sources` block into structured `sources[]`
+            const parseSourcesBlock = (block) => {
+              if (!block) return [];
+              const srcLines = String(block||'').split(/\r?\n/).map(l=>l.trim()).filter(Boolean);
+              const entries = [];
+              for (let i = 0; i < srcLines.length; i++){
+                let line = srcLines[i];
+                const m = line.match(/^Sources?:\s*(.+)$/i);
+                let rest = [];
+                if (m && m[1]) rest = String(m[1]).split(/\s*;\s*/).map(p=>p.trim()).filter(Boolean);
+                else if (/^Sources?:\s*$/i.test(line)){
+                  // consume following lines and skip them by advancing i
+                  let j;
+                  for (j = i+1; j < srcLines.length; j++){
+                    const next = srcLines[j].trim();
+                    if (!next) break;
+                    rest.push(next);
+                  }
+                  i = j - 1; // skip consumed lines
+                } else {
+                  rest = [line];
+                }
+                for (const part of rest){
+                  let p = part.replace(/^Sources?:\s*/i,'').replace(/^[\-\*\u2022\s]+/,'').replace(/[\-–—\s]+$/,'').trim();
+                  if (!p || p.length < 2) continue;
+                  const mm = p.match(/^(.+?)\s*[–—-]\s*(\/?\S+)$/);
+                  if (mm){
+                    const title = mm[1].trim();
+                    const rawPath = mm[2];
+                    const path = rawPath.startsWith('/') ? rawPath : '/' + rawPath.replace(/^\/+/, '');
+                    entries.push({ title, path });
+                  } else {
+                    entries.push({ title: p, path: null });
+                  }
+                }
+              }
+              return entries;
             };
 
             // If the model response lacks the required Sources block, attempt one immediate re-query.
@@ -421,18 +422,23 @@ export default {
               }
             }
 
-            // Parse the final modelText into structured fields
-            const parsedModel = parseSourcesFromText(modelText);
+            // Split model output into response_text and a raw response_sources block
+            const parsedModel = splitResponseAndSources(modelText);
             // Allow model to sometimes return JSON blobs with `answer` — prefer that if present
             let parsedJson = null;
             try{ parsedJson = JSON.parse(modelText); }catch(e){ parsedJson = null; }
             let finalResponseText = parsedModel.response_text;
-            let finalSources = parsedModel.sources || [];
             let finalResponseSources = parsedModel.response_sources || null;
+            // Build structured sources from the raw response_sources block (prefer this)
+            let finalSources = finalResponseSources ? parseSourcesBlock(finalResponseSources) : [];
             if (parsedJson && typeof parsedJson === 'object'){
               if (parsedJson.answer && !finalResponseText) finalResponseText = String(parsedJson.answer || '').trim();
               if (Array.isArray(parsedJson.sources) && parsedJson.sources.length) finalSources = parsedJson.sources;
-              if (parsedJson.response_sources && !finalResponseSources) finalResponseSources = parsedJson.response_sources;
+              if (parsedJson.response_sources && !finalResponseSources) {
+                finalResponseSources = parsedJson.response_sources;
+                // if we didn't already parse sources from response_sources, do so now
+                if (!finalSources || finalSources.length === 0) finalSources = parseSourcesBlock(finalResponseSources);
+              }
             }
 
             // Use APPEND_RESPONSE_SOURCES directly (declared at top of file)
