@@ -317,6 +317,42 @@ export default {
           }
           modelText = String(modelText || '').trim();
           if (modelText && modelText.length >= 4 && !/^(silence|no_relevant_info|no_relevant_information|noinfo)$/i.test(modelText)){
+            // Helper to detect the canonical Sources block (a single line 'Sources:' followed by entries)
+            const hasSources = (txt) => { try{ return /(^|\n)Sources:\s*($|\n)/m.test(String(txt||'')); }catch(e){ return false; } };
+
+            // If the model response lacks the required Sources block, attempt one immediate re-query.
+            if (!hasSources(modelText)){
+              try{
+                // Re-run the exact same request once (quick retry) to attempt a complete reply.
+                const retryRes = await fetch('https://openrouter.ai/api/v1/chat/completions', {
+                  method: 'POST',
+                  headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${env.OPENROUTER_API_KEY}` },
+                  body: JSON.stringify(payloadBody)
+                });
+                const retryText = await retryRes.text().catch(()=>null);
+                let retryJson = null;
+                try{ retryJson = retryText ? JSON.parse(retryText) : null; }catch(e){ retryJson = null; }
+                let retryModelText = '';
+                if (retryJson){
+                  if (retryJson.choices && retryJson.choices[0] && retryJson.choices[0].message) retryModelText = retryJson.choices[0].message.content || '';
+                  else if (retryJson.output && Array.isArray(retryJson.output) && retryJson.output[0] && retryJson.output[0].content) retryModelText = retryJson.output[0].content;
+                  else if (retryJson.result) retryModelText = String(retryJson.result);
+                } else if (retryText){
+                  retryModelText = retryText;
+                }
+                retryModelText = String(retryModelText || '').trim();
+                if (!hasSources(retryModelText)){
+                  // Second attempt failed to produce Sources — return canonical silence to caller
+                  return makeSilence();
+                }
+                // Use the retryModelText as the final modelText if it contains Sources
+                modelText = retryModelText;
+              }catch(retryErr){
+                // On any retry error, fall back to silence
+                return makeSilence();
+              }
+            }
+
             let parsed = null;
             try{ parsed = JSON.parse(modelText); }catch(e){ parsed = null; }
             if (parsed && parsed.answer) {
