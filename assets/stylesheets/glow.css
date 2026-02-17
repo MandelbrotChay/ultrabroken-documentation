@@ -155,8 +155,9 @@ label.md-header__button[for^="__palette_"]:hover {
   line-height: 1.2 !important;
 }
 .md-search__input::placeholder {
-  color: rgba(0,240,194,0.5) !important;
-  /*font-family: 'New Rocker', 'Texturina', Georgia, 'Times New Roman', serif !important;*/
+  color: rgba(0,240,194,0.48) !important;
+  /* Slightly darker placeholder derived from current color when supported */
+  color: color-mix(in srgb, currentColor 80%, black 20%) !important;
 }
 .md-search__input:focus {
   border-color: var(--teal-glow) !important;
@@ -782,15 +783,21 @@ li.task-list-item a, li.task-list a {
   margin-bottom: 0;
   border: none; /* remove bottom border to avoid double-line */
   background: transparent;
-  color: var(--teal-glow);
-  caret-color: var(--teal-glow);
+  /* Use the site's standard text color (inherit from surrounding context) */
+  color: inherit !important;
+  /* caret should match input text color */
+  caret-color: currentColor !important;
   font-family: inherit;
   font-size: 1.25rem; /* match H2-like size */
   line-height: 1.2;
   box-sizing: border-box;
 }
 
-.ub-ai-input::placeholder { color: rgba(0,240,194,0.45); }
+.ub-ai-input::placeholder {
+  /* Slightly darker variant of the input's text color. Use color-mix when available, with a teal fallback. */
+  color: rgba(0,240,194,0.45) !important;
+  color: color-mix(in srgb, currentColor 80%, black 20%) !important;
+}
 
 /* Icon-only Ask button variant: harmonized with the clear button so
    both can be shown/hidden by JS reliably. Start hidden; JS toggles
