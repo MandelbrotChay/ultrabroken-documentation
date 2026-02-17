@@ -156,6 +156,12 @@
           const base = 'https://nan-gogh.github.io/ultrabroken-documentation/wiki/';
           const modelSources = Array.isArray(r.sources) ? r.sources : [];
           const showModelSources = SHOW_MODEL_SOURCES && modelSources && modelSources.length;
+          // When rendering as `search:` links we need to dedupe model-provided
+          // sources and Worker-provided evidence so the final list contains
+          // unique search queries. `seenQueries` tracks already-emitted queries
+          // (case-sensitive, using the display string) and ensures the uppermost
+          // instance is kept.
+          const seenQueries = new Set();
           if (showModelSources){
             if (w.evidence && !w.evidence.querySelector('.ub-ai-resources')){
               const heading = el('h2', { class: 'ub-ai-resources md-typeset' }, 'Resources');
@@ -170,6 +176,8 @@
               const text = s.title || (s.path||s.id) || '';
               const query = String(text).trim();
               if (USE_TITLE_SEARCH_LINKS) {
+                if (seenQueries.has(query)) return; // skip duplicate
+                seenQueries.add(query);
                 const href = 'search:' + encodeURIComponent(query);
                 const a = el('a', { href: href, class: 'search-link', 'data-query': query }, text);
                 const li = el('li', {}, a);
@@ -200,13 +208,25 @@
               if (!list) { list = el('ul', { class: 'ub-ai-evidence-list' }, []); if (w.evidence) w.evidence.appendChild(list); }
               ev.forEach(item => {
                 const id = item.id || item.path || '';
+                // Prefer item.title for search queries; fallback to normalized id
+                const titleText = item.title || '';
                 // Normalize id to a wiki path without .md
                 let slug = String(id).replace(/\.md$/,'').replace(/^\/+|\/+$/g, '');
-                const href = base + encodeURI(slug);
-                const text = item.title || slug || id;
-                const a = el('a', { href: href, target: '_blank', rel: 'noopener noreferrer' }, text);
-                const li = el('li', {}, a);
-                list.appendChild(li);
+                const text = titleText || slug || id;
+                if (USE_TITLE_SEARCH_LINKS) {
+                  const query = String(text).trim();
+                  if (seenQueries.has(query)) return; // already emitted by model sources
+                  seenQueries.add(query);
+                  const href = 'search:' + encodeURIComponent(query);
+                  const a = el('a', { href: href, class: 'search-link', 'data-query': query }, text);
+                  const li = el('li', {}, a);
+                  list.appendChild(li);
+                } else {
+                  const href = base + encodeURI(slug);
+                  const a = el('a', { href: href, target: '_blank', rel: 'noopener noreferrer' }, text);
+                  const li = el('li', {}, a);
+                  list.appendChild(li);
+                }
               });
             }
           }catch(e){ /* ignore rendering errors */ }
