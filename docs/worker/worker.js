@@ -60,7 +60,8 @@ export default {
     if (!query) return new Response(JSON.stringify({ error: 'missing query' }), { status:400, headers: Object.assign({'Content-Type':'application/json'}, CORS_HEADERS) });
 
     // Centralized silence response so all sanity checks go through one place.
-    const makeSilence = () => new Response(JSON.stringify({ answer: 'Silence echoes back...', evidence: [], did_answer: false }), { headers: Object.assign({'Content-Type':'application/json'}, CORS_HEADERS) });
+    // New schema: { response_text, response_sources, sources, evidence }
+    const makeSilence = () => new Response(JSON.stringify({ response_text: 'Silence echoes back...', response_sources: null, sources: [], evidence: [] }), { headers: Object.assign({'Content-Type':'application/json'}, CORS_HEADERS) });
 
     const indexUrl = env.WIKI_INDEX_URL || `https://` + (env.SITE_HOSTNAME || 'nan-gogh.github.io') + `/${env.SITE_PATH || 'ultrabroken-documentation'}/wiki_index.json.gz`;
 
@@ -320,6 +321,54 @@ export default {
             // Helper to detect the canonical Sources block (a single line 'Sources:' followed by entries)
             const hasSources = (txt) => { try{ return /(^|\n)Sources:\s*($|\n)/m.test(String(txt||'')); }catch(e){ return false; } };
 
+            // parseSourcesFromText: extract textual Sources block, structured sources, and main answer text
+            const parseSourcesFromText = (txt) => {
+              const result = { response_text: String(txt||''), response_sources: null, sources: [] };
+              try{
+                const lines = String(txt||'').split(/\r?\n/);
+                let idx = -1;
+                for (let i = 0; i < lines.length; i++){
+                  if (/^\s*Sources?\b[:\s]/i.test(lines[i])) { idx = i; break; }
+                }
+                if (idx === -1) return result;
+                // response_sources is the block from idx..end
+                const srcLines = lines.slice(idx).map(l=>l.trim()).filter(Boolean);
+                result.response_sources = srcLines.join('\n');
+                // response_text is everything before idx
+                result.response_text = lines.slice(0, idx).join('\n').trim();
+                // build structured sources array from response_sources
+                const entries = [];
+                for (let i = 0; i < srcLines.length; i++){
+                  let line = srcLines[i];
+                  const m = line.match(/^Sources?:\s*(.+)$/i);
+                  let rest = [];
+                  if (m && m[1]) rest = String(m[1]).split(/\s*;\s*/).map(p=>p.trim()).filter(Boolean);
+                  else if (/^Sources?:\s*$/i.test(line)){
+                    // consume following lines
+                    for (let j = i+1; j < srcLines.length; j++){ const next = srcLines[j].trim(); if (!next) break; rest.push(next); }
+                  } else {
+                    // lines already trimmed; try to treat as entry
+                    rest = [line];
+                  }
+                  for (const part of rest){
+                    let p = part.replace(/^Sources?:\s*/i,'').replace(/^[\-\*\u2022\s]+/,'').replace(/[\-–—\s]+$/,'').trim();
+                    if (!p || p.length < 2) continue;
+                    const mm = p.match(/^(.+?)\s*[–—-]\s*(\/?\S+)$/);
+                    if (mm){
+                      const title = mm[1].trim();
+                      const rawPath = mm[2];
+                      const path = rawPath.startsWith('/') ? rawPath : '/' + rawPath.replace(/^\/+/, '');
+                      entries.push({ title, path });
+                    } else {
+                      entries.push({ title: p, path: null });
+                    }
+                  }
+                }
+                result.sources = entries;
+                return result;
+              }catch(e){ return result; }
+            };
+
             // If the model response lacks the required Sources block, attempt one immediate re-query.
             if (!hasSources(modelText)){
               try{
@@ -353,12 +402,29 @@ export default {
               }
             }
 
-            let parsed = null;
-            try{ parsed = JSON.parse(modelText); }catch(e){ parsed = null; }
-            if (parsed && parsed.answer) {
-              return new Response(JSON.stringify({ answer: parsed.answer, evidence: evidenceList, did_answer: true }), { headers: Object.assign({'Content-Type':'application/json'}, CORS_HEADERS) });
+            // Parse the final modelText into structured fields
+            const parsedModel = parseSourcesFromText(modelText);
+            // Allow model to sometimes return JSON blobs with `answer` — prefer that if present
+            let parsedJson = null;
+            try{ parsedJson = JSON.parse(modelText); }catch(e){ parsedJson = null; }
+            let finalResponseText = parsedModel.response_text;
+            let finalSources = parsedModel.sources || [];
+            let finalResponseSources = parsedModel.response_sources || null;
+            if (parsedJson && typeof parsedJson === 'object'){
+              if (parsedJson.answer && !finalResponseText) finalResponseText = String(parsedJson.answer || '').trim();
+              if (Array.isArray(parsedJson.sources) && parsedJson.sources.length) finalSources = parsedJson.sources;
+              if (parsedJson.response_sources && !finalResponseSources) finalResponseSources = parsedJson.response_sources;
             }
-            return new Response(JSON.stringify({ answer: modelText, evidence: evidenceList, did_answer: true }), { headers: Object.assign({'Content-Type':'application/json'}, CORS_HEADERS) });
+
+            // Respect APPEND_RESPONSE_SOURCES env flag: include textual block only when enabled
+            const appendTextSources = !!(env.APPEND_RESPONSE_SOURCES);
+            const payload = {
+              response_text: finalResponseText || modelText,
+              response_sources: appendTextSources ? (finalResponseSources || null) : null,
+              sources: finalSources || [],
+              evidence: evidenceList
+            };
+            return new Response(JSON.stringify(payload), { headers: Object.assign({'Content-Type':'application/json'}, CORS_HEADERS) });
           }
           // attach the OpenRouter debug info to the outer scope so it can be returned if we fallthrough
           openrouter_error = openrouter_error || null;
