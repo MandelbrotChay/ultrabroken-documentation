@@ -236,8 +236,11 @@
               if (window.marked && window.DOMPurify) {
                 try{
                   const raw = marked.parse(clean);
+                  console.debug('ai-client: raw html length', raw.length, 'preview', raw.slice(0,200));
                   const sanitized = DOMPurify.sanitize(raw);
+                  console.debug('ai-client: sanitized html length', sanitized.length, 'preview', sanitized.slice(0,200));
                   const normalized = normalizeHtmlWhitespace(sanitized);
+                  console.debug('ai-client: normalized html length', normalized.length, 'preview', normalized.slice(0,200));
                   w.out.innerHTML = normalized;
                 }catch(e){ console.debug('ai-client: render error', e); w.out.textContent = clean.replace(/\s+$/,''); }
               } else {
