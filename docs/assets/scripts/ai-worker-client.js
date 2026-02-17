@@ -4,6 +4,32 @@
   Configure worker URL via `window.AI_WORKER_URL` or set in localStorage('ai_worker_url').
 */
 (function(){
+  // Ensure local vendor scripts (marked + DOMPurify) are available at runtime.
+  // Some browsers or deployments may serve stale HTML or block CDN loads; this
+  // loader attempts to load the vendored files relative to this script when
+  // `window.marked` or `window.DOMPurify` are not present.
+  function ensureVendors(timeoutMs = 3000){
+    return new Promise((resolve)=>{
+      if (window.marked && window.DOMPurify) return resolve(true);
+      try{
+        const scriptEl = document.currentScript || (function(){ const s = document.getElementsByTagName('script'); return s[s.length-1]; })();
+        const base = scriptEl && scriptEl.src ? scriptEl.src.replace(/\/[^/]*$/, '/') : document.baseURI;
+        const urls = [new URL('../vendor/marked.min.js', base).toString(), new URL('../vendor/purify.min.js', base).toString()];
+        let loaded = 0;
+        const onLoad = ()=>{ loaded++; if (loaded >= urls.length) return resolve(true); };
+        const onError = ()=>{ loaded++; if (loaded >= urls.length) return resolve(!!(window.marked && window.DOMPurify)); };
+        urls.forEach(u=>{
+          // If already loaded by some other script, skip
+          if ((u.indexOf('marked.min.js')>=0 && window.marked) || (u.indexOf('purify.min.js')>=0 && window.DOMPurify)) { onLoad(); return; }
+          const s = document.createElement('script'); s.src = u; s.async = false; s.defer = false;
+          s.addEventListener('load', onLoad); s.addEventListener('error', onError);
+          document.head.appendChild(s);
+        });
+        // Fallback timeout — resolve whether or not vendors loaded to avoid blocking
+        setTimeout(()=> resolve(!!(window.marked && window.DOMPurify)), timeoutMs);
+      }catch(e){ resolve(!!(window.marked && window.DOMPurify)); }
+    });
+  }
   function el(tag, attrs={}, children=[]){
     const e = document.createElement(tag);
     Object.entries(attrs).forEach(([k,v])=> e.setAttribute(k,v));
@@ -419,10 +445,23 @@
     }catch(e){ console.debug('attachNavObserver error', e); }
   }
 
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', ()=>{ updateCenteredRune(); initAIWidget(); attachNavObserver(); });
-  } else {
-    updateCenteredRune(); initAIWidget(); attachNavObserver();
-  }
+  // Ensure vendor libs are present before initializing the widget. If the
+  // vendor loader fails or times out we still continue (fallback to plain text).
+  const _boot = ()=>{ updateCenteredRune(); initAIWidget(); attachNavObserver(); };
+  try{
+    ensureVendors(3000).then(()=>{
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', _boot);
+      } else {
+        _boot();
+      }
+    }).catch(()=>{
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', _boot);
+      } else {
+        _boot();
+      }
+    });
+  }catch(e){ if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', _boot); } else _boot(); }
 
 })();
