@@ -118,6 +118,12 @@
           for (let part of restItems){
             // tolerate parts that still include a leading 'Source:' label
             part = part.replace(/^Sources?:\s*/i, '').trim();
+            // strip common bullet markers and list prefixes ("- ", "* ", "• ")
+            part = part.replace(/^[\-\*\u2022\s]+/, '').trim();
+            // trim trailing lone dashes or separators caused by truncation
+            part = part.replace(/[\-–—\s]+$/,'').trim();
+            // skip obviously invalid/too-short fragments
+            if (!part || part.length < 4) continue;
             const mm = part.match(/^(.+?)\s*[–—-]\s*(\/?\S+)$/);
             if (mm){
               const title = mm[1].trim();
