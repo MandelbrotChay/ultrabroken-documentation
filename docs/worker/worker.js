@@ -136,7 +136,7 @@ export default {
         // Preserve tokens containing digits, hyphens or underscores
         if (/[0-9]|-|_/.test(stripped)) { tokens.push(stripped); continue; }
         // TitleCase sequence detection: collect run and join with underscore
-        if (isTitleCase(stripped)){
+          if (isTitleCase(stripped)){
           const run = [stripped];
           let j = i+1;
           while (j < raw.length){
@@ -146,7 +146,10 @@ export default {
             j++;
           }
           if (run.length > 1){
+            // Push both the joined TitleCase run (for exact proper-noun matches)
+            // and the separate words so BM25 (which indexes split words) can match.
             tokens.push(run.join('_'));
+            tokens.push(run.join(' '));
             i = j-1; // skip consumed
             continue;
           }
