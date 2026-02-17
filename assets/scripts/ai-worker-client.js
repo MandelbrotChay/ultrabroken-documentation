@@ -84,8 +84,9 @@
       // returned `Source:` lines are rendered. This is intentionally internal.
       // Parse simple source lines from model answer text. Returns array of {title?, path}
       function parseSourcesFromText(text){
-        // Only accept explicit model-supplied source lines of the form:
-        // Source: Title — /path/to/doc
+        // Accept model-supplied source lines of the forms:
+        //  - Source: Title — /path/to/doc
+        //  - Source: Title
         // Support multiple sources bundled on one line separated by ';'
         const out = [];
         if (!text || typeof text !== 'string') return out;
@@ -104,6 +105,10 @@
               const rawPath = mm[2];
               const path = rawPath.startsWith('/') ? rawPath : '/' + rawPath.replace(/^\/+/, '');
               out.push({ title, path });
+            } else {
+              // Accept title-only entries (the model may now return only titles).
+              const titleOnly = part.trim();
+              if (titleOnly) out.push({ title: titleOnly, path: null });
             }
           }
         }
