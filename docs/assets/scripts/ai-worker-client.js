@@ -87,13 +87,14 @@
         // Accept model-supplied source lines of the forms:
         //  - Source: Title — /path/to/doc
         //  - Source: Title
+        //  - Sources: Title; Sources: Title — /path
         // Support multiple sources bundled on one line separated by ';'
         const out = [];
         if (!text || typeof text !== 'string') return out;
         const lines = text.split(/\r?\n/).map(l=>l.trim()).filter(Boolean);
         for (const line of lines){
-          // match the rest of the line after the leading 'Source:'
-          const m = line.match(/^Source:\s*(.+)$/i);
+          // match the rest of the line after the leading 'Source:' or 'Sources:'
+          const m = line.match(/^Sources?:\s*(.+)$/i);
           if (!m) continue;
           const rest = m[1];
           // split multiple sources on semicolon
@@ -124,7 +125,7 @@
         const lines = text.split(/\r?\n/);
         let idx = -1;
         for (let i = 0; i < lines.length; i++){
-          if (/^\s*Source\b[:\s]/i.test(lines[i])) { idx = i; break; }
+          if (/^\s*Sources?\b[:\s]/i.test(lines[i])) { idx = i; break; }
         }
         if (idx === -1) return { main: text.replace(/\s+$/,'') , sources: null };
         const main = lines.slice(0, idx).join('\n').replace(/\s+$/,'');
@@ -133,7 +134,7 @@
       }
 
       const handleAsk = async ()=>{
-        const q = w.input.value.trim(); if (!q) return; w.out.textContent = 'Asking...';
+        const q = w.input.value.trim(); if (!q) return; w.out.textContent = 'The librarian stares at you...';
         if (w.evidence) w.evidence.innerHTML = '';
         const r = await askWorker(q);
         if (r.error) {
@@ -212,6 +213,13 @@
           if (showModelSources){
             const modelSources = parseSourcesFromText(sourceTextToParse);
             if (modelSources && modelSources.length){
+              // create a Resources headline (styled like an h2) above the sources list
+              try{
+                if (w.evidence && !w.evidence.querySelector('.ub-ai-resources')){
+                  const heading = el('h2', { class: 'ub-ai-resources md-typeset' }, 'Resources');
+                  if (w.evidence) w.evidence.appendChild(heading);
+                }
+              }catch(e){}
               // create list and append to evidence area (model sources go first)
               let list = el('ul', { class: 'ub-ai-evidence-list' }, []);
               if (w.evidence) w.evidence.appendChild(list);
@@ -300,7 +308,10 @@
           w.clear.appendChild(clearImg);
           w.clear.addEventListener('click', ()=>{ 
             w.input.value = ''; 
-            w.out.textContent = ''; 
+            // Clear rendered answer and any HTML inside
+            try{ if (w.out) { w.out.textContent = ''; w.out.innerHTML = ''; } }catch(e){}
+            // Also clear parsed/rendered sources/evidence
+            try{ if (w.evidence) w.evidence.innerHTML = ''; }catch(e){}
             w.input.focus(); 
             try { if (typeof updateVisibility === 'function') updateVisibility(); else { w.clear.style.display = 'none'; w.btn.style.display = 'none'; } } catch(e){ w.clear.style.display = 'none'; w.btn.style.display = 'none'; }
           });
