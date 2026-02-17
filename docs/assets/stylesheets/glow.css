@@ -155,6 +155,7 @@ label.md-header__button[for^="__palette_"]:hover {
   line-height: 1.2 !important;*/
 }
 .md-search__input::placeholder {
+  /*color: rgba(0,240,194,0.5) !important;*/
   color: var(--hr-sep) !important;
   /* Slightly darker placeholder derived from current color when supported */
   color: color-mix(in srgb, currentColor 80%, black 20%) !important;
