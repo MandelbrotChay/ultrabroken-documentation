@@ -10,7 +10,7 @@ const SIMILARITY_THRESHOLD = 0.02;
 // Change this in-code when you want repository-wide debugging; not a secret.
 const RETURN_DEBUG = false;
 
-APPEND_RESPONSE_SOURCES = false
+const APPEND_RESPONSE_SOURCES = false;
 
 function cosine(a, b){
   let dot=0, na=0, nb=0;
