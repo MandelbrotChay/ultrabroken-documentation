@@ -858,5 +858,14 @@ li.task-list-item a, li.task-list a {
   margin: 0 0 0.3rem 0;
 }
 
+/* Use New Rocker for the AI widget's input to match header/search styling */
+.ub-ai-input {
+  font-family: 'New Rocker', 'Texturina', Georgia, 'Times New Roman', serif !important;
+}
+.ub-ai-input::placeholder {
+  font-family: 'New Rocker', 'Texturina', Georgia, 'Times New Roman', serif !important;
+  color: rgba(0,240,194,0.5) !important;
+}
+
 /* Asset publish trigger: do not remove - used to trigger asset-only workflow */
 /* timestamp: 2026-02-13T00:00:00Z */
