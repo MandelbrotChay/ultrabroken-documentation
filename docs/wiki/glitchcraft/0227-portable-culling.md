@@ -1,8 +1,8 @@
 ﻿---
-title: "Portable Culling"
+title: "Portable Culling" 
 ---
 
-# Portable Culling
+# Portable Culling `PCULL`
 `1.2.0` `1.2.1`
 
 ## Summary
@@ -20,7 +20,9 @@ _Mulberry - 27 February 2024_
 
 ## Notes
 ---
-doing a drop swap drop softlocks
+Also known as Portacull.
+
+Doing a drop swap drop softlocks.
 
 ## Resources
 ---

@@ -106,6 +106,76 @@ export default {
     // Tokenizer
     const tokenize = (s) => (String(s||'').toLowerCase().match(/\w+/g) || []);
 
+    // Conservative, case-sensitive query filter for BM25
+    // Editable lists: tune QUESTION_WORDS, COMMON_LOWERCASE_STOPWORDS, WHITELIST
+    const QUESTION_WORDS = new Set(['what','how','why','where','when','which','who','whom','whose']);
+    const COMMON_LOWERCASE_STOPWORDS = new Set(['the','a','an','to','of','in','on','for','by','with','and','or','is','are']);
+    const WHITELIST = new Set(['Zuggle','Tulin','Overload']); // add domain-specific terms here
+
+    const filterQueryForRetrieval = (query) => {
+      if (!query) return '';
+      // conservative whitespace split (preserve punctuation for later decisions)
+      const raw = String(query).trim().split(/\s+/);
+      const tokens = [];
+
+      // Helper to check TitleCase (first char upper, rest lower)
+      const isTitleCase = (t) => /^[A-Z][a-z]+$/.test(t);
+
+      for (let i = 0; i < raw.length; i++){
+        const r = raw[i];
+        // strip surrounding punctuation but keep internal chars (hyphens/underscores)
+        const stripped = (r||'').replace(/^[^\w]+|[^\w]+$/g,'');
+        if (!stripped) continue;
+        // Whitelist exact tokens (case-sensitive)
+        if (WHITELIST.has(stripped)) { tokens.push(stripped); continue; }
+        // Always remove question words (case-insensitive)
+        if (QUESTION_WORDS.has(stripped.toLowerCase())) continue;
+        // Preserve acronyms (ALLCAPS length>=2)
+        if (stripped === stripped.toUpperCase() && stripped.length >= 2) { tokens.push(stripped); continue; }
+        // Preserve tokens containing digits, hyphens or underscores
+        if (/[0-9]|-|_/.test(stripped)) { tokens.push(stripped); continue; }
+        // TitleCase sequence detection: collect run and join with underscore
+        if (isTitleCase(stripped)){
+          const run = [stripped];
+          let j = i+1;
+          while (j < raw.length){
+            const next = (raw[j]||'').replace(/^[^\w]+|[^\w]+$/g,'');
+            if (!isTitleCase(next)) break;
+            run.push(next);
+            j++;
+          }
+          if (run.length > 1){
+            tokens.push(run.join('_'));
+            i = j-1; // skip consumed
+            continue;
+          }
+          // single TitleCase word: keep it (may be a proper noun)
+          tokens.push(stripped);
+          continue;
+        }
+        // Lowercase stopwords: only remove when token is exactly lowercase
+        if (stripped === stripped.toLowerCase() && COMMON_LOWERCASE_STOPWORDS.has(stripped)) continue;
+        // Short lowercase tokens (<=2) are removed unless whitelisted
+        if (stripped.length <= 2 && stripped === stripped.toLowerCase()) continue;
+        // Default: keep token
+        tokens.push(stripped);
+      }
+
+      // Minimum token fallback = 1: if zero tokens after filtering, relax and keep first non-question token
+      if (tokens.length === 0){
+        for (const r of String(query).trim().split(/\s+/)){
+          const s = (r||'').replace(/^[^\w]+|[^\w]+$/g,'');
+          if (!s) continue;
+          if (QUESTION_WORDS.has(s.toLowerCase())) continue;
+          tokens.push(s);
+          break;
+        }
+      }
+
+      // Return a string suitable for existing `tokenize` (it will lowercase and split on \w+)
+      return tokens.join(' ');
+    };
+
     // Prepare BM25 structures on first load and attach to index to reuse across requests.
     if (!index.__bm25){
       const N = index.length;
@@ -159,7 +229,7 @@ export default {
 
     const bm = index.__bm25;
     const k1 = 1.5, b = 0.75;
-    const qTokens = tokenize(query);
+    const qTokens = tokenize(filterQueryForRetrieval(query));
     if (qTokens.length === 0){
       scored = index.map(i=>({ item:i, score: 0 }));
     } else {
