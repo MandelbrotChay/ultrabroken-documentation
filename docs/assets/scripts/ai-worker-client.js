@@ -34,7 +34,7 @@
     const root = el('div', { class: 'ub-ai-root' });
     const row = el('div', { style: 'display:flex; gap:0.4rem; align-items:center;' });
     const inputWrap = el('div', { class: 'ub-ai-input-wrap', style: 'position:relative; flex:1;' });
-    const _placeholder_text = 'Will it share wisdom or weirdness?';
+    const _placeholder_text = 'Will it share wisdom or waffle?';
     const input = el('input', { type: 'search', placeholder: '', 'data-ub-placeholder': _placeholder_text, class: 'ub-ai-input' });
     const clearBtn = el('button', { type: 'button', class: 'ub-ai-clear', 'aria-label': 'Clear search' }, '');
     const askBtn = el('button', { type: 'button', class: 'ub-ai-ask', 'aria-label': 'Ask' }, '');
@@ -92,14 +92,35 @@
         const out = [];
         if (!text || typeof text !== 'string') return out;
         const lines = text.split(/\r?\n/).map(l=>l.trim()).filter(Boolean);
-        for (const line of lines){
+        for (let i = 0; i < lines.length; i++){
+          let line = lines[i];
           // match the rest of the line after the leading 'Source:' or 'Sources:'
-          const m = line.match(/^Sources?:\s*(.+)$/i);
-          if (!m) continue;
-          const rest = m[1];
+          // two forms supported: 'Source: Title' or a lone 'Source:' where the
+          // following non-empty line contains the title(s).
+          let m = line.match(/^Sources?:\s*(.+)$/i);
+          let rest = null;
+          if (m && m[1]) {
+            rest = m[1];
+          } else {
+            // lone label 'Source:' or 'Sources:' with no trailing text
+            const lone = line.match(/^Sources?:\s*$/i);
+            if (lone) {
+              // use the next line as the rest if available
+              if (i + 1 < lines.length) {
+                rest = lines[i + 1];
+                i++; // consume the next line
+              } else {
+                continue;
+              }
+            } else {
+              continue;
+            }
+          }
           // split multiple sources on semicolon
-          const parts = rest.split(/\s*;\s*/).map(p=>p.trim()).filter(Boolean);
-          for (const part of parts){
+          const parts = String(rest).split(/\s*;\s*/).map(p=>p.trim()).filter(Boolean);
+          for (let part of parts){
+            // tolerate parts that still include a leading 'Source:' label
+            part = part.replace(/^Sources?:\s*/i, '').trim();
             const mm = part.match(/^(.+?)\s*[–—-]\s*(\/?\S+)$/);
             if (mm){
               const title = mm[1].trim();
