@@ -14,17 +14,11 @@ _mulberry, Blackmars - 18 July 2024_
 ## Instructions
 ---
 1. FE a steering stick to a shield and perform SDC
-
 2. Position the SDC stick within a culling area
-
 3. Cull store the SDC stick
-
 4. Take out two hoverstones on a flat surface so they spawn on top of each other
-
 5. Stand with Link's back to the stacked hoverstones
-
 6. Pause, drop an unequipped shield, drop the shield the stick is FE'd to, hold L and unpause
-
 7. Select the map rune and map zuggle your equipped weapon
 
 ## Notes

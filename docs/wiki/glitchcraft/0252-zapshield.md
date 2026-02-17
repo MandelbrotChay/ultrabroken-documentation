@@ -24,8 +24,11 @@ _Aergyl - 16 September 2024_
 ## Notes
 ---
 Equipment Smuggle: Unsheathing the zapshield, dropping it and the equipped weapon after smuggles the weapon. This can also be used to smuggle the zapshield itself by dropping a different shield and then dropping the zapshield.
+
 Shock Cold Fuse: Unsheathing the zapshield and pressing ZL + Y while the fuse rune is active can be used to cold fuse objects to the equipped weapon.
+
 Zuggling the zapshield allows it to persist through loads.
+
 While zapshield itself can be created on all versions, it's applications are version dependent. Check the spreadsheet entry for a respective application to see which versions it works on.
 
 ## Resources

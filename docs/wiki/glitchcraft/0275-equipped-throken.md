@@ -14,6 +14,7 @@ _Aergyl, mulberry - 20 May 2025_
 ## Instructions
 ---
 For 1.0.0-1.1.2:
+
 1. Fuse a bomb to a two-handed weapon on one durability (including its fuse durability)
 2. Equip a different weapon and smuggle it in any form
 3. Jump off a cliff while throw aiming with the one durability weapon, throw it at the peak of Link's jump
@@ -21,6 +22,7 @@ For 1.0.0-1.1.2:
 5. The weapon should remain drop smuggled despite the broken weapon message indicating otherwise
 
 For 1.0.0-1.2.1:
+
 1. Zuggle overload
 2. Fuse a time bomb to a boomerang on one durability (including its fuse durability)
 3. Jumpslash in place to activate the time bomb, then throw the boomerang shortly after

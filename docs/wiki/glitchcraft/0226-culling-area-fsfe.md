@@ -21,12 +21,13 @@ _mulberry, Yee, Zas - 25 February 2024_
 6. Unpause, and fuse as soon as possible.
 
 Alternativley:
-5. Immediatley press B+L and attempt fuse.
 
+5. Immediatley press B+L and attempt fuse.
 7. Watch two memories, then swap equipment.
 8. Watch another memory, and finally unpause.
 
 Alternatively:
+
 7. Walk towards the culling area and activate Recall shortly before entering.
 8. Swap equipment.
 

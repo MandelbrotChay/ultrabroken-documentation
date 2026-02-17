@@ -14,11 +14,8 @@ _mulberry, KiloVictor - 4 June 2024_
 ## Instructions
 ---
 1. Cold fuse a steering stick to a weapon or shield
-
 2. Mount the steering stick
-
 3. Unequip the weapon or shield that the steering stick is cold fused to
-
 4. Mash B immediately upon unpausing (skip this step if clipping is desired)
 
 ## Notes

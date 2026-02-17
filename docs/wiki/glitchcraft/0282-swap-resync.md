@@ -13,22 +13,20 @@ _MandelbrotChaylay - 10 August 2025_
 
 ## Instructions
 ---
-See the Effects/Extensions column for uses.
 
 ## Notes
 ---
 A few uses of swap resync:
 
-Portacull Zuggle Drop
-(MandelbrotChaylay):
+Portacull Zuggle Drop (MandelbrotChaylay):
+
 1. Drop swap portacull.
 2. Pause buffer.
 3. Swap any piece of equipment.
 4. Drop what you swapped to.
-This should zuggle drop the
-portacull.
-Loading after dropping will SLD
-the portacull.
+
+This should zuggle drop the portacull.
+Loading after dropping will SLD the portacull.
 
 Swap Resync Zuggle: see next row
 
