@@ -840,5 +840,22 @@ li.task-list-item a, li.task-list a {
 /* Make sure preformatted debug/evidence don't overflow the container */
 .ub-ai-out code, .ub-ai-out pre { white-space: pre-wrap; word-break: break-word; } 
 
+/* Ensure emphasis and strong text are visually distinct inside AI output */
+.ub-ai-out strong, .ub-ai-out b {
+  font-weight: 700 !important;
+}
+.ub-ai-out em, .ub-ai-out i {
+  font-style: italic !important;
+}
+
+/* Basic list styling for rendered markdown inside the AI output */
+.ub-ai-out ul, .ub-ai-out ol {
+  margin: 0.4rem 0 0.6rem 1.2rem;
+  padding: 0;
+}
+.ub-ai-out li {
+  margin: 0 0 0.3rem 0;
+}
+
 /* Asset publish trigger: do not remove - used to trigger asset-only workflow */
 /* timestamp: 2026-02-13T00:00:00Z */
