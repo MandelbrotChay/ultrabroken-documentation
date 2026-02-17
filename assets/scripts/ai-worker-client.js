@@ -12,13 +12,6 @@
     return e;
   }
   
-  // Internal flag: controls whether the response's trailing "sources"
-  // block (the text starting at the first line beginning with 'Source')
-  // is shown inline after the main answer. Note: the client ALWAYS splits
-  // the model response into `main` and `sources` (so sources are available
-  // for parsing). `SHOW_RESPONSE_SOURCES` only controls whether the raw
-  // sources block is appended to the displayed answer. Default `false`.
-  const SHOW_RESPONSE_SOURCES = false;
   // Internal flag: controls whether model-returned `Source:` lines are rendered.
   // This is intentionally an internal toggle (not user-facing). Set to `true`
   // to enable rendering of model-supplied sources, or `false` to disable.
@@ -27,9 +20,6 @@
   // as `search:Title` links (intercepted by `search-link.js`). When false
   // they render as normal page links. Default: false.
   const USE_TITLE_SEARCH_LINKS = true;
-  // Internal flag: controls whether Worker-provided evidence is rendered.
-  // Default `false` keeps the UI from showing Worker evidence until enabled.
-  const SHOW_WORKER_EVIDENCE = false;
   
   function render(container){
     const root = el('div', { class: 'ub-ai-root' });
@@ -148,7 +138,8 @@
           };
           // Display main answer; optionally append the raw sources block
           // when configured to show the response's sources section.
-          if (SHOW_RESPONSE_SOURCES && responseSources) {
+          // Append raw response_sources only when Worker provided them.
+          if (responseSources != null) {
             safeRender(responseText + '\n\n' + responseSources);
           } else {
             safeRender(responseText);
@@ -201,7 +192,7 @@
           try{
             const ev = r.evidence || [];
             // Worker evidence rendering controlled by internal flag.
-            if (SHOW_WORKER_EVIDENCE && Array.isArray(ev) && ev.length){
+            if (Array.isArray(ev) && ev.length){
               // reuse existing list if model sources created one, otherwise create
               let list = w.evidence && w.evidence.querySelector && w.evidence.querySelector('.ub-ai-evidence-list');
               if (!list) { list = el('ul', { class: 'ub-ai-evidence-list' }, []); if (w.evidence) w.evidence.appendChild(list); }
