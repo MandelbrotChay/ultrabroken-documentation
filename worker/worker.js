@@ -10,6 +10,11 @@ const SIMILARITY_THRESHOLD = 0.02;
 // Change this in-code when you want repository-wide debugging; not a secret.
 const RETURN_DEBUG = false;
 
+const APPEND_RESPONSE_SOURCES = false;
+// When true, include the Worker-collected retrieval evidence in the response
+// as `evidence`. When false, `evidence` will be an empty array to reduce
+// payload size and network footprint.
+const APPEND_WORKER_EVIDENCE = false;
 
 function cosine(a, b){
   let dot=0, na=0, nb=0;
@@ -61,7 +66,14 @@ export default {
     if (!query) return new Response(JSON.stringify({ error: 'missing query' }), { status:400, headers: Object.assign({'Content-Type':'application/json'}, CORS_HEADERS) });
 
     // Centralized silence response so all sanity checks go through one place.
-    const makeSilence = () => new Response(JSON.stringify({ answer: 'Silence echoes back...', evidence: [], did_answer: false }), { headers: Object.assign({'Content-Type':'application/json'}, CORS_HEADERS) });
+    // New schema: { response_text, response_sources, sources, evidence }
+    // Respect top-level flags so silence payload shape matches normal responses.
+    const makeSilence = () => new Response(JSON.stringify({
+      response_text: 'Silence echoes back...',
+      response_sources: null,
+      sources: [],
+      evidence: []
+    }), { headers: Object.assign({'Content-Type':'application/json'}, CORS_HEADERS) });
 
     const indexUrl = env.WIKI_INDEX_URL || `https://` + (env.SITE_HOSTNAME || 'nan-gogh.github.io') + `/${env.SITE_PATH || 'ultrabroken-documentation'}/wiki_index.json.gz`;
 
@@ -93,6 +105,76 @@ export default {
 
     // Tokenizer
     const tokenize = (s) => (String(s||'').toLowerCase().match(/\w+/g) || []);
+
+    // Conservative, case-sensitive query filter for BM25
+    // Editable lists: tune QUESTION_WORDS, COMMON_LOWERCASE_STOPWORDS, WHITELIST
+    const QUESTION_WORDS = new Set(['what','how','why','where','when','which','who','whom','whose']);
+    const COMMON_LOWERCASE_STOPWORDS = new Set(['the','a','an','to','of','in','on','for','by','with','and','or','is','are']);
+    const WHITELIST = new Set(['Zuggle','Tulin','Overload']); // add domain-specific terms here
+
+    const filterQueryForRetrieval = (query) => {
+      if (!query) return '';
+      // conservative whitespace split (preserve punctuation for later decisions)
+      const raw = String(query).trim().split(/\s+/);
+      const tokens = [];
+
+      // Helper to check TitleCase (first char upper, rest lower)
+      const isTitleCase = (t) => /^[A-Z][a-z]+$/.test(t);
+
+      for (let i = 0; i < raw.length; i++){
+        const r = raw[i];
+        // strip surrounding punctuation but keep internal chars (hyphens/underscores)
+        const stripped = (r||'').replace(/^[^\w]+|[^\w]+$/g,'');
+        if (!stripped) continue;
+        // Whitelist exact tokens (case-sensitive)
+        if (WHITELIST.has(stripped)) { tokens.push(stripped); continue; }
+        // Always remove question words (case-insensitive)
+        if (QUESTION_WORDS.has(stripped.toLowerCase())) continue;
+        // Preserve acronyms (ALLCAPS length>=2)
+        if (stripped === stripped.toUpperCase() && stripped.length >= 2) { tokens.push(stripped); continue; }
+        // Preserve tokens containing digits, hyphens or underscores
+        if (/[0-9]|-|_/.test(stripped)) { tokens.push(stripped); continue; }
+        // TitleCase sequence detection: collect run and join with underscore
+        if (isTitleCase(stripped)){
+          const run = [stripped];
+          let j = i+1;
+          while (j < raw.length){
+            const next = (raw[j]||'').replace(/^[^\w]+|[^\w]+$/g,'');
+            if (!isTitleCase(next)) break;
+            run.push(next);
+            j++;
+          }
+          if (run.length > 1){
+            tokens.push(run.join('_'));
+            i = j-1; // skip consumed
+            continue;
+          }
+          // single TitleCase word: keep it (may be a proper noun)
+          tokens.push(stripped);
+          continue;
+        }
+        // Lowercase stopwords: only remove when token is exactly lowercase
+        if (stripped === stripped.toLowerCase() && COMMON_LOWERCASE_STOPWORDS.has(stripped)) continue;
+        // Short lowercase tokens (<=2) are removed unless whitelisted
+        if (stripped.length <= 2 && stripped === stripped.toLowerCase()) continue;
+        // Default: keep token
+        tokens.push(stripped);
+      }
+
+      // Minimum token fallback = 1: if zero tokens after filtering, relax and keep first non-question token
+      if (tokens.length === 0){
+        for (const r of String(query).trim().split(/\s+/)){
+          const s = (r||'').replace(/^[^\w]+|[^\w]+$/g,'');
+          if (!s) continue;
+          if (QUESTION_WORDS.has(s.toLowerCase())) continue;
+          tokens.push(s);
+          break;
+        }
+      }
+
+      // Return a string suitable for existing `tokenize` (it will lowercase and split on \w+)
+      return tokens.join(' ');
+    };
 
     // Prepare BM25 structures on first load and attach to index to reuse across requests.
     if (!index.__bm25){
@@ -147,7 +229,7 @@ export default {
 
     const bm = index.__bm25;
     const k1 = 1.5, b = 0.75;
-    const qTokens = tokenize(query);
+    const qTokens = tokenize(filterQueryForRetrieval(query));
     if (qTokens.length === 0){
       scored = index.map(i=>({ item:i, score: 0 }));
     } else {
@@ -318,12 +400,127 @@ export default {
           }
           modelText = String(modelText || '').trim();
           if (modelText && modelText.length >= 4 && !/^(silence|no_relevant_info|no_relevant_information|noinfo)$/i.test(modelText)){
-            let parsed = null;
-            try{ parsed = JSON.parse(modelText); }catch(e){ parsed = null; }
-            if (parsed && parsed.answer) {
-              return new Response(JSON.stringify({ answer: parsed.answer, evidence: evidenceList, did_answer: true }), { headers: Object.assign({'Content-Type':'application/json'}, CORS_HEADERS) });
+            // Helper to detect the canonical Sources block (a single line 'Sources:' followed by entries)
+            const hasSources = (txt) => { try{ return /(^|\n)Sources:\s*($|\n)/m.test(String(txt||'')); }catch(e){ return false; } };
+
+            // splitResponseAndSources: separate model text into main response and raw Sources block
+            const splitResponseAndSources = (txt) => {
+              const result = { response_text: String(txt||''), response_sources: null };
+              try{
+                const lines = String(txt||'').split(/\r?\n/);
+                let idx = -1;
+                for (let i = 0; i < lines.length; i++){
+                  if (/^\s*Sources?\b[:\s]/i.test(lines[i])) { idx = i; break; }
+                }
+                if (idx === -1) return result;
+                const srcLines = lines.slice(idx).map(l=>l.trim()).filter(Boolean);
+                result.response_sources = srcLines.join('\n');
+                result.response_text = lines.slice(0, idx).join('\n').trim();
+                return result;
+              }catch(e){ return result; }
+            };
+
+            // parseSourcesBlock: parse the raw `response_sources` block into structured `sources[]`
+            const parseSourcesBlock = (block) => {
+              if (!block) return [];
+              const srcLines = String(block||'').split(/\r?\n/).map(l=>l.trim()).filter(Boolean);
+              const entries = [];
+              for (let i = 0; i < srcLines.length; i++){
+                let line = srcLines[i];
+                const m = line.match(/^Sources?:\s*(.+)$/i);
+                let rest = [];
+                if (m && m[1]) rest = String(m[1]).split(/\s*;\s*/).map(p=>p.trim()).filter(Boolean);
+                else if (/^Sources?:\s*$/i.test(line)){
+                  // consume following lines and skip them by advancing i
+                  let j;
+                  for (j = i+1; j < srcLines.length; j++){
+                    const next = srcLines[j].trim();
+                    if (!next) break;
+                    rest.push(next);
+                  }
+                  i = j - 1; // skip consumed lines
+                } else {
+                  rest = [line];
+                }
+                for (const part of rest){
+                  let p = part.replace(/^Sources?:\s*/i,'').replace(/^[\-\*\u2022\s]+/,'').replace(/[\-–—\s]+$/,'').trim();
+                  if (!p || p.length < 2) continue;
+                  const mm = p.match(/^(.+?)\s*[–—-]\s*(\/?\S+)$/);
+                  if (mm){
+                    const title = mm[1].trim();
+                    const rawPath = mm[2];
+                    const path = rawPath.startsWith('/') ? rawPath : '/' + rawPath.replace(/^\/+/, '');
+                    entries.push({ title, path });
+                  } else {
+                    entries.push({ title: p, path: null });
+                  }
+                }
+              }
+              return entries;
+            };
+
+            // If the model response lacks the required Sources block, attempt one immediate re-query.
+            if (!hasSources(modelText)){
+              try{
+                // Re-run the exact same request once (quick retry) to attempt a complete reply.
+                const retryRes = await fetch('https://openrouter.ai/api/v1/chat/completions', {
+                  method: 'POST',
+                  headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${env.OPENROUTER_API_KEY}` },
+                  body: JSON.stringify(payloadBody)
+                });
+                const retryText = await retryRes.text().catch(()=>null);
+                let retryJson = null;
+                try{ retryJson = retryText ? JSON.parse(retryText) : null; }catch(e){ retryJson = null; }
+                let retryModelText = '';
+                if (retryJson){
+                  if (retryJson.choices && retryJson.choices[0] && retryJson.choices[0].message) retryModelText = retryJson.choices[0].message.content || '';
+                  else if (retryJson.output && Array.isArray(retryJson.output) && retryJson.output[0] && retryJson.output[0].content) retryModelText = retryJson.output[0].content;
+                  else if (retryJson.result) retryModelText = String(retryJson.result);
+                } else if (retryText){
+                  retryModelText = retryText;
+                }
+                retryModelText = String(retryModelText || '').trim();
+                if (!hasSources(retryModelText)){
+                  // Second attempt failed to produce Sources — return canonical silence to caller
+                  return makeSilence();
+                }
+                // Use the retryModelText as the final modelText if it contains Sources
+                modelText = retryModelText;
+              }catch(retryErr){
+                // On any retry error, fall back to silence
+                return makeSilence();
+              }
             }
-            return new Response(JSON.stringify({ answer: modelText, evidence: evidenceList, did_answer: true }), { headers: Object.assign({'Content-Type':'application/json'}, CORS_HEADERS) });
+
+            // Split model output into response_text and a raw response_sources block
+            const parsedModel = splitResponseAndSources(modelText);
+            // Allow model to sometimes return JSON blobs with `answer` — prefer that if present
+            let parsedJson = null;
+            try{ parsedJson = JSON.parse(modelText); }catch(e){ parsedJson = null; }
+            let finalResponseText = parsedModel.response_text;
+            let finalResponseSources = parsedModel.response_sources || null;
+            // Build structured sources from the raw response_sources block (prefer this)
+            let finalSources = finalResponseSources ? parseSourcesBlock(finalResponseSources) : [];
+            if (parsedJson && typeof parsedJson === 'object'){
+              if (parsedJson.answer && !finalResponseText) finalResponseText = String(parsedJson.answer || '').trim();
+              if (Array.isArray(parsedJson.sources) && parsedJson.sources.length) finalSources = parsedJson.sources;
+              if (parsedJson.response_sources && !finalResponseSources) {
+                finalResponseSources = parsedJson.response_sources;
+                // if we didn't already parse sources from response_sources, do so now
+                if (!finalSources || finalSources.length === 0) finalSources = parseSourcesBlock(finalResponseSources);
+              }
+            }
+
+            // Use APPEND_RESPONSE_SOURCES directly (declared at top of file)
+            const payload = {
+              response_text: finalResponseText || modelText,
+              response_sources: APPEND_RESPONSE_SOURCES ? (finalResponseSources || null) : null,
+              // `sources` is exclusively the model-parsed citations (do not merge retrieval evidence here)
+              sources: finalSources || [],
+              // `evidence` contains authoritative retrieval hits and is optional to reduce payload size
+              evidence: APPEND_WORKER_EVIDENCE ? evidenceList : []
+            };
+            return new Response(JSON.stringify(payload), { headers: Object.assign({'Content-Type':'application/json'}, CORS_HEADERS) });
           }
           // attach the OpenRouter debug info to the outer scope so it can be returned if we fallthrough
           openrouter_error = openrouter_error || null;
