@@ -10,7 +10,7 @@ const SIMILARITY_THRESHOLD = 0.02;
 // Change this in-code when you want repository-wide debugging; not a secret.
 const RETURN_DEBUG = false;
 
-const APPEND_RESPONSE_SOURCES = false;
+const APPEND_RESPONSE_SOURCES = true;
 // When true, include the Worker-collected retrieval evidence in the response
 // as `evidence`. When false, `evidence` will be an empty array to reduce
 // payload size and network footprint.
