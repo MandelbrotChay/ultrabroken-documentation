@@ -22,7 +22,6 @@ function cosine(a, b){
   return dot / (Math.sqrt(na)*Math.sqrt(nb) || 1);
 }
 
-
 async function fetchIndex(url){
   // Prefer compressed index when available to save bandwidth.
   // Try fetching url with .gz suffix first, then fall back to plain JSON.
