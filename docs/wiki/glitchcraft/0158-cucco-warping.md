@@ -7,15 +7,14 @@ title: "Cucco Warping"
 
 ## Summary
 ---
-Picking up a cucco right as it voids out from entering water warps Link to its respawn location
+Picking up a cucco right as it voids out from entering water warps Link to its respawn location.
 
 _onion - 23 July 2023_
 
 ## Instructions
 ---
-1. Bring a Cucco towards a body of water.
-
-2. Wait for the Cucco to come in contact with the water, and then pick it up at the same time.
+1. Bring a Cucco towards a body of water
+2. Wait for the Cucco to come in contact with the water, and then pick it up at the same time
 
 ## Notes
 ---
