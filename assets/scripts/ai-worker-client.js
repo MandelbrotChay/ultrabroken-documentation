@@ -27,7 +27,7 @@
     const inputWrap = el('div', { class: 'ub-ai-input-wrap', style: 'position:relative; flex:1;' });
     const _placeholder_text = 'Will it share word or waffle?';
       // Max query length (short questions). Configurable via `window.AI_MAX_QUERY_CHARS`.
-      const MAX_QUERY_CHARS = (typeof window !== 'undefined' && window.AI_MAX_QUERY_CHARS) ? Number(window.AI_MAX_QUERY_CHARS) : 20;
+      const MAX_QUERY_CHARS = (typeof window !== 'undefined' && window.AI_MAX_QUERY_CHARS) ? Number(window.AI_MAX_QUERY_CHARS) : 50;
       const input = el('input', { type: 'search', placeholder: '', 'data-ub-placeholder': _placeholder_text, class: 'ub-ai-input', maxlength: String(MAX_QUERY_CHARS) });
     const clearBtn = el('button', { type: 'button', class: 'ub-ai-clear', 'aria-label': 'Clear search' }, '');
     // Character counter placed to the left of the clear button
@@ -290,13 +290,15 @@
         // Toggle visibility for controls and update remaining-char counter
         const updateVisibility = ()=>{
           const has = w.input.value.trim();
+          const isFocused = (document.activeElement === w.input);
           if (w.clear) w.clear.style.display = has ? 'flex' : 'none';
           w.btn.style.display = has ? 'flex' : 'none';
           try{
             if (w.counter) {
               const remaining = Math.max(0, MAX_QUERY_CHARS - (w.input.value ? w.input.value.length : 0));
               w.counter.textContent = remaining.toString();
-              w.counter.style.display = has ? 'inline-block' : 'none';
+              // Show counter when input has text or when focused
+              w.counter.style.display = (has || isFocused) ? 'inline-block' : 'none';
             }
           }catch(e){}
           // After toggling, resize icons to match rendered button height
@@ -314,10 +316,14 @@
           }catch(e){}
           updateVisibility();
         });
+        // Show counter while focused even if empty; hide on blur when empty
+        w.input.addEventListener('focus', ()=>{ try{ if (w.counter) { w.counter.style.display = 'inline-block'; updateVisibility(); } }catch(e){} });
+        w.input.addEventListener('blur', ()=>{ try{ if (w.counter) { if (!w.input.value.trim()) w.counter.style.display = 'none'; updateVisibility(); } }catch(e){} });
         // initial sizing and keep in sync with resizes
         resizeIcons();
         window.addEventListener('resize', resizeIcons);
-        // initial state
+        // initialize counter text and initial state
+        try{ if (w.counter) w.counter.textContent = String(MAX_QUERY_CHARS); }catch(e){}
         updateVisibility();
       }catch(e){ /* ignore */ }
       // Keep rune centered while on the AI page
