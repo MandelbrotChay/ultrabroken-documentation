@@ -149,11 +149,11 @@ label.md-header__button[for^="__palette_"]:hover {
   color: var(--teal-glow) !important;
   caret-color: var(--teal-glow) !important;
   border-color: rgba(0,240,194,0.5) !important;
-  font-family: 'New Rocker', 'Texturina', Georgia, 'Times New Roman', serif !important;
+  font-family: 'New Texturina', Georgia, 'Times New Roman', serif !important;
 }
 .md-search__input::placeholder {
   color: rgba(0,240,194,0.5) !important;
-  font-family: 'New Rocker', 'Texturina', Georgia, 'Times New Roman', serif !important;
+  font-family: 'New Texturina', Georgia, 'Times New Roman', serif !important;
 }
 .md-search__input:focus {
   border-color: var(--teal-glow) !important;
