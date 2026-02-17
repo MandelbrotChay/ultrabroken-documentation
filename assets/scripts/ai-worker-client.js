@@ -83,80 +83,9 @@
       const w = render(placeholder);
       // No user-facing toggle: `SHOW_MODEL_SOURCES` controls whether model-
       // returned `Source:` lines are rendered. This is intentionally internal.
-      // Parse simple source lines from model answer text. Returns array of {title?, path}
-      function parseSourcesFromText(text){
-        // Accept model-supplied source lines of the forms:
-        //  - Source: Title — /path/to/doc
-        //  - Source: Title
-        //  - Sources: Title; Sources: Title — /path
-        // Support multiple sources bundled on one line separated by ';'
-        const out = [];
-        if (!text || typeof text !== 'string') return out;
-        const lines = text.split(/\r?\n/).map(l=>l.trim()).filter(Boolean);
-        for (let i = 0; i < lines.length; i++){
-          let line = lines[i];
-          // If the line contains 'Source(s): <rest>' treat <rest> as the content.
-          // If the line is exactly 'Source:' or 'Sources:' then treat subsequent
-          // non-empty lines as separate source entries until a blank line/EOF.
-          let m = line.match(/^Sources?:\s*(.+)$/i);
-          let restItems = [];
-          if (m && m[1]) {
-            // 'Source: Title; Title — /path' or similar on a single line
-            restItems = String(m[1]).split(/\s*;\s*/).map(p=>p.trim()).filter(Boolean);
-          } else if (/^Sources?:\s*$/i.test(line)) {
-            // consume following non-empty lines as individual entries
-            let j = i + 1;
-            for (; j < lines.length; j++){
-              const next = lines[j].trim();
-              if (!next) break; // stop at blank line
-              restItems.push(next);
-            }
-            i = Math.max(i, j - 1); // advance outer loop to consumed lines
-          } else {
-            continue;
-          }
-
-          for (let part of restItems){
-            // tolerate parts that still include a leading 'Source:' label
-            part = part.replace(/^Sources?:\s*/i, '').trim();
-            // strip common bullet markers and list prefixes ("- ", "* ", "• ")
-            part = part.replace(/^[\-\*\u2022\s]+/, '').trim();
-            // trim trailing lone dashes or separators caused by truncation
-            part = part.replace(/[\-–—\s]+$/,'').trim();
-            // skip obviously invalid/too-short fragments
-            if (!part || part.length < 4) continue;
-            const mm = part.match(/^(.+?)\s*[–—-]\s*(\/?\S+)$/);
-            if (mm){
-              const title = mm[1].trim();
-              const rawPath = mm[2];
-              const path = rawPath.startsWith('/') ? rawPath : '/' + rawPath.replace(/^\/+/, '');
-              out.push({ title, path });
-            } else {
-              // Accept title-only entries (the model may now return only titles).
-              const titleOnly = part.trim();
-              if (titleOnly) out.push({ title: titleOnly, path: null });
-            }
-          }
-        }
-        return out;
-      }
-
-      // Split a model answer into `main` (text before the first Source line)
-      // and `sources` (the rest, starting at the first Source line). The
-      // separator is the first line that begins with 'Source' (case-
-      // insensitive). Returns { main: string, sources: string|null }.
-      function splitAnswerAndSources(text){
-        if (!text || typeof text !== 'string') return { main: '', sources: null };
-        const lines = text.split(/\r?\n/);
-        let idx = -1;
-        for (let i = 0; i < lines.length; i++){
-          if (/^\s*Sources?\b[:\s]/i.test(lines[i])) { idx = i; break; }
-        }
-        if (idx === -1) return { main: text.replace(/\s+$/,'') , sources: null };
-        const main = lines.slice(0, idx).join('\n').replace(/\s+$/,'');
-        const sources = lines.slice(idx).join('\n').trim();
-        return { main, sources };
-      }
+      // The Worker now returns structured `response_text`, optional `response_sources` (text block)
+      // and a `sources` array ([{title, path|null}]). The client renders those directly
+      // and no longer attempts to parse `response_text` for Sources.
 
       const handleAsk = async ()=>{
         const q = w.input.value.trim(); if (!q) return; w.out.textContent = 'The Librarian stares at you...';
@@ -172,16 +101,14 @@
         // parsed and rendered as links only when `SHOW_RESPONSE_SOURCES`
         // is true. When splitting is disabled the full `r.answer` is
         // treated as the main answer.
-        // Always split the model answer into main and sources (if any).
-        // `SHOW_RESPONSE_SOURCES` controls whether the sources section is
-        // displayed inline after the main answer. `SHOW_MODEL_SOURCES`
-        // independently controls whether model-returned sources are
-        // parsed and rendered as links in the evidence area.
-        let sourcesText = null;
-        if (r.answer) {
-          const sp = splitAnswerAndSources(r.answer);
-          const mainText = sp.main;
-          sourcesText = sp.sources; // may be null
+        // Consume structured worker response fields.
+        // `r.response_text` is the main answer (already stripped of any Sources block).
+        // `r.response_sources` is the textual Sources block (present only when APPEND_RESPONSE_SOURCES enabled).
+        // `r.sources` is the structured array of source entries.
+        let responseText = r.response_text || r.answer || '';
+        let responseSources = (typeof r.response_sources !== 'undefined') ? r.response_sources : null;
+        // `r.answer` fallback exists for older worker responses during transition; prefer structured fields.
+        if (responseText) {
           // Render Markdown safely when marked + DOMPurify are present.
           const normalizeMarkdown = (s) => {
             if (!s) return '';
@@ -221,64 +148,53 @@
           };
           // Display main answer; optionally append the raw sources block
           // when configured to show the response's sources section.
-          if (SHOW_RESPONSE_SOURCES && sourcesText) {
-            safeRender(mainText + '\n\n' + sourcesText);
+          if (SHOW_RESPONSE_SOURCES && responseSources) {
+            safeRender(responseText + '\n\n' + responseSources);
           } else {
-            safeRender(mainText);
+            safeRender(responseText);
           }
         } else if (r.debug) {
           w.out.textContent = JSON.stringify(r.debug, null, 2);
         } else {
           w.out.textContent = '';
         }
-
-        // Additionally parse any source lines the model included in its answer and render them as links first
+        // Render model-provided structured `r.sources` as links when present
         try{
           const base = 'https://nan-gogh.github.io/ultrabroken-documentation/wiki/';
-          const sourceTextToParse = (sourcesText != null) ? sourcesText : r.answer;
-          const showModelSources = SHOW_MODEL_SOURCES && sourceTextToParse;
+          const modelSources = Array.isArray(r.sources) ? r.sources : [];
+          const showModelSources = SHOW_MODEL_SOURCES && modelSources && modelSources.length;
           if (showModelSources){
-            const modelSources = parseSourcesFromText(sourceTextToParse);
-            if (modelSources && modelSources.length){
-              // create a Resources headline (styled like an h2) above the sources list
-              try{
-                if (w.evidence && !w.evidence.querySelector('.ub-ai-resources')){
-                  const heading = el('h2', { class: 'ub-ai-resources md-typeset' }, 'Resources');
-                  if (w.evidence) w.evidence.appendChild(heading);
-                  // Insert a horizontal rule to visually separate the Resources
-                  // heading from the list of source links.
-                  const sep = el('hr', { class: 'ub-ai-resources-sep' }, '');
-                  if (w.evidence) w.evidence.appendChild(sep);
-                }
-              }catch(e){}
-              // create list and append to evidence area (model sources go first)
-              let list = el('ul', { class: 'ub-ai-evidence-list' }, []);
-              if (w.evidence) w.evidence.appendChild(list);
-              const siteRoot = 'https://nan-gogh.github.io/ultrabroken-documentation';
-              modelSources.forEach(s => {
-                const text = s.title || (s.path||s.id) || '';
-                const query = String(text).trim();
-                if (USE_TITLE_SEARCH_LINKS) {
-                  // Render as a `search:` link that `search-link.js` will intercept
-                  const href = 'search:' + encodeURIComponent(query);
-                  const a = el('a', { href: href, class: 'search-link', 'data-query': query }, text);
-                  const li = el('li', {}, a);
-                  list.appendChild(li);
-                } else {
-                  const p = (s.path || s.id || '').toString();
-                  let href;
-                  if (p && p.startsWith('/wiki/')) {
-                    href = siteRoot + p;
-                  } else {
-                    const slug = p.replace(/^\/+|\/+$/g,'').replace(/\.md$/,'');
-                    href = base + encodeURI(slug);
-                  }
-                  const a = el('a', { href: href, target: '_blank', rel: 'noopener noreferrer' }, text);
-                  const li = el('li', {}, a);
-                  list.appendChild(li);
-                }
-              });
+            if (w.evidence && !w.evidence.querySelector('.ub-ai-resources')){
+              const heading = el('h2', { class: 'ub-ai-resources md-typeset' }, 'Resources');
+              if (w.evidence) w.evidence.appendChild(heading);
+              const sep = el('hr', { class: 'ub-ai-resources-sep' }, '');
+              if (w.evidence) w.evidence.appendChild(sep);
             }
+            let list = el('ul', { class: 'ub-ai-evidence-list' }, []);
+            if (w.evidence) w.evidence.appendChild(list);
+            const siteRoot = 'https://nan-gogh.github.io/ultrabroken-documentation';
+            modelSources.forEach(s => {
+              const text = s.title || (s.path||s.id) || '';
+              const query = String(text).trim();
+              if (USE_TITLE_SEARCH_LINKS) {
+                const href = 'search:' + encodeURIComponent(query);
+                const a = el('a', { href: href, class: 'search-link', 'data-query': query }, text);
+                const li = el('li', {}, a);
+                list.appendChild(li);
+              } else {
+                const p = (s.path || s.id || '').toString();
+                let href;
+                if (p && p.startsWith('/wiki/')) {
+                  href = siteRoot + p;
+                } else {
+                  const slug = p.replace(/^\/+|\/+$/g,'').replace(/\.md$/,'');
+                  href = base + encodeURI(slug);
+                }
+                const a = el('a', { href: href, target: '_blank', rel: 'noopener noreferrer' }, text);
+                const li = el('li', {}, a);
+                list.appendChild(li);
+              }
+            });
           }
 
           // Always render Worker-provided evidence as authoritative clickable links
