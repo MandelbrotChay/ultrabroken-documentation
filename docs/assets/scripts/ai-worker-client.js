@@ -94,31 +94,28 @@
         const lines = text.split(/\r?\n/).map(l=>l.trim()).filter(Boolean);
         for (let i = 0; i < lines.length; i++){
           let line = lines[i];
-          // match the rest of the line after the leading 'Source:' or 'Sources:'
-          // two forms supported: 'Source: Title' or a lone 'Source:' where the
-          // following non-empty line contains the title(s).
+          // If the line contains 'Source(s): <rest>' treat <rest> as the content.
+          // If the line is exactly 'Source:' or 'Sources:' then treat subsequent
+          // non-empty lines as separate source entries until a blank line/EOF.
           let m = line.match(/^Sources?:\s*(.+)$/i);
-          let rest = null;
+          let restItems = [];
           if (m && m[1]) {
-            rest = m[1];
-          } else {
-            // lone label 'Source:' or 'Sources:' with no trailing text
-            const lone = line.match(/^Sources?:\s*$/i);
-            if (lone) {
-              // use the next line as the rest if available
-              if (i + 1 < lines.length) {
-                rest = lines[i + 1];
-                i++; // consume the next line
-              } else {
-                continue;
-              }
-            } else {
-              continue;
+            // 'Source: Title; Title — /path' or similar on a single line
+            restItems = String(m[1]).split(/\s*;\s*/).map(p=>p.trim()).filter(Boolean);
+          } else if (/^Sources?:\s*$/i.test(line)) {
+            // consume following non-empty lines as individual entries
+            let j = i + 1;
+            for (; j < lines.length; j++){
+              const next = lines[j].trim();
+              if (!next) break; // stop at blank line
+              restItems.push(next);
             }
+            i = Math.max(i, j - 1); // advance outer loop to consumed lines
+          } else {
+            continue;
           }
-          // split multiple sources on semicolon
-          const parts = String(rest).split(/\s*;\s*/).map(p=>p.trim()).filter(Boolean);
-          for (let part of parts){
+
+          for (let part of restItems){
             // tolerate parts that still include a leading 'Source:' label
             part = part.replace(/^Sources?:\s*/i, '').trim();
             const mm = part.match(/^(.+?)\s*[–—-]\s*(\/?\S+)$/);
