@@ -122,11 +122,38 @@ export default {
       // Helper to check TitleCase (first char upper, rest lower)
       const isTitleCase = (t) => /^[A-Z][a-z]+$/.test(t);
 
+      // Precompute multi-word whitelist entries (split on spaces or underscores)
+      const whitelistMulti = [];
+      for (const w of WHITELIST){
+        if (/\s|_/.test(w)) whitelistMulti.push(String(w).split(/[\s_]+/));
+      }
+
       for (let i = 0; i < raw.length; i++){
         const r = raw[i];
         // strip surrounding punctuation but keep internal chars (hyphens/underscores)
         const stripped = (r||'').replace(/^[^\w]+|[^\w]+$/g,'');
         if (!stripped) continue;
+        // Multi-word whitelist: match sequence starting at `i` against any multi-entry
+        let matchedMulti = false;
+        if (whitelistMulti.length > 0){
+          for (const parts of whitelistMulti){
+            let ok = true;
+            for (let k = 0; k < parts.length; k++){
+              const idx = i + k;
+              if (idx >= raw.length) { ok = false; break; }
+              const cand = (raw[idx]||'').replace(/^[^\w]+|[^\w]+$/g,'');
+              if (cand !== parts[k]) { ok = false; break; }
+            }
+            if (ok){
+              // emit separate words for the whitelist multi-word entry
+              for (const p of parts) tokens.push(p);
+              i = i + parts.length - 1;
+              matchedMulti = true;
+              break;
+            }
+          }
+        }
+        if (matchedMulti) continue;
         // Whitelist exact tokens (case-sensitive)
         if (WHITELIST.has(stripped)) { tokens.push(stripped); continue; }
         // Always remove question words (case-insensitive)
@@ -137,26 +164,24 @@ export default {
         if (/[0-9]|-|_/.test(stripped)) { tokens.push(stripped); continue; }
         // TitleCase sequence detection: collect run and join with underscore
           if (isTitleCase(stripped)){
-          const run = [stripped];
-          let j = i+1;
-          while (j < raw.length){
-            const next = (raw[j]||'').replace(/^[^\w]+|[^\w]+$/g,'');
-            if (!isTitleCase(next)) break;
-            run.push(next);
-            j++;
-          }
-          if (run.length > 1){
-            // Push both the joined TitleCase run (for exact proper-noun matches)
-            // and the separate words so BM25 (which indexes split words) can match.
-            tokens.push(run.join('_'));
-            tokens.push(run.join(' '));
-            i = j-1; // skip consumed
+            const run = [stripped];
+            let j = i+1;
+            while (j < raw.length){
+              const next = (raw[j]||'').replace(/^[^\w]+|[^\w]+$/g,'');
+              if (!isTitleCase(next)) break;
+              run.push(next);
+              j++;
+            }
+            if (run.length > 1){
+              // Emit separate words only (no joined form) so BM25 can match individual tokens.
+              for (const w of run) tokens.push(w);
+              i = j-1; // skip consumed
+              continue;
+            }
+            // single TitleCase word: keep it (may be a proper noun)
+            tokens.push(stripped);
             continue;
           }
-          // single TitleCase word: keep it (may be a proper noun)
-          tokens.push(stripped);
-          continue;
-        }
         // Lowercase stopwords: only remove when token is exactly lowercase
         if (stripped === stripped.toLowerCase() && COMMON_LOWERCASE_STOPWORDS.has(stripped)) continue;
         // Short lowercase tokens (<=2) are removed unless whitelisted
