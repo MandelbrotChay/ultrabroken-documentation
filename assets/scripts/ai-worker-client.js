@@ -30,6 +30,8 @@
       const MAX_QUERY_CHARS = (typeof window !== 'undefined' && window.AI_MAX_QUERY_CHARS) ? Number(window.AI_MAX_QUERY_CHARS) : 120;
       const input = el('input', { type: 'search', placeholder: '', 'data-ub-placeholder': _placeholder_text, class: 'ub-ai-input', maxlength: String(MAX_QUERY_CHARS) });
     const clearBtn = el('button', { type: 'button', class: 'ub-ai-clear', 'aria-label': 'Clear search' }, '');
+    // Character counter placed to the left of the clear button
+    const charCounter = el('span', { class: 'ub-ai-counter', 'aria-hidden': 'true', title: 'Characters remaining' }, '');
     const askBtn = el('button', { type: 'button', class: 'ub-ai-ask', 'aria-label': 'Ask' }, '');
     // NOTE: user-facing toggle removed — rendering of model-returned sources
     // is controlled by the internal `SHOW_MODEL_SOURCES` flag declared above.
@@ -37,6 +39,7 @@
     const out = el('div', { class: 'ub-ai-out' }, '');
     const evidenceWrap = el('div', { class: 'ub-ai-evidence' }, '');
     inputWrap.appendChild(input);
+    inputWrap.appendChild(charCounter);
     inputWrap.appendChild(clearBtn);
     row.appendChild(inputWrap);
     row.appendChild(askBtn);
@@ -46,7 +49,7 @@
     // append evidence container to the widget so it's accessible via the returned handle
     root.appendChild(evidenceWrap);
     container.appendChild(root);
-    return { input, btn: askBtn, out, clear: clearBtn, evidence: evidenceWrap };
+    return { input, btn: askBtn, out, clear: clearBtn, evidence: evidenceWrap, counter: charCounter };
   }
 
   async function askWorker(q){
@@ -284,11 +287,18 @@
           }catch(e){}
         };
 
-        // Toggle visibility for both controls based on input content
+        // Toggle visibility for controls and update remaining-char counter
         const updateVisibility = ()=>{
           const has = w.input.value.trim();
           if (w.clear) w.clear.style.display = has ? 'flex' : 'none';
           w.btn.style.display = has ? 'flex' : 'none';
+          try{
+            if (w.counter) {
+              const remaining = Math.max(0, MAX_QUERY_CHARS - (w.input.value ? w.input.value.length : 0));
+              w.counter.textContent = remaining.toString();
+              w.counter.style.display = has ? 'inline-block' : 'none';
+            }
+          }catch(e){}
           // After toggling, resize icons to match rendered button height
           // use a short timeout to allow layout to settle when showing
           setTimeout(resizeIcons, 0);
