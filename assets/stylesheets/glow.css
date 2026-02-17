@@ -150,14 +150,15 @@ label.md-header__button[for^="__palette_"]:hover {
   caret-color: var(--teal-glow) !important;
   border-color: rgba(0,240,194,0.5) !important;
   /* Use New Rocker for search input to match header/title styling */
-  /*font-family: 'New Rocker', 'Texturina', Georgia, 'Times New Roman', serif !important;*/
-  font-size: 1.25rem !important;
-  line-height: 1.2 !important;
+  font-family: 'New Rocker', 'Texturina', Georgia, 'Times New Roman', serif !important;
+  /*font-size: 1.25rem !important;
+  line-height: 1.2 !important;*/
 }
 .md-search__input::placeholder {
   color: var(--hr-sep) !important;
   /* Slightly darker placeholder derived from current color when supported */
   color: color-mix(in srgb, currentColor 80%, black 20%) !important;
+  font-family: 'New Texturina', Georgia, 'Times New Roman', serif !important;
 }
 .md-search__input:focus {
   border-color: var(--teal-glow) !important;
