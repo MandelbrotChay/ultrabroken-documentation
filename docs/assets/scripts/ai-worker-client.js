@@ -11,14 +11,7 @@
     (Array.isArray(children)?children:[children]).forEach(c=>{ if (typeof c === 'string') e.appendChild(document.createTextNode(c)); else if (c) e.appendChild(c); });
     return e;
   }
-
-  // Internal flag: controls whether model-returned `Source:` lines are rendered.
-  // This is intentionally an internal toggle (not user-facing). Set to `true`
-  // to enable rendering of model-supplied sources, or `false` to disable.
-  const SHOW_MODEL_SOURCES = true;
-  // Internal flag: controls whether Worker-provided evidence is rendered.
-  // Default `false` keeps the UI from showing Worker evidence until enabled.
-  const SHOW_WORKER_EVIDENCE = false;
+  
   // Internal flag: controls whether the response's trailing "sources"
   // block (the text starting at the first line beginning with 'Source')
   // is shown inline after the main answer. Note: the client ALWAYS splits
@@ -26,10 +19,17 @@
   // for parsing). `SHOW_RESPONSE_SOURCES` only controls whether the raw
   // sources block is appended to the displayed answer. Default `false`.
   const SHOW_RESPONSE_SOURCES = false;
+  // Internal flag: controls whether model-returned `Source:` lines are rendered.
+  // This is intentionally an internal toggle (not user-facing). Set to `true`
+  // to enable rendering of model-supplied sources, or `false` to disable.
+  const SHOW_MODEL_SOURCES = true;
   // Internal toggle: when true, model-supplied source titles are rendered
   // as `search:Title` links (intercepted by `search-link.js`). When false
   // they render as normal page links. Default: false.
   const USE_TITLE_SEARCH_LINKS = true;
+  // Internal flag: controls whether Worker-provided evidence is rendered.
+  // Default `false` keeps the UI from showing Worker evidence until enabled.
+  const SHOW_WORKER_EVIDENCE = false;
   
   function render(container){
     const root = el('div', { class: 'ub-ai-root' });

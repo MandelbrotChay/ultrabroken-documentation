@@ -10,6 +10,8 @@ const SIMILARITY_THRESHOLD = 0.02;
 // Change this in-code when you want repository-wide debugging; not a secret.
 const RETURN_DEBUG = false;
 
+APPEND_RESPONSE_SOURCES = false
+
 function cosine(a, b){
   let dot=0, na=0, nb=0;
   for(let i=0;i<a.length;i++){ dot += a[i]*b[i]; na += a[i]*a[i]; nb += b[i]*b[i]; }
@@ -416,11 +418,10 @@ export default {
               if (parsedJson.response_sources && !finalResponseSources) finalResponseSources = parsedJson.response_sources;
             }
 
-            // Respect APPEND_RESPONSE_SOURCES env flag: include textual block only when enabled
-            const appendTextSources = !!(env.APPEND_RESPONSE_SOURCES);
+            // Use APPEND_RESPONSE_SOURCES directly (declared at top of file)
             const payload = {
               response_text: finalResponseText || modelText,
-              response_sources: appendTextSources ? (finalResponseSources || null) : null,
+              response_sources: APPEND_RESPONSE_SOURCES ? (finalResponseSources || null) : null,
               sources: finalSources || [],
               evidence: evidenceList
             };
