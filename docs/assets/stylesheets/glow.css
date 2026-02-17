@@ -155,7 +155,7 @@ label.md-header__button[for^="__palette_"]:hover {
   line-height: 1.2 !important;
 }
 .md-search__input::placeholder {
-  color: rgba(0,240,194,0.48) !important;
+  color: var(--hr-sep) !important;
   /* Slightly darker placeholder derived from current color when supported */
   color: color-mix(in srgb, currentColor 80%, black 20%) !important;
 }
@@ -793,12 +793,6 @@ li.task-list-item a, li.task-list a {
   box-sizing: border-box;
 }
 
-.ub-ai-input::placeholder {
-  /* Slightly darker variant of the input's text color. Use color-mix when available, with a teal fallback. */
-  color: rgba(0,240,194,0.45) !important;
-  color: color-mix(in srgb, currentColor 80%, black 20%) !important;
-}
-
 /* Icon-only Ask button variant: harmonized with the clear button so
    both can be shown/hidden by JS reliably. Start hidden; JS toggles
    `display` to `flex` when the input has content. */
@@ -871,10 +865,6 @@ li.task-list-item a, li.task-list a {
 /* Use New Rocker for the AI widget's input to match header/search styling */
 .ub-ai-input {
   font-family: 'New Rocker', 'Texturina', Georgia, 'Times New Roman', serif !important;
-}
-.ub-ai-input::placeholder {
-  font-family: 'New Rocker', 'Texturina', Georgia, 'Times New Roman', serif !important;
-  color: rgba(0,240,194,0.5) !important;
 }
 
 /* Asset publish trigger: do not remove - used to trigger asset-only workflow */
