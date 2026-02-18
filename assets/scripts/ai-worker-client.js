@@ -30,9 +30,6 @@
       // Max query length (short questions). Configurable via `window.AI_MAX_QUERY_CHARS`.
       const MAX_QUERY_CHARS = (typeof window !== 'undefined' && window.AI_MAX_QUERY_CHARS) ? Number(window.AI_MAX_QUERY_CHARS) : 50;
       const input = el('textarea', { placeholder: '', 'data-ub-placeholder': _placeholder_text, class: 'ub-ai-input', maxlength: String(MAX_QUERY_CHARS), rows: '1' });
-      // assign a stable unique id so we can inject a high-specificity
-      // placeholder rule at runtime (works around stubborn mobile engines)
-      try{ const uid = 'ub-ai-input-' + (Math.random().toString(36).slice(2,9)); input.id = uid; }catch(e){}
       // textarea base styles for autosize and wrapping
       try{
         input.style.resize = 'none';
@@ -45,10 +42,6 @@
         input.style.whiteSpace = 'pre-wrap';
         input.style.overflowWrap = 'break-word';
         input.style.wordBreak = 'normal';
-        // Force placeholder color via CSS variable set inline — helps mobile browsers
-        // that otherwise ignore external placeholder rules. This keeps real text
-        // color inherited while ensuring the placeholder is visibly darker.
-        try{ input.style.setProperty('--ub-placeholder-color', '#00c09b'); }catch(e){}
       }catch(e){}
     const clearBtn = el('button', { type: 'button', class: 'ub-ai-clear', 'aria-label': 'Clear search' }, '');
     const askBtn = el('button', { type: 'button', class: 'ub-ai-ask', 'aria-label': 'Ask' }, '');
@@ -59,16 +52,6 @@
     const out = el('div', { class: 'ub-ai-out' }, '');
     const evidenceWrap = el('div', { class: 'ub-ai-evidence' }, '');
     inputWrap.appendChild(input);
-    // Inject a high-specificity placeholder rule targeted at this instance.
-    try{
-      if (input && input.id && !document.getElementById(input.id + '-ph-style')){
-        const s = document.createElement('style');
-        s.id = input.id + '-ph-style';
-        const css = `#${input.id}::placeholder, #${input.id}::-webkit-input-placeholder, #${input.id}:-ms-input-placeholder { color: #00c09b !important; }`;
-        s.appendChild(document.createTextNode(css));
-        (document.head||document.documentElement).appendChild(s);
-      }
-    }catch(e){}
     row.appendChild(inputWrap);
     // place clear as its own control (sibling to ask/share) so it behaves like other action buttons
     row.appendChild(clearBtn);
