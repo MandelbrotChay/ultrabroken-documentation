@@ -29,7 +29,10 @@
     const _placeholder_text = 'Will it share word or waffle?';
       // Max query length (short questions). Configurable via `window.AI_MAX_QUERY_CHARS`.
       const MAX_QUERY_CHARS = (typeof window !== 'undefined' && window.AI_MAX_QUERY_CHARS) ? Number(window.AI_MAX_QUERY_CHARS) : 50;
-      const input = el('textarea', { placeholder: '', 'data-ub-placeholder': _placeholder_text, class: 'ub-ai-input', maxlength: String(MAX_QUERY_CHARS), rows: '1' });
+      const generatedId = 'ub-ai-input-' + Math.random().toString(36).slice(2,9);
+      const input = el('textarea', { id: generatedId, placeholder: '', 'data-ub-placeholder': _placeholder_text, class: 'ub-ai-input', maxlength: String(MAX_QUERY_CHARS), rows: '1' });
+      // Placeholder element (separate from native placeholder) — will be toggled
+      const placeholderEl = el('label', { class: 'ub-ai-placeholder', 'data-ub-placeholder-el': '1', tabindex: '0', for: generatedId }, _placeholder_text);
       // textarea base styles for autosize and wrapping
       try{
         input.style.resize = 'none';
@@ -51,6 +54,8 @@
     // Output area (answer + evidence). `out` holds the model answer; `evidenceWrap` holds clickable evidence links returned by the Worker.
     const out = el('div', { class: 'ub-ai-out' }, '');
     const evidenceWrap = el('div', { class: 'ub-ai-evidence' }, '');
+    // Append placeholder first so it occupies flow when visible, then the textarea
+    inputWrap.appendChild(placeholderEl);
     inputWrap.appendChild(input);
     row.appendChild(inputWrap);
     // place clear as its own control (sibling to ask/share) so it behaves like other action buttons
@@ -280,12 +285,34 @@
       // When focused we hide the placeholder so caret/typing is clear.
       try{
         const stored = w.input.getAttribute('data-ub-placeholder') || '';
-        // Hide placeholder while editing
-        w.input.addEventListener('focus', ()=>{ w.input.placeholder = ''; });
-        // Restore placeholder when blurred and empty
-        w.input.addEventListener('blur', ()=>{ if (!w.input.value) w.input.placeholder = stored; });
-        // Initial state: if not focused and empty, show placeholder
-        if (document.activeElement !== w.input && !w.input.value) w.input.placeholder = stored;
+        // Toggle between native textarea and our placeholder element.
+        const showPlaceholderEl = ()=>{
+          try{
+            placeholderEl.style.display = '';
+            placeholderEl.setAttribute('aria-hidden','false');
+            w.input.style.display = 'none';
+            w.input.setAttribute('aria-hidden','true');
+          }catch(e){}
+        };
+        const hidePlaceholderEl = ()=>{
+          try{
+            placeholderEl.style.display = 'none';
+            placeholderEl.setAttribute('aria-hidden','true');
+            w.input.style.display = '';
+            w.input.setAttribute('aria-hidden','false');
+          }catch(e){}
+        };
+        // Hide placeholder when focused
+        w.input.addEventListener('focus', ()=>{ try{ hidePlaceholderEl(); }catch(e){} });
+        // On blur, if empty show placeholder element and restore measured height
+        w.input.addEventListener('blur', ()=>{ 
+          if (!w.input.value) {
+            try{ showPlaceholderEl(); }catch(e){}
+            try{ if (w.placeholderHeight) w.input.style.height = w.placeholderHeight + 'px'; }catch(e){}
+          }
+        });
+        // Initial state: show placeholder element when not focused and empty
+        if (document.activeElement !== w.input && !w.input.value) showPlaceholderEl(); else hidePlaceholderEl();
 
         // Measure the textarea height when the placeholder is visible so we can
         // restore that exact height on blur. We perform the measurement inside
@@ -398,6 +425,14 @@
             });
           } catch (e) {}
         }
+
+        // Clicking or pressing Enter/Space on the placeholder should focus the textarea
+        try{
+          placeholderEl.addEventListener('click', ()=>{ try{ hidePlaceholderEl(); w.input.focus(); }catch(e){} });
+          placeholderEl.addEventListener('keydown', (ev)=>{
+            if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); try{ hidePlaceholderEl(); w.input.focus(); }catch(e){} }
+          });
+        }catch(e){}
 
         // Shared resizing function to make icons match the Ask button visual height
         const resizeIcons = ()=>{
