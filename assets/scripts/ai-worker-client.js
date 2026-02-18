@@ -28,7 +28,11 @@
     const _placeholder_text = 'Will it share word or waffle?';
       // Max query length (short questions). Configurable via `window.AI_MAX_QUERY_CHARS`.
       const MAX_QUERY_CHARS = (typeof window !== 'undefined' && window.AI_MAX_QUERY_CHARS) ? Number(window.AI_MAX_QUERY_CHARS) : 50;
-      const input = el('input', { type: 'search', placeholder: '', 'data-ub-placeholder': _placeholder_text, class: 'ub-ai-input', maxlength: String(MAX_QUERY_CHARS) });
+      // Use a textarea so long queries wrap to a new line instead of being culled.
+      const input = el('textarea', { placeholder: '', 'data-ub-placeholder': _placeholder_text, class: 'ub-ai-input', maxlength: String(MAX_QUERY_CHARS), rows: '1' });
+      // Prevent native resizing and allow auto-height adjustments
+      input.style.resize = 'none';
+      input.style.overflow = 'hidden';
     const clearBtn = el('button', { type: 'button', class: 'ub-ai-clear', 'aria-label': 'Clear search' }, '');
     const askBtn = el('button', { type: 'button', class: 'ub-ai-ask', 'aria-label': 'Ask' }, '');
     const shareBtn = el('button', { type: 'button', class: 'ub-ai-share', 'aria-label': 'Share query' }, '');
@@ -238,7 +242,8 @@
       };
       w.btn.addEventListener('click', handleAsk);
       // also allow Enter on the input to trigger ask
-      w.input.addEventListener('keydown', (ev)=>{ if (ev.key === 'Enter') handleAsk(); });
+      // Submit on Ctrl+Enter / Cmd+Enter. Plain Enter inserts a newline.
+      w.input.addEventListener('keydown', (ev)=>{ if ((ev.ctrlKey || ev.metaKey) && ev.key === 'Enter') { ev.preventDefault(); handleAsk(); } });
       // Show placeholder only when the field is NOT focused (and empty).
       // When focused we hide the placeholder so caret/typing is clear.
       try{
@@ -365,10 +370,18 @@
         // Enforce maximum query length: trim pasted content and prevent extra typing.
         w.input.addEventListener('input', ()=>{
           try{
+            // If the user exceeds the visual single-line limit, insert a newline
+            // at the cutoff so the remainder flows to the next line instead of
+            // being truncated. This keeps the full prompt while preserving the
+            // configured max per-line width.
             if (w.input.value && w.input.value.length > MAX_QUERY_CHARS) {
-              // Trim excess characters so the user sees they hit the limit
-              w.input.value = w.input.value.slice(0, MAX_QUERY_CHARS);
+              const v = String(w.input.value || '');
+              if (v.charAt(MAX_QUERY_CHARS - 1) !== '\n') {
+                w.input.value = v.slice(0, MAX_QUERY_CHARS) + '\n' + v.slice(MAX_QUERY_CHARS);
+              }
             }
+            // Auto-resize textarea height to fit content
+            try { w.input.style.height = 'auto'; w.input.style.height = (w.input.scrollHeight) + 'px'; } catch(e){}
           }catch(e){}
           updateVisibility();
         });
