@@ -35,6 +35,9 @@
       // Prevent native resizing and allow auto-height adjustments
       input.style.resize = 'none';
       input.style.overflow = 'hidden';
+      // Allow the textarea to flex and fill available width inside the input wrap
+      input.style.flex = '1 1 auto';
+      input.style.width = '100%';
       // Ensure textarea has a sensible minimum height matching control icons
       input.style.minHeight = '1.6rem';
       input.style.lineHeight = '1.2';
@@ -328,6 +331,9 @@
         // Start hidden; only show when the input has text (mirrors clear button behavior)
         w.btn.style.display = 'none';
         if (w.share) w.share.style.display = 'none';
+        // Ensure action buttons align to the lowest line of the textarea
+        try { w.btn.style.alignSelf = 'flex-end'; } catch(e){}
+        try { if (w.share) w.share.style.alignSelf = 'flex-end'; } catch(e){}
 
         // Share button: copy a permalink that encodes the query so it can be shared
         if (w.share) {
