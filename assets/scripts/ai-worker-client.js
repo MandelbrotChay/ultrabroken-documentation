@@ -495,51 +495,46 @@
                 clone.style.height = 'auto';
                 const measured = clone.scrollHeight || 0;
                 let targetH = Math.max(12, Math.round(measured));
-                // If a visualViewport is present (mobile keyboard visible),
-                // implement "grow-up" behavior: cap the visible textarea
-                // height to the available area and use internal scrolling so
-                // new rows push earlier lines upward without changing the
-                // element's bottom position.
+                // If a visualViewport is present (mobile keyboard visible), cap
+                // the target height so the textarea doesn't grow into the
+                // keyboard area. If capped, allow internal scrolling.
                 try{
-                  const rect = input.getBoundingClientRect();
                   if (window.visualViewport) {
+                    const rect = input.getBoundingClientRect();
                     const vv = window.visualViewport;
-                    const margin = 8;
+                    const margin = 8; // small breathing room above keyboard
                     const available = Math.round(vv.height - rect.top - margin);
                     if (available > 0 && targetH > available) {
-                      // capped: show a fixed visible height and scroll the
-                      // textarea so the bottom-most lines remain visible.
-                      const displayed = Math.max(12, available);
+                      targetH = Math.max(12, available);
                       input.style.overflowY = 'auto';
-                      try{
-                        const cur = parseInt((input.style.height||'0').replace('px',''),10) || 0;
-                        if (Math.abs(cur - displayed) > 1) input.style.height = displayed + 'px';
-                      }catch(e){}
-                      try{ input.scrollTop = Math.max(0, measured - displayed); }catch(e){}
                     } else {
-                      // not capped: expand to measured height and hide internal scroll
                       input.style.overflowY = 'hidden';
-                      try{
-                        const cur = parseInt((input.style.height||'0').replace('px',''),10) || 0;
-                        if (Math.abs(cur - targetH) > 1) input.style.height = targetH + 'px';
-                      }catch(e){}
-                      try{ input.scrollTop = 0; }catch(e){}
                     }
                   } else {
-                    // no visualViewport support: behave as normal autosize
                     input.style.overflowY = 'hidden';
-                    try{
-                      const cur = parseInt((input.style.height||'0').replace('px',''),10) || 0;
-                      if (Math.abs(cur - targetH) > 1) input.style.height = targetH + 'px';
-                    }catch(e){}
-                    try{ input.scrollTop = 0; }catch(e){}
                   }
-                }catch(e){ try{ input.style.overflowY = 'hidden'; }catch(e){} }
+                }catch(e){ input.style.overflowY = 'hidden'; }
+
+                // Only write when height changed meaningfully to avoid churn
+                try{
+                  const cur = parseInt((input.style.height||'0').replace('px',''),10) || 0;
+                  if (Math.abs(cur - targetH) > 1) {
+                    input.style.height = targetH + 'px';
+                    // Scroll the page by the same delta so each new row
+                    // effectively pushes content upward by the same amount.
+                    try{
+                      const delta = targetH - cur;
+                      if (delta > 0) {
+                        const top = Math.round(delta);
+                        window.scrollBy({ top: top, left: 0, behavior: 'auto' });
+                      }
+                    }catch(e){}
+                  }
+                }catch(e){}
               }catch(e){}
             });
           }catch(e){}
         };
-                // (removed keepDistance: grow-up behavior implemented in autosize)
         ['input','change','paste','cut','compositionend'].forEach(evt => w.input.addEventListener(evt, ()=>{
           try{ updateVisibility(); }catch(e){}
           try{ requestAnimationFrame(()=>{ try{ autosize(); }catch(e){} }); }catch(e){}
