@@ -804,6 +804,15 @@ li.task-list-item a, li.task-list a {
   box-sizing: border-box;
 }
 
+/* Remove default focus outline/shadow for the AI input so it doesn't draw
+   a border on focus; caret still visible. Keep accessible focus styles
+   elsewhere (buttons/links) intact. */
+.ub-ai-input:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border-color: transparent !important;
+}
+
 /* Icon-only Ask button variant: harmonized with the clear button so
    both can be shown/hidden by JS reliably. Start hidden; JS toggles
    `display` to `flex` when the input has content. */
