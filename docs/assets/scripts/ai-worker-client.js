@@ -295,12 +295,24 @@
           const shareImg = document.createElement('img');
           shareImg.src = '/ultrabroken-documentation/assets/images/share-icon.svg';
           shareImg.alt = 'Share';
-          shareImg.style.width = 'auto';
-          shareImg.style.height = 'auto';
+          // match Ask button icon sizing so image fills the button
+          shareImg.style.width = '100%';
+          shareImg.style.height = '100%';
           shareImg.style.display = 'block';
           shareImg.style.objectFit = 'contain';
           w.share.textContent = '';
           w.share.appendChild(shareImg);
+          // style the share button to match .ub-ai-ask so it's visible
+          w.share.style.background = 'transparent';
+          w.share.style.padding = '0.15rem';
+          w.share.style.boxSizing = 'border-box';
+          w.share.style.alignItems = 'center';
+          w.share.style.justifyContent = 'center';
+          w.share.style.borderRadius = '0.2rem';
+          w.share.style.width = '1.6rem';
+          w.share.style.height = '1.6rem';
+          w.share.style.border = 'none';
+          w.share.style.cursor = 'pointer';
         } catch (e) {}
         // Start hidden; only show when the input has text (mirrors clear button behavior)
         w.btn.style.display = 'none';
