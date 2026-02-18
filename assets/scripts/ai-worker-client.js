@@ -281,17 +281,26 @@
         const stored = w.input.getAttribute('data-ub-placeholder') || '';
         // Hide placeholder while editing
         w.input.addEventListener('focus', ()=>{ w.input.placeholder = ''; try{ if (typeof autosize === 'function') autosize(); }catch(e){} });
-        // Restore placeholder when blurred and empty; ensure autosize shrinks to single-line
-        w.input.addEventListener('blur', ()=>{ 
-          if (!w.input.value) {
-            w.input.placeholder = stored;
-            try{ if (typeof autosize === 'function') autosize(); }catch(e){}
-          }
-        });
-        // Trigger autosize when user clicks/interacts the textarea area
-        w.input.addEventListener('click', ()=>{ try{ if (typeof autosize === 'function') autosize(); }catch(e){} });
-        // Also trigger autosize when the surrounding input wrapper is clicked/tapped
-        try{ if (inputWrap && typeof inputWrap.addEventListener === 'function') inputWrap.addEventListener('click', ()=>{ try{ if (typeof autosize === 'function') autosize(); }catch(e){} }); }catch(e){}
+        // Restore placeholder when blurred and empty
+        w.input.addEventListener('blur', ()=>{ if (!w.input.value) w.input.placeholder = stored; });
+        // Collapse the textarea to a single line when the user clicks/taps into it.
+        // Use pointerdown to cover touch and mouse; fall back to click as well.
+        const collapseToOneLine = ()=>{
+          try{
+            const cs = window.getComputedStyle(w.input);
+            let lh = parseFloat(cs.lineHeight);
+            if (!lh || isNaN(lh)) {
+              const fs = parseFloat(cs.fontSize) || 16;
+              lh = Math.round(fs * 1.2);
+            }
+            // Small padding to account for box sizing and borders
+            const target = Math.max(12, Math.round(lh)) + 2;
+            try{ w.input.style.height = target + 'px'; }catch(e){}
+            try{ if (typeof updateVisibility === 'function') updateVisibility(); }catch(e){}
+          }catch(e){}
+        };
+        w.input.addEventListener('pointerdown', ()=>{ try{ collapseToOneLine(); }catch(e){} });
+        w.input.addEventListener('click', ()=>{ try{ collapseToOneLine(); }catch(e){} });
         // Initial state: if not focused and empty, show placeholder
         if (document.activeElement !== w.input && !w.input.value) w.input.placeholder = stored;
       }catch(e){}
@@ -412,20 +421,7 @@
         const autosize = ()=>{
           try{
             requestAnimationFrame(()=>{
-              try{
-                const el = w.input;
-                // reset to auto to measure scrollHeight correctly
-                el.style.height = 'auto';
-                const cs = window.getComputedStyle ? getComputedStyle(el) : null;
-                const lineH = cs ? parseFloat(cs.lineHeight) || 0 : 0;
-                const padTop = cs ? parseFloat(cs.paddingTop) || 0 : 0;
-                const padBottom = cs ? parseFloat(cs.paddingBottom) || 0 : 0;
-                // single line height includes line-height + vertical padding
-                const singleLineHeight = Math.ceil((lineH || 16) + padTop + padBottom);
-                const measured = el.scrollHeight || singleLineHeight;
-                const finalH = Math.max(measured, singleLineHeight);
-                el.style.height = (finalH + 2) + 'px';
-              }catch(e){}
+              try{ w.input.style.height = 'auto'; const h = w.input.scrollHeight; if (h) w.input.style.height = (h + 2) + 'px'; }catch(e){}
             });
           }catch(e){}
         };
