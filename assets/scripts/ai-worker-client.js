@@ -524,24 +524,33 @@
             });
           }catch(e){}
         };
+                // Keep a stable distance between the input bottom and the
+                // visualViewport top (keyboard upper edge). When the keyboard
+                // is visible, nudge the page scroll so the gap remains at `gapPx`.
+                const keepDistance = ()=>{
+                  try{
+                    const input = w.input; if (!input) return;
+                    if (!window.visualViewport) return;
+                    const gapPx = 8; // desired gap in CSS pixels
+                    const rect = input.getBoundingClientRect();
+                    const vv = window.visualViewport;
+                    const bottom = rect.bottom; // relative to visual viewport's top
+                    // If the input's bottom sits below (vv.height - gapPx) it is
+                    // too close to or under the keyboard — scroll the document so
+                    // it moves up by the needed amount.
+                    const overflow = bottom - (vv.height - gapPx);
+                    if (overflow > 0) {
+                      try{
+                        const curScroll = window.scrollY || window.pageYOffset || 0;
+                        const desired = Math.max(0, Math.round(curScroll + overflow + 2));
+                        window.scrollTo({ top: desired, left: 0, behavior: 'auto' });
+                      }catch(e){}
+                    }
+                  }catch(e){}
+                };
         ['input','change','paste','cut','compositionend'].forEach(evt => w.input.addEventListener(evt, ()=>{
-          try{
-            // When the field becomes empty (e.g. user held Delete), reset
-            // the textarea to the measured placeholder height and clear any
-            // internal scrolling so subsequent typing can cause a proper
-            // autosize increase. This avoids the case where the element was
-            // previously capped and then fails to grow for new content.
-            if (!w.input.value) {
-              try{
-                if (w.placeholderHeight) w.input.style.height = w.placeholderHeight + 'px';
-                else w.input.style.height = '';
-                w.input.style.overflowY = 'hidden';
-                try{ w.input.scrollTop = 0; }catch(e){}
-              }catch(e){}
-            }
-          }catch(e){}
           try{ updateVisibility(); }catch(e){}
-          try{ requestAnimationFrame(()=>{ try{ autosize(); }catch(e){} }); }catch(e){}
+          try{ requestAnimationFrame(()=>{ try{ autosize(); keepDistance(); }catch(e){} }); }catch(e){}
         }));
         // initial sizing
         try{ autosize(); }catch(e){}
