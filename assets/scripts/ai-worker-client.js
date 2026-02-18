@@ -495,62 +495,54 @@
                 clone.style.height = 'auto';
                 const measured = clone.scrollHeight || 0;
                 let targetH = Math.max(12, Math.round(measured));
-                // If a visualViewport is present (mobile keyboard visible), cap
-                // the target height so the textarea doesn't grow into the
-                // keyboard area. If capped, allow internal scrolling.
+                // If a visualViewport is present (mobile keyboard visible),
+                // implement "grow-up" behavior: cap the visible textarea
+                // height to the available area and use internal scrolling so
+                // new rows push earlier lines upward without changing the
+                // element's bottom position.
                 try{
+                  const rect = input.getBoundingClientRect();
                   if (window.visualViewport) {
-                    const rect = input.getBoundingClientRect();
                     const vv = window.visualViewport;
-                    const margin = 8; // small breathing room above keyboard
+                    const margin = 8;
                     const available = Math.round(vv.height - rect.top - margin);
                     if (available > 0 && targetH > available) {
-                      targetH = Math.max(12, available);
+                      // capped: show a fixed visible height and scroll the
+                      // textarea so the bottom-most lines remain visible.
+                      const displayed = Math.max(12, available);
                       input.style.overflowY = 'auto';
+                      try{
+                        const cur = parseInt((input.style.height||'0').replace('px',''),10) || 0;
+                        if (Math.abs(cur - displayed) > 1) input.style.height = displayed + 'px';
+                      }catch(e){}
+                      try{ input.scrollTop = Math.max(0, measured - displayed); }catch(e){}
                     } else {
+                      // not capped: expand to measured height and hide internal scroll
                       input.style.overflowY = 'hidden';
+                      try{
+                        const cur = parseInt((input.style.height||'0').replace('px',''),10) || 0;
+                        if (Math.abs(cur - targetH) > 1) input.style.height = targetH + 'px';
+                      }catch(e){}
+                      try{ input.scrollTop = 0; }catch(e){}
                     }
                   } else {
+                    // no visualViewport support: behave as normal autosize
                     input.style.overflowY = 'hidden';
+                    try{
+                      const cur = parseInt((input.style.height||'0').replace('px',''),10) || 0;
+                      if (Math.abs(cur - targetH) > 1) input.style.height = targetH + 'px';
+                    }catch(e){}
+                    try{ input.scrollTop = 0; }catch(e){}
                   }
-                }catch(e){ input.style.overflowY = 'hidden'; }
-
-                // Only write when height changed meaningfully to avoid churn
-                try{
-                  const cur = parseInt((input.style.height||'0').replace('px',''),10) || 0;
-                  if (Math.abs(cur - targetH) > 1) input.style.height = targetH + 'px';
-                }catch(e){}
+                }catch(e){ try{ input.style.overflowY = 'hidden'; }catch(e){} }
               }catch(e){}
             });
           }catch(e){}
         };
-                // Keep a stable distance between the input bottom and the
-                // visualViewport top (keyboard upper edge). When the keyboard
-                // is visible, nudge the page scroll so the gap remains at `gapPx`.
-                const keepDistance = ()=>{
-                  try{
-                    const input = w.input; if (!input) return;
-                    if (!window.visualViewport) return;
-                    const gapPx = 8; // desired gap in CSS pixels
-                    const rect = input.getBoundingClientRect();
-                    const vv = window.visualViewport;
-                    const bottom = rect.bottom; // relative to visual viewport's top
-                    // If the input's bottom sits below (vv.height - gapPx) it is
-                    // too close to or under the keyboard — scroll the document so
-                    // it moves up by the needed amount.
-                    const overflow = bottom - (vv.height - gapPx);
-                    if (overflow > 0) {
-                      try{
-                        const curScroll = window.scrollY || window.pageYOffset || 0;
-                        const desired = Math.max(0, Math.round(curScroll + overflow + 2));
-                        window.scrollTo({ top: desired, left: 0, behavior: 'auto' });
-                      }catch(e){}
-                    }
-                  }catch(e){}
-                };
+                // (removed keepDistance: grow-up behavior implemented in autosize)
         ['input','change','paste','cut','compositionend'].forEach(evt => w.input.addEventListener(evt, ()=>{
           try{ updateVisibility(); }catch(e){}
-          try{ requestAnimationFrame(()=>{ try{ autosize(); keepDistance(); }catch(e){} }); }catch(e){}
+          try{ requestAnimationFrame(()=>{ try{ autosize(); }catch(e){} }); }catch(e){}
         }));
         // initial sizing
         try{ autosize(); }catch(e){}
