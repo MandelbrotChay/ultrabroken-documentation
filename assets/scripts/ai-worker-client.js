@@ -448,6 +448,22 @@
           }catch(e){}
         };
 
+        // Reserve a small right padding equal to the clear (close) button width
+        // so the caret won't overlap the clear icon when it's visible. Only the
+        // clear button is considered to avoid wasting space for the other icons.
+        const reserveClosePadding = ()=>{
+          try{
+            const gap = 8; // spacing between text and icon
+            let pad = 12; // sensible minimum
+            if (w.clear && w.clear.getBoundingClientRect) {
+              const r = w.clear.getBoundingClientRect();
+              const visible = w.clear.style.display !== 'none' && r && r.width > 0;
+              if (visible) pad = Math.max(12, Math.round(r.width) + gap);
+            }
+            w.input.style.paddingRight = pad + 'px';
+          }catch(e){}
+        };
+
         // Toggle visibility for both controls based on input content
         const updateVisibility = ()=>{
           const has = w.input.value.trim();
@@ -456,7 +472,7 @@
           if (w.share) w.share.style.display = has ? 'flex' : 'none';
           // After toggling, resize icons to match rendered button height
           // use a short timeout to allow layout to settle when showing
-          setTimeout(()=>{ try{ resizeIcons(); }catch(e){} }, 0);
+          setTimeout(()=>{ try{ resizeIcons(); reserveClosePadding(); }catch(e){} }, 0);
         };
 
         // Autosize to content and do not mutate the user's input value.
@@ -474,8 +490,8 @@
         // initial sizing
         try{ autosize(); }catch(e){}
         // initial sizing and keep in sync with resizes
-        resizeIcons();
-        window.addEventListener('resize', ()=>{ try{ resizeIcons(); }catch(e){} });
+        resizeIcons(); reserveClosePadding();
+        window.addEventListener('resize', ()=>{ try{ resizeIcons(); reserveClosePadding(); }catch(e){} });
         // initial state
         updateVisibility();
       }catch(e){ /* ignore */ }
