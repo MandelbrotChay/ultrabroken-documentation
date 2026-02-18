@@ -453,7 +453,10 @@
             });
           }catch(e){}
         };
-        ['input','change','paste','cut','compositionend'].forEach(evt => w.input.addEventListener(evt, ()=>{ try{ autosize(); }catch(e){} updateVisibility(); }));
+        ['input','change','paste','cut','compositionend'].forEach(evt => w.input.addEventListener(evt, ()=>{
+          try{ updateVisibility(); }catch(e){}
+          try{ requestAnimationFrame(()=>{ try{ autosize(); }catch(e){} }); }catch(e){}
+        }));
         // initial sizing
         try{ autosize(); }catch(e){}
         // initial sizing and keep in sync with resizes
