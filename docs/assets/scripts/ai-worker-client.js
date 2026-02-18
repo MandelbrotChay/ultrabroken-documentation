@@ -449,7 +449,7 @@
         const autosize = ()=>{
           try{
             requestAnimationFrame(()=>{
-              try{ w.input.style.height = 'auto'; const h = w.input.scrollHeight; if (h) w.input.style.height = (h + 2) + 'px'; }catch(e){}
+              try{ w.input.style.height = 'auto'; const h = w.input.scrollHeight; if (h) w.input.style.height = h + 'px'; }catch(e){}
             });
           }catch(e){}
         };
