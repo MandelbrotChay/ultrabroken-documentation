@@ -445,11 +445,26 @@
           setTimeout(resizeIcons, 0);
         };
 
-        // Autosize to content and do not mutate the user's input value.
+        // Autosize to content and avoid tiny DOM writes that cause jitter.
+        // Only apply a new height when it differs from the current height by >= 2px.
         const autosize = ()=>{
           try{
             requestAnimationFrame(()=>{
-              try{ w.input.style.height = 'auto'; const h = w.input.scrollHeight; if (h) w.input.style.height = h + 'px'; }catch(e){}
+              try{
+                const el = w.input;
+                // capture previous inline height and computed height
+                const prevInline = el.style.height || '';
+                const prevH = Math.round(el.getBoundingClientRect().height || 0);
+                // allow the element to shrink/grow for measurement
+                el.style.height = 'auto';
+                const newH = Math.round(el.scrollHeight || 0);
+                if (newH && Math.abs(newH - prevH) >= 2) {
+                  el.style.height = newH + 'px';
+                } else {
+                  // restore previous inline value (or computed height) to avoid tiny writes
+                  if (prevInline) el.style.height = prevInline; else el.style.height = prevH + 'px';
+                }
+              }catch(e){}
             });
           }catch(e){}
         };
