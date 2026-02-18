@@ -525,6 +525,21 @@
           }catch(e){}
         };
         ['input','change','paste','cut','compositionend'].forEach(evt => w.input.addEventListener(evt, ()=>{
+          try{
+            // When the field becomes empty (e.g. user held Delete), reset
+            // the textarea to the measured placeholder height and clear any
+            // internal scrolling so subsequent typing can cause a proper
+            // autosize increase. This avoids the case where the element was
+            // previously capped and then fails to grow for new content.
+            if (!w.input.value) {
+              try{
+                if (w.placeholderHeight) w.input.style.height = w.placeholderHeight + 'px';
+                else w.input.style.height = '';
+                w.input.style.overflowY = 'hidden';
+                try{ w.input.scrollTop = 0; }catch(e){}
+              }catch(e){}
+            }
+          }catch(e){}
           try{ updateVisibility(); }catch(e){}
           try{ requestAnimationFrame(()=>{ try{ autosize(); }catch(e){} }); }catch(e){}
         }));
