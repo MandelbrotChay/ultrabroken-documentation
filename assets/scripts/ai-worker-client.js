@@ -40,8 +40,8 @@
         input.style.boxSizing = 'border-box';
         input.setAttribute('wrap', 'soft');
         input.style.whiteSpace = 'pre-wrap';
-        input.style.overflowWrap = 'anywhere';
-        input.style.wordBreak = 'break-word';
+        input.style.overflowWrap = 'break-word';
+        input.style.wordBreak = 'normal';
       }catch(e){}
     const clearBtn = el('button', { type: 'button', class: 'ub-ai-clear', 'aria-label': 'Clear search' }, '');
     const askBtn = el('button', { type: 'button', class: 'ub-ai-ask', 'aria-label': 'Ask' }, '');
