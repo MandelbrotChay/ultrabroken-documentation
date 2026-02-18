@@ -23,34 +23,12 @@
   
   function render(container){
     const root = el('div', { class: 'ub-ai-root' });
-    // Align controls to the bottom so multi-line input grows upward and
-    // action buttons remain aligned with the lowest input line.
-    const row = el('div', { style: 'display:flex; gap:0.4rem; align-items:flex-end;' });
-    const inputWrap = el('div', { class: 'ub-ai-input-wrap', style: 'position:relative; flex:1; display:flex; align-items:flex-end;' });
+    const row = el('div', { style: 'display:flex; gap:0.4rem; align-items:center;' });
+    const inputWrap = el('div', { class: 'ub-ai-input-wrap', style: 'position:relative; flex:1;' });
     const _placeholder_text = 'Will it share word or waffle?';
       // Max query length (short questions). Configurable via `window.AI_MAX_QUERY_CHARS`.
       const MAX_QUERY_CHARS = (typeof window !== 'undefined' && window.AI_MAX_QUERY_CHARS) ? Number(window.AI_MAX_QUERY_CHARS) : 50;
-      // Use a textarea so long queries wrap to a new line instead of being culled.
-      const input = el('textarea', { placeholder: '', 'data-ub-placeholder': _placeholder_text, class: 'ub-ai-input', maxlength: String(MAX_QUERY_CHARS), rows: '1' });
-      // Prevent native resizing and allow auto-height adjustments
-      input.style.resize = 'none';
-      input.style.overflow = 'hidden';
-      // Allow the textarea to flex and fill available width inside the input wrap
-      input.style.flex = '1 1 auto';
-      input.style.width = '100%';
-      // Ensure textarea has a sensible minimum height matching control icons
-      input.style.minHeight = '1.6rem';
-      input.style.lineHeight = '1.2';
-      input.style.boxSizing = 'border-box';
-      // Ensure the textarea wraps content softly (allow visual wrapping)
-      try {
-        input.setAttribute('wrap', 'soft');
-        input.style.whiteSpace = 'pre-wrap';
-        input.style.overflowY = 'hidden';
-        // Allow long words to break so wrapping occurs at the container edge
-        input.style.overflowWrap = 'anywhere';
-        input.style.wordBreak = 'break-word';
-      } catch(e){}
+      const input = el('input', { type: 'search', placeholder: '', 'data-ub-placeholder': _placeholder_text, class: 'ub-ai-input', maxlength: String(MAX_QUERY_CHARS) });
     const clearBtn = el('button', { type: 'button', class: 'ub-ai-clear', 'aria-label': 'Clear search' }, '');
     const askBtn = el('button', { type: 'button', class: 'ub-ai-ask', 'aria-label': 'Ask' }, '');
     const shareBtn = el('button', { type: 'button', class: 'ub-ai-share', 'aria-label': 'Share query' }, '');
@@ -260,8 +238,7 @@
       };
       w.btn.addEventListener('click', handleAsk);
       // also allow Enter on the input to trigger ask
-      // Submit on Ctrl+Enter / Cmd+Enter. Plain Enter inserts a newline.
-      w.input.addEventListener('keydown', (ev)=>{ if ((ev.ctrlKey || ev.metaKey) && ev.key === 'Enter') { ev.preventDefault(); handleAsk(); } });
+      w.input.addEventListener('keydown', (ev)=>{ if (ev.key === 'Enter') handleAsk(); });
       // Show placeholder only when the field is NOT focused (and empty).
       // When focused we hide the placeholder so caret/typing is clear.
       try{
@@ -340,9 +317,6 @@
         // Start hidden; only show when the input has text (mirrors clear button behavior)
         w.btn.style.display = 'none';
         if (w.share) w.share.style.display = 'none';
-        // Ensure action buttons align to the lowest line of the textarea
-        try { w.btn.style.alignSelf = 'flex-end'; } catch(e){}
-        try { if (w.share) w.share.style.alignSelf = 'flex-end'; } catch(e){}
 
         // Share button: copy a permalink that encodes the query so it can be shared
         if (w.share) {
@@ -388,24 +362,17 @@
           setTimeout(resizeIcons, 0);
         };
 
-        // Auto-resize textarea height to fit content. Do NOT alter user input;
-        // the `maxlength` attribute enforces the maximum allowed characters.
-        const autosize = ()=>{
+        // Enforce maximum query length: trim pasted content and prevent extra typing.
+        w.input.addEventListener('input', ()=>{
           try{
-            requestAnimationFrame(()=>{
-              try{
-                w.input.style.height = 'auto';
-                const h = w.input.scrollHeight;
-                if (h) w.input.style.height = (h + 2) + 'px';
-              }catch(e){}
-              try{ updateVisibility(); }catch(e){}
-            });
+            if (w.input.value && w.input.value.length > MAX_QUERY_CHARS) {
+              // Trim excess characters so the user sees they hit the limit
+              w.input.value = w.input.value.slice(0, MAX_QUERY_CHARS);
+            }
           }catch(e){}
-        };
-        ['input','change','paste','cut','compositionend'].forEach(ev => w.input.addEventListener(ev, autosize));
-        // No explicit Enter-only resize handler — autosize responds to input/paste/cut/composition events
+          updateVisibility();
+        });
         // initial sizing and keep in sync with resizes
-        try { autosize(); w.input.style.overflowY = 'hidden'; } catch(e){}
         resizeIcons();
         window.addEventListener('resize', resizeIcons);
         // initial state
