@@ -43,7 +43,14 @@
       input.style.lineHeight = '1.2';
       input.style.boxSizing = 'border-box';
       // Ensure the textarea wraps content softly (allow visual wrapping)
-      try { input.setAttribute('wrap', 'soft'); input.style.whiteSpace = 'pre-wrap'; input.style.overflowY = 'hidden'; } catch(e){}
+      try {
+        input.setAttribute('wrap', 'soft');
+        input.style.whiteSpace = 'pre-wrap';
+        input.style.overflowY = 'hidden';
+        // Allow long words to break so wrapping occurs at the container edge
+        input.style.overflowWrap = 'anywhere';
+        input.style.wordBreak = 'break-word';
+      } catch(e){}
     const clearBtn = el('button', { type: 'button', class: 'ub-ai-clear', 'aria-label': 'Clear search' }, '');
     const askBtn = el('button', { type: 'button', class: 'ub-ai-ask', 'aria-label': 'Ask' }, '');
     const shareBtn = el('button', { type: 'button', class: 'ub-ai-share', 'aria-label': 'Share query' }, '');
