@@ -755,7 +755,7 @@ li.task-list-item a, li.task-list a {
 
 /* Input wrapper and custom clear button */
 .ub-ai-input-wrap{ display:flex !important; align-items:flex-end !important; }
-.ub-ai-input{ width:100%; padding-right:2.2rem; box-sizing:border-box; height:auto !important; min-height:2.2rem; resize:none; overflow:auto; }
+.ub-ai-input{ width:100%; padding-right:2.2rem; box-sizing:border-box; height:auto !important; min-height:2.6rem; resize:none; overflow:auto; }
 .ub-ai-clear{
   position:absolute;
   right:0.3rem;
