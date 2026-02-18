@@ -337,6 +337,8 @@
             // Also clear parsed/rendered sources/evidence
             try{ if (w.evidence) w.evidence.innerHTML = ''; }catch(e){}
             w.input.focus(); 
+            // Ensure textarea resizes to reflect the cleared (empty) value
+            try{ if (typeof autosize === 'function') autosize(); }catch(e){}
             try { if (typeof updateVisibility === 'function') updateVisibility(); else { w.clear.style.display = 'none'; w.btn.style.display = 'none'; } } catch(e){ w.clear.style.display = 'none'; w.btn.style.display = 'none'; }
           });
         }
