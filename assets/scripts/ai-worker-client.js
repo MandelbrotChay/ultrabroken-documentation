@@ -453,12 +453,14 @@
         // clear button is considered to avoid wasting space for the other icons.
         const reserveClosePadding = ()=>{
           try{
-            const gap = 8; // spacing between text and icon
-            let pad = 12; // sensible minimum
+            // Make the textarea a bit less wide by reserving a larger
+            // padding on the right. This forces earlier wrapping.
+            const gap = 12; // spacing between text and icon
+            let pad = 36; // larger sensible minimum to reduce usable width
             if (w.clear && w.clear.getBoundingClientRect) {
               const r = w.clear.getBoundingClientRect();
               const visible = w.clear.style.display !== 'none' && r && r.width > 0;
-              if (visible) pad = Math.max(12, Math.round(r.width) + gap);
+              if (visible) pad = Math.max(36, Math.round(r.width) + gap);
             }
             w.input.style.paddingRight = pad + 'px';
           }catch(e){}
