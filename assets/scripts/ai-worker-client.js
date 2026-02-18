@@ -283,27 +283,22 @@
         w.input.addEventListener('focus', ()=>{ w.input.placeholder = ''; try{ if (typeof autosize === 'function') autosize(); }catch(e){} });
         // Restore placeholder when blurred and empty
         w.input.addEventListener('blur', ()=>{ if (!w.input.value) w.input.placeholder = stored; });
-        // Collapse the textarea to a single-line height that matches actual
-        // rendered text height. We measure using an offscreen clone so the
-        // real input's value/selection are not mutated and no events are fired.
+        // Measure a single-line height by briefly setting the textarea's value
+        // to one character and reading `scrollHeight`. This is fast and avoids
+        // creating/cloning off-DOM nodes. We restore the previous value and
+        // caret afterwards.
         const measureSingleLineHeight = ()=>{
           try{
-            const cs = window.getComputedStyle(w.input);
-            const clone = document.createElement('textarea');
-            // copy styles that affect height/metrics
-            const props = ['fontSize','fontFamily','fontWeight','lineHeight','letterSpacing','textTransform','paddingTop','paddingBottom','paddingLeft','paddingRight','borderLeftWidth','borderRightWidth','boxSizing','whiteSpace','overflowWrap','wordBreak'];
-            props.forEach(p=>{ try{ if (cs[p]) clone.style[p] = cs[p]; }catch(e){} });
-            clone.value = 'M';
-            clone.rows = 1;
-            clone.style.position = 'absolute';
-            clone.style.left = '-9999px';
-            clone.style.top = '0';
-            clone.style.visibility = 'hidden';
-            clone.style.height = 'auto';
-            clone.style.overflow = 'hidden';
-            document.body.appendChild(clone);
-            const h = clone.scrollHeight;
-            document.body.removeChild(clone);
+            const el = w.input;
+            const prev = el.value;
+            const s0 = el.selectionStart; const s1 = el.selectionEnd;
+            // Temporarily set a single character to measure the single-line height
+            el.value = 'M';
+            el.rows = 1;
+            const h = el.scrollHeight;
+            // Restore previous value and selection
+            el.value = prev;
+            try{ el.setSelectionRange(s0, s1); }catch(e){}
             return h ? Math.max(12, Math.round(h)) + 2 : null;
           }catch(e){ return null; }
         };
