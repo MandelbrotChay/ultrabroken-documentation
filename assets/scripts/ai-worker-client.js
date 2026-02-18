@@ -280,12 +280,73 @@
       // When focused we hide the placeholder so caret/typing is clear.
       try{
         const stored = w.input.getAttribute('data-ub-placeholder') || '';
-        // Hide placeholder while editing
-        w.input.addEventListener('focus', ()=>{ w.input.placeholder = ''; });
-        // Restore placeholder when blurred and empty
-        w.input.addEventListener('blur', ()=>{ if (!w.input.value) w.input.placeholder = stored; });
-        // Initial state: if not focused and empty, show placeholder
-        if (document.activeElement !== w.input && !w.input.value) w.input.placeholder = stored;
+        // Track composition (IME) to avoid mutating value during composition
+        let isComposing = false;
+        w.input.addEventListener('compositionstart', ()=>{ isComposing = true; });
+        w.input.addEventListener('compositionend', ()=>{ isComposing = false; try{ if (typeof autosize === 'function') autosize(); }catch(e){} });
+
+        // Heights measured for two states
+        let placeholderHeight = null;
+        let singleLineHeight = null;
+        let ignoreNextAutosize = false;
+
+        const measureHeights = ()=>{
+          try{
+            const el = w.input;
+            const prevVal = el.value;
+            const prevRows = el.rows;
+            const s0 = el.selectionStart, s1 = el.selectionEnd;
+            // Measure placeholder height (only when placeholder text exists)
+            if (stored) {
+              try{
+                el.value = stored;
+                el.rows = 1;
+                placeholderHeight = el.scrollHeight ? Math.max(12, Math.round(el.scrollHeight)) + 2 : null;
+              }catch(e) { placeholderHeight = null; }
+            }
+            // Measure single-line height
+            try{
+              el.value = 'M';
+              el.rows = 1;
+              singleLineHeight = el.scrollHeight ? Math.max(12, Math.round(el.scrollHeight)) + 2 : null;
+            }catch(e){ singleLineHeight = null; }
+            // Restore previous state
+            el.value = prevVal;
+            try{ el.rows = prevRows; }catch(e){}
+            try{ el.setSelectionRange(s0, s1); }catch(e){}
+          }catch(e){ /* ignore */ }
+        };
+
+        // Apply measured height depending on state
+        const applyMeasuredHeight = (state)=>{
+          try{
+            if (state === 'single' && singleLineHeight) {
+              w.input.style.height = singleLineHeight + 'px';
+            } else if (state === 'placeholder' && placeholderHeight) {
+              w.input.style.height = placeholderHeight + 'px';
+            }
+            // Prevent autosize from immediately overriding our programmatic height
+            ignoreNextAutosize = true;
+            setTimeout(()=>{ ignoreNextAutosize = false; }, 80);
+          }catch(e){}
+        };
+
+        // Hide overlay/placeholder while editing and collapse to single-line
+        w.input.addEventListener('focus', ()=>{ try{ w.input.placeholder = ''; applyMeasuredHeight('single'); }catch(e){} });
+        // Restore placeholder when blurred and empty and set placeholder height
+        w.input.addEventListener('blur', ()=>{ try{ if (!w.input.value) { w.input.placeholder = stored; applyMeasuredHeight('placeholder'); } }catch(e){} });
+        // Initial state: measure after fonts/styles are likely ready, then apply
+        const initMeasureAndApply = ()=>{
+          try{ measureHeights(); if (document.activeElement !== w.input && !w.input.value) { w.input.placeholder = stored; applyMeasuredHeight('placeholder'); } else { applyMeasuredHeight('single'); } }catch(e){}
+        };
+        // Defer initial measurement to allow fonts to settle
+        if (document.fonts && document.fonts.ready) {
+          document.fonts.ready.then(()=>{ requestAnimationFrame(initMeasureAndApply); });
+        } else {
+          requestAnimationFrame(initMeasureAndApply);
+        }
+        // Re-measure on resize in case metrics change
+        window.addEventListener('resize', ()=>{ try{ measureHeights(); if (!w.input.value && document.activeElement !== w.input) applyMeasuredHeight('placeholder'); }catch(e){} });
       }catch(e){}
       // Wire clear button and replace Ask text with an SVG ask-icon that only appears when input has text
       try{
@@ -402,6 +463,7 @@
         // Autosize to content and do not mutate the user's input value.
         const autosize = ()=>{
           try{
+            if (ignoreNextAutosize) return;
             requestAnimationFrame(()=>{
               try{ w.input.style.height = 'auto'; const h = w.input.scrollHeight; if (h) w.input.style.height = (h + 2) + 'px'; }catch(e){}
             });
