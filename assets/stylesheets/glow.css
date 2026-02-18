@@ -754,7 +754,7 @@ li.task-list-item a, li.task-list a {
   margin: 0.5rem 0;
 
 /* Input wrapper and custom clear button */
-.ub-ai-input-wrap{ display:flex !important; align-items:center !important; }
+.ub-ai-input-wrap{ display:flex !important; align-items:flex-end !important; }
 .ub-ai-input{ width:100%; padding-right:0.25rem; box-sizing:border-box; resize:none; overflow:hidden; white-space:pre-wrap; overflow-wrap:break-word; word-break:normal; min-height:1.6rem; }
 .ub-ai-clear{
   background: transparent;
