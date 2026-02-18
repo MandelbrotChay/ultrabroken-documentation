@@ -52,11 +52,26 @@
     const out = el('div', { class: 'ub-ai-out' }, '');
     const evidenceWrap = el('div', { class: 'ub-ai-evidence' }, '');
     inputWrap.appendChild(input);
+    // create an absolutely-positioned action container so buttons don't
+    // participate in layout and can overlap the input area.
+    const actionWrap = el('div', { class: 'ub-ai-action-wrap' }, []);
+    try{
+      actionWrap.style.position = 'absolute';
+      actionWrap.style.right = '0.25rem';
+      actionWrap.style.top = '50%';
+      actionWrap.style.transform = 'translateY(-50%)';
+      actionWrap.style.display = 'flex';
+      actionWrap.style.gap = '0.4rem';
+      actionWrap.style.alignItems = 'center';
+      actionWrap.style.pointerEvents = 'auto';
+    }catch(e){}
+    actionWrap.appendChild(clearBtn);
+    actionWrap.appendChild(askBtn);
+    actionWrap.appendChild(shareBtn);
+    inputWrap.appendChild(actionWrap);
+    // reduce input right padding so its content can extend beneath the clear button
+    try{ input.style.paddingRight = '0.4rem'; }catch(e){}
     row.appendChild(inputWrap);
-    // place clear as its own control (sibling to ask/share) so it behaves like other action buttons
-    row.appendChild(clearBtn);
-    row.appendChild(askBtn);
-    row.appendChild(shareBtn);
     
     root.appendChild(row);
     root.appendChild(out);
