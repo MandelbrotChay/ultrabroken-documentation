@@ -404,26 +404,6 @@ body.ultrabroken-center-rune::after {
   100% { transform: translateY(-100vh) translateX(-60px); opacity: 0; }
 }
 
-/* AI widget placeholder element that visually replaces the native placeholder
-   so layout can be governed by the placeholder when the textarea is hidden. */
-.ub-ai-input-wrap { position: relative; }
-.ub-ai-placeholder {
-  display: block;
-  width: 100%;
-  box-sizing: border-box;
-  color: rgba(255,255,255,0.28);
-  cursor: text;
-  white-space: pre-wrap;
-  overflow-wrap: anywhere;
-  word-break: break-word;
-  padding: 0.15rem 0.25rem; /* visually match textarea padding */
-  font: inherit;
-}
-.ub-ai-placeholder:focus {
-  outline: 2px solid rgba(0,240,194,0.18);
-}
-.ub-ai-input { display: block; }
-
 @keyframes float-particle-5 {
   0% { transform: translateY(0) translateX(0); opacity: 0; }
   5% { opacity: 0.75; }
