@@ -31,6 +31,7 @@
       const input = el('input', { type: 'search', placeholder: '', 'data-ub-placeholder': _placeholder_text, class: 'ub-ai-input', maxlength: String(MAX_QUERY_CHARS) });
     const clearBtn = el('button', { type: 'button', class: 'ub-ai-clear', 'aria-label': 'Clear search' }, '');
     const askBtn = el('button', { type: 'button', class: 'ub-ai-ask', 'aria-label': 'Ask' }, '');
+    const shareBtn = el('button', { type: 'button', class: 'ub-ai-share', 'aria-label': 'Share query' }, '');
     // NOTE: user-facing toggle removed — rendering of model-returned sources
     // is controlled by the internal `SHOW_MODEL_SOURCES` flag declared above.
     // Output area (answer + evidence). `out` holds the model answer; `evidenceWrap` holds clickable evidence links returned by the Worker.
@@ -40,13 +41,14 @@
     inputWrap.appendChild(clearBtn);
     row.appendChild(inputWrap);
     row.appendChild(askBtn);
+    row.appendChild(shareBtn);
     
     root.appendChild(row);
     root.appendChild(out);
     // append evidence container to the widget so it's accessible via the returned handle
     root.appendChild(evidenceWrap);
     container.appendChild(root);
-    return { input, btn: askBtn, out, clear: clearBtn, evidence: evidenceWrap };
+    return { input, btn: askBtn, share: shareBtn, out, clear: clearBtn, evidence: evidenceWrap };
   }
 
   async function askWorker(q){
@@ -288,10 +290,43 @@
         // Clear any existing textual content in the button and append the SVG
         w.btn.textContent = '';
         w.btn.appendChild(askImg);
+        // Share button image
+        try {
+          const shareImg = document.createElement('img');
+          shareImg.src = '/ultrabroken-documentation/assets/images/share-icon.svg';
+          shareImg.alt = 'Share';
+          shareImg.style.width = 'auto';
+          shareImg.style.height = 'auto';
+          shareImg.style.display = 'block';
+          shareImg.style.objectFit = 'contain';
+          w.share.textContent = '';
+          w.share.appendChild(shareImg);
+        } catch (e) {}
         // Start hidden; only show when the input has text (mirrors clear button behavior)
         w.btn.style.display = 'none';
+        if (w.share) w.share.style.display = 'none';
 
-        // Shared resizing function to make both icons match the Ask button visual height
+        // Share button: copy a permalink that encodes the query so it can be shared
+        if (w.share) {
+          try {
+            w.share.addEventListener('click', () => {
+              try {
+                const q = String(w.input.value || '').trim();
+                if (!q) return;
+                const base = window.location.href.split('#')[0];
+                const permalink = base + '#search:' + encodeURIComponent(q);
+                navigator.clipboard.writeText(permalink).then(() => {
+                  try { showCopiedToast && showCopiedToast('Copied to clipboard'); } catch (e) {}
+                }).catch(err => {
+                  try { showCopiedToast && showCopiedToast('Copy failed'); } catch (e) {}
+                  console.error('copy permalink failed', err);
+                });
+              } catch (err) { console.error('share click error', err); }
+            });
+          } catch (e) {}
+        }
+
+        // Shared resizing function to make icons match the Ask button visual height
         const resizeIcons = ()=>{
           try{
             const btnRect = w.btn.getBoundingClientRect();
@@ -301,6 +336,7 @@
             targetH = Math.max(12, targetH);
             if (clearImg) { clearImg.style.height = targetH + 'px'; clearImg.style.width = 'auto'; }
             if (askImg) { askImg.style.height = targetH + 'px'; askImg.style.width = 'auto'; }
+            if (w.share && w.share.querySelector('img')) { w.share.querySelector('img').style.height = targetH + 'px'; }
           }catch(e){}
         };
 
@@ -309,6 +345,7 @@
           const has = w.input.value.trim();
           if (w.clear) w.clear.style.display = has ? 'flex' : 'none';
           w.btn.style.display = has ? 'flex' : 'none';
+          if (w.share) w.share.style.display = has ? 'flex' : 'none';
           // After toggling, resize icons to match rendered button height
           // use a short timeout to allow layout to settle when showing
           setTimeout(resizeIcons, 0);
