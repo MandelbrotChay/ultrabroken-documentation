@@ -396,8 +396,7 @@
           }catch(e){}
         };
         ['input','change','paste','cut','compositionend'].forEach(ev => w.input.addEventListener(ev, autosize));
-        // When user presses plain Enter (inserts newline) resize on next frame
-        w.input.addEventListener('keydown', (ev)=>{ if (ev.key === 'Enter' && !ev.ctrlKey && !ev.metaKey) requestAnimationFrame(autosize); });
+        // No explicit Enter-only resize handler — autosize responds to input/paste/cut/composition events
         // initial sizing and keep in sync with resizes
         try { autosize(); w.input.style.overflowY = 'hidden'; } catch(e){}
         resizeIcons();
