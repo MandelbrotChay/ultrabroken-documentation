@@ -40,10 +40,9 @@
         input.style.boxSizing = 'border-box';
         input.setAttribute('wrap', 'soft');
         input.style.whiteSpace = 'pre-wrap';
-        // Prefer natural wrapping so text uses the full available width
-        // before breaking. 'anywhere'/'break-word' forces early breaks.
-        input.style.overflowWrap = 'normal';
-        input.style.wordBreak = 'break-word';
+        // Prefer breaking words only when necessary so lines wrap a bit later.
+        input.style.overflowWrap = 'break-word';
+        input.style.wordBreak = 'normal';
       }catch(e){}
     const clearBtn = el('button', { type: 'button', class: 'ub-ai-clear', 'aria-label': 'Clear search' }, '');
     const askBtn = el('button', { type: 'button', class: 'ub-ai-ask', 'aria-label': 'Ask' }, '');
