@@ -280,10 +280,24 @@
       // When focused we hide the placeholder so caret/typing is clear.
       try{
         const stored = w.input.getAttribute('data-ub-placeholder') || '';
-        // Hide placeholder while editing
-        w.input.addEventListener('focus', ()=>{ w.input.placeholder = ''; });
-        // Restore placeholder when blurred and empty
-        w.input.addEventListener('blur', ()=>{ if (!w.input.value) w.input.placeholder = stored; });
+        // Hide placeholder while editing, but only when the field is empty.
+        w.input.addEventListener('focus', ()=>{
+          try{
+            if (w.input.value && String(w.input.value).trim()) return; // has content — do nothing
+            w.input.placeholder = '';
+            try{ if (typeof autosize === 'function') autosize(); }catch(e){}
+            try{ if (typeof updateVisibility === 'function') updateVisibility(); }catch(e){}
+          }catch(e){}
+        });
+        // Restore placeholder when blurred and empty; reapply measured placeholder height when available
+        w.input.addEventListener('blur', ()=>{
+          try{
+            if (!w.input.value) {
+              w.input.placeholder = stored;
+              try{ if (w.placeholderHeight) w.input.style.height = w.placeholderHeight + 'px'; }catch(e){}
+            }
+          }catch(e){}
+        });
         // Initial state: if not focused and empty, show placeholder
         if (document.activeElement !== w.input && !w.input.value) w.input.placeholder = stored;
 
