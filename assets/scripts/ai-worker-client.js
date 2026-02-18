@@ -25,7 +25,7 @@
     const root = el('div', { class: 'ub-ai-root' });
     const row = el('div', { style: 'display:flex; gap:0.4rem; align-items:flex-end;' });
     const inputWrap = el('div', { class: 'ub-ai-input-wrap', style: 'position:relative; flex:1; display:flex; align-items:flex-end;' });
-    const _placeholder_text = 'Will it share word or waffle?';
+    const _placeholder_text = 'WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW';
       // Max query length (short questions). Configurable via `window.AI_MAX_QUERY_CHARS`.
       const MAX_QUERY_CHARS = (typeof window !== 'undefined' && window.AI_MAX_QUERY_CHARS) ? Number(window.AI_MAX_QUERY_CHARS) : 50;
       const input = el('textarea', { placeholder: '', 'data-ub-placeholder': _placeholder_text, class: 'ub-ai-input', maxlength: String(MAX_QUERY_CHARS), rows: '1' });
