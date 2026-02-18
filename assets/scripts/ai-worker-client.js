@@ -381,22 +381,10 @@
           setTimeout(resizeIcons, 0);
         };
 
-        // Enforce maximum query length: trim pasted content and prevent extra typing.
+        // Auto-resize textarea height to fit content. Do NOT alter user input;
+        // the `maxlength` attribute enforces the maximum allowed characters.
         w.input.addEventListener('input', ()=>{
-          try{
-            // If the user exceeds the visual single-line limit, insert a newline
-            // at the cutoff so the remainder flows to the next line instead of
-            // being truncated. This keeps the full prompt while preserving the
-            // configured max per-line width.
-            if (w.input.value && w.input.value.length > MAX_QUERY_CHARS) {
-              const v = String(w.input.value || '');
-              if (v.charAt(MAX_QUERY_CHARS - 1) !== '\n') {
-                w.input.value = v.slice(0, MAX_QUERY_CHARS) + '\n' + v.slice(MAX_QUERY_CHARS);
-              }
-            }
-            // Auto-resize textarea height to fit content
-            try { w.input.style.height = 'auto'; w.input.style.height = (w.input.scrollHeight) + 'px'; } catch(e){}
-          }catch(e){}
+          try { w.input.style.height = 'auto'; w.input.style.height = (w.input.scrollHeight) + 'px'; } catch(e){}
           updateVisibility();
         });
         // initial sizing and keep in sync with resizes
