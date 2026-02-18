@@ -283,22 +283,40 @@
         w.input.addEventListener('focus', ()=>{ w.input.placeholder = ''; try{ if (typeof autosize === 'function') autosize(); }catch(e){} });
         // Restore placeholder when blurred and empty
         w.input.addEventListener('blur', ()=>{ if (!w.input.value) w.input.placeholder = stored; });
-        // Collapse the textarea to a single line when the user clicks/taps into it.
-        // Use pointerdown to cover touch and mouse; fall back to click as well.
-        const collapseToOneLine = ()=>{
+        // Collapse the textarea to a single-line height that matches actual
+        // rendered text height. We measure using an offscreen clone so the
+        // real input's value/selection are not mutated and no events are fired.
+        const measureSingleLineHeight = ()=>{
           try{
             const cs = window.getComputedStyle(w.input);
-            let lh = parseFloat(cs.lineHeight);
-            if (!lh || isNaN(lh)) {
-              const fs = parseFloat(cs.fontSize) || 16;
-              lh = Math.round(fs * 1.2);
-            }
-            // Small padding to account for box sizing and borders
-            const target = Math.max(12, Math.round(lh)) + 2;
-            try{ w.input.style.height = target + 'px'; }catch(e){}
+            const clone = document.createElement('textarea');
+            // copy styles that affect height/metrics
+            const props = ['fontSize','fontFamily','fontWeight','lineHeight','letterSpacing','textTransform','paddingTop','paddingBottom','paddingLeft','paddingRight','borderLeftWidth','borderRightWidth','boxSizing','whiteSpace','overflowWrap','wordBreak'];
+            props.forEach(p=>{ try{ if (cs[p]) clone.style[p] = cs[p]; }catch(e){} });
+            clone.value = 'M';
+            clone.rows = 1;
+            clone.style.position = 'absolute';
+            clone.style.left = '-9999px';
+            clone.style.top = '0';
+            clone.style.visibility = 'hidden';
+            clone.style.height = 'auto';
+            clone.style.overflow = 'hidden';
+            document.body.appendChild(clone);
+            const h = clone.scrollHeight;
+            document.body.removeChild(clone);
+            return h ? Math.max(12, Math.round(h)) + 2 : null;
+          }catch(e){ return null; }
+        };
+
+        const collapseToOneLine = ()=>{
+          try{
+            const h = measureSingleLineHeight();
+            if (h) w.input.style.height = h + 'px';
             try{ if (typeof updateVisibility === 'function') updateVisibility(); }catch(e){}
           }catch(e){}
         };
+
+        // Use pointer events for touch + mouse, and also listen for click as a fallback
         w.input.addEventListener('pointerdown', ()=>{ try{ collapseToOneLine(); }catch(e){} });
         w.input.addEventListener('click', ()=>{ try{ collapseToOneLine(); }catch(e){} });
         // Initial state: if not focused and empty, show placeholder
