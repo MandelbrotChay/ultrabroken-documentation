@@ -43,7 +43,7 @@
         // Prefer natural wrapping so text uses the full available width
         // before breaking. 'anywhere'/'break-word' forces early breaks.
         input.style.overflowWrap = 'normal';
-        input.style.wordBreak = 'normal';
+        input.style.wordBreak = 'break-word';
       }catch(e){}
     const clearBtn = el('button', { type: 'button', class: 'ub-ai-clear', 'aria-label': 'Clear search' }, '');
     const askBtn = el('button', { type: 'button', class: 'ub-ai-ask', 'aria-label': 'Ask' }, '');
