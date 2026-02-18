@@ -40,9 +40,8 @@
         input.style.boxSizing = 'border-box';
         input.setAttribute('wrap', 'soft');
         input.style.whiteSpace = 'pre-wrap';
-        // Prefer breaking words only when necessary so lines wrap a bit later.
-        input.style.overflowWrap = 'break-word';
-        input.style.wordBreak = 'normal';
+        input.style.overflowWrap = 'anywhere';
+        input.style.wordBreak = 'break-word';
       }catch(e){}
     const clearBtn = el('button', { type: 'button', class: 'ub-ai-clear', 'aria-label': 'Clear search' }, '');
     const askBtn = el('button', { type: 'button', class: 'ub-ai-ask', 'aria-label': 'Ask' }, '');
@@ -53,8 +52,8 @@
     const out = el('div', { class: 'ub-ai-out' }, '');
     const evidenceWrap = el('div', { class: 'ub-ai-evidence' }, '');
     inputWrap.appendChild(input);
-    // create an absolutely-positioned action container so buttons do not
-    // affect the textarea's available width (prevents early wrapping)
+    // create an absolutely-positioned action container so buttons don't
+    // participate in layout and can overlap the input area.
     const actionWrap = el('div', { class: 'ub-ai-action-wrap' }, []);
     try{
       actionWrap.style.position = 'absolute';
@@ -70,6 +69,8 @@
     actionWrap.appendChild(askBtn);
     actionWrap.appendChild(shareBtn);
     inputWrap.appendChild(actionWrap);
+    // reduce input right padding so its content can extend beneath the clear button
+    try{ input.style.paddingRight = '0.4rem'; }catch(e){}
     row.appendChild(inputWrap);
     
     root.appendChild(row);
@@ -448,25 +449,6 @@
           }catch(e){}
         };
 
-        // Reserve a small right padding equal to the clear (close) button width
-        // so the caret won't overlap the clear icon when it's visible. Only the
-        // clear button is considered to avoid wasting space for the other icons.
-        const reserveClosePadding = ()=>{
-          try{
-            // Make the textarea a bit less wide by reserving a larger
-            // padding on the right. This forces earlier wrapping.
-            const gap = 12; // spacing between text and icon
-            let pad = 36; // larger sensible minimum to reduce usable width
-            if (w.clear && w.clear.getBoundingClientRect) {
-              const r = w.clear.getBoundingClientRect();
-              const visible = w.clear.style.display !== 'none' && r && r.width > 0;
-              if (visible) pad = Math.max(36, Math.round(r.width) + gap);
-            }
-            w.input.style.paddingRight = pad + 'px';
-            try{ w.input.style.width = `calc(100% - ${pad}px)`; }catch(e){}
-          }catch(e){}
-        };
-
         // Toggle visibility for both controls based on input content
         const updateVisibility = ()=>{
           const has = w.input.value.trim();
@@ -475,7 +457,7 @@
           if (w.share) w.share.style.display = has ? 'flex' : 'none';
           // After toggling, resize icons to match rendered button height
           // use a short timeout to allow layout to settle when showing
-          setTimeout(()=>{ try{ resizeIcons(); reserveClosePadding(); }catch(e){} }, 0);
+          setTimeout(resizeIcons, 0);
         };
 
         // Autosize to content and do not mutate the user's input value.
@@ -493,8 +475,8 @@
         // initial sizing
         try{ autosize(); }catch(e){}
         // initial sizing and keep in sync with resizes
-        resizeIcons(); reserveClosePadding();
-        window.addEventListener('resize', ()=>{ try{ resizeIcons(); reserveClosePadding(); }catch(e){} });
+        resizeIcons();
+        window.addEventListener('resize', resizeIcons);
         // initial state
         updateVisibility();
       }catch(e){ /* ignore */ }
