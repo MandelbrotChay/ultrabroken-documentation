@@ -463,6 +463,7 @@
               if (visible) pad = Math.max(36, Math.round(r.width) + gap);
             }
             w.input.style.paddingRight = pad + 'px';
+            try{ w.input.style.width = `calc(100% - ${pad}px)`; }catch(e){}
           }catch(e){}
         };
 
