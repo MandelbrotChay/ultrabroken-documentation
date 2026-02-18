@@ -383,17 +383,23 @@
 
         // Auto-resize textarea height to fit content. Do NOT alter user input;
         // the `maxlength` attribute enforces the maximum allowed characters.
-        w.input.addEventListener('input', ()=>{
-          try {
-            w.input.style.height = 'auto';
-            const h = w.input.scrollHeight;
-            if (h) w.input.style.height = h + 'px';
-          } catch(e){}
-          updateVisibility();
-        });
+        const autosize = ()=>{
+          try{
+            requestAnimationFrame(()=>{
+              try{
+                w.input.style.height = 'auto';
+                const h = w.input.scrollHeight;
+                if (h) w.input.style.height = (h + 2) + 'px';
+              }catch(e){}
+              try{ updateVisibility(); }catch(e){}
+            });
+          }catch(e){}
+        };
+        ['input','change','paste','cut','compositionend'].forEach(ev => w.input.addEventListener(ev, autosize));
+        // When user presses plain Enter (inserts newline) resize on next frame
+        w.input.addEventListener('keydown', (ev)=>{ if (ev.key === 'Enter' && !ev.ctrlKey && !ev.metaKey) requestAnimationFrame(autosize); });
         // initial sizing and keep in sync with resizes
-        // Auto-resize the textarea once on init so its height matches content/placeholder
-        try { w.input.style.height = 'auto'; w.input.style.height = (w.input.scrollHeight || w.input.clientHeight) + 'px'; w.input.style.overflowY = 'hidden'; } catch(e){}
+        try { autosize(); w.input.style.overflowY = 'hidden'; } catch(e){}
         resizeIcons();
         window.addEventListener('resize', resizeIcons);
         // initial state
