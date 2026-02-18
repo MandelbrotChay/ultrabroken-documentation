@@ -163,12 +163,32 @@ label.md-header__button[for^="__palette_"]:hover {
   /*font-size: 1.25rem !important;
   line-height: 1.2 !important;*/
 }
-.md-search__input::placeholder {
-  /*color: rgba(0,240,194,0.5) !important;*/
-  color: var(--hr-sep) !important;
-  /* Slightly darker placeholder derived from current color when supported */
-  color: color-mix(in srgb, currentColor 80%, black 20%) !important;
+/* Placeholder styling: provide broad support with fallbacks and vendor prefixes.
+   `color-mix()` produces the preferred darker tint on modern desktop browsers,
+   but many mobile browsers lack support, so we include an explicit hex fallback
+   and vendor-prefixed pseudo-elements. */
+.md-search__input::placeholder,
+.md-search__input::-webkit-input-placeholder,
+.md-search__input:-ms-input-placeholder {
+  /* Explicit darker placeholder color (hex) for broad mobile support */
+  color: #00c09b !important;
   font-family: 'Texturina', Georgia, 'Times New Roman', serif !important;
+}
+
+/* Ensure AI widget input placeholder uses the same darker placeholder,
+   without affecting the actual input text color. */
+.ub-ai-input::placeholder,
+.ub-ai-input::-webkit-input-placeholder,
+.ub-ai-input:-ms-input-placeholder {
+  color: #00c09b !important;
+  font-family: 'New Rocker', 'Texturina', Georgia, 'Times New Roman', serif !important;
+}
+
+/* Ensure the real input text color remains inherited across engines
+   (some browsers use -webkit-text-fill-color for rendering). */
+.ub-ai-input {
+  color: inherit !important;
+  -webkit-text-fill-color: inherit !important;
 }
 .md-search__input:focus {
   border-color: var(--teal-glow) !important;
