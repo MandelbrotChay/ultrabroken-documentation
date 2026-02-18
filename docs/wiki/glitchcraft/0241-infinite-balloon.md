@@ -7,7 +7,7 @@ title: "Infinite Balloon"
 
 ## Summary
 ---
-Steal Robbie's balloon which has will never deplete.
+Steal Robbie's balloon which will never deplete.
 
 _kurone_yuu - 13 June 2024_
 
