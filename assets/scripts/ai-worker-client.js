@@ -31,7 +31,7 @@
       // Max query length (short questions). Configurable via `window.AI_MAX_QUERY_CHARS`.
       const MAX_QUERY_CHARS = (typeof window !== 'undefined' && window.AI_MAX_QUERY_CHARS) ? Number(window.AI_MAX_QUERY_CHARS) : 50;
       // Use a textarea so long queries wrap to a new line instead of being culled.
-      const input = el('textarea', { placeholder: '', 'data-ub-placeholder': _placeholder_text, class: 'ub-ai-input', maxlength: String(MAX_QUERY_CHARS), rows: '2' });
+      const input = el('textarea', { placeholder: '', 'data-ub-placeholder': _placeholder_text, class: 'ub-ai-input', maxlength: String(MAX_QUERY_CHARS), rows: '1' });
       // Prevent native resizing and allow auto-height adjustments
       input.style.resize = 'none';
       input.style.overflow = 'hidden';
@@ -43,7 +43,7 @@
       input.style.lineHeight = '1.2';
       input.style.boxSizing = 'border-box';
       // Ensure the textarea wraps content softly (allow visual wrapping)
-      try { input.setAttribute('wrap', 'soft'); input.style.whiteSpace = 'pre-wrap'; } catch(e){}
+      try { input.setAttribute('wrap', 'soft'); input.style.whiteSpace = 'pre-wrap'; input.style.overflowY = 'hidden'; } catch(e){}
     const clearBtn = el('button', { type: 'button', class: 'ub-ai-clear', 'aria-label': 'Clear search' }, '');
     const askBtn = el('button', { type: 'button', class: 'ub-ai-ask', 'aria-label': 'Ask' }, '');
     const shareBtn = el('button', { type: 'button', class: 'ub-ai-share', 'aria-label': 'Share query' }, '');
@@ -384,12 +384,16 @@
         // Auto-resize textarea height to fit content. Do NOT alter user input;
         // the `maxlength` attribute enforces the maximum allowed characters.
         w.input.addEventListener('input', ()=>{
-          try { w.input.style.height = 'auto'; w.input.style.height = (w.input.scrollHeight) + 'px'; } catch(e){}
+          try {
+            w.input.style.height = 'auto';
+            const h = w.input.scrollHeight;
+            if (h) w.input.style.height = h + 'px';
+          } catch(e){}
           updateVisibility();
         });
         // initial sizing and keep in sync with resizes
         // Auto-resize the textarea once on init so its height matches content/placeholder
-        try { w.input.style.height = 'auto'; w.input.style.height = (w.input.scrollHeight || w.input.clientHeight) + 'px'; } catch(e){}
+        try { w.input.style.height = 'auto'; w.input.style.height = (w.input.scrollHeight || w.input.clientHeight) + 'px'; w.input.style.overflowY = 'hidden'; } catch(e){}
         resizeIcons();
         window.addEventListener('resize', resizeIcons);
         // initial state
