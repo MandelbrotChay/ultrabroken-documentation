@@ -51,8 +51,9 @@
     const out = el('div', { class: 'ub-ai-out' }, '');
     const evidenceWrap = el('div', { class: 'ub-ai-evidence' }, '');
     inputWrap.appendChild(input);
-    inputWrap.appendChild(clearBtn);
     row.appendChild(inputWrap);
+    // place clear as its own control (sibling to ask/share) so it behaves like other action buttons
+    row.appendChild(clearBtn);
     row.appendChild(askBtn);
     row.appendChild(shareBtn);
     
