@@ -25,7 +25,7 @@
   function render(container){
     const root = el('div', { class: 'ub-ai-root' });
     const row = el('div', { style: 'display:flex; gap:0.4rem; align-items:flex-end;' });
-    const inputWrap = el('div', { class: 'ub-ai-input-wrap', style: 'position:relative; flex:1; display:flex; align-items:flex-end;' });
+    const inputWrap = el('div', { class: 'ub-ai-input-wrap', style: 'position:relative; flex:1; display:flex; align-items:center;' });
     const _placeholder_text = 'What is Wacko Boingo?';
       // Max query length (short questions). Configurable via `window.AI_MAX_QUERY_CHARS`.
       const MAX_QUERY_CHARS = (typeof window !== 'undefined' && window.AI_MAX_QUERY_CHARS) ? Number(window.AI_MAX_QUERY_CHARS) : 50;
@@ -446,30 +446,10 @@
         };
 
         // Autosize to content and do not mutate the user's input value.
-        // Preserve viewport position to avoid mobile jumping when the
-        // textarea grows/shrinks while focused.
         const autosize = ()=>{
           try{
-            // measure before layout change
-            const prevRect = w.input.getBoundingClientRect();
-            const prevScroll = window.pageYOffset || document.documentElement.scrollTop || 0;
-            const isFocused = (document.activeElement === w.input);
             requestAnimationFrame(()=>{
-              try{
-                w.input.style.height = 'auto';
-                const h = w.input.scrollHeight;
-                if (h) w.input.style.height = h + 'px';
-                // keep the input's viewport position stable when focused
-                if (isFocused) {
-                  try{
-                    const newRect = w.input.getBoundingClientRect();
-                    const delta = newRect.top - prevRect.top;
-                    if (!isNaN(delta) && Math.abs(delta) >= 1) {
-                      window.scrollTo(0, Math.round(prevScroll + delta));
-                    }
-                  }catch(e){}
-                }
-              }catch(e){}
+              try{ w.input.style.height = 'auto'; const h = w.input.scrollHeight; if (h) w.input.style.height = h + 'px'; }catch(e){}
             });
           }catch(e){}
         };
