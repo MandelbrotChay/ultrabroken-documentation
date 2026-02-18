@@ -280,9 +280,11 @@
       try{
         const stored = w.input.getAttribute('data-ub-placeholder') || '';
         // Hide placeholder while editing
-        w.input.addEventListener('focus', ()=>{ w.input.placeholder = ''; });
+        w.input.addEventListener('focus', ()=>{ w.input.placeholder = ''; try{ if (typeof autosize === 'function') autosize(); }catch(e){} });
         // Restore placeholder when blurred and empty
         w.input.addEventListener('blur', ()=>{ if (!w.input.value) w.input.placeholder = stored; });
+        // Trigger autosize when user clicks/interacts the textarea area
+        w.input.addEventListener('click', ()=>{ try{ if (typeof autosize === 'function') autosize(); }catch(e){} });
         // Initial state: if not focused and empty, show placeholder
         if (document.activeElement !== w.input && !w.input.value) w.input.placeholder = stored;
       }catch(e){}
@@ -311,6 +313,7 @@
             // Also clear parsed/rendered sources/evidence
             try{ if (w.evidence) w.evidence.innerHTML = ''; }catch(e){}
             w.input.focus(); 
+            try{ if (typeof autosize === 'function') autosize(); }catch(e){}
             try { if (typeof updateVisibility === 'function') updateVisibility(); else { w.clear.style.display = 'none'; w.btn.style.display = 'none'; } } catch(e){ w.clear.style.display = 'none'; w.btn.style.display = 'none'; }
           });
         }
