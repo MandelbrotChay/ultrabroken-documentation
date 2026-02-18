@@ -518,7 +518,18 @@
                 // Only write when height changed meaningfully to avoid churn
                 try{
                   const cur = parseInt((input.style.height||'0').replace('px',''),10) || 0;
-                  if (Math.abs(cur - targetH) > 1) input.style.height = targetH + 'px';
+                  if (Math.abs(cur - targetH) > 1) {
+                    input.style.height = targetH + 'px';
+                    // Scroll the page by the same delta so each new row
+                    // effectively pushes content upward by the same amount.
+                    try{
+                      const delta = targetH - cur;
+                      if (delta > 0) {
+                        const top = Math.round(delta);
+                        window.scrollBy({ top: top, left: 0, behavior: 'auto' });
+                      }
+                    }catch(e){}
+                  }
                 }catch(e){}
               }catch(e){}
             });
