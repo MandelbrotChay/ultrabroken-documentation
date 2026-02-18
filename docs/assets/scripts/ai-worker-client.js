@@ -3,7 +3,6 @@
   Usage: include this script and add a page with <div id="ai-search-root"></div>
   Configure worker URL via `window.AI_WORKER_URL` or set in localStorage('ai_worker_url').
 */
-
 (function(){
   
   function el(tag, attrs={}, children=[]){
@@ -286,6 +285,31 @@
         w.input.addEventListener('blur', ()=>{ if (!w.input.value) w.input.placeholder = stored; });
         // Initial state: if not focused and empty, show placeholder
         if (document.activeElement !== w.input && !w.input.value) w.input.placeholder = stored;
+
+        // Measure the textarea height when the placeholder is visible so we can
+        // restore that exact height on blur. We perform the measurement inside
+        // a rAF to ensure layout has settled, and use a temporary-value method
+        // (set value to the placeholder text) to measure wrapped height.
+        try{
+          requestAnimationFrame(()=>{
+            try{
+              const el = w.input;
+              // Only measure when the field is currently empty (placeholder shown)
+              if (el && !el.value && stored) {
+                const prevVal = el.value;
+                const prevRows = el.rows;
+                const s0 = el.selectionStart; const s1 = el.selectionEnd;
+                try{ el.value = stored; el.rows = 1; }catch(e){}
+                // read scrollHeight which includes wrapped lines
+                const h = el.scrollHeight;
+                // restore
+                try{ el.value = prevVal; el.rows = prevRows; }catch(e){}
+                try{ if (typeof el.setSelectionRange === 'function') el.setSelectionRange(s0, s1); }catch(e){}
+                if (h && !isNaN(h)) w.placeholderHeight = Math.max(12, Math.round(h));
+              }
+            }catch(e){}
+          });
+        }catch(e){}
       }catch(e){}
       // Wire clear button and replace Ask text with an SVG ask-icon that only appears when input has text
       try{

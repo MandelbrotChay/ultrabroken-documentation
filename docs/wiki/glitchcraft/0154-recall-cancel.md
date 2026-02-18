@@ -7,7 +7,7 @@ title: "Recall Cancel"
 
 ## Summary
 ---
-Lets you delay the dropping of weapon and items
+Lets you delay the dropping of weapon and items.
 
 _R4000 - 20 July 2023_
 
