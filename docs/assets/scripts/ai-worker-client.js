@@ -23,12 +23,25 @@
   
   function render(container){
     const root = el('div', { class: 'ub-ai-root' });
-    const row = el('div', { style: 'display:flex; gap:0.4rem; align-items:center;' });
-    const inputWrap = el('div', { class: 'ub-ai-input-wrap', style: 'position:relative; flex:1;' });
+    const row = el('div', { style: 'display:flex; gap:0.4rem; align-items:flex-end;' });
+    const inputWrap = el('div', { class: 'ub-ai-input-wrap', style: 'position:relative; flex:1; display:flex; align-items:flex-end;' });
     const _placeholder_text = 'Will it share word or waffle?';
       // Max query length (short questions). Configurable via `window.AI_MAX_QUERY_CHARS`.
       const MAX_QUERY_CHARS = (typeof window !== 'undefined' && window.AI_MAX_QUERY_CHARS) ? Number(window.AI_MAX_QUERY_CHARS) : 50;
-      const input = el('input', { type: 'search', placeholder: '', 'data-ub-placeholder': _placeholder_text, class: 'ub-ai-input', maxlength: String(MAX_QUERY_CHARS) });
+      const input = el('textarea', { placeholder: '', 'data-ub-placeholder': _placeholder_text, class: 'ub-ai-input', maxlength: String(MAX_QUERY_CHARS), rows: '1' });
+      // textarea base styles for autosize and wrapping
+      try{
+        input.style.resize = 'none';
+        input.style.overflow = 'hidden';
+        input.style.overflowY = 'hidden';
+        input.style.flex = '1 1 auto';
+        input.style.width = '100%';
+        input.style.boxSizing = 'border-box';
+        input.setAttribute('wrap', 'soft');
+        input.style.whiteSpace = 'pre-wrap';
+        input.style.overflowWrap = 'anywhere';
+        input.style.wordBreak = 'break-word';
+      }catch(e){}
     const clearBtn = el('button', { type: 'button', class: 'ub-ai-clear', 'aria-label': 'Clear search' }, '');
     const askBtn = el('button', { type: 'button', class: 'ub-ai-ask', 'aria-label': 'Ask' }, '');
     const shareBtn = el('button', { type: 'button', class: 'ub-ai-share', 'aria-label': 'Share query' }, '');
@@ -237,8 +250,30 @@
         if (!w.out.textContent && (!r.evidence || !r.evidence.length)) w.out.textContent = 'silence';
       };
       w.btn.addEventListener('click', handleAsk);
-      // also allow Enter on the input to trigger ask
-      w.input.addEventListener('keydown', (ev)=>{ if (ev.key === 'Enter') handleAsk(); });
+      // Submit on plain Enter. Ctrl/Cmd+Enter inserts a newline at the caret.
+      w.input.addEventListener('keydown', (ev)=>{
+        if (ev.key === 'Enter') {
+          if (ev.ctrlKey || ev.metaKey) {
+            // Insert a newline at the current caret position
+            try{
+              ev.preventDefault();
+              const el = w.input;
+              const start = el.selectionStart || 0;
+              const end = el.selectionEnd || 0;
+              const v = el.value || '';
+              el.value = v.slice(0, start) + '\n' + v.slice(end);
+              // place caret after the inserted newline
+              const pos = start + 1;
+              el.selectionStart = el.selectionEnd = pos;
+              try { autosize(); } catch(e){}
+              try { updateVisibility(); } catch(e){}
+            }catch(e){}
+          } else {
+            ev.preventDefault();
+            try { handleAsk(); } catch(e){}
+          }
+        }
+      });
       // Show placeholder only when the field is NOT focused (and empty).
       // When focused we hide the placeholder so caret/typing is clear.
       try{
@@ -362,16 +397,17 @@
           setTimeout(resizeIcons, 0);
         };
 
-        // Enforce maximum query length: trim pasted content and prevent extra typing.
-        w.input.addEventListener('input', ()=>{
+        // Autosize to content and do not mutate the user's input value.
+        const autosize = ()=>{
           try{
-            if (w.input.value && w.input.value.length > MAX_QUERY_CHARS) {
-              // Trim excess characters so the user sees they hit the limit
-              w.input.value = w.input.value.slice(0, MAX_QUERY_CHARS);
-            }
+            requestAnimationFrame(()=>{
+              try{ w.input.style.height = 'auto'; const h = w.input.scrollHeight; if (h) w.input.style.height = (h + 2) + 'px'; }catch(e){}
+            });
           }catch(e){}
-          updateVisibility();
-        });
+        };
+        ['input','change','paste','cut','compositionend'].forEach(evt => w.input.addEventListener(evt, ()=>{ try{ autosize(); }catch(e){} updateVisibility(); }));
+        // initial sizing
+        try{ autosize(); }catch(e){}
         // initial sizing and keep in sync with resizes
         resizeIcons();
         window.addEventListener('resize', resizeIcons);
