@@ -286,10 +286,10 @@
             if (w.input.value && String(w.input.value).trim()) return; // has content — do nothing
             w.input.placeholder = '';
             // If the field is empty and the placeholder is being removed,
-            // ensure the textarea is cleared and collapsed to a single-line
-            // height immediately so the layout doesn't stay at the placeholder height.
+            // ensure the textarea is cleared and trigger autosize. Avoid
+            // directly setting `height = auto` on the real textarea because
+            // that can trigger browser viewport/caret jumps on mobile.
             try{ w.input.value = ''; }catch(e){}
-            try{ w.input.style.height = 'auto'; }catch(e){}
             try{ if (typeof autosize === 'function') autosize(); }catch(e){}
             try{ if (typeof updateVisibility === 'function') updateVisibility(); }catch(e){}
           }catch(e){}
@@ -445,11 +445,82 @@
           setTimeout(resizeIcons, 0);
         };
 
-        // Autosize to content and do not mutate the user's input value.
+        // Autosize to content using a hidden off-DOM clone to avoid writing
+        // `height = 'auto'` on the real textarea (which can trigger mobile
+        // viewport/caret jumps when the on-screen keyboard is visible).
         const autosize = ()=>{
           try{
+            const ensureClone = ()=>{
+              try{
+                if (w._autosizeClone && w._autosizeClone.parentNode) return w._autosizeClone;
+                const c = w.input.cloneNode(false);
+                c.removeAttribute('id');
+                c.style.position = 'absolute';
+                c.style.visibility = 'hidden';
+                c.style.pointerEvents = 'none';
+                c.style.zIndex = '-9999';
+                c.style.left = '-9999px';
+                c.style.top = '0';
+                c.style.height = 'auto';
+                c.style.whiteSpace = 'pre-wrap';
+                c.style.overflow = 'visible';
+                c.style.overflowY = 'visible';
+                document.body.appendChild(c);
+                w._autosizeClone = c;
+                return c;
+              }catch(e){ return null; }
+            };
+
             requestAnimationFrame(()=>{
-              try{ w.input.style.height = 'auto'; const h = w.input.scrollHeight; if (h) w.input.style.height = h + 'px'; }catch(e){}
+              try{
+                const input = w.input;
+                if (!input) return;
+                const clone = ensureClone();
+                const storedPlaceholder = input.getAttribute('data-ub-placeholder') || '';
+                const measurementValue = (input.value && input.value.length) ? input.value : (storedPlaceholder || '');
+                if (!clone) {
+                  // Fallback to the simple method if clone creation failed
+                  try{ input.style.height = 'auto'; const h = input.scrollHeight; if (h) input.style.height = h + 'px'; }catch(e){}
+                  return;
+                }
+                // Copy a set of computed style properties that affect wrapping
+                try{
+                  const cs = window.getComputedStyle(input);
+                  const props = ['boxSizing','paddingLeft','paddingRight','paddingTop','paddingBottom','borderLeftWidth','borderRightWidth','borderTopWidth','borderBottomWidth','fontFamily','fontSize','fontWeight','lineHeight','letterSpacing','textTransform','whiteSpace','wordBreak','overflowWrap','wordWrap','tabSize'];
+                  props.forEach(p=>{ try{ clone.style[p] = cs[p]; }catch(e){} });
+                  // Use the rendered width to match wrapping precisely
+                  try{ const rect = input.getBoundingClientRect(); clone.style.width = Math.max(10, Math.round(rect.width)) + 'px'; }catch(e){}
+                }catch(e){}
+                clone.value = measurementValue;
+                clone.style.height = 'auto';
+                const measured = clone.scrollHeight || 0;
+                let targetH = Math.max(12, Math.round(measured));
+                // If a visualViewport is present (mobile keyboard visible), cap
+                // the target height so the textarea doesn't grow into the
+                // keyboard area. If capped, allow internal scrolling.
+                try{
+                  if (window.visualViewport) {
+                    const rect = input.getBoundingClientRect();
+                    const vv = window.visualViewport;
+                    const margin = 8; // small breathing room above keyboard
+                    const available = Math.round(vv.height - rect.top - margin);
+                    if (available > 0 && targetH > available) {
+                      targetH = Math.max(12, available);
+                      input.style.overflowY = 'auto';
+                    } else {
+                      input.style.overflowY = 'hidden';
+                    }
+                  } else {
+                    input.style.overflowY = 'hidden';
+                  }
+                }catch(e){ input.style.overflowY = 'hidden'; }
+
+                // Only write when height changed meaningfully to avoid churn
+                try{
+                  const cur = parseInt((input.style.height||'0').replace('px',''),10) || 0;
+                  if (Math.abs(cur - targetH) > 1) input.style.height = targetH + 'px';
+                }catch(e){}
+              }catch(e){}
             });
           }catch(e){}
         };
