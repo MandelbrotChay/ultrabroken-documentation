@@ -90,6 +90,53 @@
       // If an instance already exists inside, mark initialized and skip
       if (placeholder.querySelector('.ub-ai-root')) { placeholder.dataset.aiInitialized = '1'; return; }
       const w = render(placeholder);
+
+      // Synchronous autosize: measure and write height immediately without
+      // deferring to rAF. Used on focus/clear to avoid the textarea staying
+      // at the placeholder-measured height until the rAF-run autosize fires.
+      function autosizeNow(){
+        try{
+          const input = w.input; if (!input) return;
+          const storedPlaceholder = input.getAttribute('data-ub-placeholder') || '';
+          const measurementValue = (input.value && input.value.length) ? input.value : (storedPlaceholder || '');
+          // Create a temporary off-DOM clone for measurement
+          const c = input.cloneNode(false);
+          try{
+            c.removeAttribute('id');
+          }catch(e){}
+          c.style.position = 'absolute'; c.style.visibility = 'hidden'; c.style.pointerEvents = 'none';
+          c.style.zIndex = '-9999'; c.style.left = '-9999px'; c.style.top = '0';
+          c.style.height = 'auto'; c.style.whiteSpace = 'pre-wrap'; c.style.overflow = 'visible'; c.style.overflowY = 'visible';
+          try{
+            const cs = window.getComputedStyle(input);
+            const props = ['boxSizing','paddingLeft','paddingRight','paddingTop','paddingBottom','borderLeftWidth','borderRightWidth','borderTopWidth','borderBottomWidth','fontFamily','fontSize','fontWeight','lineHeight','letterSpacing','textTransform','whiteSpace','wordBreak','overflowWrap','wordWrap','tabSize'];
+            props.forEach(p=>{ try{ c.style[p] = cs[p]; }catch(e){} });
+            const rect = input.getBoundingClientRect(); c.style.width = Math.max(10, Math.round(rect.width)) + 'px';
+          }catch(e){}
+          c.value = measurementValue;
+          document.body.appendChild(c);
+          const measured = c.scrollHeight || 0;
+          let targetH = Math.max(12, Math.round(measured));
+          try{
+            if (window.visualViewport) {
+              const rect = input.getBoundingClientRect(); const vv = window.visualViewport; const margin = 8;
+              const available = Math.round(vv.height - rect.top - margin);
+              if (available > 0 && targetH > available) { targetH = Math.max(12, available); input.style.overflowY = 'auto'; }
+              else input.style.overflowY = 'hidden';
+            } else {
+              input.style.overflowY = 'hidden';
+            }
+          }catch(e){ input.style.overflowY = 'hidden'; }
+          try{
+            const cur = parseInt((input.style.height||'0').replace('px',''),10) || 0;
+            if (Math.abs(cur - targetH) > 1) {
+              input.style.height = targetH + 'px';
+              try{ const delta = targetH - cur; if (delta > 0) window.scrollBy({ top: Math.round(delta), left: 0, behavior: 'auto' }); }catch(e){}
+            }
+          }catch(e){}
+          try{ document.body.removeChild(c); }catch(e){}
+        }catch(e){}
+      }
       // No user-facing toggle: `SHOW_MODEL_SOURCES` controls whether model-
       // returned `Source:` lines are rendered. This is intentionally internal.
       // The Worker now returns structured `response_text`, optional `response_sources` (text block)
@@ -296,7 +343,7 @@
             if (w.input.value && String(w.input.value).trim()) return; // has content — do nothing
             try{ if (w._fakePlaceholder) w._fakePlaceholder.style.display = 'none'; }catch(e){}
             try{ w.input.value = ''; }catch(e){}
-            try{ if (typeof autosize === 'function') autosize(); }catch(e){}
+            try{ if (typeof autosizeNow === 'function') autosizeNow(); else if (typeof autosize === 'function') autosize(); }catch(e){}
             try{ if (typeof updateVisibility === 'function') updateVisibility(); }catch(e){}
           }catch(e){}
         });
@@ -348,7 +395,7 @@
       // Wire clear button and replace Ask text with an SVG ask-icon that only appears when input has text
       try{
         // Ensure clear button exists
-        if (w.clear){
+          if (w.clear){
           // set image for the clear button (published site path)
           const clearImg = document.createElement('img');
           clearImg.src = '/ultrabroken-documentation/assets/images/close-icon.svg';
@@ -363,7 +410,7 @@
           w.clear.style.justifyContent = 'center';
           w.clear.style.padding = '0';
           w.clear.appendChild(clearImg);
-          w.clear.addEventListener('click', ()=>{ 
+            w.clear.addEventListener('click', ()=>{ 
             w.input.value = ''; 
             // Clear rendered answer and any HTML inside
             try{ if (w.out) { w.out.textContent = ''; w.out.innerHTML = ''; } }catch(e){}
@@ -371,7 +418,7 @@
             try{ if (w.evidence) w.evidence.innerHTML = ''; }catch(e){}
             w.input.focus(); 
             // Ensure textarea resizes to reflect the cleared (empty) value
-            try{ if (typeof autosize === 'function') autosize(); }catch(e){}
+            try{ if (typeof autosizeNow === 'function') autosizeNow(); else if (typeof autosize === 'function') autosize(); }catch(e){}
             try { if (typeof updateVisibility === 'function') updateVisibility(); else { w.clear.style.display = 'none'; w.btn.style.display = 'none'; } } catch(e){ w.clear.style.display = 'none'; w.btn.style.display = 'none'; }
           });
         }
