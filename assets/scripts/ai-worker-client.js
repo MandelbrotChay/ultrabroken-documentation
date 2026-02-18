@@ -435,6 +435,26 @@
           }catch(e){}
         };
 
+        // Reserve right padding on the textarea equal to the width of the action
+        // buttons so that showing/hiding them doesn't change the available
+        // content width and trigger early line-wrapping.
+        const reserveRightPadding = ()=>{
+          try{
+            const gap = 8; // small gap between textarea content and buttons
+            let total = 0;
+            const rectClear = (w.clear && w.clear.getBoundingClientRect) ? w.clear.getBoundingClientRect() : null;
+            const rectAsk = (w.btn && w.btn.getBoundingClientRect) ? w.btn.getBoundingClientRect() : null;
+            const rectShare = (w.share && w.share.getBoundingClientRect) ? w.share.getBoundingClientRect() : null;
+            if (rectClear && rectClear.width) total += Math.round(rectClear.width);
+            if (rectAsk && rectAsk.width) total += Math.round(rectAsk.width);
+            if (rectShare && rectShare.width) total += Math.round(rectShare.width);
+            // include small gaps between buttons
+            total += gap * 2;
+            if (!total || isNaN(total) || total < 40) total = 48; // sensible default
+            w.input.style.paddingRight = total + 'px';
+          }catch(e){}
+        };
+
         // Toggle visibility for both controls based on input content
         const updateVisibility = ()=>{
           const has = w.input.value.trim();
@@ -443,7 +463,7 @@
           if (w.share) w.share.style.display = has ? 'flex' : 'none';
           // After toggling, resize icons to match rendered button height
           // use a short timeout to allow layout to settle when showing
-          setTimeout(resizeIcons, 0);
+          setTimeout(()=>{ try{ resizeIcons(); reserveRightPadding(); }catch(e){} }, 0);
         };
 
         // Autosize to content and do not mutate the user's input value.
@@ -461,8 +481,8 @@
         // initial sizing
         try{ autosize(); }catch(e){}
         // initial sizing and keep in sync with resizes
-        resizeIcons();
-        window.addEventListener('resize', resizeIcons);
+        resizeIcons(); reserveRightPadding();
+        window.addEventListener('resize', ()=>{ try{ resizeIcons(); reserveRightPadding(); }catch(e){} });
         // initial state
         updateVisibility();
       }catch(e){ /* ignore */ }
