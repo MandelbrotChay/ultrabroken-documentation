@@ -285,6 +285,11 @@
           try{
             if (w.input.value && String(w.input.value).trim()) return; // has content — do nothing
             w.input.placeholder = '';
+            // If the field is empty and the placeholder is being removed,
+            // ensure the textarea is cleared and collapsed to a single-line
+            // height immediately so the layout doesn't stay at the placeholder height.
+            try{ w.input.value = ''; }catch(e){}
+            try{ w.input.style.height = 'auto'; }catch(e){}
             try{ if (typeof autosize === 'function') autosize(); }catch(e){}
             try{ if (typeof updateVisibility === 'function') updateVisibility(); }catch(e){}
           }catch(e){}
