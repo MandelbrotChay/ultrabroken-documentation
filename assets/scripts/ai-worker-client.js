@@ -25,7 +25,7 @@
     const root = el('div', { class: 'ub-ai-root' });
     const row = el('div', { style: 'display:flex; gap:0.4rem; align-items:flex-end;' });
     const inputWrap = el('div', { class: 'ub-ai-input-wrap', style: 'position:relative; flex:1; display:flex; align-items:flex-end;' });
-    const _placeholder_text = 'WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW';
+    const _placeholder_text = 'Will it share word or waffle?';
       // Max query length (short questions). Configurable via `window.AI_MAX_QUERY_CHARS`.
       const MAX_QUERY_CHARS = (typeof window !== 'undefined' && window.AI_MAX_QUERY_CHARS) ? Number(window.AI_MAX_QUERY_CHARS) : 50;
       const input = el('textarea', { placeholder: '', 'data-ub-placeholder': _placeholder_text, class: 'ub-ai-input', maxlength: String(MAX_QUERY_CHARS), rows: '1' });
@@ -280,40 +280,9 @@
       try{
         const stored = w.input.getAttribute('data-ub-placeholder') || '';
         // Hide placeholder while editing
-        w.input.addEventListener('focus', ()=>{ w.input.placeholder = ''; try{ if (typeof autosize === 'function') autosize(); }catch(e){} });
+        w.input.addEventListener('focus', ()=>{ w.input.placeholder = ''; });
         // Restore placeholder when blurred and empty
         w.input.addEventListener('blur', ()=>{ if (!w.input.value) w.input.placeholder = stored; });
-        // Measure a single-line height by briefly setting the textarea's value
-        // to one character and reading `scrollHeight`. This is fast and avoids
-        // creating/cloning off-DOM nodes. We restore the previous value and
-        // caret afterwards.
-        const measureSingleLineHeight = ()=>{
-          try{
-            const el = w.input;
-            const prev = el.value;
-            const s0 = el.selectionStart; const s1 = el.selectionEnd;
-            // Temporarily set a single character to measure the single-line height
-            el.value = 'M';
-            el.rows = 1;
-            const h = el.scrollHeight;
-            // Restore previous value and selection
-            el.value = prev;
-            try{ el.setSelectionRange(s0, s1); }catch(e){}
-            return h ? Math.max(12, Math.round(h)) + 2 : null;
-          }catch(e){ return null; }
-        };
-
-        const collapseToOneLine = ()=>{
-          try{
-            const h = measureSingleLineHeight();
-            if (h) w.input.style.height = h + 'px';
-            try{ if (typeof updateVisibility === 'function') updateVisibility(); }catch(e){}
-          }catch(e){}
-        };
-
-        // Use pointer events for touch + mouse, and also listen for click as a fallback
-        w.input.addEventListener('pointerdown', ()=>{ try{ collapseToOneLine(); }catch(e){} });
-        w.input.addEventListener('click', ()=>{ try{ collapseToOneLine(); }catch(e){} });
         // Initial state: if not focused and empty, show placeholder
         if (document.activeElement !== w.input && !w.input.value) w.input.placeholder = stored;
       }catch(e){}
@@ -342,7 +311,6 @@
             // Also clear parsed/rendered sources/evidence
             try{ if (w.evidence) w.evidence.innerHTML = ''; }catch(e){}
             w.input.focus(); 
-            try{ if (typeof autosize === 'function') autosize(); }catch(e){}
             try { if (typeof updateVisibility === 'function') updateVisibility(); else { w.clear.style.display = 'none'; w.btn.style.display = 'none'; } } catch(e){ w.clear.style.display = 'none'; w.btn.style.display = 'none'; }
           });
         }
