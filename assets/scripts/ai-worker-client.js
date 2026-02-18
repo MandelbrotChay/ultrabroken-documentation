@@ -325,13 +325,12 @@
               try {
                 const q = String(w.input.value || '').trim();
                 if (!q) return;
-                const base = window.location.href.split('#')[0];
-                const permalink = base + '#search:' + encodeURIComponent(q);
-                navigator.clipboard.writeText(permalink).then(() => {
+                // Copy only the user's prompt text to the clipboard (no URL)
+                navigator.clipboard.writeText(q).then(() => {
                   try { showCopiedToast && showCopiedToast('Copied to clipboard'); } catch (e) {}
                 }).catch(err => {
                   try { showCopiedToast && showCopiedToast('Copy failed'); } catch (e) {}
-                  console.error('copy permalink failed', err);
+                  console.error('copy prompt failed', err);
                 });
               } catch (err) { console.error('share click error', err); }
             });
