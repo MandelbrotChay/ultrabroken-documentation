@@ -804,6 +804,28 @@ li.task-list-item a, li.task-list a {
   box-sizing: border-box;
 }
 
+/* Click-through overlay placeholder for the AI input (guaranteed color)
+   This overlay is positioned above the textarea content but does not
+   intercept pointer events so clicks focus the real textarea below. */
+.ub-ai-input-wrap{ position: relative !important; }
+.ub-ai-fake-placeholder {
+  position: absolute;
+  left: 0.4rem;
+  top: 0.4rem;
+  right: 0.4rem;
+  color: #00c09b !important;
+  pointer-events: none;
+  font-family: inherit;
+  font-size: 1.25rem;
+  line-height: 1.2;
+  white-space: pre-wrap;
+  overflow: hidden;
+  display: block;
+  z-index: 4;
+  -webkit-text-fill-color: #00c09b !important;
+  opacity: 0.95;
+}
+
 /* Remove default focus outline/shadow for the AI input so it doesn't draw
    a border on focus; caret still visible. Keep accessible focus styles
    elsewhere (buttons/links) intact. */

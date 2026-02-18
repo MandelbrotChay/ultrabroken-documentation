@@ -63,7 +63,7 @@
     // append evidence container to the widget so it's accessible via the returned handle
     root.appendChild(evidenceWrap);
     container.appendChild(root);
-    return { input, btn: askBtn, share: shareBtn, out, clear: clearBtn, evidence: evidenceWrap };
+    return { input, inputWrap, btn: askBtn, share: shareBtn, out, clear: clearBtn, evidence: evidenceWrap };
   }
 
   async function askWorker(q){
@@ -280,31 +280,45 @@
       // When focused we hide the placeholder so caret/typing is clear.
       try{
         const stored = w.input.getAttribute('data-ub-placeholder') || '';
-        // Hide placeholder while editing, but only when the field is empty.
+        // Use a click-through overlay placeholder element instead of the
+        // native placeholder pseudo-element to avoid UA rendering quirks.
+        try{
+          // ensure input has no native placeholder text
+          try{ w.input.placeholder = ''; }catch(e){}
+          const fake = el('div', { class: 'ub-ai-fake-placeholder', 'aria-hidden': 'true' }, stored);
+          try{ if (w.inputWrap) w.inputWrap.appendChild(fake); }catch(e){}
+          w._fakePlaceholder = fake;
+        }catch(e){}
+
+        // Hide overlay while editing, but only when the field is empty.
         w.input.addEventListener('focus', ()=>{
           try{
             if (w.input.value && String(w.input.value).trim()) return; // has content — do nothing
-            w.input.placeholder = '';
-            // If the field is empty and the placeholder is being removed,
-            // ensure the textarea is cleared and trigger autosize. Avoid
-            // directly setting `height = auto` on the real textarea because
-            // that can trigger browser viewport/caret jumps on mobile.
+            try{ if (w._fakePlaceholder) w._fakePlaceholder.style.display = 'none'; }catch(e){}
             try{ w.input.value = ''; }catch(e){}
             try{ if (typeof autosize === 'function') autosize(); }catch(e){}
             try{ if (typeof updateVisibility === 'function') updateVisibility(); }catch(e){}
           }catch(e){}
         });
-        // Restore placeholder when blurred and empty; reapply measured placeholder height when available
+
+        // Show overlay when blurred and empty; reapply measured placeholder height when available
         w.input.addEventListener('blur', ()=>{
           try{
             if (!w.input.value) {
-              w.input.placeholder = stored;
+              try{ if (w._fakePlaceholder) w._fakePlaceholder.style.display = 'block'; }catch(e){}
               try{ if (w.placeholderHeight) w.input.style.height = w.placeholderHeight + 'px'; }catch(e){}
             }
           }catch(e){}
         });
-        // Initial state: if not focused and empty, show placeholder
-        if (document.activeElement !== w.input && !w.input.value) w.input.placeholder = stored;
+
+        // Initial state: show overlay only when not focused and empty
+        try{
+          if (document.activeElement !== w.input && !w.input.value) {
+            try{ if (w._fakePlaceholder) w._fakePlaceholder.style.display = 'block'; }catch(e){}
+          } else {
+            try{ if (w._fakePlaceholder) w._fakePlaceholder.style.display = 'none'; }catch(e){}
+          }
+        }catch(e){}
 
         // Measure the textarea height when the placeholder is visible so we can
         // restore that exact height on blur. We perform the measurement inside
@@ -440,6 +454,14 @@
           if (w.clear) w.clear.style.display = has ? 'flex' : 'none';
           w.btn.style.display = has ? 'flex' : 'none';
           if (w.share) w.share.style.display = has ? 'flex' : 'none';
+          // Toggle the click-through overlay placeholder: show only when
+          // the field is empty and not focused.
+          try{
+            if (w._fakePlaceholder) {
+              const showFake = !has && document.activeElement !== w.input;
+              w._fakePlaceholder.style.display = showFake ? 'block' : 'none';
+            }
+          }catch(e){}
           // After toggling, resize icons to match rendered button height
           // use a short timeout to allow layout to settle when showing
           setTimeout(resizeIcons, 0);
