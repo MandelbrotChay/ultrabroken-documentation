@@ -281,34 +281,55 @@
         const stored = w.input.getAttribute('data-ub-placeholder') || '';
         // Hide placeholder while editing
         w.input.addEventListener('focus', ()=>{ w.input.placeholder = ''; });
-        // Restore placeholder when blurred and empty
-        w.input.addEventListener('blur', ()=>{ if (!w.input.value) w.input.placeholder = stored; });
+        // Restore placeholder when blurred and empty and reapply measured height
+        w.input.addEventListener('blur', ()=>{ 
+          if (!w.input.value) {
+            w.input.placeholder = stored;
+            try{ if (w.placeholderHeight) w.input.style.height = w.placeholderHeight + 'px'; }catch(e){}
+          }
+        });
         // Initial state: if not focused and empty, show placeholder
         if (document.activeElement !== w.input && !w.input.value) w.input.placeholder = stored;
 
         // Measure the textarea height when the placeholder is visible so we can
-        // restore that exact height on blur. We perform the measurement inside
-        // a rAF to ensure layout has settled, and use a temporary-value method
-        // (set value to the placeholder text) to measure wrapped height.
+        // restore that exact height on blur. Measure after fonts have loaded
+        // so the computed height matches final rendering. Use the temporary-
+        // value method (set value to the placeholder text) inside a rAF to
+        // ensure layout stability.
         try{
-          requestAnimationFrame(()=>{
+          const measurePlaceholder = ()=>{
             try{
-              const el = w.input;
-              // Only measure when the field is currently empty (placeholder shown)
-              if (el && !el.value && stored) {
-                const prevVal = el.value;
-                const prevRows = el.rows;
-                const s0 = el.selectionStart; const s1 = el.selectionEnd;
-                try{ el.value = stored; el.rows = 1; }catch(e){}
-                // read scrollHeight which includes wrapped lines
-                const h = el.scrollHeight;
-                // restore
-                try{ el.value = prevVal; el.rows = prevRows; }catch(e){}
-                try{ if (typeof el.setSelectionRange === 'function') el.setSelectionRange(s0, s1); }catch(e){}
-                if (h && !isNaN(h)) w.placeholderHeight = Math.max(12, Math.round(h));
-              }
+              requestAnimationFrame(()=>{
+                try{
+                  const el = w.input;
+                  if (!el || !stored) return;
+                  // Only measure when the field is currently empty (placeholder shown)
+                  if (el.value) return;
+                  const prevVal = el.value;
+                  const prevRows = el.rows;
+                  const s0 = el.selectionStart; const s1 = el.selectionEnd;
+                  try{ el.value = stored; el.rows = 1; }catch(e){}
+                  const h = el.scrollHeight;
+                  try{ el.value = prevVal; el.rows = prevRows; }catch(e){}
+                  try{ if (typeof el.setSelectionRange === 'function') el.setSelectionRange(s0, s1); }catch(e){}
+                  if (h && !isNaN(h)) w.placeholderHeight = Math.max(12, Math.round(h));
+                }catch(e){}
+              });
             }catch(e){}
-          });
+          };
+
+          // Use Font Loading API when available to ensure fonts are ready
+          if (document.fonts && typeof document.fonts.ready !== 'undefined') {
+            document.fonts.ready.then(measurePlaceholder).catch(()=>{ measurePlaceholder(); });
+          } else if (document.readyState === 'complete') {
+            // fonts likely loaded already
+            measurePlaceholder();
+          } else {
+            // fallback: measure on window load
+            window.addEventListener('load', measurePlaceholder, { once: true });
+            // also attempt an immediate measure in case fonts are already OK
+            measurePlaceholder();
+          }
         }catch(e){}
       }catch(e){}
       // Wire clear button and replace Ask text with an SVG ask-icon that only appears when input has text
