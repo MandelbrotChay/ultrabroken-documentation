@@ -180,7 +180,8 @@ label.md-header__button[for^="__palette_"]:hover {
 .ub-ai-input::placeholder,
 .ub-ai-input::-webkit-input-placeholder,
 .ub-ai-input:-ms-input-placeholder {
-  color: #00c09b !important;
+  /* Use a CSS variable so JS can set it inline to override stubborn mobile defaults */
+  color: var(--ub-placeholder-color, #00c09b) !important;
   font-family: 'New Rocker', 'Texturina', Georgia, 'Times New Roman', serif !important;
 }
 

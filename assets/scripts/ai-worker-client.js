@@ -42,6 +42,10 @@
         input.style.whiteSpace = 'pre-wrap';
         input.style.overflowWrap = 'break-word';
         input.style.wordBreak = 'normal';
+        // Force placeholder color via CSS variable set inline — helps mobile browsers
+        // that otherwise ignore external placeholder rules. This keeps real text
+        // color inherited while ensuring the placeholder is visibly darker.
+        try{ input.style.setProperty('--ub-placeholder-color', '#00c09b'); }catch(e){}
       }catch(e){}
     const clearBtn = el('button', { type: 'button', class: 'ub-ai-clear', 'aria-label': 'Clear search' }, '');
     const askBtn = el('button', { type: 'button', class: 'ub-ai-ask', 'aria-label': 'Ask' }, '');
