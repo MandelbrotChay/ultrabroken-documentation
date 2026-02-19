@@ -8,14 +8,14 @@
     maxSpeed: 80,            // px/sec
     lineDistance: 300,       // px threshold to draw a line
     lineMaxAlpha: 0.12,
+    // Exponential falloff for line alpha (higher -> steeper fade)
+    lineFalloff: 2.0,
     particleAlpha: 0.9,
     spawnPadding: 40         // spawn below bottom
   };
   // Burst settings: occasional bursts spawn multiple particles together
   cfg.burstChance = 0.12; // probability a recycle triggers a burst
   cfg.burstSize = 6;      // number of particles in a burst
-  // Maximum simultaneous connections per particle (reduce visual clutter)
-  cfg.maxConnections = 3;
 
   function createCanvas() {
     const c = document.createElement('canvas');
@@ -121,7 +121,8 @@
         const d2 = dx*dx + dy*dy;
         const dist = Math.sqrt(d2);
         if (dist < cfg.lineDistance){
-          const alpha = (1 - dist / cfg.lineDistance) * cfg.lineMaxAlpha;
+          const base = Math.max(0, 1 - dist / cfg.lineDistance);
+          const alpha = Math.pow(base, cfg.lineFalloff) * cfg.lineMaxAlpha;
           ctx.strokeStyle = `rgba(0,240,194,${alpha.toFixed(3)})`;
           ctx.beginPath();
           ctx.moveTo(a.x, a.y);
