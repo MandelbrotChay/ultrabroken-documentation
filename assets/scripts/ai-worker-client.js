@@ -617,7 +617,7 @@
                     // it can expand naturally instead of showing an internal
                     // scrollbar. After scrolling, set the full target height.
                     if (isFocused && available > 0 && targetH > available) {
-                      try{ input.scrollIntoView({ block: 'center', inline: 'nearest' }); scrolledIntoView = true; }catch(e){}
+                      try{ w._skipScrollBy = true; input.scrollIntoView({ block: 'center', inline: 'nearest' }); scrolledIntoView = true; }catch(e){}
                       requestAnimationFrame(()=>{
                         try{
                           const rect2 = input.getBoundingClientRect();
@@ -626,6 +626,7 @@
                           input.style.overflowY = 'hidden';
                           try{ input.style.height = targetH + 'px'; }catch(e){}
                         }catch(e){}
+                        try{ w._skipScrollBy = false; }catch(e){}
                       });
                     } else {
                       if (available > 0 && targetH > available) {
@@ -655,9 +656,15 @@
                       const delta = targetH - cur;
                       if (delta > 0) {
                         const top = Math.round(delta);
-                        if (!scrolledIntoView && !(isFocused && window.visualViewport)) {
-                          window.scrollBy({ top: top, left: 0, behavior: 'auto' });
-                        }
+                        try{
+                          const rectAfter = input.getBoundingClientRect();
+                          const vpHeight = (window.visualViewport && window.visualViewport.height) || window.innerHeight;
+                          const marginVis = 8;
+                          const inputVisible = rectAfter.top >= -marginVis && rectAfter.bottom <= (vpHeight + marginVis);
+                          if (!scrolledIntoView && inputVisible && !w._skipScrollBy) {
+                            window.scrollBy({ top: top, left: 0, behavior: 'auto' });
+                          }
+                        }catch(e){}
                       }
                     }catch(e){}
                   }
