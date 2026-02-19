@@ -609,21 +609,20 @@
                     const vv = window.visualViewport;
                     const margin = 8; // small breathing room above keyboard
                     let available = Math.round(vv.height - rect.top - margin);
-                    // If focused and constrained, set the measured height first
-                    // then bring the field into view so the resize and scrolling
-                    // are ordered predictably on mobile. We set a flag so the
-                    // existing delta scroll is skipped later.
+                    // If focused and constrained, bring the field into view so
+                    // it can expand naturally instead of showing an internal
+                    // scrollbar. After scrolling, set the full target height.
                     if (isFocused && available > 0 && targetH > available) {
-                      try{ input.style.overflowY = 'hidden'; }catch(e){}
-                      try{ input.style.height = targetH + 'px'; }catch(e){}
-                      try{
-                        // Mark immediately so the following delta scroll is skipped
-                        // in this same frame; perform the actual scroll in rAF.
-                        try{ w._didScrollIntoView = Date.now(); }catch(e){}
-                        requestAnimationFrame(()=>{
-                          try{ input.scrollIntoView({ block: 'center', inline: 'nearest' }); }catch(e){}
-                        });
-                      }catch(e){}
+                      try{ w._didScrollIntoView = true; input.scrollIntoView({ block: 'center', inline: 'nearest' }); }catch(e){}
+                      requestAnimationFrame(()=>{
+                        try{
+                          const rect2 = input.getBoundingClientRect();
+                          const vv2 = window.visualViewport || vv;
+                          available = Math.round((vv2.height || vv.height) - rect2.top - margin);
+                          input.style.overflowY = 'hidden';
+                          try{ input.style.height = targetH + 'px'; }catch(e){}
+                        }catch(e){}
+                      });
                     } else {
                       if (available > 0 && targetH > available) {
                         targetH = Math.max(12, available);
@@ -651,16 +650,12 @@
                         // performing the delta scroll which can push the viewport
                         // above the input (especially on mobile). Consume the
                         // flag and skip the extra scroll.
-                        try{
-                          const now = Date.now();
-                          if (w._didScrollIntoView && (now - (w._didScrollIntoView || 0) < 350)) {
-                            try{ w._didScrollIntoView = 0; }catch(e){}
-                            // skip delta scroll because we recently scrolledIntoView
-                          } else {
-                            const top = Math.round(delta);
-                            window.scrollBy({ top: top, left: 0, behavior: 'auto' });
-                          }
-                        }catch(e){}
+                        if (w._didScrollIntoView) {
+                          try{ w._didScrollIntoView = false; }catch(e){}
+                        } else {
+                          const top = Math.round(delta);
+                          window.scrollBy({ top: top, left: 0, behavior: 'auto' });
+                        }
                       }
                     }catch(e){}
                   }
