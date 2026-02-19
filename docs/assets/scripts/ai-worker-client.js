@@ -632,7 +632,7 @@
                     // it can expand naturally instead of showing an internal
                     // scrollbar. After scrolling, set the full target height.
                     if (isFocused && available > 0 && targetH > available) {
-                      // try{ input.scrollIntoView({ block: 'center', inline: 'nearest' }); }catch(e){}
+                      try{ input.scrollIntoView({ block: 'center', inline: 'nearest' }); }catch(e){}
                       requestAnimationFrame(()=>{
                         try{
                           const rect2 = input.getBoundingClientRect();
