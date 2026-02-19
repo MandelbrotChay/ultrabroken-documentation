@@ -22,7 +22,7 @@ _mulberry - 8 January 2024_
 
 ## Notes
 ---
-Test with like like stick culling
+Test with Like Like Stick Culling.
 
 ## Resources
 ---
