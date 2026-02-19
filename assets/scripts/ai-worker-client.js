@@ -484,14 +484,8 @@
           const shareImg = document.createElement('img');
           shareImg.src = '/ultrabroken-documentation/assets/images/share-icon.svg';
           shareImg.alt = 'Share';
-          // match Ask button icon sizing so image fills the button
-          shareImg.style.width = '100%';
-          shareImg.style.height = '100%';
-          shareImg.style.display = 'block';
-          shareImg.style.objectFit = 'contain';
           w.share.textContent = '';
           w.share.appendChild(shareImg);
-          // Styling for the share button is handled via CSS (`.ub-ai-share`).
         } catch (e) {}
         // Start hidden; only show when the input has text (mirrors clear button behavior)
         w.btn.style.display = 'none';
@@ -524,11 +518,8 @@
             if (btnRect && btnRect.height > 0) targetH = Math.round(btnRect.height);
             else targetH = Math.round(parseFloat(getComputedStyle(w.btn).fontSize) || 16);
             targetH = Math.max(12, targetH);
-            // Let CSS control button and icon sizing — ensure images scale to their
-            // button height rather than forcing explicit pixel heights here.
-            try{ if (clearImg) { clearImg.style.height = '100%'; clearImg.style.width = 'auto'; } }catch(e){}
-            try{ if (askImg) { askImg.style.height = '100%'; askImg.style.width = 'auto'; } }catch(e){}
-            try{ if (w.share && w.share.querySelector('img')) { w.share.querySelector('img').style.height = '100%'; w.share.querySelector('img').style.width = 'auto'; } }catch(e){}
+            // CSS controls icon sizing; no inline sizing applied here to avoid
+            // conflicts with author styles.
           }catch(e){}
         };
 
