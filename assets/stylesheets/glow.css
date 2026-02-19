@@ -791,7 +791,7 @@ li.task-list-item a, li.task-list a {
 
 .ub-ai-input {
   width: 100%;
-  padding: 0.4rem 0.4rem;
+  padding: 0.4rem 0.4rem 0.4rem 0.25rem;
   margin-bottom: 0;
   border: none; /* remove bottom border to avoid double-line */
   background: transparent;
@@ -813,7 +813,7 @@ li.task-list-item a, li.task-list a {
   position: absolute;
   inset: 0;
   /* match textarea padding so text aligns exactly */
-  padding: 0.4rem 0.4rem;
+  padding: 0.4rem 0.4rem 0.4rem 0.25rem;
   /* Use the project's muted text color for overlay placeholder */
   color: var(--muted-text) !important;
   pointer-events: none;
