@@ -3,7 +3,6 @@
   Usage: include this script and add a page with <div id="ai-search-root"></div>
   Configure worker URL via `window.AI_WORKER_URL` or set in localStorage('ai_worker_url').
 */
-
 (function(){
   
   function el(tag, attrs={}, children=[]){
@@ -572,6 +571,7 @@
               try{
                 const input = w.input;
                 if (!input) return;
+                let scrolledIntoView = false;
                 const clone = ensureClone();
                 const storedPlaceholder = input.getAttribute('data-ub-placeholder') || '';
                 // When the textarea is focused and empty we want it to collapse
@@ -613,7 +613,7 @@
                     // it can expand naturally instead of showing an internal
                     // scrollbar. After scrolling, set the full target height.
                     if (isFocused && available > 0 && targetH > available) {
-                      try{ w._didScrollIntoView = true; input.scrollIntoView({ block: 'center', inline: 'nearest' }); }catch(e){}
+                      try{ input.scrollIntoView({ block: 'center', inline: 'nearest' }); scrolledIntoView = true; }catch(e){}
                       requestAnimationFrame(()=>{
                         try{
                           const rect2 = input.getBoundingClientRect();
@@ -643,17 +643,15 @@
                     input.style.height = targetH + 'px';
                     // Scroll the page by the same delta so each new row
                     // effectively pushes content upward by the same amount.
+                    // Skip this when we already scrolled the input into view
+                    // (e.g., due to visualViewport constraints) or when the
+                    // field is focused on mobile browsers which adjust viewport
+                    // automatically — double-scrolling produces bad UX.
                     try{
                       const delta = targetH - cur;
                       if (delta > 0) {
-                        // If we already scrolled the input into view above, avoid
-                        // performing the delta scroll which can push the viewport
-                        // above the input (especially on mobile). Consume the
-                        // flag and skip the extra scroll.
-                        if (w._didScrollIntoView) {
-                          try{ w._didScrollIntoView = false; }catch(e){}
-                        } else {
-                          const top = Math.round(delta);
+                        const top = Math.round(delta);
+                        if (!scrolledIntoView && !(isFocused && window.visualViewport)) {
                           window.scrollBy({ top: top, left: 0, behavior: 'auto' });
                         }
                       }
