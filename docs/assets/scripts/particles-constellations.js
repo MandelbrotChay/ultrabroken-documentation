@@ -110,44 +110,24 @@
     ctx.clearRect(0,0,W,H);
     // draw lines first (so particles glow sits above)
     ctx.lineWidth = 1;
-    // Track connections and prefer nearest neighbors. We sort candidate
-    // neighbors by distance per particle, draw up to `cfg.maxConnections`
-    // and use a Set to avoid drawing the same pair twice.
-    const connCounts = new Array(particles.length).fill(0);
-    const drawn = new Set();
-    for (let i = 0; i < particles.length; i++) {
-      if (connCounts[i] >= cfg.maxConnections) continue;
+    // Draw lines between all sufficiently-close particle pairs. Alpha is
+    // faded based on distance so distant pairs are faint. This avoids a
+    // hard per-particle cap and restores the original visual behavior.
+    for (let i=0;i<particles.length;i++){
       const a = particles[i];
-      // Build neighbor list with distances
-      const neighbors = [];
-      for (let j = 0; j < particles.length; j++){
-        if (j === i) continue;
+      for (let j=i+1;j<particles.length;j++){
         const b = particles[j];
         const dx = a.x - b.x; const dy = a.y - b.y;
         const d2 = dx*dx + dy*dy;
         const dist = Math.sqrt(d2);
-        if (dist < cfg.lineDistance) neighbors.push({ idx: j, dist });
-      }
-      // Prefer nearest neighbors — sort and keep only the closest up to
-      // `cfg.maxConnections` to avoid checking distant particles.
-      neighbors.sort((u,v)=>u.dist - v.dist);
-      if (neighbors.length > cfg.maxConnections) neighbors.length = cfg.maxConnections;
-      for (let k = 0; k < neighbors.length && connCounts[i] < cfg.maxConnections; k++){
-        const j = neighbors[k].idx;
-        const key = i < j ? i + ':' + j : j + ':' + i;
-        if (drawn.has(key)) continue;
-        if (connCounts[j] >= cfg.maxConnections) continue;
-        const b = particles[j];
-        const dist = neighbors[k].dist;
-        const alpha = (1 - dist / cfg.lineDistance) * cfg.lineMaxAlpha;
-        ctx.strokeStyle = `rgba(0,240,194,${alpha.toFixed(3)})`;
-        ctx.beginPath();
-        ctx.moveTo(a.x, a.y);
-        ctx.lineTo(b.x, b.y);
-        ctx.stroke();
-        connCounts[i]++;
-        connCounts[j]++;
-        drawn.add(key);
+        if (dist < cfg.lineDistance){
+          const alpha = (1 - dist / cfg.lineDistance) * cfg.lineMaxAlpha;
+          ctx.strokeStyle = `rgba(0,240,194,${alpha.toFixed(3)})`;
+          ctx.beginPath();
+          ctx.moveTo(a.x, a.y);
+          ctx.lineTo(b.x, b.y);
+          ctx.stroke();
+        }
       }
     }
     // draw particles
