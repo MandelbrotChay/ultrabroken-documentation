@@ -302,7 +302,15 @@
               const cs = window.getComputedStyle(w.input);
               const fs = parseFloat(cs.fontSize) || 16;
               const lh = parseFloat(cs.lineHeight) || (fs * 1.2);
-              const singleH = Math.max(12, Math.round(lh));
+              const pt = parseFloat(cs.paddingTop) || 0;
+              const pb = parseFloat(cs.paddingBottom) || 0;
+              const box = (cs.boxSizing || '').toLowerCase();
+              let singleH = Math.max(12, Math.round(lh));
+              if (box !== 'border-box') {
+                singleH = Math.max(singleH, Math.round(lh + pt + pb));
+              }
+              // small breathing room so the caret doesn't feel cramped
+              singleH = singleH + 2;
               w.input.style.height = singleH + 'px';
             }catch(e){}
             try{ if (typeof autosize === 'function') autosize(); }catch(e){}
@@ -534,10 +542,18 @@
                 // placeholder's wrapped height.
                 try{
                   if (isFocused && !measurementValue) {
-                    const cs = window.getComputedStyle(input);
-                    const fs = parseFloat(cs.fontSize) || 16;
-                    const lh = parseFloat(cs.lineHeight) || (fs * 1.2);
-                    targetH = Math.max(12, Math.round(lh));
+                    try{
+                      const cs = window.getComputedStyle(input);
+                      const fs = parseFloat(cs.fontSize) || 16;
+                      const lh = parseFloat(cs.lineHeight) || (fs * 1.2);
+                      const pt = parseFloat(cs.paddingTop) || 0;
+                      const pb = parseFloat(cs.paddingBottom) || 0;
+                      const box = (cs.boxSizing || '').toLowerCase();
+                      let singleH = Math.max(12, Math.round(lh));
+                      if (box !== 'border-box') singleH = Math.max(singleH, Math.round(lh + pt + pb));
+                      singleH = singleH + 2; // breathing room
+                      targetH = singleH;
+                    }catch(e){}
                   }
                 }catch(e){}
                 // If a visualViewport is present (mobile keyboard visible), cap
