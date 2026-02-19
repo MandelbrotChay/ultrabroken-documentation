@@ -617,8 +617,11 @@
                       try{ input.style.overflowY = 'hidden'; }catch(e){}
                       try{ input.style.height = targetH + 'px'; }catch(e){}
                       try{
+                        // Mark immediately so the following delta scroll is skipped
+                        // in this same frame; perform the actual scroll in rAF.
+                        try{ w._didScrollIntoView = true; }catch(e){}
                         requestAnimationFrame(()=>{
-                          try{ w._didScrollIntoView = true; input.scrollIntoView({ block: 'center', inline: 'nearest' }); }catch(e){}
+                          try{ input.scrollIntoView({ block: 'center', inline: 'nearest' }); }catch(e){}
                         });
                       }catch(e){}
                     } else {
