@@ -97,6 +97,8 @@
       // If an instance already exists inside, mark initialized and skip
       if (placeholder.querySelector('.ub-ai-root')) { placeholder.dataset.aiInitialized = '1'; return; }
       const w = render(placeholder);
+      // IME composition guard: true while user is composing (e.g. CJK input)
+      w._composing = false;
       // No user-facing toggle: `SHOW_MODEL_SOURCES` controls whether model-
       // returned `Source:` lines are rendered. This is intentionally internal.
       // The Worker now returns structured `response_text`, optional `response_sources` (text block)
@@ -587,10 +589,12 @@
               }catch(e){ return null; }
             };
 
-            requestAnimationFrame(()=>{
+                requestAnimationFrame(()=>{
               try{
                 const input = w.input;
                 if (!input) return;
+                // If the user is composing via IME, defer autosize until compositionend
+                if (w._composing) return;
                 const clone = ensureClone();
                 const storedPlaceholder = input.getAttribute('data-ub-placeholder') || '';
                 // When the textarea is focused and empty we want it to collapse
@@ -675,10 +679,17 @@
             });
           }catch(e){}
         };
-        ['input','change','paste','cut','compositionend'].forEach(evt => w.input.addEventListener(evt, ()=>{
+        ['input','change','paste','cut'].forEach(evt => w.input.addEventListener(evt, ()=>{
           try{ updateVisibility(); }catch(e){}
-          try{ requestAnimationFrame(()=>{ try{ autosize(); }catch(e){} }); }catch(e){}
+          try{ 
+            // Don't autosize while composing; compositionend will trigger autosize
+            if (!w._composing) requestAnimationFrame(()=>{ try{ autosize(); }catch(e){} });
+          }catch(e){}
         }));
+
+        // IME composition events: set a guard during composition and trigger autosize after composition ends
+        try{ w.input.addEventListener('compositionstart', ()=>{ try{ w._composing = true; }catch(e){} }); }catch(e){}
+        try{ w.input.addEventListener('compositionend', ()=>{ try{ w._composing = false; updateVisibility(); requestAnimationFrame(()=>{ try{ autosize(); }catch(e){} }); }catch(e){} }); }catch(e){}
         // initial sizing
         try{ autosize(); }catch(e){}
         // initial sizing and keep in sync with resizes
