@@ -623,7 +623,7 @@
                 }catch(e){}
                 clone.value = measurementValue;
                 clone.style.height = 'auto';
-                const measured = clone.scrollHeight || 0;
+                let measured = clone.scrollHeight || 0;
                 // Compute approximate line height for caret/line-count detection
                 let lineH = 0;
                 try{
@@ -633,6 +633,18 @@
                   else lineH = (parseFloat(lh) || 1.2) * (parseFloat(cs.fontSize) || 16);
                 }catch(e){ lineH = 18; }
                 const curLines = lineH > 0 ? Math.max(1, Math.round(measured / lineH)) : null;
+                // If this is a sensitive case (focused & caret occluded or line-count changed),
+                // prefer measuring the real input's scrollHeight for accuracy.
+                try{
+                  const lineChanged = (typeof w._lastLineCount === 'number' && curLines !== null && curLines !== w._lastLineCount);
+                  const sensitive = isFocused && (caretOccluded || lineChanged);
+                  if (sensitive) {
+                    try{
+                      const realMeasured = (input && input.scrollHeight) ? input.scrollHeight : 0;
+                      if (realMeasured > 0) measured = realMeasured;
+                    }catch(e){}
+                  }
+                }catch(e){}
                 // Approximate caret occlusion by measuring the clone with text up to selectionStart
                 let caretOccluded = false;
                 try{
