@@ -4,6 +4,8 @@ on:
   push:
     paths:
       - 'docs/wiki/**'
+      - 'mkdocs.yml'
+      - '.github/workflows/embeddings.yml'
   workflow_dispatch: {}
 
 jobs:
