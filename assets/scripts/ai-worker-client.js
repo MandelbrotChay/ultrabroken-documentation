@@ -3,7 +3,6 @@
   Usage: include this script and add a page with <div id="ai-search-root"></div>
   Configure worker URL via `window.AI_WORKER_URL` or set in localStorage('ai_worker_url').
 */
-
 (function(){
   
   function el(tag, attrs={}, children=[]){
@@ -561,11 +560,6 @@
           setTimeout(resizeIcons, 0);
         };
 
-        // Composition (IME) state: when composing we should avoid autosize/scroll
-        // writes since the IME may drive pans. Track composing state on the widget.
-        w._composing = false;
-
-
         // Autosize to content using a hidden off-DOM clone to avoid writing
         // `height = 'auto'` on the real textarea (which can trigger mobile
         // viewport/caret jumps when the on-screen keyboard is visible).
@@ -624,13 +618,6 @@
                 clone.style.height = 'auto';
                 const measured = clone.scrollHeight || 0;
                 let targetH = Math.max(12, Math.round(measured));
-                // Approximate current line count from measured height and line-height
-                let curLines = null;
-                try{
-                  const csLines = window.getComputedStyle(input);
-                  const lhVal = (csLines.lineHeight && csLines.lineHeight !== 'normal') ? parseFloat(csLines.lineHeight) : (parseFloat(csLines.fontSize) * 1.2 || 16);
-                  curLines = Math.max(1, Math.round(measured / lhVal));
-                }catch(e){ curLines = null; }
                 // If a visualViewport is present (mobile keyboard visible), cap
                 // the target height so the textarea doesn't grow into the
                 // keyboard area. If capped, allow internal scrolling.
@@ -639,70 +626,21 @@
                     const rect = input.getBoundingClientRect();
                     const vv = window.visualViewport;
                     const margin = 8; // small breathing room above keyboard
-                    // Use element bottom for available space under the caret/field
-                    let available = Math.round(((vv && vv.height) || window.innerHeight) - rect.bottom - margin);
-
-                    // Determine whether caret is occluded by measuring lines up to selectionStart
-                    let caretOccluded = false;
-                    try{
-                      if (isFocused && typeof input.selectionStart === 'number'){
-                        const sel = input.selectionStart || 0;
-                        const temp = input.cloneNode(false);
-                        temp.removeAttribute('id');
-                        temp.style.position = 'absolute'; temp.style.visibility = 'hidden'; temp.style.pointerEvents = 'none';
-                        temp.style.zIndex = '-9999'; temp.style.left = '-9999px'; temp.style.top = '0';
-                        temp.style.height = 'auto'; temp.style.whiteSpace = 'pre-wrap'; temp.style.overflow = 'visible';
+                    let available = Math.round(vv.height - rect.top - margin);
+                    // If focused and constrained, bring the field into view so
+                    // it can expand naturally instead of showing an internal
+                    // scrollbar. After scrolling, set the full target height.
+                    if (isFocused && available > 0 && targetH > available) {
+                      try{ input.scrollIntoView({ block: 'center', inline: 'nearest' }); }catch(e){}
+                      requestAnimationFrame(()=>{
                         try{
-                          const cs = window.getComputedStyle(input);
-                          const props = ['boxSizing','paddingLeft','paddingRight','paddingTop','paddingBottom','borderLeftWidth','borderRightWidth','borderTopWidth','borderBottomWidth','fontFamily','fontSize','fontWeight','lineHeight','letterSpacing','textTransform','whiteSpace','wordBreak','overflowWrap','wordWrap','tabSize'];
-                          props.forEach(p=>{ try{ temp.style[p] = cs[p]; }catch(e){} });
-                          try{ temp.style.width = Math.max(10, Math.round(rect.width)) + 'px'; }catch(e){}
+                          const rect2 = input.getBoundingClientRect();
+                          const vv2 = window.visualViewport || vv;
+                          available = Math.round((vv2.height || vv.height) - rect2.top - margin);
+                          input.style.overflowY = 'hidden';
+                          try{ input.style.height = targetH + 'px'; }catch(e){}
                         }catch(e){}
-                        temp.value = (input.value || '').slice(0, sel) || ' ';
-                        document.body.appendChild(temp);
-                        const cs2 = window.getComputedStyle(input);
-                        const lh = (cs2.lineHeight && cs2.lineHeight !== 'normal') ? parseFloat(cs2.lineHeight) : (parseFloat(cs2.fontSize) * 1.2 || 16);
-                        const padTop = parseFloat(cs2.paddingTop) || 0;
-                        const linesBefore = Math.max(1, Math.round(temp.scrollHeight / lh));
-                        const caretY = rect.top + padTop + (linesBefore - 1) * lh;
-                        document.body.removeChild(temp);
-                        const vvHeight = (vv && vv.height) || window.innerHeight;
-                        caretOccluded = caretY > (vvHeight - margin);
-                      }
-                    }catch(e){ caretOccluded = false; }
-
-                    const isOccluded = caretOccluded || (rect.top < 0) || (vv && rect.bottom > ((vv.height) - margin));
-                    const lineChanged = (typeof w._lastLineCount === 'number' && curLines !== null && curLines !== w._lastLineCount);
-
-                    if (isFocused && (isOccluded || lineChanged || (available > 0 && targetH > available))) {
-                      // If composing (IME), avoid forcing scroll/pan; defer until compositionend
-                      if (w._composing) {
-                        // no-op; compositionend will trigger autosize
-                      } else {
-                        try{ input.scrollIntoView({ block: 'center', inline: 'nearest' }); }catch(e){}
-                        requestAnimationFrame(()=>{
-                          try{
-                            const rect2 = input.getBoundingClientRect();
-                            const vv2 = window.visualViewport || vv;
-                            available = Math.round(((vv2 && vv2.height) || window.innerHeight) - rect2.bottom - margin);
-                            input.style.overflowY = 'hidden';
-                            try{ input.style.height = targetH + 'px'; }catch(e){}
-                            try{
-                              w._needStabilize = true;
-                              if (window.visualViewport) {
-                                const vv3 = window.visualViewport;
-                                const onVV = function onVV(){
-                                  try{ vv3.removeEventListener('resize', onVV); }catch(e){}
-                                  w._needStabilize = false;
-                                  try{ autosize(); }catch(e){}
-                                };
-                                try{ vv3.addEventListener('resize', onVV); }catch(e){}
-                              }
-                            }catch(e){}
-                            try{ setTimeout(()=>{ if (w._needStabilize) { w._needStabilize = false; try{ autosize(); }catch(e){} } }, 120); }catch(e){}
-                          }catch(e){}
-                        });
-                      }
+                      });
                     } else {
                       if (available > 0 && targetH > available) {
                         targetH = Math.max(12, available);
@@ -736,13 +674,10 @@
             });
           }catch(e){}
         };
-        ['input','change','paste','cut'].forEach(evt => w.input.addEventListener(evt, ()=>{
+        ['input','change','paste','cut','compositionend'].forEach(evt => w.input.addEventListener(evt, ()=>{
           try{ updateVisibility(); }catch(e){}
-          try{ if (!w._composing) requestAnimationFrame(()=>{ try{ autosize(); }catch(e){} }); }catch(e){}
+          try{ requestAnimationFrame(()=>{ try{ autosize(); }catch(e){} }); }catch(e){}
         }));
-        // Composition events: set composing flag and run autosize only after composition ends
-        w.input.addEventListener('compositionstart', ()=>{ try{ w._composing = true; }catch(e){} });
-        w.input.addEventListener('compositionend', ()=>{ try{ w._composing = false; }catch(e){} try{ updateVisibility(); }catch(e){} try{ requestAnimationFrame(()=>{ try{ autosize(); }catch(e){} }); }catch(e){} });
         // initial sizing
         try{ autosize(); }catch(e){}
         // initial sizing and keep in sync with resizes
