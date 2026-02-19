@@ -451,7 +451,7 @@
         if (w.clear){
           // set image for the clear button (published site path)
           const clearImg = document.createElement('img');
-          clearImg.src = '/ultrabroken-documentation/assets/images/close-icon.svg';
+          clearImg.src = '/ultrabroken-documentation/assets/images/cancel-icon.svg';
           clearImg.alt = 'Clear';
           clearImg.style.width = 'auto';
           clearImg.style.height = 'auto';
