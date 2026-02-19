@@ -310,8 +310,7 @@
             const applyPlaceholder = (txt)=>{
               try{
                 if (!txt) return;
-                // Don't change placeholders while the user is actively
-                // focused in the input — this pauses rotation during edits.
+                // Pause placeholder changes while user is focused in the input
                 if (document.activeElement === w.input) return;
                 w.input.setAttribute('data-ub-placeholder', txt);
                 if (w._fakePlaceholder && !w.input.value && document.activeElement !== w.input) {
@@ -356,7 +355,6 @@
               if (Array.isArray(w._placeholders) && w._placeholders.length) {
                 let idx = Math.floor(Math.random() * w._placeholders.length);
                 if (w._placeholders.length > 1) {
-                  // ensure different from last (initially -1 so always allowed)
                   while (idx === w._lastPlaceholderIndex) idx = Math.floor(Math.random() * w._placeholders.length);
                 }
                 w._lastPlaceholderIndex = idx;
@@ -364,14 +362,13 @@
               }
             }catch(e){}
 
-            // Pick a random placeholder every 4s, but pause while input is focused
+            // Randomly pick placeholders every 4s; pause while the input is focused
             w._placeholderTimer = setInterval(()=>{
               try{
                 if (document.activeElement === w.input) return; // pause while editing
                 if (!Array.isArray(w._placeholders) || !w._placeholders.length) return;
                 let idx = Math.floor(Math.random() * w._placeholders.length);
                 if (w._placeholders.length > 1) {
-                  // avoid immediate repeat
                   let attempts = 0;
                   while (idx === w._lastPlaceholderIndex && attempts < 6) { idx = Math.floor(Math.random() * w._placeholders.length); attempts++; }
                 }
@@ -594,7 +591,6 @@
               try{
                 const input = w.input;
                 if (!input) return;
-                let scrolledIntoView = false;
                 const clone = ensureClone();
                 const storedPlaceholder = input.getAttribute('data-ub-placeholder') || '';
                 // When the textarea is focused and empty we want it to collapse
@@ -636,7 +632,7 @@
                     // it can expand naturally instead of showing an internal
                     // scrollbar. After scrolling, set the full target height.
                     if (isFocused && available > 0 && targetH > available) {
-                      try{ input.scrollIntoView({ block: 'center', inline: 'nearest' }); scrolledIntoView = true; }catch(e){}
+                      try{ input.scrollIntoView({ block: 'center', inline: 'nearest' }); }catch(e){}
                       requestAnimationFrame(()=>{
                         try{
                           const rect2 = input.getBoundingClientRect();
@@ -666,17 +662,11 @@
                     input.style.height = targetH + 'px';
                     // Scroll the page by the same delta so each new row
                     // effectively pushes content upward by the same amount.
-                    // Skip this when we already scrolled the input into view
-                    // (e.g., due to visualViewport constraints) or when the
-                    // field is focused on mobile browsers which adjust viewport
-                    // automatically — double-scrolling produces bad UX.
                     try{
                       const delta = targetH - cur;
                       if (delta > 0) {
                         const top = Math.round(delta);
-                        if (!scrolledIntoView && !(isFocused && window.visualViewport)) {
-                          window.scrollBy({ top: top, left: 0, behavior: 'auto' });
-                        }
+                        window.scrollBy({ top: top, left: 0, behavior: 'auto' });
                       }
                     }catch(e){}
                   }
