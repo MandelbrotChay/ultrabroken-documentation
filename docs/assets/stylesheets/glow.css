@@ -755,7 +755,7 @@ li.task-list-item a, li.task-list a {
   margin: 0.5rem 0;
 
 /* Input wrapper and custom clear button */
-.ub-ai-input-wrap{ display:flex !important; align-items:flex-end !important; }
+.ub-ai-input-wrap{ display:flex !important; align-items:baseline !important; }
 .ub-ai-input{ width:100%; padding-right:0.1rem; box-sizing:border-box; resize:none; overflow:hidden; white-space:pre-wrap; overflow-wrap:break-word; word-break:normal; min-height:1.6rem; }
 .ub-ai-clear{
   background: transparent;
@@ -808,7 +808,7 @@ li.task-list-item a, li.task-list a {
 /* Click-through overlay placeholder for the AI input (guaranteed color)
    This overlay is positioned above the textarea content but does not
    intercept pointer events so clicks focus the real textarea below. */
-.ub-ai-input-wrap{ position: relative !important; margin-left: -0.35rem;}
+.ub-ai-input-wrap{ position: relative !important; margin-left: -0.35rem; }
 .ub-ai-fake-placeholder {
   position: absolute;
   inset: 0;
@@ -855,6 +855,10 @@ li.task-list-item a, li.task-list a {
   border: none;
   cursor: pointer;
 }
+
+/* Align the small control buttons to the text baseline so their bottom
+   edges visually match the bottom of the input text line. */
+.ub-ai-clear, .ub-ai-ask { align-self: baseline; }
 
 /* DEBUG: temporarily force visible outline and minimum size to diagnose
    invisible/zero-size AI control icons. Remove after debugging. 
