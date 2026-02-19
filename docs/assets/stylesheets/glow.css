@@ -862,6 +862,21 @@ li.task-list-item a, li.task-list a {
   cursor: pointer;
 }
 
+/* Explicit share button styling so all AI controls are CSS-driven */
+.ub-ai-share {
+  background: transparent;
+  padding: 0.15rem;
+  box-sizing: border-box;
+  display: none; /* hidden until input has content */
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.2rem;
+  width: 1.6rem;
+  height: 1.6rem;
+  border: none;
+  cursor: pointer;
+}
+
 /* Align the small control buttons to the text baseline so their bottom
    edges visually match the bottom of the input text line. */
 /* Align controls to text baseline and nudge them slightly downward so
