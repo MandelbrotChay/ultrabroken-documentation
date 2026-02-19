@@ -613,7 +613,7 @@
                     // it can expand naturally instead of showing an internal
                     // scrollbar. After scrolling, set the full target height.
                     if (isFocused && available > 0 && targetH > available) {
-                      try{ input.scrollIntoView({ block: 'center', inline: 'nearest' }); }catch(e){}
+                      try{ w._didScrollIntoView = true; input.scrollIntoView({ block: 'center', inline: 'nearest' }); }catch(e){}
                       requestAnimationFrame(()=>{
                         try{
                           const rect2 = input.getBoundingClientRect();
@@ -646,8 +646,16 @@
                     try{
                       const delta = targetH - cur;
                       if (delta > 0) {
-                        const top = Math.round(delta);
-                        window.scrollBy({ top: top, left: 0, behavior: 'auto' });
+                        // If we already scrolled the input into view above, avoid
+                        // performing the delta scroll which can push the viewport
+                        // above the input (especially on mobile). Consume the
+                        // flag and skip the extra scroll.
+                        if (w._didScrollIntoView) {
+                          try{ w._didScrollIntoView = false; }catch(e){}
+                        } else {
+                          const top = Math.round(delta);
+                          window.scrollBy({ top: top, left: 0, behavior: 'auto' });
+                        }
                       }
                     }catch(e){}
                   }
