@@ -314,23 +314,38 @@
                 if (w._fakePlaceholder && !w.input.value && document.activeElement !== w.input) {
                   w._fakePlaceholder.textContent = txt;
                 }
-                // Re-measure placeholder height and apply when blurred/empty
-                requestAnimationFrame(()=>{
-                  try{
-                    const el = w.input;
-                    if (el && !el.value) {
-                      const prevVal = el.value;
-                      const prevRows = el.rows;
-                      const s0 = el.selectionStart; const s1 = el.selectionEnd;
-                      try{ el.value = txt; el.rows = 1; }catch(e){}
-                      const h = el.scrollHeight;
-                      try{ el.value = prevVal; el.rows = prevRows; }catch(e){}
-                      try{ if (typeof el.setSelectionRange === 'function') el.setSelectionRange(s0, s1); }catch(e){}
-                      if (h && !isNaN(h)) w.placeholderHeight = Math.max(12, Math.round(h));
-                      try{ if (!el.value) el.style.height = w.placeholderHeight + 'px'; }catch(e){}
-                    }
-                  }catch(e){}
-                });
+                // Measure placeholder height synchronously using a hidden clone
+                try{
+                  const input = w.input;
+                  if (input && !input.value) {
+                    // create a lightweight clone for measurement
+                    const c = input.cloneNode(false);
+                    c.removeAttribute('id');
+                    c.style.position = 'absolute';
+                    c.style.visibility = 'hidden';
+                    c.style.pointerEvents = 'none';
+                    c.style.zIndex = '-9999';
+                    c.style.left = '-9999px';
+                    c.style.top = '0';
+                    c.style.height = 'auto';
+                    c.style.whiteSpace = 'pre-wrap';
+                    c.style.overflow = 'visible';
+                    // copy computed styles that affect wrapping
+                    try{
+                      const cs = window.getComputedStyle(input);
+                      const props = ['boxSizing','paddingLeft','paddingRight','paddingTop','paddingBottom','borderLeftWidth','borderRightWidth','borderTopWidth','borderBottomWidth','fontFamily','fontSize','fontWeight','lineHeight','letterSpacing','textTransform','whiteSpace','wordBreak','overflowWrap','wordWrap','tabSize'];
+                      props.forEach(p=>{ try{ c.style[p] = cs[p]; }catch(e){} });
+                      try{ const rect = input.getBoundingClientRect(); c.style.width = Math.max(10, Math.round(rect.width)) + 'px'; }catch(e){}
+                    }catch(e){}
+                    c.value = txt;
+                    document.body.appendChild(c);
+                    const measured = c.scrollHeight || 0;
+                    document.body.removeChild(c);
+                    const h = Math.max(12, Math.round(measured));
+                    w.placeholderHeight = h;
+                    try{ input.style.height = h + 'px'; }catch(e){}
+                  }
+                }catch(e){}
               }catch(e){}
             };
             // Apply initial placeholder (replace stored)
