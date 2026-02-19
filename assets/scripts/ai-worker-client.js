@@ -624,6 +624,33 @@
                 clone.value = measurementValue;
                 clone.style.height = 'auto';
                 const measured = clone.scrollHeight || 0;
+                // Compute approximate line height for caret/line-count detection
+                let lineH = 0;
+                try{
+                  const lh = cs.lineHeight;
+                  if (!lh || lh === 'normal') lineH = (parseFloat(cs.fontSize) || 16) * 1.2;
+                  else if (lh.indexOf && lh.indexOf('px') !== -1) lineH = parseFloat(lh);
+                  else lineH = (parseFloat(lh) || 1.2) * (parseFloat(cs.fontSize) || 16);
+                }catch(e){ lineH = 18; }
+                const curLines = lineH > 0 ? Math.max(1, Math.round(measured / lineH)) : null;
+                // Approximate caret occlusion by measuring the clone with text up to selectionStart
+                let caretOccluded = false;
+                try{
+                  if (isFocused && typeof input.selectionStart === 'number' && window.visualViewport) {
+                    const sel = input.selectionStart || 0;
+                    if (sel > 0) {
+                      const old = clone.value;
+                      try{ clone.value = (input.value || '').slice(0, sel); clone.style.height = 'auto'; }catch(e){}
+                      const caretMeasured = clone.scrollHeight || 0;
+                      try{ clone.value = old; clone.style.height = 'auto'; }catch(e){}
+                      const caretLine = lineH > 0 ? Math.max(1, Math.round(caretMeasured / lineH)) : 1;
+                      const caretY = (input.getBoundingClientRect().top || 0) + (caretLine * lineH);
+                      const vv = window.visualViewport;
+                      const margin = 8;
+                      caretOccluded = (vv && (caretY > ((vv.height || 0) - margin)));
+                    }
+                  }
+                }catch(e){ caretOccluded = false; }
                 let targetH = Math.max(12, Math.round(measured));
                 // If a visualViewport is present (mobile keyboard visible), cap
                 // the target height so the textarea doesn't grow into the
@@ -634,10 +661,12 @@
                     const vv = window.visualViewport;
                     const margin = 8; // small breathing room above keyboard
                     let available = Math.round(vv.height - rect.top - margin);
-                    // If focused and constrained, bring the field into view so
+                    const isOccluded = caretOccluded || (rect.top < 0) || (vv && rect.bottom > ((vv.height) - margin));
+                    const lineChanged = (typeof w._lastLineCount === 'number' && curLines !== null && curLines !== w._lastLineCount);
+                    // If focused and constrained (or caret/line is occluded), bring the field into view so
                     // it can expand naturally instead of showing an internal
                     // scrollbar. After scrolling, set the full target height.
-                    if (isFocused && available > 0 && targetH > available) {
+                    if (isFocused && (isOccluded || lineChanged || (available > 0 && targetH > available))) {
                       try{ input.scrollIntoView({ block: 'center', inline: 'nearest' }); }catch(e){}
                       requestAnimationFrame(()=>{
                         try{
@@ -695,6 +724,8 @@
                     }catch(e){}
                   }
                 }catch(e){}
+                // remember last measured line count for change detection
+                try{ if (curLines !== null) w._lastLineCount = curLines; }catch(e){}
               }catch(e){}
             });
           }catch(e){}
