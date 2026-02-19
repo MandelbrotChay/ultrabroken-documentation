@@ -121,7 +121,11 @@
       if (placeholder.dataset.aiInitialized === '1') return;
       // If an instance already exists inside, mark initialized and skip
       if (placeholder.querySelector('.ub-ai-root')) { placeholder.dataset.aiInitialized = '1'; return; }
-      const w = (typeof window.initAIInput === 'function') ? window.initAIInput(placeholder) : render(placeholder);
+      const __ai_input_module_available = (typeof window.initAIInput === 'function');
+      const w = __ai_input_module_available ? window.initAIInput(placeholder) : render(placeholder);
+      try { placeholder.dataset.aiInputUsed = __ai_input_module_available ? 'module' : 'fallback'; } catch(e) {}
+      try { window.__AI_INPUT_USED = __ai_input_module_available ? 'module' : 'fallback'; } catch(e) {}
+      try { if (console && console.debug) console.debug('ai-worker-client: input init used', window.__AI_INPUT_USED, placeholder); } catch(e) {}
       // No user-facing toggle: `SHOW_MODEL_SOURCES` controls whether model-
       // returned `Source:` lines are rendered. This is intentionally internal.
       // The Worker now returns structured `response_text`, optional `response_sources` (text block)
