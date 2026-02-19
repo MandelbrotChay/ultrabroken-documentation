@@ -609,20 +609,18 @@
                     const vv = window.visualViewport;
                     const margin = 8; // small breathing room above keyboard
                     let available = Math.round(vv.height - rect.top - margin);
-                    // If focused and constrained, bring the field into view so
-                    // it can expand naturally instead of showing an internal
-                    // scrollbar. After scrolling, set the full target height.
+                    // If focused and constrained, set the measured height first
+                    // then bring the field into view so the resize and scrolling
+                    // are ordered predictably on mobile. We set a flag so the
+                    // existing delta scroll is skipped later.
                     if (isFocused && available > 0 && targetH > available) {
-                      try{ w._didScrollIntoView = true; input.scrollIntoView({ block: 'center', inline: 'nearest' }); }catch(e){}
-                      requestAnimationFrame(()=>{
-                        try{
-                          const rect2 = input.getBoundingClientRect();
-                          const vv2 = window.visualViewport || vv;
-                          available = Math.round((vv2.height || vv.height) - rect2.top - margin);
-                          input.style.overflowY = 'hidden';
-                          try{ input.style.height = targetH + 'px'; }catch(e){}
-                        }catch(e){}
-                      });
+                      try{ input.style.overflowY = 'hidden'; }catch(e){}
+                      try{ input.style.height = targetH + 'px'; }catch(e){}
+                      try{
+                        requestAnimationFrame(()=>{
+                          try{ w._didScrollIntoView = true; input.scrollIntoView({ block: 'center', inline: 'nearest' }); }catch(e){}
+                        });
+                      }catch(e){}
                     } else {
                       if (available > 0 && targetH > available) {
                         targetH = Math.max(12, available);
