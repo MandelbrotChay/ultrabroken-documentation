@@ -866,14 +866,14 @@ li.task-list-item a, li.task-list a {
 /* Explicit share button styling so all AI controls are CSS-driven */
 .ub-ai-share {
   background: transparent;
-  padding: 0.15rem;
+  padding: 0.10rem;
   box-sizing: border-box;
   display: none; /* hidden until input has content */
   align-items: center;
   justify-content: center;
   border-radius: 0.2rem;
-  width: 1.6rem;
-  height: 1.6rem;
+  width: 1.44rem;
+  height: 1.44rem;
   border: none;
   cursor: pointer;
 }
@@ -883,7 +883,7 @@ li.task-list-item a, li.task-list a {
 /* Align controls to text baseline and nudge them slightly downward so
   their bottom edges visually match the input text baseline. Tweak
   the translateY value if more or less offset is needed. */
-.ub-ai-clear, .ub-ai-ask, .ub-ai-share { align-self: flex-end; transform: translateY(-0.4rem); }
+.ub-ai-clear, .ub-ai-ask, .ub-ai-share { align-self: flex-end; transform: translateY(-0.45rem); }
 
 /* DEBUG: temporarily force visible outline and minimum size to diagnose
    invisible/zero-size AI control icons. Remove after debugging. 
