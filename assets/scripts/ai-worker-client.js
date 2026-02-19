@@ -31,8 +31,22 @@
       // Force faux input enabled by default for testing/UX
       const useFaux = true;
       let input;
+      let nativeFallback = null;
       if (useFaux) {
+        // visible contenteditable
         input = el('div', { contenteditable: 'true', role: 'textbox', 'aria-multiline': 'true', 'data-ub-placeholder': _placeholder_text, class: 'ub-ai-input' }, '');
+        // hidden native textarea used for reliable value retrieval/submission and IME behavior
+        try{
+          nativeFallback = el('textarea', { 'aria-hidden': 'true', tabindex: '-1', class: 'ub-ai-native-hidden' }, '');
+          // visually-hide but keep in DOM for measurement/submission
+          nativeFallback.style.position = 'absolute';
+          nativeFallback.style.left = '-9999px';
+          nativeFallback.style.top = '0';
+          nativeFallback.style.width = '1px';
+          nativeFallback.style.height = '1px';
+          nativeFallback.style.opacity = '0';
+          nativeFallback.style.pointerEvents = 'none';
+        }catch(e){ nativeFallback = null; }
       } else {
         input = el('textarea', { placeholder: '', 'data-ub-placeholder': _placeholder_text, class: 'ub-ai-input', maxlength: String(MAX_QUERY_CHARS), rows: '1' });
       }
@@ -58,6 +72,7 @@
     const out = el('div', { class: 'ub-ai-out' }, '');
     const evidenceWrap = el('div', { class: 'ub-ai-evidence' }, '');
     inputWrap.appendChild(input);
+    try{ if (nativeFallback) inputWrap.appendChild(nativeFallback); }catch(e){}
     row.appendChild(inputWrap);
     // place clear as its own control (sibling to ask/share) so it behaves like other action buttons
     row.appendChild(clearBtn);
@@ -69,7 +84,7 @@
     // append evidence container to the widget so it's accessible via the returned handle
     root.appendChild(evidenceWrap);
     container.appendChild(root);
-    return { input, inputWrap, btn: askBtn, share: shareBtn, out, clear: clearBtn, evidence: evidenceWrap };
+    return { input, inputWrap, native: nativeFallback, btn: askBtn, share: shareBtn, out, clear: clearBtn, evidence: evidenceWrap };
   }
 
   async function askWorker(q){
@@ -267,13 +282,17 @@
       w.btn.addEventListener('click', handleAsk);
       // helper accessors for faux input support
       w.getValue = ()=>{
+        try{ if (w.native && w.native.value != null) return String(w.native.value || ''); }catch(e){}
         try{ if (w.input && w.input.contentEditable === 'true') return String(w.input.textContent || ''); }catch(e){}
         try{ return String(w.input && w.input.value || ''); }catch(e){ return ''; }
       };
       w.setValue = (v)=>{
+        try{ if (w.native) w.native.value = v; }catch(e){}
         try{ if (w.input && w.input.contentEditable === 'true') { w.input.textContent = v; return; } }catch(e){}
         try{ if (w.input) w.input.value = v; }catch(e){}
       };
+      // Ensure native fallback is initially synchronized
+      try{ if (w.native) { try{ w.native.value = (typeof w.getValue === 'function' ? w.getValue() : (w.input && w.input.value || '')); }catch(e){} } }catch(e){}
       // Submit on plain Enter. Ctrl/Cmd+Enter inserts a newline at the caret.
       w.input.addEventListener('keydown', (ev)=>{
         if (ev.key === 'Enter') {
@@ -723,6 +742,7 @@
           }catch(e){}
         };
         ['input','change','paste','cut','compositionend'].forEach(evt => w.input.addEventListener(evt, ()=>{
+          try{ if (w.native) { try{ w.native.value = (typeof w.getValue === 'function' ? w.getValue() : (w.input && w.input.value || '')); }catch(e){} } }catch(e){}
           try{ updateVisibility(); }catch(e){}
           try{ requestAnimationFrame(()=>{ try{ autosize(); }catch(e){} }); }catch(e){}
         }));
