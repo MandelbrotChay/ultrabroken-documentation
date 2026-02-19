@@ -814,7 +814,7 @@ li.task-list-item a, li.task-list a {
   top: 0.4rem;
   right: 0.4rem;
     /* Use the project's horizontal-rule separator color for overlay placeholder */
-    color: var(--hr-sep) !important;
+  color: var(--hr-sep) !important;
   pointer-events: none;
   /* Force New Rocker when available; fall back to Texturina then inherited */
   font-family: 'New Rocker', 'Texturina', inherit !important;
@@ -824,8 +824,7 @@ li.task-list-item a, li.task-list a {
   overflow: hidden;
   display: block;
   z-index: 4;
-  color: var(--hr-sep) !important;
-  opacity: 0.95;
+  opacity: 1 !important;
 }
 
 /* Remove default focus outline/shadow for the AI input so it doesn't draw
