@@ -68,10 +68,8 @@
     root.appendChild(out);
     root.appendChild(evidenceWrap);
     container.appendChild(root);
-    // runtime debug marker: indicate module initialized for this container
+    // runtime marker: indicate module initialized for this container
     try { container.dataset.aiInput = 'module'; } catch (e) {}
-    try { window.__AI_INPUT_MODULE_INITIALIZED = true; } catch (e) {}
-    try { if (console && console.debug) console.debug('ai-input: module initialized for', container); } catch (e) {}
 
     // State machine
     const state = { _focused: false, _composing: false, _wasBlurredEmpty: false, _placeholderMeasuredHeight: null };

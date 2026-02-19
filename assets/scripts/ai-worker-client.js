@@ -125,38 +125,15 @@
       // the client does not depend on build/time ordering. Try several
       // common path variants (relative and absolute) and stop when one
       // succeeds. This sets `__AI_INPUT_ATTEMPTED` so we don't re-inject.
-      try {
-        // Attempt only the single canonical hosted URL.
-        const scriptUrl = 'https://nan-gogh.github.io/ultrabroken-documentation/assets/scripts/ai-input.js';
-        if (typeof window.initAIInput !== 'function' && !window.__AI_INPUT_ATTEMPTED) {
-          window.__AI_INPUT_ATTEMPTED = true;
-          // eslint-disable-next-line no-await-in-loop
-          const ok = await new Promise((resolve) => {
-            try {
-              const s = document.createElement('script');
-              s.src = scriptUrl;
-              s.async = false;
-              s.onload = () => resolve(true);
-              s.onerror = () => resolve(false);
-              (document.head || document.documentElement).appendChild(s);
-            } catch (e) { resolve(false); }
-          });
-          if (!ok || typeof window.initAIInput !== 'function') {
-            try { console.debug('ai-worker-client: attempted ai-input load URL:', scriptUrl); } catch(e) {}
-          }
-        }
-      } catch (e) { /* ignore loader errors and fall through to check below */ }
+      // The `ai-input.js` module should be included by the page (mkdocs order).
+      // No dynamic loading here; fall through to presence check below.
 
       if (typeof window.initAIInput !== 'function') {
-        if (!window.__AI_INPUT_MISSING_LOGGED) {
-          try { console.error('ai-worker-client: initAIInput not found; ai-input module not loaded'); } catch(e) {}
-          window.__AI_INPUT_MISSING_LOGGED = true;
-        }
+        try { console.error('ai-worker-client: initAIInput not found; ai-input module not loaded'); } catch(e) {}
         return;
       }
       const w = window.initAIInput(placeholder);
       try { placeholder.dataset.aiInputUsed = 'module'; } catch(e) {}
-      try { window.__AI_INPUT_USED = 'module'; } catch(e) {}
       try { if (console && console.debug) console.debug('ai-worker-client: input init used module', placeholder); } catch(e) {}
       // No user-facing toggle: `SHOW_MODEL_SOURCES` controls whether model-
       // returned `Source:` lines are rendered. This is intentionally internal.
@@ -281,26 +258,24 @@
                 list.appendChild(li);
               }
             });
+
           }
 
           // Always render Worker-provided evidence as authoritative clickable links
           try{
             const ev = r.evidence || [];
-            // Worker evidence rendering controlled by internal flag.
             if (Array.isArray(ev) && ev.length){
               // reuse existing list if model sources created one, otherwise create
               let list = w.evidence && w.evidence.querySelector && w.evidence.querySelector('.ub-ai-evidence-list');
               if (!list) { list = el('ul', { class: 'ub-ai-evidence-list' }, []); if (w.evidence) w.evidence.appendChild(list); }
               ev.forEach(item => {
                 const id = item.id || item.path || '';
-                // Prefer item.title for search queries; fallback to normalized id
                 const titleText = item.title || '';
-                // Normalize id to a wiki path without .md
                 let slug = String(id).replace(/\.md$/,'').replace(/^\/+|\/+$/g, '');
                 const text = titleText || slug || id;
                 if (USE_TITLE_SEARCH_LINKS) {
                   const query = String(text).trim();
-                  if (seenQueries.has(query)) return; // already emitted by model sources
+                  if (seenQueries.has(query)) return;
                   seenQueries.add(query);
                   const href = 'search:' + encodeURIComponent(query);
                   const a = el('a', { href: href, class: 'search-link', 'data-query': query }, text);
