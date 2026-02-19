@@ -628,6 +628,19 @@
                         }catch(e){}
                         try{ w._skipScrollBy = false; }catch(e){}
                       });
+                        // When we've scrolled the element into view, the later
+                        // expansion can still change layout. Compensate by
+                        // scrolling down by the height delta inside the rAF so
+                        // the input remains visible and avoids overshoot.
+                        requestAnimationFrame(()=>{
+                          try{
+                            const curH = parseInt((input.style.height||'0').replace('px',''),10) || 0;
+                            const deltaAfter = Math.max(0, Math.round(targetH - curH));
+                            if (deltaAfter > 0) {
+                              try{ window.scrollBy({ top: deltaAfter, left: 0, behavior: 'auto' }); }catch(e){}
+                            }
+                          }catch(e){}
+                        });
                     } else {
                       if (available > 0 && targetH > available) {
                         targetH = Math.max(12, available);
