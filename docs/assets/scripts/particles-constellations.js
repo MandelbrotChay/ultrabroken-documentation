@@ -11,6 +11,9 @@
     particleAlpha: 0.9,
     spawnPadding: 40         // spawn below bottom
   };
+  // Burst settings: occasional bursts spawn multiple particles together
+  cfg.burstChance = 0.12; // probability a recycle triggers a burst
+  cfg.burstSize = 6;      // number of particles in a burst
   // Maximum simultaneous connections per particle (reduce visual clutter)
   cfg.maxConnections = 3;
 
@@ -50,9 +53,9 @@
 
   function rand(a,b){return a + Math.random()*(b-a);} 
 
-  function makeParticle(spawnInside){
+  function makeParticle(spawnInside, clusterX){
     const size = rand(cfg.minSize, cfg.maxSize);
-    const x = rand(0, W);
+    const x = (typeof clusterX === 'number') ? Math.max(0, Math.min(W, clusterX + rand(-20,20))) : rand(0, W);
     const y = spawnInside ? rand(H*0.2,H) : H + rand(0, cfg.spawnPadding);
     const speed = rand(cfg.minSpeed, cfg.maxSpeed) / 1000; // px/ms
     const vx = rand(-10,10)/1000; // slight horizontal drift px/ms
