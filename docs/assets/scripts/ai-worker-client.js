@@ -112,7 +112,7 @@
 
   // Idempotent initializer for the AI widget. Safe to call multiple times
   // (e.g. after MkDocs Material instant navigation swaps).
-  function initAIWidget(){
+  async function initAIWidget(){
     try{
       const placeholder = document.querySelector('#ai-search-root');
       // Toggle centered rune class based on presence of the AI page placeholder
@@ -121,6 +121,24 @@
       if (placeholder.dataset.aiInitialized === '1') return;
       // If an instance already exists inside, mark initialized and skip
       if (placeholder.querySelector('.ub-ai-root')) { placeholder.dataset.aiInitialized = '1'; return; }
+      // Ensure the input module is present: attempt to load it now so
+      // the client does not depend on build/time ordering. This injects
+      // the canonical `ai-input.js` once and waits for it to execute.
+      try {
+        const scriptUrl = '/ultrabroken-documentation/assets/scripts/ai-input.js';
+        if (typeof window.initAIInput !== 'function' && !window.__AI_INPUT_ATTEMPTED) {
+          window.__AI_INPUT_ATTEMPTED = true;
+          await new Promise((resolve) => {
+            const s = document.createElement('script');
+            s.src = scriptUrl;
+            s.async = false; // execute in order
+            s.onload = () => resolve(true);
+            s.onerror = () => resolve(false);
+            document.head.appendChild(s);
+          });
+        }
+      } catch (e) { /* ignore loader errors and fall through to check below */ }
+
       if (typeof window.initAIInput !== 'function') {
         try { console.error('ai-worker-client: initAIInput not found; ai-input module not loaded'); } catch(e) {}
         return;
