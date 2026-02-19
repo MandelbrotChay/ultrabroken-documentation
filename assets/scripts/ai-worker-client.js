@@ -99,6 +99,8 @@
       const w = render(placeholder);
       // IME composition guard: true while user is composing (e.g. CJK input)
       w._composing = false;
+      // Stabilization flag: set when we force a full height while occluded
+      w._needStabilize = false;
       // No user-facing toggle: `SHOW_MODEL_SOURCES` controls whether model-
       // returned `Source:` lines are rendered. This is intentionally internal.
       // The Worker now returns structured `response_text`, optional `response_sources` (text block)
@@ -644,6 +646,24 @@
                           available = Math.round((vv2.height || vv.height) - rect2.top - margin);
                           input.style.overflowY = 'hidden';
                           try{ input.style.height = targetH + 'px'; }catch(e){}
+                          // After forcing full height while occluded, the visual
+                          // viewport (keyboard) may still be animating. Re-run
+                          // autosize once the viewport stabilizes to avoid stale
+                          // measurements leaving the caret occluded.
+                          try{
+                            w._needStabilize = true;
+                            const finalize = ()=>{
+                              if (!w._needStabilize) return;
+                              w._needStabilize = false;
+                              try{ requestAnimationFrame(()=>{ try{ autosize(); }catch(e){} }); }catch(e){}
+                            };
+                            if (window.visualViewport) {
+                              const onResize = ()=>{ try{ finalize(); }catch(e){} };
+                              window.visualViewport.addEventListener('resize', onResize, { once: true });
+                            }
+                            // Fallback timeout in case resize event doesn't fire
+                            setTimeout(()=>{ try{ finalize(); }catch(e){} }, 140);
+                          }catch(e){}
                         }catch(e){}
                       });
                     } else {
