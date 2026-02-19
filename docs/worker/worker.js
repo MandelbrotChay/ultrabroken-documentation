@@ -2,6 +2,9 @@
  * Minimal Cloudflare Worker scaffold for RAG over a precomputed wiki_index.json.
  */
 
+// Synonym sets extracted to JSON for easier editing and reuse
+import SYNONYM_SETS from './synonyms.json' assert { type: 'json' };
+
 // Increase TOP_K to collect more candidates (we'll deduplicate by path for evidence)
 const TOP_K = 12;
 // Lower threshold so BM25 hits on reasonable queries; tune up if too noisy.
@@ -111,14 +114,9 @@ export default {
     const QUESTION_WORDS = new Set(['what','how','why','where','when','which','who','whom','whose']);
     const COMMON_LOWERCASE_STOPWORDS = new Set(['the','a','an','to','of','in','on','for','by','with','and','or','is','are']);
     const WHITELIST = new Set(['Zuggle','Tulin','Overload']); // add domain-specific terms here
-    // Synonym sets: group equivalent terms/phrases together. Each array is a
-    // symmetric set — when any member is matched, we can emit the others.
-    const SYNONYM_SETS = Object.freeze([
-      ['oob', 'out of bounds', 'out-of-bounds'],
-      ['sld', 'persistent save load object transfer'],
-      ['sd', 'stick_desync', 'stick desync'],
-      ['Ultrabroken', 'ultrabreak', 'UB']
-    ]);
+    // Synonym sets are loaded from `synonyms.json` via the import at top.
+    // Keeping the value frozen for parity with previous inline definition.
+    const SYNONYM_SETS = Object.freeze(Array.isArray(SYNONYM_SETS) ? SYNONYM_SETS : []);
 
     // Build a lookup: member (lowercased) -> array of other members in the same set.
     // Also build a list of multi-word synonym phrases (parts) for greedy matching.
