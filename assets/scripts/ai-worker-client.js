@@ -465,55 +465,6 @@
           inputEl.style.height = target + 'px';
         }catch(e){}
       };
-      // Best-effort focused scroll-lock: when the input is focused we save
-      // the current page scroll and attempt to restore it on scroll/viewport
-      // changes or input events so mobile UAs don't aggressively pan the
-      // page while the user types. This is intentionally conservative and
-      // non-intrusive.
-      const enableFocusedScrollLock = (inputEl) => {
-        try{
-          if (!inputEl) return;
-          let saved = { x: window.scrollX || window.pageXOffset || 0, y: window.scrollY || window.pageYOffset || 0 };
-          let vv = window.visualViewport;
-          let restoring = false;
-
-          const restore = ()=>{
-            try{
-              if (restoring) return;
-              // Only restore while the input remains focused
-              if (document.activeElement !== inputEl) return;
-              restoring = true;
-              window.scrollTo(saved.x, saved.y);
-              if (vv && typeof vv.scrollTo === 'function') {
-                try{ vv.scrollTo(saved.x, saved.y); }catch(e){}
-              }
-            }catch(e){} finally { restoring = false; }
-          };
-
-          const onFocus = ()=>{
-            try{
-              saved = { x: window.scrollX || window.pageXOffset || 0, y: window.scrollY || window.pageYOffset || 0 };
-              // attach listeners that may indicate the UA attempted to pan
-              window.addEventListener('scroll', restore, { passive: true });
-              document.addEventListener('selectionchange', restore);
-              inputEl.addEventListener('input', restore);
-              if (vv) { vv.addEventListener('scroll', restore); vv.addEventListener('resize', restore); }
-            }catch(e){}
-          };
-
-          const onBlur = ()=>{
-            try{
-              window.removeEventListener('scroll', restore);
-              document.removeEventListener('selectionchange', restore);
-              inputEl.removeEventListener('input', restore);
-              if (vv) { vv.removeEventListener('scroll', restore); vv.removeEventListener('resize', restore); }
-            }catch(e){}
-          };
-
-          inputEl.addEventListener('focus', onFocus);
-          inputEl.addEventListener('blur', onBlur);
-        }catch(e){}
-      };
       try{
         // Ensure clear button exists
         if (w.clear){
@@ -531,7 +482,7 @@
             try{ if (w.out) { w.out.textContent = ''; w.out.innerHTML = ''; } }catch(e){}
             // Also clear parsed/rendered sources/evidence
             try{ if (w.evidence) w.evidence.innerHTML = ''; }catch(e){}
-            try { w.input.focus({ preventScroll: true }); } catch(e) { try { w.input.focus(); }catch(e){} }
+            w.input.focus(); 
             // Immediately collapse to single-line visual height, then run autosize
             try{ collapseToSingleLine(w.input); }catch(e){}
             try{ if (typeof autosize === 'function') autosize(); }catch(e){}
@@ -676,12 +627,29 @@
                     const rect = input.getBoundingClientRect();
                     const vv = window.visualViewport;
                     const margin = 8; // small breathing room above keyboard
-                    const available = Math.round(vv.height - rect.top - margin);
-                    if (available > 0 && targetH > available) {
-                      targetH = Math.max(12, available);
-                      input.style.overflowY = 'auto';
+                    let available = Math.round(vv.height - rect.top - margin);
+                    // If focused and constrained, bring the field into view so
+                    // it can expand naturally instead of showing an internal
+                    // scrollbar. After scrolling, set the full target height.
+                    if (isFocused && available > 0 && targetH > available) {
+                      // scrollIntoView temporarily disabled for quick testing
+                      // try{ input.scrollIntoView({ block: 'center', inline: 'nearest' }); }catch(e){}
+                      requestAnimationFrame(()=>{
+                        try{
+                          const rect2 = input.getBoundingClientRect();
+                          const vv2 = window.visualViewport || vv;
+                          available = Math.round((vv2.height || vv.height) - rect2.top - margin);
+                          input.style.overflowY = 'hidden';
+                          try{ input.style.height = targetH + 'px'; }catch(e){}
+                        }catch(e){}
+                      });
                     } else {
-                      input.style.overflowY = 'hidden';
+                      if (available > 0 && targetH > available) {
+                        targetH = Math.max(12, available);
+                        input.style.overflowY = 'auto';
+                      } else {
+                        input.style.overflowY = 'hidden';
+                      }
                     }
                   } else {
                     input.style.overflowY = 'hidden';
@@ -719,8 +687,6 @@
         window.addEventListener('resize', resizeIcons);
         // initial state
         updateVisibility();
-        // Enable focused scroll-lock to attempt to keep page scroll stable
-        try{ if (typeof enableFocusedScrollLock === 'function') enableFocusedScrollLock(w.input); }catch(e){}
       }catch(e){ /* ignore */ }
       // Keep rune centered while on the AI page
       try{ document.body.classList.add('ultrabroken-center-rune'); }catch(e){}
