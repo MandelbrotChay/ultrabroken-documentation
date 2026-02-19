@@ -813,18 +813,21 @@ li.task-list-item a, li.task-list a {
   left: 0.4rem;
   top: 0.4rem;
   right: 0.4rem;
-    /* Use the project's horizontal-rule separator color for overlay placeholder */
+  /* Use the project's horizontal-rule separator color for overlay placeholder */
   color: var(--hr-sep) !important;
   pointer-events: none;
-  /* Force New Rocker when available; fall back to Texturina then inherited */
-  font-family: 'New Rocker', 'Texturina', inherit !important;
+  /* Match the real input's font/metrics so wrapping and height match */
+  font-family: 'New Rocker', 'Texturina', Georgia, 'Times New Roman', serif !important;
   font-size: 1.25rem;
   line-height: 1.2;
   white-space: pre-wrap;
+  overflow-wrap: break-word;
+  word-break: normal;
   overflow: hidden;
+  box-sizing: border-box;
+  padding: 0.4rem 0;
   display: block;
   z-index: 4;
-  opacity: 1 !important;
 }
 
 /* Remove default focus outline/shadow for the AI input so it doesn't draw
