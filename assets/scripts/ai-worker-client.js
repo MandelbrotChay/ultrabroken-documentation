@@ -121,7 +121,7 @@
       if (placeholder.dataset.aiInitialized === '1') return;
       // If an instance already exists inside, mark initialized and skip
       if (placeholder.querySelector('.ub-ai-root')) { placeholder.dataset.aiInitialized = '1'; return; }
-      const w = render(placeholder);
+      const w = (typeof window.initAIInput === 'function') ? window.initAIInput(placeholder) : render(placeholder);
       // No user-facing toggle: `SHOW_MODEL_SOURCES` controls whether model-
       // returned `Source:` lines are rendered. This is intentionally internal.
       // The Worker now returns structured `response_text`, optional `response_sources` (text block)
