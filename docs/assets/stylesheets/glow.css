@@ -824,7 +824,7 @@ li.task-list-item a, li.task-list a {
   overflow: hidden;
   display: block;
   z-index: 4;
-  -webkit-text-fill-color: var(--hr-sep) !important;
+  color: var(--hr-sep) !important;
   opacity: 0.95;
 }
 
