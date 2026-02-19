@@ -3,7 +3,6 @@
   Usage: include this script and add a page with <div id="ai-search-root"></div>
   Configure worker URL via `window.AI_WORKER_URL` or set in localStorage('ai_worker_url').
 */
-
 (function(){
   
   function el(tag, attrs={}, children=[]){
@@ -97,10 +96,6 @@
       // If an instance already exists inside, mark initialized and skip
       if (placeholder.querySelector('.ub-ai-root')) { placeholder.dataset.aiInitialized = '1'; return; }
       const w = render(placeholder);
-      // IME composition guard: true while user is composing (e.g. CJK input)
-      w._composing = false;
-      // Stabilization flag: set when we force a full height while occluded
-      w._needStabilize = false;
       // No user-facing toggle: `SHOW_MODEL_SOURCES` controls whether model-
       // returned `Source:` lines are rendered. This is intentionally internal.
       // The Worker now returns structured `response_text`, optional `response_sources` (text block)
@@ -591,12 +586,10 @@
               }catch(e){ return null; }
             };
 
-                requestAnimationFrame(()=>{
+            requestAnimationFrame(()=>{
               try{
                 const input = w.input;
                 if (!input) return;
-                // If the user is composing via IME, defer autosize until compositionend
-                if (w._composing) return;
                 const clone = ensureClone();
                 const storedPlaceholder = input.getAttribute('data-ub-placeholder') || '';
                 // When the textarea is focused and empty we want it to collapse
@@ -623,46 +616,7 @@
                 }catch(e){}
                 clone.value = measurementValue;
                 clone.style.height = 'auto';
-                let measured = clone.scrollHeight || 0;
-                // Compute approximate line height for caret/line-count detection
-                let lineH = 0;
-                try{
-                  const lh = cs.lineHeight;
-                  if (!lh || lh === 'normal') lineH = (parseFloat(cs.fontSize) || 16) * 1.2;
-                  else if (lh.indexOf && lh.indexOf('px') !== -1) lineH = parseFloat(lh);
-                  else lineH = (parseFloat(lh) || 1.2) * (parseFloat(cs.fontSize) || 16);
-                }catch(e){ lineH = 18; }
-                const curLines = lineH > 0 ? Math.max(1, Math.round(measured / lineH)) : null;
-                // If this is a sensitive case (focused & caret occluded or line-count changed),
-                // prefer measuring the real input's scrollHeight for accuracy.
-                try{
-                  const lineChanged = (typeof w._lastLineCount === 'number' && curLines !== null && curLines !== w._lastLineCount);
-                  const sensitive = isFocused && (caretOccluded || lineChanged);
-                  if (sensitive) {
-                    try{
-                      const realMeasured = (input && input.scrollHeight) ? input.scrollHeight : 0;
-                      if (realMeasured > 0) measured = realMeasured;
-                    }catch(e){}
-                  }
-                }catch(e){}
-                // Approximate caret occlusion by measuring the clone with text up to selectionStart
-                let caretOccluded = false;
-                try{
-                  if (isFocused && typeof input.selectionStart === 'number' && window.visualViewport) {
-                    const sel = input.selectionStart || 0;
-                    if (sel > 0) {
-                      const old = clone.value;
-                      try{ clone.value = (input.value || '').slice(0, sel); clone.style.height = 'auto'; }catch(e){}
-                      const caretMeasured = clone.scrollHeight || 0;
-                      try{ clone.value = old; clone.style.height = 'auto'; }catch(e){}
-                      const caretLine = lineH > 0 ? Math.max(1, Math.round(caretMeasured / lineH)) : 1;
-                      const caretY = (input.getBoundingClientRect().top || 0) + (caretLine * lineH);
-                      const vv = window.visualViewport;
-                      const margin = 8;
-                      caretOccluded = (vv && (caretY > ((vv.height || 0) - margin)));
-                    }
-                  }
-                }catch(e){ caretOccluded = false; }
+                const measured = clone.scrollHeight || 0;
                 let targetH = Math.max(12, Math.round(measured));
                 // If a visualViewport is present (mobile keyboard visible), cap
                 // the target height so the textarea doesn't grow into the
@@ -673,12 +627,10 @@
                     const vv = window.visualViewport;
                     const margin = 8; // small breathing room above keyboard
                     let available = Math.round(vv.height - rect.top - margin);
-                    const isOccluded = caretOccluded || (rect.top < 0) || (vv && rect.bottom > ((vv.height) - margin));
-                    const lineChanged = (typeof w._lastLineCount === 'number' && curLines !== null && curLines !== w._lastLineCount);
-                    // If focused and constrained (or caret/line is occluded), bring the field into view so
+                    // If focused and constrained, bring the field into view so
                     // it can expand naturally instead of showing an internal
                     // scrollbar. After scrolling, set the full target height.
-                    if (isFocused && (isOccluded || lineChanged || (available > 0 && targetH > available))) {
+                    if (isFocused && available > 0 && targetH > available) {
                       try{ input.scrollIntoView({ block: 'center', inline: 'nearest' }); }catch(e){}
                       requestAnimationFrame(()=>{
                         try{
@@ -687,24 +639,6 @@
                           available = Math.round((vv2.height || vv.height) - rect2.top - margin);
                           input.style.overflowY = 'hidden';
                           try{ input.style.height = targetH + 'px'; }catch(e){}
-                          // After forcing full height while occluded, the visual
-                          // viewport (keyboard) may still be animating. Re-run
-                          // autosize once the viewport stabilizes to avoid stale
-                          // measurements leaving the caret occluded.
-                          try{
-                            w._needStabilize = true;
-                            const finalize = ()=>{
-                              if (!w._needStabilize) return;
-                              w._needStabilize = false;
-                              try{ requestAnimationFrame(()=>{ try{ autosize(); }catch(e){} }); }catch(e){}
-                            };
-                            if (window.visualViewport) {
-                              const onResize = ()=>{ try{ finalize(); }catch(e){} };
-                              window.visualViewport.addEventListener('resize', onResize, { once: true });
-                            }
-                            // Fallback timeout in case resize event doesn't fire
-                            setTimeout(()=>{ try{ finalize(); }catch(e){} }, 140);
-                          }catch(e){}
                         }catch(e){}
                       });
                     } else {
@@ -727,38 +661,23 @@
                     input.style.height = targetH + 'px';
                     // Scroll the page by the same delta so each new row
                     // effectively pushes content upward by the same amount.
-                      try{
-                        const delta = targetH - cur;
-                        if (delta > 0) {
-                          const top = Math.round(delta);
-                          // If we flagged stabilization, defer the page scroll until
-                          // after visualViewport stabilization to avoid an initial
-                          // incorrect jump. The stabilization flow will re-run
-                          // autosize and perform the scroll then.
-                          if (!w._needStabilize) {
-                            window.scrollBy({ top: top, left: 0, behavior: 'auto' });
-                          }
-                        }
-                      }catch(e){}
+                    try{
+                      const delta = targetH - cur;
+                      if (delta > 0) {
+                        const top = Math.round(delta);
+                        window.scrollBy({ top: top, left: 0, behavior: 'auto' });
+                      }
+                    }catch(e){}
                   }
                 }catch(e){}
-                // remember last measured line count for change detection
-                try{ if (curLines !== null) w._lastLineCount = curLines; }catch(e){}
               }catch(e){}
             });
           }catch(e){}
         };
-        ['input','change','paste','cut'].forEach(evt => w.input.addEventListener(evt, ()=>{
+        ['input','change','paste','cut','compositionend'].forEach(evt => w.input.addEventListener(evt, ()=>{
           try{ updateVisibility(); }catch(e){}
-          try{ 
-            // Don't autosize while composing; compositionend will trigger autosize
-            if (!w._composing) requestAnimationFrame(()=>{ try{ autosize(); }catch(e){} });
-          }catch(e){}
+          try{ requestAnimationFrame(()=>{ try{ autosize(); }catch(e){} }); }catch(e){}
         }));
-
-        // IME composition events: set a guard during composition and trigger autosize after composition ends
-        try{ w.input.addEventListener('compositionstart', ()=>{ try{ w._composing = true; }catch(e){} }); }catch(e){}
-        try{ w.input.addEventListener('compositionend', ()=>{ try{ w._composing = false; updateVisibility(); requestAnimationFrame(()=>{ try{ autosize(); }catch(e){} }); }catch(e){} }); }catch(e){}
         // initial sizing
         try{ autosize(); }catch(e){}
         // initial sizing and keep in sync with resizes
