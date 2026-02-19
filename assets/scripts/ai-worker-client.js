@@ -624,6 +624,13 @@
                 clone.style.height = 'auto';
                 const measured = clone.scrollHeight || 0;
                 let targetH = Math.max(12, Math.round(measured));
+                // Approximate current line count from measured height and line-height
+                let curLines = null;
+                try{
+                  const csLines = window.getComputedStyle(input);
+                  const lhVal = (csLines.lineHeight && csLines.lineHeight !== 'normal') ? parseFloat(csLines.lineHeight) : (parseFloat(csLines.fontSize) * 1.2 || 16);
+                  curLines = Math.max(1, Math.round(measured / lhVal));
+                }catch(e){ curLines = null; }
                 // If a visualViewport is present (mobile keyboard visible), cap
                 // the target height so the textarea doesn't grow into the
                 // keyboard area. If capped, allow internal scrolling.
@@ -665,8 +672,9 @@
                     }catch(e){ caretOccluded = false; }
 
                     const isOccluded = caretOccluded || (rect.top < 0) || (vv && rect.bottom > ((vv.height) - margin));
+                    const lineChanged = (typeof w._lastLineCount === 'number' && curLines !== null && curLines !== w._lastLineCount);
 
-                    if (isFocused && (isOccluded || (available > 0 && targetH > available))) {
+                    if (isFocused && (isOccluded || lineChanged || (available > 0 && targetH > available))) {
                       // If composing (IME), avoid forcing scroll/pan; defer until compositionend
                       if (w._composing) {
                         // no-op; compositionend will trigger autosize
