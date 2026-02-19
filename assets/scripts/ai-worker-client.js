@@ -624,43 +624,22 @@
                 // keyboard area. If capped, allow internal scrolling.
                 try{
                   if (window.visualViewport) {
-                    // If focused and constrained, bring the field into view so
-                    // it can expand naturally instead of showing an internal
-                    // scrollbar. After scrolling, set the full target height.
                     const rect = input.getBoundingClientRect();
                     const vv = window.visualViewport;
                     const margin = 8; // small breathing room above keyboard
-                    let available = Math.round(((vv && vv.height) || window.innerHeight) - rect.bottom - margin);
-                    const isOccluded = ((vv && rect.bottom > ((vv.height) - margin)) || rect.top < 0);
-
-                    if (isFocused && (isOccluded || (available > 0 && targetH > available))) {
-                      try{ input.scrollIntoView({ block: 'center', inline: 'nearest' }); }catch(e){}
+                    let available = Math.round(vv.height - rect.top - margin);
+                    // If focused and constrained, bring the field into view so
+                    // it can expand naturally instead of showing an internal
+                    // scrollbar. After scrolling, set the full target height.
+                    if (isFocused && available > 0 && targetH > available) {
+                      // try{ input.scrollIntoView({ block: 'center', inline: 'nearest' }); }catch(e){}
                       requestAnimationFrame(()=>{
                         try{
                           const rect2 = input.getBoundingClientRect();
                           const vv2 = window.visualViewport || vv;
-                          available = Math.round(((vv2 && vv2.height) || window.innerHeight) - rect2.bottom - margin);
+                          available = Math.round((vv2.height || vv.height) - rect2.top - margin);
                           input.style.overflowY = 'hidden';
                           try{ input.style.height = targetH + 'px'; }catch(e){}
-                          // After forcing the full target height while focused and
-                          // occluded, the keyboard/visualViewport may still be
-                          // changing. Attach a one-time resize listener on
-                          // visualViewport (and a short timeout fallback) to
-                          // re-run autosize once the viewport stabilizes so we
-                          // don't leave stale clamped heights/overflow on blur.
-                          try{
-                            w._needStabilize = true;
-                            if (window.visualViewport) {
-                              const vv3 = window.visualViewport;
-                              const onVV = function onVV(){
-                                try{ vv3.removeEventListener('resize', onVV); }catch(e){}
-                                w._needStabilize = false;
-                                try{ autosize(); }catch(e){}
-                              };
-                              try{ vv3.addEventListener('resize', onVV); }catch(e){}
-                            }
-                          }catch(e){}
-                          try{ setTimeout(()=>{ if (w._needStabilize) { w._needStabilize = false; try{ autosize(); }catch(e){} } }, 120); }catch(e){}
                         }catch(e){}
                       });
                     } else {
