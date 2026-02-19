@@ -624,20 +624,22 @@
                 // keyboard area. If capped, allow internal scrolling.
                 try{
                   if (window.visualViewport) {
-                    const rect = input.getBoundingClientRect();
-                    const vv = window.visualViewport;
-                    const margin = 8; // small breathing room above keyboard
-                    let available = Math.round(vv.height - rect.top - margin);
                     // If focused and constrained, bring the field into view so
                     // it can expand naturally instead of showing an internal
                     // scrollbar. After scrolling, set the full target height.
-                    if (isFocused && available > 0 && targetH > available) {
-                      // try{ input.scrollIntoView({ block: 'center', inline: 'nearest' }); }catch(e){}
+                    const rect = input.getBoundingClientRect();
+                    const vv = window.visualViewport;
+                    const margin = 8; // small breathing room above keyboard
+                    let available = Math.round(((vv && vv.height) || window.innerHeight) - rect.bottom - margin);
+                    const isOccluded = ((vv && rect.bottom > ((vv.height) - margin)) || rect.top < 0);
+
+                    if (isFocused && (isOccluded || (available > 0 && targetH > available))) {
+                      try{ input.scrollIntoView({ block: 'center', inline: 'nearest' }); }catch(e){}
                       requestAnimationFrame(()=>{
                         try{
                           const rect2 = input.getBoundingClientRect();
                           const vv2 = window.visualViewport || vv;
-                          available = Math.round((vv2.height || vv.height) - rect2.top - margin);
+                          available = Math.round(((vv2 && vv2.height) || window.innerHeight) - rect2.bottom - margin);
                           input.style.overflowY = 'hidden';
                           try{ input.style.height = targetH + 'px'; }catch(e){}
                         }catch(e){}
