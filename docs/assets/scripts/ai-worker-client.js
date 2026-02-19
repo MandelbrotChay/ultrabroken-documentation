@@ -461,7 +461,8 @@
           w.clear.style.display = 'none';
           w.clear.style.alignItems = 'center';
           w.clear.style.justifyContent = 'center';
-          w.clear.style.padding = '0';
+          // keep padding consistent with other controls (matches CSS .ub-ai-* padding)
+          w.clear.style.padding = '0.12rem';
           w.clear.appendChild(clearImg);
           w.clear.addEventListener('click', ()=>{ 
             w.input.value = ''; 
