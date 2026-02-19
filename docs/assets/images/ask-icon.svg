@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Normalized: original SVG (16.06×14.4) is scaled and centered inside 24×24
-     to provide consistent visual padding compared to other icons. -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-  <!-- Transform computed: scale ~= 1.1207, translate ~= (3.006, 3.936) -->
-  <g transform="translate(3.006 3.936) scale(1.1207)">
-    <polygon fill="#00f0c2" points="0.86 14.4 0 12.59 11.39 7.2 0 1.81 0.86 0 16.06 7.2 0.86 14.4" />
+<svg id="Ebene_2" data-name="Ebene 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.99 14.01">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #00f0c2;
+      }
+    </style>
+  </defs>
+  <g id="Ebene_3" data-name="Ebene 3">
+    <polygon class="cls-1" points=".58 14.01 0 12.9 11.29 7 0 1.11 .58 0 13.99 7 .58 14.01"/>
   </g>
 </svg>
