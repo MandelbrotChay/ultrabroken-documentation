@@ -919,8 +919,8 @@ li.task-list-item a, li.task-list a {
 /* Align AI widget with main content (measured delta: 16px)
    Adjusts the AI input container and its overlay so the textarea and
    fake placeholder visually align with `.md-content`. If this needs
-   tweaking, change the `-16px` value. */
+   tweaking, change the `-16px` value. 
 .ub-ai-root,
 .ub-ai-input-wrap {
   transform: translateX(-16px);
-}
+}*/
