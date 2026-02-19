@@ -5,6 +5,7 @@
   --teal-glow: #00f0c2;
   --teal-dark: #00796b;
   --hr-sep: rgba(255,255,255,0.12);
+  --muted-text: rgb(137, 139, 148);
   /* Marquee controls: pixels per second, and pause at ends (ms) */
   --ub-marquee-speed: 30;
   --ub-marquee-pause-ms: 1300;
@@ -813,8 +814,8 @@ li.task-list-item a, li.task-list a {
   left: 0.4rem;
   top: 0.4rem;
   right: 0.4rem;
-  /* Use the project's horizontal-rule separator color for overlay placeholder */
-  color: var(--hr-sep) !important;
+  /* Use the project's muted text color for overlay placeholder */
+  color: var(--muted-text) !important;
   pointer-events: none;
   /* Match the real input's font/metrics so wrapping and height match */
   font-family: 'New Rocker', 'Texturina', Georgia, 'Times New Roman', serif !important;
