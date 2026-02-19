@@ -122,25 +122,48 @@
       // If an instance already exists inside, mark initialized and skip
       if (placeholder.querySelector('.ub-ai-root')) { placeholder.dataset.aiInitialized = '1'; return; }
       // Ensure the input module is present: attempt to load it now so
-      // the client does not depend on build/time ordering. This injects
-      // the canonical `ai-input.js` once and waits for it to execute.
+      // the client does not depend on build/time ordering. Try several
+      // common path variants (relative and absolute) and stop when one
+      // succeeds. This sets `__AI_INPUT_ATTEMPTED` so we don't re-inject.
       try {
-        const scriptUrl = '/ultrabroken-documentation/assets/scripts/ai-input.js';
+        const candidates = [
+          'assets/scripts/ai-input.js',
+          '/assets/scripts/ai-input.js',
+          '/ultrabroken-documentation/assets/scripts/ai-input.js'
+        ];
+        const tried = [];
         if (typeof window.initAIInput !== 'function' && !window.__AI_INPUT_ATTEMPTED) {
           window.__AI_INPUT_ATTEMPTED = true;
-          await new Promise((resolve) => {
-            const s = document.createElement('script');
-            s.src = scriptUrl;
-            s.async = false; // execute in order
-            s.onload = () => resolve(true);
-            s.onerror = () => resolve(false);
-            document.head.appendChild(s);
-          });
+          for (const scriptUrl of candidates) {
+            if (typeof window.initAIInput === 'function') break;
+            // record attempt
+            tried.push(scriptUrl);
+            // attempt to load this candidate
+            // eslint-disable-next-line no-await-in-loop
+            const ok = await new Promise((resolve) => {
+              try {
+                const s = document.createElement('script');
+                s.src = scriptUrl;
+                s.async = false;
+                s.onload = () => resolve(true);
+                s.onerror = () => resolve(false);
+                (document.head || document.documentElement).appendChild(s);
+              } catch (e) { resolve(false); }
+            });
+            if (ok && typeof window.initAIInput === 'function') break;
+          }
+          // if module still missing, expose what was tried for debugging
+          if (typeof window.initAIInput !== 'function') {
+            try { console.debug('ai-worker-client: attempted ai-input load URLs:', tried); } catch(e) {}
+          }
         }
       } catch (e) { /* ignore loader errors and fall through to check below */ }
 
       if (typeof window.initAIInput !== 'function') {
-        try { console.error('ai-worker-client: initAIInput not found; ai-input module not loaded'); } catch(e) {}
+        if (!window.__AI_INPUT_MISSING_LOGGED) {
+          try { console.error('ai-worker-client: initAIInput not found; ai-input module not loaded'); } catch(e) {}
+          window.__AI_INPUT_MISSING_LOGGED = true;
+        }
         return;
       }
       const w = window.initAIInput(placeholder);
