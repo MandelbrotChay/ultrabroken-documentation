@@ -679,11 +679,18 @@
                     // it can expand naturally instead of showing an internal
                     // scrollbar. After scrolling, set the full target height.
                     if (isFocused && (isOccluded || lineChanged || (available > 0 && targetH > available))) {
-                      // Avoid calling scrollIntoView here because mobile browsers
-                      // will immediately auto-pan the page (causing the initial
-                      // wrong jump). Rely on the stabilization path that re-runs
-                      // `autosize()` after `visualViewport` stabilizes.
-                      // try{ input.scrollIntoView({ block: 'center', inline: 'nearest' }); }catch(e){}
+                      // Only perform an immediate scroll for the *first* character
+                      // typed (when the field goes from empty -> one char). For
+                      // other sensitive cases we rely on the stabilization path
+                      // to avoid the initial wrong jump on line changes.
+                      try{
+                        const val = String(input.value || '');
+                        const wasEmpty = (typeof w._lastLineCount !== 'number') || (w._lastLineCount === 0);
+                        const isFirstChar = wasEmpty && val.length === 1;
+                        if (isFirstChar) {
+                          try{ input.scrollIntoView({ block: 'center', inline: 'nearest' }); }catch(e){}
+                        }
+                      }catch(e){}
                       requestAnimationFrame(()=>{
                         try{
                           const rect2 = input.getBoundingClientRect();
