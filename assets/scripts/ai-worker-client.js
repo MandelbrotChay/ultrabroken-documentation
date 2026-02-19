@@ -3,6 +3,7 @@
   Usage: include this script and add a page with <div id="ai-search-root"></div>
   Configure worker URL via `window.AI_WORKER_URL` or set in localStorage('ai_worker_url').
 */
+
 (function(){
   
   function el(tag, attrs={}, children=[]){
@@ -631,11 +632,8 @@
                     // it can expand naturally instead of showing an internal
                     // scrollbar. After scrolling, set the full target height.
                     if (isFocused && available > 0 && targetH > available) {
-                      try{
-                        const docH = Math.max(document.body.scrollHeight || 0, (document.documentElement && document.documentElement.scrollHeight) || 0);
-                        window.scrollTo({ top: docH, left: 0, behavior: 'auto' });
-                      }catch(e){}
-                      /*requestAnimationFrame(()=>{
+                      try{ input.scrollIntoView({ block: 'center', inline: 'nearest' }); }catch(e){}
+                      requestAnimationFrame(()=>{
                         try{
                           const rect2 = input.getBoundingClientRect();
                           const vv2 = window.visualViewport || vv;
@@ -643,7 +641,7 @@
                           input.style.overflowY = 'hidden';
                           try{ input.style.height = targetH + 'px'; }catch(e){}
                         }catch(e){}
-                      });*/
+                      });
                     } else {
                       if (available > 0 && targetH > available) {
                         targetH = Math.max(12, available);
