@@ -620,7 +620,15 @@
                           const vv2 = window.visualViewport || vv;
                           available = Math.round((vv2.height || vv.height) - rect2.top - margin);
                           input.style.overflowY = 'hidden';
-                          try{ input.style.height = targetH + 'px'; }catch(e){}
+                          try{
+                            // preserve current rendered height to compute scroll delta
+                            const curH = Math.round(input.getBoundingClientRect().height) || parseInt((input.style.height||'0').replace('px',''),10) || 0;
+                            input.style.height = targetH + 'px';
+                            const delta = targetH - curH;
+                            if (delta > 0) {
+                              try{ window.scrollBy({ top: Math.round(delta), left: 0, behavior: 'auto' }); }catch(e){}
+                            }
+                          }catch(e){}
                         }catch(e){}
                       });
                     } else {
