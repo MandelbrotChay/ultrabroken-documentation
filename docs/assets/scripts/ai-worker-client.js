@@ -28,7 +28,8 @@
     const _placeholder_text = 'What is referred to as Wacko Boingo?';
       // Max query length (short questions). Configurable via `window.AI_MAX_QUERY_CHARS`.
       const MAX_QUERY_CHARS = (typeof window !== 'undefined' && window.AI_MAX_QUERY_CHARS) ? Number(window.AI_MAX_QUERY_CHARS) : 50;
-      const useFaux = !!(typeof window !== 'undefined' && window.AI_USE_FAUX_INPUT);
+      // Force faux input enabled by default for testing/UX
+      const useFaux = true;
       let input;
       if (useFaux) {
         input = el('div', { contenteditable: 'true', role: 'textbox', 'aria-multiline': 'true', 'data-ub-placeholder': _placeholder_text, class: 'ub-ai-input' }, '');
