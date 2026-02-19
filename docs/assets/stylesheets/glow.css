@@ -808,7 +808,7 @@ li.task-list-item a, li.task-list a {
 /* Click-through overlay placeholder for the AI input (guaranteed color)
    This overlay is positioned above the textarea content but does not
    intercept pointer events so clicks focus the real textarea below. */
-.ub-ai-input-wrap{ position: relative !important; margin-left: -0.25rem;}
+.ub-ai-input-wrap{ position: relative !important; margin-left: -0.3rem;}
 .ub-ai-fake-placeholder {
   position: absolute;
   inset: 0;
