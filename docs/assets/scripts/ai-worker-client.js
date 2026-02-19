@@ -402,11 +402,6 @@
             if (!w.input.value) {
               try{ if (w._fakePlaceholder) w._fakePlaceholder.style.display = 'block'; }catch(e){}
               try{ if (w.placeholderHeight) w.input.style.height = w.placeholderHeight + 'px'; }catch(e){}
-            } else {
-              // Ensure a final autosize runs after blur so height/overflow
-              // reflect the keyboard-closed viewport. Wrapped in rAF to let
-              // layout/visualViewport settle.
-              try{ requestAnimationFrame(()=>{ try{ if (typeof autosize === 'function') autosize(); }catch(e){} }); }catch(e){}
             }
           }catch(e){}
         });
@@ -647,6 +642,25 @@
                           available = Math.round(((vv2 && vv2.height) || window.innerHeight) - rect2.bottom - margin);
                           input.style.overflowY = 'hidden';
                           try{ input.style.height = targetH + 'px'; }catch(e){}
+                          // After forcing the full target height while focused and
+                          // occluded, the keyboard/visualViewport may still be
+                          // changing. Attach a one-time resize listener on
+                          // visualViewport (and a short timeout fallback) to
+                          // re-run autosize once the viewport stabilizes so we
+                          // don't leave stale clamped heights/overflow on blur.
+                          try{
+                            w._needStabilize = true;
+                            if (window.visualViewport) {
+                              const vv3 = window.visualViewport;
+                              const onVV = function onVV(){
+                                try{ vv3.removeEventListener('resize', onVV); }catch(e){}
+                                w._needStabilize = false;
+                                try{ autosize(); }catch(e){}
+                              };
+                              try{ vv3.addEventListener('resize', onVV); }catch(e){}
+                            }
+                          }catch(e){}
+                          try{ setTimeout(()=>{ if (w._needStabilize) { w._needStabilize = false; try{ autosize(); }catch(e){} } }, 120); }catch(e){}
                         }catch(e){}
                       });
                     } else {
