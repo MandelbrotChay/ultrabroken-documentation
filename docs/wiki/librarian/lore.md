@@ -1,10 +1,10 @@
 ---
-title: Librarian — Backlore
+title: Notes of the Librarian
 tags: [librarian, lore, glitchcraft, notes, hidden]
 summary: Short backlore and search-friendly keywords about the Librarian and his notes.
 ---
 
-# Archives of the Glitchcraft
+# Notes of the Librarian
 
 The stacks are older than the maps. Stone and timber, yes, but mostly paper — slips, stitched packets, and margins filled with impatient glyphs. The Archivists move like quiet storms there: careful, curious, and a little vain about their cataloging. They treat each oddity as a specimen, wrapping it in a label and a story so the world might find it later.
 
