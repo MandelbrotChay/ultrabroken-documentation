@@ -759,10 +759,9 @@ li.task-list-item a, li.task-list a {
 .ub-ai-input{ width:100%; padding-right:0.1rem; box-sizing:border-box; resize:none; overflow:hidden; white-space:pre-wrap; overflow-wrap:break-word; word-break:normal; min-height:1.6rem; }
 .ub-ai-clear{
   background: transparent;
-  /* Harmonize padding across controls so icons occupy same visual area */
-  padding: 0.12rem;
+  padding: 0.15rem;
   box-sizing: border-box;
-  display: none;
+  display: none; /* initial state - mirror .ub-ai-clear */
   align-items: center;
   justify-content: center;
   border-radius: 0.2rem;
