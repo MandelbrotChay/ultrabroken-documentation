@@ -1,6 +1,6 @@
 ---
 title: Grimoire of GLitchcraft
-tags: [librarian, notes, lore, glitchcraft, hidden]
+tags: [grimoire, glitchcraft, librarian, notes, lore, hidden]
 summary: Short backlore and search-friendly keywords about the Librarian and his notes.
 ---
 
