@@ -755,7 +755,7 @@ li.task-list-item a, li.task-list a {
   margin: 0.5rem 0;
 
 /* Input wrapper and custom clear button */
-.ub-ai-input-wrap{ display:flex !important; align-items:baseline !important; }
+.ub-ai-input-wrap{ display:flex !important; align-items:flex-end !important; }
 .ub-ai-input{ width:100%; padding-right:0.1rem; box-sizing:border-box; resize:none; overflow:hidden; white-space:pre-wrap; overflow-wrap:break-word; word-break:normal; min-height:1.6rem; }
 .ub-ai-clear{
   background: transparent;
@@ -882,7 +882,7 @@ li.task-list-item a, li.task-list a {
 /* Align controls to text baseline and nudge them slightly downward so
   their bottom edges visually match the input text baseline. Tweak
   the translateY value if more or less offset is needed. */
-.ub-ai-clear, .ub-ai-ask, .ub-ai-share { align-self: baseline; transform: translateY(0.12rem); }
+.ub-ai-clear, .ub-ai-ask, .ub-ai-share { align-self: flex-end; transform: translateY(0); }
 
 /* DEBUG: temporarily force visible outline and minimum size to diagnose
    invisible/zero-size AI control icons. Remove after debugging. 
