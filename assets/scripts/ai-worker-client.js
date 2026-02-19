@@ -309,6 +309,9 @@
             const applyPlaceholder = (txt)=>{
               try{
                 if (!txt) return;
+                // Pause rotating placeholders while the input is focused so
+                // we don't distract the user or change the overlay mid-edit.
+                if (document.activeElement === w.input) return;
                 w.input.setAttribute('data-ub-placeholder', txt);
                 if (w._fakePlaceholder && !w.input.value && document.activeElement !== w.input) {
                   w._fakePlaceholder.textContent = txt;
@@ -349,9 +352,10 @@
             };
             // Apply initial placeholder (replace stored)
             applyPlaceholder(w._placeholders[0]);
-            // Cycle every 4s
+            // Cycle every 4s; skip updates while the input is focused
             w._placeholderTimer = setInterval(()=>{
               try{
+                if (document.activeElement === w.input) return;
                 w._placeholderIndex = (w._placeholderIndex + 1) % w._placeholders.length;
                 applyPlaceholder(w._placeholders[w._placeholderIndex]);
               }catch(e){}
