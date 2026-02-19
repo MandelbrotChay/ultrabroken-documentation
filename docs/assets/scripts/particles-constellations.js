@@ -82,7 +82,26 @@
       if (p.x > W + 20) p.x = -20;
       // recycle when off top
       if (p.y < -cfg.spawnPadding) {
-        Object.assign(p, makeParticle(false));
+        // Occasionally spawn a burst of particles clustered near this
+        // particle's x position. Otherwise just recycle a single one.
+        if (Math.random() < cfg.burstChance) {
+          const clusterX = p.x;
+          // replace current particle with one burst member
+          Object.assign(p, makeParticle(false, clusterX));
+          // create the remaining burst members
+          for (let i=1;i<cfg.burstSize;i++) {
+            particles.push(makeParticle(false, clusterX));
+          }
+          // cap particle array to avoid unbounded growth; compute targetCount
+          try{
+            const area = (W * H) / (1366 * 768);
+            const targetCount = Math.max(12, Math.round(cfg.baseCount * area));
+            const cap = Math.max(targetCount, Math.round(targetCount * 1.5));
+            while (particles.length > cap) particles.pop();
+          }catch(e){}
+        } else {
+          Object.assign(p, makeParticle(false));
+        }
       }
     }
   }
