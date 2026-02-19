@@ -60,8 +60,11 @@
         input.style.boxSizing = 'border-box';
           try{ input.setAttribute('wrap', 'soft'); }catch(e){}
         input.style.whiteSpace = 'pre-wrap';
-        input.style.overflowWrap = 'break-word';
-        input.style.wordBreak = 'normal';
+        // Ensure long words wrap on desktop and mobile. `anywhere` +
+        // permissive `wordBreak` prevents single long tokens from overflowing.
+        try{ input.style.overflowWrap = 'anywhere'; }catch(e){}
+        try{ input.style.wordBreak = 'break-word'; }catch(e){}
+        try{ input.style.display = 'block'; }catch(e){}
       }catch(e){}
     const clearBtn = el('button', { type: 'button', class: 'ub-ai-clear', 'aria-label': 'Clear search' }, '');
     const askBtn = el('button', { type: 'button', class: 'ub-ai-ask', 'aria-label': 'Ask' }, '');
@@ -665,8 +668,9 @@
                 // otherwise use an empty string if focused, or the stored
                 // placeholder text when blurred.
                 const isFocused = (document.activeElement === input);
-                const measurementValue = (input.value && input.value.length)
-                  ? input.value
+                const curValForMeasure = (typeof w.getValue === 'function') ? String(w.getValue() || '') : String((input && input.value) || '');
+                const measurementValue = (curValForMeasure && curValForMeasure.length)
+                  ? curValForMeasure
                   : (isFocused ? '' : (storedPlaceholder || ''));
                 if (!clone) {
                   // Fallback to the simple method if clone creation failed
@@ -681,7 +685,8 @@
                   // Use the rendered width to match wrapping precisely
                   try{ const rect = input.getBoundingClientRect(); clone.style.width = Math.max(10, Math.round(rect.width)) + 'px'; }catch(e){}
                 }catch(e){}
-                clone.value = measurementValue;
+                try{ if (clone.contentEditable === 'true') clone.textContent = measurementValue; else clone.value = measurementValue; }catch(e){ try{ clone.value = measurementValue; }catch(e){} }
+                try{ clone.style.overflowWrap = 'anywhere'; clone.style.wordBreak = 'break-word'; }catch(e){}
                 clone.style.height = 'auto';
                 const measured = clone.scrollHeight || 0;
                 let targetH = Math.max(12, Math.round(measured));
