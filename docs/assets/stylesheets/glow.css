@@ -771,7 +771,7 @@ li.task-list-item a, li.task-list a {
   cursor: pointer;
 }
 /* Icon images inside AI controls should fill their buttons */
-.ub-ai-clear img, .ub-ai-ask img { width:100%; height:100%; display:block; object-fit: contain; }
+.ub-ai-clear img, .ub-ai-ask img, .ub-ai-share img { width:100%; height:100%; display:block; object-fit: contain; }
 
 /* Hide native browser clear/reveal controls for search inputs */
 .ub-ai-input{ -webkit-appearance: textfield; appearance: textfield; }
@@ -858,7 +858,10 @@ li.task-list-item a, li.task-list a {
 
 /* Align the small control buttons to the text baseline so their bottom
    edges visually match the bottom of the input text line. */
-.ub-ai-clear, .ub-ai-ask { align-self: baseline; }
+/* Align controls to text baseline and nudge them slightly downward so
+  their bottom edges visually match the input text baseline. Tweak
+  the translateY value if more or less offset is needed. */
+.ub-ai-clear, .ub-ai-ask, .ub-ai-share { align-self: baseline; transform: translateY(0.12rem); }
 
 /* DEBUG: temporarily force visible outline and minimum size to diagnose
    invisible/zero-size AI control icons. Remove after debugging. 
