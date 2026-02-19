@@ -73,9 +73,16 @@
     const url = window.AI_WORKER_URL || localStorage.getItem('ai_worker_url') || DEFAULT_WORKER_URL;
     try{
       const res = await fetch(url, { method:'POST', headers: {'Content-Type':'application/json'}, body: JSON.stringify({ query: q }) });
-      if (!res.ok) throw new Error('worker error '+res.status);
+      if (!res.ok) {
+        // Attempt to read error details from response body for better debugging
+        let text = null;
+        try{ text = await res.text(); }catch(e){}
+        try{ console.error('Worker responded with', res.status, text); }catch(e){}
+        // Try parse JSON error body if possible
+        try{ const j = JSON.parse(text || '{}'); return { error: j.error || JSON.stringify(j) || ('worker error '+res.status) }; }catch(e){ return { error: text || ('worker error '+res.status) }; }
+      }
       return await res.json();
-    }catch(e){ return { error: String(e) }; }
+    }catch(e){ console.error('askWorker fetch failed', e); return { error: String(e) }; }
   }
 
   // Idempotent initializer for the AI widget. Safe to call multiple times
