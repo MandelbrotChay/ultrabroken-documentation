@@ -883,7 +883,7 @@ li.task-list-item a, li.task-list a {
 /* Align controls to text baseline and nudge them slightly downward so
   their bottom edges visually match the input text baseline. Tweak
   the translateY value if more or less offset is needed. */
-.ub-ai-clear, .ub-ai-ask, .ub-ai-share { align-self: flex-end; transform: translateY(-0.35rem); }
+.ub-ai-clear, .ub-ai-ask, .ub-ai-share { align-self: flex-end; transform: translateY(-0.4rem); }
 
 /* DEBUG: temporarily force visible outline and minimum size to diagnose
    invisible/zero-size AI control icons. Remove after debugging. 
