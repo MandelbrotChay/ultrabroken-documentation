@@ -106,8 +106,10 @@
         const dist = Math.sqrt(d2);
         if (dist < cfg.lineDistance) neighbors.push({ idx: j, dist });
       }
-      // Prefer nearest neighbors
+      // Prefer nearest neighbors — sort and keep only the closest up to
+      // `cfg.maxConnections` to avoid checking distant particles.
       neighbors.sort((u,v)=>u.dist - v.dist);
+      if (neighbors.length > cfg.maxConnections) neighbors.length = cfg.maxConnections;
       for (let k = 0; k < neighbors.length && connCounts[i] < cfg.maxConnections; k++){
         const j = neighbors[k].idx;
         const key = i < j ? i + ':' + j : j + ':' + i;
