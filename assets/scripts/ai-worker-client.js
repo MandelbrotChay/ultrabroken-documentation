@@ -590,6 +590,21 @@
               }catch(e){ return null; }
             };
 
+            // If a recent scroll/visualViewport event occurred, delay autosize
+            // until scrolling settles to avoid racing with in-progress smooth
+            // scrolls (which were observed to prevent overshoot).
+            try{
+              const SCROLL_SETTLE_MS = w._autosizeScrollSettleMs || 220;
+              const nowTs = (typeof performance !== 'undefined') ? performance.now() : Date.now();
+              const last = w._lastScrollTs || 0;
+              if (last && (nowTs - last) < SCROLL_SETTLE_MS) {
+                if (w._debugAutosize) console.debug('autosize: deferring until scroll settles', { since: nowTs - last, wait: SCROLL_SETTLE_MS });
+                if (w._autosizeRetryTimer) clearTimeout(w._autosizeRetryTimer);
+                w._autosizeRetryTimer = setTimeout(()=>{ try{ autosize(); }catch(e){} }, Math.max(30, SCROLL_SETTLE_MS - (nowTs - last) + 20));
+                return;
+              }
+            }catch(e){}
+
             requestAnimationFrame(()=>{
               try{
                 const input = w.input;
@@ -689,6 +704,18 @@
           try{ updateVisibility(); }catch(e){}
           try{ requestAnimationFrame(()=>{ try{ autosize(); }catch(e){} }); }catch(e){}
         }));
+        // Track recent scroll/viewport activity so autosize can defer while
+        // native smooth scrolling or visualViewport changes are still happening.
+        try{
+          w._lastScrollTs = 0;
+          const noteScroll = ()=>{ try{ w._lastScrollTs = (typeof performance !== 'undefined') ? performance.now() : Date.now(); }catch(e){ w._lastScrollTs = Date.now(); } };
+          window.addEventListener('scroll', noteScroll, { passive: true });
+          if (window.visualViewport) {
+            try{ window.visualViewport.addEventListener('resize', noteScroll); }catch(e){}
+            try{ window.visualViewport.addEventListener('scroll', noteScroll); }catch(e){}
+          }
+        }catch(e){}
+
         // initial sizing
         try{ autosize(); }catch(e){}
         // initial sizing and keep in sync with resizes
