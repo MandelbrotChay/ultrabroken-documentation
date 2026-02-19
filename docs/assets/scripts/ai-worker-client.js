@@ -296,6 +296,9 @@
         // height from an empty value (see autosize change below).
         w.input.addEventListener('focus', ()=>{
           try{
+            // Only clear/hide when the field is currently empty. If the
+            // user focused an existing query, leave the content intact.
+            if (w.input.value && String(w.input.value).trim()) return;
             try{ if (w._fakePlaceholder) w._fakePlaceholder.style.display = 'none'; }catch(e){}
             try{ w.input.value = ''; }catch(e){}
             try{ if (typeof autosize === 'function') autosize(); }catch(e){}
