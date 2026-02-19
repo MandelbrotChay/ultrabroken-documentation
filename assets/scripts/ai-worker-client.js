@@ -572,6 +572,7 @@
               try{
                 const input = w.input;
                 if (!input) return;
+                let scrolledIntoView = false;
                 const clone = ensureClone();
                 const storedPlaceholder = input.getAttribute('data-ub-placeholder') || '';
                 // When the textarea is focused and empty we want it to collapse
@@ -613,7 +614,7 @@
                     // it can expand naturally instead of showing an internal
                     // scrollbar. After scrolling, set the full target height.
                     if (isFocused && available > 0 && targetH > available) {
-                      try{ input.scrollIntoView({ block: 'center', inline: 'nearest' }); }catch(e){}
+                      try{ input.scrollIntoView({ block: 'center', inline: 'nearest' }); scrolledIntoView = true; }catch(e){}
                       requestAnimationFrame(()=>{
                         try{
                           const rect2 = input.getBoundingClientRect();
@@ -643,11 +644,17 @@
                     input.style.height = targetH + 'px';
                     // Scroll the page by the same delta so each new row
                     // effectively pushes content upward by the same amount.
+                    // Skip this when we already scrolled the input into view
+                    // (e.g., due to visualViewport constraints) or when the
+                    // field is focused on mobile browsers which adjust viewport
+                    // automatically — double-scrolling produces bad UX.
                     try{
                       const delta = targetH - cur;
                       if (delta > 0) {
                         const top = Math.round(delta);
-                        window.scrollBy({ top: top, left: 0, behavior: 'auto' });
+                        if (!scrolledIntoView && !(isFocused && window.visualViewport)) {
+                          window.scrollBy({ top: top, left: 0, behavior: 'auto' });
+                        }
                       }
                     }catch(e){}
                   }
