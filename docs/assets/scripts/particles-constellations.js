@@ -11,6 +11,8 @@
     particleAlpha: 0.9,
     spawnPadding: 40         // spawn below bottom
   };
+  // Maximum simultaneous connections per particle (reduce visual clutter)
+  cfg.maxConnections = 3;
 
   function createCanvas() {
     const c = document.createElement('canvas');
@@ -86,9 +88,15 @@
     ctx.clearRect(0,0,W,H);
     // draw lines first (so particles glow sits above)
     ctx.lineWidth = 1;
+    // Track how many connections each particle has this frame so we can
+    // respect `cfg.maxConnections` and avoid excessive lines.
+    const connCounts = new Array(particles.length).fill(0);
     for (let i=0;i<particles.length;i++){
       const a = particles[i];
+      if (connCounts[i] >= cfg.maxConnections) continue;
       for (let j=i+1;j<particles.length;j++){
+        if (connCounts[i] >= cfg.maxConnections) break; // this particle full
+        if (connCounts[j] >= cfg.maxConnections) continue; // other particle full
         const b = particles[j];
         const dx = a.x - b.x; const dy = a.y - b.y;
         const d2 = dx*dx + dy*dy;
@@ -100,6 +108,8 @@
           ctx.moveTo(a.x, a.y);
           ctx.lineTo(b.x, b.y);
           ctx.stroke();
+          connCounts[i]++;
+          connCounts[j]++;
         }
       }
     }
