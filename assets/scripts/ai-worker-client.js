@@ -619,7 +619,7 @@
                       try{
                         // Mark immediately so the following delta scroll is skipped
                         // in this same frame; perform the actual scroll in rAF.
-                        try{ w._didScrollIntoView = true; }catch(e){}
+                        try{ w._didScrollIntoView = Date.now(); }catch(e){}
                         requestAnimationFrame(()=>{
                           try{ input.scrollIntoView({ block: 'center', inline: 'nearest' }); }catch(e){}
                         });
@@ -651,12 +651,16 @@
                         // performing the delta scroll which can push the viewport
                         // above the input (especially on mobile). Consume the
                         // flag and skip the extra scroll.
-                        if (w._didScrollIntoView) {
-                          try{ w._didScrollIntoView = false; }catch(e){}
-                        } else {
-                          const top = Math.round(delta);
-                          window.scrollBy({ top: top, left: 0, behavior: 'auto' });
-                        }
+                        try{
+                          const now = Date.now();
+                          if (w._didScrollIntoView && (now - (w._didScrollIntoView || 0) < 350)) {
+                            try{ w._didScrollIntoView = 0; }catch(e){}
+                            // skip delta scroll because we recently scrolledIntoView
+                          } else {
+                            const top = Math.round(delta);
+                            window.scrollBy({ top: top, left: 0, behavior: 'auto' });
+                          }
+                        }catch(e){}
                       }
                     }catch(e){}
                   }
