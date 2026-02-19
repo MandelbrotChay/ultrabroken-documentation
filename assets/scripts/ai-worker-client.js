@@ -121,6 +121,23 @@
       // If an instance already exists inside, mark initialized and skip
       if (placeholder.querySelector('.ub-ai-root')) { placeholder.dataset.aiInitialized = '1'; return; }
       const w = render(placeholder);
+      // Helper: determine whether the visible input is empty (normalize zero-width spaces)
+      try{
+        w._isEmpty = ()=>{
+          try{
+            const v = (typeof w.getValue === 'function') ? String(w.getValue() || '') : String((w.input && w.input.value) || '');
+            const cleaned = String(v || '').replace(/\u200B/g,'').trim();
+            return cleaned.length === 0;
+          }catch(e){ return true; }
+        };
+        w._updateFakePlaceholder = ()=>{
+          try{
+            if (!w._fakePlaceholder) return;
+            const show = w._isEmpty() && document.activeElement !== w.input;
+            w._fakePlaceholder.style.display = show ? 'block' : 'none';
+          }catch(e){}
+        };
+      }catch(e){}
       // No user-facing toggle: `SHOW_MODEL_SOURCES` controls whether model-
       // returned `Source:` lines are rendered. This is intentionally internal.
       // The Worker now returns structured `response_text`, optional `response_sources` (text block)
@@ -285,8 +302,10 @@
       w.btn.addEventListener('click', handleAsk);
       // helper accessors for faux input support
       w.getValue = ()=>{
-        try{ if (w.native && w.native.value != null) return String(w.native.value || ''); }catch(e){}
+        // Prefer the visible contenteditable value when present so UI checks
+        // (placeholder visibility, autosize) reflect what the user actually typed.
         try{ if (w.input && w.input.contentEditable === 'true') return String(w.input.textContent || ''); }catch(e){}
+        try{ if (w.native && w.native.value != null) return String(w.native.value || ''); }catch(e){}
         try{ return String(w.input && w.input.value || ''); }catch(e){ return ''; }
       };
       w.setValue = (v)=>{
@@ -349,6 +368,15 @@
           const fake = el('div', { class: 'ub-ai-fake-placeholder', 'aria-hidden': 'true' }, stored);
           try{ if (w.inputWrap) w.inputWrap.appendChild(fake); }catch(e){}
           w._fakePlaceholder = fake;
+          try{
+            fake.style.position = 'absolute';
+            fake.style.left = '8px';
+            fake.style.top = '8px';
+            fake.style.pointerEvents = 'none';
+            fake.style.zIndex = '0';
+            // make sure the visible input sits above the placeholder
+            try{ if (w.input) w.input.style.zIndex = '1'; }catch(e){}
+          }catch(e){}
         }catch(e){}
 
         // Load rotating placeholder texts from JSON and cycle every 4s.
@@ -368,7 +396,7 @@
                 if (document.activeElement === w.input) return;
                 w.input.setAttribute('data-ub-placeholder', txt);
                 const curVal = (typeof w.getValue === 'function') ? String(w.getValue() || '') : String((w.input && w.input.value) || '');
-                if (w._fakePlaceholder && !curVal && document.activeElement !== w.input) {
+                if (w._fakePlaceholder && (!curVal || String(curVal).replace(/\u200B/g,'').trim() === '') && document.activeElement !== w.input) {
                   w._fakePlaceholder.textContent = txt;
                 }
                 // Measure placeholder height synchronously using a hidden clone
@@ -442,8 +470,6 @@
           try{
             // Only clear/hide when the field is currently empty. If the
             // user focused an existing query, leave the content intact.
-            const cur = (typeof w.getValue === 'function') ? String(w.getValue() || '') : String((w.input && w.input.value) || '');
-            if (cur && String(cur).trim()) return;
             try{ if (w._fakePlaceholder) w._fakePlaceholder.style.display = 'none'; }catch(e){}
             try{ if (typeof w.setValue === 'function') w.setValue(''); else if (w.input) w.input.value = ''; }catch(e){}
             try{ collapseToSingleLine(w.input); }catch(e){}
@@ -455,22 +481,13 @@
         // Show overlay when blurred and empty; reapply measured placeholder height when available
         w.input.addEventListener('blur', ()=>{
           try{
-            const cur = (typeof w.getValue === 'function') ? String(w.getValue() || '') : String((w.input && w.input.value) || '');
-            if (!cur) {
-              try{ if (w._fakePlaceholder) w._fakePlaceholder.style.display = 'block'; }catch(e){}
-              try{ if (w.placeholderHeight) w.input.style.height = w.placeholderHeight + 'px'; }catch(e){}
-            }
+            try{ if (w._isEmpty && w._isEmpty()) { try{ if (w._fakePlaceholder) w._fakePlaceholder.style.display = 'block'; }catch(e){} try{ if (w.placeholderHeight) w.input.style.height = w.placeholderHeight + 'px'; }catch(e){} } }catch(e){}
           }catch(e){}
         });
 
         // Initial state: show overlay only when not focused and empty
         try{
-          const cur = (typeof w.getValue === 'function') ? String(w.getValue() || '') : String((w.input && w.input.value) || '');
-          if (document.activeElement !== w.input && !cur) {
-            try{ if (w._fakePlaceholder) w._fakePlaceholder.style.display = 'block'; }catch(e){}
-          } else {
-            try{ if (w._fakePlaceholder) w._fakePlaceholder.style.display = 'none'; }catch(e){}
-          }
+          try{ if (w._updateFakePlaceholder) w._updateFakePlaceholder(); }catch(e){}
         }catch(e){}
 
         // Measure the textarea height when the placeholder is visible so we can
