@@ -402,6 +402,11 @@
             if (!w.input.value) {
               try{ if (w._fakePlaceholder) w._fakePlaceholder.style.display = 'block'; }catch(e){}
               try{ if (w.placeholderHeight) w.input.style.height = w.placeholderHeight + 'px'; }catch(e){}
+            } else {
+              // Ensure a final autosize runs after blur so height/overflow
+              // reflect the keyboard-closed viewport. Wrapped in rAF to let
+              // layout/visualViewport settle.
+              try{ requestAnimationFrame(()=>{ try{ if (typeof autosize === 'function') autosize(); }catch(e){} }); }catch(e){}
             }
           }catch(e){}
         });
