@@ -814,8 +814,8 @@ li.task-list-item a, li.task-list a {
   inset: 0;
   /* match textarea padding so text aligns exactly */
   padding: 0.4rem 0.4rem 0.4rem;
-  /* Use the project's muted text color for overlay placeholder */
-  color: var(--muted-text) !important;
+  /* Use the project's muted text color for overlay placeholder 
+  color: var(--muted-text) !important;*/
   pointer-events: none;
   /* Match the real input's font/metrics so wrapping and height match */
   font-family: 'New Rocker', 'Texturina', Georgia, 'Times New Roman', serif !important;
