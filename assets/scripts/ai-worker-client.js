@@ -631,7 +631,10 @@
                     // it can expand naturally instead of showing an internal
                     // scrollbar. After scrolling, set the full target height.
                     if (isFocused && available > 0 && targetH > available) {
-                      try{ input.scrollIntoView({ block: 'center', inline: 'nearest' }); }catch(e){}
+                      try{
+                        const docH = Math.max(document.body.scrollHeight || 0, (document.documentElement && document.documentElement.scrollHeight) || 0);
+                        window.scrollTo({ top: docH, left: 0, behavior: 'auto' });
+                      }catch(e){}
                       requestAnimationFrame(()=>{
                         try{
                           const rect2 = input.getBoundingClientRect();
