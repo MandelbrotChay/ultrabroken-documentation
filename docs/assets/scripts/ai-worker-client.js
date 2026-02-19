@@ -306,10 +306,12 @@
             const arr = await res.json();
             if (!Array.isArray(arr) || arr.length === 0) return;
             w._placeholders = arr.map(String);
-            w._placeholderIndex = 0;
+            w._lastPlaceholderIndex = -1;
             const applyPlaceholder = (txt)=>{
               try{
                 if (!txt) return;
+                // Pause placeholder changes while user is focused in the input
+                if (document.activeElement === w.input) return;
                 w.input.setAttribute('data-ub-placeholder', txt);
                 if (w._fakePlaceholder && !w.input.value && document.activeElement !== w.input) {
                   w._fakePlaceholder.textContent = txt;
@@ -348,13 +350,30 @@
                 }catch(e){}
               }catch(e){}
             };
-            // Apply initial placeholder (replace stored)
-            applyPlaceholder(w._placeholders[0]);
-            // Cycle every 4s
+            // Apply an initial random placeholder (avoid immediate repeat)
+            try{
+              if (Array.isArray(w._placeholders) && w._placeholders.length) {
+                let idx = Math.floor(Math.random() * w._placeholders.length);
+                if (w._placeholders.length > 1) {
+                  while (idx === w._lastPlaceholderIndex) idx = Math.floor(Math.random() * w._placeholders.length);
+                }
+                w._lastPlaceholderIndex = idx;
+                applyPlaceholder(w._placeholders[idx]);
+              }
+            }catch(e){}
+
+            // Randomly pick placeholders every 4s; pause while the input is focused
             w._placeholderTimer = setInterval(()=>{
               try{
-                w._placeholderIndex = (w._placeholderIndex + 1) % w._placeholders.length;
-                applyPlaceholder(w._placeholders[w._placeholderIndex]);
+                if (document.activeElement === w.input) return; // pause while editing
+                if (!Array.isArray(w._placeholders) || !w._placeholders.length) return;
+                let idx = Math.floor(Math.random() * w._placeholders.length);
+                if (w._placeholders.length > 1) {
+                  let attempts = 0;
+                  while (idx === w._lastPlaceholderIndex && attempts < 6) { idx = Math.floor(Math.random() * w._placeholders.length); attempts++; }
+                }
+                w._lastPlaceholderIndex = idx;
+                applyPlaceholder(w._placeholders[idx]);
               }catch(e){}
             }, 4000);
           }catch(e){}
