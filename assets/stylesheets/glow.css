@@ -759,14 +759,15 @@ li.task-list-item a, li.task-list a {
 .ub-ai-input{ width:100%; padding-right:0.1rem; box-sizing:border-box; resize:none; overflow:hidden; white-space:pre-wrap; overflow-wrap:break-word; word-break:normal; min-height:1.6rem; }
 .ub-ai-clear{
   background: transparent;
-  padding: 0.15rem;
+  /* slightly smaller controls for a tighter UI */
+  padding: 0.10rem;
   box-sizing: border-box;
   display: none; /* initial state - mirror .ub-ai-clear */
   align-items: center;
   justify-content: center;
   border-radius: 0.2rem;
-  width: 1.6rem;
-  height: 1.6rem;
+  width: 1.44rem;
+  height: 1.44rem;
   border: none;
   cursor: pointer;
 }
@@ -774,10 +775,10 @@ li.task-list-item a, li.task-list a {
 .ub-ai-clear img, .ub-ai-ask img, .ub-ai-share img { width:100%; height:100%; display:block; object-fit: contain; }
 
 /* Use a single explicit icon size so all quadratic SVGs render identically. */
-.ub-ai-clear img, .ub-ai-ask img, .ub-ai-share img { width: 1rem; height: 1rem; }
+.ub-ai-clear img, .ub-ai-ask img, .ub-ai-share img { width: 0.9rem; height: 0.9rem; }
 
-/* Keep padding consistent across controls */
-.ub-ai-clear, .ub-ai-ask, .ub-ai-share { padding: 0.12rem; }
+/* Keep padding consistent across controls (slightly reduced) */
+.ub-ai-clear, .ub-ai-ask, .ub-ai-share { padding: 0.10rem; }
 
 /* Hide native browser clear/reveal controls for search inputs */
 .ub-ai-input{ -webkit-appearance: textfield; appearance: textfield; }
@@ -850,14 +851,14 @@ li.task-list-item a, li.task-list a {
    `display` to `flex` when the input has content. */
 .ub-ai-ask {
   background: transparent;
-  padding: 0.15rem;
+  padding: 0.10rem;
   box-sizing: border-box;
   display: none; /* initial state - mirror .ub-ai-clear */
   align-items: center;
   justify-content: center;
   border-radius: 0.2rem;
-  width: 1.6rem;
-  height: 1.6rem;
+  width: 1.44rem;
+  height: 1.44rem;
   border: none;
   cursor: pointer;
 }
@@ -882,7 +883,7 @@ li.task-list-item a, li.task-list a {
 /* Align controls to text baseline and nudge them slightly downward so
   their bottom edges visually match the input text baseline. Tweak
   the translateY value if more or less offset is needed. */
-.ub-ai-clear, .ub-ai-ask, .ub-ai-share { align-self: flex-end; transform: translateY(0); }
+.ub-ai-clear, .ub-ai-ask, .ub-ai-share { align-self: flex-end; transform: translateY(-0.06rem); }
 
 /* DEBUG: temporarily force visible outline and minimum size to diagnose
    invisible/zero-size AI control icons. Remove after debugging. 
