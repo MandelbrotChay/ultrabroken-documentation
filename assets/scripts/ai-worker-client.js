@@ -3,6 +3,7 @@
   Usage: include this script and add a page with <div id="ai-search-root"></div>
   Configure worker URL via `window.AI_WORKER_URL` or set in localStorage('ai_worker_url').
 */
+
 (function(){
   
   function el(tag, attrs={}, children=[]){
@@ -96,7 +97,6 @@
       // If an instance already exists inside, mark initialized and skip
       if (placeholder.querySelector('.ub-ai-root')) { placeholder.dataset.aiInitialized = '1'; return; }
       const w = render(placeholder);
-      try{ window._ub_ai = w; }catch(e){}
       // No user-facing toggle: `SHOW_MODEL_SOURCES` controls whether model-
       // returned `Source:` lines are rendered. This is intentionally internal.
       // The Worker now returns structured `response_text`, optional `response_sources` (text block)
@@ -306,12 +306,12 @@
             const arr = await res.json();
             if (!Array.isArray(arr) || arr.length === 0) return;
             w._placeholders = arr.map(String);
-            w._placeholderIndex = 0;
+            w._lastPlaceholderIndex = -1;
             const applyPlaceholder = (txt)=>{
               try{
                 if (!txt) return;
-                // Pause rotating placeholders while the input is focused so
-                // we don't distract the user or change the overlay mid-edit.
+                // Don't change placeholders while the user is actively
+                // focused in the input — this pauses rotation during edits.
                 if (document.activeElement === w.input) return;
                 w.input.setAttribute('data-ub-placeholder', txt);
                 if (w._fakePlaceholder && !w.input.value && document.activeElement !== w.input) {
@@ -351,14 +351,32 @@
                 }catch(e){}
               }catch(e){}
             };
-            // Apply initial placeholder (replace stored)
-            applyPlaceholder(w._placeholders[0]);
-            // Cycle every 4s; skip updates while the input is focused
+            // Apply an initial random placeholder (avoid immediate repeat)
+            try{
+              if (Array.isArray(w._placeholders) && w._placeholders.length) {
+                let idx = Math.floor(Math.random() * w._placeholders.length);
+                if (w._placeholders.length > 1) {
+                  // ensure different from last (initially -1 so always allowed)
+                  while (idx === w._lastPlaceholderIndex) idx = Math.floor(Math.random() * w._placeholders.length);
+                }
+                w._lastPlaceholderIndex = idx;
+                applyPlaceholder(w._placeholders[idx]);
+              }
+            }catch(e){}
+
+            // Pick a random placeholder every 4s, but pause while input is focused
             w._placeholderTimer = setInterval(()=>{
               try{
-                if (document.activeElement === w.input) return;
-                w._placeholderIndex = (w._placeholderIndex + 1) % w._placeholders.length;
-                applyPlaceholder(w._placeholders[w._placeholderIndex]);
+                if (document.activeElement === w.input) return; // pause while editing
+                if (!Array.isArray(w._placeholders) || !w._placeholders.length) return;
+                let idx = Math.floor(Math.random() * w._placeholders.length);
+                if (w._placeholders.length > 1) {
+                  // avoid immediate repeat
+                  let attempts = 0;
+                  while (idx === w._lastPlaceholderIndex && attempts < 6) { idx = Math.floor(Math.random() * w._placeholders.length); attempts++; }
+                }
+                w._lastPlaceholderIndex = idx;
+                applyPlaceholder(w._placeholders[idx]);
               }catch(e){}
             }, 4000);
           }catch(e){}
@@ -546,10 +564,9 @@
           setTimeout(resizeIcons, 0);
         };
 
-        // Autosize to content using a hidden off-DOM clone, and perform a
-        // robust rAF-sequenced apply+measure+scroll so mobile keyboards and
-        // viewport changes don't race with our scroll adjustments.
-        // A lightweight debug trace can be enabled by setting `w._debugAutosize = true`.
+        // Autosize to content using a hidden off-DOM clone to avoid writing
+        // `height = 'auto'` on the real textarea (which can trigger mobile
+        // viewport/caret jumps when the on-screen keyboard is visible).
         const autosize = ()=>{
           try{
             const ensureClone = ()=>{
@@ -573,107 +590,100 @@
               }catch(e){ return null; }
             };
 
-            // Measure desired height using the clone synchronously.
-            const measureTarget = (clone, input, measurementValue) => {
-              try{
-                if (!clone) return null;
-                // Copy relevant computed styles that affect wrapping
-                const cs = window.getComputedStyle(input);
-                const props = ['boxSizing','paddingLeft','paddingRight','paddingTop','paddingBottom','borderLeftWidth','borderRightWidth','borderTopWidth','borderBottomWidth','fontFamily','fontSize','fontWeight','lineHeight','letterSpacing','textTransform','whiteSpace','wordBreak','overflowWrap','wordWrap','tabSize'];
-                props.forEach(p=>{ try{ clone.style[p] = cs[p]; }catch(e){} });
-                try{ const rect = input.getBoundingClientRect(); clone.style.width = Math.max(10, Math.round(rect.width)) + 'px'; }catch(e){}
-                clone.value = measurementValue || '';
-                clone.style.height = 'auto';
-                return Math.max(12, Math.round(clone.scrollHeight || 0));
-              }catch(e){ return null; }
-            };
-
-            const input = w.input;
-            if (!input) return;
-            const clone = ensureClone();
-            const storedPlaceholder = input.getAttribute('data-ub-placeholder') || '';
-            const isFocused = (document.activeElement === input);
-            const measurementValue = (input.value && input.value.length)
-              ? input.value
-              : (isFocused ? '' : (storedPlaceholder || ''));
-
-            // If clone not available, fallback to simple scrollHeight method
-            if (!clone) {
-              try{ input.style.height = 'auto'; const h = input.scrollHeight; if (h) input.style.height = h + 'px'; }catch(e){}
-              return;
-            }
-
-            // First: measure desired height now
-            const measured = measureTarget(clone, input, measurementValue);
-            if (!measured) return;
-            const targetH = measured;
-
-            // Apply and then measure+scroll in the next frames to let the
-            // browser apply layout/keyboard-driven viewport changes first.
             requestAnimationFrame(()=>{
               try{
-                const cur = parseInt((input.style.height||'0').replace('px',''),10) || 0;
-                if (Math.abs(cur - targetH) <= 1) {
-                  if (w._debugAutosize) console.debug('autosize: no-change', { cur, targetH });
+                const input = w.input;
+                if (!input) return;
+                let scrolledIntoView = false;
+                const clone = ensureClone();
+                const storedPlaceholder = input.getAttribute('data-ub-placeholder') || '';
+                // When the textarea is focused and empty we want it to collapse
+                // to a single-row visual height rather than sizing to the
+                // overlay placeholder text. Prefer the actual input value;
+                // otherwise use an empty string if focused, or the stored
+                // placeholder text when blurred.
+                const isFocused = (document.activeElement === input);
+                const measurementValue = (input.value && input.value.length)
+                  ? input.value
+                  : (isFocused ? '' : (storedPlaceholder || ''));
+                if (!clone) {
+                  // Fallback to the simple method if clone creation failed
+                  try{ input.style.height = 'auto'; const h = input.scrollHeight; if (h) input.style.height = h + 'px'; }catch(e){}
                   return;
                 }
-                // Set target height immediately
-                input.style.height = targetH + 'px';
-                // Next frame: measure visibility and perform any scroll
-                requestAnimationFrame(()=>{
-                  try{
-                    const now = (typeof performance !== 'undefined') ? performance.now() : Date.now();
-                    const skipUntil = w._skipUntil || 0;
-                    if (w._debugAutosize) console.debug('autosize: post-apply', { targetH, cur, now, skipUntil });
-
-                    // Compute element geometry and viewport coords (document-space)
+                // Copy a set of computed style properties that affect wrapping
+                try{
+                  const cs = window.getComputedStyle(input);
+                  const props = ['boxSizing','paddingLeft','paddingRight','paddingTop','paddingBottom','borderLeftWidth','borderRightWidth','borderTopWidth','borderBottomWidth','fontFamily','fontSize','fontWeight','lineHeight','letterSpacing','textTransform','whiteSpace','wordBreak','overflowWrap','wordWrap','tabSize'];
+                  props.forEach(p=>{ try{ clone.style[p] = cs[p]; }catch(e){} });
+                  // Use the rendered width to match wrapping precisely
+                  try{ const rect = input.getBoundingClientRect(); clone.style.width = Math.max(10, Math.round(rect.width)) + 'px'; }catch(e){}
+                }catch(e){}
+                clone.value = measurementValue;
+                clone.style.height = 'auto';
+                const measured = clone.scrollHeight || 0;
+                let targetH = Math.max(12, Math.round(measured));
+                // If a visualViewport is present (mobile keyboard visible), cap
+                // the target height so the textarea doesn't grow into the
+                // keyboard area. If capped, allow internal scrolling.
+                try{
+                  if (window.visualViewport) {
                     const rect = input.getBoundingClientRect();
-                    const scrollY = window.scrollY || window.pageYOffset || 0;
-                    let vpTopDoc = scrollY;
-                    let vpBottomDoc = scrollY + window.innerHeight;
-                    if (window.visualViewport) {
-                      const vv = window.visualViewport;
-                      vpTopDoc = scrollY + (vv.offsetTop || 0);
-                      vpBottomDoc = vpTopDoc + (vv.height || window.innerHeight);
-                    }
-                    const elemBottomDoc = scrollY + rect.bottom;
-                    const elemTopDoc = scrollY + rect.top;
-                    const safeMargin = 8;
-
-                    // If element bottom is below viewport bottom, scroll just enough
-                    let delta = 0;
-                    if (elemBottomDoc > (vpBottomDoc - safeMargin)) {
-                      delta = Math.round(elemBottomDoc - (vpBottomDoc - safeMargin));
-                    } else if (elemTopDoc < (vpTopDoc + safeMargin)) {
-                      // If the element moved above the top (unlikely on expansion), scroll up
-                      delta = Math.round(elemTopDoc - (vpTopDoc + safeMargin));
-                    }
-
-                    if (delta !== 0) {
-                      // Respect skip guards (set elsewhere) to avoid double-scrolling
-                      if (!(now < skipUntil) && !w._skipScrollBy) {
-                        // Clamp delta so we don't scroll past document bounds
-                        const docH = document.documentElement.scrollHeight || document.body.scrollHeight || 0;
-                        const maxScrollTop = Math.max(0, docH - (vpBottomDoc - vpTopDoc));
-                        const desired = Math.max(0, Math.min(maxScrollTop, window.scrollY + delta));
-                        const actualDelta = desired - window.scrollY;
-                        if (actualDelta !== 0) {
-                          try{ window.scrollBy({ top: actualDelta, left: 0, behavior: 'auto' }); }catch(e){ window.scrollBy(0, actualDelta); }
-                          if (w._debugAutosize) console.debug('autosize: scrolled', { delta: actualDelta, desired });
-                          // brief guard window to avoid immediate follow-up scrolls
-                          try{ w._skipUntil = (typeof performance !== 'undefined' ? performance.now() : Date.now()) + 300; }catch(e){ w._skipUntil = Date.now() + 300; }
-                        }
-                      } else {
-                        if (w._debugAutosize) console.debug('autosize: skipped-scroll', { delta, now, skipUntil: w._skipUntil, _skipScrollBy: !!w._skipScrollBy });
-                      }
+                    const vv = window.visualViewport;
+                    const margin = 8; // small breathing room above keyboard
+                    let available = Math.round(vv.height - rect.top - margin);
+                    // If focused and constrained, bring the field into view so
+                    // it can expand naturally instead of showing an internal
+                    // scrollbar. After scrolling, set the full target height.
+                    if (isFocused && available > 0 && targetH > available) {
+                      try{ input.scrollIntoView({ block: 'center', inline: 'nearest' }); scrolledIntoView = true; }catch(e){}
+                      requestAnimationFrame(()=>{
+                        try{
+                          const rect2 = input.getBoundingClientRect();
+                          const vv2 = window.visualViewport || vv;
+                          available = Math.round((vv2.height || vv.height) - rect2.top - margin);
+                          input.style.overflowY = 'hidden';
+                          try{ input.style.height = targetH + 'px'; }catch(e){}
+                        }catch(e){}
+                      });
                     } else {
-                      if (w._debugAutosize) console.debug('autosize: visible-no-scroll', { rectTop: rect.top, rectBottom: rect.bottom, vpBottom: vpBottomDoc - scrollY });
+                      if (available > 0 && targetH > available) {
+                        targetH = Math.max(12, available);
+                        input.style.overflowY = 'auto';
+                      } else {
+                        input.style.overflowY = 'hidden';
+                      }
                     }
-                  }catch(e){ if (w._debugAutosize) console.debug('autosize: post-apply error', e); }
-                });
-              }catch(e){ if (w._debugAutosize) console.debug('autosize: apply error', e); }
+                  } else {
+                    input.style.overflowY = 'hidden';
+                  }
+                }catch(e){ input.style.overflowY = 'hidden'; }
+
+                // Only write when height changed meaningfully to avoid churn
+                try{
+                  const cur = parseInt((input.style.height||'0').replace('px',''),10) || 0;
+                  if (Math.abs(cur - targetH) > 1) {
+                    input.style.height = targetH + 'px';
+                    // Scroll the page by the same delta so each new row
+                    // effectively pushes content upward by the same amount.
+                    // Skip this when we already scrolled the input into view
+                    // (e.g., due to visualViewport constraints) or when the
+                    // field is focused on mobile browsers which adjust viewport
+                    // automatically — double-scrolling produces bad UX.
+                    try{
+                      const delta = targetH - cur;
+                      if (delta > 0) {
+                        const top = Math.round(delta);
+                        if (!scrolledIntoView && !(isFocused && window.visualViewport)) {
+                          window.scrollBy({ top: top, left: 0, behavior: 'auto' });
+                        }
+                      }
+                    }catch(e){}
+                  }
+                }catch(e){}
+              }catch(e){}
             });
-          }catch(e){ if (w._debugAutosize) console.debug('autosize: outer error', e); }
+          }catch(e){}
         };
         ['input','change','paste','cut','compositionend'].forEach(evt => w.input.addEventListener(evt, ()=>{
           try{ updateVisibility(); }catch(e){}
