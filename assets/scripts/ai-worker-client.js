@@ -291,9 +291,11 @@
         }catch(e){}
 
         // Hide overlay while editing, but only when the field is empty.
+        // On focus, hide overlay and clear the field so typing starts from
+        // a single-row empty textarea. This also forces `autosize` to compute
+        // height from an empty value (see autosize change below).
         w.input.addEventListener('focus', ()=>{
           try{
-            if (w.input.value && String(w.input.value).trim()) return; // has content — do nothing
             try{ if (w._fakePlaceholder) w._fakePlaceholder.style.display = 'none'; }catch(e){}
             try{ w.input.value = ''; }catch(e){}
             try{ if (typeof autosize === 'function') autosize(); }catch(e){}
@@ -499,7 +501,15 @@
                 if (!input) return;
                 const clone = ensureClone();
                 const storedPlaceholder = input.getAttribute('data-ub-placeholder') || '';
-                const measurementValue = (input.value && input.value.length) ? input.value : (storedPlaceholder || '');
+                // When the textarea is focused and empty we want it to collapse
+                // to a single-row visual height rather than sizing to the
+                // overlay placeholder text. Prefer the actual input value;
+                // otherwise use an empty string if focused, or the stored
+                // placeholder text when blurred.
+                const isFocused = (document.activeElement === input);
+                const measurementValue = (input.value && input.value.length)
+                  ? input.value
+                  : (isFocused ? '' : (storedPlaceholder || ''));
                 if (!clone) {
                   // Fallback to the simple method if clone creation failed
                   try{ input.style.height = 'auto'; const h = input.scrollHeight; if (h) input.style.height = h + 'px'; }catch(e){}
