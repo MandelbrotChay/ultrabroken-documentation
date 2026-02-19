@@ -727,13 +727,19 @@
                     input.style.height = targetH + 'px';
                     // Scroll the page by the same delta so each new row
                     // effectively pushes content upward by the same amount.
-                    try{
-                      const delta = targetH - cur;
-                      if (delta > 0) {
-                        const top = Math.round(delta);
-                        window.scrollBy({ top: top, left: 0, behavior: 'auto' });
-                      }
-                    }catch(e){}
+                      try{
+                        const delta = targetH - cur;
+                        if (delta > 0) {
+                          const top = Math.round(delta);
+                          // If we flagged stabilization, defer the page scroll until
+                          // after visualViewport stabilization to avoid an initial
+                          // incorrect jump. The stabilization flow will re-run
+                          // autosize and perform the scroll then.
+                          if (!w._needStabilize) {
+                            window.scrollBy({ top: top, left: 0, behavior: 'auto' });
+                          }
+                        }
+                      }catch(e){}
                   }
                 }catch(e){}
                 // remember last measured line count for change detection
