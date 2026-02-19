@@ -13,7 +13,9 @@ _[Mozz](https://www.youtube.com/@M0zzed) - 27 May 2023_
 
 ## Instructions
 ---
-Pause at the moment before taking damage and view a memory in the menu (for longer duration sources of damage, multiple memories may be required). Then unpause.
+1. Pause at the moment before taking damage
+2. View a memory in the menu (for longer duration sources of damage, multiple memories may be required)
+3. Unpause
 
 ## Notes
 ---
