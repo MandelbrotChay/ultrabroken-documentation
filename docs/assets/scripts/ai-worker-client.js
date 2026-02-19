@@ -126,35 +126,23 @@
       // common path variants (relative and absolute) and stop when one
       // succeeds. This sets `__AI_INPUT_ATTEMPTED` so we don't re-inject.
       try {
-        const candidates = [
-          'assets/scripts/ai-input.js',
-          '/assets/scripts/ai-input.js',
-          '/ultrabroken-documentation/assets/scripts/ai-input.js'
-        ];
-        const tried = [];
+        // Attempt only the single canonical hosted URL.
+        const scriptUrl = 'https://nan-gogh.github.io/ultrabroken-documentation/assets/scripts/ai-input.js';
         if (typeof window.initAIInput !== 'function' && !window.__AI_INPUT_ATTEMPTED) {
           window.__AI_INPUT_ATTEMPTED = true;
-          for (const scriptUrl of candidates) {
-            if (typeof window.initAIInput === 'function') break;
-            // record attempt
-            tried.push(scriptUrl);
-            // attempt to load this candidate
-            // eslint-disable-next-line no-await-in-loop
-            const ok = await new Promise((resolve) => {
-              try {
-                const s = document.createElement('script');
-                s.src = scriptUrl;
-                s.async = false;
-                s.onload = () => resolve(true);
-                s.onerror = () => resolve(false);
-                (document.head || document.documentElement).appendChild(s);
-              } catch (e) { resolve(false); }
-            });
-            if (ok && typeof window.initAIInput === 'function') break;
-          }
-          // if module still missing, expose what was tried for debugging
-          if (typeof window.initAIInput !== 'function') {
-            try { console.debug('ai-worker-client: attempted ai-input load URLs:', tried); } catch(e) {}
+          // eslint-disable-next-line no-await-in-loop
+          const ok = await new Promise((resolve) => {
+            try {
+              const s = document.createElement('script');
+              s.src = scriptUrl;
+              s.async = false;
+              s.onload = () => resolve(true);
+              s.onerror = () => resolve(false);
+              (document.head || document.documentElement).appendChild(s);
+            } catch (e) { resolve(false); }
+          });
+          if (!ok || typeof window.initAIInput !== 'function') {
+            try { console.debug('ai-worker-client: attempted ai-input load URL:', scriptUrl); } catch(e) {}
           }
         }
       } catch (e) { /* ignore loader errors and fall through to check below */ }
