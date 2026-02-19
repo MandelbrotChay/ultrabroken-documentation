@@ -791,7 +791,7 @@ li.task-list-item a, li.task-list a {
 
 .ub-ai-input {
   width: 100%;
-  padding: 0.4rem 0.4rem 0.4rem 0.25rem;
+  padding: 0.4rem 0.4rem 0.4rem 0.5rem;
   margin-bottom: 0;
   border: none; /* remove bottom border to avoid double-line */
   background: transparent;
