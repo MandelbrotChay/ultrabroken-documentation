@@ -791,7 +791,7 @@ li.task-list-item a, li.task-list a {
 
 .ub-ai-input {
   width: 100%;
-  padding: 0.4rem 0;
+  padding: 0.4rem 0.4rem;
   margin-bottom: 0;
   border: none; /* remove bottom border to avoid double-line */
   background: transparent;
@@ -811,9 +811,9 @@ li.task-list-item a, li.task-list a {
 .ub-ai-input-wrap{ position: relative !important; }
 .ub-ai-fake-placeholder {
   position: absolute;
-  left: 0.4rem;
-  top: 0.4rem;
-  right: 0.4rem;
+  inset: 0;
+  /* match textarea padding so text aligns exactly */
+  padding: 0.4rem 0.4rem;
   /* Use the project's muted text color for overlay placeholder */
   color: var(--muted-text) !important;
   pointer-events: none;
@@ -826,7 +826,6 @@ li.task-list-item a, li.task-list a {
   word-break: normal;
   overflow: hidden;
   box-sizing: border-box;
-  padding: 0.4rem 0;
   display: block;
   z-index: 4;
 }
