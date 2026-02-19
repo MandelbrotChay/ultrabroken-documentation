@@ -482,7 +482,7 @@
             try{ if (w.out) { w.out.textContent = ''; w.out.innerHTML = ''; } }catch(e){}
             // Also clear parsed/rendered sources/evidence
             try{ if (w.evidence) w.evidence.innerHTML = ''; }catch(e){}
-            w.input.focus(); 
+            try { w.input.focus({ preventScroll: true }); } catch(e) { try { w.input.focus(); }catch(e){} }
             // Immediately collapse to single-line visual height, then run autosize
             try{ collapseToSingleLine(w.input); }catch(e){}
             try{ if (typeof autosize === 'function') autosize(); }catch(e){}
