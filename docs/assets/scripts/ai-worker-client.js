@@ -453,16 +453,9 @@
           const clearImg = document.createElement('img');
           clearImg.src = '/ultrabroken-documentation/assets/images/cancel-icon.svg';
           clearImg.alt = 'Clear';
-          clearImg.style.width = 'auto';
-          clearImg.style.height = 'auto';
-          clearImg.style.display = 'block';
-          clearImg.style.objectFit = 'contain';
-          // ensure clear button centers its contents so the icon lines up with the Ask button
+          
+          // ensure clear button starts hidden; layout/spacing handled by CSS
           w.clear.style.display = 'none';
-          w.clear.style.alignItems = 'center';
-          w.clear.style.justifyContent = 'center';
-          // keep padding consistent with other controls (matches CSS .ub-ai-* padding)
-          w.clear.style.padding = '0.15rem';
           w.clear.appendChild(clearImg);
           w.clear.addEventListener('click', ()=>{ 
             w.input.value = ''; 
@@ -482,10 +475,7 @@
         const askImg = document.createElement('img');
         askImg.src = '/ultrabroken-documentation/assets/images/ask-icon.svg';
         askImg.alt = 'Ask';
-        askImg.style.width = 'auto';
-        askImg.style.height = 'auto';
-        askImg.style.display = 'block';
-        askImg.style.objectFit = 'contain';
+        
         // Clear any existing textual content in the button and append the SVG
         w.btn.textContent = '';
         w.btn.appendChild(askImg);
@@ -534,9 +524,11 @@
             if (btnRect && btnRect.height > 0) targetH = Math.round(btnRect.height);
             else targetH = Math.round(parseFloat(getComputedStyle(w.btn).fontSize) || 16);
             targetH = Math.max(12, targetH);
-            if (clearImg) { clearImg.style.height = targetH + 'px'; clearImg.style.width = 'auto'; }
-            if (askImg) { askImg.style.height = targetH + 'px'; askImg.style.width = 'auto'; }
-            if (w.share && w.share.querySelector('img')) { w.share.querySelector('img').style.height = targetH + 'px'; }
+            // Let CSS control button and icon sizing — ensure images scale to their
+            // button height rather than forcing explicit pixel heights here.
+            try{ if (clearImg) { clearImg.style.height = '100%'; clearImg.style.width = 'auto'; } }catch(e){}
+            try{ if (askImg) { askImg.style.height = '100%'; askImg.style.width = 'auto'; } }catch(e){}
+            try{ if (w.share && w.share.querySelector('img')) { w.share.querySelector('img').style.height = '100%'; w.share.querySelector('img').style.width = 'auto'; } }catch(e){}
           }catch(e){}
         };
 
