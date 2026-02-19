@@ -679,7 +679,11 @@
                     // it can expand naturally instead of showing an internal
                     // scrollbar. After scrolling, set the full target height.
                     if (isFocused && (isOccluded || lineChanged || (available > 0 && targetH > available))) {
-                      try{ input.scrollIntoView({ block: 'center', inline: 'nearest' }); }catch(e){}
+                      // Avoid calling scrollIntoView here because mobile browsers
+                      // will immediately auto-pan the page (causing the initial
+                      // wrong jump). Rely on the stabilization path that re-runs
+                      // `autosize()` after `visualViewport` stabilizes.
+                      // try{ input.scrollIntoView({ block: 'center', inline: 'nearest' }); }catch(e){}
                       requestAnimationFrame(()=>{
                         try{
                           const rect2 = input.getBoundingClientRect();
