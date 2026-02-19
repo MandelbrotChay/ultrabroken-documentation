@@ -774,9 +774,8 @@ li.task-list-item a, li.task-list a {
 /* Icon images inside AI controls: fixed visual icon size for parity */
 .ub-ai-clear img, .ub-ai-ask img, .ub-ai-share img {
   display: block;
-  width: auto;
-  height: 0.9rem; /* visual icon height inside the button */
-  max-width: 100%;
+  width: 0.9rem; /* explicit square icon size for visual parity */
+  height: 0.9rem;
   object-fit: contain;
   margin: 0;
 }
