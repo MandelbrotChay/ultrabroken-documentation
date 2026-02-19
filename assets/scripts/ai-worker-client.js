@@ -301,6 +301,7 @@
             if (w.input.value && String(w.input.value).trim()) return;
             try{ if (w._fakePlaceholder) w._fakePlaceholder.style.display = 'none'; }catch(e){}
             try{ w.input.value = ''; }catch(e){}
+            try{ collapseToSingleLine(w.input); }catch(e){}
             try{ if (typeof autosize === 'function') autosize(); }catch(e){}
             try{ if (typeof updateVisibility === 'function') updateVisibility(); }catch(e){}
           }catch(e){}
@@ -351,6 +352,30 @@
         }catch(e){}
       }catch(e){}
       // Wire clear button and replace Ask text with an SVG ask-icon that only appears when input has text
+      // Helper: immediately collapse a textarea to a conservative single-line
+      // visual height (line-height + vertical padding). Used by focus and
+      // clear flows to avoid visible lag before `autosize` runs.
+      const collapseToSingleLine = (inputEl) => {
+        try{
+          if (!inputEl) return;
+          const cs = window.getComputedStyle(inputEl);
+          const fontSize = parseFloat(cs.fontSize) || 16;
+          let lh = cs.lineHeight;
+          let lineH = 0;
+          if (lh === 'normal' || !lh) {
+            lineH = fontSize * 1.2;
+          } else if (lh.indexOf && lh.indexOf('px') !== -1) {
+            lineH = parseFloat(lh);
+          } else {
+            const n = parseFloat(lh) || 1.2;
+            lineH = fontSize * n;
+          }
+          const padTop = parseFloat(cs.paddingTop) || 0;
+          const padBottom = parseFloat(cs.paddingBottom) || 0;
+          const target = Math.max(12, Math.round(lineH + padTop + padBottom));
+          inputEl.style.height = target + 'px';
+        }catch(e){}
+      };
       try{
         // Ensure clear button exists
         if (w.clear){
@@ -375,7 +400,8 @@
             // Also clear parsed/rendered sources/evidence
             try{ if (w.evidence) w.evidence.innerHTML = ''; }catch(e){}
             w.input.focus(); 
-            // Ensure textarea resizes to reflect the cleared (empty) value
+            // Immediately collapse to single-line visual height, then run autosize
+            try{ collapseToSingleLine(w.input); }catch(e){}
             try{ if (typeof autosize === 'function') autosize(); }catch(e){}
             try { if (typeof updateVisibility === 'function') updateVisibility(); else { w.clear.style.display = 'none'; w.btn.style.display = 'none'; } } catch(e){ w.clear.style.display = 'none'; w.btn.style.display = 'none'; }
           });
