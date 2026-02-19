@@ -791,7 +791,7 @@ li.task-list-item a, li.task-list a {
 
 .ub-ai-input {
   width: 100%;
-  padding: 0.4rem 0.4rem 0.4rem 0.5rem;
+  padding: 0.4rem 0.4rem 0.4rem;
   margin-bottom: 0;
   border: none; /* remove bottom border to avoid double-line */
   background: transparent;
@@ -813,7 +813,7 @@ li.task-list-item a, li.task-list a {
   position: absolute;
   inset: 0;
   /* match textarea padding so text aligns exactly */
-  padding: 0.4rem 0.4rem 0.4rem 0.25rem;
+  padding: 0.4rem 0.4rem 0.4rem;
   /* Use the project's muted text color for overlay placeholder */
   color: var(--muted-text) !important;
   pointer-events: none;
@@ -915,3 +915,12 @@ li.task-list-item a, li.task-list a {
 
 /* Asset publish trigger: do not remove - used to trigger asset-only workflow */
 /* timestamp: 2026-02-13T00:00:00Z */
+
+/* Align AI widget with main content (measured delta: 16px)
+   Adjusts the AI input container and its overlay so the textarea and
+   fake placeholder visually align with `.md-content`. If this needs
+   tweaking, change the `-16px` value. */
+.ub-ai-root,
+.ub-ai-input-wrap {
+  transform: translateX(-16px);
+}
