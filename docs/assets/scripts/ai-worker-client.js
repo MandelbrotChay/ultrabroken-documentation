@@ -679,7 +679,14 @@
                     // it can expand naturally instead of showing an internal
                     // scrollbar. After scrolling, set the full target height.
                     if (isFocused && (isOccluded || lineChanged || (available > 0 && targetH > available))) {
-                      try{ input.scrollIntoView({ block: 'center', inline: 'nearest' }); }catch(e){}
+                      try{
+                        const val = String(input.value || '');
+                        const wasEmpty = (typeof w._lastLineCount !== 'number') || (w._lastLineCount === 0);
+                        const isFirstChar = wasEmpty && val.length === 1;
+                        if (isFirstChar && !lineChanged) {
+                          try{ input.scrollIntoView({ block: 'center', inline: 'nearest' }); }catch(e){}
+                        }
+                      }catch(e){}
                       requestAnimationFrame(()=>{
                         try{
                           const rect2 = input.getBoundingClientRect();
