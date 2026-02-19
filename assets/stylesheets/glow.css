@@ -760,7 +760,9 @@ li.task-list-item a, li.task-list a {
   background: transparent;
   padding: 0.15rem;
   box-sizing: border-box;
-  display: none;
+  display: flex; /* keep space reserved; JS controls visibility */
+  visibility: hidden;
+  opacity: 0;
   align-items: center;
   justify-content: center;
   border-radius: 0.2rem;
@@ -842,7 +844,9 @@ li.task-list-item a, li.task-list a {
   background: transparent;
   padding: 0.15rem;
   box-sizing: border-box;
-  display: none; /* initial state - mirror .ub-ai-clear */
+  display: flex; /* keep space reserved; JS controls visibility */
+  visibility: hidden;
+  opacity: 0;
   align-items: center;
   justify-content: center;
   border-radius: 0.2rem;

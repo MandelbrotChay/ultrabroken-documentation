@@ -375,7 +375,7 @@
           clearImg.style.display = 'block';
           clearImg.style.objectFit = 'contain';
           // ensure clear button centers its contents so the icon lines up with the Ask button
-          w.clear.style.display = 'none';
+          try{ w.clear.style.visibility = 'hidden'; w.clear.style.opacity = '0'; w.clear.style.pointerEvents = 'none'; }catch(e){}
           w.clear.style.alignItems = 'center';
           w.clear.style.justifyContent = 'center';
           w.clear.style.padding = '0';
@@ -389,7 +389,7 @@
             w.input.focus(); 
             // Ensure textarea resizes to reflect the cleared (empty) value
             try{ if (typeof autosize === 'function') autosize(); }catch(e){}
-            try { if (typeof updateVisibility === 'function') updateVisibility(); else { w.clear.style.display = 'none'; w.btn.style.display = 'none'; } } catch(e){ w.clear.style.display = 'none'; w.btn.style.display = 'none'; }
+            try { if (typeof updateVisibility === 'function') updateVisibility(); else { try{ w.clear.style.visibility = 'hidden'; w.clear.style.opacity = '0'; w.clear.style.pointerEvents = 'none'; }catch(e){} try{ w.btn.style.visibility = 'hidden'; w.btn.style.opacity = '0'; w.btn.style.pointerEvents = 'none'; }catch(e){} } } catch(e){ try{ w.clear.style.visibility = 'hidden'; w.clear.style.opacity = '0'; w.clear.style.pointerEvents = 'none'; }catch(e){} try{ w.btn.style.visibility = 'hidden'; w.btn.style.opacity = '0'; w.btn.style.pointerEvents = 'none'; }catch(e){} }
           });
         }
 
@@ -429,8 +429,8 @@
           w.share.style.cursor = 'pointer';
         } catch (e) {}
         // Start hidden; only show when the input has text (mirrors clear button behavior)
-        w.btn.style.display = 'none';
-        if (w.share) w.share.style.display = 'none';
+        try{ w.btn.style.visibility = 'hidden'; w.btn.style.opacity = '0'; w.btn.style.pointerEvents = 'none'; }catch(e){}
+        if (w.share) try{ w.share.style.visibility = 'hidden'; w.share.style.opacity = '0'; w.share.style.pointerEvents = 'none'; }catch(e){}
 
         // Share button: copy a permalink that encodes the query so it can be shared
         if (w.share) {
@@ -468,15 +468,15 @@
         // Toggle visibility for both controls based on input content
         const updateVisibility = ()=>{
           const has = w.input.value.trim();
-          if (w.clear) w.clear.style.display = has ? 'flex' : 'none';
-          w.btn.style.display = has ? 'flex' : 'none';
-          if (w.share) w.share.style.display = has ? 'flex' : 'none';
+          try{ if (w.clear) { if (has) { w.clear.style.visibility = 'visible'; w.clear.style.opacity = '1'; w.clear.style.pointerEvents = 'auto'; } else { w.clear.style.visibility = 'hidden'; w.clear.style.opacity = '0'; w.clear.style.pointerEvents = 'none'; } } }catch(e){}
+          try{ if (has) { w.btn.style.visibility = 'visible'; w.btn.style.opacity = '1'; w.btn.style.pointerEvents = 'auto'; } else { w.btn.style.visibility = 'hidden'; w.btn.style.opacity = '0'; w.btn.style.pointerEvents = 'none'; } }catch(e){}
+          try{ if (w.share) { if (has) { w.share.style.visibility = 'visible'; w.share.style.opacity = '1'; w.share.style.pointerEvents = 'auto'; } else { w.share.style.visibility = 'hidden'; w.share.style.opacity = '0'; w.share.style.pointerEvents = 'none'; } } }catch(e){}
           // Toggle the click-through overlay placeholder: show only when
           // the field is empty and not focused.
           try{
             if (w._fakePlaceholder) {
               const showFake = !has && document.activeElement !== w.input;
-              w._fakePlaceholder.style.display = showFake ? 'block' : 'none';
+              try{ w._fakePlaceholder.style.display = showFake ? 'block' : 'none'; }catch(e){}
             }
           }catch(e){}
           // After toggling, resize icons to match rendered button height
