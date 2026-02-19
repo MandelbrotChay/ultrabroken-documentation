@@ -465,6 +465,55 @@
           inputEl.style.height = target + 'px';
         }catch(e){}
       };
+      // Best-effort focused scroll-lock: when the input is focused we save
+      // the current page scroll and attempt to restore it on scroll/viewport
+      // changes or input events so mobile UAs don't aggressively pan the
+      // page while the user types. This is intentionally conservative and
+      // non-intrusive.
+      const enableFocusedScrollLock = (inputEl) => {
+        try{
+          if (!inputEl) return;
+          let saved = { x: window.scrollX || window.pageXOffset || 0, y: window.scrollY || window.pageYOffset || 0 };
+          let vv = window.visualViewport;
+          let restoring = false;
+
+          const restore = ()=>{
+            try{
+              if (restoring) return;
+              // Only restore while the input remains focused
+              if (document.activeElement !== inputEl) return;
+              restoring = true;
+              window.scrollTo(saved.x, saved.y);
+              if (vv && typeof vv.scrollTo === 'function') {
+                try{ vv.scrollTo(saved.x, saved.y); }catch(e){}
+              }
+            }catch(e){} finally { restoring = false; }
+          };
+
+          const onFocus = ()=>{
+            try{
+              saved = { x: window.scrollX || window.pageXOffset || 0, y: window.scrollY || window.pageYOffset || 0 };
+              // attach listeners that may indicate the UA attempted to pan
+              window.addEventListener('scroll', restore, { passive: true });
+              document.addEventListener('selectionchange', restore);
+              inputEl.addEventListener('input', restore);
+              if (vv) { vv.addEventListener('scroll', restore); vv.addEventListener('resize', restore); }
+            }catch(e){}
+          };
+
+          const onBlur = ()=>{
+            try{
+              window.removeEventListener('scroll', restore);
+              document.removeEventListener('selectionchange', restore);
+              inputEl.removeEventListener('input', restore);
+              if (vv) { vv.removeEventListener('scroll', restore); vv.removeEventListener('resize', restore); }
+            }catch(e){}
+          };
+
+          inputEl.addEventListener('focus', onFocus);
+          inputEl.addEventListener('blur', onBlur);
+        }catch(e){}
+      };
       try{
         // Ensure clear button exists
         if (w.clear){
@@ -670,6 +719,8 @@
         window.addEventListener('resize', resizeIcons);
         // initial state
         updateVisibility();
+        // Enable focused scroll-lock to attempt to keep page scroll stable
+        try{ if (typeof enableFocusedScrollLock === 'function') enableFocusedScrollLock(w.input); }catch(e){}
       }catch(e){ /* ignore */ }
       // Keep rune centered while on the AI page
       try{ document.body.classList.add('ultrabroken-center-rune'); }catch(e){}
