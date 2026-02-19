@@ -635,7 +635,7 @@
                         const docH = Math.max(document.body.scrollHeight || 0, (document.documentElement && document.documentElement.scrollHeight) || 0);
                         window.scrollTo({ top: docH, left: 0, behavior: 'auto' });
                       }catch(e){}
-                      requestAnimationFrame(()=>{
+                      /*requestAnimationFrame(()=>{
                         try{
                           const rect2 = input.getBoundingClientRect();
                           const vv2 = window.visualViewport || vv;
@@ -643,7 +643,7 @@
                           input.style.overflowY = 'hidden';
                           try{ input.style.height = targetH + 'px'; }catch(e){}
                         }catch(e){}
-                      });
+                      });*/
                     } else {
                       if (available > 0 && targetH > available) {
                         targetH = Math.max(12, available);
