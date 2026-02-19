@@ -28,16 +28,23 @@
     const _placeholder_text = 'What is referred to as Wacko Boingo?';
       // Max query length (short questions). Configurable via `window.AI_MAX_QUERY_CHARS`.
       const MAX_QUERY_CHARS = (typeof window !== 'undefined' && window.AI_MAX_QUERY_CHARS) ? Number(window.AI_MAX_QUERY_CHARS) : 50;
-      const input = el('textarea', { placeholder: '', 'data-ub-placeholder': _placeholder_text, class: 'ub-ai-input', maxlength: String(MAX_QUERY_CHARS), rows: '1' });
+      // Force faux input enabled by default for testing/UX
+      const useFaux = true;
+      let input;
+      if (useFaux) {
+        input = el('div', { contenteditable: 'true', role: 'textbox', 'aria-multiline': 'true', 'data-ub-placeholder': _placeholder_text, class: 'ub-ai-input' }, '');
+      } else {
+        input = el('textarea', { placeholder: '', 'data-ub-placeholder': _placeholder_text, class: 'ub-ai-input', maxlength: String(MAX_QUERY_CHARS), rows: '1' });
+      }
       // textarea base styles for autosize and wrapping
       try{
         input.style.resize = 'none';
-        input.style.overflow = 'hidden';
+          input.style.overflow = 'hidden';
         input.style.overflowY = 'hidden';
         input.style.flex = '1 1 auto';
         input.style.width = '100%';
         input.style.boxSizing = 'border-box';
-        input.setAttribute('wrap', 'soft');
+          try{ input.setAttribute('wrap', 'soft'); }catch(e){}
         input.style.whiteSpace = 'pre-wrap';
         input.style.overflowWrap = 'break-word';
         input.style.wordBreak = 'normal';
@@ -103,7 +110,7 @@
       // and no longer attempts to parse `response_text` for Sources.
 
       const handleAsk = async ()=>{
-        const q = w.input.value.trim(); if (!q) return; w.out.textContent = 'The Librarian stares at you...';
+        const q = (typeof w.getValue === 'function' ? w.getValue() : (w.input.value||'')).trim(); if (!q) return; w.out.textContent = 'The Librarian stares at you...';
         if (w.evidence) w.evidence.innerHTML = '';
         const r = await askWorker(q);
         if (r.error) {
@@ -258,6 +265,15 @@
         if (!w.out.textContent && (!r.evidence || !r.evidence.length)) w.out.textContent = 'silence';
       };
       w.btn.addEventListener('click', handleAsk);
+      // helper accessors for faux input support
+      w.getValue = ()=>{
+        try{ if (w.input && w.input.contentEditable === 'true') return String(w.input.textContent || ''); }catch(e){}
+        try{ return String(w.input && w.input.value || ''); }catch(e){ return ''; }
+      };
+      w.setValue = (v)=>{
+        try{ if (w.input && w.input.contentEditable === 'true') { w.input.textContent = v; return; } }catch(e){}
+        try{ if (w.input) w.input.value = v; }catch(e){}
+      };
       // Submit on plain Enter. Ctrl/Cmd+Enter inserts a newline at the caret.
       w.input.addEventListener('keydown', (ev)=>{
         if (ev.key === 'Enter') {
@@ -265,16 +281,33 @@
             // Insert a newline at the current caret position
             try{
               ev.preventDefault();
-              const el = w.input;
-              const start = el.selectionStart || 0;
-              const end = el.selectionEnd || 0;
-              const v = el.value || '';
-              el.value = v.slice(0, start) + '\n' + v.slice(end);
-              // place caret after the inserted newline
-              const pos = start + 1;
-              el.selectionStart = el.selectionEnd = pos;
-              try { autosize(); } catch(e){}
-              try { updateVisibility(); } catch(e){}
+              if (w.input && w.input.contentEditable === 'true') {
+                try{
+                  const sel = window.getSelection();
+                  if (sel && sel.rangeCount) {
+                    const range = sel.getRangeAt(0);
+                    range.deleteContents();
+                    const node = document.createTextNode('\n');
+                    range.insertNode(node);
+                    // move caret after inserted node
+                    range.setStartAfter(node);
+                    range.collapse(true);
+                    sel.removeAllRanges(); sel.addRange(range);
+                  }
+                }catch(e){}
+                try { autosize(); } catch(e){}
+                try { updateVisibility(); } catch(e){}
+              } else {
+                const el = w.input;
+                const start = el.selectionStart || 0;
+                const end = el.selectionEnd || 0;
+                const v = el.value || '';
+                el.value = v.slice(0, start) + '\n' + v.slice(end);
+                const pos = start + 1;
+                el.selectionStart = el.selectionEnd = pos;
+                try { autosize(); } catch(e){}
+                try { updateVisibility(); } catch(e){}
+              }
             }catch(e){}
           } else {
             ev.preventDefault();
@@ -312,7 +345,8 @@
                 // Pause placeholder changes while user is focused in the input
                 if (document.activeElement === w.input) return;
                 w.input.setAttribute('data-ub-placeholder', txt);
-                if (w._fakePlaceholder && !w.input.value && document.activeElement !== w.input) {
+                const curVal = (typeof w.getValue === 'function') ? String(w.getValue() || '') : String((w.input && w.input.value) || '');
+                if (w._fakePlaceholder && !curVal && document.activeElement !== w.input) {
                   w._fakePlaceholder.textContent = txt;
                 }
                 // Measure placeholder height synchronously using a hidden clone
@@ -338,7 +372,7 @@
                       props.forEach(p=>{ try{ c.style[p] = cs[p]; }catch(e){} });
                       try{ const rect = input.getBoundingClientRect(); c.style.width = Math.max(10, Math.round(rect.width)) + 'px'; }catch(e){}
                     }catch(e){}
-                    c.value = txt;
+                    try{ if (c.contentEditable === 'true') c.textContent = txt; else c.value = txt; }catch(e){ try{ c.value = txt; }catch(e){} }
                     document.body.appendChild(c);
                     const measured = c.scrollHeight || 0;
                     document.body.removeChild(c);
@@ -386,9 +420,10 @@
           try{
             // Only clear/hide when the field is currently empty. If the
             // user focused an existing query, leave the content intact.
-            if (w.input.value && String(w.input.value).trim()) return;
+            const cur = (typeof w.getValue === 'function') ? String(w.getValue() || '') : String((w.input && w.input.value) || '');
+            if (cur && String(cur).trim()) return;
             try{ if (w._fakePlaceholder) w._fakePlaceholder.style.display = 'none'; }catch(e){}
-            try{ w.input.value = ''; }catch(e){}
+            try{ if (typeof w.setValue === 'function') w.setValue(''); else if (w.input) w.input.value = ''; }catch(e){}
             try{ collapseToSingleLine(w.input); }catch(e){}
             try{ if (typeof autosize === 'function') autosize(); }catch(e){}
             try{ if (typeof updateVisibility === 'function') updateVisibility(); }catch(e){}
@@ -398,7 +433,8 @@
         // Show overlay when blurred and empty; reapply measured placeholder height when available
         w.input.addEventListener('blur', ()=>{
           try{
-            if (!w.input.value) {
+            const cur = (typeof w.getValue === 'function') ? String(w.getValue() || '') : String((w.input && w.input.value) || '');
+            if (!cur) {
               try{ if (w._fakePlaceholder) w._fakePlaceholder.style.display = 'block'; }catch(e){}
               try{ if (w.placeholderHeight) w.input.style.height = w.placeholderHeight + 'px'; }catch(e){}
             }
@@ -407,7 +443,8 @@
 
         // Initial state: show overlay only when not focused and empty
         try{
-          if (document.activeElement !== w.input && !w.input.value) {
+          const cur = (typeof w.getValue === 'function') ? String(w.getValue() || '') : String((w.input && w.input.value) || '');
+          if (document.activeElement !== w.input && !cur) {
             try{ if (w._fakePlaceholder) w._fakePlaceholder.style.display = 'block'; }catch(e){}
           } else {
             try{ if (w._fakePlaceholder) w._fakePlaceholder.style.display = 'none'; }catch(e){}
@@ -423,18 +460,29 @@
             try{
               const el = w.input;
               // Only measure when the field is currently empty (placeholder shown)
-              if (el && !el.value && stored) {
-                const prevVal = el.value;
-                const prevRows = el.rows;
-                const s0 = el.selectionStart; const s1 = el.selectionEnd;
-                try{ el.value = stored; el.rows = 1; }catch(e){}
-                // read scrollHeight which includes wrapped lines
-                const h = el.scrollHeight;
-                // restore
-                try{ el.value = prevVal; el.rows = prevRows; }catch(e){}
-                try{ if (typeof el.setSelectionRange === 'function') el.setSelectionRange(s0, s1); }catch(e){}
-                if (h && !isNaN(h)) w.placeholderHeight = Math.max(12, Math.round(h));
-              }
+              try{
+                const curVal = (typeof w.getValue === 'function') ? String(w.getValue() || '') : String((el && el.value) || '');
+                if (el && !curVal && stored) {
+                  if (el.contentEditable === 'true') {
+                    const prevText = el.textContent;
+                    try{ el.textContent = stored; }catch(e){}
+                    const h = el.scrollHeight;
+                    try{ el.textContent = prevText; }catch(e){}
+                    if (h && !isNaN(h)) w.placeholderHeight = Math.max(12, Math.round(h));
+                  } else {
+                    const prevVal = el.value;
+                    const prevRows = el.rows;
+                    const s0 = el.selectionStart; const s1 = el.selectionEnd;
+                    try{ el.value = stored; el.rows = 1; }catch(e){}
+                    // read scrollHeight which includes wrapped lines
+                    const h = el.scrollHeight;
+                    // restore
+                    try{ el.value = prevVal; el.rows = prevRows; }catch(e){}
+                    try{ if (typeof el.setSelectionRange === 'function') el.setSelectionRange(s0, s1); }catch(e){}
+                    if (h && !isNaN(h)) w.placeholderHeight = Math.max(12, Math.round(h));
+                  }
+                }
+              }catch(e){}
             }catch(e){}
           });
         }catch(e){}
@@ -476,7 +524,7 @@
           w.clear.style.display = 'none';
           w.clear.appendChild(clearImg);
           w.clear.addEventListener('click', ()=>{ 
-            w.input.value = ''; 
+            try{ if (typeof w.setValue === 'function') w.setValue(''); else if (w.input) w.input.value = ''; }catch(e){}
             // Clear rendered answer and any HTML inside
             try{ if (w.out) { w.out.textContent = ''; w.out.innerHTML = ''; } }catch(e){}
             // Also clear parsed/rendered sources/evidence
@@ -514,7 +562,7 @@
           try {
             w.share.addEventListener('click', () => {
               try {
-                const q = String(w.input.value || '').trim();
+                const q = String((typeof w.getValue === 'function' ? w.getValue() : (w.input && w.input.value || '')) || '').trim();
                 if (!q) return;
                 // Copy only the user's prompt text to the clipboard (no URL)
                 navigator.clipboard.writeText(q).then(() => {
@@ -543,7 +591,7 @@
 
         // Toggle visibility for both controls based on input content
         const updateVisibility = ()=>{
-          const has = w.input.value.trim();
+          const has = String((typeof w.getValue === 'function' ? w.getValue() : (w.input && w.input.value || '')) || '').trim();
           if (w.clear) w.clear.style.display = has ? 'flex' : 'none';
           w.btn.style.display = has ? 'flex' : 'none';
           if (w.share) w.share.style.display = has ? 'flex' : 'none';
