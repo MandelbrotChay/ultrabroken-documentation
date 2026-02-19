@@ -760,9 +760,7 @@ li.task-list-item a, li.task-list a {
   background: transparent;
   padding: 0.15rem;
   box-sizing: border-box;
-  display: flex; /* keep space reserved; JS controls visibility */
-  visibility: hidden;
-  opacity: 0;
+  display: none;
   align-items: center;
   justify-content: center;
   border-radius: 0.2rem;
@@ -815,16 +813,20 @@ li.task-list-item a, li.task-list a {
   left: 0.4rem;
   top: 0.4rem;
   right: 0.4rem;
-  color: #00c09b !important;
+  /* Darker variant of the surrounding text color; use color-mix when supported
+     with a solid fallback for older browsers. */
+  color: color-mix(in srgb, currentColor 66%, black 34%) !important;
+  color: rgba(0,0,0,0.72) !important; /* fallback if color-mix unsupported */
   pointer-events: none;
-  font-family: inherit;
+  font-family: 'New Rocker', 'Texturina', inherit !important;
   font-size: 1.25rem;
   line-height: 1.2;
   white-space: pre-wrap;
   overflow: hidden;
   display: block;
   z-index: 4;
-  -webkit-text-fill-color: #00c09b !important;
+  -webkit-text-fill-color: color-mix(in srgb, currentColor 66%, black 34%) !important;
+  -webkit-text-fill-color: rgba(0,0,0,0.72) !important; /* fallback */
   opacity: 0.95;
 }
 
@@ -844,9 +846,7 @@ li.task-list-item a, li.task-list a {
   background: transparent;
   padding: 0.15rem;
   box-sizing: border-box;
-  display: flex; /* keep space reserved; JS controls visibility */
-  visibility: hidden;
-  opacity: 0;
+  display: none; /* initial state - mirror .ub-ai-clear */
   align-items: center;
   justify-content: center;
   border-radius: 0.2rem;

@@ -296,23 +296,6 @@
             if (w.input.value && String(w.input.value).trim()) return; // has content — do nothing
             try{ if (w._fakePlaceholder) w._fakePlaceholder.style.display = 'none'; }catch(e){}
             try{ w.input.value = ''; }catch(e){}
-            // Collapse to a single-row height immediately to avoid starting
-            // the focused textarea at the placeholder's multi-line height.
-            try{
-              const cs = window.getComputedStyle(w.input);
-              const fs = parseFloat(cs.fontSize) || 16;
-              const lh = parseFloat(cs.lineHeight) || (fs * 1.2);
-              const pt = parseFloat(cs.paddingTop) || 0;
-              const pb = parseFloat(cs.paddingBottom) || 0;
-              const box = (cs.boxSizing || '').toLowerCase();
-              let singleH = Math.max(12, Math.round(lh));
-              if (box !== 'border-box') {
-                singleH = Math.max(singleH, Math.round(lh + pt + pb));
-              }
-              // small breathing room so the caret doesn't feel cramped
-              singleH = singleH + 2;
-              w.input.style.height = singleH + 'px';
-            }catch(e){}
             try{ if (typeof autosize === 'function') autosize(); }catch(e){}
             try{ if (typeof updateVisibility === 'function') updateVisibility(); }catch(e){}
           }catch(e){}
@@ -375,7 +358,7 @@
           clearImg.style.display = 'block';
           clearImg.style.objectFit = 'contain';
           // ensure clear button centers its contents so the icon lines up with the Ask button
-          try{ w.clear.style.visibility = 'hidden'; w.clear.style.opacity = '0'; w.clear.style.pointerEvents = 'none'; }catch(e){}
+          w.clear.style.display = 'none';
           w.clear.style.alignItems = 'center';
           w.clear.style.justifyContent = 'center';
           w.clear.style.padding = '0';
@@ -389,7 +372,7 @@
             w.input.focus(); 
             // Ensure textarea resizes to reflect the cleared (empty) value
             try{ if (typeof autosize === 'function') autosize(); }catch(e){}
-            try { if (typeof updateVisibility === 'function') updateVisibility(); else { try{ w.clear.style.visibility = 'hidden'; w.clear.style.opacity = '0'; w.clear.style.pointerEvents = 'none'; }catch(e){} try{ w.btn.style.visibility = 'hidden'; w.btn.style.opacity = '0'; w.btn.style.pointerEvents = 'none'; }catch(e){} } } catch(e){ try{ w.clear.style.visibility = 'hidden'; w.clear.style.opacity = '0'; w.clear.style.pointerEvents = 'none'; }catch(e){} try{ w.btn.style.visibility = 'hidden'; w.btn.style.opacity = '0'; w.btn.style.pointerEvents = 'none'; }catch(e){} }
+            try { if (typeof updateVisibility === 'function') updateVisibility(); else { w.clear.style.display = 'none'; w.btn.style.display = 'none'; } } catch(e){ w.clear.style.display = 'none'; w.btn.style.display = 'none'; }
           });
         }
 
@@ -429,8 +412,8 @@
           w.share.style.cursor = 'pointer';
         } catch (e) {}
         // Start hidden; only show when the input has text (mirrors clear button behavior)
-        try{ w.btn.style.visibility = 'hidden'; w.btn.style.opacity = '0'; w.btn.style.pointerEvents = 'none'; }catch(e){}
-        if (w.share) try{ w.share.style.visibility = 'hidden'; w.share.style.opacity = '0'; w.share.style.pointerEvents = 'none'; }catch(e){}
+        w.btn.style.display = 'none';
+        if (w.share) w.share.style.display = 'none';
 
         // Share button: copy a permalink that encodes the query so it can be shared
         if (w.share) {
@@ -468,15 +451,15 @@
         // Toggle visibility for both controls based on input content
         const updateVisibility = ()=>{
           const has = w.input.value.trim();
-          try{ if (w.clear) { if (has) { w.clear.style.visibility = 'visible'; w.clear.style.opacity = '1'; w.clear.style.pointerEvents = 'auto'; } else { w.clear.style.visibility = 'hidden'; w.clear.style.opacity = '0'; w.clear.style.pointerEvents = 'none'; } } }catch(e){}
-          try{ if (has) { w.btn.style.visibility = 'visible'; w.btn.style.opacity = '1'; w.btn.style.pointerEvents = 'auto'; } else { w.btn.style.visibility = 'hidden'; w.btn.style.opacity = '0'; w.btn.style.pointerEvents = 'none'; } }catch(e){}
-          try{ if (w.share) { if (has) { w.share.style.visibility = 'visible'; w.share.style.opacity = '1'; w.share.style.pointerEvents = 'auto'; } else { w.share.style.visibility = 'hidden'; w.share.style.opacity = '0'; w.share.style.pointerEvents = 'none'; } } }catch(e){}
+          if (w.clear) w.clear.style.display = has ? 'flex' : 'none';
+          w.btn.style.display = has ? 'flex' : 'none';
+          if (w.share) w.share.style.display = has ? 'flex' : 'none';
           // Toggle the click-through overlay placeholder: show only when
           // the field is empty and not focused.
           try{
             if (w._fakePlaceholder) {
               const showFake = !has && document.activeElement !== w.input;
-              try{ w._fakePlaceholder.style.display = showFake ? 'block' : 'none'; }catch(e){}
+              w._fakePlaceholder.style.display = showFake ? 'block' : 'none';
             }
           }catch(e){}
           // After toggling, resize icons to match rendered button height
@@ -516,10 +499,7 @@
                 if (!input) return;
                 const clone = ensureClone();
                 const storedPlaceholder = input.getAttribute('data-ub-placeholder') || '';
-                const isFocused = (document.activeElement === input);
-                const measurementValue = (input.value && input.value.length)
-                  ? input.value
-                  : ((!isFocused && storedPlaceholder) ? storedPlaceholder : '');
+                const measurementValue = (input.value && input.value.length) ? input.value : (storedPlaceholder || '');
                 if (!clone) {
                   // Fallback to the simple method if clone creation failed
                   try{ input.style.height = 'auto'; const h = input.scrollHeight; if (h) input.style.height = h + 'px'; }catch(e){}
@@ -537,25 +517,6 @@
                 clone.style.height = 'auto';
                 const measured = clone.scrollHeight || 0;
                 let targetH = Math.max(12, Math.round(measured));
-                // If the field is focused and measurement used an empty value,
-                // ensure we collapse to a single-line height rather than the
-                // placeholder's wrapped height.
-                try{
-                  if (isFocused && !measurementValue) {
-                    try{
-                      const cs = window.getComputedStyle(input);
-                      const fs = parseFloat(cs.fontSize) || 16;
-                      const lh = parseFloat(cs.lineHeight) || (fs * 1.2);
-                      const pt = parseFloat(cs.paddingTop) || 0;
-                      const pb = parseFloat(cs.paddingBottom) || 0;
-                      const box = (cs.boxSizing || '').toLowerCase();
-                      let singleH = Math.max(12, Math.round(lh));
-                      if (box !== 'border-box') singleH = Math.max(singleH, Math.round(lh + pt + pb));
-                      singleH = singleH + 2; // breathing room
-                      targetH = singleH;
-                    }catch(e){}
-                  }
-                }catch(e){}
                 // If a visualViewport is present (mobile keyboard visible), cap
                 // the target height so the textarea doesn't grow into the
                 // keyboard area. If capped, allow internal scrolling.
