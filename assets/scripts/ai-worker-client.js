@@ -451,10 +451,11 @@
             try{ if (w.out) { w.out.textContent = ''; w.out.innerHTML = ''; } }catch(e){}
             // Also clear parsed/rendered sources/evidence
             try{ if (w.evidence) w.evidence.innerHTML = ''; }catch(e){}
-            w.input.focus(); 
-            // Immediately collapse to single-line visual height, then run autosize
-            try{ collapseToSingleLine(w.input); }catch(e){}
-            try{ if (typeof autosize === 'function') autosize(); }catch(e){}
+            w.input.focus();
+            // For contenteditable, remove any inline height so the element
+            // resizes naturally again. (collapseToSingleLine would pin a fixed
+            // pixel height which prevents natural growth when autosize is off.)
+            try{ if (w.input && w.input.contentEditable === 'true') w.input.style.height = ''; }catch(e){}
             try { if (typeof updateVisibility === 'function') updateVisibility(); else { w.clear.style.display = 'none'; w.btn.style.display = 'none'; } } catch(e){ w.clear.style.display = 'none'; w.btn.style.display = 'none'; }
           });
         }
