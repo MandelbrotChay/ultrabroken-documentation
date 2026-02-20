@@ -100,14 +100,17 @@
     const out = el('div', { class: 'ub-ai-out' }, '');
     const evidenceWrap = el('div', { class: 'ub-ai-evidence' }, '');
     inputWrap.appendChild(input);
-    // (placeholder removed for test)
     row.appendChild(inputWrap);
-    // place clear as its own control (sibling to ask/share) so it behaves like other action buttons
-    row.appendChild(clearBtn);
-    row.appendChild(askBtn);
-    row.appendChild(shareBtn);
+    // Buttons float over the separator line (border-top of out) via a zero-height anchor
+    const actionsBar = el('div', { class: 'ub-ai-actions' });
+    const actionsGroup = el('div', { class: 'ub-ai-actions-group' });
+    actionsGroup.appendChild(clearBtn);
+    actionsGroup.appendChild(askBtn);
+    actionsGroup.appendChild(shareBtn);
+    actionsBar.appendChild(actionsGroup);
     
     root.appendChild(row);
+    root.appendChild(actionsBar);
     root.appendChild(out);
     // append evidence container to the widget so it's accessible via the returned handle
     root.appendChild(evidenceWrap);
