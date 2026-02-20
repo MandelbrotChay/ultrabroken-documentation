@@ -23,9 +23,9 @@
   // Idle texts shown in the output area before any query is made and after
   // clearing. One is picked at random each time. Cleared when a query starts.
   const _IDLE_TEXTS = [
-    'So that happens if the Triforce of wisdom gets out of control...',
+    'So this happens if the Triforce of wisdom gets out of control...',
     'A chosen hero wants to know how to break Hylias creation... What a plot twist!',
-    'The flame of curiosity flares so brightly... Don\'t burn your Ultrafingers!',
+    'The flame of curiosity flares so brightly in you... Don\'t burn your Ultrafingers!',
     'The Sheikah Slate is indexing forbidden knowledge...',
     'Even the Great Deku Tree does not know everything.',
     'The Koroks are hiding more than just seeds, it seems.',
