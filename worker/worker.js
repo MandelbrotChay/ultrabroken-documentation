@@ -75,7 +75,8 @@ export default {
       response_text: 'What was the question again...?',
       response_sources: null,
       sources: [],
-      evidence: []
+      evidence: [],
+      silence: true
     }), { headers: Object.assign({'Content-Type':'application/json'}, CORS_HEADERS) });
 
     const indexUrl = env.WIKI_INDEX_URL || `https://` + (env.SITE_HOSTNAME || 'nan-gogh.github.io') + `/${env.SITE_PATH || 'ultrabroken-documentation'}/wiki_index.json.gz`;
