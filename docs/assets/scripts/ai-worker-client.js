@@ -514,16 +514,15 @@
         // Toggle visibility for both controls based on input content
         const updateVisibility = ()=>{
           const has = String((typeof w.getValue === 'function' ? w.getValue() : (w.input && w.input.value || '')) || '').trim();
-            // Deactivate action buttons for now: always hide and disable
+          if (has) {
+            try{ if (w.clear) { w.clear.style.display = 'flex'; w.clear.disabled = false; } }catch(e){}
+            try{ if (w.btn)   { w.btn.style.display   = 'flex'; w.btn.disabled   = false; } }catch(e){}
+            try{ if (w.share) { w.share.style.display = 'flex'; w.share.disabled = false; } }catch(e){}
+          } else {
             try{ if (w.clear) { w.clear.style.display = 'none'; w.clear.disabled = true; } }catch(e){}
-            try{ if (w.btn) { w.btn.style.display = 'none'; w.btn.disabled = true; } }catch(e){}
+            try{ if (w.btn)   { w.btn.style.display   = 'none'; w.btn.disabled   = true; } }catch(e){}
             try{ if (w.share) { w.share.style.display = 'none'; w.share.disabled = true; } }catch(e){}
-            // Toggle the click-through overlay placeholder: show only when
-            // the field is empty and not focused.
-              // placeholder removed for test; nothing to toggle here
-              try{
-                /* no-op */
-              }catch(e){}
+          }
           // After toggling, resize icons to match rendered button height
           // use a short timeout to allow layout to settle when showing
           setTimeout(resizeIcons, 0);
