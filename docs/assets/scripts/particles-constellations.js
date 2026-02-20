@@ -118,12 +118,19 @@
           for (let i=1;i<cfg.burstSize;i++) {
             particles.push(makeParticle(false, clusterX));
           }
-          // cap particle array to avoid unbounded growth; compute targetCount
+          // cap particle array to avoid unbounded growth; only remove ambient particles
           try{
             const area = (W * H) / (1366 * 768);
             const targetCount = Math.max(12, Math.round(cfg.baseCount * area));
             const cap = Math.max(targetCount, Math.round(targetCount * 1.5));
-            while (particles.length > cap) particles.pop();
+            while (particles.length > cap) {
+              // find the last non-burst particle to remove instead of blindly popping
+              let removed = false;
+              for (let k = particles.length - 1; k >= 0; k--){
+                if (!particles[k].burst){ particles.splice(k, 1); removed = true; break; }
+              }
+              if (!removed) break; // only burst particles left, stop
+            }
           }catch(e){}
         } else {
           Object.assign(p, makeParticle(false));
