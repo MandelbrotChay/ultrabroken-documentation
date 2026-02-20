@@ -73,7 +73,7 @@
   // Set to '' to leave it blank, or fill in a prompt hint.
   const IDLE_FOCUSED_TEXT = 'Gtreetings, curious wanderer. Ask me anything about the secrets of Hyrule. Will i share word or waffle? Tip or trick? Legend or lie? Who knows?';  // Text shown immediately on blur (before the typewriter finishes and picks a new idle text).
   // This bridges the gap between blur and the typewriter callback.
-  const IDLE_BLUR_TEXT = 'I shall continue yapping then...';
+  const IDLE_BLUR_TEXT = 'I shall continue yapping nonsense then...';
   // Placeholder pool — randomly sampled each time the widget initialises.
   const _PLACEHOLDERS = [
     "What is Wacko Boingo?",
