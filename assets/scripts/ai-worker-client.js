@@ -323,7 +323,7 @@
         if (!w.out.textContent && (!r.evidence || !r.evidence.length)) w.out.textContent = 'silence';
         // Auto-clear after a short delay when the worker returned a silence response
         if (r.silence) {
-          setTimeout(()=>{ try{ w.clear.click(); }catch(e){} }, 2500);
+          setTimeout(()=>{ try{ doClear(true); }catch(e){} }, 2500);
         }
       };
       w.btn.addEventListener('click', handleAsk);
@@ -514,20 +514,21 @@
           // ensure clear button starts hidden; layout/spacing handled by CSS
           w.clear.style.display = 'none';
           w.clear.appendChild(clearImg);
-          w.clear.addEventListener('click', ()=>{ 
+          const doClear = (skipFocus = false) => {
             try{ if (typeof unlockInput === 'function') unlockInput(); }catch(e){}
             try{ if (typeof w.setValue === 'function') w.setValue(''); else if (w.input) w.input.value = ''; }catch(e){}
             // Clear rendered answer and restore idle text
             try{ if (w.out) { w.out.innerHTML = ''; w.out.textContent = idleText(); } }catch(e){}
             // Also clear parsed/rendered sources/evidence
             try{ if (w.evidence) w.evidence.innerHTML = ''; }catch(e){}
-            w.input.focus();
+            if (!skipFocus) w.input.focus();
             // For contenteditable, remove any inline height so the element
             // resizes naturally again. (collapseToSingleLine would pin a fixed
             // pixel height which prevents natural growth when autosize is off.)
             try{ if (w.input && w.input.contentEditable === 'true') w.input.style.height = ''; }catch(e){}
             try { if (typeof updateVisibility === 'function') updateVisibility(); else { w.clear.style.display = 'none'; w.btn.style.display = 'none'; } } catch(e){ w.clear.style.display = 'none'; w.btn.style.display = 'none'; }
-          });
+          };
+          w.clear.addEventListener('click', ()=> doClear(false));
         }
 
         // Replace textual Ask label with an SVG inside the Ask button
