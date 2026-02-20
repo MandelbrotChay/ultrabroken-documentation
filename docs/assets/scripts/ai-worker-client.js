@@ -323,7 +323,7 @@
         if (!w.out.textContent && (!r.evidence || !r.evidence.length)) w.out.textContent = 'silence';
         // Auto-clear after a short delay when the worker returned a silence response
         if (r.silence) {
-          setTimeout(()=>{ try{ doClear(true); }catch(e){} }, 2500);
+          setTimeout(()=>{ try{ doClear(); }catch(e){} }, 2500);
         }
       };
       w.btn.addEventListener('click', handleAsk);
@@ -417,6 +417,15 @@
       };
       const unlockInput = ()=>{
         try{ w.input.setAttribute('contenteditable', 'true'); w.input._inputLocked = false; }catch(e){}
+      };
+      // Declared at outer scope so the silence-timeout in handleAsk can close over it.
+      const doClear = () => {
+        try{ if (typeof unlockInput === 'function') unlockInput(); }catch(e){}
+        try{ if (typeof w.setValue === 'function') w.setValue(''); else if (w.input) w.input.value = ''; }catch(e){}
+        try{ if (w.out) { w.out.innerHTML = ''; w.out.textContent = idleText(); } }catch(e){}
+        try{ if (w.evidence) w.evidence.innerHTML = ''; }catch(e){}
+        try{ if (w.input && w.input.contentEditable === 'true') w.input.style.height = ''; }catch(e){}
+        try { if (typeof updateVisibility === 'function') updateVisibility(); else { w.clear.style.display = 'none'; w.btn.style.display = 'none'; } } catch(e){ w.clear.style.display = 'none'; w.btn.style.display = 'none'; }
       };
 
       // Focus: kill animation and clear field only when placeholder is showing.
@@ -514,21 +523,7 @@
           // ensure clear button starts hidden; layout/spacing handled by CSS
           w.clear.style.display = 'none';
           w.clear.appendChild(clearImg);
-          const doClear = (skipFocus = false) => {
-            try{ if (typeof unlockInput === 'function') unlockInput(); }catch(e){}
-            try{ if (typeof w.setValue === 'function') w.setValue(''); else if (w.input) w.input.value = ''; }catch(e){}
-            // Clear rendered answer and restore idle text
-            try{ if (w.out) { w.out.innerHTML = ''; w.out.textContent = idleText(); } }catch(e){}
-            // Also clear parsed/rendered sources/evidence
-            try{ if (w.evidence) w.evidence.innerHTML = ''; }catch(e){}
-            if (!skipFocus) w.input.focus();
-            // For contenteditable, remove any inline height so the element
-            // resizes naturally again. (collapseToSingleLine would pin a fixed
-            // pixel height which prevents natural growth when autosize is off.)
-            try{ if (w.input && w.input.contentEditable === 'true') w.input.style.height = ''; }catch(e){}
-            try { if (typeof updateVisibility === 'function') updateVisibility(); else { w.clear.style.display = 'none'; w.btn.style.display = 'none'; } } catch(e){ w.clear.style.display = 'none'; w.btn.style.display = 'none'; }
-          };
-          w.clear.addEventListener('click', ()=> doClear(false));
+          w.clear.addEventListener('click', ()=> doClear());
         }
 
         // Replace textual Ask label with an SVG inside the Ask button
