@@ -113,9 +113,70 @@
     };
     const autosize = ()=>{
       try{
+        const inputEl = input;
+        if (!inputEl) return;
         const raw = getValue();
-        const targetH = measureHeightForText(raw);
-        if (typeof targetH === 'number') input.style.height = targetH + 'px';
+        const clone = ensureClone();
+        if (!clone) return;
+        // copy computed styles that affect wrapping/size
+        try{
+          const cs = window.getComputedStyle(inputEl);
+          const props = ['boxSizing','paddingLeft','paddingRight','paddingTop','paddingBottom','borderLeftWidth','borderRightWidth','borderTopWidth','borderBottomWidth','fontFamily','fontSize','fontWeight','lineHeight','letterSpacing','textTransform','whiteSpace','wordBreak','overflowWrap','wordWrap','tabSize'];
+          props.forEach(p=>{ try{ clone.style[p] = cs[p]; }catch(e){} });
+          try{ const rect = inputEl.getBoundingClientRect(); clone.style.width = Math.max(10, Math.round(rect.width)) + 'px'; }catch(e){}
+        }catch(e){}
+        try{ clone.textContent = raw || ''; }catch(e){ try{ clone.value = raw || ''; }catch(e){} }
+        clone.style.height = 'auto';
+        const measured = clone.scrollHeight || 0;
+        let targetH = Math.max(12, Math.round(measured));
+
+        // visualViewport-aware cap (mobile keyboard). If focused and grows
+        // past available space, attempt to scroll the field into view then
+        // set the full height after.
+        try{
+          const isFocused = (document.activeElement === inputEl);
+          if (window.visualViewport) {
+            const rect = inputEl.getBoundingClientRect();
+            const vv = window.visualViewport;
+            const margin = 8;
+            let available = Math.round(vv.height - rect.top - margin);
+            if (isFocused && available > 0 && targetH > available) {
+              try{ inputEl.scrollIntoView({ block: 'center', inline: 'nearest' }); }catch(e){}
+              requestAnimationFrame(()=>{
+                try{
+                  const rect2 = inputEl.getBoundingClientRect();
+                  const vv2 = window.visualViewport || vv;
+                  available = Math.round((vv2.height || vv.height) - rect2.top - margin);
+                  inputEl.style.overflowY = 'hidden';
+                  try{ inputEl.style.height = targetH + 'px'; }catch(e){}
+                }catch(e){}
+              });
+            } else {
+              if (available > 0 && targetH > available) {
+                targetH = Math.max(12, available);
+                inputEl.style.overflowY = 'auto';
+              } else {
+                inputEl.style.overflowY = 'hidden';
+              }
+            }
+          } else {
+            inputEl.style.overflowY = 'hidden';
+          }
+        }catch(e){ inputEl.style.overflowY = 'hidden'; }
+
+        // Only write when height changed meaningfully; scroll page by delta
+        try{
+          const cur = parseInt((inputEl.style.height||'0').replace('px',''),10) || 0;
+          if (Math.abs(cur - targetH) > 1) {
+            inputEl.style.height = targetH + 'px';
+            try{
+              const delta = targetH - cur;
+              if (delta > 0) {
+                window.scrollBy({ top: Math.round(delta), left: 0, behavior: 'auto' });
+              }
+            }catch(e){}
+          }
+        }catch(e){}
       }catch(e){}
     };
 
