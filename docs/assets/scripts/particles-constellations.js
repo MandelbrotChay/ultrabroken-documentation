@@ -74,18 +74,16 @@
   }
 
   function makeBurstParticle(cx, cy){
-    const speed = rand(0.08, 0.28); // px/ms upward
+    const speed = rand(0.02, 0.09); // slower, ambient-like px/ms
     return {
       x: cx + rand(-18, 18),
       y: cy + rand(-10, 10),
-      vx: rand(-0.04, 0.04), // slight left/right drift
-      vy: -speed,            // upwards only
+      vx: rand(-0.03, 0.03),
+      vy: -speed,
       size: rand(1.2, 3.2),
       hue: 175 + Math.random() * 40,
       alpha: cfg.particleAlpha,
-      burst: true,
-      life: 1.0,
-      decay: rand(0.0014, 0.0026)
+      burst: true
     };
   }
 
@@ -102,10 +100,9 @@
       p.x += p.vx * dt;
       p.y += p.vy * dt;
       if (p.burst){
-        p.life -= p.decay * dt;
-        p.alpha = Math.max(0, p.life * cfg.particleAlpha);
-        if (p.life <= 0) dead.push(i);
-        continue; // burst particles don't wrap or recycle the normal way
+        // despawn when off the top edge, same as ambient particles
+        if (p.y < -cfg.spawnPadding) dead.push(i);
+        continue;
       }
       // small horizontal wrap
       if (p.x < -20) p.x = W + 20;
