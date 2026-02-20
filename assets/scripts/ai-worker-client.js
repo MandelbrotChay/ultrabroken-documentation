@@ -321,13 +321,17 @@
         }catch(e){ /* ignore model source parsing errors */ }
         // If nothing was rendered and there was no answer, show silence
         if (!w.out.textContent && (!r.evidence || !r.evidence.length)) w.out.textContent = 'silence';
+        // Auto-clear after a short delay when the worker returned a silence response
+        if (r.silence) {
+          setTimeout(()=>{ try{ w.clear.click(); }catch(e){} }, 2500);
+        }
       };
       w.btn.addEventListener('click', handleAsk);
       // Helper accessors for faux input support. Treat the inline
       // placeholder (stored in `data-ub-placeholder`) as empty content.
       w.getValue = ()=>{
         try{
-          if (w.input && w.input.contentEditable === 'true') {
+          if (w.input && (w.input.contentEditable === 'true' || w.input._inputLocked)) {
             if (w.input._phAnimating) return ''; // animation in progress — treat as empty
             const txt = String(w.input.textContent || '');
             const ph = String(w.input.getAttribute('data-ub-placeholder') || '');
