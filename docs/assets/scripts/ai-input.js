@@ -22,9 +22,10 @@
     let input;
     let nativeFallback = null;
     if (useFaux) {
-      input = el('div', { contenteditable: 'true', role: 'textbox', 'aria-multiline': 'true', 'data-ub-placeholder': _placeholder_text, class: 'ub-ai-input' }, '');
+      input = el('div', { contenteditable: 'true', role: 'textbox', 'aria-multiline': 'true', tabindex: '0', 'data-ub-placeholder': _placeholder_text, class: 'ub-ai-input' }, '');
       try{
         nativeFallback = el('textarea', { 'aria-hidden': 'true', tabindex: '-1', class: 'ub-ai-native-hidden' }, '');
+        // Keep the native textarea strictly offscreen/inert for layout and accessibility
         nativeFallback.style.position = 'absolute';
         nativeFallback.style.left = '-9999px';
         nativeFallback.style.top = '0';
@@ -32,6 +33,10 @@
         nativeFallback.style.height = '1px';
         nativeFallback.style.opacity = '0';
         nativeFallback.style.pointerEvents = 'none';
+        nativeFallback.style.overflow = 'hidden';
+        try{ nativeFallback.style.resize = 'none'; }catch(e){}
+        try{ nativeFallback.setAttribute('aria-hidden','true'); }catch(e){}
+        try{ nativeFallback.inert = true; }catch(e){}
       }catch(e){ nativeFallback = null; }
     } else {
       input = el('textarea', { placeholder: '', 'data-ub-placeholder': _placeholder_text, class: 'ub-ai-input', maxlength: String(MAX_QUERY_CHARS), rows: '1' });
@@ -58,8 +63,16 @@
     inputWrap.appendChild(input);
     try{ if (nativeFallback) inputWrap.appendChild(nativeFallback); }catch(e){}
     // placeholder overlay (click-through)
-    const fake = el('div', { class: 'ub-ai-fake-placeholder', 'aria-hidden': 'true' }, input.getAttribute('data-ub-placeholder') || _placeholder_text);
-    try{ inputWrap.appendChild(fake); }catch(e){}
+    let fake = null;
+    try{
+      fake = inputWrap.querySelector('.ub-ai-fake-placeholder');
+    }catch(e){}
+    if (!fake) {
+      fake = el('div', { class: 'ub-ai-fake-placeholder', 'aria-hidden': 'true' }, input.getAttribute('data-ub-placeholder') || _placeholder_text);
+      try{ inputWrap.appendChild(fake); }catch(e){}
+    }
+    try{ fake.style.pointerEvents = 'none'; fake.style.position = 'absolute'; fake.style.left = '0'; fake.style.top = '0'; fake.style.zIndex = '0'; }catch(e){}
+    try{ input.style.position = 'relative'; input.style.zIndex = '1'; }catch(e){}
     row.appendChild(inputWrap);
     row.appendChild(clearBtn);
     row.appendChild(askBtn);
@@ -86,14 +99,15 @@
     };
 
     const getValue = ()=>{
-      try{ if (nativeFallback && nativeFallback.value != null) return String(nativeFallback.value || ''); }catch(e){}
+      // Prefer visible content (contenteditable) as authoritative
       try{ if (input && input.contentEditable === 'true') return String(input.textContent || ''); }catch(e){}
+      try{ if (nativeFallback && nativeFallback.value != null) return String(nativeFallback.value || ''); }catch(e){}
       try{ return String(input && input.value || ''); }catch(e){ return ''; }
     };
     const setValue = (v)=>{
+      try{ if (input && input.contentEditable === 'true') { input.textContent = v; } }catch(e){}
       try{ if (nativeFallback) nativeFallback.value = v; }catch(e){}
-      try{ if (input && input.contentEditable === 'true') { input.textContent = v; return; } }catch(e){}
-      try{ if (input) input.value = v; }catch(e){}
+      try{ if (input && !input.contentEditable) input.value = v; }catch(e){}
     };
 
     // off-DOM clone for measurement
@@ -107,6 +121,7 @@
       _clone.style.whiteSpace = 'pre-wrap';
       _clone.style.overflowWrap = 'anywhere';
       _clone.style.wordBreak = 'break-word';
+      _clone.style.display = 'block';
       _clone.style.boxSizing = 'border-box';
       document.body.appendChild(_clone);
       return _clone;
@@ -115,14 +130,25 @@
       try{
         const clone = ensureClone();
         const cs = getComputedStyle(input);
+        // Copy typography and box metrics to match wrapping/height
         clone.style.font = cs.font || (cs.fontSize + ' ' + cs.fontFamily);
-        clone.style.padding = cs.padding;
-        clone.style.width = cs.width;
-        clone.style.lineHeight = cs.lineHeight;
-        clone.style.letterSpacing = cs.letterSpacing;
+        try{ clone.style.paddingLeft = cs.paddingLeft; }catch(e){}
+        try{ clone.style.paddingRight = cs.paddingRight; }catch(e){}
+        try{ clone.style.paddingTop = cs.paddingTop; }catch(e){}
+        try{ clone.style.paddingBottom = cs.paddingBottom; }catch(e){}
+        try{ clone.style.boxSizing = cs.boxSizing; }catch(e){}
+        // use computed width where possible so wrapping matches
+        clone.style.width = cs.width || (input.offsetWidth ? (input.offsetWidth + 'px') : '100%');
+        try{ clone.style.lineHeight = cs.lineHeight; }catch(e){}
+        try{ clone.style.letterSpacing = cs.letterSpacing; }catch(e){}
         clone.style.whiteSpace = cs.whiteSpace || 'pre-wrap';
-        clone.textContent = text || '';
-        return Math.max(12, Math.ceil(clone.scrollHeight));
+        try{ clone.style.overflowWrap = cs.overflowWrap || cs['overflow-wrap']; }catch(e){}
+        try{ clone.style.wordBreak = cs.wordBreak || cs['word-break']; }catch(e){}
+        // Prefer visible content when text not explicitly provided
+        const content = (typeof text === 'string' ? text : getValue()) || '';
+        clone.textContent = content;
+        const h = Math.max(12, Math.ceil(clone.scrollHeight));
+        return h;
       }catch(e){ return null; }
     };
 
@@ -134,15 +160,24 @@
         try{ clearBtn.style.display = has ? 'flex' : 'none'; }catch(e){}
         try{ askBtn.style.display = has ? 'flex' : 'none'; }catch(e){}
         try{ shareBtn.style.display = has ? 'flex' : 'none'; }catch(e){}
-        try{ const showFake = !state._focused && state._wasBlurredEmpty && !has; fake.style.display = showFake ? 'block' : 'none'; }catch(e){}
+        try{ const showFake = !state._focused && !has; fake.style.display = showFake ? 'block' : 'none'; }catch(e){}
       }catch(e){}
     };
 
     const autosize = ()=>{
       try{
         const raw = getValue();
-        const targetH = measureHeightForText(raw);
-        if (typeof targetH === 'number') input.style.height = targetH + 'px';
+        let targetH = measureHeightForText(raw);
+        if (typeof targetH === 'number'){
+          // Cap height when virtual keyboard/viewport is present to avoid oversize
+          try{
+            if (window.visualViewport && window.visualViewport.height) {
+              const maxH = Math.max(48, Math.floor(window.visualViewport.height * 0.5));
+              if (targetH > maxH) targetH = maxH;
+            }
+          }catch(e){}
+          input.style.height = targetH + 'px';
+        }
       }catch(e){}
     };
 
@@ -163,13 +198,22 @@
     });
 
     input.addEventListener('compositionstart', ()=>{ state._composing = true; });
-    input.addEventListener('compositionend', ()=>{ state._composing = false; try{ if (nativeFallback) nativeFallback.value = getValue(); }catch(e){}; updateVisibility(); autosize(); });
+    input.addEventListener('compositionend', ()=>{
+      state._composing = false;
+      // sync native value after composition finishes
+      try{ if (nativeFallback) Promise.resolve().then(()=>{ try{ nativeFallback.value = getValue(); }catch(e){} }); }catch(e){}
+      try{ updateVisibility(); }catch(e){}
+      try{ autosize(); }catch(e){}
+    });
 
     ['input','paste','cut','change'].forEach(evt => input.addEventListener(evt, ()=>{
-      try{ if (nativeFallback) nativeFallback.value = getValue(); }catch(e){}
+      // always sync visible content into the native textarea (microtask to avoid blocking)
+      try{ if (nativeFallback) Promise.resolve().then(()=>{ try{ nativeFallback.value = getValue(); }catch(e){} }); }catch(e){}
+      // do not run autosize/visibility updates while IME composition is active
       if (state._composing) return;
-      updateVisibility();
-      requestAnimationFrame(()=>{ try{ autosize(); }catch(e){} });
+      try{ updateVisibility(); }catch(e){}
+      // autosize on next frame for smoother layout changes
+      try{ requestAnimationFrame(()=>{ try{ autosize(); }catch(e){} }); }catch(e){}
     }));
 
     try{ if (nativeFallback) nativeFallback.value = getValue(); }catch(e){}
