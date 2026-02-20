@@ -20,11 +20,20 @@
   // as `search:Title` links (intercepted by `search-link.js`). When false
   // they render as normal page links. Default: false.
   const USE_TITLE_SEARCH_LINKS = true;
-  // Default idle text shown in the output area before any query is made
-  // and after clearing. Cleared when a query starts.
-  const IDLE_TEXT = 'A chosen hero wants to know how to break Hylias creation... What a plot twist!';
+  // Idle texts shown in the output area before any query is made and after
+  // clearing. One is picked at random each time. Cleared when a query starts.
+  const _IDLE_TEXTS = [
+    'So that happens if the Triforce of wisdom gets out of control...',
+    'A chosen hero wants to know how to break Hylias creation... What a plot twist!',
+    'The flame of curiosity flares so brightly... Don\'t burn your Ultrafingers!',
+    'The Sheikah Slate is indexing forbidden knowledge...',
+    'Even the Great Deku Tree does not know everything.',
+    'The Koroks are hiding more than just seeds, it seems.',
+    'Somewhere, a Lynel sighs at the audacity of the question.',
+  ];
+  const idleText = () => _IDLE_TEXTS[Math.floor(Math.random() * _IDLE_TEXTS.length)];
   // Text shown while the worker is processing a query.
-  const LOADING_TEXT = 'The Librarian stares at you...';
+  const LOADING_TEXT = 'Let me look into that real quick...';
 
   // Placeholder pool — randomly sampled each time the widget initialises.
   const _PLACEHOLDERS = [
@@ -79,7 +88,7 @@
       // Always use the contenteditable branch so the input naturally grows
       let input;
       // visible contenteditable — starts empty; animation fills it
-      input = el('div', { contenteditable: 'true', role: 'textbox', 'aria-multiline': 'true', 'data-ub-placeholder': _placeholder_text, class: 'ub-ai-input' }, '');
+      input = el('div', { contenteditable: 'true', role: 'textbox', 'aria-multiline': 'true', 'data-ub-placeholder': _placeholder_text, class: 'ub-ai-input', spellcheck: 'false', autocorrect: 'off', autocomplete: 'on', autocapitalize: 'on' }, '');
       // textarea base styles for autosize and wrapping
       try{
         input.style.resize = 'none';
@@ -102,7 +111,7 @@
     // NOTE: user-facing toggle removed — rendering of model-returned sources
     // is controlled by the internal `SHOW_MODEL_SOURCES` flag declared above.
     // Output area (answer + evidence). `out` holds the model answer; `evidenceWrap` holds clickable evidence links returned by the Worker.
-    const out = el('div', { class: 'ub-ai-out' }, IDLE_TEXT);
+    const out = el('div', { class: 'ub-ai-out' }, idleText());
     const evidenceWrap = el('div', { class: 'ub-ai-evidence' }, '');
     inputWrap.appendChild(input);
     row.appendChild(inputWrap);
@@ -486,7 +495,7 @@
           w.clear.addEventListener('click', ()=>{ 
             try{ if (typeof w.setValue === 'function') w.setValue(''); else if (w.input) w.input.value = ''; }catch(e){}
             // Clear rendered answer and restore idle text
-            try{ if (w.out) { w.out.innerHTML = ''; w.out.textContent = IDLE_TEXT; } }catch(e){}
+            try{ if (w.out) { w.out.innerHTML = ''; w.out.textContent = idleText(); } }catch(e){}
             // Also clear parsed/rendered sources/evidence
             try{ if (w.evidence) w.evidence.innerHTML = ''; }catch(e){}
             w.input.focus();
