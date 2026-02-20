@@ -19,6 +19,7 @@ _R4000, Bucket_Sloe - 21 August 2023_
 ## Notes
 ---
 You can do the glitch with a one handed and then switch to a two handed one, canceled by many animations.
+
 Disable the earthwake ability or press "R" instead of "Y".
 
 ## Resources
