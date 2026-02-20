@@ -72,7 +72,7 @@ export default {
     // New schema: { response_text, response_sources, sources, evidence }
     // Respect top-level flags so silence payload shape matches normal responses.
     const makeSilence = () => new Response(JSON.stringify({
-      response_text: 'Silence echoes back...',
+      response_text: 'What was the question again...?',
       response_sources: null,
       sources: [],
       evidence: []
