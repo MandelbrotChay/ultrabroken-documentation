@@ -88,8 +88,7 @@
   }
 
   function spawnClickBurst(cx, cy){
-    const count = 5 + Math.floor(Math.random() * 4);
-    for (let i = 0; i < count; i++) particles.push(makeBurstParticle(cx, cy));
+    particles.push(makeBurstParticle(cx, cy));
   }
 
   function update(dt){
