@@ -30,8 +30,8 @@
       const MAX_QUERY_CHARS = (typeof window !== 'undefined' && window.AI_MAX_QUERY_CHARS) ? Number(window.AI_MAX_QUERY_CHARS) : 50;
       // Always use the contenteditable branch so the input naturally grows
       let input;
-      // visible contenteditable
-      input = el('div', { contenteditable: 'true', role: 'textbox', 'aria-multiline': 'true', 'data-ub-placeholder': _placeholder_text, class: 'ub-ai-input' }, '');
+      // visible contenteditable with an inline placeholder text
+      input = el('div', { contenteditable: 'true', role: 'textbox', 'aria-multiline': 'true', 'data-ub-placeholder': _placeholder_text, class: 'ub-ai-input' }, _placeholder_text);
       // textarea base styles for autosize and wrapping
       try{
         input.style.resize = 'none';
@@ -265,15 +265,62 @@
         if (!w.out.textContent && (!r.evidence || !r.evidence.length)) w.out.textContent = 'silence';
       };
       w.btn.addEventListener('click', handleAsk);
-      // helper accessors for faux input support
+      // Helper accessors for faux input support. Treat the inline
+      // placeholder (stored in `data-ub-placeholder`) as empty content.
       w.getValue = ()=>{
-        try{ if (w.input && w.input.contentEditable === 'true') return String(w.input.textContent || ''); }catch(e){}
+        try{
+          if (w.input && w.input.contentEditable === 'true') {
+            const txt = String(w.input.textContent || '');
+            const ph = String(w.input.getAttribute('data-ub-placeholder') || '');
+            return txt === ph ? '' : txt;
+          }
+        }catch(e){}
         try{ return String((w.input && w.input.value) || ''); }catch(e){ return ''; }
       };
       w.setValue = (v)=>{
-        try{ if (w.input && w.input.contentEditable === 'true') { w.input.textContent = v; return; } }catch(e){}
+        try{
+          if (w.input && w.input.contentEditable === 'true') {
+            const ph = String(w.input.getAttribute('data-ub-placeholder') || '');
+            if (!v) {
+              // restore placeholder when clearing
+              if (ph) {
+                w.input.textContent = ph;
+                try{ w.input.setAttribute('data-ub-placeholder-active','1'); }catch(e){}
+              } else {
+                w.input.textContent = '';
+                try{ w.input.removeAttribute('data-ub-placeholder-active'); }catch(e){}
+              }
+            } else {
+              w.input.textContent = v;
+              try{ w.input.removeAttribute('data-ub-placeholder-active'); }catch(e){}
+            }
+            return;
+          }
+        }catch(e){}
         try{ if (w.input) w.input.value = v; }catch(e){}
       };
+
+      // Inline placeholder behavior: clear on focus if placeholder visible,
+      // restore on blur when empty. Use data attribute to mark active state.
+      try{
+        w.input.addEventListener('focus', ()=>{
+          try{
+            const ph = String(w.input.getAttribute('data-ub-placeholder') || '');
+            if ((w.input.textContent || '') === ph) {
+              w.input.textContent = '';
+              try{ w.input.removeAttribute('data-ub-placeholder-active'); }catch(e){}
+            }
+          }catch(e){}
+        });
+        w.input.addEventListener('blur', ()=>{
+          try{
+            if (!String(w.input.textContent || '').trim()) {
+              const ph = String(w.input.getAttribute('data-ub-placeholder') || '');
+              if (ph) { w.input.textContent = ph; try{ w.input.setAttribute('data-ub-placeholder-active','1'); }catch(e){} }
+            }
+          }catch(e){}
+        });
+      }catch(e){}
       // Submit on plain Enter. Ctrl/Cmd+Enter inserts a newline at the caret.
       w.input.addEventListener('keydown', (ev)=>{
         if (ev.key === 'Enter') {
