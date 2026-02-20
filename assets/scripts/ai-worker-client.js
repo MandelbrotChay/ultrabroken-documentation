@@ -75,8 +75,19 @@
     // Output area (answer + evidence). `out` holds the model answer; `evidenceWrap` holds clickable evidence links returned by the Worker.
     const out = el('div', { class: 'ub-ai-out' }, '');
     const evidenceWrap = el('div', { class: 'ub-ai-evidence' }, '');
-    inputWrap.appendChild(input);
-    try{ if (nativeFallback) inputWrap.appendChild(nativeFallback); }catch(e){}
+    // If an external input module is present, do not append the client's
+    // visible contenteditable to the DOM. This ensures the client doesn't
+    // render its own editable while the external module mounts separately.
+    try{
+      if (!(typeof window !== 'undefined' && typeof window.initAIInput === 'function')) {
+        inputWrap.appendChild(input);
+        try{ if (nativeFallback) inputWrap.appendChild(nativeFallback); }catch(e){}
+      }
+    }catch(e){
+      // fallback to appending when checks fail
+      try{ inputWrap.appendChild(input); }catch(e){}
+      try{ if (nativeFallback) inputWrap.appendChild(nativeFallback); }catch(e){}
+    }
     row.appendChild(inputWrap);
     // place clear as its own control (sibling to ask/share) so it behaves like other action buttons
     row.appendChild(clearBtn);
@@ -122,6 +133,56 @@
       // If an instance already exists inside, mark initialized and skip
       if (placeholder.querySelector('.ub-ai-root')) { placeholder.dataset.aiInitialized = '1'; return; }
       const w = render(placeholder);
+      // If an external input module is present, instantiate it now and
+      // mount it into the renderer's input container. This allows the
+      // module to own its lifecycle while keeping compatibility with
+      // existing client calls (`w.getValue`/`w.setValue`/`w.focus`).
+      try{
+        // Always create a mount node for the external module so it can
+        // appear in the widget whether the module is already loaded or
+        // arrives later. Attempt immediate instantiation, otherwise poll
+        // briefly until the module becomes available and then mount it.
+        const moduleContainer = document.createElement('div');
+        moduleContainer.className = 'ub-ai-module-container';
+        if (w.inputWrap && w.inputWrap.appendChild) {
+          w.inputWrap.appendChild(moduleContainer);
+        } else if (placeholder && placeholder.appendChild) {
+          placeholder.appendChild(moduleContainer);
+        }
+
+        const oldInput = w.input;
+        let mountInterval = null;
+
+        const tryMount = ()=>{
+          try{
+            if (typeof window !== 'undefined' && typeof window.initAIInput === 'function') {
+              try {
+                const mod = window.initAIInput(moduleContainer);
+                if (mod && mod.input) {
+                  w._module = mod;
+                  w.input = mod.input;
+                  // Remove the client's original input node if it's distinct
+                  try{ if (oldInput && oldInput !== mod.input && oldInput.parentNode) oldInput.parentNode.removeChild(oldInput); }catch(e){}
+                  return true;
+                }
+              } catch(e) { console.debug('initAIInput instantiation failed', e); }
+            }
+          }catch(e){}
+          return false;
+        };
+
+        // Try immediately, then poll for up to ~2s if not ready yet
+        tryMount();
+        if (!w._module) {
+          let attempts = 0;
+          mountInterval = setInterval(()=>{
+            attempts++;
+            if (tryMount() || attempts > 20) {
+              if (mountInterval) { clearInterval(mountInterval); mountInterval = null; }
+            }
+          }, 100);
+        }
+      }catch(e){}
       // No user-facing toggle: `SHOW_MODEL_SOURCES` controls whether model-
       // returned `Source:` lines are rendered. This is intentionally internal.
       // The Worker now returns structured `response_text`, optional `response_sources` (text block)
