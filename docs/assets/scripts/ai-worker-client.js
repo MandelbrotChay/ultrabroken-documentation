@@ -69,6 +69,9 @@
   const idleText = () => _IDLE_TEXTS[Math.floor(Math.random() * _IDLE_TEXTS.length)];
   // Text shown while the worker is processing a query.
   const LOADING_TEXT = 'Let me look into that real quick...';
+  // Text shown in the output area when idle mode is active but the input is focused.
+  // Set to '' to leave it blank, or fill in a prompt hint.
+  const IDLE_FOCUSED_TEXT = 'Gtreetings, curious wanderer. Ask me anything about the secrets of Hyrule.';
 
   // Placeholder pool — randomly sampled each time the widget initialises.
   const _PLACEHOLDERS = [
@@ -462,7 +465,8 @@
         w._idleMode = true;
         try{ if (typeof unlockInput === 'function') unlockInput(); }catch(e){}
         try{ if (typeof w.setValue === 'function') w.setValue(''); else if (w.input) w.input.value = ''; }catch(e){}
-        try{ if (w.out) { w.out.innerHTML = ''; w.out.textContent = idleText(); } }catch(e){}
+        // Only show idle text immediately if input is not focused; otherwise let the typewriter callback restore it
+        try{ if (w.out) { w.out.innerHTML = ''; if (document.activeElement !== w.input) w.out.textContent = idleText(); } }catch(e){}
         try{ if (w.evidence) w.evidence.innerHTML = ''; }catch(e){}
         try{ if (w.input && w.input.contentEditable === 'true') w.input.style.height = ''; }catch(e){}
         try { updateVisibility(); } catch(e){ w.clear.style.display = 'none'; w.btn.style.display = 'none'; w.share && (w.share.style.display = 'none'); }
@@ -498,6 +502,8 @@
         w.input.addEventListener('focus', ()=>{
           try{
             if (w.input._phAnimating) { stopPhAnim(); w.input.textContent = ''; }
+            // Hide idle text while focused; typewriter callback restores it after blur
+            if (w._idleMode) { try{ w.out.textContent = IDLE_FOCUSED_TEXT; }catch(e){} }
           }catch(e){}
         });
         w.input.addEventListener('blur', ()=>{
