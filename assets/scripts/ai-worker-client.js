@@ -402,175 +402,27 @@
       // Show placeholder only when the field is NOT focused (and empty).
       // When focused we hide the placeholder so caret/typing is clear.
       try{
-        const stored = w.input.getAttribute('data-ub-placeholder') || '';
-        // Use a click-through overlay placeholder element instead of the
-        // native placeholder pseudo-element to avoid UA rendering quirks.
+        // Remove placeholder overlay and rotating-placeholder behavior.
+        // The module and input sizing will be controlled without an overlay
+        // placeholder to avoid the measurement/height writes that were
+        // causing oversized inputs on some UAs.
         try{
-          // ensure input has no native placeholder text
           try{ w.input.placeholder = ''; }catch(e){}
-          const fake = el('div', { class: 'ub-ai-fake-placeholder', 'aria-hidden': 'true' }, stored);
-          try{ if (w.inputWrap) w.inputWrap.appendChild(fake); }catch(e){}
-          w._fakePlaceholder = fake;
+          try{ if (w.input && w.input.removeAttribute) w.input.removeAttribute('data-ub-placeholder'); }catch(e){}
         }catch(e){}
 
-        // Load rotating placeholder texts from JSON and cycle every 4s.
-        (async ()=>{
-          try{
-            const url = '/ultrabroken-documentation/assets/scripts/placeholders.json';
-            const res = await fetch(url);
-            if (!res.ok) return;
-            const arr = await res.json();
-            if (!Array.isArray(arr) || arr.length === 0) return;
-            w._placeholders = arr.map(String);
-            w._lastPlaceholderIndex = -1;
-            const applyPlaceholder = (txt)=>{
-              try{
-                if (!txt) return;
-                // Pause placeholder changes while user is focused in the input
-                if (document.activeElement === w.input) return;
-                w.input.setAttribute('data-ub-placeholder', txt);
-                const curVal = (typeof w.getValue === 'function') ? String(w.getValue() || '') : String((w.input && w.input.value) || '');
-                if (w._fakePlaceholder && !curVal && document.activeElement !== w.input) {
-                  w._fakePlaceholder.textContent = txt;
-                }
-                // Measure placeholder height synchronously using a hidden clone
-                try{
-                  const input = w.input;
-                  if (input && !input.value) {
-                    // create a lightweight clone for measurement
-                    const c = input.cloneNode(false);
-                    c.removeAttribute('id');
-                    c.style.position = 'absolute';
-                    c.style.visibility = 'hidden';
-                    c.style.pointerEvents = 'none';
-                    c.style.zIndex = '-9999';
-                    c.style.left = '-9999px';
-                    c.style.top = '0';
-                    c.style.height = 'auto';
-                    c.style.whiteSpace = 'pre-wrap';
-                    c.style.overflow = 'visible';
-                    // copy computed styles that affect wrapping
-                    try{
-                      const cs = window.getComputedStyle(input);
-                      const props = ['boxSizing','paddingLeft','paddingRight','paddingTop','paddingBottom','borderLeftWidth','borderRightWidth','borderTopWidth','borderBottomWidth','fontFamily','fontSize','fontWeight','lineHeight','letterSpacing','textTransform','whiteSpace','wordBreak','overflowWrap','wordWrap','tabSize'];
-                      props.forEach(p=>{ try{ c.style[p] = cs[p]; }catch(e){} });
-                      try{ const rect = input.getBoundingClientRect(); c.style.width = Math.max(10, Math.round(rect.width)) + 'px'; }catch(e){}
-                    }catch(e){}
-                    try{ if (c.contentEditable === 'true') c.textContent = txt; else c.value = txt; }catch(e){ try{ c.value = txt; }catch(e){} }
-                    document.body.appendChild(c);
-                    const measured = c.scrollHeight || 0;
-                    document.body.removeChild(c);
-                    const h = Math.max(12, Math.round(measured));
-                    w.placeholderHeight = h;
-                    try{ input.style.height = h + 'px'; }catch(e){}
-                  }
-                }catch(e){}
-              }catch(e){}
-            };
-            // Apply an initial random placeholder (avoid immediate repeat)
-            try{
-              if (Array.isArray(w._placeholders) && w._placeholders.length) {
-                let idx = Math.floor(Math.random() * w._placeholders.length);
-                if (w._placeholders.length > 1) {
-                  while (idx === w._lastPlaceholderIndex) idx = Math.floor(Math.random() * w._placeholders.length);
-                }
-                w._lastPlaceholderIndex = idx;
-                applyPlaceholder(w._placeholders[idx]);
-              }
-            }catch(e){}
-
-            // Randomly pick placeholders every 4s; pause while the input is focused
-            w._placeholderTimer = setInterval(()=>{
-              try{
-                if (document.activeElement === w.input) return; // pause while editing
-                if (!Array.isArray(w._placeholders) || !w._placeholders.length) return;
-                let idx = Math.floor(Math.random() * w._placeholders.length);
-                if (w._placeholders.length > 1) {
-                  let attempts = 0;
-                  while (idx === w._lastPlaceholderIndex && attempts < 6) { idx = Math.floor(Math.random() * w._placeholders.length); attempts++; }
-                }
-                w._lastPlaceholderIndex = idx;
-                applyPlaceholder(w._placeholders[idx]);
-              }catch(e){}
-            }, 4000);
-          }catch(e){}
-        })();
-
-        // Hide overlay while editing, but only when the field is empty.
-        // On focus, hide overlay and clear the field so typing starts from
-        // a single-row empty textarea. This also forces `autosize` to compute
-        // height from an empty value (see autosize change below).
-        w.input.addEventListener('focus', ()=>{
-          try{
-            // Only clear/hide when the field is currently empty. If the
-            // user focused an existing query, leave the content intact.
-            const cur = (typeof w.getValue === 'function') ? String(w.getValue() || '') : String((w.input && w.input.value) || '');
-            if (cur && String(cur).trim()) return;
-            try{ if (w._fakePlaceholder) w._fakePlaceholder.style.display = 'none'; }catch(e){}
-            try{ if (typeof w.setValue === 'function') w.setValue(''); else if (w.input) w.input.value = ''; }catch(e){}
+        // Keep focus handlers minimal: collapse to single line and trigger
+        // autosize/updateVisibility (autosize is a no-op by default).
+        try{
+          w.input.addEventListener('focus', ()=>{
             try{ collapseToSingleLine(w.input); }catch(e){}
             try{ if (typeof autosize === 'function') autosize(); }catch(e){}
             try{ if (typeof updateVisibility === 'function') updateVisibility(); }catch(e){}
-          }catch(e){}
-        });
-
-        // Show overlay when blurred and empty; reapply measured placeholder height when available
-        w.input.addEventListener('blur', ()=>{
-          try{
-            const cur = (typeof w.getValue === 'function') ? String(w.getValue() || '') : String((w.input && w.input.value) || '');
-            if (!cur) {
-              try{ if (w._fakePlaceholder) w._fakePlaceholder.style.display = 'block'; }catch(e){}
-              try{ if (w.placeholderHeight) w.input.style.height = w.placeholderHeight + 'px'; }catch(e){}
-            }
-          }catch(e){}
-        });
-
-        // Initial state: show overlay only when not focused and empty
-        try{
-          const cur = (typeof w.getValue === 'function') ? String(w.getValue() || '') : String((w.input && w.input.value) || '');
-          if (document.activeElement !== w.input && !cur) {
-            try{ if (w._fakePlaceholder) w._fakePlaceholder.style.display = 'block'; }catch(e){}
-          } else {
-            try{ if (w._fakePlaceholder) w._fakePlaceholder.style.display = 'none'; }catch(e){}
-          }
-        }catch(e){}
-
-        // Measure the textarea height when the placeholder is visible so we can
-        // restore that exact height on blur. We perform the measurement inside
-        // a rAF to ensure layout has settled, and use a temporary-value method
-        // (set value to the placeholder text) to measure wrapped height.
-        try{
-          requestAnimationFrame(()=>{
-            try{
-              const el = w.input;
-              // Only measure when the field is currently empty (placeholder shown)
-              try{
-                const curVal = (typeof w.getValue === 'function') ? String(w.getValue() || '') : String((el && el.value) || '');
-                if (el && !curVal && stored) {
-                  if (el.contentEditable === 'true') {
-                    const prevText = el.textContent;
-                    try{ el.textContent = stored; }catch(e){}
-                    const h = el.scrollHeight;
-                    try{ el.textContent = prevText; }catch(e){}
-                    if (h && !isNaN(h)) w.placeholderHeight = Math.max(12, Math.round(h));
-                  } else {
-                    const prevVal = el.value;
-                    const prevRows = el.rows;
-                    const s0 = el.selectionStart; const s1 = el.selectionEnd;
-                    try{ el.value = stored; el.rows = 1; }catch(e){}
-                    // read scrollHeight which includes wrapped lines
-                    const h = el.scrollHeight;
-                    // restore
-                    try{ el.value = prevVal; el.rows = prevRows; }catch(e){}
-                    try{ if (typeof el.setSelectionRange === 'function') el.setSelectionRange(s0, s1); }catch(e){}
-                    if (h && !isNaN(h)) w.placeholderHeight = Math.max(12, Math.round(h));
-                  }
-                }
-              }catch(e){}
-            }catch(e){}
+          });
+          w.input.addEventListener('blur', ()=>{
+            // no placeholder overlay to show on blur
           });
         }catch(e){}
-      }catch(e){}
       // Wire clear button and replace Ask text with an SVG ask-icon that only appears when input has text
       // Helper: immediately collapse a textarea to a conservative single-line
       // visual height (line-height + vertical padding). Used by focus and
