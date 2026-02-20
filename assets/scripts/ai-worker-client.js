@@ -295,7 +295,17 @@
         // If nothing was rendered and there was no answer, show silence
         if (!w.out.textContent && (!r.evidence || !r.evidence.length)) w.out.textContent = 'silence';
       };
-      w.btn.addEventListener('click', handleAsk);
+      if (w.btn && typeof w.btn.addEventListener === 'function') {
+        w.btn.addEventListener('click', handleAsk);
+      } else if (w.input) {
+        // If the module doesn't provide action buttons, submit on Enter
+        w.input.addEventListener('keydown', (ev)=>{
+          if (ev.key === 'Enter' && !ev.ctrlKey && !ev.metaKey) {
+            ev.preventDefault();
+            try { handleAsk(); } catch(e){}
+          }
+        });
+      }
       // helper accessors for faux input support
       w.getValue = ()=>{
         try{ if (w.native && w.native.value != null) return String(w.native.value || ''); }catch(e){}
@@ -558,7 +568,7 @@
           // ensure clear button starts hidden; layout/spacing handled by CSS
           w.clear.style.display = 'none';
           w.clear.appendChild(clearImg);
-          w.clear.addEventListener('click', ()=>{ 
+            w.clear.addEventListener('click', ()=>{ 
             try{ if (typeof w.setValue === 'function') w.setValue(''); else if (w.input) w.input.value = ''; }catch(e){}
             // Clear rendered answer and any HTML inside
             try{ if (w.out) { w.out.textContent = ''; w.out.innerHTML = ''; } }catch(e){}
@@ -568,7 +578,13 @@
             // Immediately collapse to single-line visual height, then run autosize
             try{ collapseToSingleLine(w.input); }catch(e){}
             try{ if (typeof autosize === 'function') autosize(); }catch(e){}
-            try { if (typeof updateVisibility === 'function') updateVisibility(); else { w.clear.style.display = 'none'; w.btn.style.display = 'none'; } } catch(e){ w.clear.style.display = 'none'; w.btn.style.display = 'none'; }
+            try {
+              if (typeof updateVisibility === 'function') updateVisibility();
+              else {
+                try{ w.clear.style.display = 'none'; }catch(e){}
+                try{ if (w.btn) w.btn.style.display = 'none'; }catch(e){}
+              }
+            } catch(e){ try{ w.clear.style.display = 'none'; }catch(e){} try{ if (w.btn) w.btn.style.display = 'none'; }catch(e){} }
           });
         }
 
@@ -577,20 +593,21 @@
         askImg.src = '/ultrabroken-documentation/assets/images/ask-icon.svg';
         askImg.alt = 'Ask';
         
-        // Clear any existing textual content in the button and append the SVG
-        w.btn.textContent = '';
-        w.btn.appendChild(askImg);
-        // Share button image
-        try {
-          const shareImg = document.createElement('img');
-          shareImg.src = '/ultrabroken-documentation/assets/images/share-icon.svg';
-          shareImg.alt = 'Share';
-          w.share.textContent = '';
-          w.share.appendChild(shareImg);
-        } catch (e) {}
-        // Start hidden; only show when the input has text (mirrors clear button behavior)
-        w.btn.style.display = 'none';
-        if (w.share) w.share.style.display = 'none';
+        // If client-provided buttons exist, wire icons + visibility
+        if (w.btn) {
+          w.btn.textContent = '';
+          w.btn.appendChild(askImg);
+          // Share button image
+          try {
+            const shareImg = document.createElement('img');
+            shareImg.src = '/ultrabroken-documentation/assets/images/share-icon.svg';
+            shareImg.alt = 'Share';
+            if (w.share) { w.share.textContent = ''; w.share.appendChild(shareImg); }
+          } catch (e) {}
+          // Start hidden; only show when the input has text (mirrors clear button behavior)
+          try{ w.btn.style.display = 'none'; }catch(e){}
+          if (w.share) try{ w.share.style.display = 'none'; }catch(e){}
+        }
 
         // Share button: copy a permalink that encodes the query so it can be shared
         if (w.share) {
@@ -614,6 +631,7 @@
         // Shared resizing function to make icons match the Ask button visual height
         const resizeIcons = ()=>{
           try{
+            if (!w.btn) return;
             const btnRect = w.btn.getBoundingClientRect();
             let targetH = 0;
             if (btnRect && btnRect.height > 0) targetH = Math.round(btnRect.height);
@@ -627,9 +645,9 @@
         // Toggle visibility for both controls based on input content
         const updateVisibility = ()=>{
           const has = String((typeof w.getValue === 'function' ? w.getValue() : (w.input && w.input.value || '')) || '').trim();
-          if (w.clear) w.clear.style.display = has ? 'flex' : 'none';
-          w.btn.style.display = has ? 'flex' : 'none';
-          if (w.share) w.share.style.display = has ? 'flex' : 'none';
+          if (w.clear) try{ w.clear.style.display = has ? 'flex' : 'none'; }catch(e){}
+          if (w.btn) try{ w.btn.style.display = has ? 'flex' : 'none'; }catch(e){}
+          if (w.share) try{ w.share.style.display = has ? 'flex' : 'none'; }catch(e){}
           // Toggle the click-through overlay placeholder: show only when
           // the field is empty and not focused.
           try{
