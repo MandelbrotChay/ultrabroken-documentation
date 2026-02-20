@@ -71,8 +71,9 @@
   const LOADING_TEXT = 'Let me look into that real quick...';
   // Text shown in the output area when idle mode is active but the input is focused.
   // Set to '' to leave it blank, or fill in a prompt hint.
-  const IDLE_FOCUSED_TEXT = 'Gtreetings, curious wanderer. Ask me anything about the secrets of Hyrule.';
-
+  const IDLE_FOCUSED_TEXT = 'Gtreetings, curious wanderer. Ask me anything about the secrets of Hyrule. Will it share word or waffle? Tip or trick? Legend or lie? Who knows?';  // Text shown immediately on blur (before the typewriter finishes and picks a new idle text).
+  // This bridges the gap between blur and the typewriter callback.
+  const IDLE_BLUR_TEXT = 'I shall continue yapping then...';
   // Placeholder pool — randomly sampled each time the widget initialises.
   const _PLACEHOLDERS = [
     "What is Wacko Boingo?",
@@ -508,6 +509,8 @@
         });
         w.input.addEventListener('blur', ()=>{
           try{
+            // Immediately show transient blur text; typewriter callback will replace with actual idle text
+            if (w._idleMode) { try{ w.out.textContent = IDLE_BLUR_TEXT; }catch(e){} }
             if (!String(w.input.textContent || '').trim()){
               _phAnimHandle = setTimeout(startPhAnim, 400);
             }
