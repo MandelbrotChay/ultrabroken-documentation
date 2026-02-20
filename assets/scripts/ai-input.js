@@ -54,18 +54,13 @@
       try{ input.style.display = 'block'; }catch(e){}
     }catch(e){}
 
-    const clearBtn = el('button', { type: 'button', class: 'ub-ai-clear', 'aria-label': 'Clear search' }, '');
-    const askBtn = el('button', { type: 'button', class: 'ub-ai-ask', 'aria-label': 'Ask' }, '');
-    const shareBtn = el('button', { type: 'button', class: 'ub-ai-share', 'aria-label': 'Share query' }, '');
+    // baseline: no action buttons in the original commit
     const out = el('div', { class: 'ub-ai-out' }, '');
     const evidenceWrap = el('div', { class: 'ub-ai-evidence' }, '');
     inputWrap.appendChild(input);
     try{ if (nativeFallback) inputWrap.appendChild(nativeFallback); }catch(e){}
 
     row.appendChild(inputWrap);
-    row.appendChild(clearBtn);
-    row.appendChild(askBtn);
-    row.appendChild(shareBtn);
     root.appendChild(row);
     root.appendChild(out);
     root.appendChild(evidenceWrap);
@@ -125,15 +120,7 @@
     };
 
     // visibility helpers
-    const updateVisibility = ()=>{
-      try{
-        const raw = getValue();
-        const has = Boolean(normalize(raw));
-        try{ clearBtn.style.display = has ? 'flex' : 'none'; }catch(e){}
-        try{ askBtn.style.display = has ? 'flex' : 'none'; }catch(e){}
-        try{ shareBtn.style.display = has ? 'flex' : 'none'; }catch(e){}
-      }catch(e){}
-    };
+    const updateVisibility = ()=>{};
 
     // events
     // keep native in sync on microtask so old code paths that read native still work
@@ -192,8 +179,8 @@
     try{ if (nativeFallback) { try{ nativeFallback.value = getValue(); }catch(e){} } }catch(e){}
     requestAnimationFrame(()=>{ try{ autosize(); updateVisibility(); }catch(e){} });
 
-    // expose handle matching ai-worker-client expectations
-    const handle = { input, inputWrap, native: nativeFallback, btn: askBtn, share: shareBtn, out, clear: clearBtn, evidence: evidenceWrap };
+    // expose handle matching ai-worker-client expectations (no buttons)
+    const handle = { input, inputWrap, native: nativeFallback, out, evidence: evidenceWrap };
     handle.getValue = getValue;
     handle.setValue = setValue;
     handle.autosize = autosize;
