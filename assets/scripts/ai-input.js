@@ -184,6 +184,21 @@
     input.addEventListener('focus', ()=>{
       state._focused = true;
       try{ fake.style.display = 'none'; }catch(e){}
+      // Ensure mobile browsers scroll the focused contenteditable into view.
+      try{
+        if (typeof input.focus === 'function') input.focus();
+        if (window.visualViewport) {
+          const rect = input.getBoundingClientRect();
+          // aim to position the input roughly 30% from top of the viewport
+          const desiredOffset = Math.floor(window.visualViewport.height * 0.3);
+          const targetScroll = window.scrollY + rect.top - (window.visualViewport.height - desiredOffset);
+          window.scrollTo({ top: Math.max(0, targetScroll), behavior: 'auto' });
+        } else {
+          try{ input.scrollIntoView({ behavior: 'auto', block: 'center' }); }catch(e){}
+        }
+        // fallback retry after a small delay (some UAs adjust after keyboard shows)
+        setTimeout(()=>{ try{ input.scrollIntoView({ behavior: 'auto', block: 'center' }); }catch(e){} }, 60);
+      }catch(e){}
     });
     input.addEventListener('blur', ()=>{
       state._focused = false;
