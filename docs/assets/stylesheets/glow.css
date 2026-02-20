@@ -885,26 +885,10 @@ li.task-list-item a, li.task-list a {
 /* Align controls to text baseline and nudge them slightly downward so
   their bottom edges visually match the input text baseline. Tweak
   the translateY value if more or less offset is needed. */
-/* .ub-ai-actions-group handles positioning; no row-alignment transform needed on individual buttons */
-.ub-ai-clear, .ub-ai-ask, .ub-ai-share { align-self: unset; transform: none; }
-
-/* Zero-height anchor sitting between the input row and the answer area.
-   The group inside floats centered on the separator (border-top of .ub-ai-out). */
-.ub-ai-actions {
-  position: relative;
-  height: 0;
-  overflow: visible;
-  z-index: 2;
-}
-.ub-ai-actions-group {
-  position: absolute;
-  top: 0;
-  right: 0;
-  transform: translateY(-50%);
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-}
+/* Align controls to text baseline and nudge them slightly downward so
+  their bottom edges visually match the input text baseline. Tweak
+  the translateY value if more or less offset is needed. */
+.ub-ai-clear, .ub-ai-ask, .ub-ai-share { align-self: flex-end; transform: translateY(-0.45rem); }
 
 /* DEBUG: temporarily force visible outline and minimum size to diagnose
    invisible/zero-size AI control icons. Remove after debugging. 
@@ -918,7 +902,7 @@ li.task-list-item a, li.task-list a {
   white-space: pre-wrap;
   background: transparent;
   padding: 0.6rem 0 0 0;
-  margin-top: 0; /* buttons float over separator; spacing comes from their own height + padding-top */
+  margin-top: 0.5rem;
   color: inherit;
   border: none;
   box-sizing: border-box;
