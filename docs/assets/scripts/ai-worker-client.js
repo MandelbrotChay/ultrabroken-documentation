@@ -20,6 +20,9 @@
   // as `search:Title` links (intercepted by `search-link.js`). When false
   // they render as normal page links. Default: false.
   const USE_TITLE_SEARCH_LINKS = true;
+  // Default idle text shown in the output area before any query is made
+  // and after clearing. Cleared when a query starts.
+  const IDLE_TEXT = 'A chosen hero wants to know how to break Hylias creation... What a plot twist!';
 
   // Placeholder pool — randomly sampled each time the widget initialises.
   const _PLACEHOLDERS = [
@@ -97,7 +100,7 @@
     // NOTE: user-facing toggle removed — rendering of model-returned sources
     // is controlled by the internal `SHOW_MODEL_SOURCES` flag declared above.
     // Output area (answer + evidence). `out` holds the model answer; `evidenceWrap` holds clickable evidence links returned by the Worker.
-    const out = el('div', { class: 'ub-ai-out' }, '');
+    const out = el('div', { class: 'ub-ai-out' }, IDLE_TEXT);
     const evidenceWrap = el('div', { class: 'ub-ai-evidence' }, '');
     inputWrap.appendChild(input);
     row.appendChild(inputWrap);
@@ -480,8 +483,8 @@
           w.clear.appendChild(clearImg);
           w.clear.addEventListener('click', ()=>{ 
             try{ if (typeof w.setValue === 'function') w.setValue(''); else if (w.input) w.input.value = ''; }catch(e){}
-            // Clear rendered answer and any HTML inside
-            try{ if (w.out) { w.out.textContent = ''; w.out.innerHTML = ''; } }catch(e){}
+            // Clear rendered answer and restore idle text
+            try{ if (w.out) { w.out.innerHTML = ''; w.out.textContent = IDLE_TEXT; } }catch(e){}
             // Also clear parsed/rendered sources/evidence
             try{ if (w.evidence) w.evidence.innerHTML = ''; }catch(e){}
             w.input.focus();
