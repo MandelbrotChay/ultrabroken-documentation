@@ -319,6 +319,8 @@
         }catch(e){ /* ignore model source parsing errors */ }
         // If nothing was rendered and there was no answer, show silence
         if (!w.out.textContent && (!r.evidence || !r.evidence.length)) w.out.textContent = 'silence';
+        // Lock the input now that a response is displayed
+        try{ if (typeof lockInput === 'function') lockInput(); }catch(e){}
       };
       w.btn.addEventListener('click', handleAsk);
       // Helper accessors for faux input support. Treat the inline
@@ -401,11 +403,26 @@
         _phAnimHandle = setTimeout(typeNext, 300);
       };
 
-      // Focus: kill animation, clear field ready for input
+      // Lock/unlock the input after a response is shown / cleared.
+      // Declared at outer scope so handleAsk (defined earlier) can close over them.
+      const lockInput = ()=>{
+        try{ w.input.setAttribute('contenteditable', 'false'); w.input._inputLocked = true; }catch(e){}
+        try{ if (w.btn)   { w.btn.style.display   = 'none'; w.btn.disabled   = true; } }catch(e){}
+        try{ if (w.share) { w.share.style.display = 'none'; w.share.disabled = true; } }catch(e){}
+        try{ if (w.clear) { w.clear.style.display = 'flex'; w.clear.disabled = false; } }catch(e){}
+      };
+      const unlockInput = ()=>{
+        try{ w.input.setAttribute('contenteditable', 'true'); w.input._inputLocked = false; }catch(e){}
+      };
+
+      // Focus: kill animation and clear field only when placeholder is showing.
+      // If the user already has text in the field, leave it untouched.
       // Blur: restart animation after a short delay if still empty
       try{
         w.input.addEventListener('focus', ()=>{
-          try{ stopPhAnim(); w.input.textContent = ''; }catch(e){}
+          try{
+            if (w.input._phAnimating) { stopPhAnim(); w.input.textContent = ''; }
+          }catch(e){}
         });
         w.input.addEventListener('blur', ()=>{
           try{
@@ -494,6 +511,7 @@
           w.clear.style.display = 'none';
           w.clear.appendChild(clearImg);
           w.clear.addEventListener('click', ()=>{ 
+            try{ if (typeof unlockInput === 'function') unlockInput(); }catch(e){}
             try{ if (typeof w.setValue === 'function') w.setValue(''); else if (w.input) w.input.value = ''; }catch(e){}
             // Clear rendered answer and restore idle text
             try{ if (w.out) { w.out.innerHTML = ''; w.out.textContent = idleText(); } }catch(e){}
