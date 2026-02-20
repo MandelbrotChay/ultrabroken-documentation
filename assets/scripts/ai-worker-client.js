@@ -124,7 +124,6 @@
   // Idempotent initializer for the AI widget. Safe to call multiple times
   // (e.g. after MkDocs Material instant navigation swaps).
   function initAIWidget(){
-    try{
       const placeholder = document.querySelector('#ai-search-root');
       // Toggle centered rune class based on presence of the AI page placeholder
       if (!placeholder) { document.body.classList.remove('ultrabroken-center-rune'); return; }
@@ -423,6 +422,7 @@
             // no placeholder overlay to show on blur
           });
         }catch(e){}
+      }catch(e){}
       // Wire clear button and replace Ask text with an SVG ask-icon that only appears when input has text
       // Helper: immediately collapse a textarea to a conservative single-line
       // visual height (line-height + vertical padding). Used by focus and
@@ -684,7 +684,6 @@
       // Keep rune centered while on the AI page
       try{ document.body.classList.add('ultrabroken-center-rune'); }catch(e){}
       placeholder.dataset.aiInitialized = '1';
-    }catch(e){ console.debug('initAIWidget error', e); }
   }
 
   // Fast rune-centering update that runs immediately on mutations/navigation
