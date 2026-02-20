@@ -1,12 +1,13 @@
 /*
-  Self-contained AI input module.
-  Exposes `window.initAIInput(container)` which creates the input UI and
-  returns the widget handle matching the shape expected by `ai-worker-client.js`.
+  Extracted input UI (baseline from commit a31b06...) adapted into a
+  self-contained module. This restores native-first behavior and the
+  original visible/native interplay so we can iterate from the earlier
+  working baseline.
 */
 (function(){
   function el(tag, attrs={}, children=[]){
     const e = document.createElement(tag);
-    Object.entries(attrs).forEach(([k,v])=> e.setAttribute(k,v));
+    Object.entries(attrs).forEach(([k,v])=> { try{ e.setAttribute(k,v); }catch(e){} });
     (Array.isArray(children)?children:[children]).forEach(c=>{ if (typeof c === 'string') e.appendChild(document.createTextNode(c)); else if (c) e.appendChild(c); });
     return e;
   }
@@ -22,10 +23,11 @@
     let input;
     let nativeFallback = null;
     if (useFaux) {
-      input = el('div', { contenteditable: 'true', role: 'textbox', 'aria-multiline': 'true', tabindex: '0', 'data-ub-placeholder': _placeholder_text, class: 'ub-ai-input' }, '');
+      // Visible contenteditable (UX-first) but keep native as authoritative
+      input = el('div', { contenteditable: 'true', role: 'textbox', 'aria-multiline': 'true', 'data-ub-placeholder': _placeholder_text, class: 'ub-ai-input' }, '');
       try{
         nativeFallback = el('textarea', { 'aria-hidden': 'true', tabindex: '-1', class: 'ub-ai-native-hidden' }, '');
-        // Keep the native textarea strictly offscreen/inert for layout and accessibility
+        // visually hide but keep in DOM for reliable value/IME behavior
         nativeFallback.style.position = 'absolute';
         nativeFallback.style.left = '-9999px';
         nativeFallback.style.top = '0';
@@ -33,14 +35,11 @@
         nativeFallback.style.height = '1px';
         nativeFallback.style.opacity = '0';
         nativeFallback.style.pointerEvents = 'none';
-        nativeFallback.style.overflow = 'hidden';
-        try{ nativeFallback.style.resize = 'none'; }catch(e){}
-        try{ nativeFallback.setAttribute('aria-hidden','true'); }catch(e){}
-        try{ nativeFallback.inert = true; }catch(e){}
       }catch(e){ nativeFallback = null; }
     } else {
       input = el('textarea', { placeholder: '', 'data-ub-placeholder': _placeholder_text, class: 'ub-ai-input', maxlength: String(MAX_QUERY_CHARS), rows: '1' });
     }
+
     try{
       input.style.resize = 'none';
       input.style.overflow = 'hidden';
@@ -62,17 +61,7 @@
     const evidenceWrap = el('div', { class: 'ub-ai-evidence' }, '');
     inputWrap.appendChild(input);
     try{ if (nativeFallback) inputWrap.appendChild(nativeFallback); }catch(e){}
-    // placeholder overlay (click-through)
-    let fake = null;
-    try{
-      fake = inputWrap.querySelector('.ub-ai-fake-placeholder');
-    }catch(e){}
-    if (!fake) {
-      fake = el('div', { class: 'ub-ai-fake-placeholder', 'aria-hidden': 'true' }, input.getAttribute('data-ub-placeholder') || _placeholder_text);
-      try{ inputWrap.appendChild(fake); }catch(e){}
-    }
-    try{ fake.style.pointerEvents = 'none'; fake.style.position = 'absolute'; fake.style.left = '0'; fake.style.top = '0'; fake.style.zIndex = '0'; }catch(e){}
-    try{ input.style.position = 'relative'; input.style.zIndex = '1'; }catch(e){}
+
     row.appendChild(inputWrap);
     row.appendChild(clearBtn);
     row.appendChild(askBtn);
@@ -81,36 +70,26 @@
     root.appendChild(out);
     root.appendChild(evidenceWrap);
     container.appendChild(root);
-    // runtime marker: indicate module initialized for this container
     try { container.dataset.aiInput = 'module'; } catch (e) {}
 
-    // State machine
-    const state = { _focused: false, _composing: false, _wasBlurredEmpty: false, _placeholderMeasuredHeight: null };
+    // state
+    const state = { _composing: false };
 
-    const normalize = (v)=>{
-      if (v == null) return '';
-      try{
-        let s = String(v);
-        s = s.replace(/[\u200B\u200C\u200D\uFEFF]/g,'');
-        s = s.replace(/\u00A0/g,' ');
-        s = s.replace(/\s+/g,' ').trim();
-        return s;
-      }catch(e){ return String(v||'').trim(); }
-    };
+    const normalize = (v)=>{ if (v == null) return ''; try{ return String(v).replace(/\u00A0/g,' ').replace(/\s+/g,' ').trim(); }catch(e){ return String(v||'').trim(); } };
 
+    // Native-first value retrieval (matches older behavior)
     const getValue = ()=>{
-      // Prefer visible content (contenteditable) as authoritative
-      try{ if (input && input.contentEditable === 'true') return String(input.textContent || ''); }catch(e){}
       try{ if (nativeFallback && nativeFallback.value != null) return String(nativeFallback.value || ''); }catch(e){}
+      try{ if (input && input.contentEditable === 'true') return String(input.textContent || ''); }catch(e){}
       try{ return String(input && input.value || ''); }catch(e){ return ''; }
     };
     const setValue = (v)=>{
-      try{ if (input && input.contentEditable === 'true') { input.textContent = v; } }catch(e){}
       try{ if (nativeFallback) nativeFallback.value = v; }catch(e){}
-      try{ if (input && !input.contentEditable) input.value = v; }catch(e){}
+      try{ if (input && input.contentEditable === 'true') { input.textContent = v; return; } }catch(e){}
+      try{ if (input) input.value = v; }catch(e){}
     };
 
-    // off-DOM clone for measurement
+    // simple off-DOM clone based autosize (baseline)
     let _clone = null;
     const ensureClone = ()=>{
       if (_clone) return _clone;
@@ -130,179 +109,96 @@
       try{
         const clone = ensureClone();
         const cs = getComputedStyle(input);
-        // Copy typography and box metrics to match wrapping/height
         clone.style.font = cs.font || (cs.fontSize + ' ' + cs.fontFamily);
-        try{ clone.style.paddingLeft = cs.paddingLeft; }catch(e){}
-        try{ clone.style.paddingRight = cs.paddingRight; }catch(e){}
-        try{ clone.style.paddingTop = cs.paddingTop; }catch(e){}
-        try{ clone.style.paddingBottom = cs.paddingBottom; }catch(e){}
-        try{ clone.style.boxSizing = cs.boxSizing; }catch(e){}
-        // use computed width where possible so wrapping matches
+        try{ clone.style.padding = cs.padding; }catch(e){}
         clone.style.width = cs.width || (input.offsetWidth ? (input.offsetWidth + 'px') : '100%');
-        try{ clone.style.lineHeight = cs.lineHeight; }catch(e){}
-        try{ clone.style.letterSpacing = cs.letterSpacing; }catch(e){}
-        clone.style.whiteSpace = cs.whiteSpace || 'pre-wrap';
-        try{ clone.style.overflowWrap = cs.overflowWrap || cs['overflow-wrap']; }catch(e){}
-        try{ clone.style.wordBreak = cs.wordBreak || cs['word-break']; }catch(e){}
-        // Prefer visible content when text not explicitly provided
-        const content = (typeof text === 'string' ? text : getValue()) || '';
-        clone.textContent = content;
-        const h = Math.max(12, Math.ceil(clone.scrollHeight));
-        return h;
+        clone.textContent = (typeof text === 'string' ? text : getValue()) || '';
+        return Math.max(12, Math.ceil(clone.scrollHeight));
       }catch(e){ return null; }
     };
+    const autosize = ()=>{
+      try{
+        const raw = getValue();
+        const targetH = measureHeightForText(raw);
+        if (typeof targetH === 'number') input.style.height = targetH + 'px';
+      }catch(e){}
+    };
 
+    // visibility helpers
     const updateVisibility = ()=>{
       try{
         const raw = getValue();
-        const norm = normalize(raw);
-        const has = Boolean(norm);
+        const has = Boolean(normalize(raw));
         try{ clearBtn.style.display = has ? 'flex' : 'none'; }catch(e){}
         try{ askBtn.style.display = has ? 'flex' : 'none'; }catch(e){}
         try{ shareBtn.style.display = has ? 'flex' : 'none'; }catch(e){}
-        try{ const showFake = !state._focused && !has; fake.style.display = showFake ? 'block' : 'none'; }catch(e){}
       }catch(e){}
     };
 
-    const autosize = ()=>{
-      // TEMP: disabled autosize to test native scrolling behavior
-      try{ return; }catch(e){}
-      try{
-        const raw = getValue();
-        let targetH = measureHeightForText(raw);
-        if (typeof targetH === 'number'){
-          // Cap height when virtual keyboard/viewport is present to avoid oversize
-          try{
-            if (window.visualViewport && window.visualViewport.height) {
-              const maxH = Math.max(48, Math.floor(window.visualViewport.height * 0.5));
-              if (targetH > maxH) targetH = maxH;
-            }
-          }catch(e){}
-          input.style.height = targetH + 'px';
-        }
-      }catch(e){}
-    };
-
-    input.addEventListener('focus', ()=>{
-      state._focused = true;
-      try{ fake.style.display = 'none'; }catch(e){}
-      // Ensure mobile browsers scroll the focused contenteditable into view.
-      try{
-        if (typeof input.focus === 'function') input.focus();
-        if (window.visualViewport) {
-          const rect = input.getBoundingClientRect();
-          // aim to position the input roughly 30% from top of the viewport
-          const desiredOffset = Math.floor(window.visualViewport.height * 0.3);
-          const targetScroll = window.scrollY + rect.top - (window.visualViewport.height - desiredOffset);
-          window.scrollTo({ top: Math.max(0, targetScroll), behavior: 'auto' });
-        } else {
-          try{ input.scrollIntoView({ behavior: 'auto', block: 'center' }); }catch(e){}
-        }
-        // fallback retry after a small delay (some UAs adjust after keyboard shows)
-        setTimeout(()=>{ try{ input.scrollIntoView({ behavior: 'auto', block: 'center' }); }catch(e){} }, 60);
-      }catch(e){}
-    });
-    input.addEventListener('blur', ()=>{
-      state._focused = false;
-      const raw = getValue();
-      const norm = normalize(raw);
-      state._wasBlurredEmpty = (norm === '');
-      if (state._wasBlurredEmpty) {
-        state._placeholderMeasuredHeight = measureHeightForText(fake.textContent || input.getAttribute('data-ub-placeholder') || '');
-        if (state._placeholderMeasuredHeight) input.style.height = state._placeholderMeasuredHeight + 'px';
-      }
-      updateVisibility();
-    });
-
-    input.addEventListener('compositionstart', ()=>{ state._composing = true; });
-    input.addEventListener('compositionend', ()=>{
-      state._composing = false;
-      // sync native value after composition finishes
-      try{ if (nativeFallback) Promise.resolve().then(()=>{ try{ nativeFallback.value = getValue(); }catch(e){} }); }catch(e){}
-      try{ updateVisibility(); }catch(e){}
-      try{ autosize(); }catch(e){}
-    });
-
+    // events
+    // keep native in sync on microtask so old code paths that read native still work
     ['input','paste','cut','change'].forEach(evt => input.addEventListener(evt, ()=>{
-      // always sync visible content into the native textarea (microtask to avoid blocking)
-      try{ if (nativeFallback) Promise.resolve().then(()=>{ try{ nativeFallback.value = getValue(); }catch(e){} }); }catch(e){}
-      // do not run autosize/visibility updates while IME composition is active
-      if (state._composing) return;
+      try{ if (nativeFallback) Promise.resolve().then(()=>{ try{ nativeFallback.value = (input && input.contentEditable === 'true') ? String(input.textContent||'') : (input.value||''); }catch(e){} }); }catch(e){}
       try{ updateVisibility(); }catch(e){}
-      // autosize on next frame for smoother layout changes
       try{ requestAnimationFrame(()=>{ try{ autosize(); }catch(e){} }); }catch(e){}
     }));
 
-    // Mobile-like UA detection
-    const isMobileLike = (()=>{
-      try{ if (typeof window === 'undefined') return false; }catch(e){return false}
-      try{ if ('visualViewport' in window) return true; }catch(e){}
-      try{ return (('ontouchstart' in window) || /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)); }catch(e){ return false; }
-    })();
+    input.addEventListener('compositionstart', ()=>{ state._composing = true; });
+    input.addEventListener('compositionend', ()=>{ state._composing = false; try{ if (nativeFallback) nativeFallback.value = getValue(); }catch(e){}; updateVisibility(); autosize(); });
 
-    // Native-focus workaround: temporarily focus the hidden native textarea
-    // (mirroring content) so the UA scrolls it into view, then refocus the
-    // contenteditable. Run on each input event on mobile-like UAs.
-    const triggerNativeScroll = (delayMs=60)=>{
-      if (!nativeFallback || !isMobileLike) return;
-      if (state._composing) return;
-      try{
-        // mirror visible content to native
-        try{ nativeFallback.value = getValue(); }catch(e){}
-        // make native focusable if inert
-        try{ nativeFallback.inert = false; }catch(e){}
-        const rect = input.getBoundingClientRect();
-        const prev = {
-          left: nativeFallback.style.left,
-          top: nativeFallback.style.top,
-          width: nativeFallback.style.width,
-          height: nativeFallback.style.height,
-          position: nativeFallback.style.position,
-          opacity: nativeFallback.style.opacity,
-          pointerEvents: nativeFallback.style.pointerEvents,
-          zIndex: nativeFallback.style.zIndex
-        };
-        try{
-          nativeFallback.style.position = 'absolute';
-          nativeFallback.style.left = (window.scrollX + rect.left) + 'px';
-          nativeFallback.style.top = (window.scrollY + rect.top) + 'px';
-          nativeFallback.style.width = rect.width + 'px';
-          nativeFallback.style.height = rect.height + 'px';
-          nativeFallback.style.opacity = '0';
-          nativeFallback.style.pointerEvents = 'none';
-          nativeFallback.style.zIndex = '9999';
-        }catch(e){}
-        try{ nativeFallback.focus(); }catch(e){}
-        try{ const len = nativeFallback.value ? nativeFallback.value.length : 0; nativeFallback.setSelectionRange(len, len); }catch(e){}
-        setTimeout(()=>{
-          try{ input.focus(); }catch(e){}
-          try{ nativeFallback.style.left = prev.left || '-9999px'; }catch(e){}
-          try{ nativeFallback.style.top = prev.top || '0'; }catch(e){}
-          try{ nativeFallback.style.width = prev.width || '1px'; }catch(e){}
-          try{ nativeFallback.style.height = prev.height || '1px'; }catch(e){}
-          try{ nativeFallback.style.position = prev.position || 'absolute'; }catch(e){}
-          try{ nativeFallback.style.opacity = prev.opacity || '0'; }catch(e){}
-          try{ nativeFallback.style.pointerEvents = prev.pointerEvents || 'none'; }catch(e){}
-          try{ nativeFallback.style.zIndex = prev.zIndex || ''; }catch(e){}
-          try{ nativeFallback.inert = true; }catch(e){}
-        }, delayMs);
-      }catch(e){}
-    };
+    // Enter behavior: submit on Enter, Ctrl+Enter inserts newline
+    input.addEventListener('keydown', (ev)=>{
+      if (ev.key === 'Enter'){
+        if (ev.ctrlKey || ev.metaKey){
+          ev.preventDefault();
+          if (input && input.contentEditable === 'true'){
+            try{
+              const sel = window.getSelection();
+              if (sel && sel.rangeCount){
+                const range = sel.getRangeAt(0);
+                range.deleteContents();
+                const node = document.createTextNode('\n');
+                range.insertNode(node);
+                range.setStartAfter(node);
+                range.collapse(true);
+                sel.removeAllRanges(); sel.addRange(range);
+              }
+            }catch(e){}
+            try{ autosize(); }catch(e){}
+            try{ updateVisibility(); }catch(e){}
+          } else {
+            try{
+              const el = input;
+              const start = el.selectionStart || 0;
+              const end = el.selectionEnd || 0;
+              const v = el.value || '';
+              el.value = v.slice(0, start) + '\n' + v.slice(end);
+              const pos = start + 1;
+              el.selectionStart = el.selectionEnd = pos;
+              try{ autosize(); }catch(e){}
+              try{ updateVisibility(); }catch(e){}
+            }catch(e){}
+          }
+        } else {
+          ev.preventDefault();
+          // let the client wire the ask button; just blur to trigger sync
+          try{ if (input && input.contentEditable === 'true') input.blur(); }catch(e){}
+          try{ if (nativeFallback) nativeFallback.value = getValue(); }catch(e){}
+          try{ updateVisibility(); }catch(e){}
+        }
+      }
+    });
 
-    if (isMobileLike) {
-      input.addEventListener('input', ()=>{ try{ triggerNativeScroll(60); }catch(e){} });
-    }
-
-    try{ if (nativeFallback) nativeFallback.value = getValue(); }catch(e){}
+    try{ if (nativeFallback) { try{ nativeFallback.value = getValue(); }catch(e){} } }catch(e){}
     requestAnimationFrame(()=>{ try{ autosize(); updateVisibility(); }catch(e){} });
 
-    // expose minimal API compatible with existing client code
+    // expose handle matching ai-worker-client expectations
     const handle = { input, inputWrap, native: nativeFallback, btn: askBtn, share: shareBtn, out, clear: clearBtn, evidence: evidenceWrap };
     handle.getValue = getValue;
     handle.setValue = setValue;
-    handle._state = state;
     handle.autosize = autosize;
     handle.updateVisibility = updateVisibility;
+    handle._state = state;
     return handle;
   };
 
