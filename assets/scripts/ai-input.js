@@ -82,8 +82,16 @@ function(){
     try { container.dataset.aiInput = 'module'; } catch (e) {}
     try{ if (window && window.console && console.debug) console.debug('ai-input: init created elements', { fake: !!fake, clear: !!clearBtn, ask: !!askBtn, share: !!shareBtn }); }catch(e){}
 
+    // keep reference to last created handle so global shims can delegate
+    try{ if (!window.__lastAIInputHandle) window.__lastAIInputHandle = null; }catch(e){}
+
     // state
     const state = { _composing: false };
+    // stabilisation flag: when the field forces a scrollIntoView while the
+    // virtual viewport (mobile keyboard) is animating we delay the page
+    // scroll-by-delta until the viewport stabilizes to avoid an initial
+    // incorrect jump. This mirrors behavior in the client implementation.
+    let _needStabilize = false;
 
     // value accessors: prefer native textarea when present
     const getValue = ()=>{
@@ -141,7 +149,19 @@ function(){
             const margin = 8;
             let available = Math.round(vv.height - rect.top - margin);
             if (isFocused && available > 0 && targetH > available) {
-              try{ inputEl.scrollIntoView({ block: 'center', inline: 'nearest' }); }catch(e){}
+                try{ 
+                  inputEl.scrollIntoView({ block: 'center', inline: 'nearest' });
+                  _needStabilize = true;
+                  // when visualViewport exists, wait for its resize event then
+                  // re-run autosize once so measurements reflect the final
+                  // viewport size. Also provide a short timeout fallback.
+                  try{
+                    const vv = window.visualViewport;
+                    const handler = ()=>{ try{ _needStabilize = false; autosize(); }catch(e){} };
+                    vv.addEventListener('resize', handler, { once: true });
+                    setTimeout(()=>{ try{ if (_needStabilize) { _needStabilize = false; autosize(); } }catch(e){} }, 160);
+                  }catch(e){}
+                }catch(e){}
               requestAnimationFrame(()=>{
                 try{
                   const rect2 = inputEl.getBoundingClientRect();
@@ -172,7 +192,13 @@ function(){
             try{
               const delta = targetH - cur;
               if (delta > 0) {
-                window.scrollBy({ top: Math.round(delta), left: 0, behavior: 'auto' });
+                const doScroll = ()=>{ try{ window.scrollBy({ top: Math.round(delta), left: 0, behavior: 'auto' }); }catch(e){} };
+                if (_needStabilize) {
+                  // postpone the page scroll until stabilization finishes
+                  setTimeout(doScroll, 160);
+                } else {
+                  doScroll();
+                }
               }
             }catch(e){}
           }
@@ -491,6 +517,23 @@ function(){
     handle.autosize = autosize;
     handle.updateVisibility = updateVisibility;
     handle._state = state;
+    // Attach UI controls and placeholder to the handle so callers can access them
+    try{ handle.btn = askBtn; }catch(e){}
+    try{ handle.clear = clearBtn; }catch(e){}
+    try{ handle.share = shareBtn; }catch(e){}
+    try{ handle._fakePlaceholder = fake; }catch(e){}
+    try{ Object.defineProperty(handle, 'placeholderHeight', { get: ()=> placeholderHeight, enumerable: true }); }catch(e){}
+
+    // Expose small global shims for legacy callers that invoke bare autosize/updateVisibility
+    try{
+      window.__lastAIInputHandle = handle;
+      if (typeof window.autosize !== 'function') {
+        window.autosize = function(){ try{ if (window.__lastAIInputHandle && typeof window.__lastAIInputHandle.autosize === 'function') window.__lastAIInputHandle.autosize(); }catch(e){} };
+      }
+      if (typeof window.updateVisibility !== 'function') {
+        window.updateVisibility = function(){ try{ if (window.__lastAIInputHandle && typeof window.__lastAIInputHandle.updateVisibility === 'function') window.__lastAIInputHandle.updateVisibility(); }catch(e){} };
+      }
+    }catch(e){}
     return handle;
   };
 
