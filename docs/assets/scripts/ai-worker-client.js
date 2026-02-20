@@ -20,6 +20,8 @@
   // as `search:Title` links (intercepted by `search-link.js`). When false
   // they render as normal page links. Default: false.
   const USE_TITLE_SEARCH_LINKS = true;
+  // Hard cap on query length sent to the worker. Configurable via `window.AI_MAX_QUERY_CHARS`.
+  const MAX_QUERY_CHARS = 50;
   // Idle texts shown in the output area before any query is made and after
   // clearing. One is picked at random each time. Cleared when a query starts.
   const _IDLE_TEXTS = [
@@ -84,8 +86,6 @@
     const row = el('div', { style: 'display:flex; gap:0.4rem; align-items:flex-end;' });
     const inputWrap = el('div', { class: 'ub-ai-input-wrap', style: 'position:relative; flex:1; display:flex;' });
     const _placeholder_text = _PLACEHOLDERS[Math.floor(Math.random() * _PLACEHOLDERS.length)];
-      // Max query length (short questions). Configurable via `window.AI_MAX_QUERY_CHARS`.
-      const MAX_QUERY_CHARS = (typeof window !== 'undefined' && window.AI_MAX_QUERY_CHARS) ? Number(window.AI_MAX_QUERY_CHARS) : 50;
       // Always use the contenteditable branch so the input naturally grows
       let input;
       // visible contenteditable — starts empty; animation fills it
@@ -166,7 +166,8 @@
       // and no longer attempts to parse `response_text` for Sources.
 
       const handleAsk = async ()=>{
-        const q = (typeof w.getValue === 'function' ? w.getValue() : (w.input.value||'')).trim(); if (!q) return;
+        let q = (typeof w.getValue === 'function' ? w.getValue() : (w.input.value||'')).trim(); if (!q) return;
+        if (q.length > MAX_QUERY_CHARS) q = q.slice(0, MAX_QUERY_CHARS).trim();
         try{ if (typeof lockInput === 'function') lockInput(); }catch(e){}
         w.out.textContent = LOADING_TEXT;
         if (w.evidence) w.evidence.innerHTML = '';
@@ -706,6 +707,24 @@
           }catch(e){}
         };
         ['input','change','paste','cut','compositionend'].forEach(evt => w.input.addEventListener(evt, ()=>{
+          // Enforce character cap on contenteditable
+          try{
+            if (w.input.contentEditable === 'true'){
+              const cur = w.input.textContent || '';
+              if (cur.length > MAX_QUERY_CHARS){
+                w.input.textContent = cur.slice(0, MAX_QUERY_CHARS);
+                // Move caret to end
+                try{
+                  const sel = window.getSelection();
+                  const range = document.createRange();
+                  const node = w.input.childNodes[0] || w.input;
+                  range.setStart(node, Math.min(MAX_QUERY_CHARS, node.length || 0));
+                  range.collapse(true);
+                  sel.removeAllRanges(); sel.addRange(range);
+                }catch(e){}
+              }
+            }
+          }catch(e){}
           try{ updateVisibility(); }catch(e){}
           try{ requestAnimationFrame(()=>{ try{ autosize(); }catch(e){} }); }catch(e){}
         }));
