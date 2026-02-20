@@ -564,6 +564,28 @@
         window.addEventListener('resize', resizeIcons);
         // initial state
         updateVisibility();
+
+        // Safe placeholder toggler: sets `data-has-content` without
+        // writing sizes or changing layout. This complements the
+        // CSS pseudo-placeholder and avoids intercepting focus/clicks.
+        (function enableSafePlaceholder(w){
+          try {
+            const input = w.input;
+            if (!input) return;
+            const sanitize = (s) => String(s || '')
+              .replace(/\u200B/g,'')   // remove zero-width
+              .replace(/\u00A0/g,' ')  // normalize NBSP
+              .replace(/\s+/g,' ')     // collapse whitespace
+              .trim();
+            const hasVisible = () => sanitize(input.textContent || input.innerText || '') !== '';
+            const update = () => input.setAttribute('data-has-content', hasVisible() ? '1' : '0');
+            ['input','paste','cut','keyup','blur','focus','compositionend'].forEach(evt => input.addEventListener(evt, update));
+            // catch programmatic DOM changes
+            const mo = new MutationObserver(update);
+            mo.observe(input, { childList: true, subtree: true, characterData: true });
+            update();
+          } catch(e){}
+        })(w);
       }catch(e){ /* ignore */ }
       // Keep rune centered while on the AI page
       try{ document.body.classList.add('ultrabroken-center-rune'); }catch(e){}

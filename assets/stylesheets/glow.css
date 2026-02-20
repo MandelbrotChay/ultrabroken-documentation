@@ -398,6 +398,34 @@ body.ultrabroken-center-rune::after {
   100% { transform: translateY(-100vh) translateX(80px); opacity: 0; }
 }
 
+/* Safe, multi-line placeholder for the AI contenteditable input. */
+.ub-ai-input { position: relative; }
+
+.ub-ai-input::before {
+  content: attr(data-ub-placeholder);
+  position: absolute;
+  left: 0.6rem;
+  top: 0.5rem;
+  color: #8a8a8a;
+  pointer-events: none;
+  white-space: pre-wrap;        /* allow wrapping across lines */
+  overflow: hidden;
+  max-width: calc(100% - 1.2rem);
+  line-height: inherit;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  opacity: 1;
+  transition: opacity .12s ease;
+  display: block;
+}
+
+/* hide placeholder when focused or when content is present */
+.ub-ai-input:focus::before,
+.ub-ai-input[data-has-content="1"]::before {
+  opacity: 0;
+}
+
+
 @keyframes float-particle-4 {
   0% { transform: translateY(0) translateX(0); opacity: 0; }
   5% { opacity: 0.65; }
