@@ -30,7 +30,6 @@
       const MAX_QUERY_CHARS = (typeof window !== 'undefined' && window.AI_MAX_QUERY_CHARS) ? Number(window.AI_MAX_QUERY_CHARS) : 50;
       // Always use the contenteditable branch so the input naturally grows
       let input;
-      let fakePlaceholderEl = null;
       // visible contenteditable
       input = el('div', { contenteditable: 'true', role: 'textbox', 'aria-multiline': 'true', 'data-ub-placeholder': _placeholder_text, class: 'ub-ai-input' }, '');
       // textarea base styles for autosize and wrapping
@@ -58,22 +57,7 @@
     const out = el('div', { class: 'ub-ai-out' }, '');
     const evidenceWrap = el('div', { class: 'ub-ai-evidence' }, '');
     inputWrap.appendChild(input);
-    // Create a clickable fake placeholder overlay for the contenteditable
-    try{
-      fakePlaceholderEl = el('div', { class: 'ub-ai-fake-placeholder', 'aria-hidden': 'true' }, _placeholder_text);
-      // Basic positioning and appearance; project CSS may override
-      fakePlaceholderEl.style.position = 'absolute';
-      fakePlaceholderEl.style.left = '0';
-      fakePlaceholderEl.style.top = '0';
-      fakePlaceholderEl.style.right = '0';
-      fakePlaceholderEl.style.pointerEvents = 'auto';
-      fakePlaceholderEl.style.color = '#777';
-      fakePlaceholderEl.style.cursor = 'text';
-      fakePlaceholderEl.style.display = 'block';
-      // clicking the fake placeholder should focus the input
-      fakePlaceholderEl.addEventListener('click', ()=>{ try{ input.focus(); }catch(e){} });
-      inputWrap.appendChild(fakePlaceholderEl);
-    }catch(e){}
+    // (placeholder removed for test)
     row.appendChild(inputWrap);
     // place clear as its own control (sibling to ask/share) so it behaves like other action buttons
     row.appendChild(clearBtn);
@@ -85,7 +69,7 @@
     // append evidence container to the widget so it's accessible via the returned handle
     root.appendChild(evidenceWrap);
     container.appendChild(root);
-    return { input, inputWrap, native: null, _fakePlaceholder: fakePlaceholderEl, btn: askBtn, share: shareBtn, out, clear: clearBtn, evidence: evidenceWrap };
+    return { input, inputWrap, btn: askBtn, share: shareBtn, out, clear: clearBtn, evidence: evidenceWrap };
   }
 
   async function askWorker(q){
@@ -331,45 +315,7 @@
           }
         }
       });
-      // Rotating native placeholder (non-invasive): update textarea.placeholder
-      try{
-        (async ()=>{
-          try{
-            const url = '/ultrabroken-documentation/assets/scripts/placeholders.json';
-            const res = await fetch(url);
-            if (!res.ok) return;
-            const arr = await res.json();
-            if (!Array.isArray(arr) || arr.length === 0) return;
-            w._placeholders = arr.map(String);
-            w._lastPlaceholderIndex = -1;
-            const apply = (txt)=>{ try{ if (!txt) return; if (document.activeElement === w.input) return; try{ if (w.input && w.input.contentEditable === 'true') { try{ w.input.setAttribute('data-ub-placeholder', txt); if (w._fakePlaceholder) w._fakePlaceholder.textContent = txt; }catch(e){} } else { try{ w.input.placeholder = txt; }catch(e){} } }catch(e){} }catch(e){} };
-            try{
-              let idx = Math.floor(Math.random() * w._placeholders.length);
-              if (w._placeholders.length > 1) {
-                while (idx === w._lastPlaceholderIndex) idx = Math.floor(Math.random() * w._placeholders.length);
-              }
-              w._lastPlaceholderIndex = idx;
-              apply(w._placeholders[idx]);
-            }catch(e){}
-            w._placeholderTimer = setInterval(()=>{
-              try{
-                if (document.activeElement === w.input) return;
-                if (!Array.isArray(w._placeholders) || !w._placeholders.length) return;
-                let idx = Math.floor(Math.random() * w._placeholders.length);
-                if (w._placeholders.length > 1) {
-                  let attempts = 0;
-                  while (idx === w._lastPlaceholderIndex && attempts < 6) { idx = Math.floor(Math.random() * w._placeholders.length); attempts++; }
-                }
-                w._lastPlaceholderIndex = idx;
-                apply(w._placeholders[idx]);
-              }catch(e){}
-            }, 4000);
-          }catch(e){}
-        })();
-
-        try{ w.input.addEventListener('focus', ()=>{ try{ updateVisibility(); }catch(e){} }); }catch(e){}
-        try{ w.input.addEventListener('blur', ()=>{ try{ updateVisibility(); }catch(e){} }); }catch(e){}
-      }catch(e){}
+      // placeholder rotation removed for test
       // Wire clear button and replace Ask text with an SVG ask-icon that only appears when input has text
       // Helper: immediately collapse a textarea to a conservative single-line
       // visual height (line-height + vertical padding). Used by focus and
@@ -481,12 +427,10 @@
             try{ if (w.share) { w.share.style.display = 'none'; w.share.disabled = true; } }catch(e){}
             // Toggle the click-through overlay placeholder: show only when
             // the field is empty and not focused.
-            try{
-              if (w._fakePlaceholder) {
-                const showFake = !has && document.activeElement !== w.input;
-                w._fakePlaceholder.style.display = showFake ? 'block' : 'none';
-              }
-            }catch(e){}
+              // placeholder removed for test; nothing to toggle here
+              try{
+                /* no-op */
+              }catch(e){}
           // After toggling, resize icons to match rendered button height
           // use a short timeout to allow layout to settle when showing
           setTimeout(resizeIcons, 0);
