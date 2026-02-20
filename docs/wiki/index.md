@@ -10,7 +10,7 @@ This site is a community-driven encyclopedia documenting glitches, techniques an
 
 ## Ask The Librarian
 ---
-Will it share word or waffle? Tip or trick? If you have a specific question you may ask The Librarian but always take its words with a grain of salt; it isn't necessarily an ally.
+Will it share word or waffle? Tip or trick? If you have a specific question you may ask The Librarian but always take its words with a grain of salt. Read more in [here](about/#ai-search)
 
 <div id="ai-search-root"></div>
 
