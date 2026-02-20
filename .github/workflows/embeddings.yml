@@ -1,4 +1,4 @@
-name: Docs — Build, BM25 Index & Publish
+name: Wiki — Build, BM25 Index & Publish
 
 on:
   push:

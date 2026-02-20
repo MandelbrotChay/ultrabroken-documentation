@@ -1,4 +1,4 @@
-# Ultrabroken Docs — Editor Guide
+# Ultrabroken Archives — Editor Guide
 
 This repository holds the Ultrabroken documentation written in Markdown and published with MkDocs + Material.
 

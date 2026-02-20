@@ -1,4 +1,4 @@
-site_name: Ultrabroken Docs
+site_name: Ultrabroken Archives
 # ci: trigger workflows
 site_description: Community-driven encyclopedia documenting glitches, techniques and investigations for The Legend of Zelda Tears of the Kingdom
 site_author: NaN Gogh & Community
@@ -41,6 +41,7 @@ extra_javascript:
 
 nav:
   - Home: wiki/index.md
+  - About: wiki/about.md
      #- Welcome: index.md
      #- Ultrabroken: ultrabroken/index.md
      #- Entanglement: entanglement/index.md
