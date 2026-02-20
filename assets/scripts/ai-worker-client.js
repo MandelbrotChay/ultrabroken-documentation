@@ -73,8 +73,8 @@
       const MAX_QUERY_CHARS = (typeof window !== 'undefined' && window.AI_MAX_QUERY_CHARS) ? Number(window.AI_MAX_QUERY_CHARS) : 50;
       // Always use the contenteditable branch so the input naturally grows
       let input;
-      // visible contenteditable with an inline placeholder text
-      input = el('div', { contenteditable: 'true', role: 'textbox', 'aria-multiline': 'true', 'data-ub-placeholder': _placeholder_text, class: 'ub-ai-input' }, _placeholder_text);
+      // visible contenteditable — starts empty; animation fills it
+      input = el('div', { contenteditable: 'true', role: 'textbox', 'aria-multiline': 'true', 'data-ub-placeholder': _placeholder_text, class: 'ub-ai-input' }, '');
       // textarea base styles for autosize and wrapping
       try{
         input.style.resize = 'none';
@@ -311,6 +311,7 @@
       w.getValue = ()=>{
         try{
           if (w.input && w.input.contentEditable === 'true') {
+            if (w.input._phAnimating) return ''; // animation in progress — treat as empty
             const txt = String(w.input.textContent || '');
             const ph = String(w.input.getAttribute('data-ub-placeholder') || '');
             return txt === ph ? '' : txt;
@@ -321,17 +322,14 @@
       w.setValue = (v)=>{
         try{
           if (w.input && w.input.contentEditable === 'true') {
-            const ph = String(w.input.getAttribute('data-ub-placeholder') || '');
             if (!v) {
-              // restore placeholder when clearing
-              if (ph) {
-                w.input.textContent = ph;
-                try{ w.input.setAttribute('data-ub-placeholder-active','1'); }catch(e){}
-              } else {
-                w.input.textContent = '';
-                try{ w.input.removeAttribute('data-ub-placeholder-active'); }catch(e){}
-              }
+              // clearing: stop any running animation, blank the field, restart animation
+              try{ if (typeof stopPhAnim === 'function') stopPhAnim(); }catch(e){}
+              w.input.textContent = '';
+              try{ w.input.removeAttribute('data-ub-placeholder-active'); }catch(e){}
+              try{ if (typeof startPhAnim === 'function') startPhAnim(); }catch(e){}
             } else {
+              try{ if (typeof stopPhAnim === 'function') stopPhAnim(); }catch(e){}
               w.input.textContent = v;
               try{ w.input.removeAttribute('data-ub-placeholder-active'); }catch(e){}
             }
@@ -341,23 +339,63 @@
         try{ if (w.input) w.input.value = v; }catch(e){}
       };
 
-      // Inline placeholder behavior: clear on focus if placeholder visible,
-      // restore on blur when empty. Use data attribute to mark active state.
+      // Typewriter animation engine for placeholder.
+      // Picked fresh on every blur-when-empty / clear / init.
+      let _phAnimHandle = null;
+      let _phLastIdx    = -1;
+      const stopPhAnim = ()=>{
+        try{ if (_phAnimHandle !== null){ clearTimeout(_phAnimHandle); _phAnimHandle = null; } }catch(e){}
+        try{ w.input._phAnimating = false; }catch(e){}
+      };
+      const startPhAnim = ()=>{
+        stopPhAnim();
+        if (document.activeElement === w.input) return; // don't animate while focused
+        let idx;
+        do { idx = Math.floor(Math.random() * _PLACEHOLDERS.length); }
+        while (_PLACEHOLDERS.length > 1 && idx === _phLastIdx);
+        _phLastIdx = idx;
+        const text = _PLACEHOLDERS[idx];
+        try{ w.input.setAttribute('data-ub-placeholder', text); }catch(e){}
+        w.input._phAnimating = true;
+        let pos = 0;
+        const TYPE_SPEED  = 65;   // ms per char typed (±jitter)
+        const DEL_SPEED   = 30;   // ms per char deleted
+        const PAUSE_END   = 1600; // pause at full string before deleting
+        const PAUSE_START = 350;  // pause after full delete before next word
+        const typeNext = ()=>{
+          if (document.activeElement === w.input){ stopPhAnim(); w.input.textContent = ''; return; }
+          if (pos <= text.length){
+            try{ w.input.textContent = text.slice(0, pos); }catch(e){}
+            pos++;
+            _phAnimHandle = setTimeout(typeNext, TYPE_SPEED + Math.random() * 40 - 20);
+          } else {
+            _phAnimHandle = setTimeout(delNext, PAUSE_END);
+          }
+        };
+        const delNext = ()=>{
+          if (document.activeElement === w.input){ stopPhAnim(); w.input.textContent = ''; return; }
+          if (pos > 0){
+            pos--;
+            try{ w.input.textContent = text.slice(0, pos); }catch(e){}
+            _phAnimHandle = setTimeout(delNext, DEL_SPEED + Math.random() * 20 - 10);
+          } else {
+            w.input._phAnimating = false;
+            _phAnimHandle = setTimeout(()=>{ if (document.activeElement !== w.input) startPhAnim(); }, PAUSE_START);
+          }
+        };
+        _phAnimHandle = setTimeout(typeNext, 300);
+      };
+
+      // Focus: kill animation, clear field ready for input
+      // Blur: restart animation after a short delay if still empty
       try{
         w.input.addEventListener('focus', ()=>{
-          try{
-            const ph = String(w.input.getAttribute('data-ub-placeholder') || '');
-            if ((w.input.textContent || '') === ph) {
-              w.input.textContent = '';
-              try{ w.input.removeAttribute('data-ub-placeholder-active'); }catch(e){}
-            }
-          }catch(e){}
+          try{ stopPhAnim(); w.input.textContent = ''; }catch(e){}
         });
         w.input.addEventListener('blur', ()=>{
           try{
-            if (!String(w.input.textContent || '').trim()) {
-              const ph = String(w.input.getAttribute('data-ub-placeholder') || '');
-              if (ph) { w.input.textContent = ph; try{ w.input.setAttribute('data-ub-placeholder-active','1'); }catch(e){} }
+            if (!String(w.input.textContent || '').trim()){
+              _phAnimHandle = setTimeout(startPhAnim, 400);
             }
           }catch(e){}
         });
@@ -652,6 +690,8 @@
         window.addEventListener('resize', resizeIcons);
         // initial state
         updateVisibility();
+        // kick off placeholder typing animation
+        try{ startPhAnim(); }catch(e){}
 
         
       }catch(e){ /* ignore */ }
