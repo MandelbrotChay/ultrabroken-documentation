@@ -74,23 +74,23 @@
   }
 
   function makeBurstParticle(cx, cy){
-    const angle = Math.random() * Math.PI * 2;
-    const speed = rand(0.05, 0.35); // px/ms — faster than ambient
+    const speed = rand(0.08, 0.28); // px/ms upward
     return {
-      x: cx, y: cy,
-      vx: Math.cos(angle) * speed,
-      vy: Math.sin(angle) * speed,
+      x: cx + rand(-18, 18),
+      y: cy + rand(-10, 10),
+      vx: rand(-0.04, 0.04), // slight left/right drift
+      vy: -speed,            // upwards only
       size: rand(1.2, 3.2),
       hue: 175 + Math.random() * 40,
       alpha: cfg.particleAlpha,
       burst: true,
-      life: 1.0,          // normalised lifetime [1 → 0]
-      decay: rand(0.0012, 0.0022) // life units per ms
+      life: 1.0,
+      decay: rand(0.0014, 0.0026)
     };
   }
 
   function spawnClickBurst(cx, cy){
-    const count = 10 + Math.floor(Math.random() * 8);
+    const count = 5 + Math.floor(Math.random() * 4);
     for (let i = 0; i < count; i++) particles.push(makeBurstParticle(cx, cy));
   }
 
