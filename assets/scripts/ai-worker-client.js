@@ -358,8 +358,13 @@
         try{
           // ensure input has no native placeholder text
           try{ w.input.placeholder = ''; }catch(e){}
-          const fake = el('div', { class: 'ub-ai-fake-placeholder', 'aria-hidden': 'true' }, stored);
-          try{ if (w.inputWrap) w.inputWrap.appendChild(fake); }catch(e){}
+          // Reuse any existing fake placeholder created by the input module
+          let fake = null;
+          try { fake = w.inputWrap && w.inputWrap.querySelector && w.inputWrap.querySelector('.ub-ai-fake-placeholder'); } catch(e) { fake = null; }
+          if (!fake) {
+            fake = el('div', { class: 'ub-ai-fake-placeholder', 'aria-hidden': 'true' }, stored);
+            try{ if (w.inputWrap) w.inputWrap.appendChild(fake); }catch(e){}
+          }
           w._fakePlaceholder = fake;
         }catch(e){}
 
