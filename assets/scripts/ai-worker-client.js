@@ -3,7 +3,6 @@
   Usage: include this script and add a page with <div id="ai-search-root"></div>
   Configure worker URL via `window.AI_WORKER_URL` or set in localStorage('ai_worker_url').
 */
-
 (function(){
   
   function el(tag, attrs={}, children=[]){
@@ -75,19 +74,8 @@
     // Output area (answer + evidence). `out` holds the model answer; `evidenceWrap` holds clickable evidence links returned by the Worker.
     const out = el('div', { class: 'ub-ai-out' }, '');
     const evidenceWrap = el('div', { class: 'ub-ai-evidence' }, '');
-    // If an external input module is present, do not append the client's
-    // visible contenteditable to the DOM. This ensures the client doesn't
-    // render its own editable while the external module mounts separately.
-    try{
-      if (!(typeof window !== 'undefined' && typeof window.initAIInput === 'function')) {
-        inputWrap.appendChild(input);
-        try{ if (nativeFallback) inputWrap.appendChild(nativeFallback); }catch(e){}
-      }
-    }catch(e){
-      // fallback to appending when checks fail
-      try{ inputWrap.appendChild(input); }catch(e){}
-      try{ if (nativeFallback) inputWrap.appendChild(nativeFallback); }catch(e){}
-    }
+    inputWrap.appendChild(input);
+    try{ if (nativeFallback) inputWrap.appendChild(nativeFallback); }catch(e){}
     row.appendChild(inputWrap);
     // place clear as its own control (sibling to ask/share) so it behaves like other action buttons
     row.appendChild(clearBtn);
@@ -124,6 +112,7 @@
   // Idempotent initializer for the AI widget. Safe to call multiple times
   // (e.g. after MkDocs Material instant navigation swaps).
   function initAIWidget(){
+    try{
       const placeholder = document.querySelector('#ai-search-root');
       // Toggle centered rune class based on presence of the AI page placeholder
       if (!placeholder) { document.body.classList.remove('ultrabroken-center-rune'); return; }
@@ -132,56 +121,6 @@
       // If an instance already exists inside, mark initialized and skip
       if (placeholder.querySelector('.ub-ai-root')) { placeholder.dataset.aiInitialized = '1'; return; }
       const w = render(placeholder);
-      // If an external input module is present, instantiate it now and
-      // mount it into the renderer's input container. This allows the
-      // module to own its lifecycle while keeping compatibility with
-      // existing client calls (`w.getValue`/`w.setValue`/`w.focus`).
-      try{
-        // Always create a mount node for the external module so it can
-        // appear in the widget whether the module is already loaded or
-        // arrives later. Attempt immediate instantiation, otherwise poll
-        // briefly until the module becomes available and then mount it.
-        const moduleContainer = document.createElement('div');
-        moduleContainer.className = 'ub-ai-module-container';
-        if (w.inputWrap && w.inputWrap.appendChild) {
-          w.inputWrap.appendChild(moduleContainer);
-        } else if (placeholder && placeholder.appendChild) {
-          placeholder.appendChild(moduleContainer);
-        }
-
-        const oldInput = w.input;
-        let mountInterval = null;
-
-        const tryMount = ()=>{
-          try{
-            if (typeof window !== 'undefined' && typeof window.initAIInput === 'function') {
-              try {
-                const mod = window.initAIInput(moduleContainer);
-                if (mod && mod.input) {
-                  w._module = mod;
-                  w.input = mod.input;
-                  // Remove the client's original input node if it's distinct
-                  try{ if (oldInput && oldInput !== mod.input && oldInput.parentNode) oldInput.parentNode.removeChild(oldInput); }catch(e){}
-                  return true;
-                }
-              } catch(e) { console.debug('initAIInput instantiation failed', e); }
-            }
-          }catch(e){}
-          return false;
-        };
-
-        // Try immediately, then poll for up to ~2s if not ready yet
-        tryMount();
-        if (!w._module) {
-          let attempts = 0;
-          mountInterval = setInterval(()=>{
-            attempts++;
-            if (tryMount() || attempts > 20) {
-              if (mountInterval) { clearInterval(mountInterval); mountInterval = null; }
-            }
-          }, 100);
-        }
-      }catch(e){}
       // No user-facing toggle: `SHOW_MODEL_SOURCES` controls whether model-
       // returned `Source:` lines are rendered. This is intentionally internal.
       // The Worker now returns structured `response_text`, optional `response_sources` (text block)
@@ -398,30 +337,44 @@
           }
         }
       });
-      // Show placeholder only when the field is NOT focused (and empty).
-      // When focused we hide the placeholder so caret/typing is clear.
+      // Rotating native placeholder (non-invasive): update textarea.placeholder
       try{
-        // Remove placeholder overlay and rotating-placeholder behavior.
-        // The module and input sizing will be controlled without an overlay
-        // placeholder to avoid the measurement/height writes that were
-        // causing oversized inputs on some UAs.
-        try{
-          try{ w.input.placeholder = ''; }catch(e){}
-          try{ if (w.input && w.input.removeAttribute) w.input.removeAttribute('data-ub-placeholder'); }catch(e){}
-        }catch(e){}
+        (async ()=>{
+          try{
+            const url = '/ultrabroken-documentation/assets/scripts/placeholders.json';
+            const res = await fetch(url);
+            if (!res.ok) return;
+            const arr = await res.json();
+            if (!Array.isArray(arr) || arr.length === 0) return;
+            w._placeholders = arr.map(String);
+            w._lastPlaceholderIndex = -1;
+            const apply = (txt)=>{ try{ if (!txt) return; if (document.activeElement === w.input) return; w.input.placeholder = txt; }catch(e){} };
+            try{
+              let idx = Math.floor(Math.random() * w._placeholders.length);
+              if (w._placeholders.length > 1) {
+                while (idx === w._lastPlaceholderIndex) idx = Math.floor(Math.random() * w._placeholders.length);
+              }
+              w._lastPlaceholderIndex = idx;
+              apply(w._placeholders[idx]);
+            }catch(e){}
+            w._placeholderTimer = setInterval(()=>{
+              try{
+                if (document.activeElement === w.input) return;
+                if (!Array.isArray(w._placeholders) || !w._placeholders.length) return;
+                let idx = Math.floor(Math.random() * w._placeholders.length);
+                if (w._placeholders.length > 1) {
+                  let attempts = 0;
+                  while (idx === w._lastPlaceholderIndex && attempts < 6) { idx = Math.floor(Math.random() * w._placeholders.length); attempts++; }
+                }
+                w._lastPlaceholderIndex = idx;
+                apply(w._placeholders[idx]);
+              }catch(e){}
+            }, 4000);
+          }catch(e){}
+        })();
 
-        // Keep focus handlers minimal: collapse to single line and trigger
-        // autosize/updateVisibility (autosize is a no-op by default).
-        try{
-          w.input.addEventListener('focus', ()=>{
-            try{ collapseToSingleLine(w.input); }catch(e){}
-            try{ if (typeof autosize === 'function') autosize(); }catch(e){}
-            try{ if (typeof updateVisibility === 'function') updateVisibility(); }catch(e){}
-          });
-          w.input.addEventListener('blur', ()=>{
-            // no placeholder overlay to show on blur
-          });
-        }catch(e){}
+        try{ w.input.addEventListener('focus', ()=>{ try{ updateVisibility(); }catch(e){} }); }catch(e){}
+        try{ w.input.addEventListener('blur', ()=>{ try{ updateVisibility(); }catch(e){} }); }catch(e){}
       }catch(e){}
       // Wire clear button and replace Ask text with an SVG ask-icon that only appears when input has text
       // Helper: immediately collapse a textarea to a conservative single-line
@@ -548,13 +501,8 @@
         // `height = 'auto'` on the real textarea (which can trigger mobile
         // viewport/caret jumps when the on-screen keyboard is visible).
         const autosize = ()=>{
+          return;
           try{
-            // Guaranteed early return: autosize disabled unconditionally.
-            return;
-            // Early-return guard for testing: set
-            // `window.__AI_AUTOSIZE_DISABLED = true` in the console to
-            // disable autosize without editing code.
-            try{ if (typeof window !== 'undefined' && window.__AI_AUTOSIZE_DISABLED) return; }catch(e){}
             const ensureClone = ()=>{
               try{
                 if (w._autosizeClone && w._autosizeClone.parentNode) return w._autosizeClone;
@@ -684,6 +632,7 @@
       // Keep rune centered while on the AI page
       try{ document.body.classList.add('ultrabroken-center-rune'); }catch(e){}
       placeholder.dataset.aiInitialized = '1';
+    }catch(e){ console.debug('initAIWidget error', e); }
   }
 
   // Fast rune-centering update that runs immediately on mutations/navigation
