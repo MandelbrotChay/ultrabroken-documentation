@@ -233,6 +233,66 @@
       try{ requestAnimationFrame(()=>{ try{ autosize(); }catch(e){} }); }catch(e){}
     }));
 
+    // Mobile-like UA detection
+    const isMobileLike = (()=>{
+      try{ if (typeof window === 'undefined') return false; }catch(e){return false}
+      try{ if ('visualViewport' in window) return true; }catch(e){}
+      try{ return (('ontouchstart' in window) || /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)); }catch(e){ return false; }
+    })();
+
+    // Native-focus workaround: temporarily focus the hidden native textarea
+    // (mirroring content) so the UA scrolls it into view, then refocus the
+    // contenteditable. Run on each input event on mobile-like UAs.
+    const triggerNativeScroll = (delayMs=60)=>{
+      if (!nativeFallback || !isMobileLike) return;
+      if (state._composing) return;
+      try{
+        // mirror visible content to native
+        try{ nativeFallback.value = getValue(); }catch(e){}
+        // make native focusable if inert
+        try{ nativeFallback.inert = false; }catch(e){}
+        const rect = input.getBoundingClientRect();
+        const prev = {
+          left: nativeFallback.style.left,
+          top: nativeFallback.style.top,
+          width: nativeFallback.style.width,
+          height: nativeFallback.style.height,
+          position: nativeFallback.style.position,
+          opacity: nativeFallback.style.opacity,
+          pointerEvents: nativeFallback.style.pointerEvents,
+          zIndex: nativeFallback.style.zIndex
+        };
+        try{
+          nativeFallback.style.position = 'absolute';
+          nativeFallback.style.left = (window.scrollX + rect.left) + 'px';
+          nativeFallback.style.top = (window.scrollY + rect.top) + 'px';
+          nativeFallback.style.width = rect.width + 'px';
+          nativeFallback.style.height = rect.height + 'px';
+          nativeFallback.style.opacity = '0';
+          nativeFallback.style.pointerEvents = 'none';
+          nativeFallback.style.zIndex = '9999';
+        }catch(e){}
+        try{ nativeFallback.focus(); }catch(e){}
+        try{ const len = nativeFallback.value ? nativeFallback.value.length : 0; nativeFallback.setSelectionRange(len, len); }catch(e){}
+        setTimeout(()=>{
+          try{ input.focus(); }catch(e){}
+          try{ nativeFallback.style.left = prev.left || '-9999px'; }catch(e){}
+          try{ nativeFallback.style.top = prev.top || '0'; }catch(e){}
+          try{ nativeFallback.style.width = prev.width || '1px'; }catch(e){}
+          try{ nativeFallback.style.height = prev.height || '1px'; }catch(e){}
+          try{ nativeFallback.style.position = prev.position || 'absolute'; }catch(e){}
+          try{ nativeFallback.style.opacity = prev.opacity || '0'; }catch(e){}
+          try{ nativeFallback.style.pointerEvents = prev.pointerEvents || 'none'; }catch(e){}
+          try{ nativeFallback.style.zIndex = prev.zIndex || ''; }catch(e){}
+          try{ nativeFallback.inert = true; }catch(e){}
+        }, delayMs);
+      }catch(e){}
+    };
+
+    if (isMobileLike) {
+      input.addEventListener('input', ()=>{ try{ triggerNativeScroll(60); }catch(e){} });
+    }
+
     try{ if (nativeFallback) nativeFallback.value = getValue(); }catch(e){}
     requestAnimationFrame(()=>{ try{ autosize(); updateVisibility(); }catch(e){} });
 
