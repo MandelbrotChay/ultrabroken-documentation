@@ -636,6 +636,8 @@
         // viewport/caret jumps when the on-screen keyboard is visible).
         const autosize = ()=>{
           try{
+            // Guaranteed early return: autosize disabled unconditionally.
+            return;
             // Early-return guard for testing: set
             // `window.__AI_AUTOSIZE_DISABLED = true` in the console to
             // disable autosize without editing code.
