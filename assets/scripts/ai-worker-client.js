@@ -48,7 +48,7 @@
           nativeFallback.style.pointerEvents = 'none';
         }catch(e){ nativeFallback = null; }
       } else {
-        input = el('textarea', { placeholder: '', 'data-ub-placeholder': _placeholder_text, class: 'ub-ai-input', maxlength: String(MAX_QUERY_CHARS), rows: '1' });
+        input = el('textarea', { placeholder: _placeholder_text, 'data-ub-placeholder': _placeholder_text, class: 'ub-ai-input', maxlength: String(MAX_QUERY_CHARS), rows: '1' });
       }
       // textarea base styles for autosize and wrapping
       try{
