@@ -28,28 +28,11 @@
     const _placeholder_text = 'What is referred to as Wacko Boingo?';
       // Max query length (short questions). Configurable via `window.AI_MAX_QUERY_CHARS`.
       const MAX_QUERY_CHARS = (typeof window !== 'undefined' && window.AI_MAX_QUERY_CHARS) ? Number(window.AI_MAX_QUERY_CHARS) : 50;
-      // Use native textarea by default so native `placeholder` works
-      const useFaux = false;
+      // Always use the contenteditable branch so the input naturally grows
       let input;
-      let nativeFallback = null;
-      if (useFaux) {
-        // visible contenteditable
-        input = el('div', { contenteditable: 'true', role: 'textbox', 'aria-multiline': 'true', 'data-ub-placeholder': _placeholder_text, class: 'ub-ai-input' }, '');
-        // hidden native textarea used for reliable value retrieval/submission and IME behavior
-        try{
-          nativeFallback = el('textarea', { 'aria-hidden': 'true', tabindex: '-1', class: 'ub-ai-native-hidden' }, '');
-          // visually-hide but keep in DOM for measurement/submission
-          nativeFallback.style.position = 'absolute';
-          nativeFallback.style.left = '-9999px';
-          nativeFallback.style.top = '0';
-          nativeFallback.style.width = '1px';
-          nativeFallback.style.height = '1px';
-          nativeFallback.style.opacity = '0';
-          nativeFallback.style.pointerEvents = 'none';
-        }catch(e){ nativeFallback = null; }
-      } else {
-        input = el('textarea', { placeholder: _placeholder_text, 'data-ub-placeholder': _placeholder_text, class: 'ub-ai-input', maxlength: String(MAX_QUERY_CHARS), rows: '1' });
-      }
+      let fakePlaceholderEl = null;
+      // visible contenteditable
+      input = el('div', { contenteditable: 'true', role: 'textbox', 'aria-multiline': 'true', 'data-ub-placeholder': _placeholder_text, class: 'ub-ai-input' }, '');
       // textarea base styles for autosize and wrapping
       try{
         input.style.resize = 'none';
@@ -75,7 +58,23 @@
     const out = el('div', { class: 'ub-ai-out' }, '');
     const evidenceWrap = el('div', { class: 'ub-ai-evidence' }, '');
     inputWrap.appendChild(input);
-    try{ if (nativeFallback) inputWrap.appendChild(nativeFallback); }catch(e){}
+    // Create a clickable fake placeholder overlay for the contenteditable branch
+    try{
+      if (useFaux) {
+        fakePlaceholderEl = el('div', { class: 'ub-ai-fake-placeholder', 'aria-hidden': 'true' }, _placeholder_text);
+        // Basic positioning and appearance; project CSS may override
+        fakePlaceholderEl.style.position = 'absolute';
+        fakePlaceholderEl.style.left = '0';
+        fakePlaceholderEl.style.top = '0';
+        fakePlaceholderEl.style.right = '0';
+        fakePlaceholderEl.style.pointerEvents = 'auto';
+        fakePlaceholderEl.style.color = '#777';
+        fakePlaceholderEl.style.cursor = 'text';
+        // clicking the fake placeholder should focus the input
+        fakePlaceholderEl.addEventListener('click', ()=>{ try{ input.focus(); }catch(e){} });
+        inputWrap.appendChild(fakePlaceholderEl);
+      }
+    }catch(e){}
     row.appendChild(inputWrap);
     // place clear as its own control (sibling to ask/share) so it behaves like other action buttons
     row.appendChild(clearBtn);
@@ -87,7 +86,7 @@
     // append evidence container to the widget so it's accessible via the returned handle
     root.appendChild(evidenceWrap);
     container.appendChild(root);
-    return { input, inputWrap, native: nativeFallback, btn: askBtn, share: shareBtn, out, clear: clearBtn, evidence: evidenceWrap };
+    return { input, inputWrap, native: null, _fakePlaceholder: fakePlaceholderEl, btn: askBtn, share: shareBtn, out, clear: clearBtn, evidence: evidenceWrap };
   }
 
   async function askWorker(q){
@@ -285,17 +284,13 @@
       w.btn.addEventListener('click', handleAsk);
       // helper accessors for faux input support
       w.getValue = ()=>{
-        try{ if (w.native && w.native.value != null) return String(w.native.value || ''); }catch(e){}
         try{ if (w.input && w.input.contentEditable === 'true') return String(w.input.textContent || ''); }catch(e){}
-        try{ return String(w.input && w.input.value || ''); }catch(e){ return ''; }
+        try{ return String((w.input && w.input.value) || ''); }catch(e){ return ''; }
       };
       w.setValue = (v)=>{
-        try{ if (w.native) w.native.value = v; }catch(e){}
         try{ if (w.input && w.input.contentEditable === 'true') { w.input.textContent = v; return; } }catch(e){}
         try{ if (w.input) w.input.value = v; }catch(e){}
       };
-      // Ensure native fallback is initially synchronized
-      try{ if (w.native) { try{ w.native.value = (typeof w.getValue === 'function' ? w.getValue() : (w.input && w.input.value || '')); }catch(e){} } }catch(e){}
       // Submit on plain Enter. Ctrl/Cmd+Enter inserts a newline at the caret.
       w.input.addEventListener('keydown', (ev)=>{
         if (ev.key === 'Enter') {
@@ -348,7 +343,7 @@
             if (!Array.isArray(arr) || arr.length === 0) return;
             w._placeholders = arr.map(String);
             w._lastPlaceholderIndex = -1;
-            const apply = (txt)=>{ try{ if (!txt) return; if (document.activeElement === w.input) return; w.input.placeholder = txt; }catch(e){} };
+            const apply = (txt)=>{ try{ if (!txt) return; if (document.activeElement === w.input) return; try{ if (w.input && w.input.contentEditable === 'true') { try{ w.input.setAttribute('data-ub-placeholder', txt); if (w._fakePlaceholder) w._fakePlaceholder.textContent = txt; }catch(e){} } else { try{ w.input.placeholder = txt; }catch(e){} } }catch(e){} }catch(e){} };
             try{
               let idx = Math.floor(Math.random() * w._placeholders.length);
               if (w._placeholders.length > 1) {
@@ -615,7 +610,6 @@
           }catch(e){}
         };
         ['input','change','paste','cut','compositionend'].forEach(evt => w.input.addEventListener(evt, ()=>{
-          try{ if (w.native) { try{ w.native.value = (typeof w.getValue === 'function' ? w.getValue() : (w.input && w.input.value || '')); }catch(e){} } }catch(e){}
           try{ updateVisibility(); }catch(e){}
           try{ requestAnimationFrame(()=>{ try{ autosize(); }catch(e){} }); }catch(e){}
         }));
