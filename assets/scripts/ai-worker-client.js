@@ -191,6 +191,7 @@
       // If an instance already exists inside, mark initialized and skip
       if (placeholder.querySelector('.ub-ai-root')) { placeholder.dataset.aiInitialized = '1'; return; }
       const w = render(placeholder);
+      w._idleMode = true; // true while showing idle/cleared state; false while showing a query result
       // No user-facing toggle: `SHOW_MODEL_SOURCES` controls whether model-
       // returned `Source:` lines are rendered. This is intentionally internal.
       // The Worker now returns structured `response_text`, optional `response_sources` (text block)
@@ -201,6 +202,7 @@
         let q = (typeof w.getValue === 'function' ? w.getValue() : (w.input.value||'')).trim(); if (!q) return;
         if (q.length > MAX_QUERY_CHARS) q = q.slice(0, MAX_QUERY_CHARS).trim();
         try{ if (typeof lockInput === 'function') lockInput(); }catch(e){}
+        w._idleMode = false;
         w.out.textContent = LOADING_TEXT;
         if (w.evidence) w.evidence.innerHTML = '';
         const r = await askWorker(q);
@@ -423,6 +425,7 @@
             pos++;
             _phAnimHandle = setTimeout(typeNext, TYPE_SPEED + Math.random() * 40 - 20);
           } else {
+            if (w._idleMode) { try{ w.out.textContent = idleText(); }catch(e){} }
             _phAnimHandle = setTimeout(delNext, PAUSE_END);
           }
         };
@@ -453,6 +456,7 @@
       };
       // Declared at outer scope so the silence-timeout in handleAsk can close over it.
       const doClear = () => {
+        w._idleMode = true;
         try{ if (typeof unlockInput === 'function') unlockInput(); }catch(e){}
         try{ if (typeof w.setValue === 'function') w.setValue(''); else if (w.input) w.input.value = ''; }catch(e){}
         try{ if (w.out) { w.out.innerHTML = ''; w.out.textContent = idleText(); } }catch(e){}
