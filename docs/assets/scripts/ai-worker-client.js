@@ -23,6 +23,8 @@
   // Default idle text shown in the output area before any query is made
   // and after clearing. Cleared when a query starts.
   const IDLE_TEXT = 'A chosen hero wants to know how to break Hylias creation... What a plot twist!';
+  // Text shown while the worker is processing a query.
+  const LOADING_TEXT = 'The Librarian stares at you...';
 
   // Placeholder pool — randomly sampled each time the widget initialises.
   const _PLACEHOLDERS = [
@@ -154,7 +156,7 @@
       // and no longer attempts to parse `response_text` for Sources.
 
       const handleAsk = async ()=>{
-        const q = (typeof w.getValue === 'function' ? w.getValue() : (w.input.value||'')).trim(); if (!q) return; w.out.textContent = 'The Librarian stares at you...';
+        const q = (typeof w.getValue === 'function' ? w.getValue() : (w.input.value||'')).trim(); if (!q) return; w.out.textContent = LOADING_TEXT;
         if (w.evidence) w.evidence.innerHTML = '';
         const r = await askWorker(q);
         if (r.error) {
