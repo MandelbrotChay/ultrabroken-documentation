@@ -101,16 +101,11 @@
     const evidenceWrap = el('div', { class: 'ub-ai-evidence' }, '');
     inputWrap.appendChild(input);
     row.appendChild(inputWrap);
-    // Buttons float over the separator line (border-top of out) via a zero-height anchor
-    const actionsBar = el('div', { class: 'ub-ai-actions' });
-    const actionsGroup = el('div', { class: 'ub-ai-actions-group' });
-    actionsGroup.appendChild(clearBtn);
-    actionsGroup.appendChild(askBtn);
-    actionsGroup.appendChild(shareBtn);
-    actionsBar.appendChild(actionsGroup);
+    row.appendChild(clearBtn);
+    row.appendChild(askBtn);
+    row.appendChild(shareBtn);
     
     root.appendChild(row);
-    root.appendChild(actionsBar);
     root.appendChild(out);
     // append evidence container to the widget so it's accessible via the returned handle
     root.appendChild(evidenceWrap);
