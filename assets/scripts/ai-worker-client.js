@@ -26,8 +26,9 @@
     'So this happens if the Triforce of wisdom gets out of control...',
     'A chosen hero wants to know how to break Hylias creation... What a plot twist!',
     'The flame of curiosity flares so brightly in you... Don\'t burn your Ultrafingers!',
-    'The Sheikah Slate is indexing forbidden knowledge...',
+    'The Purah Pad is indexing forbidden knowledge...',
     'Even the Great Deku Tree does not know everything.',
+    'The Shiekah are not telling you the whole story...',
     'The Koroks are hiding more than just seeds, it seems.',
     'Somewhere, a Lynel sighs at the audacity of the question.',
   ];
