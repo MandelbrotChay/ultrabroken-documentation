@@ -424,7 +424,7 @@ export default {
       const headers = Object.assign({'Content-Type':'application/json'}, CORS_HEADERS);
       const wantDebug = (typeof RETURN_DEBUG !== 'undefined' && RETURN_DEBUG) || (body && body.debug);
       if (wantDebug) return new Response(JSON.stringify(payload), { headers });
-      return makeSilence();
+      // return makeSilence();
     };
 
     if (!evidences || evidences.length === 0) {
