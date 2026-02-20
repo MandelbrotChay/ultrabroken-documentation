@@ -416,6 +416,7 @@
         let pos = 0;
         const TYPE_SPEED  = 65;   // ms per char typed (±jitter)
         const DEL_SPEED   = 30;   // ms per char deleted
+        const PAUSE_TYPED = 180;  // tiny pause right after last char lands
         const PAUSE_END   = 1600; // pause at full string before deleting
         const PAUSE_START = 350;  // pause after full delete before next word
         const typeNext = ()=>{
@@ -425,8 +426,10 @@
             pos++;
             _phAnimHandle = setTimeout(typeNext, TYPE_SPEED + Math.random() * 40 - 20);
           } else {
-            if (w._idleMode) { try{ w.out.textContent = idleText(); }catch(e){} }
-            _phAnimHandle = setTimeout(delNext, PAUSE_END);
+            _phAnimHandle = setTimeout(()=>{
+              if (w._idleMode) { try{ w.out.textContent = idleText(); }catch(e){} }
+              _phAnimHandle = setTimeout(delNext, PAUSE_END);
+            }, PAUSE_TYPED);
           }
         };
         const delNext = ()=>{
