@@ -3,7 +3,6 @@
   Usage: include this script and add a page with <div id="ai-search-root"></div>
   Configure worker URL via `window.AI_WORKER_URL` or set in localStorage('ai_worker_url').
 */
-
 (function(){
   
   function el(tag, attrs={}, children=[]){
@@ -112,7 +111,7 @@
 
   // Idempotent initializer for the AI widget. Safe to call multiple times
   // (e.g. after MkDocs Material instant navigation swaps).
-  async function initAIWidget(){
+  function initAIWidget(){
     try{
       const placeholder = document.querySelector('#ai-search-root');
       // Toggle centered rune class based on presence of the AI page placeholder
@@ -121,20 +120,7 @@
       if (placeholder.dataset.aiInitialized === '1') return;
       // If an instance already exists inside, mark initialized and skip
       if (placeholder.querySelector('.ub-ai-root')) { placeholder.dataset.aiInitialized = '1'; return; }
-      // Ensure the input module is present: attempt to load it now so
-      // the client does not depend on build/time ordering. Try several
-      // common path variants (relative and absolute) and stop when one
-      // succeeds. This sets `__AI_INPUT_ATTEMPTED` so we don't re-inject.
-      // The `ai-input.js` module should be included by the page (mkdocs order).
-      // No dynamic loading here; fall through to presence check below.
-
-      if (typeof window.initAIInput !== 'function') {
-        try { console.error('ai-worker-client: initAIInput not found; ai-input module not loaded'); } catch(e) {}
-        return;
-      }
-      const w = window.initAIInput(placeholder);
-      try { placeholder.dataset.aiInputUsed = 'module'; } catch(e) {}
-      try { if (console && console.debug) console.debug('ai-worker-client: input init used module', placeholder); } catch(e) {}
+      const w = render(placeholder);
       // No user-facing toggle: `SHOW_MODEL_SOURCES` controls whether model-
       // returned `Source:` lines are rendered. This is intentionally internal.
       // The Worker now returns structured `response_text`, optional `response_sources` (text block)
@@ -258,24 +244,26 @@
                 list.appendChild(li);
               }
             });
-
           }
 
           // Always render Worker-provided evidence as authoritative clickable links
           try{
             const ev = r.evidence || [];
+            // Worker evidence rendering controlled by internal flag.
             if (Array.isArray(ev) && ev.length){
               // reuse existing list if model sources created one, otherwise create
               let list = w.evidence && w.evidence.querySelector && w.evidence.querySelector('.ub-ai-evidence-list');
               if (!list) { list = el('ul', { class: 'ub-ai-evidence-list' }, []); if (w.evidence) w.evidence.appendChild(list); }
               ev.forEach(item => {
                 const id = item.id || item.path || '';
+                // Prefer item.title for search queries; fallback to normalized id
                 const titleText = item.title || '';
+                // Normalize id to a wiki path without .md
                 let slug = String(id).replace(/\.md$/,'').replace(/^\/+|\/+$/g, '');
                 const text = titleText || slug || id;
                 if (USE_TITLE_SEARCH_LINKS) {
                   const query = String(text).trim();
-                  if (seenQueries.has(query)) return;
+                  if (seenQueries.has(query)) return; // already emitted by model sources
                   seenQueries.add(query);
                   const href = 'search:' + encodeURIComponent(query);
                   const a = el('a', { href: href, class: 'search-link', 'data-query': query }, text);
@@ -358,13 +346,8 @@
         try{
           // ensure input has no native placeholder text
           try{ w.input.placeholder = ''; }catch(e){}
-          // Reuse any existing fake placeholder created by the input module
-          let fake = null;
-          try { fake = w.inputWrap && w.inputWrap.querySelector && w.inputWrap.querySelector('.ub-ai-fake-placeholder'); } catch(e) { fake = null; }
-          if (!fake) {
-            fake = el('div', { class: 'ub-ai-fake-placeholder', 'aria-hidden': 'true' }, stored);
-            try{ if (w.inputWrap) w.inputWrap.appendChild(fake); }catch(e){}
-          }
+          const fake = el('div', { class: 'ub-ai-fake-placeholder', 'aria-hidden': 'true' }, stored);
+          try{ if (w.inputWrap) w.inputWrap.appendChild(fake); }catch(e){}
           w._fakePlaceholder = fake;
         }catch(e){}
 
