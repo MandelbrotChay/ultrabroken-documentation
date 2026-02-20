@@ -424,7 +424,7 @@ export default {
       const headers = Object.assign({'Content-Type':'application/json'}, CORS_HEADERS);
       const wantDebug = (typeof RETURN_DEBUG !== 'undefined' && RETURN_DEBUG) || (body && body.debug);
       if (wantDebug) return new Response(JSON.stringify(payload), { headers });
-      // return makeSilence();
+      return makeSilence();
     };
 
     if (!evidences || evidences.length === 0) {
@@ -587,7 +587,7 @@ export default {
                 retryModelText = String(retryModelText || '').trim();
                 if (!hasSources(retryModelText)){
                   // Second attempt failed to produce Sources — return canonical silence to caller
-                  //return makeSilence();
+                  return makeSilence();
                 }
                 // Use the retryModelText as the final modelText if it contains Sources
                 modelText = retryModelText;
