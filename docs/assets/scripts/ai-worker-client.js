@@ -58,22 +58,21 @@
     const out = el('div', { class: 'ub-ai-out' }, '');
     const evidenceWrap = el('div', { class: 'ub-ai-evidence' }, '');
     inputWrap.appendChild(input);
-    // Create a clickable fake placeholder overlay for the contenteditable branch
+    // Create a clickable fake placeholder overlay for the contenteditable
     try{
-      if (useFaux) {
-        fakePlaceholderEl = el('div', { class: 'ub-ai-fake-placeholder', 'aria-hidden': 'true' }, _placeholder_text);
-        // Basic positioning and appearance; project CSS may override
-        fakePlaceholderEl.style.position = 'absolute';
-        fakePlaceholderEl.style.left = '0';
-        fakePlaceholderEl.style.top = '0';
-        fakePlaceholderEl.style.right = '0';
-        fakePlaceholderEl.style.pointerEvents = 'auto';
-        fakePlaceholderEl.style.color = '#777';
-        fakePlaceholderEl.style.cursor = 'text';
-        // clicking the fake placeholder should focus the input
-        fakePlaceholderEl.addEventListener('click', ()=>{ try{ input.focus(); }catch(e){} });
-        inputWrap.appendChild(fakePlaceholderEl);
-      }
+      fakePlaceholderEl = el('div', { class: 'ub-ai-fake-placeholder', 'aria-hidden': 'true' }, _placeholder_text);
+      // Basic positioning and appearance; project CSS may override
+      fakePlaceholderEl.style.position = 'absolute';
+      fakePlaceholderEl.style.left = '0';
+      fakePlaceholderEl.style.top = '0';
+      fakePlaceholderEl.style.right = '0';
+      fakePlaceholderEl.style.pointerEvents = 'auto';
+      fakePlaceholderEl.style.color = '#777';
+      fakePlaceholderEl.style.cursor = 'text';
+      fakePlaceholderEl.style.display = 'block';
+      // clicking the fake placeholder should focus the input
+      fakePlaceholderEl.addEventListener('click', ()=>{ try{ input.focus(); }catch(e){} });
+      inputWrap.appendChild(fakePlaceholderEl);
     }catch(e){}
     row.appendChild(inputWrap);
     // place clear as its own control (sibling to ask/share) so it behaves like other action buttons
@@ -476,17 +475,18 @@
         // Toggle visibility for both controls based on input content
         const updateVisibility = ()=>{
           const has = String((typeof w.getValue === 'function' ? w.getValue() : (w.input && w.input.value || '')) || '').trim();
-          if (w.clear) w.clear.style.display = has ? 'flex' : 'none';
-          w.btn.style.display = has ? 'flex' : 'none';
-          if (w.share) w.share.style.display = has ? 'flex' : 'none';
-          // Toggle the click-through overlay placeholder: show only when
-          // the field is empty and not focused.
-          try{
-            if (w._fakePlaceholder) {
-              const showFake = !has && document.activeElement !== w.input;
-              w._fakePlaceholder.style.display = showFake ? 'block' : 'none';
-            }
-          }catch(e){}
+            // Deactivate action buttons for now: always hide and disable
+            try{ if (w.clear) { w.clear.style.display = 'none'; w.clear.disabled = true; } }catch(e){}
+            try{ if (w.btn) { w.btn.style.display = 'none'; w.btn.disabled = true; } }catch(e){}
+            try{ if (w.share) { w.share.style.display = 'none'; w.share.disabled = true; } }catch(e){}
+            // Toggle the click-through overlay placeholder: show only when
+            // the field is empty and not focused.
+            try{
+              if (w._fakePlaceholder) {
+                const showFake = !has && document.activeElement !== w.input;
+                w._fakePlaceholder.style.display = showFake ? 'block' : 'none';
+              }
+            }catch(e){}
           // After toggling, resize icons to match rendered button height
           // use a short timeout to allow layout to settle when showing
           setTimeout(resizeIcons, 0);
