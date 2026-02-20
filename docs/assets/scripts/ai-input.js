@@ -165,6 +165,8 @@
     };
 
     const autosize = ()=>{
+      // TEMP: disabled autosize to test native scrolling behavior
+      try{ return; }catch(e){}
       try{
         const raw = getValue();
         let targetH = measureHeightForText(raw);
