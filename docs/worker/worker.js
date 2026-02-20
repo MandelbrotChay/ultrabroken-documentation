@@ -587,7 +587,7 @@ export default {
                 retryModelText = String(retryModelText || '').trim();
                 if (!hasSources(retryModelText)){
                   // Second attempt failed to produce Sources — return canonical silence to caller
-                  return makeSilence();
+                  //return makeSilence();
                 }
                 // Use the retryModelText as the final modelText if it contains Sources
                 modelText = retryModelText;
