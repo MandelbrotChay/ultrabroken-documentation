@@ -73,10 +73,40 @@
     requestAnimationFrame(step);
   }
 
+  function makeBurstParticle(cx, cy){
+    const angle = Math.random() * Math.PI * 2;
+    const speed = rand(0.05, 0.35); // px/ms — faster than ambient
+    return {
+      x: cx, y: cy,
+      vx: Math.cos(angle) * speed,
+      vy: Math.sin(angle) * speed,
+      size: rand(1.2, 3.2),
+      hue: 175 + Math.random() * 40,
+      alpha: cfg.particleAlpha,
+      burst: true,
+      life: 1.0,          // normalised lifetime [1 → 0]
+      decay: rand(0.0012, 0.0022) // life units per ms
+    };
+  }
+
+  function spawnClickBurst(cx, cy){
+    const count = 10 + Math.floor(Math.random() * 8);
+    for (let i = 0; i < count; i++) particles.push(makeBurstParticle(cx, cy));
+  }
+
   function update(dt){
-    for (let p of particles){
+    // update ambient + burst particles; collect indices to remove
+    const dead = [];
+    for (let i = 0; i < particles.length; i++){
+      const p = particles[i];
       p.x += p.vx * dt;
       p.y += p.vy * dt;
+      if (p.burst){
+        p.life -= p.decay * dt;
+        p.alpha = Math.max(0, p.life * cfg.particleAlpha);
+        if (p.life <= 0) dead.push(i);
+        continue; // burst particles don't wrap or recycle the normal way
+      }
       // small horizontal wrap
       if (p.x < -20) p.x = W + 20;
       if (p.x > W + 20) p.x = -20;
@@ -104,6 +134,8 @@
         }
       }
     }
+    // prune expired burst particles (iterate backwards to keep indices valid)
+    for (let i = dead.length - 1; i >= 0; i--) particles.splice(dead[i], 1);
   }
 
   function render(){
@@ -149,6 +181,10 @@
   function init(){
     resize();
     window.addEventListener('resize', throttle(resize, 250));
+    // click burst: spawn radial particles at cursor position
+    window.addEventListener('click', (e)=>{
+      spawnClickBurst(e.clientX, e.clientY);
+    });
     // ensure canvas sits behind content but above body background
     // some themes set body::before at z-index:0; we keep canvas at 0 and bump content to 1 via CSS
     last = performance.now();
