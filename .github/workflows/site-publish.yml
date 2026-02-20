@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'docs/assets/**'
+      - '.github/workflows/site-publish.yml'
   workflow_dispatch: {}
 
 jobs:
