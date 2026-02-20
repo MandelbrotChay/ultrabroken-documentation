@@ -6,7 +6,7 @@ title: Glitch Encyclopedia
 
 ## Welcome
 ---
-This site is a community-driven encyclopedia documenting glitches, techniques and investigations for The Legend of Zelda: Tears of the Kingdom. If you have a specific question, you may ask The Librarian but always take its words with a grain of salt. Will it share word or waffle? Tip or trick? Read more in [here](about/#ai-search)
+This site is a community-driven encyclopedia documenting glitches, techniques and investigations for The Legend of Zelda: Tears of the Kingdom. Use the quick navigation or the searchbar to find glitches. If you have a specific question, you may ask The Librarian but always take its words with a grain of salt. Will it share word or waffle? Tip or trick? Read more in [here](about/#ai-search).
 
 <div id="ai-search-root"></div>
 

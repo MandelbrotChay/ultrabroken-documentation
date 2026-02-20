@@ -163,7 +163,7 @@ markdown_extensions:
       permalink: false
 
 extra:
-  homepage: /ultrabroken-documentation/wiki/librarian/
+  homepage: /ultrabroken-documentation/wiki/
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/nan-gogh/ultrabroken-documentation
