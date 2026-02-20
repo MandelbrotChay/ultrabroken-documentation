@@ -166,7 +166,9 @@
       // and no longer attempts to parse `response_text` for Sources.
 
       const handleAsk = async ()=>{
-        const q = (typeof w.getValue === 'function' ? w.getValue() : (w.input.value||'')).trim(); if (!q) return; w.out.textContent = LOADING_TEXT;
+        const q = (typeof w.getValue === 'function' ? w.getValue() : (w.input.value||'')).trim(); if (!q) return;
+        try{ if (typeof lockInput === 'function') lockInput(); }catch(e){}
+        w.out.textContent = LOADING_TEXT;
         if (w.evidence) w.evidence.innerHTML = '';
         const r = await askWorker(q);
         if (r.error) {
@@ -319,8 +321,6 @@
         }catch(e){ /* ignore model source parsing errors */ }
         // If nothing was rendered and there was no answer, show silence
         if (!w.out.textContent && (!r.evidence || !r.evidence.length)) w.out.textContent = 'silence';
-        // Lock the input now that a response is displayed
-        try{ if (typeof lockInput === 'function') lockInput(); }catch(e){}
       };
       w.btn.addEventListener('click', handleAsk);
       // Helper accessors for faux input support. Treat the inline
@@ -407,8 +407,8 @@
       // Declared at outer scope so handleAsk (defined earlier) can close over them.
       const lockInput = ()=>{
         try{ w.input.setAttribute('contenteditable', 'false'); w.input._inputLocked = true; }catch(e){}
-        try{ if (w.btn)   { w.btn.style.display   = 'none'; w.btn.disabled   = true; } }catch(e){}
-        try{ if (w.share) { w.share.style.display = 'none'; w.share.disabled = true; } }catch(e){}
+        try{ if (w.btn)   { w.btn.style.display   = 'flex'; w.btn.disabled   = false; } }catch(e){}
+        try{ if (w.share) { w.share.style.display = 'flex'; w.share.disabled = false; } }catch(e){}
         try{ if (w.clear) { w.clear.style.display = 'flex'; w.clear.disabled = false; } }catch(e){}
       };
       const unlockInput = ()=>{
