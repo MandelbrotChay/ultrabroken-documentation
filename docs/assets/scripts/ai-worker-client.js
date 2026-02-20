@@ -20,12 +20,55 @@
   // as `search:Title` links (intercepted by `search-link.js`). When false
   // they render as normal page links. Default: false.
   const USE_TITLE_SEARCH_LINKS = true;
+
+  // Placeholder pool — randomly sampled each time the widget initialises.
+  const _PLACEHOLDERS = [
+    "What is Wacko Boingo?",
+    "How to trigger a Zuggle?",
+    "Where is the Grimoire of Glitchcraft?",
+    "Fastest way to Tulin pump?",
+    "Explain Recall-Clip simply",
+    "How to perform Jump-Slash?",
+    "How to do Long Jump?",
+    "What causes OOB glitches?",
+    "How to trigger Save-Load dupe?",
+    "What is Weapon Stacking?",
+    "How to Autobuild Cancel?",
+    "How to perform Dive Cancel?",
+    "How to do Bow Sprinting?",
+    "What is Midair Transmutation?",
+    "Reproduce Message-Not-Found?",
+    "How to trigger Zuggle Overload?",
+    "How to do double Tulin boost?",
+    "What is Ascend Storage?",
+    "How to perform Recall Launch?",
+    "How to Weapon State Transfer?",
+    "How to cause Infinite Damage?",
+    "What is Anti-Gravity Glitch?",
+    "How to Scope Render Cancel?",
+    "Fix Midair Duplication?",
+    "How to Duplicate Equipment?",
+    "What breaks minecart rails?",
+    "How to trigger Animation Swap?",
+    "What is Jumpslash Cancel?",
+    "How to cause Collision Launch?",
+    "How to avoid Fall Damage?",
+    "What is Throw-Tap Sprinting?",
+    "How to stack weapons safely?",
+    "Use Recall-Clip reliably?",
+    "Reproduce Storage Ascend?",
+    "What is Bthrow Sprint Trick?",
+    "How to trigger Mozdor Jump?",
+    "How to perform Air Dupes?",
+    "How to transmute Midair Items?",
+    "Where to report glitches?"
+  ];
   
   function render(container){
     const root = el('div', { class: 'ub-ai-root' });
     const row = el('div', { style: 'display:flex; gap:0.4rem; align-items:flex-end;' });
     const inputWrap = el('div', { class: 'ub-ai-input-wrap', style: 'position:relative; flex:1; display:flex;' });
-    const _placeholder_text = 'What is referred to as Wacko Boingo?';
+    const _placeholder_text = _PLACEHOLDERS[Math.floor(Math.random() * _PLACEHOLDERS.length)];
       // Max query length (short questions). Configurable via `window.AI_MAX_QUERY_CHARS`.
       const MAX_QUERY_CHARS = (typeof window !== 'undefined' && window.AI_MAX_QUERY_CHARS) ? Number(window.AI_MAX_QUERY_CHARS) : 50;
       // Always use the contenteditable branch so the input naturally grows
