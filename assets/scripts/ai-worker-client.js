@@ -425,7 +425,30 @@
         try{ if (w.out) { w.out.innerHTML = ''; w.out.textContent = idleText(); } }catch(e){}
         try{ if (w.evidence) w.evidence.innerHTML = ''; }catch(e){}
         try{ if (w.input && w.input.contentEditable === 'true') w.input.style.height = ''; }catch(e){}
-        try { if (typeof updateVisibility === 'function') updateVisibility(); else { w.clear.style.display = 'none'; w.btn.style.display = 'none'; } } catch(e){ w.clear.style.display = 'none'; w.btn.style.display = 'none'; }
+        try { updateVisibility(); } catch(e){ w.clear.style.display = 'none'; w.btn.style.display = 'none'; w.share && (w.share.style.display = 'none'); }
+      };
+      // Declared at outer scope so all closures (handleAsk, doClear, keydown) can reach them.
+      const resizeIcons = ()=>{
+        try{
+          const btnRect = w.btn.getBoundingClientRect();
+          let targetH = 0;
+          if (btnRect && btnRect.height > 0) targetH = Math.round(btnRect.height);
+          else targetH = Math.round(parseFloat(getComputedStyle(w.btn).fontSize) || 16);
+          targetH = Math.max(12, targetH);
+        }catch(e){}
+      };
+      const updateVisibility = ()=>{
+        const has = String((typeof w.getValue === 'function' ? w.getValue() : (w.input && w.input.value || '')) || '').trim();
+        if (has) {
+          try{ if (w.clear) { w.clear.style.display = 'flex'; w.clear.disabled = false; } }catch(e){}
+          try{ if (w.btn)   { w.btn.style.display   = 'flex'; w.btn.disabled   = false; } }catch(e){}
+          try{ if (w.share) { w.share.style.display = 'flex'; w.share.disabled = false; } }catch(e){}
+        } else {
+          try{ if (w.clear) { w.clear.style.display = 'none'; w.clear.disabled = true; } }catch(e){}
+          try{ if (w.btn)   { w.btn.style.display   = 'none'; w.btn.disabled   = true; } }catch(e){}
+          try{ if (w.share) { w.share.style.display = 'none'; w.share.disabled = true; } }catch(e){}
+        }
+        setTimeout(resizeIcons, 0);
       };
 
       // Focus: kill animation and clear field only when placeholder is showing.
@@ -564,36 +587,6 @@
             });
           } catch (e) {}
         }
-
-        // Shared resizing function to make icons match the Ask button visual height
-        const resizeIcons = ()=>{
-          try{
-            const btnRect = w.btn.getBoundingClientRect();
-            let targetH = 0;
-            if (btnRect && btnRect.height > 0) targetH = Math.round(btnRect.height);
-            else targetH = Math.round(parseFloat(getComputedStyle(w.btn).fontSize) || 16);
-            targetH = Math.max(12, targetH);
-            // CSS controls icon sizing; no inline sizing applied here to avoid
-            // conflicts with author styles.
-          }catch(e){}
-        };
-
-        // Toggle visibility for both controls based on input content
-        const updateVisibility = ()=>{
-          const has = String((typeof w.getValue === 'function' ? w.getValue() : (w.input && w.input.value || '')) || '').trim();
-          if (has) {
-            try{ if (w.clear) { w.clear.style.display = 'flex'; w.clear.disabled = false; } }catch(e){}
-            try{ if (w.btn)   { w.btn.style.display   = 'flex'; w.btn.disabled   = false; } }catch(e){}
-            try{ if (w.share) { w.share.style.display = 'flex'; w.share.disabled = false; } }catch(e){}
-          } else {
-            try{ if (w.clear) { w.clear.style.display = 'none'; w.clear.disabled = true; } }catch(e){}
-            try{ if (w.btn)   { w.btn.style.display   = 'none'; w.btn.disabled   = true; } }catch(e){}
-            try{ if (w.share) { w.share.style.display = 'none'; w.share.disabled = true; } }catch(e){}
-          }
-          // After toggling, resize icons to match rendered button height
-          // use a short timeout to allow layout to settle when showing
-          setTimeout(resizeIcons, 0);
-        };
 
         // Autosize to content using a hidden off-DOM clone to avoid writing
         // `height = 'auto'` on the real textarea (which can trigger mobile
