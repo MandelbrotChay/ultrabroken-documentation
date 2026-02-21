@@ -536,9 +536,10 @@
         });
         w.input.addEventListener('blur', ()=>{
           try{
-            // Immediately show transient blur text; typewriter callback will replace with actual idle text
-            if (w._idleMode) { try{ w.out.textContent = IDLE_BLUR_TEXT; }catch(e){} }
-            if (!String(w.input.textContent || '').trim()){
+            const hasText = !!String(w.input.textContent || '').trim();
+            // Only show transient blur text when the field is empty (no user query present)
+            if (w._idleMode && !hasText) { try{ w.out.textContent = IDLE_BLUR_TEXT; }catch(e){} }
+            if (!hasText){
               _phAnimHandle = setTimeout(startPhAnim, 400);
             }
           }catch(e){}
