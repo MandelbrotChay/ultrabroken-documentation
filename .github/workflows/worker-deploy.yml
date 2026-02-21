@@ -62,4 +62,7 @@ jobs:
           if [ -n "${{ secrets.SYSTEM_PROMPT }}" ]; then
             printf "%s" "${{ secrets.SYSTEM_PROMPT }}" | npx --yes wrangler@4 secret put SYSTEM_PROMPT || true
           fi
+          if [ -n "${{ secrets.ALLOWED_ORIGIN }}" ]; then
+            printf "%s" "${{ secrets.ALLOWED_ORIGIN }}" | npx --yes wrangler@4 secret put ALLOWED_ORIGIN || true
+          fi
           npx --yes wrangler@4 deploy

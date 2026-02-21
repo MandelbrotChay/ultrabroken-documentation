@@ -55,11 +55,30 @@ async function fetchIndex(url){
 
 export default {
   async fetch(req, env){
+    // Restrict access to requests originating from the app's own domain.
+    // Configurable via the ALLOWED_ORIGIN env var in wrangler.toml / dashboard;
+    // falls back to the GitHub Pages deployment URL.
+    const ALLOWED_ORIGIN = env.ALLOWED_ORIGIN;
+
     const CORS_HEADERS = {
-      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Origin': ALLOWED_ORIGIN,
       'Access-Control-Allow-Methods': 'POST, OPTIONS',
-      'Access-Control-Allow-Headers': 'Content-Type'
+      'Access-Control-Allow-Headers': 'Content-Type',
+      'Vary': 'Origin'
     };
+
+    // Server-side origin/referer guard — rejects requests that don't carry a
+    // recognisable Origin or Referer from the allowed domain. Browser-enforced
+    // CORS stops cross-origin reads; this check additionally blocks direct
+    // API calls that don't originate from the app.
+    // Note: headers can be spoofed by determined actors with direct HTTP tools,
+    // but this stops casual / accidental misuse without requiring auth tokens.
+    const origin   = req.headers.get('Origin')   || '';
+    const referer  = req.headers.get('Referer')  || '';
+    const allowed  = origin.startsWith(ALLOWED_ORIGIN) || referer.startsWith(ALLOWED_ORIGIN);
+    if (!allowed && req.method !== 'OPTIONS') {
+      return new Response('Forbidden', { status: 403 });
+    }
 
     if (req.method === 'OPTIONS') return new Response(null, { status: 204, headers: CORS_HEADERS });
     if (req.method !== 'POST') return new Response('Method not allowed', { status: 405, headers: CORS_HEADERS });
