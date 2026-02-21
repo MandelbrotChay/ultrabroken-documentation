@@ -71,7 +71,7 @@
   const LOADING_TEXT = 'Let me look into that real quick...';
   // Text shown in the output area when idle mode is active but the input is focused.
   // Set to '' to leave it blank, or fill in a prompt hint.
-  const IDLE_FOCUSED_TEXT = 'Gtreetings, curious wanderer. Ask me anything about the secrets of Hyrule. Will i share word or waffle? Tip or trick? Legend or lie? Who knows?';  // Text shown immediately on blur (before the typewriter finishes and picks a new idle text).
+  const IDLE_FOCUSED_TEXT = 'Gtreetings, curious wanderer. Ask me anything about the secrets of Hyrule. Will I share word or waffle? Tip or trick? Legend or lie? Who knows?';  // Text shown immediately on blur (before the typewriter finishes and picks a new idle text).
   // This bridges the gap between blur and the typewriter callback.
   const IDLE_BLUR_TEXT = 'I shall continue yapping nonsense then...';
   // Placeholder pool — randomly sampled each time the widget initialises.
