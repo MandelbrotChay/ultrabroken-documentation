@@ -365,9 +365,10 @@
         }catch(e){ /* ignore model source parsing errors */ }
         // If nothing was rendered and there was no answer, show silence
         if (!w.out.textContent && (!r.evidence || !r.evidence.length)) w.out.textContent = 'silence';
-        // Auto-clear after a short delay when the worker returned a silence response
+        // Silence response: unlock the input so the user can edit/correct their query.
+        // No auto-clear — the user decides what to do next.
         if (r.silence) {
-          setTimeout(()=>{ try{ _postSilence = true; doClear(); }catch(e){} }, 2500);
+          try{ if (typeof unlockInput === 'function') unlockInput(); }catch(e){}
         }
       };
       w.btn.addEventListener('click', handleAsk);
