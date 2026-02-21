@@ -1,6 +1,6 @@
 # Ultrabroken Archives — Editor Guide
 
-This repository holds the Ultrabroken documentation written in Markdown and published with MkDocs + Material.
+This repository holds the Ultrabroken Archives written in Markdown and published with MkDocs + Material.
 
 This README is focused on editors who will make content changes directly on GitHub. Editors typically do not need to run or build the site locally — just edit, commit, and open a pull request.
 
