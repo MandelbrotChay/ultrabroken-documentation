@@ -408,7 +408,11 @@
         try{ if (_phAnimHandle !== null){ clearTimeout(_phAnimHandle); _phAnimHandle = null; } }catch(e){}
         try{ w.input._phAnimating = false; }catch(e){}
       };
-      const startPhAnim = ()=>{
+      // startPhAnim([startFull])
+      // When startFull=true the placeholder is shown pre-filled and idle text is
+      // set immediately; the delete phase runs right away without typing first.
+      // Used on page init/refresh so the widget appears fully populated.
+      const startPhAnim = (startFull = false)=>{
         stopPhAnim();
         if (document.activeElement === w.input) return; // don't animate while focused
         let idx;
@@ -448,7 +452,15 @@
             _phAnimHandle = setTimeout(()=>{ if (document.activeElement !== w.input) startPhAnim(); }, PAUSE_START);
           }
         };
-        _phAnimHandle = setTimeout(typeNext, 300);
+        if (startFull) {
+          // Pre-fill: show full placeholder + idle text immediately, then delete
+          pos = text.length;
+          try{ w.input.textContent = text; }catch(e){}
+          if (w._idleMode) { try{ w.out.textContent = idleText(); }catch(e){} }
+          _phAnimHandle = setTimeout(delNext, PAUSE_END);
+        } else {
+          _phAnimHandle = setTimeout(typeNext, 300);
+        }
       };
 
       // Lock/unlock the input after a response is shown / cleared.
@@ -784,8 +796,9 @@
         window.addEventListener('resize', resizeIcons);
         // initial state
         updateVisibility();
-        // kick off placeholder typing animation
-        try{ startPhAnim(); }catch(e){}
+        // kick off placeholder animation — start pre-filled so the page
+        // loads with content immediately; delete phase runs first cycle.
+        try{ startPhAnim(true); }catch(e){}
 
         
       }catch(e){ /* ignore */ }
