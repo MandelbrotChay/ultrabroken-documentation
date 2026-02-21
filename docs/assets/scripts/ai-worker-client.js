@@ -488,8 +488,9 @@
         try{ if (typeof unlockInput === 'function') unlockInput(); }catch(e){}
         try{ if (typeof w.setValue === 'function') w.setValue(''); else if (w.input) w.input.value = ''; }catch(e){}
         // Only show idle text immediately if input is not focused; otherwise let the typewriter callback restore it.
-        // After a silence response, show the dedicated post-silence text until the next typewriter cycle replaces it.
-        const _idleInitText = _postSilence ? IDLE_SILENCE_TEXT : idleText();
+        // After a silence response, show the dedicated post-silence text; otherwise show the blur bridge text
+        // (same as the blur-empty path) — the typewriter will replace it with a random idle text after its first cycle.
+        const _idleInitText = _postSilence ? IDLE_SILENCE_TEXT : IDLE_BLUR_TEXT;
         _postSilence = false;
         try{ if (w.out) { w.out.innerHTML = ''; if (document.activeElement !== w.input) w.out.textContent = _idleInitText; } }catch(e){}
         try{ if (w.evidence) w.evidence.innerHTML = ''; }catch(e){}
