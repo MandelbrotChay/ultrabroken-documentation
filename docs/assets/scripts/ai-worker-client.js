@@ -74,6 +74,10 @@
   const IDLE_FOCUSED_TEXT = 'Gtreetings, curious wanderer. Ask me anything about the secrets of Hyrule. Will I share word or waffle? Tip or trick? Legend or lie? Who knows?';  // Text shown immediately on blur (before the typewriter finishes and picks a new idle text).
   // This bridges the gap between blur and the typewriter callback.
   const IDLE_BLUR_TEXT = 'I shall continue yapping nonsense then...';
+  // Text shown in the output area immediately after a silence response clears.
+  // Displayed instead of a random idle text until the typewriter finishes its
+  // next full cycle, at which point normal idle text rotation resumes.
+  const IDLE_SILENCE_TEXT = 'Back to nonsense!';
   // Placeholder pool — randomly sampled each time the widget initialises.
   const _PLACEHOLDERS = [
     "What is Wacko Boingo?",
@@ -363,7 +367,7 @@
         if (!w.out.textContent && (!r.evidence || !r.evidence.length)) w.out.textContent = 'silence';
         // Auto-clear after a short delay when the worker returned a silence response
         if (r.silence) {
-          setTimeout(()=>{ try{ doClear(); }catch(e){} }, 2500);
+          setTimeout(()=>{ try{ _postSilence = true; doClear(); }catch(e){} }, 2500);
         }
       };
       w.btn.addEventListener('click', handleAsk);
@@ -404,6 +408,7 @@
       // Picked fresh on every blur-when-empty / clear / init.
       let _phAnimHandle = null;
       let _phLastIdx    = -1;
+      let _postSilence  = false; // true when a clear was triggered by a silence response
       const stopPhAnim = ()=>{
         try{ if (_phAnimHandle !== null){ clearTimeout(_phAnimHandle); _phAnimHandle = null; } }catch(e){}
         try{ w.input._phAnimating = false; }catch(e){}
@@ -479,8 +484,11 @@
         w._idleMode = true;
         try{ if (typeof unlockInput === 'function') unlockInput(); }catch(e){}
         try{ if (typeof w.setValue === 'function') w.setValue(''); else if (w.input) w.input.value = ''; }catch(e){}
-        // Only show idle text immediately if input is not focused; otherwise let the typewriter callback restore it
-        try{ if (w.out) { w.out.innerHTML = ''; if (document.activeElement !== w.input) w.out.textContent = idleText(); } }catch(e){}
+        // Only show idle text immediately if input is not focused; otherwise let the typewriter callback restore it.
+        // After a silence response, show the dedicated post-silence text until the next typewriter cycle replaces it.
+        const _idleInitText = _postSilence ? IDLE_SILENCE_TEXT : idleText();
+        _postSilence = false;
+        try{ if (w.out) { w.out.innerHTML = ''; if (document.activeElement !== w.input) w.out.textContent = _idleInitText; } }catch(e){}
         try{ if (w.evidence) w.evidence.innerHTML = ''; }catch(e){}
         try{ if (w.input && w.input.contentEditable === 'true') w.input.style.height = ''; }catch(e){}
         try { updateVisibility(); } catch(e){ w.clear.style.display = 'none'; w.btn.style.display = 'none'; w.share && (w.share.style.display = 'none'); }
