@@ -148,7 +148,8 @@
     // NOTE: user-facing toggle removed — rendering of model-returned sources
     // is controlled by the internal `SHOW_MODEL_SOURCES` flag declared above.
     // Output area (answer + evidence). `out` holds the model answer; `evidenceWrap` holds clickable evidence links returned by the Worker.
-    const out = el('div', { class: 'ub-ai-out' }, idleText());
+    // Starts blank; the typewriter callback populates it after the first cycle.
+    const out = el('div', { class: 'ub-ai-out' }, '');
     const evidenceWrap = el('div', { class: 'ub-ai-evidence' }, '');
     inputWrap.appendChild(input);
     row.appendChild(inputWrap);
