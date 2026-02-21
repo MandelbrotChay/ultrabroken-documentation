@@ -616,7 +616,7 @@
           // ensure clear button starts hidden; layout/spacing handled by CSS
           w.clear.style.display = 'none';
           w.clear.appendChild(clearImg);
-          w.clear.addEventListener('click', ()=> doClear());
+          w.clear.addEventListener('click', ()=>{ if (!w._idleMode) _postSilence = true; doClear(); });
         }
 
         // Replace textual Ask label with an SVG inside the Ask button
