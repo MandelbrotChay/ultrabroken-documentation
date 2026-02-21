@@ -200,7 +200,8 @@
       // If an instance already exists inside, mark initialized and skip
       if (placeholder.querySelector('.ub-ai-root')) { placeholder.dataset.aiInitialized = '1'; return; }
       const w = render(placeholder);
-      w._idleMode = true; // true while showing idle/cleared state; false while showing a query result
+      w._idleMode = true;    // true while showing idle/cleared state; false while showing a query result
+      w._silenceMode = false; // true after a silence response while the user hasn't yet focused the input
       // No user-facing toggle: `SHOW_MODEL_SOURCES` controls whether model-
       // returned `Source:` lines are rendered. This is intentionally internal.
       // The Worker now returns structured `response_text`, optional `response_sources` (text block)
@@ -368,6 +369,7 @@
         // Silence response: unlock the input so the user can edit/correct their query.
         // No auto-clear — the user decides what to do next.
         if (r.silence) {
+          w._silenceMode = true;
           try{ if (typeof unlockInput === 'function') unlockInput(); }catch(e){}
         }
       };
@@ -525,6 +527,9 @@
         w.input.addEventListener('focus', ()=>{
           try{
             if (w.input._phAnimating) { stopPhAnim(); w.input.textContent = ''; }
+            // After a silence response the user focuses to edit: transition into idle
+            // mode so the blur/typewriter machinery works normally from here on.
+            if (w._silenceMode) { w._silenceMode = false; w._idleMode = true; }
             // Hide idle text while focused; typewriter callback restores it after blur
             if (w._idleMode) { try{ w.out.textContent = IDLE_FOCUSED_TEXT; }catch(e){} }
           }catch(e){}
