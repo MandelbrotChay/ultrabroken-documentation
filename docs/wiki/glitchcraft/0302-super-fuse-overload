@@ -7,14 +7,26 @@ title: "Name"
 
 ## Summary
 ---
-Super fuse overload is a glitch in which the list of connections between actors is overloaded, and new connections can't be made, causing link's avatar in the menu to start overload dropping, preventing fuses from working properly, and also causing npcs to overload drop their weapons, such as zelda's torch and mineru's arm in stage 3 of the ganondorf fight.
+Allows you to get Zelda's torch and Mineru's arm.
 
-_Credits - Day Month Year_
+_mulberry, Aergyl, Jordan, MandelbrotChaylay  6 December 2025_
 
 ## Instructions
 ---
-1. Step one
-2. Step two
+1. If you wish to steal mineru's arm, make an autosave in the tunnel to ganondorf, right next to the army trigger.
+If you wish to steal zelda's torch, make an autosave anywhere in the prologue
+2. Invizuggle 12 pieces of equipment
+3. Make an eaten DI weapon
+4. Use eaten DI weapon to create the following FE chains: A->B->C and D->E, where a is the original FE weapon,
+B is a regular weapon, C is a eaten DI shield, D is a zuggle dropped DI shield, and E is a regular shield
+5. Glue E to something in Rasitakiwak, smuggle C, regularly equip B, and then overload pick up E
+6. Drop a shield, fuse it to your equipped shield twice, and quickly drop swap unequip B, and it is faster if it is a fail drop
+This should result in the dropped shield being eaten DI'd and ghosted
+7. Repeat step 6 until shields are no longer ghosted the second time you fuse them
+8. Once this occurs, unquip shield E and pickup the shield that didn't get ghosted and unequip it
+9. Equip a random shield and drop it
+10. Retrive the shock emitter from the center box of the shrine and activate it near the ghosted shields you created.
+11. 
 ...
 
 ## Notes
