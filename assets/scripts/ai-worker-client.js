@@ -146,9 +146,9 @@
         try{ input.style.wordBreak = 'break-word'; }catch(e){}
         try{ input.style.display = 'block'; }catch(e){}
       }catch(e){}
+    const clearBtn = el('button', { type: 'button', class: 'ub-ai-clear', 'aria-label': 'Clear search' }, '');
     const askBtn = el('button', { type: 'button', class: 'ub-ai-ask', 'aria-label': 'Ask' }, '');
     const shareBtn = el('button', { type: 'button', class: 'ub-ai-share', 'aria-label': 'Share query' }, '');
-    const closeBtn = el('button', { type: 'button', class: 'ub-ai-close', 'aria-label': 'Close' }, '');
     // NOTE: user-facing toggle removed — rendering of model-returned sources
     // is controlled by the internal `SHOW_MODEL_SOURCES` flag declared above.
     // Output area (answer + evidence). `out` holds the model answer; `evidenceWrap` holds clickable evidence links returned by the Worker.
@@ -157,16 +157,16 @@
     const evidenceWrap = el('div', { class: 'ub-ai-evidence' }, '');
     inputWrap.appendChild(input);
     row.appendChild(inputWrap);
+    row.appendChild(clearBtn);
     row.appendChild(askBtn);
     row.appendChild(shareBtn);
-    row.appendChild(closeBtn);
     
     root.appendChild(row);
     root.appendChild(out);
     // append evidence container to the widget so it's accessible via the returned handle
     root.appendChild(evidenceWrap);
     container.appendChild(root);
-    return { input, inputWrap, btn: askBtn, share: shareBtn, out, close: closeBtn, evidence: evidenceWrap };
+    return { input, inputWrap, btn: askBtn, share: shareBtn, out, clear: clearBtn, evidence: evidenceWrap };
   }
 
   async function askWorker(q){
@@ -477,7 +477,7 @@
         try{ w.input.setAttribute('contenteditable', 'false'); w.input._inputLocked = true; }catch(e){}
         try{ if (w.btn)   { w.btn.style.display   = 'flex'; w.btn.disabled   = false; } }catch(e){}
         try{ if (w.share) { w.share.style.display = 'flex'; w.share.disabled = false; } }catch(e){}
-        try{ if (w.close) { w.close.style.display = 'flex'; w.close.disabled = false; } }catch(e){}
+        try{ if (w.clear) { w.clear.style.display = 'flex'; w.clear.disabled = false; } }catch(e){}
       };
       const unlockInput = ()=>{
         try{ w.input.setAttribute('contenteditable', 'true'); w.input._inputLocked = false; }catch(e){}
@@ -495,7 +495,7 @@
         try{ if (w.out) { w.out.innerHTML = ''; if (document.activeElement !== w.input) w.out.textContent = _idleInitText; } }catch(e){}
         try{ if (w.evidence) w.evidence.innerHTML = ''; }catch(e){}
         try{ if (w.input && w.input.contentEditable === 'true') w.input.style.height = ''; }catch(e){}
-        try { updateVisibility(); } catch(e){ w.close.style.display = 'none'; w.btn.style.display = 'none'; w.share && (w.share.style.display = 'none'); }
+        try { updateVisibility(); } catch(e){ w.clear.style.display = 'none'; w.btn.style.display = 'none'; w.share && (w.share.style.display = 'none'); }
       };
       // Declared at outer scope so all closures (handleAsk, doClear, keydown) can reach them.
       const resizeIcons = ()=>{
@@ -510,11 +510,11 @@
       const updateVisibility = ()=>{
         const has = String((typeof w.getValue === 'function' ? w.getValue() : (w.input && w.input.value || '')) || '').trim();
         if (has) {
-          try{ if (w.close) { w.close.style.display = 'flex'; w.close.disabled = false; } }catch(e){}
+          try{ if (w.clear) { w.clear.style.display = 'flex'; w.clear.disabled = false; } }catch(e){}
           try{ if (w.btn)   { w.btn.style.display   = 'flex'; w.btn.disabled   = false; } }catch(e){}
           try{ if (w.share) { w.share.style.display = 'flex'; w.share.disabled = false; } }catch(e){}
         } else {
-          try{ if (w.close) { w.close.style.display = 'none'; w.close.disabled = true; } }catch(e){}
+          try{ if (w.clear) { w.clear.style.display = 'none'; w.clear.disabled = true; } }catch(e){}
           try{ if (w.btn)   { w.btn.style.display   = 'none'; w.btn.disabled   = true; } }catch(e){}
           try{ if (w.share) { w.share.style.display = 'none'; w.share.disabled = true; } }catch(e){}
         }
@@ -614,17 +614,17 @@
         }catch(e){}
       };
       try{
-        // Ensure close button exists
-        if (w.close){
-          // set image for the close button (published site path)
-          const closeImg = document.createElement('img');
-          closeImg.src = '/ultrabroken-documentation/assets/images/cancel-icon.svg';
-          closeImg.alt = 'Close';
+        // Ensure clear button exists
+        if (w.clear){
+          // set image for the clear button (published site path)
+          const clearImg = document.createElement('img');
+          clearImg.src = '/ultrabroken-documentation/assets/images/cancel-icon.svg';
+          clearImg.alt = 'Clear';
           
-          // ensure close button starts hidden; layout/spacing handled by CSS
-          w.close.style.display = 'none';
-          w.close.appendChild(closeImg);
-          w.close.addEventListener('click', ()=>{ if (!w._idleMode) _postSilence = true; doClear(); });
+          // ensure clear button starts hidden; layout/spacing handled by CSS
+          w.clear.style.display = 'none';
+          w.clear.appendChild(clearImg);
+          w.clear.addEventListener('click', ()=>{ if (!w._idleMode) _postSilence = true; doClear(); });
         }
 
         // Replace textual Ask label with an SVG inside the Ask button
