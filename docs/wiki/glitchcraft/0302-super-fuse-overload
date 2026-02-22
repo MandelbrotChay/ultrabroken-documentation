@@ -13,25 +13,60 @@ _mulberry, Aergyl, Jordan, MandelbrotChaylay  6 December 2025_
 
 ## Instructions
 ---
-1. If you wish to steal mineru's arm, make an autosave in the tunnel to ganondorf, right next to the army trigger.
-If you wish to steal zelda's torch, make an autosave anywhere in the prologue
+1. If you wish to steal mineru's arm, make an autosave in the tunnel to ganondorf, right next to the army trigger. If you wish to steal zelda's torch, make an autosave anywhere in the prologue. If you wish to use SFO to duplicate zonai devices, make a save directly next to a minigame NPC
 2. Invizuggle 12 pieces of equipment
 3. Make an eaten DI weapon
-4. Use eaten DI weapon to create the following FE chains: A->B->C and D->E, where a is the original FE weapon,
-B is a regular weapon, C is a eaten DI shield, D is a zuggle dropped DI shield, and E is a regular shield
+4. Use eaten DI weapon to create the following FE chains: A->B->C and D->E, where a is the original FE weapon, B is a regular weapon, C is a eaten DI shield, D is a zuggle dropped DI shield, and E is a regular shield 
 5. Glue E to something in Rasitakiwak, smuggle C, regularly equip B, and then overload pick up E
-6. Drop a shield, fuse it to your equipped shield twice, and quickly drop swap unequip B, and it is faster if it is a fail drop
-This should result in the dropped shield being eaten DI'd and ghosted
+6. Drop a shield, fuse it to your equipped shield twice, and quickly drop swap unequip B, and it is faster if it is a fail drop This should result in the dropped shield being eaten DI'd and ghosted
 7. Repeat step 6 until shields are no longer ghosted the second time you fuse them
 8. Once this occurs, unquip shield E and pickup the shield that didn't get ghosted and unequip it
 9. Equip a random shield and drop it
-10. Retrive the shock emitter from the center box of the shrine and activate it near the ghosted shields you created.
-11. 
+10. Retrive the shock emitter from the center box of the shrine and activate it near the ghosted shields you created
+11. Pick up a random shield, smuggle it, pickup another shield, and then shock drop it. Repeat this until all the shields are purgatorified
+12. Smuggle the last shield, pickup C, shock drop it, then unsheath it and drop it
+13. Fe a new shield to D, glue it to something random in Rasitakiwak, smuggle C, and then overload pick up the new shield
+14. Repeat step 6 until Link overload drops his armor in the menu
+15. Fail drop your equipped shield, then successfully drop it and B
+16. Recall lock all equipment that is not in the eaten DI state.
+
+To obtain Zelda's torch:
+1. Load the prologue and pick up the torch, you may have to reload a couple times
+2. Get an autosave and close the game
+3. Transfer the torch to your save as you would for transferring the MNF
+
+To obtain Mineru's arm:
+1. Load the save near the ganondorf trigger and quickly enter the army fight
+2. Progress the fights until the latter end of phase 2 of ganondorf
+3. Fuse things to shields and drop the shields afterward until fused objects fall into the ground instead of properly fusing
+4. Continue to phase 3
+5. Go over to miner and spam A until you pick up her arm
+6. Undock your switch
+7. Fuse a cart to mineru's arm
+8. Make a portacull and SRZ mineru's arm
+9. Load Rasitakiwak shrine
+10. Navigate to a relatively high place, overload drop a weapon, drop your equipped weapon, and recall the cart-weapon as you see it fall
+11. Pick up the weapon
+
+To dupe zonai devices:
+1. Load the save near the minigame NPC and quickly talk to them
+2. Overload drop a shield and fuse it to a weapon
+3. Fuse things to your shield until they fall through the floor
+4. Throw aim a weapon
+5. Select a zonai device to throw
+6. Pick it up as it falls
+7. Swap to another zonai device you want to dupe
+8. Dupe to your hearts content
+9. Exit the minigame
+10. Save quickly
+
 ...
 
 ## Notes
 ---
-Remarks, additions, extensions, etc.
+-SFO really likes to crash the game, so try to minimize the number of things you do in the overloaded state
+-Especially avoid going through loading screens besides loading saves
+-Mineru's arm, when it has something fused to it and the console is docked, also likes to crash the game 
 
 ## Resources
 ---
